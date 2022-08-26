@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnEuropea","GLOBAL",2)
+        See([PC])
+
+THEN
+        RESPONSE #100
+                 Wait(1)
+                 StartDialog("h_tuztdd",[PC])
+END

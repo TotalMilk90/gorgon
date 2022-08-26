@@ -1,0 +1,23 @@
+IF
+	See([PC])
+	NumberOfTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		 MoveToObject(Player1)
+		 StartDialog("h_flam2d",[PC])
+END
+
+IF
+	Global("h_FlamingFist","GLOBAL",3)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_FlamingFist","GLOBAL",4)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END

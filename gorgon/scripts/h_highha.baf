@@ -1,0 +1,10 @@
+IF
+         Global("h_SpawnEuropea","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_europc",[258.2449],S)
+                  CreateCreature("h_tuztcc",[290.2527],S)
+                  CreateCreature("h_bountc",[215.2496],S)
+                  CreateCreature("h_bountc",[316.2461],S)
+         SetGlobal("h_SpawnEuropea","GLOBAL",2)
+END

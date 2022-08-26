@@ -1,0 +1,24 @@
+IF
+	See([PC])
+	NumberOfTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		 SmallWait(2)
+		 StartDialog("h_denebd",[PC])
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		 SetGlobal("h_SpawnDeneb","GLOBAL",3)
+		 Enemy()
+END
+
+IF
+	Global("h_SpawnDeneb","GLOBAL",3)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

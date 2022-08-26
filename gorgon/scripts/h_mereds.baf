@@ -1,0 +1,7 @@
+IF
+	Global("h_EndMeredia","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 Wait(1)
+		 StartDialog("h_meredd",[PC])
+END

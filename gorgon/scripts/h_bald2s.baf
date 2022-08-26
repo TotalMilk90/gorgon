@@ -1,0 +1,27 @@
+IF
+         See([PC])
+         Global("h_BaldwinQuest","GLOBAL",9)
+THEN
+	 RESPONSE #100
+                  ClearAllActions()
+                  StartCutSceneMode()
+                  CutSceneId(Player1)
+                  ActionOverride(Player1,MoveToPoint([488.383]))
+                  Wait(2)
+                  EndCutSceneMode()
+		  SmallWait(1)
+		  PlaySound("h_kilmus")
+		  StartDialog("h_bald2d",[PC])
+END
+
+IF
+         See([PC])
+         Global("h_BaldwinQuest","GLOBAL",10)
+THEN
+	 RESPONSE #100
+		  SmallWait(5)
+		  StartDialog("h_bald2d",[PC])
+END
+
+
+

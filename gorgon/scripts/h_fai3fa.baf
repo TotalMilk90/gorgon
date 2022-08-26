@@ -1,0 +1,8 @@
+IF
+        Global("h_SpawnCarth","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_carthc",[784.228],E)
+                 SetGlobal("h_SpawnCarth","GLOBAL",1)
+END

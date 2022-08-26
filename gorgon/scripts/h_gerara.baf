@@ -1,0 +1,16 @@
+IF
+        Global("h_SpawnBaldwin","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_bald2c",[617.365],N)
+                 SetGlobal("h_SpawnBaldwin","GLOBAL",2)
+END
+
+IF
+        Global("h_SpawnBaldwin","GLOBAL",2)
+
+THEN
+        RESPONSE #100
+                 PlaySong(0)
+END

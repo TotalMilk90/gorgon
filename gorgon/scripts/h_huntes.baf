@@ -1,0 +1,7 @@
+IF
+	Global("h_KatredaBounty","GLOBAL",4)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+

@@ -1,0 +1,8 @@
+IF
+        Global("h_SpawnAisha","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_aishac",[163.551],E)
+                 SetGlobal("h_SpawnAisha","GLOBAL",1)
+END

@@ -1,0 +1,20 @@
+IF
+         Global("h_FlamingFist","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_flam2c",[486.612],N)
+                  CreateCreature("h_flamec",[440.661],N)
+                  CreateCreature("h_flamec",[524.658],N)
+                  SetGlobal("h_FlamingFist","GLOBAL",2)
+
+END
+
+IF
+         Global("h_ShadowWar","GLOBAL",7)
+THEN
+         RESPONSE #100
+                  DayNight(MIDNIGHT)
+                  CreateCreature("h_injurc",[487.536],N)
+                  SetGlobal("h_ShadowWar","GLOBAL",8)
+
+END

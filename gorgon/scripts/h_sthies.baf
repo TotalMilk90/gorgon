@@ -1,0 +1,47 @@
+IF
+	 Global("h_ShadowWar","GLOBAL",2)
+                  !Allegiance(Myself,ENEMY)
+THEN
+	 RESPONSE #100
+		  Enemy()
+END
+
+IF
+	 Global("h_ShadowWar","GLOBAL",4)
+	          !Allegiance(Myself,ENEMY)
+THEN
+	 RESPONSE #100
+	       	  Enemy()
+END
+
+IF
+	Global("h_BetrayBaldwin","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+		 SetGlobal("h_BetrayBaldwin","GLOBAL",2)
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",7)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",9)
+THEN
+	RESPONSE #100
+	         SmallWait(3)
+	         EquipRanged()
+		 Attack("h_snak2c")
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",10)
+THEN
+	RESPONSE #100
+	         EscapeArea()
+END

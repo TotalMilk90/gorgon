@@ -1,0 +1,30 @@
+IF
+         Global("h_GuildThieves","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_ariosc",[1127.2307],S)
+                  CreateCreature("h_roguec",[1077.2260],S)
+                  CreateCreature("h_roguec",[1142.2249],S)
+                  SetGlobal("h_GuildThieves","GLOBAL",3)
+END
+
+IF
+         Global("h_ShadowWar","GLOBAL",5)
+THEN
+         RESPONSE #100
+                  DayNight(MIDNIGHT)
+                  CreateCreature("h_quassc",[4397.2266],E)
+                  CreateCreature("h_sthiec",[4444.2206],E)
+                  CreateCreature("h_sthiec",[4444.2326],E)
+                  CreateCreature("h_thiefc",[4550.2236],E)
+                  CreateCreature("h_thiefc",[4550.2206],E)
+                  CreateCreature("h_thiefc",[4550.2296],E)
+                  SetGlobal("h_ShadowWar","GLOBAL",6)
+END
+
+IF
+         Global("h_RigaldoQuest","GLOBAL",16)
+THEN
+         RESPONSE #100
+                  PlaySong(0)
+END

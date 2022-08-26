@@ -1,0 +1,32 @@
+IF
+         Global("h_GuildThieves","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  EscapeArea()
+END
+
+IF
+	 Global("h_GuildThieves","GLOBAL",4)
+THEN
+	 RESPONSE #100
+		  EscapeArea()
+END
+
+IF
+	 Global("h_SpawnAriosh","GLOBAL",2)
+THEN
+	 RESPONSE #100
+	          SmallWait(5)
+	          SoundActivate("GuildMusic",FALSE)
+	          SetGlobal("h_GuildMusic","GLOBAL",1)
+	          PlaySong(0)
+	          PlaySound("h_shamus")
+		  StartDialog("h_ariosd",[PC])
+END
+
+IF
+	 Global("h_SpawnAriosh","GLOBAL",3)
+THEN
+	 RESPONSE #100
+	          EscapeArea()
+END

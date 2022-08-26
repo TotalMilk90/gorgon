@@ -1,0 +1,7 @@
+IF
+	Die()
+THEN
+	RESPONSE #100
+                 SetGlobal("h_BaldwinQuest","GLOBAL",11)
+END
+

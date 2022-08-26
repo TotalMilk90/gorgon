@@ -1,0 +1,8 @@
+IF
+        Global("h_SpawnKatreda","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_katrec",[2185.776],S)
+                 SetGlobal("h_SpawnKatreda","GLOBAL",1)
+END

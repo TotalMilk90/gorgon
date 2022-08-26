@@ -1,0 +1,17 @@
+IF
+	See([PC])
+	NumberOfTimesTalkedTo(0)
+THEN
+	RESPONSE #100
+		 PlaySound("h_shamus")
+                 SmallWait(1)
+		 StartDialog("h_quassd",[PC])
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",7)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

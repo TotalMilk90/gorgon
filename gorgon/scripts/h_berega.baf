@@ -1,0 +1,86 @@
+IF
+         Global("h_ShadowWar","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  DayNight(MIDNIGHT)
+                  CreateCreature("h_sthiec",[320.2701],S)
+                  CreateCreature("h_sthiec",[409.2796],S)
+                  CreateCreature("h_thiefc",[442.2697],S)
+                  CreateCreature("h_thiefc",[2269.2288],S)
+                  CreateCreature("h_sthi2c",[2186.2383],S)
+                  CreateCreature("h_thiefc",[2220.2502],S)
+                  CreateCreature("h_thiefc",[2301.2420],S)
+                  CreateCreature("h_sthiec",[2388.2360],S)
+                  CreateCreature("h_sthiec",[2358.2491],S)
+                  CreateCreature("h_thiefc",[3482.2196],S)
+                  CreateCreature("h_sthiec",[3581.2182],S)
+                  CreateCreature("h_thiefc",[3590.2235],S)
+                  CreateCreature("h_sthiec",[3465.2079],S)
+                  CreateCreature("h_sthiec",[3721.2141],S)
+                  CreateCreature("h_thiefc",[2021.1445],S)
+                  CreateCreature("h_thiefc",[2265.1593],S)
+                  CreateCreature("h_sthiec",[2144.1483],S)
+                  CreateCreature("h_thiefc",[2092.1601],S)
+                  CreateCreature("h_sthiec",[1033.1437],S)
+                  CreateCreature("h_sthiec",[950.1484],S)
+                  CreateCreature("h_thiefc",[1039.1495],S)
+                  CreateCreature("h_sthiec",[1417.3265],S)
+                  CreateCreature("h_sthiec",[1487.3380],S)
+                  CreateCreature("h_thiefc",[1333.3351],S)
+         SetGlobal("h_ShadowWar","GLOBAL",2)
+END
+
+IF
+         Global("h_FlamingFist","GLOBAL",1)
+         Global("h_RandomEncounterForced","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  SetGlobal("h_RandomEncounterForced","GLOBAL",1)
+                  ForceRandomEncounterEntry("h_flamea","h_flamee")
+END
+
+IF
+         Global("h_RigaldoQuest","GLOBAL",17)
+         Global("h_BountyNumber","GLOBAL",6)
+         Global("h_BetrayBaldwin","GLOBAL",0)
+         Global("h_RandomEncounterForced","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  SetGlobal("h_RandomEncounterForced","GLOBAL",2)
+                  ForceRandomEncounterEntry("h_flamea","h_flamee")
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_SpawnZhontac","GLOBAL",0)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_zhontc",[4217.2378],N)
+                  SetGlobal("h_SpawnZhontac","GLOBAL",1)
+END
+
+IF
+         TimeOfDay(DAY)
+         Global("h_SpawnMagnus","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_magnuc",[2718.3107],W)
+                  SetGlobal("h_SpawnMagnus","GLOBAL",1)
+END
+
+IF
+         Global("h_SpawnYumil","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_yumilc",[1701.2846],N)
+                  SetGlobal("h_SpawnYumil","GLOBAL",1)
+END
+
+IF
+        Global("h_SpawnBaldwin","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 PlaySong(0)
+END

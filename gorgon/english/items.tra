@@ -1,0 +1,297 @@
+@10=~Crystalline Torque~
+@11=~This necklace was forged using a variety of magical items with the purpose of enhancing the wearers clarity and intelligence.
+
+STATISTICS:
+
+Equipped abilities:
+
+- Intelligence: +1
+- Armor Class: +1
+- Saving Throws: +1
+- Can memorize 1 extra 1st-5th level spell
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@12=~Dagger~
+@13=~Acid Kukri +1~
+@14=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@15=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain.
+
+STATISTICS:
+
+Combat abilities:
+- Each hit causes 1 point of acid damage per round for 3 rounds
+
+THAC0: +1
+Damage: 1d4+1, +1 acid
+Damage Type: Slashing
+Speed Factor: 1
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@16=~Acid Kukri +2~
+@17=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain. This weapon was modified by the blacksmith Rhade, of the Gorgon's Eye thieves guild.
+
+STATISTICS:
+
+Combat abilities:
+- Each hit causes 1 point of acid damage every 1/2 round for a total of 3 rounds
+
+THAC0: +2
+Damage: 1d4+2, +2 acid
+Damage Type: Slashing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@18=~Dagger~
+@19=~Dagger +2: Snake Venom~
+@20=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@21=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger had received years of different vemon applications making it an extremely deadly weapon.
+
+STATISTICS:
+
+Combat abilities:
+- Each hit causes 2 points of poison damage per second for a total of 12 seconds (save vs. poison)
+
+THAC0: +2
+Damage: 1d4+2, +2 poison
+Damage Type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@22=~Keryokien: Medusa's Bite~
+@23=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
+
+STATISTICS:
+
+Combat abilities:
+- Each hit causes 1 point of poison damage every 2 seconds for a total of 12 seconds (save vs. poison)
+- 5% chance to stun target for 1 round (save vs. spell)
+- Returns to the wielder's hand when thrown
+
+THAC0: +3
+Damage: 1d3+3, +2 acid
+Damage Type: Missile
+Speed Factor: 0
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@24=~Cowl of Shadows~
+@25=~Magics, potions and alchemy were used to alter the shape and material of a variety of magical items to create this cowl. While worn, it sharpens the users eyesight to a state of near perfection. Illusions become revealed to you as mere parlor tricks and enemies become clear and visible no matter the time of night. It simultaneously helps the user to become hidden from sight themselves.
+
+STATISTICS:
+
+Charge abilities:
+- May cast Invisibility once per day
+
+Equipped abilities:
+- Infravision up to 120 ft.
+- Hide in Shadows: +15%
+- Detect Illusion: +15%
+
+Weight: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@26=~Broken Kerykeion Piece~
+@27=~This is a piece of a legendary staff called the Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@28=~Precious Gem~
+@29=~A rare and valuable looking diamond.
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@30=~Gerard's Necklace~
+@31=~This heirloom belongs to the Travenhurst family.
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@32=~Chunk of Metal~
+@33=~Ogre Blade~
+@34=~A massive piece of metal that vaguely resembles the shape of a sword.
+
+Weight: 10~
+@35=~This gigantic looking blade was forged by the Ogre; its form is too irregular and unrefined to be acknowledged as a sword. In its current shape this weapon is unusable.
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@36=~Black Lotus~
+@37=~A potent poison that has sedative and hallucinogenic properties when taken in low doses.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@38=~Shadow Thief Reports~
+@39=~These documents are written in code presumably only decipherable by members of the Shadow Thieves.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@40=~Vapula's Pendant~
+@41=~This is Vapula Simberg's personal pendant.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@42=~Europea's Slave Collar~
+@43=~This device is used to disrupt neural connections in the brain, causing its wearer to be more emotionless and complacent. It appears to be slightly damaged.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@44=~Europea's Body~
+@45=~This is the body of Europea.
+
+Weight: 65~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@46=~Magnus' Corpse~
+@47=~This is the body of Magnus.
+
+Weight: 115~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@48=~Discrete Missive~
+@49=~This small letter is written in code only decipherable by the Shadow Thieves.
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@50=~Fake Kerykeion Piece~
+@51=~This is a fake piece of the Kerykeion. If someone were to use this alongside the real ones, it would instantly kill them.
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@52=~Ring~
+@53=~Ring of Minor Lock Picking~
+@54=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@55=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@56=~Ring~
+@57=~Ring of Awareness~
+@58=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@59=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
+
+STATISTICS:
+
+Equipped abilities:
+- Find Traps: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@60=~Ring~
+@61=~Ring of the Cutpurse~
+@62=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@63=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
+
+STATISTICS:
+
+Equipped abilities:
+- Pick Pockets: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@64=~Looter's Band~
+@65=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
+
+STATISTICS:
+
+Equipped abilities:
+- Pick Pockets: +15%
+- Open Locks: +15%
+- Find Traps: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@66=~Snake~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@67=~Kerykeion: Euryale's Promise~
+@68=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
+
+STATISTICS:
+
+Combat abilities:
+- Increases backstab modifier by 1
+- Increases number of attacks by 1
+
+THAC0: +3
+Damage: 1d10+3, +3 poison
+Damage Type: Piercing
+Speed Factor: 0
+Proficiency Type: Short Sword
+Type: One-handed
+Requires:
+ 5 Strength
+
+Weight: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@69=~Kerykeion: Stheno's Blade~
+@70=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
+
+STATISTICS:
+
+Combat abilities:
+- 50% chance to stun target for half a round (save vs. spell)
+- 25% chance to confuse target for 2 rounds (save vs. spell)
+- 10% chance to deal an additional 5 acid damage
+
+THAC0: +3
+Damage: 1d10 +3
+Damage Type: Crushing
+Speed Factor: 2
+Proficiency Type: Katana/Wakizashi
+Type: One-handed
+Requires:
+ 12 Strength
+
+Weight: 8~

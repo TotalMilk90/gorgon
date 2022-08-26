@@ -1,0 +1,102 @@
+IF
+         Global("h_GuildSpawn","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_baldwc",[1532.450],S)
+                  CreateCreature("h_saradc",[1274.548],SE)
+                  CreateCreature("h_rigalc",[945.1121],S)
+                  CreateCreature("h_liedec",[762.1342],NE)
+                  CreateCreature("h_eurync",[700.1220],SE)
+                  CreateCreature("h_danikc",[1467.1580],W)
+
+                  CreateCreature("h_meredc",[1750.1098],SW)
+                  CreateCreature("h_courtc",[1883.1134],SW)
+                  CreateCreature("h_cour2c",[1888.1198],W)
+                  CreateCreature("h_cour3c",[1964.1108],S)
+                  CreateCreature("h_cour4c",[1897.1053],S)
+                  
+                  CreateCreature("h_gilbac",[1466.1196],SE)
+                  CreateCreature("h_gamesc",[1464.1125],S)
+                  CreateCreature("h_game2c",[1407.1122],S)
+                  CreateCreature("h_game3c",[1344.1207],E)
+                  
+                  CreateCreature("h_zedacc",[1021.1309],W)
+                  CreateCreature("h_smuggc",[1098.1288],W)
+                  CreateCreature("h_smuggc",[1066.1358],W)
+
+
+                  SetGlobal("h_GuildSpawn","GLOBAL",1)
+END
+
+IF
+         Global("h_GuildThieves","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_ariosc",[846.1185],N)
+                  CreateCreature("h_roguec",[1006.1057],SW)
+                  CreateCreature("h_roguec",[1059.1101],SW)
+                  SetGlobal("h_GuildThieves","GLOBAL",1)
+END
+
+IF
+         Global("h_GuildThieves","GLOBAL",5)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_roguec",[1006.1057],SW)
+                  CreateCreature("h_roguec",[1059.1101],SW)
+                  SetGlobal("h_GuildThieves","GLOBAL",6)
+END
+
+IF
+         Global("h_SpawnAriosh","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_ariosc",[823.1454],N)
+                  SetGlobal("h_SpawnAriosh","GLOBAL",2)
+END
+
+IF
+         Global("h_SpawnAriosh","GLOBAL",4)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_ariosc",[846.1185],N)
+                  CreateCreature("h_roguec",[1006.1057],SW)
+                  CreateCreature("h_roguec",[1059.1101],SW)
+                  SetGlobal("h_SpawnAriosh","GLOBAL",5)
+END
+
+IF
+         Global("h_GuildMusic","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  SoundActivate("GuildMusic",TRUE)
+END
+
+IF
+         Global("h_GuildMusic","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  SoundActivate("GuildMusic",TRUE)
+END
+
+IF
+         Global("h_GuildMusic","GLOBAL",3)
+THEN
+         RESPONSE #100
+                  SoundActivate("GuildMusic",FALSE)
+END
+
+IF
+         Global("h_GuildMusic","GLOBAL",4)
+THEN
+         RESPONSE #100
+                  SoundActivate("GuildMusic",TRUE)
+END
+
+IF
+         Global("h_SpawnRichard","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  Wait(100)
+                  PlaySound("h_figmus")
+END

@@ -1,0 +1,17 @@
+IF
+        Global("h_SpawnNagate","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 DayNight(MIDNIGHT)
+                 CreateCreature("h_nagatc",[1973.2895],S)
+                 SetGlobal("h_SpawnNagate","GLOBAL",2)
+END
+
+IF
+        Global("h_SpawnNagate","GLOBAL",2)
+
+THEN
+        RESPONSE #100
+                 PlaySong(0)
+END

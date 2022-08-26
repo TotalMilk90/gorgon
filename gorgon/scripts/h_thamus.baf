@@ -1,0 +1,20 @@
+IF
+        Global("h_SpawnThamuz","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 //PlaySong(0)
+                 PlaySound("h_shamus")
+                 SmallWait(1)
+                 StartDialog("h_thamud",[PC])
+                 SetGlobal("h_SpawnThamuz","GLOBAL",2)
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",4)
+	        !Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		Enemy()
+END
+

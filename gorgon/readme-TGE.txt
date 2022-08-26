@@ -4,7 +4,7 @@ V.1 ALPHA
 =======
 Prequel
 =======
-After violating the terms of his seperation from the Shadow Thieves, Baldwin
+After violating the terms of his separation from the Shadow Thieves, Baldwin
 "The Butcher" Glendale, fled north to Beregost, where he formed his own guild,
 the Gorgon's Eye. He pressed the local pickpockets and began amassing a vast
 network of contacts and spies. The locals have begun to show signs of unrest,

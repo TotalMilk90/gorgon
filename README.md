@@ -1,4 +1,4 @@
-# gorgon
+# The Gorgon's Eye
 A mod for BG:EE that adds a thieves guild into the town of Beregost.
 <h2>Prequel</h2>
 <p>After violating the terms of his seperation from the Shadow Thieves, Baldwin

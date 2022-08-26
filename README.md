@@ -52,7 +52,7 @@ WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
 
-Version 1.0: September 2nd, 2022
+Version 1.0: August 26, 2022
 ALPHA Release
 
 <h2>Legal</h2>

@@ -15,7 +15,7 @@ his way.</p>
 <h2>Mod Overview</h2>
 <p>The Gorgon's Eye is a small content mod for BG:EE/SoD and EET that adds a
 thieves guild into the town of Beregost. It contains 18 new quests, 2 new
-areas(reused), dozens of new characters, a new store that buys stolen goods, a
+areas(reused), some new characters, a new store that buys stolen goods, a
 brothel, a high-stakes casino, some new items and a very small item-upgrade. It
 can be accessed immediately after leaving Candlekeep and is open to all
 players, excluding those with a lawful-good alignment.</p>

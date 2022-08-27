@@ -5,7 +5,7 @@ IF ~Global("h_SpawnRichard","GLOBAL",3)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~<CHARNAME>! We must defeat Baldwin before he is allowed to escape!~
+   SAY ~<CHARNAME>! We must defeat Baldwin before he is allowed to escape! I will deal with him while my rogues assist you with the others!~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnRichard","GLOBAL",4)
    SetGlobal("h_ShadowWar","GLOBAL",9)

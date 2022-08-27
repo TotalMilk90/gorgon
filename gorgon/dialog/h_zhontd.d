@@ -62,7 +62,7 @@ END
 IF ~~ THEN BEGIN 11
    SAY ~Then I guess I will have to use your corpse instead! Hehehe! Die fool!~
 IF ~~ THEN DO ~
-   SetGlobal("h_ZhontacBounty","GLOBAL",3)
+   SetGlobal("h_ZhontacBounty","GLOBAL",4)
    AddJournalEntry(@440,QUEST)
    Enemy()~ EXIT
 END

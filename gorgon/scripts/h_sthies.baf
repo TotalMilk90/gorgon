@@ -32,6 +32,16 @@ END
 
 IF
 	Global("h_ShadowWar","GLOBAL",9)
+	GlobalGT("h_BetrayBaldwin","GLOBAL",0)
+THEN
+	RESPONSE #100
+	         ChangeEnemyAlly(Myself,ALLY)
+	         ApplySpell(Myself,CHARM_KORAX)
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",9)
+	Global("h_BetrayBaldwin","GLOBAL",0)
 THEN
 	RESPONSE #100
 	         SmallWait(3)

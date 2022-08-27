@@ -122,6 +122,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@418,QUEST_DONE)
    TakePartyItem("h_misc09")
+   DestroyItem("h_misc09")
    GiveGoldForce(500)
    AddExperienceParty(300)~ EXIT
 END
@@ -219,7 +220,7 @@ IF ~Global("h_LiedelQuest","GLOBAL",4)~ THEN BEGIN BOUNTY_2
        +~Global("h_KatredaBounty","GLOBAL",5)~+ ~I am here regarding the bounty on Katreda.~ GOTO KATREDA_3
        +~Global("h_MagnusBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_1
        +~Global("h_KilledMagnus","GLOBAL",2)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_3
-       +~Global("h_ZhontacBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_5
+       +~Global("h_ZhontacBounty","GLOBAL",4)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_5
        ++ ~Nothing to report as of yet.~ EXIT
 END
 
@@ -233,6 +234,7 @@ IF ~~ THEN BEGIN EURO_2
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc10")
+   DestroyItem("h_misc10")
    AddJournalEntry(@429,QUEST_DONE)
    GiveGoldForce(1000)
    AddExperienceParty(600)
@@ -249,6 +251,7 @@ IF ~~ THEN BEGIN EURO_4
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc10")
+   DestroyItem("h_misc10")
    AddJournalEntry(@430,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT
@@ -309,13 +312,13 @@ END
 
 IF ~~ THEN BEGIN ZHONTAC_5
    SAY ~Alright, I'm listening.~
-       ++ ~I decided to collect his bounty without entertaining his request..~ GOTO ZHONTAC_4
+       ++ ~I decided to collect his bounty without entertaining his request.~ GOTO ZHONTAC_6
 END
 
 IF ~~ THEN BEGIN ZHONTAC_6
    SAY ~Honestly, <CHARNAME>, I don't blame you. It was a little out there. Here is your usual reward then, 500 gold coins.~
 IF ~~ THEN DO ~
-   SetGlobal("h_ZhontacBounty","GLOBAL",4)
+   SetGlobal("h_ZhontacBounty","GLOBAL",5)
    AddJournalEntry(@440,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT

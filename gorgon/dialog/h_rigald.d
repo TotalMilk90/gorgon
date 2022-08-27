@@ -416,7 +416,7 @@ END
 
 IF ~~ THEN BEGIN LOTUS_4
    SAY ~I am sending you to the Nashkel Carnival to deliver the lotus to our buyer. He will be awaiting you in the eastern-most tent.~
-       ++ ~Is it safe to go back into Amn while we at war with the Shadow Thieves?~ GOTO LOTUS_5
+       ++ ~Is it safe to go back into Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~How much coin should I expect to recieve from the buyer?~ GOTO LOTUS_6
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7
 END
@@ -429,7 +429,7 @@ END
 
 IF ~~ THEN BEGIN LOTUS_6
    SAY ~You will be selling five pounds of black lotus at 1000 gold pieces per pound. I will award you with a 20% cut upon successful transportation of the product.~
-       ++ ~Is it safe to go back into Amn while we at war with the Shadow Thieves?~ GOTO LOTUS_5
+       ++ ~Is it safe to go back into Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7
 END
 

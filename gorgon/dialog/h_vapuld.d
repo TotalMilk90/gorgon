@@ -15,7 +15,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I knew this day would come sooner or later. I am not afraid. If death is my final atonement then I will glady give my life.~
+   SAY ~I knew this day would come sooner or later. I am not afraid. If death is my final atonement then I will gladly give my life.~
        ++ ~So be it. Prepare yourself then, and I will send you to your god presently.~ GOTO 7
        ++ ~Hold on now. What made you betray your guild in the first place?~ GOTO 4
 END

@@ -52,8 +52,8 @@ WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
 
-Version 1:
--ALPHA Release
+<p>Version 1:</p>
+<p>-ALPHA Release</p>
 
 <h2>Legal</h2>
 <p>This mod is unofficial Fan Content permitted under the Fan Content Policy. Not

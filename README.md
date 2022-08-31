@@ -51,6 +51,10 @@ Portraits: The NwN Vault
 WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
+<h3>Version 2:</h3>
+<p>-Fixed a quest loop and some broken scripts</p>
+<p>-Lots of minor dialog and quest improvements</p>
+<p>-Made some enhancements to one of the final battles</p>
 
 <h3>Version 1:</h3>
 <p>-ALPHA Release</p>

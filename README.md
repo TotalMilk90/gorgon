@@ -52,7 +52,7 @@ WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
 
-<p>Version 1:</p>
+<h3>Version 1:</h3>
 <p>-ALPHA Release</p>
 
 <h2>Legal</h2>

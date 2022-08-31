@@ -52,8 +52,8 @@ WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
 
-Version 1.0: August 26, 2022
-ALPHA Release
+Version 1:
+-ALPHA Release
 
 <h2>Legal</h2>
 <p>This mod is unofficial Fan Content permitted under the Fan Content Policy. Not

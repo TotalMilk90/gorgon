@@ -1,5 +1,5 @@
-The Gorgon's Eye
-V.1 ALPHA
+The Gorgon's Eyesssss
+V.2
 
 =======
 Prequel
@@ -28,10 +28,12 @@ players, excluding those with a lawful-good alignment.
 ==============
 Future Content
 ==============
--Danika, a new joinable Demarchess of Mask NPC.
--Demarch/ess of Mask, a new cleric kit.
--Quests following the conclusion of the mod's story.
--A few new items and possibly upgrades.
+-Danika, a Demarchess of Mask, joinable NPC
+-Demarch/ess of Mask, a new cleric kit
+-Quests following the conclusion of the mod's story
+-Quests from the smaller guild sections(smugglers, gamesmen, and courtesans)
+-Encounters involving Beregost's citizens
+-A few new items and possibly upgrades
  
 ================
 Acknowledgements
@@ -53,7 +55,12 @@ WeiDU: Wes Weimer, the bigg and Wisp
 ===============
 Version History
 ===============
-Version 1.0: August 26, 2022
+Version 2:
+-Fixed a quest loop and some broken scripts
+-Lots of minor dialog and quest improvements
+-Made some enhancements to one of the final battles
+
+Version 1:
 -ALPHA Release
 
 =====

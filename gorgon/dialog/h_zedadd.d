@@ -1,12 +1,12 @@
 BEGIN h_zedadd
 
 IF ~Global("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~*sniff* *sniff* Hmmm. You smell of books... and blood. Name's Zeda by the way, and behind me is the finest smugglin' crew to be found.~ IF ~~ THEN EXIT
+   SAY ~*sniff* *sniff* Hmmm. You smell of books... and blood.~ IF ~~ THEN EXIT
 END
 
 IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
-   SAY ~If you need somethin' smuggled, I'm your girl.~
-       ++ ~I'll keep that in mind~ EXIT
+   SAY ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
+       ++ ~I'll keep that in mind.~ EXIT
        +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
 END
 

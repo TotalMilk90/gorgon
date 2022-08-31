@@ -4,6 +4,6 @@ IF
 
 THEN
         RESPONSE #100
-                 Wait(1)
+                 Wait(2)
                  StartDialog("h_tuztdd",[PC])
 END

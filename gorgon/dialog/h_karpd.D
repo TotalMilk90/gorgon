@@ -12,7 +12,7 @@ IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
    GiveItem("h_ring06",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
-   GiveItem("h_misc06",LastTalkedToBy)
+   GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)
    ReputationInc(-1)
    EscapeArea()~ EXIT
 END
@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN BLACKMAIL_3
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_4
-   SAY ~If you can guarantee his safe passage then I suppose I could trade you the rings. I have a sister in Athkatla who is willing to take him in until I can afford my expense as well. I guess I have no choice but to trust you. Here are the rings then.~
+   SAY ~If you can guarantee his safe passage then I suppose I could trade you the rings. I have a sister in Athkatla, who is willing to take him in until I can afford my expense as well. I guess I have no choice but to trust you. Here are the rings then.~
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
@@ -57,20 +57,27 @@ END
 
 IF ~~ THEN BEGIN CHARM_1
    SAY ~Oh, err... Yes of course, I wasn't expecting you so soon. You look a little more brutish than was described.~
-       ++ ~Yes and with your name I was expecting to meet with a fish, but that isn't the case now is it?~ GOTO CHARM_2
-       ++ ~Oh, yes well with all the bandits on the road it does add a bit of roughness to you as you travel.~ GOTO CHARM_4
+       ++ ~I am just weary from my travels, m'lady, please forgive my appearance.~ GOTO CHARM_4
+       ++ ~Well, know that I am quite embarrassed to be so dirty in front of someone as lovely as you.~ GOTO CHARM_3
+       ++ ~Yes, and with your name I was expecting to meet with a fish, but that isn't the case now is it?~ GOTO CHARM_2
+       ++ ~Oh, yes well with all the bandits on the road, it does add a bit of roughness to you as you travel.~ GOTO CHARM_4
        ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
 END
 
 IF ~~ THEN BEGIN CHARM_2
    SAY ~Haw haw! It's been a few years since I've heard that one. My daddy was a fisherman you know.~
-       ++ ~Well you do seem like a fine catch if I've ever seen one.~ GOTO CHARM_3
+       +~CheckStatGT(Player1,17,CHR)~+ ~Well you do seem like a fine catch if I've ever seen one.~ GOTO CHARM_3.5
+       +~CheckStatLT(Player1,18,CHR)~+ ~Well you do seem like a fine catch if I've ever seen one.~ GOTO CHARM_3
        ++ ~Was he now? I've always enjoyed the sport myself. Shall we get to business then?~ GOTO CHARM_4
        ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
 END
 
 IF ~~ THEN BEGIN CHARM_3
    SAY ~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_4
+END
+
+IF ~~ THEN BEGIN CHARM_3.5
+   SAY ~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_6.5
 END
 
 IF ~~ THEN BEGIN CHARM_4
@@ -94,8 +101,12 @@ IF ~~ THEN BEGIN CHARM_6
    SAY ~*Laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
 END
 
+IF ~~ THEN BEGIN CHARM_6.5
+   SAY ~You know, I was worried for a moment that you weren't the one I was supposed to meet, but now I have no doubts. Here are your rings.~ IF ~~ THEN GOTO CHARM_7
+END
+
 IF ~~ THEN BEGIN CHARM_7
-   SAY ~Actually, may I ask a favor of you? I'm looking to discretely obtain passage to Athkatla for my son and I. If you know of anyone who could provide such a service I would be eternally grateful.~
+   SAY ~Actually, may I ask a favor of you? I'm looking to discretely obtain passage to Athkatla, for my son and I. If you know of anyone who could provide such a service, I would be eternally grateful.~
        ++ ~Sure, I will ask around and look into it for you.~ GOTO CHARM_8
        ++ ~Sorry but I don't really have the time for that right now.~ GOTO CHARM_9
 END
@@ -130,10 +141,10 @@ IF WEIGHT #-2 ~True() Global("h_KarpWork","GLOBAL",2)~ THEN BEGIN JOB_1
 END
 
 IF ~~ THEN BEGIN JOB_2
-   SAY ~Thank you, truly. Here, I want you to have something, I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
+   SAY ~Thank you, truly. Here, I want you to have something. I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
 IF ~~ THEN DO ~
    AddJournalEntry(@320,QUEST_DONE)
-   GiveItem("h_misc06",LastTalkedToBy)
+   GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)
    AddExperienceParty(300)
    EscapeArea()~ EXIT
 END

@@ -12,7 +12,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I am one of Baldwin's Snake Heads, a black ops squadron of his most trusted and covert spies.~
+   SAY ~I am one of Baldwin's, Snake Heads, a black ops squadron of his most trusted and covert spies.~
        ++ ~You look pretty roughed up. How are you even alive, yet alone talking?~ GOTO 4
        ++ ~What happened to you?~ GOTO 5
 END

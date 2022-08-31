@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~I tried to fight back, but he was too strong. When he was trying to carry me out of the tavern he lost his balance and collapsed into one of the tables.~ IF ~~ THEN GOTO 5
+   SAY ~I tried to fight back, but he was too strong. When he was trying to carry me out of the tavern, he lost his balance and collapsed into one of the tables.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -42,18 +42,19 @@ IF ~~ THEN DO ~
 END
 
 IF ~GlobalLT("h_AishaBounty","GLOBAL",4) GlobalGT("h_AishaBounty","GLOBAL",0)~ THEN BEGIN 8
-   SAY ~You're back! Were you able to find Amrius?~
+   SAY ~You're back! Did you end up speaking with Amrius?~
        +~Global("h_AishaBounty","GLOBAL",3)~+ ~Yes, you don't have to worry about him anymore.~ GOTO 9
        +~GlobalLT("h_AishaBounty","GLOBAL",3)~+ ~Not yet, I'll be heading there shortly.~ EXIT
        +~GlobalLT("h_AishaBounty","GLOBAL",3)~+ ~I've decided to just kill you and collect the bounty.~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Oh wonderful, thank you so much! Here, I don't have any gold but hopefully this necklace will be a suitable reward.~
+   SAY ~Oh, wonderful! Thank you so much! Here, I don't have much gold, but hopefully this necklace will be a suitable reward.~
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",4)
    AddJournalEntry(@423,QUEST)
    GiveItemCreate("AMUL04",LastTalkedToBy,0,0,0)
+   AddExperienceParty(300)
    ReputationInc(1)~ EXIT
 END
 

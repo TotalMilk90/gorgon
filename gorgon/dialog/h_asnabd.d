@@ -5,13 +5,13 @@ IF ~Global("h_KatredaBounty","GLOBAL",3)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Wait, you wouldn't be here on our behalf now would you? I placed a bounty on this witch, Katreda, but so far none have answered the call.~
-       ++ ~I just finished speaking with Katreda and I have decided to help her. Take your men and go. Find another wood to build your lodge in.~ GOTO 2
+   SAY ~You wouldn't be here on our behalf now would you? I offered a reward for the removal of this witch, Katreda, but so far none have answered the call.~
+       ++ ~I have just finished speaking with Katreda and I have decided to help her. Take your men and go. Find another wood to build your lodge in.~ GOTO 2
        ++ ~Katreda has offered me a more substantial reward. You'll have to do better if you want my help.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Why in gods name would you help that... freakish creature?!~ IF ~~ THEN GOTO 4
+   SAY ~Why in gods name would you help that... fiendish creature!~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 3

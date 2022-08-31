@@ -13,7 +13,8 @@ THEN
 END
 
 IF
-	 Global("h_SpawnAriosh","GLOBAL",3)
+	 //Global("h_SpawnAriosh","GLOBAL",3)
+	 Global("h_ShadowWar","GLOBAL",2)
 THEN
 	 RESPONSE #100
 	          EscapeArea()

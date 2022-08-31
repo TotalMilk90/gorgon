@@ -8,21 +8,19 @@ IF ~~ THEN BEGIN FINAL_1
    SAY ~Thank you for your assistance, <CHARNAME>. Your help has been nothing short of invaluable to me.~
        ++ ~Of course, Baldwin. How do we proceed from here?~ GOTO FINAL_2
        ++ ~I cannot let you continue with this. I have been warned of the dangers this weapon will bring and it must be destroyed!~ GOTO FINAL_6
-       ++ ~You have all the pieces in front of you, yet you are alone, and the staff remains disassembled. I think I shall kill you and take it for myself!~ GOTO FINAL_7
+       ++ ~You are alone, Baldwin, and have all the pieces laid in front of you, yet it still remains disassembled. I think I shall kill you and take it for myself!~ GOTO FINAL_7
 END
 
 IF ~~ THEN BEGIN FINAL_2
-   SAY ~I will be leaving the guild to begin my crusade into Amn, where I will use the Kerykeion to eliminate the Shadow Thieves from this world.~
-       ++ ~Is the Kerykeion really powerful enough to do that?~ GOTO FINAL_3
+   SAY ~I will be leaving the guild to begin my crusade into Amn, where I will use the Kerykeion to eliminate the Shadow Thieves from this world.~ IF ~~ THEN GOTO FINAL_4
 END
-
+/*
 IF ~~ THEN BEGIN FINAL_3
-   SAY ~Over time it will be, yes. It's strength and abilities will grow the longer it is in use.~
-       ++ ~What will happen to the Gorgon's Eye?~ GOTO FINAL_4
+   SAY ~~
 END
-
+*/
 IF ~~ THEN BEGIN FINAL_4
-   SAY ~It will need a new leader of course, and I plan to leave it under your directive. You have shown great promise in this field and in turn have gained the respect of your guildmates.~ IF ~~ THEN GOTO FINAL_5
+   SAY ~The Gorgon's Eye will need a new leader, of course, and I plan to leave it under your directive. You have shown great promise in this field and I believe you the most capable for this task.~ IF ~~ THEN GOTO FINAL_5
 END
 
 IF ~~ THEN BEGIN FINAL_5
@@ -30,7 +28,7 @@ IF ~~ THEN BEGIN FINAL_5
 END
 
 IF ~~ THEN BEGIN FINAL_6
-   SAY ~Destroyed! You poor ignorant fool. I have toiled for years to obtain this staff and I'll not waste those efforts on your baseless fears.~ IF ~~ THEN GOTO FINAL_8
+   SAY ~Destroyed? You poor, ignorant fool. I have toiled for years to obtain this staff and I'll not have those efforts wasted on your baseless fears.~ IF ~~ THEN GOTO FINAL_8
 END
 
 IF ~~ THEN BEGIN FINAL_7
@@ -55,13 +53,13 @@ END
 
 CHAIN
    IF ~Global("h_BaldwinQuest","GLOBAL",9)~ THEN h_bald2d 0
-~Evening Gerard. I suspect you understand the reason for my visit.~
+~Evening, Gerard. I suspect you understand the reason for my visit.~
    == NOBL10
 ~Absolutely not. What is the meaning of this intrusion? I demand you leave my premises at once!~
    == h_bald2d
 ~Sorry, but that won't be happening. Hiring the Shadow Thieves against us was a deadly mistake.~
    =
-~Hand over the Kerykeion and I shall reward you with a quick death. Refuse and I will slowly begin to sever off your appendages.~
+~Hand over the Kerykeion and I shall reward you with a quick death. Refuse and you will learn how I received my namesake.~
    == NOBL10
 ~Kill me if you must, Butcher. But let it be known that I will no longer suffer your indignities any longer.~
    == h_bald2d

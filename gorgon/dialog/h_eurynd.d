@@ -2,10 +2,10 @@ BEGIN h_eurynd
 
 IF ~True()~ THEN BEGIN 0
    SAY ~I have a wide array of munitions for sale if you're interested in perusing my wares. I can also find buyers for any... misappropriated merchandise that you may find yourself in possession of.~ IF ~~ THEN EXIT
-       +~Global("h_GuildItems","GLOBAL",1)~+ ~I am here to collect my guild armaments.~ GOTO ARMOR_2
        ++ ~Sure, let me see what you have.~ GOTO STORE_1
        ++ ~No thanks, I'm not interested.~ EXIT
        ++ ~Do I have any equipment that you can upgrade?~ GOTO UPGRADE_1
+       +~Global("h_GuildItems","GLOBAL",1)~+ ~I am here to collect my guild armaments.~ GOTO ARMOR_2
        +~PartyHasItem("h_misc03")~+ ~I have brought back the remains of the Kerykeion. Would you be able to repair it in any way?~ GOTO KERY_1
 END
 
@@ -233,7 +233,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",6) Global("h_BetrayBaldwin","GLOBAL",2) Global("h_FakeKery","GLOBAL",1)~ THEN BEGIN BETRAY_0
-   SAY ~<CHARNAME>, over here a moment. I have a new weapon that you may be interested in. The shortbow of the Shaar.~
+   SAY ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",3)
    SetGlobal("h_GuildMusic","GLOBAL",3)
@@ -243,7 +243,7 @@ END
 
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOBAL",0)~ THEN BEGIN BETRAY_1
    SAY ~Keep your voice down and be smart. Are we on the same page?~
-       ++ ~So, it's you then. You're the Shadow Thieves plant?~ GOTO BETRAY_3
+       ++ ~So, it's you then. You're the Shadow Thieves plant!~ GOTO BETRAY_3
        +~Gender(Player1,FEMALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2
        +~Gender(Player1,MALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2.5
 END
@@ -261,11 +261,11 @@ IF ~~ THEN BEGIN BETRAY_3
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY ~We have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to use the Kerykeion without conducting a proper inspection.~ IF ~~ THEN GOTO BETRAY_5
+   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion without finishing his proper inspections.~ IF ~~ THEN GOTO BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_5
-   SAY ~When he does, the device should fail and will kill him instantly. Afterwards, we will assume control of the guild and you will get your reward.~
+   SAY ~When he does, the device should fail and should kill him instantly. Afterwards, we will assume control of the guild and you will recieve your reward.~
        ++ ~What about the rest of the guildmates?~ GOTO BETRAY_6
        ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
        ++ ~I am ready to begin.~ GOTO BETRAY_9
@@ -273,7 +273,7 @@ IF ~~ THEN BEGIN BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_6
-   SAY ~If they're smart, they'll surrender. If not... then be prepared to fight.~
+   SAY ~They are a stubborn bunch, yet their loyalty to Baldwin remains in question. If they are smart, they will surrender. If not... then be prepared to fight.~
        ++ ~I didn't want to kill everyone, I just wanted to stop Baldwin.~ GOTO BETRAY_7
        ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
        ++ ~I am ready to begin.~ GOTO BETRAY_9
@@ -281,7 +281,7 @@ IF ~~ THEN BEGIN BETRAY_6
 END
 
 IF ~~ THEN BEGIN BETRAY_7
-   SAY ~It might be a little too late for that, I'm afraid. We have brought the Shadow Thieves into their home. That is not something easily forgiven.~
+   SAY ~It might be a little too late for that, I'm afraid. We have brought the Shadow Thieves into their home. That is not something they will easily overlook.~
        ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
        ++ ~I am ready to begin.~ GOTO BETRAY_9
        ++ ~I need a little more time to prepare.~ GOTO BETRAY_10
@@ -312,7 +312,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOBAL",1)~ THEN BEGIN BETRAY_1
-   SAY ~I can't stall much longer. Have you finished your preparations?~
+   SAY ~We can not stall for much longer. Have you finished making your preparations?~
        ++ ~Yes, I am ready to begin.~ GOTO BETRAY_9
        ++ ~I still need a little more time.~ GOTO BETRAY_10
 END

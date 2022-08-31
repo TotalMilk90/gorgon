@@ -154,13 +154,13 @@ END
 
 IF ~~ THEN BEGIN FINAL_6
    SAY ~The position is yours if you'll have it. What do you say?~
-       ++ ~I accept your offer and will assume control of the Gorgon's Eye as its guildmaster.~ GOTO FINAL_7
+       ++ ~I accept your offer and will assume control of the Gorgon's Eye, as its guildmaster.~ GOTO FINAL_7
        ++ ~I accept your offer but I am not sure how active of a leader I can be, as I have a different journey that I must take.~ GOTO FINAL_8
        ++ ~I have no wish to lead the Gorgon's Eye at this time, so I must decline your offer.~ GOTO FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_7
-   SAY ~Excellent. Speak with me upon your return and I will discuss our operations at length.~
+   SAY ~Speak with me upon your return and I will discuss our operations at length.~
 IF ~~ THEN DO ~
    SetGlobal("h_Meredia","GLOBAL",1)
    SetGlobal("h_Saradin","GLOBAL",4)

@@ -9,33 +9,36 @@ END
 
 IF ~~ THEN BEGIN B_10
    SAY ~Payments? What is the meaning of this? I have no loan through you.~
-       ++ ~You've been selling black lotus without the consent of the Gorgon's Eye. If you wish to continue you will need to pay us a cut of your profits.~ GOTO B_11
-       ++ ~Well, you've been selling black lotus here and I want a cut. If you don't do as I say I'll use this dagger to cut your teeth out one by one.~ GOTO B_14
+       ++ ~You've been selling black lotus without the consent of the Gorgon's Eye. If you wish to continue, you will need to pay us a cut of your profits.~ GOTO B_11
 END
 
 IF ~~ THEN BEGIN B_11
    SAY ~Consent? Why the bloody hell do I need your consent to conduct business in my own home?~
        ++ ~Maybe I'll go tell the guards of your little operation here and see what they think.~ GOTO B_12
-       ++ ~Just make it easier on yourself, lad. Do you really wish to make us your enemies?~ GOTO B_13
-       ++ ~You will do as I say or you will be killed.~ GOTO B_14
+       ++ ~You haven't thought this through have you? I have the backing of an entire guild behind me. Do you really wish to make us your enemies?~ GOTO B_13
+       ++ ~If you are going to be difficult, then I have no choice but to use violence. I shall beat you mercilessly until you concede.~ GOTO B_14
+       ++ ~Because I demand it! *unsheathe your blade* Do as I say or I'll paint the room red with your blood.~ GOTO B_14
+       ++ ~Look, Borland, It's not a bad deal. Think of it as a security cost. You'll still make out well and you won't have to worry about any... unforeseen accidents.~ GOTO B_13
 END
 
 IF ~~ THEN BEGIN B_12
    SAY ~Go ahead, they won't listen to you. I have too much renown in this city. Plus, a few of them are on my client list.~
-       ++ ~Just make it easier on yourself, lad. Do you really wish to make us your enemies?~ GOTO B_13
-       ++ ~You will pay us or you will be killed.~ GOTO B_14
+       ++ ~You haven't thought this through have you? I have the backing of an entire guild behind me. Do you really wish to make us your enemies?~ GOTO B_13
+       ++ ~If you are going to be difficult, then I have no choice but to use violence. I shall beat you mercilessly until you concede.~ GOTO B_14
+       ++ ~Because I demand it! *unsheathe your blade* Do as I say or I'll paint the room red with your blood.~ GOTO B_14
+       ++ ~Look, Borland, It's not a bad deal. Think of it as a security cost. You'll still make out well and you won't have to worry about any... unforeseen accidents.~ GOTO B_13
 END
 
 IF ~~ THEN BEGIN B_13
-   SAY ~*sigh* That is a fair point. I will comply then, as I have no wish to die over a loss in profits. The trade will still be lucrative enough.~
+   SAY ~*sigh* That is a fair point. I will comply then, as I have no wish to die over a small loss in profits. The trade will still be lucrative enough.~
        ++ ~Glad you're a reasonable man Borland. Someone will stop by each month to collect your payments.~ GOTO B_15
-       ++ ~Sorry but that won't quite cut it. On top of the monthly payments, I will need you to hand over your remaining black lotus as well as all your coin.~ GOTO B_16
+       ++ ~Sorry, but that won't quite cut it. On top of the monthly payments, I will need you to hand over your remaining black lotus, as well as all your coin.~ GOTO B_16
 END
 
 IF ~~ THEN BEGIN B_14
    SAY ~*sigh* Alright, I will comply then. I have no wish to die over a loss in profits. The trade will still be lucrative enough.~
        ++ ~Glad you're a reasonable man Borland. Someone will stop by each month to collect your payments.~ GOTO B_15
-       ++ ~Sorry but that won't quite cut it. On top of the monthly payments, I will need you to hand over your remaining black lotus as well as all your coin.~ GOTO B_16
+       ++ ~Sorry, but that won't quite cut it. On top of the monthly payments, I will need you to hand over your remaining black lotus, as well as all your coin.~ GOTO B_16
 END
 
 IF ~~ THEN BEGIN B_15
@@ -62,20 +65,20 @@ END
 
 IF ~~ THEN BEGIN GOOD_1
    SAY ~Is that so? And what do you plan to do about it?~
-       ++ ~If you don't comply then I will turn you into the authorities.~ GOTO GOOD_2
+       ++ ~If you don't comply, then I will be forced to turn you into the authorities.~ GOTO GOOD_2
        ++ ~Do you not care about all the lives you are ruining?~ GOTO GOOD_3
 END
 
 IF ~~ THEN BEGIN GOOD_2
    SAY ~Go ahead, they won't listen to you. I have too much renown in this city. Plus, a few of them are on my client list.~
        ++ ~Do you not care about all the lives you are ruining?~ GOTO GOOD_3
-       ++ ~Then I have no choice but to use violence. Cease your drug peddling at once or I shall beat you mercilessly until you break.~ GOTO GOOD_4
+       ++ ~Then I have no choice but to use violence. I shall beat you mercilessly until you agree to cease your drug peddling.~ GOTO GOOD_4
 END
 
 IF ~~ THEN BEGIN GOOD_3
-   SAY ~Why should I? I don't force my product on anyone. It is 100% their choice. Either way, the trade is so lucrative I probably wouldn't care anyways.~
-       ++ ~If you don't comply then I will turn you into the authorities.~ GOTO GOOD_2
-       ++ ~Then I have no choice but to use violence. Cease your drug peddling at once or I shall beat you mercilessly until you break.~ GOTO GOOD_4
+   SAY ~Why should I? I don't force my product on anyone. It is 100% their choice. Although, to be fair, the trade is so lucrative I probably wouldn't care anyways.~
+       ++ ~If you don't comply, then I will be forced to turn you into the authorities.~ GOTO GOOD_2
+       ++ ~Then I have no choice but to use violence. I shall beat you mercilessly until you agree to cease your drug peddling.~ GOTO GOOD_4
 END
 
 IF ~~ THEN BEGIN GOOD_4

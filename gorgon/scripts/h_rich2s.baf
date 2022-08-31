@@ -18,25 +18,3 @@ THEN
 		  SmallWait(1)
 		  StartDialog("h_rich2d",[PC])
 END
-/*
-IF
-         See([PC])
-         Global("h_SpawnRichard","GLOBAL",4)
-THEN
-	 RESPONSE #100
-		  PlaySong(0)
-                  PlaySound("h_figmus")
-                  SetGlobal("h_SpawnRichard","GLOBAL",5)
-END
-
-
-IF
-         See([PC])
-         Dead("h_snak2c")
-THEN
-	 RESPONSE #100
-		  SmallWait(3)
-		  StartDialog("h_richad",[PC])
-END
-*/
-

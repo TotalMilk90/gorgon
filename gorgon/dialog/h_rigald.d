@@ -48,7 +48,7 @@ IF ~~ THEN BEGIN GEM_7
 END
 
 IF ~~ THEN BEGIN GEM_8
-   SAY ~Our intel suggests he likes to keep his most prized item on his person at all times. Your task is to go relieve him of whatever that may be.~
+   SAY ~Our intel suggests he likes to keep his most prized item on his person at all times. Your task is to go and relieve him of whatever that may be.~
        ++ ~Sounds simple enough. Is there anything else that I should know?~ GOTO GEM_9
 END
 
@@ -74,7 +74,7 @@ IF ~~ THEN BEGIN GEM_12
 END
 
 IF ~~ THEN BEGIN GEM_13
-   SAY ~You have proven to possess the skills necessary to succeed on your own merits, and without these insticts, a thief is nothing.~ IF ~~ THEN GOTO GEM_14
+   SAY ~You have proven to possess the skills necessary to succeed on your own merits, and without these instincts, a thief is nothing.~ IF ~~ THEN GOTO GEM_14
 END
 
 IF ~~ THEN BEGIN GEM_14
@@ -100,12 +100,12 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",3)~ THEN BEGIN GERARD_1
    SAY ~If you are ready to begin, I have another assignment for you.~
-       ++ ~Yes, I am ready for my next mission.~ GOTO GERARD_2
+       ++ ~I am ready for my next mission.~ GOTO GERARD_2
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
 IF ~~ THEN BEGIN GERARD_2
-   SAY ~I am sure you're aware of the large manor here in northern Beregost, yes? Well its proprietor Gerard Travenhurst pays us to ensure that his house remains safe and... unburgled.~ IF ~~ THEN GOTO GERARD_3
+   SAY ~I am sure you're aware of the large manor here in northern Beregost, yes? Well its proprietor, Gerard Travenhurst, pays us to ensure that his house remains safe and... unburgled.~ IF ~~ THEN GOTO GERARD_3
 END
 
 IF ~~ THEN BEGIN GERARD_3
@@ -124,7 +124,7 @@ IF ~~ THEN BEGIN GERARD_5
    SAY ~The pendant's worth is measured in sentiment, as opposed to coin. This is his most prized family heirloom and is an obvious way to get our message across.~
        ++ ~I dislike the task, but I understand you have a reputation to maintain.~ GOTO GERARD_6
        ++ ~What should I do if he refuses to hand it over?~ GOTO GERARD_7
-       ++ ~Good as done. I'll return when I have the pendant in my possession.~ GOTO GERARD_7
+       ++ ~I'll return when I have the pendant in my possession.~ GOTO GERARD_7
 END
 
 IF ~~ THEN BEGIN GERARD_6
@@ -135,7 +135,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN GERARD_7
-   SAY ~For a helpless noble he does have quite the spirit. If he doesn't respond to threats, then violence may be the only answer.~
+   SAY ~For a helpless noble, he does have quite the spirit. If he doesn't respond to threats, then violence may be the only answer.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",4)
    AddJournalEntry(@312,QUEST)~ EXIT
@@ -143,7 +143,7 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",4)~ THEN BEGIN GERARD_8
    SAY ~Well? What did good ol' Gerard have to say for himself? Were you able to acquire his pendant?~
-       +~PartyHasItem("h_misc05")~+ ~I was, and he won't be missing any more payments.~ GOTO GERARD_9
+       +~PartyHasItem("h_misc05")~+ ~Here it is. Gerard will be resuming his payments and his guards will no longer be an issue.~ GOTO GERARD_9
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
@@ -152,7 +152,7 @@ IF ~~ THEN BEGIN GERARD_9
 END
 
 IF ~~ THEN BEGIN GERARD_10
-   SAY ~Congratulations, <CHARNAME>. Your trial phase has concluded and you have been promoted to a full-fledged member of the Gorgon's Eye. If you wish, you may now speak with Liedel for a current list of all active bounties.~ IF ~~ THEN GOTO GERARD_11
+   SAY ~Congratulations, <CHARNAME>. Your trial phase has concluded and you have been promoted to a full-fledged member of the Gorgon's Eye. If you wish, you may now speak with Liedel for a current list of all our active bounties.~ IF ~~ THEN GOTO GERARD_11
 END
 
 IF ~~ THEN BEGIN GERARD_11
@@ -177,11 +177,11 @@ END
 
 
 IF ~Global("h_RigaldoQuest","GLOBAL",6)~ THEN BEGIN KARP_1
-   SAY ~Ah, my friends! Back for another venture in the pursuit of coin are we? Well, a strange report from Nashkel just reached my ear and I'll be sending you down to investigate.~ IF ~~ THEN GOTO KARP_2
+   SAY ~Ah, my friends! Back for another venture in the pursuit of coin, are we? Well, a strange report from Nashkel just reached my ear and I'll be sending you down to investigate.~ IF ~~ THEN GOTO KARP_2
 END
 
 IF ~~ THEN BEGIN KARP_2
-   SAY ~A lass by the name of Karp has mysteriously found several magical items buried on her farmland this past season.~ IF ~~ THEN GOTO KARP_3
+   SAY ~A lass by the name of Karp, has mysteriously found several magical items buried on her farmland this past season.~ IF ~~ THEN GOTO KARP_3
 END
 
 IF ~~ THEN BEGIN KARP_3
@@ -193,7 +193,7 @@ IF ~~ THEN BEGIN KARP_4
 END
 
 IF ~~ THEN BEGIN KARP_5
-   SAY ~Second, and giving possible reason for the action above, she is withholding all of her findings from her husband, the poor sod.~ IF ~~ THEN GOTO KARP_6
+   SAY ~Second, and giving probable cause for her secretive deals, she is withholding all of her findings from her husband, the poor sod.~ IF ~~ THEN GOTO KARP_6
 END
 
 IF ~~ THEN BEGIN KARP_6
@@ -205,15 +205,15 @@ IF ~~ THEN BEGIN KARP_7
 END
 
 IF ~~ THEN BEGIN KARP_8
-   SAY ~If you wish to skip all the drudgery then you could simply pick the rings off the lass as well.~
-       ++ ~I'm not against using blackmail. If she's willing to engage in shady dealings behind her husband's back then she may not be so innocent herself.~ GOTO KARP_9
+   SAY ~If you wish to skip all the drudgery, then you could simply pick the rings off her as well.~
+       ++ ~I'm not against using blackmail. If she's willing to engage in shady dealings behind her husband's back, then she may not be so innocent herself.~ GOTO KARP_9
        ++ ~Acting as the buyer sounds like good fun and a chance for me to use my charm and charisma.~ GOTO KARP_9
        ++ ~I think I'll just practice my thieving skills and steal the rings off her when she's not looking.~ GOTO KARP_9
        ++ ~I'm not sure what I will do yet until I speak with this Karp first.~ GOTO KARP_9
 END
 
 IF ~~ THEN BEGIN KARP_9
-   SAY ~Yes well, if you manage to procure both of theses rings before their eventual sale then I'll allow you to keep one as compensation for your efforts.~
+   SAY ~Yes, well, if you manage to procure both of theses rings before their eventual sale, then I will allow you to keep one as compensation for your efforts.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",7)
    AddJournalEntry(@315,QUEST)~ EXIT
@@ -248,7 +248,7 @@ IF ~~ THEN BEGIN CARNIVAL_2
 END
 
 IF ~~ THEN BEGIN CARNIVAL_3
-   SAY ~Ariosh and his rogues will be stationed behind the westernmost tent awaiting your arrival. After you've retrieved the weapons, head to the rendezvous point and distribute the darts among them.~ IF ~~ THEN GOTO CARNIVAL_4
+   SAY ~Ariosh and his rogues will be stationed behind the westernmost tent, awaiting your arrival. After you've retrieved the weapons, head to the rendezvous point and distribute the darts among them.~ IF ~~ THEN GOTO CARNIVAL_4
 END
 
 IF ~~ THEN BEGIN CARNIVAL_4
@@ -256,26 +256,30 @@ IF ~~ THEN BEGIN CARNIVAL_4
 END
 
 IF ~~ THEN BEGIN CARNIVAL_5
-   SAY ~They will grab the licenses and as much coin as they can carry while you report back to me for further instruction. If everything goes accordingly then we'll all be a lot richer by days end.~
+   SAY ~They will grab the licenses and as much coin as they can carry, while you report back to me for further instruction. If everything goes accordingly, then we'll all be a lot richer by days end.~
        ++ ~What exactly do we need the gambling licenses for?~ GOTO CARNIVAL_6
        ++ ~Isn't that Shadow Thief territoy? What if they find out about what we are doing?~ GOTO CARNIVAL_7
        ++ ~Understood. I'll be back shortly.~ GOTO CARNIVAL_8
 END
 
 IF ~~ THEN BEGIN CARNIVAL_6
-   SAY ~They are the most important objective. They will be used to expand and legitimize some of our operations in Amn, making them worth more than any coin we could bring back.~
+   SAY ~They will be used to expand and legitimize some of our operations in Amn, making their appropriation our prime objective.~
        ++ ~Isn't that in Shadow Thief territoy? What if they find out about what we are doing?~ GOTO CARNIVAL_7
        ++ ~Understood. I'll be back shortly.~ GOTO CARNIVAL_8
 END
 
 IF ~~ THEN BEGIN CARNIVAL_7
-   SAY ~They most certainly will, you can be sure of that. It is unnerving I'll admit, but these orders come directly from Baldwin. Don't worry yourself too much though, as the Shadow Thieves have surprisingly little stake in the gambling trade.~
+   SAY ~They most certainly will, you can be sure of that. It is unnerving, I'll admit, but these orders come directly from Baldwin.~ IF ~~ THEN GOTO CARNIVAL_7.5
+END
+
+IF ~~ THEN BEGIN CARNIVAL_7.5
+   SAY ~Don't worry yourself too much, though. Not only do the Shadow Thieves have surprisingly little stake in the gambling trade, but the bulk of their forces tend to stay below the Cloud Peaks.~
        ++ ~What exactly do we need the gambling licenses for?~ GOTO CARNIVAL_6
        ++ ~Understood. I'll be back shortly.~ GOTO CARNIVAL_8
 END
 
 IF ~~ THEN BEGIN CARNIVAL_8
-   SAY ~As you can see we are entrusting you with more responsibility in this mission. This will certainly test your skills as a pickpocket and if successful will increase your standing within the guild.~
+   SAY ~As you can see we are entrusting you with more responsibility in this mission. This will certainly test your skills as a pickpocket and if successful, will increase your standing within the guild.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",9)
    SetGlobal("h_GuildThieves","GLOBAL",2)
@@ -287,11 +291,11 @@ IF ~Global("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN CARNIVAL_9
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",10)~ THEN BEGIN CARNIVAL_10
-   SAY ~I am already aware of your deed and the outcome could not have been more favorable. With the gamesmen unarmed the mission was a complete success.~ IF ~~ THEN GOTO CARNIVAL_11
+   SAY ~I am already aware of your deed and the outcome could not have been more favorable. With the gamesmen unarmed, the mission was a complete success.~ IF ~~ THEN GOTO CARNIVAL_11
 END
 
 IF ~~ THEN BEGIN CARNIVAL_11
-   SAY ~With the licenses in our possession we can now begin preparations for our expansion into Amn. I will need you on standby for the coming weeks until we are ready to proceed.~
+   SAY ~With the licenses in our possession, we can now begin preparations for our expansion further south. Your reward is well earned.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",11)
    AddJournalEntry(@323,QUEST_DONE)
@@ -319,7 +323,7 @@ END
 IF ~GlobalGT("CHAPTER","GLOBAL",2)
    Global("h_RigaldoQuest","GLOBAL",11)
    GlobalGT("h_LiedelQuest","GLOBAL",1)~ THEN BEGIN SPICE_0
-   SAY ~Ah <CHARNAME>, I have a small task lined up that I wish you to perform.~ IF ~~ THEN GOTO SPICE_1
+   SAY ~I have a small task lined up that I wish you to perform.~ IF ~~ THEN GOTO SPICE_1
 END
 
 IF ~~ THEN BEGIN SPICE_1
@@ -336,11 +340,17 @@ END
 
 IF ~~ THEN BEGIN SPICE_4
    SAY ~If he refuses... well then take him for all he has got. Clear out his inventory of spice and relieve him of all his current coin.~
+       ++ ~I've stayed at Borland's plenty of times and he's never offered me any spice.~ GOTO SPICE_4.5
+       ++ ~Understood. I will get him to pay his dues.~ GOTO SPICE_5
+END
+
+IF ~~ THEN BEGIN SPICE_4.5
+   SAY ~Purely anecdotal. Perhaps you had rasied his suspicion in some way. If you meant to imply that my intel was questionable, however, know that I do not deal with uncertainties.~
        ++ ~Understood. I will get him to pay his dues.~ GOTO SPICE_5
 END
 
 IF ~~ THEN BEGIN SPICE_5
-   SAY ~Get to it then. His residence is on the east side of the city across from the Red Sheaf.~
+   SAY ~Get to it then. His residence is on the east side of the city, across from the Red Sheaf.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",12)
    AddJournalEntry(@324,QUEST)~ EXIT
@@ -407,11 +417,11 @@ IF ~Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_1
 END
 
 IF ~~ THEN BEGIN LOTUS_2
-   SAY ~I contancted Borland's spice supplier and we were able to come to terms on a very profitable arrangement.~ IF ~~ THEN GOTO LOTUS_3
+   SAY ~I contacted Borland's spice supplier and we were able to come to terms on a very profitable arrangement.~ IF ~~ THEN GOTO LOTUS_3
 END
 
 IF ~~ THEN BEGIN LOTUS_3
-   SAY ~He will be making regular shipments of the finest black lotus petals for us to distribute as we see fit.~ IF ~~ THEN GOTO LOTUS_4
+   SAY ~He will be delivering us regular shipments of the finest black lotus petals on the market and we have just received our fist batch.~ IF ~~ THEN GOTO LOTUS_4
 END
 
 IF ~~ THEN BEGIN LOTUS_4
@@ -422,13 +432,13 @@ IF ~~ THEN BEGIN LOTUS_4
 END
 
 IF ~~ THEN BEGIN LOTUS_5
-   SAY ~Absolutely not. But risk is a product of ambition, and without it even the most experienced of thieves can become careless and complacent.~
+   SAY ~Absolutely not. But, risk is a requisite of ambition and without it even the most experienced of thieves can become careless and complacent.~
        ++ ~How much coin should I expect to recieve from the buyer?~ GOTO LOTUS_6
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7
 END
 
 IF ~~ THEN BEGIN LOTUS_6
-   SAY ~You will be selling five pounds of black lotus at 1000 gold pieces per pound. I will award you with a 20% cut upon successful transportation of the product.~
+   SAY ~You will be selling five pounds of black lotus at 600 gold pieces per pound. I will award you with a 20% cut upon successful transportation of the product.~
        ++ ~Is it safe to go back into Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7
 END
@@ -448,33 +458,35 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN LOTUS_9
    SAY ~Welcome back, <CHARNAME>. Were you able to successfully transport all of the black lotus?~
-       +~Global("h_LotusQuest","GLOBAL",1) PartyGoldGT(4999)~+ ~I was beset by both the Flaming Fist and the Shadow Thieves but I was still able to manage. Here is the coin.~ GOTO LOTUS_10
-       +~Global("h_LotusQuest","GLOBAL",2) PartyGoldGT(3999)~+ ~I ran into some trouble on the road and was forced to bribe the Flaming Fist with a pound of the lotus.~ GOTO LOTUS_11
+       +~Global("h_LotusQuest","GLOBAL",1) PartyGoldGT(2999)~+ ~I was beset by both the Flaming Fist and the Shadow Thieves but I was still able to manage. Here is the coin.~ GOTO LOTUS_10
+       +~Global("h_LotusQuest","GLOBAL",2) PartyGoldGT(2399)~+ ~I ran into some trouble on the road and was forced to bribe the Flaming Fist with a pound of the lotus.~ GOTO LOTUS_11
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
 IF ~~ THEN BEGIN LOTUS_10
-   SAY ~Very impressive work, <CHARNAME>. I'll throw in an extra 5% for your extra labor and will only take 3750 gold.~
+   SAY ~Very impressive work, <CHARNAME>. I'll take the 3000 gold and return your 20%, with an extra 5% for your trouble, totalling 750 gold.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
-   TakePartyGold(3750)~ EXIT
+   TakePartyGold(3000)
+   GiveGoldForce(750)~ EXIT
 END
 
 IF ~~ THEN BEGIN LOTUS_11
-   SAY ~Damn those corrupt bastards! Yet, either way, I applaud your quick thinking. At our price point we still made out fairly well. I'll take the 3200 gold then and leave you with your 20%.~
+   SAY ~Damn those corrupt bastards! Yet, either way, I applaud your quick thinking. At our price point we still made out fairly well. I'll take the 2400 gold and return your 20%, totalling 480 gold.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
-   TakePartyGold(3200)~ EXIT
+   TakePartyGold(2400)
+   GiveGoldForce(480)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",17)~ THEN BEGIN LOTUS_12
-   SAY ~No new leads as of yet. Baldwin or Liedel may have some work for you.~ IF ~~ THEN EXIT
+   SAY ~No new leads as of yet. Ask around the guild, someone may have some work for you in the meantime.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",18)~ THEN BEGIN END_0

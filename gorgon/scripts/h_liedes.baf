@@ -1,0 +1,8 @@
+IF
+	Global("h_ShadowWar","GLOBAL",9)
+	See([ENEMY])
+THEN
+	RESPONSE #100
+	         SmallWait(3)
+	         Attack([ENEMY])
+END

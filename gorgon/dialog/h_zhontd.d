@@ -31,7 +31,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~Those imbeciles view my approach perverse and unorthodox. Yet their unwillingness to justify my methods is making themselves those very things!~ IF ~~ THEN GOTO 7
+   SAY ~Those imbeciles view my approach perverse and unorthodox. Yet, their unwillingness to justify my methods is making themselves those very things!~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
@@ -39,7 +39,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~I have spotted the perfect specimen for my next experiment. In the early mornings, I have seen a man frequent the southern fountains here with the most fascinating peculiarity about him.~ IF ~~ THEN GOTO 9
+   SAY ~I have spotted the perfect specimen for my next experiment. Here, in the early mornings, I have seen a man frequent the southern fountains with the most fascinating peculiarity about him.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
@@ -49,13 +49,13 @@ END
 IF ~~ THEN BEGIN 10
    SAY ~I want you to kill him and bring me back his corpse, so that I may progress my research.~
        ++ ~Alright. I'll meet you back here after it's done.~ GOTO 12
-       ++ ~How could his hair color possibly contribute any value to your testing?~ GOTO 10.5
+       ++ ~How could his hair color possibly contribute anything of value to your research?~ GOTO 10.5
        ++ ~What you are doing is evil and I will have no part of it!~ GOTO 11
 END
 
 IF ~~ THEN BEGIN 10.5
-   SAY ~How could it not? His hair is blue! I mean... what are you not understanding here?~
-       ++ ~Alright. I'll meet you back here after it's done.~ GOTO 12
+   SAY ~How could it not? His hair is blue! I mean... what more is there to get?~
+       ++ ~I'll meet you back here after it's done.~ GOTO 12
        ++ ~What you are doing is evil and I will have no part of it!~ GOTO 11
 END
 
@@ -90,7 +90,7 @@ END
 IF ~~ THEN BEGIN 14
    SAY ~Excellent! An honorable sacrifice made for the greater good. Now, if you'll excuse me, I have a lot of work to do.~
        ++ ~Thank you, Zhontac. Good luck with your experiments.~ GOTO 15
-       ++ ~It's nothing personal Zhontac but there's still the matter of your bounty, and I mean to collect it.~ GOTO 16
+       ++ ~It's nothing personal, Zhontac, but there's still the matter of your bounty, and I mean to collect it.~ GOTO 16
 END
 
 IF ~~ THEN BEGIN 15
@@ -104,7 +104,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 16
-   SAY ~Then you are a fool and will just be another corpse for me to dissect!~
+   SAY ~Then you are a fool who will be another corpse for me to dissect!~
 IF ~~ THEN DO ~
    SetGlobal("h_KilledMagnus","GLOBAL",2)
    AddJournalEntry(@440,QUEST)

@@ -3,12 +3,12 @@ BEGIN h_thamud
 IF ~Global("h_JoinShadow","GLOBAL",0)~ THEN BEGIN 0
    SAY ~Greetings, <CHARNAME>. How are you faring this evening?~
        ++ ~Uh... pretty good?~ GOTO 1
-       ++ ~I am well. Care to explain what just happened?~ GOTO 2
+       ++ ~I am well. Care to explain what that was about?~ GOTO 2
        ++ ~Who are you and how is it you know my name?~ GOTO 2
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Excellent!~ IF ~~ THEN GOTO 3
+   SAY ~Excellent.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
@@ -16,15 +16,15 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~My name is Thamuz and I represent an organization known as the Shadow Thieves.~
+   SAY ~My name is Thamuz, and I represent an organization known as the Shadow Thieves.~
        ++ ~Why did you kill Nagate? I thought you were meeting with him to negotiate a deal?~ GOTO 4
-       ++ ~Ah, so you are the one called Thamuz. Baldwin mentioned that you were comrades once.~ GOTO 5
+       ++ ~So, you are the one called Thamuz, are you? Baldwin mentioned that you two were comrades once.~ GOTO 5
        ++ ~Why did you attack us in Beregost?~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 4
    SAY ~That was me negotiating. I am now in possession of the item I came for, and he is unable to speak of our encounter.~
-       ++ ~Ah, so you are the one called Thamuz. Baldwin mentioned that you were comrades once.~ GOTO 5
+       ++ ~So, you are the one called Thamuz, are you? Baldwin mentioned that you two were comrades once.~ GOTO 5
        ++ ~Why did you attack us in Beregost?~ GOTO 6
 END
 
@@ -39,7 +39,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~We've allowed Baldwin to play his little game in Beregost, because quite honestly, he's been no threat to our organization. There isn't a single move he has made that we haven't been aware of.~ IF ~~ THEN GOTO 8
+   SAY ~We've allowed Baldwin to play his little game in Beregost because, quite honestly, he's been no threat to our organization. There isn't a single move he has made that we haven't been aware of.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -47,14 +47,14 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~We could not allow Baldwin to obtain the Kerykeion, for he would become a far greater threat to this world than you could imagine. And, you have also made another enemy, who is paying us quite the prize to exterminate you from Beregost.~
+   SAY ~We could not allow Baldwin to obtain the Kerykeion, for he would become a far greater threat to this world than you could imagine. Also, it seems you have made another enemy, who is paying us quite the prize to exterminate you from Beregost.~
        ++ ~Who is this other enemy you speak of?~ GOTO 10
        ++ ~What do you know of Baldwin's plans for the Kerykeion?~ GOTO 11
        ++ ~Let us finish this then. Prepare yourself, Shadow Thief.~ GOTO 13
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~Your death may be a certainty but I will not speak aloud each detail like some fool.~
+   SAY ~Your death may be a certainty but I will not speak aloud such details.~
        ++ ~What do you know of Baldwin's plans for the Kerykeion?~ GOTO 11
        ++ ~Let us finish this then. Prepare yourself, Shadow Thief.~ GOTO 13
 END
@@ -64,7 +64,7 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
-   SAY ~Once reassembled, its power would instantly engulf his being. The amount of destruction his berserk state would inflict would be catastrophic.~
+   SAY ~Once reassembled, its power would instantly engulf his being. The amount of destruction his berserk state will inflict would be catastrophic.~
        ++ ~Who is this other enemy you speak of?~ GOTO 10
        ++ ~Let us finish this then. Prepare yourself, Shadow Thief.~ GOTO 13
 END

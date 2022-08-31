@@ -27,7 +27,7 @@ IF ~~ THEN BEGIN 4.5
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~The cook was so delighted by my appetite that he convinced Bently to put me up until I can get back on my feet. But because of the bounty I have to stay in hiding and can't leave for work.~ IF ~~ THEN GOTO 6
+   SAY ~The cook was so delighted by my appetite that he convinced Bently to put me up until I can get back on my feet. But, because of the bounty, I am forced to stay in hiding and can't leave for work.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
@@ -42,9 +42,9 @@ END
 
 IF ~~ THEN BEGIN 7
    SAY ~You would do that? Thank you! My loan was for exactly 300 gold pieces.~
-       +~PartyGoldGT(299)~+ ~Here take the coin then, but if I find out you've used it to buy another feast, I won't be as forgiving next time.~ GOTO 11
+       +~PartyGoldGT(299)~+ ~Here, take the coin then, but if I find out you've used it to buy another feast, I won't be as forgiving next time.~ GOTO 11
        +~PartyGoldLT(300)~+ ~I don't have that much coin. Stay here until I can raise a bit more.~ GOTO 9
-       ++ ~That's a bit too steep for me. Sorry, Carth. (Snap his neck.)~ DO ~
+       ++ ~That's a bit too steep for me. Sorry, Carth, it's nothing personal. (Snap his neck.)~ DO ~
    Kill("h_carthc")
    SetGlobal("h_CarthBounty","GLOBAL",1)
    AddJournalEntry(@411,QUEST)
@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Ok I'll stay right here until you return. Thank you!~
+   SAY ~Ok. I'll stay right here until you return. Thank you!~
 IF ~~ THEN DO ~
    SetGlobal("h_CarthBounty","GLOBAL",2)~ EXIT
 END

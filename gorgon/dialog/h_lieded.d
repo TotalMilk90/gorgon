@@ -5,11 +5,18 @@ IF ~Global("h_LiedelQuest","GLOBAL",0)~ THEN BEGIN 0
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",1) Global("h_DeclineBounty","GLOBAL",0)~ THEN BEGIN 1
-   SAY ~Rigaldo tells me you show some promise in the field. That is quite the praise coming from someone with his standing.~ IF ~~ THEN GOTO 2
+   SAY ~Riggy tells me you show some promise in the field. That is quite the praise coming from someone with his standing.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
    SAY ~I think it's time I properly introduce myself. My name is Liedel, and I am a purveyor of private contracts and bounties you won't find posted in the light of town.~
+       ++ ~By "private contracts", do you really mean assassin-for-hire?~ GOTO 3
+       ++ ~Who is Riggy?~ GOTO 2.5
+       ++ ~Pleasure to meet you Liedel. What current bounties do you have available?~ GOTO 4
+END
+
+IF ~~ THEN BEGIN 2.5
+   SAY ~*laughing* That's my nickname for little ol' Rigaldo. Oh, I do love how much he detests that name.~
        ++ ~By "private contracts", do you really mean assassin-for-hire?~ GOTO 3
        ++ ~Pleasure to meet you Liedel. What current bounties do you have available?~ GOTO 4
 END
@@ -41,7 +48,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~He was last seen heading north past the Coast Way. He is a rather large man who wouldn't last a day in the wilderness, so I would search for him in the surrounding inns and taverns.~ IF ~~ THEN GOTO 7
+   SAY ~He was last seen heading north, past the Coast Way. He is a rather large man who wouldn't last a day in the wilderness, so I would search for him at an inn or tavern.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
@@ -163,7 +170,7 @@ IF ~Global("h_LiedelQuest","GLOBAL",3)~ THEN BEGIN SECOND_0
 END
 
 IF ~~ THEN BEGIN SECOND_1
-   SAY ~The first bounty I have is for a runaway slave-girl, named Europea. She escaped from her owner's house here in Beregost and fled into the western woods.~ IF ~~ THEN GOTO SECOND_2
+   SAY ~The first bounty I have is for a runaway slave, named Europea. She escaped from her owner's house here in Beregost and fled into the western woods.~ IF ~~ THEN GOTO SECOND_2
 END
 
 IF ~~ THEN BEGIN SECOND_2
@@ -175,7 +182,7 @@ IF ~~ THEN BEGIN SECOND_3
 END
 
 IF ~~ THEN BEGIN SECOND_4
-   SAY ~Katreda is making it all but impossible for them to begin their work and they wish for her to be removed, peacefully or... permanently.~ IF ~~ THEN GOTO SECOND_5
+   SAY ~Katreda is making it all but impossible for them to begin their work and they wish for her to be removed, peacefully... or permanently.~ IF ~~ THEN GOTO SECOND_5
 END
 
 IF ~~ THEN BEGIN SECOND_5
@@ -247,7 +254,7 @@ IF ~~ THEN BEGIN EURO_3
 END
 
 IF ~~ THEN BEGIN EURO_4
-   SAY ~Alright I will inform her owner. Here is your usual reward, 500 gold coins.~
+   SAY ~I will inform her owner. Here is your usual reward, 500 gold coins.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc10")
@@ -316,9 +323,10 @@ IF ~~ THEN BEGIN ZHONTAC_5
 END
 
 IF ~~ THEN BEGIN ZHONTAC_6
-   SAY ~Honestly, <CHARNAME>, I don't blame you. It was a little out there. Here is your usual reward then, 500 gold coins.~
+   SAY ~Honestly, I don't blame you. It was a little out there. Here is your usual reward then, 500 gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_ZhontacBounty","GLOBAL",5)
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@440,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT
@@ -326,4 +334,14 @@ END
 
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0
    SAY ~What is it? Am I expected to bow in the presence of the new guildmaster?~ IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",5)~ THEN BEGIN BETRAY_1
+   SAY ~Oh, my. That was exhilarating! Poor Riggy, though. It was clear he'd be overmatched, but that foolish pride of his...~ IF ~~ THEN GOTO BETRAY_2
+END
+
+IF ~~ THEN BEGIN BETRAY_2
+   SAY ~At any rate, I've decided that I will enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, <CHARNAME>.~
+IF ~~ THEN DO ~
+   EscapeArea()~ EXIT
 END

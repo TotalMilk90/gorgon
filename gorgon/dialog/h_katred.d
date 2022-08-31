@@ -9,7 +9,7 @@ IF ~Global("h_KatredaBounty","GLOBAL",1)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Foul men have come to defile these ancient lands. They wish to destroy and clear out sections of the forest to make it their personal hunting ground.~ IF ~~ THEN GOTO 3
+   SAY ~Foul men have come to defile these ancient lands. They wish to destroy its trees and make it their personal hunting ground.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
@@ -19,11 +19,11 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~You would help these men destroy this forest for a few coin? Are all you outsiders guided by nothing but greed? It's sickening! *sigh* Fine, I will play your game.~ IF ~~ THEN GOTO 5
+   SAY ~You would help these men destroy this forest for a few coin? Are all you outsiders guided by nothing but greed? It's sickening! *sigh* Fine, I will play your little game.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~If you would help me instead, I can offer you this old and magical amulet as compensation. Surely it is worth more than what those beasts have offered.~
+   SAY ~If you would assist me instead, I can offer you an old and magical weapon as compensation. Surely it is worth more than what those beasts have offered.~
        ++ ~I was sent here to do a job and I mean to finish it. This is your final warning.~ GOTO 6
        ++ ~You've got a deal. Where can I find these men?~ GOTO 7
 END
@@ -38,7 +38,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Thank you! They have a small camp set up just to the south of here. Their leader is a dangerous man and not to be trusted!~
+   SAY ~They have a small camp set up just to the south of here. Their leader is a dangerous man by the name of Asnabel. He is not to be trusted!~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",3)
    AddJournalEntry(@434,QUEST)
@@ -55,19 +55,21 @@ IF ~Global("h_KatredaBounty","GLOBAL",3)~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Head directly south from here and you should run right into them.~ IF ~~ THEN EXIT
+   SAY ~Head directly south from here and you should run right into it.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_KatredaBounty","GLOBAL",4)~ THEN BEGIN 8
-   SAY ~The woods tell me that blood has been shed. A grim ending, but thankfully it was you who returned.~ IF ~~ THEN GOTO 10
+   SAY ~I am relieved to see you. The trees whispered to me that blood had been spilled and I feared the worst.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~You have done a great service here. Please, take this necklace. It belonged to the elves who used to inhabit these lands many years ago.~
+   SAY ~You have done a great service here. Please, take this. It belonged to the elves who used to inhabit these lands many years ago.~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",5)
    AddJournalEntry(@436,QUEST)
-   GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)~ EXIT
+   GiveItem("h_misc06",LastTalkedToBy)
+   AddExperienceParty(600)
+   ReputationInc(1)~ EXIT
 END
 
 IF ~Global("h_KatredaBounty","GLOBAL",5)~ THEN BEGIN 11

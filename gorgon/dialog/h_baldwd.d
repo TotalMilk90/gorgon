@@ -1,14 +1,14 @@
 BEGIN h_baldwd
 
 IF WEIGHT #-1 ~Alignment(Player1,LAWFUL_GOOD)~ THEN BEGIN SORRY_0
-   SAY ~I think you've stumbled into the wrong place, friend. I'm sure there's a cat stuck in a tree somewhere that requires your aid. Now, begone from me. Your sanctimonious aura disgusts me.~ IF ~~ THEN EXIT
+   SAY ~I think you've stumbled into the wrong place, friend. I'm sure there's a cat stuck in a tree somewhere that requires your aid. Now, begone from me. Your sanctimonious bullshit disgusts me.~ IF ~~ THEN EXIT
 END
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN JOIN_0
    SAY ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one... <CHARNAME>, is it?~
        ++ ~Another assassin then? You're not the first to threaten my life only to forfeit their own.~ GOTO JOIN_1
        ++ ~How is it that you know my name? Who are you?~ GOTO JOIN_2
-       ++ ~<CHARNAME>? Never heard of 'em. Now if you'll excuse me I must be going.~ GOTO JOIN_12
+       ++ ~<CHARNAME>? Never heard of 'em. Now if you'll excuse me I must be going.~ GOTO JOIN_15
 END
 
 IF ~~ THEN BEGIN JOIN_1
@@ -28,7 +28,7 @@ IF ~~ THEN BEGIN JOIN_4
 END
 
 IF ~~ THEN BEGIN JOIN_5
-   SAY ~Now then, if I recall there is a rather large bounty on your head, and here you stand surrounded by my cutthroats and hunters.~ IF ~~ THEN GOTO JOIN_6
+   SAY ~Now then, if I recall there is a rather large bounty on your head, and yet here you stand surrounded by my cutthroats and hunters.~ IF ~~ THEN GOTO JOIN_6
 END
 
 IF ~~ THEN BEGIN JOIN_6
@@ -78,7 +78,6 @@ IF ~~ THEN BEGIN JOIN_11
    SAY ~Your duties would include pickpocketing and extorting targets for selected possessions. Some of your missions may require stealth to obtain sensitive information, while others may require a more brutish approach.~
        ++ ~I thought Ravenscar controlled the whole of the Sword Coast.~ GOTO JOIN_8
        ++ ~What could I expect to gain from joining your guild?~ GOTO JOIN_10
-       ++ ~What types of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_14
        ++ ~I'm not sure if I can trust you, but if the coin is good then I accept.~ GOTO JOIN_14
        ++ ~I don't think I'm interested in working for a bunch of thieves.~ GOTO JOIN_12
@@ -87,11 +86,11 @@ END
 IF ~~ THEN BEGIN JOIN_12
    SAY ~Hmm, I see. As you were then.~
 IF ~~ THEN DO ~
-   SetGlobal("h_DidNotJoin","GLOBAL",1)~ EXIT
+   SetGlobal("h_DidNotJoin","GLOBAL",2)~ EXIT
 END
 
-IF ~Global("h_DidNotJoin","GLOBAL",1)~ THEN BEGIN JOIN_13
-   SAY ~<CHARNAME>, you return. Have you reconsidered my offer then?~
+IF ~Global("h_DidNotJoin","GLOBAL",2)~ THEN BEGIN JOIN_13
+   SAY ~<CHARNAME>, you've returned. Have you reconsidered my offer then?~
        ++ ~Though I am skeptical of your nature, I have decided I would like to join your guild.~ GOTO JOIN_14
        ++ ~What could I expect to gain from joining your guild?~ GOTO JOIN_10
        ++ ~What types of tasks would be required of me?~ GOTO JOIN_11
@@ -102,13 +101,25 @@ IF ~~ THEN BEGIN JOIN_14
    SAY ~Excellent, welcome aboard then! Make yourself at home and all that. Rigaldo will be in charge of directing your assignments within the guild. Off with you now though, as I must attend to my duties.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",1)
-   SetGlobal("h_DidNotJoin","GLOBAL",2)
+   SetGlobal("h_DidNotJoin","GLOBAL",3)
    SetGlobal("h_BaldwinQuest","GLOBAL",1)
    AddJournalEntry(@200,USER)
    ReputationInc(-2)~ EXIT
 END
 
-IF ~Global("h_BaldwinQuest","GLOBAL",1)~ THEN BEGIN JOIN_15
+IF ~~ THEN BEGIN JOIN_15
+   SAY ~Hmm, I see. As you were then.~
+IF ~~ THEN DO ~
+   SetGlobal("h_DidNotJoin","GLOBAL",1)~ EXIT
+END
+
+IF ~Global("h_DidNotJoin","GLOBAL",1)~ THEN BEGIN JOIN_16
+   SAY ~Why do you disturb me further?~
+       ++ ~How did you know my name? Who are you?~ GOTO JOIN_2
+       ++ ~I'll be leaving now~ EXIT
+END
+
+IF ~Global("h_BaldwinQuest","GLOBAL",1)~ THEN BEGIN JOIN_17
    SAY ~No time to chat, I'm afraid. Attend to your regular duties unless instructed otherwise.~ IF ~~ THEN EXIT
 END
 
@@ -127,7 +138,7 @@ IF ~~ THEN BEGIN MAGE_2
 END
 
 IF ~~ THEN BEGIN MAGE_3
-   SAY ~We believe it was brought to Faerun during the Time of Troubles, but was destroyed in some ghastly battle.~ IF ~~ THEN GOTO MAGE_4
+   SAY ~We believe that it was brought to Faerun during the Time of Troubles, but was destroyed in some ghastly battle.~ IF ~~ THEN GOTO MAGE_4
 END
 
 IF ~~ THEN BEGIN MAGE_4
@@ -135,21 +146,36 @@ IF ~~ THEN BEGIN MAGE_4
 END
 
 IF ~~ THEN BEGIN MAGE_5
-   SAY ~Now as it so happens, we have devised a way to reassemble the staff and restore its power.~ IF ~~ THEN GOTO MAGE_6
+   SAY ~Now, as it so happens, we have devised a way to reassemble the staff and restore its power.~ IF ~~ THEN GOTO MAGE_6
 END
 
 IF ~~ THEN BEGIN MAGE_6
-   SAY ~I needn't bore you with the details, but rest assured this will be a demanding campaign requiring considerable efforts on all fronts.~
-       ++ ~What can you tell me about the staff?~ GOTO MAGE_7
+   SAY ~I needn't bore you with the details, but rest assured this will be a demanding campaign, requiring considerable efforts on all fronts.~
+       ++ ~What more can you tell me about the staff?~ GOTO MAGE_7
+       ++ ~What condition do you believe the staff to be in?~ GOTO MAGE_8.5
        ++ ~What is it that you would have me do?~ GOTO MAGE_9
 END
 
 IF ~~ THEN BEGIN MAGE_7
-   SAY ~It is a weapon of unprecedented power created by the demons and gorgons of the Underworld.~ IF ~~ THEN GOTO MAGE_8
+   SAY ~It is a weapon of unprecedented power created long ago in the depths of the Underworld.~ IF ~~ THEN GOTO MAGE_8
 END
 
 IF ~~ THEN BEGIN MAGE_8
-   SAY ~Saradin ponders his theories about its history, and would be happy to delve into its details. If you're curious feel free to ask him.~
+   SAY ~Saradin ponders his theories about its history and would be happy to delve into its details. If you're curious about it, feel free to ask him.~
+       ++ ~What condition do you believe the staff to be in?~ GOTO MAGE_8.5
+       ++ ~What is it that you would have me do?~ GOTO MAGE_9
+END
+
+IF ~~ THEN BEGIN MAGE_8.5
+   SAY ~We believe that it was seperated into 3 fragments, each containing the essence of a different Gorgon Sister.~
+       ++ ~Ok... and who are the Gorgon Sisters?~ GOTO MAGE_8.75
+       ++ ~What more can you tell me about the staff?~ GOTO MAGE_7
+       ++ ~What is it that you would have me do?~ GOTO MAGE_9
+END
+
+IF ~~ THEN BEGIN MAGE_8.75
+   SAY ~The Gorgon Sisters were ancient and powerful snake-like beings who were responsible for the creation of the Kerykeion. Saradin can tell you more, if you are interested.~
+       ++ ~What more can you tell me about the staff?~ GOTO MAGE_7
        ++ ~What is it that you would have me do?~ GOTO MAGE_9
 END
 
@@ -167,7 +193,13 @@ END
 
 IF ~~ THEN BEGIN MAGE_12
    SAY ~I am sending you to find this witch. If it is in her possession then you have my full authority to retrieve it by any means necessary.~
-       ++ ~Alright, I will go locate this mage and bring back the piece if she has it.~ GOTO MAGE_13
+       ++ ~What type of reward can I expect for this task?~ GOTO MAGE_12.5
+       ++ ~I will go locate this mage and bring back the piece if she has it.~ GOTO MAGE_13
+END
+
+IF ~~ THEN BEGIN MAGE_12.5
+   SAY ~While I do have something in mind, depending on your success, you should not *expect* anything for carrying out your required duties.~
+       ++ ~I will go locate this mage and bring back the piece if she has it.~ GOTO MAGE_13
 END
 
 IF ~~ THEN BEGIN MAGE_13
@@ -181,7 +213,7 @@ END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_14
    SAY ~<CHARNAME>, you've returned. Were you able to locate this mage? Tell me, was she in possession of the staff?~
-       +~PartyHasItem("h_misc01")~+ ~Yes she was, and I had to kill her for it. She mentioned that other thieves had come for it recently as well.~ GOTO MAGE_15
+       +~PartyHasItem("h_misc01")~+ ~She was. However, we may not be the only ones searching for the Kerykeion. Other thieves were there before me.~ GOTO MAGE_15
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
@@ -194,7 +226,7 @@ IF ~~ THEN BEGIN MAGE_16
 END
 
 IF ~~ THEN BEGIN MAGE_17
-   SAY ~With the addition of your report I can only conclude that we are being watched. By who, I am unsure.~ IF ~~ THEN GOTO MAGE_18
+   SAY ~With the addition of your report, I can only conclude that we are being watched. By who, I am unsure.~ IF ~~ THEN GOTO MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_18
@@ -242,11 +274,11 @@ IF ~~ THEN BEGIN BOMBS_1
 END
 
 IF ~~ THEN BEGIN BOMBS_2
-   SAY ~I fear the true reason alludes me as well. This is their first attempt against me since I left Amn many years ago.~ IF ~~ THEN GOTO BOMBS_3
+   SAY ~This is their first attempt against me since I left Amn, many years ago. They have been hunting me for years, yet I fear the timing of their attack alludes me.~ IF ~~ THEN GOTO BOMBS_3
 END
 
 IF ~~ THEN BEGIN BOMBS_3
-   SAY ~It could be in retaliation for our excerise at the carnival. Although, the more likely conclusion is that they have become aware of our movements toward the Kerykeion, and wish to stop us.~ IF ~~ THEN GOTO BOMBS_4
+   SAY ~It could be immediate retaliation for our excerise at the carnival. Although, the more likely conclusion is that they have become aware of our movements toward the Kerykeion, and wish to stop us.~ IF ~~ THEN GOTO BOMBS_4
 END
 
 IF ~~ THEN BEGIN BOMBS_4
@@ -274,19 +306,19 @@ IF ~~ THEN BEGIN NAGATE_3
 END
 
 IF ~~ THEN BEGIN NAGATE_4
-   SAY ~They are planning negotiations with a group of smugglers for the purchase of a Kerykeion piece! Dammit, those bastards have been one step ahead of us this whole time.~ IF ~~ THEN GOTO NAGATE_5
+   SAY ~It appears they are planning negotiations with a group of smugglers for the purchase of a Kerykeion piece! Dammit, those bastards have been one step ahead of us this whole time.~ IF ~~ THEN GOTO NAGATE_5
 END
 
 IF ~~ THEN BEGIN NAGATE_5
-   SAY ~<CHARNAME>, I need you to head north immediately. They are meeting with a rogue named Nagate by some old ruins near the bandit camp.~ IF ~~ THEN GOTO NAGATE_6
+   SAY ~<CHARNAME>, I need you to head north immediately. They are meeting with a rogue named Nagate, by some old ruins south of some camp.~ IF ~~ THEN GOTO NAGATE_6
 END
 
 IF ~~ THEN BEGIN NAGATE_6
-   SAY ~Be on your guard with this one. According to these reports, the Shadow Thieves have suspicions that this may be a trap.~ IF ~~ THEN GOTO NAGATE_7
+   SAY ~Be on your guard when you arrive. It seems the Shadow Thieves have suspicions the meeting may actually be a trap.~ IF ~~ THEN GOTO NAGATE_7
 END
 
 IF ~~ THEN BEGIN NAGATE_7
-   SAY ~Regardless, if you hurry you should be able to make it before their battalion arrives.~
+   SAY ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill this Nagate, if you have to.~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildMusic","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",6)
@@ -310,13 +342,13 @@ END
 
 
 IF ~Global("h_BaldwinQuest","GLOBAL",7)~ THEN BEGIN THAMUZ_0
-   SAY ~Finally, you return. What is your report then, were you able to locate Nagate?~
-       ++ ~I arrived just in time to witness his death. He was killed by Thamuz, who abruptly appeared from the shadows.~ GOTO THAMUZ_1
+   SAY ~Finally, you've returned. What is your report?~
+       ++ ~I arrived just in time to witness Nagate's assassination at the hands of Thamuz.~ GOTO THAMUZ_1
 END
 
 IF ~~ THEN BEGIN THAMUZ_1
-   SAY ~I presume Thamuz is dead then. As I doubt he would allow you to just walk away from such an encounter.~
-       ++ ~Yes, I killed him along with his small party of thieves. We spoke at some length, and he had some interesting things to say.~ GOTO THAMUZ_2
+   SAY ~What of the Kerykeion?~
+       ++ ~I killed Thamuz and successfully retrieved the second Kerykeion piece. Before our battle, however, we spoke at some length and he had some interesting things to say.~ GOTO THAMUZ_2
 END
 
 IF ~~ THEN BEGIN THAMUZ_2
@@ -389,23 +421,23 @@ IF WEIGHT #-1 ~PartyHasItem("h_misc14")~ THEN BEGIN BETRAY_0
 END
 
 IF ~~ THEN BEGIN BETRAY_1
-   SAY ~You what? How is that possible?! Speak, quickly!~
+   SAY ~You, what? How is that possible! Speak, quickly!~
        ++ ~I found it among the remains of some Shadow Thieves I killed on my last mission.~ GOTO BETRAY_2
-       ++ ~I found it hidden in a chest at the Nashkel carnival.~ GOTO BETRAY_2
-       ++ ~I found it on the corpse of a powerful mage that I fought.~ GOTO BETRAY_2
+       ++ ~It was hidden in a chest that I picked at the Nashkel carnival.~ GOTO BETRAY_2
+       ++ ~I relieved it from the corpse of a powerful mage, who had the misfortune of crossing me.~ GOTO BETRAY_2
        ++ ~I purchased it from a smuggler near Baldur's Gate.~ GOTO BETRAY_2
 END
 
 IF ~~ THEN BEGIN BETRAY_2
-   SAY ~Is that so? Give it here so that I may examine it.~ IF ~~ THEN GOTO BETRAY_3
+   SAY ~Is that so? Give it here, so that I may examine it further.~ IF ~~ THEN GOTO BETRAY_3
 END
 
 IF ~~ THEN BEGIN BETRAY_3
-   SAY ~*laughing* Yes, it is magnificent! You have outdone youself, <CHARNAME>. I knew not killing you was the right move when you first stumbled in here!~ IF ~~ THEN GOTO BETRAY_4
+   SAY ~*laughing* It is almost unbelievable, is it not? That fate would bring you here, into my den, and stay my hand from killing you.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY ~There is still much work to be done. Leave me now, while I make the necessary preparations for its assembly.~
+   SAY ~There is still much work to be done, however. Leave me now, while I make the necessary preparations for its assembly.~
 IF ~~ THEN DO ~
    SetGlobal("h_FakeKery","GLOBAL",1)
    TakePartyItem("h_misc14")
@@ -437,7 +469,7 @@ IF ~~ THEN BEGIN GERARD_3
 END
 
 IF ~~ THEN BEGIN GERARD_4
-   SAY ~<CHARNAME>, all of our work is finally about to pay off. It was our own Gerard Travenhurst, who was responsible for enlisting the services of the Shadow Thieves.~ IF ~~ THEN GOTO GERARD_5
+   SAY ~<CHARNAME>, all of our work is finally about to pay off. It was our own, Gerard Travenhurst, who was responsible for enlisting the services of the Shadow Thieves.~ IF ~~ THEN GOTO GERARD_5
 END
 
 IF ~~ THEN BEGIN GERARD_5
@@ -448,7 +480,7 @@ IF ~~ THEN BEGIN GERARD_5
 END
 
 IF ~~ THEN BEGIN GERARD_6
-   SAY ~It appears that way, yes. He was also aiding them with knowledge of our activities and whereabouts.~
+   SAY ~It appears that way, yes. He was also in regular contact with them distributing knowledge of our activities.~
        ++ ~What if we are being led into a trap?~ GOTO GERARD_7
        ++ ~How do you wish to proceed?~ GOTO GERARD_8
 END

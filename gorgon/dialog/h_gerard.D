@@ -2,18 +2,18 @@ APPEND NOBL10
 
 IF WEIGHT #-1 ~Global("h_GerardQuest","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",4) Global("h_GerardGoodQuest","GLOBAL",0)~ THEN BEGIN G_10
    SAY ~Welcome, welcome. Please make yourself at home and chat with me a while. I rarely receive company these days. What can I do for you fine folk?~
-      // ++ ~Well for starters you can hand over that necklace right quick. Nice and easy-like too. I've come on behalf of the the Gorgon's Eye and it seems you've missed your last payment. I'm here to collect it.~ GOTO G_11
+       ++ ~Well for starters you can hand over that necklace right quick. Nice and easy-like too. I've come on behalf of the the Gorgon's Eye and it seems you've missed your last payment. I'm here to collect it.~ GOTO G_11
        ++ ~Hello Gerard, it seems you've missed your last payment and I'm here to collect. That necklace you're wearing looks the proper value. Be a good lad and hand it over now, no one needs to get hurt.~ GOTO G_11
        ++ ~Listen, I'm working with the Gorgon's Eye and they want me to bring back your family's necklace. However, you seem like a nice fellow and I can't just take it from you. I'd rather find a peaceful solution to this if possible.~ GOTO GOOD_1
 END
 
 IF ~~ THEN BEGIN G_11
    SAY ~Payment? You're one of Rigaldo's dogs then? Hmph! I shan't debase myself by dealing with the likes of you lot. Tell him he will not be recieving another penny from me. Now begone!~
-       ++ ~You will hand over your pendant to me, or you will die. It is as simple as that.~ GOTO G_14
-       ++ ~How about I kill your guards and then start breaking each one of your fingers?~ GOTO G_14
+       ++ ~Give me the necklace if you want to live!~ GOTO G_14
+       ++ ~I'm afraid I can't do that. *unsheathe your blade* Play nice now, before things turn ugly.~ GOTO G_14
        ++ ~I don't want to hurt you, Gerard, but you'll soon leave me no choice.~ GOTO G_14
        +~CheckStatGT(Player1,17,STR)~+ ~Do you think your guards stand any chance against me? If you don't hand over that necklace then I'll be forced to slaughter you all!~ GOTO G_12
-       ++ ~Be reasonable, mate. Do you really think you will be able to stop me?~ GOTO G_14
+       ++ ~Did you just call me a dog? That's it! Time to die!~ GOTO G_14
 END
 
 IF ~~ THEN BEGIN G_12

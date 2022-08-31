@@ -92,6 +92,8 @@ COMPILE ~gorgon/scripts/h_aggros.baf~
 COMPILE ~gorgon/scripts/h_mereds.baf~
 COMPILE ~gorgon/scripts/h_euryns.baf~
 COMPILE ~gorgon/scripts/h_rich2s.baf~
+COMPILE ~gorgon/scripts/h_liedes.baf~
+COMPILE ~gorgon/scripts/h_lotuss.baf~
 
 // Area Scripts
 
@@ -220,7 +222,6 @@ COPY_EXISTING ~HOUSG2.cre~ ~override~
 COPY_EXISTING ~KARP.cre~ ~override~                           // Karp
      ADD_CRE_ITEM ~h_ring06~ #0 #0 #0 ~NONE~ ~INV~
      ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~INV2~
-     ADD_CRE_ITEM ~h_misc06~ #0 #0 #0 ~NONE~ ~INV3~
 
 COPY_EXISTING ~GAMES.cre~ ~override~                          // Gamesmen
      ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
@@ -233,6 +234,9 @@ COPY_EXISTING ~GAMES4.cre~ ~override~
 
 COPY_EXISTING ~GAMES5.cre~ ~override~
      ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
+     
+COPY_EXISTING ~MTOWN3.cre~ ~override~                         // Commoner(Lotus)
+     WRITE_ASCII SCRIPT_DEFAULT ~h_lotuss~
 
 // Store
 

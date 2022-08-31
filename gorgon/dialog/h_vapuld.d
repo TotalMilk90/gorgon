@@ -26,14 +26,14 @@ END
 
 IF ~~ THEN BEGIN 5
    SAY ~I decided to turn on my guild, and was reborn under the light of Lathander.~
-       ++ ~If I was able to find you, there will surely be more. They will not stop until you are dead. Even amongst clerics and monks you will never be safe.~ GOTO 6
+       ++ ~If I was able to find you, there will surely be others. They will not stop until you are dead.~ GOTO 6
        ++ ~No more words, Vapula. Let us end this.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~Allow me to flee then! I will travel the southern roads and aid those in need. If you bring back my pendant they will surely believe me dead.~
-       ++ ~Alright, I will do as you ask. Good luck to you Vapula, and safe travels.~ GOTO 8
-       ++ ~Sorry Vapula, but it's too risky to let you live.~ GOTO 7
+   SAY ~Allow me to flee then! I will travel the southern roads and aid those in need. If you bring back my pendant, they will surely believe me dead.~
+       ++ ~Alright, I will do as you ask. Good luck to you, Vapula, and safe travels.~ GOTO 8
+       ++ ~Sorry, Vapula, but it's too risky to let you live.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 7

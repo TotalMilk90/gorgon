@@ -6,12 +6,12 @@ END
 
 IF ~~ THEN BEGIN EURO_2
    SAY ~Poor child, where have you been all these years?~
-       ++ ~She was a slave to someone living in Beregost, though who I do not know. Luckily she was able to escape, even after having a bounty placed on her.~ GOTO EURO_3
+       ++ ~She's been a slave to someone living in Beregost. Luckily, she was somehow able to escape, even after having a bounty placed on her.~ GOTO EURO_3
 END
 
 IF ~~ THEN BEGIN EURO_3
-   SAY ~That would explain this device around her neck. It was probably used by her captor to dull her mind, here let me try to remove it.~
-       ++ ~Actually, I could use that collar. If I bring it back, her captor will believe she is dead and will call off the bounty.~ GOTO EURO_4
+   SAY ~That would explain this device around her neck. It was probably used by her captor to dull her mind. Here, let me try to remove it.~
+       ++ ~Actually, I could use that collar. If I bring it back, they will believe her dead and will call off the bounty.~ GOTO EURO_4
 END
 
 IF ~~ THEN BEGIN EURO_4

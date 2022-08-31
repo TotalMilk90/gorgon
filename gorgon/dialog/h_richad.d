@@ -1,7 +1,7 @@
 BEGIN h_richad
 
 IF ~Global("h_SpawnRichard","GLOBAL",3)~ THEN BEGIN 1
-   SAY ~<CHARNAME>! Set aside your quarrel with us. We must kill this abomination before it is too late! The longer he remains alive the greater threat he will become.~ IF ~~ THEN GOTO 2
+   SAY ~<CHARNAME>! Set aside your quarrel with us. We must kill this abomination before it is too late!~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
@@ -19,7 +19,7 @@ IF ~Global("h_SpawnRichard","GLOBAL",4)~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~Using it in conjuction with the two real pieces should have killed him instantly. He took the bait but experienced a different reaction than we planned.~ IF ~~ THEN GOTO 5
+   SAY ~Using it in conjuction with a real piece should have killed him instantly. He took the bait but experienced a different reaction than we planned.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -31,7 +31,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~My brother has soiled any significance it once held. I will offer it to you as a reward for your aid and we will put our history behind us.~ IF ~~ THEN GOTO 8
+   SAY ~My brother has soiled any significance it once held. I will offer it to you as a reward for your aid and to put our history behind us.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -51,21 +51,21 @@ CHAIN
    == h_bald2d
 ~Hello, brother. Come to see my ascension into godhood, have you? How very gracious of you.~
    == h_richad
-~The Kerykeion has driven you to madness it seems. Surrender to me and I will bring you in before the Shadowmaster. If you cooperate, your life will be spared.~
+~The Kerykeion has driven you to madness it seems. Surrender it to me and I will bring you in before the Shadowmaster. If you cooperate, your life will be spared.~
    == h_bald2d
-~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp. You offer me your dungeons, while I could have the world instead!~
+~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp. Yet, you offer me your dungeons, while I could have the world instead!~
    =
-~It was a dream we both shared at one time. Don't you remember? Or did you forget that too, along with your honor after betraying your own brother?~
+~It was a dream we both shared, do you remember? Or did you forget that too, along with your honor, after betraying your own brother!~
    == h_richad
-~I have not forgotten, yet I can't say the same for you. My words were of warning and caution against the Kerykeion, not desire for its ressurection!~
+~I have not forgotten, yet I can not say the same for you. I spoke words of warning against the Kerykeion, not desire for its ressurection!~
    =
-~You were the one who betrayed us. It seems the Kerykeion has distorted your memories.~
+~You were the one who betrayed us. It appears your mania has distorted your memories and led you down a path of delusion.~
    =
 ~You are lost, Baldwin, and you have been for many years.~
    == h_bald2d
 ~I see you are as cowardly as you were on the day of my banishment. You are still restrained by your fear and lack of ambition. That is why you will fail.~
    =
-~Did you even notice, brother? I have stalled long enough to finish my preparations. Now you will all suffer for the injustices you have wrought against me!~
+~Did you even notice, brother? I have stalled you long enough to complete my preparations. Now, you will all suffer for the injustices you have wrought against me!~
    =
 ~AHHHHH!!!~
       DO ~

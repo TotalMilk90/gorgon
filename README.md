@@ -21,14 +21,14 @@ can be accessed immediately after leaving Candlekeep and is open to all
 players, excluding those with a lawful-good alignment.</p>
 
 <h2>Future Content</h2>
-
-Danika, a new joinable Demarchess of Mask NPC.
-
-Demarch/ess of Mask, a new cleric kit.
-
-Quests following the conclusion of the mod's story.
-
-A few new items and possibly upgrades.
+<ul>
+  <li>Danika, a Demarchess of Mask, joinable NPC</li>
+  <li>Demarch/ess of Mask, a new cleric kit</li>
+  <li>Quests following the conclusion of the mod's story
+  <li>Quests from the smaller guild sections(smugglers, gamesmen, and courtesans)</li>
+  <li>Encounters involving Beregost's citizens</li>
+  <li>A few new items and possibly upgrades</li>
+</ul>
  
 <h2>Acknowledgements</h2>
 <p>This mod would not have been possible without DnD Detective's mod tutorial 
@@ -52,12 +52,17 @@ WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
 <h3>Version 2:</h3>
-<p>-Fixed a quest loop and some broken scripts</p>
-<p>-Lots of minor dialog and quest improvements</p>
-<p>-Made some enhancements to one of the final battles</p>
+<ul>
+  <li>Fixed a quest loop and some broken scripts</li>
+  <li>Lots of minor dialog and quest improvements</li>
+  <li>Made some enhancements to one of the final battles</li>
+ </ul>
+
 
 <h3>Version 1:</h3>
-<p>-ALPHA Release</p>
+<ul>
+  <li>ALPHA Release</li>
+</ul>
 
 <h2>Legal</h2>
 <p>This mod is unofficial Fan Content permitted under the Fan Content Policy. Not

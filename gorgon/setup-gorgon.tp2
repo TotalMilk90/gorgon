@@ -13,6 +13,20 @@ LANGUAGE
 
 BEGIN @1
 
+// EET compatibility header
+
+ACTION_IF GAME_IS ~bgee~
+BEGIN
+	OUTER_SPRINT "area_prefix" AR
+	OUTER_SET isEET = 0
+END
+	
+ACTION_IF GAME_IS ~eet~
+BEGIN
+	OUTER_SPRINT "area_prefix" BG
+	OUTER_SET isEET = 1
+END
+
 // Dialog
 
 COMPILE ~gorgon/dialog/h_yumild.d~
@@ -97,32 +111,48 @@ COMPILE ~gorgon/scripts/h_lotuss.baf~
 
 // Area Scripts
 
-EXTEND_TOP ~AR5500.bcs~ ~gorgon/scripts/h_gibbea.baf~
-EXTEND_TOP ~AR4900.bcs~ ~gorgon/scripts/h_carnia.baf~
-EXTEND_TOP ~AR3300.bcs~ ~gorgon/scripts/h_berega.baf~
-EXTEND_TOP ~AR1900.bcs~ ~gorgon/scripts/h_bandia.baf~
-EXTEND_TOP ~AR3320.bcs~ ~gorgon/scripts/h_gerara.baf~
-EXTEND_TOP ~AR2303.bcs~ ~gorgon/scripts/h_fai3fa.baf~
-EXTEND_TOP ~AR3401.bcs~ ~gorgon/scripts/h_templa.baf~
-EXTEND_TOP ~AR3303.bcs~ ~gorgon/scripts/h_red2fa.baf~
-EXTEND_TOP ~AR3308.bcs~ ~gorgon/scripts/h_tbw2fa.baf~
-EXTEND_TOP ~AR2900.bcs~ ~gorgon/scripts/h_larswa.baf~
-EXTEND_TOP ~AR3200.bcs~ ~gorgon/scripts/h_highha.baf~
+EXTEND_TOP ~%area_prefix%5500.bcs~ ~gorgon/scripts/h_gibbea.baf~
+EXTEND_TOP ~%area_prefix%4900.bcs~ ~gorgon/scripts/h_carnia.baf~
+EXTEND_TOP ~%area_prefix%3300.bcs~ ~gorgon/scripts/h_berega.baf~
+EXTEND_TOP ~%area_prefix%1900.bcs~ ~gorgon/scripts/h_bandia.baf~
+EXTEND_TOP ~%area_prefix%3320.bcs~ ~gorgon/scripts/h_gerara.baf~
+EXTEND_TOP ~%area_prefix%2303.bcs~ ~gorgon/scripts/h_fai3fa.baf~
+EXTEND_TOP ~%area_prefix%3401.bcs~ ~gorgon/scripts/h_templa.baf~
+EXTEND_TOP ~%area_prefix%3303.bcs~ ~gorgon/scripts/h_red2fa.baf~
+EXTEND_TOP ~%area_prefix%3308.bcs~ ~gorgon/scripts/h_tbw2fa.baf~
+EXTEND_TOP ~%area_prefix%2900.bcs~ ~gorgon/scripts/h_larswa.baf~
+EXTEND_TOP ~%area_prefix%3200.bcs~ ~gorgon/scripts/h_highha.baf~
 
 // New Areas
 
 COPY ~gorgon/areas/h_guilda.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          // TO-DO: fix music entries
+          WRITE_ASCII 0x154 ~BG3300~ #8 //update area pointer for ExitGorgon, this should be looked up dynamically, but meh
+     END
+
 //EXTEND_TOP ~h_guilda.bcs~ ~gorgon/scripts/h_guilda.baf~
 
 COPY ~gorgon/areas/h_flamea.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          // TO-DO: fix music entries
+          WRITE_ASCII 0x8 ~BG6100~ //update WED resource filename
+     END
+
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_flamea.baf~
 
 // Music
 
-COPY ~gorgon/song/h_blanks.mus~ ~music~
-COPY_EXISTING ~songlist.2da~ ~override~
-SET_2DA_ENTRY 0 2 3 ~H_BLANKS.MUS~
 LAF HANDLE_AUDIO END
+
+// EET already has a valid blank music on slot 0, dummying out slot 0 is only needed for BGEE
+
+ACTION_IF (isEET == 0) BEGIN
+     COPY ~gorgon/song/h_blanks.mus~ ~music~
+
+     COPY_EXISTING ~songlist.2da~ ~override~
+          SET_2DA_ENTRY 0 2 3 ~H_BLANKS.MUS~
+END
 
 // Portraits
 
@@ -156,7 +186,7 @@ COPY ~gorgon/bam/h_misc3b.bam~ ~override~
 
 //   Add entrance to area file
 
-COPY_EXISTING ~AR3300.are~ ~override~
+COPY_EXISTING ~%area_prefix%3300.are~ ~override~
   LPF fj_are_structure
     INT_VAR
     fj_type         = 2    //travel

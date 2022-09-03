@@ -6,6 +6,7 @@ THEN
                   CreateCreature("h_flamec",[440.661],N)
                   CreateCreature("h_flamec",[524.658],N)
                   SetGlobal("h_FlamingFist","GLOBAL",2)
+                  Continue()
 
 END
 

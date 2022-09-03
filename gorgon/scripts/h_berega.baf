@@ -27,7 +27,8 @@ THEN
                   CreateCreature("h_sthiec",[1417.3265],S)
                   CreateCreature("h_sthiec",[1487.3380],S)
                   CreateCreature("h_thiefc",[1333.3351],S)
-         SetGlobal("h_ShadowWar","GLOBAL",2)
+                  SetGlobal("h_ShadowWar","GLOBAL",2)
+                  Continue()
 END
 
 IF
@@ -37,6 +38,7 @@ THEN
          RESPONSE #100
                   SetGlobal("h_RandomEncounterForced","GLOBAL",1)
                   ForceRandomEncounterEntry("h_flamea","h_flamee")
+                  Continue()
 END
 
 IF
@@ -48,6 +50,7 @@ THEN
          RESPONSE #100
                   SetGlobal("h_RandomEncounterForced","GLOBAL",2)
                   ForceRandomEncounterEntry("h_flamea","h_flamee")
+                  Continue()
 END
 
 IF
@@ -58,6 +61,7 @@ THEN
          RESPONSE #100
                   CreateCreature("h_zhontc",[4217.2378],N)
                   SetGlobal("h_SpawnZhontac","GLOBAL",1)
+                  Continue()
 END
 
 IF
@@ -67,6 +71,7 @@ THEN
          RESPONSE #100
                   CreateCreature("h_magnuc",[2718.3107],W)
                   SetGlobal("h_SpawnMagnus","GLOBAL",1)
+                  Continue()
 END
 
 IF
@@ -75,6 +80,7 @@ THEN
          RESPONSE #100
                   CreateCreature("h_yumilc",[1701.2846],N)
                   SetGlobal("h_SpawnYumil","GLOBAL",1)
+                  Continue()
 END
 
 IF
@@ -83,4 +89,5 @@ IF
 THEN
         RESPONSE #100
                  PlaySong(0)
+                 Continue()
 END

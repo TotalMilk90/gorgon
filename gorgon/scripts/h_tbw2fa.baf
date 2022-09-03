@@ -5,4 +5,5 @@ THEN
         RESPONSE #100
                  CreateCreature("h_amriuc",[377.350],E)
                  SetGlobal("h_SpawnAmrius","GLOBAL",1)
+                 Continue()
 END

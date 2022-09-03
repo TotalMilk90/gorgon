@@ -4,4 +4,5 @@ THEN
         RESPONSE #100
                  CreateCreature("h_denebc",[4210.584],S)
                  SetGlobal("h_SpawnDeneb","GLOBAL",2)
+                 Continue()
 END

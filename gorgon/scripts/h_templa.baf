@@ -5,4 +5,5 @@ THEN
         RESPONSE #100
                  CreateCreature("h_vapulc",[604.204],S)
                  SetGlobal("h_SpawnVapula","GLOBAL",1)
+                 Continue()
 END

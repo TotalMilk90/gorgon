@@ -97,20 +97,6 @@ COMPILE ~gorgon/scripts/h_lotuss.baf~
 
 // Area Scripts
 
-COMPILE ~gorgon/scripts/h_guilda.baf~
-COMPILE ~gorgon/scripts/h_gibbea.baf~
-COMPILE ~gorgon/scripts/h_carnia.baf~
-COMPILE ~gorgon/scripts/h_berega.baf~
-COMPILE ~gorgon/scripts/h_bandia.baf~
-COMPILE ~gorgon/scripts/h_gerara.baf~
-COMPILE ~gorgon/scripts/h_flamea.baf~
-COMPILE ~gorgon/scripts/h_fai3fa.baf~
-COMPILE ~gorgon/scripts/h_templa.baf~
-COMPILE ~gorgon/scripts/h_red2fa.baf~
-COMPILE ~gorgon/scripts/h_tbw2fa.baf~
-COMPILE ~gorgon/scripts/h_larswa.baf~
-COMPILE ~gorgon/scripts/h_highha.baf~
-
 EXTEND_TOP ~AR5500.bcs~ ~gorgon/scripts/h_gibbea.baf~
 EXTEND_TOP ~AR4900.bcs~ ~gorgon/scripts/h_carnia.baf~
 EXTEND_TOP ~AR3300.bcs~ ~gorgon/scripts/h_berega.baf~

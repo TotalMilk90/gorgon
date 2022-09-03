@@ -1,0 +1,2 @@
+# don't commit in the backup directory
+/gorgon/backup

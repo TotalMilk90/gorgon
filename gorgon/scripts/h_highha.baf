@@ -6,5 +6,6 @@ THEN
                   CreateCreature("h_tuztcc",[290.2527],S)
                   CreateCreature("h_bountc",[215.2496],S)
                   CreateCreature("h_bountc",[316.2461],S)
-         SetGlobal("h_SpawnEuropea","GLOBAL",2)
+                  SetGlobal("h_SpawnEuropea","GLOBAL",2)
+                  Continue()
 END

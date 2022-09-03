@@ -6,6 +6,7 @@ THEN
                  DayNight(MIDNIGHT)
                  CreateCreature("h_nagatc",[1973.2895],S)
                  SetGlobal("h_SpawnNagate","GLOBAL",2)
+                 Continue()
 END
 
 IF
@@ -14,4 +15,5 @@ IF
 THEN
         RESPONSE #100
                  PlaySong(0)
+                 Continue()
 END

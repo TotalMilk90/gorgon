@@ -6,6 +6,7 @@ THEN
                   CreateCreature("h_roguec",[1077.2260],S)
                   CreateCreature("h_roguec",[1142.2249],S)
                   SetGlobal("h_GuildThieves","GLOBAL",3)
+                  Continue()
 END
 
 IF
@@ -20,6 +21,7 @@ THEN
                   CreateCreature("h_thiefc",[4550.2206],E)
                   CreateCreature("h_thiefc",[4550.2296],E)
                   SetGlobal("h_ShadowWar","GLOBAL",6)
+                  Continue()
 END
 
 IF
@@ -27,4 +29,5 @@ IF
 THEN
          RESPONSE #100
                   PlaySong(0)
+                  Continue()
 END

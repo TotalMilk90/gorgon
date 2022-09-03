@@ -5,6 +5,7 @@ THEN
         RESPONSE #100
                  CreateCreature("h_bald2c",[617.365],N)
                  SetGlobal("h_SpawnBaldwin","GLOBAL",2)
+                 Continue()
 END
 
 IF

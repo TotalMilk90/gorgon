@@ -10,7 +10,7 @@ END
 IF ~~ THEN BEGIN G_11
    SAY ~Payment? You're one of Rigaldo's dogs then? Hmph! I shan't debase myself by dealing with the likes of you lot. Tell him he will not be recieving another penny from me. Now begone!~
        ++ ~Give me the necklace if you want to live!~ GOTO G_14
-       ++ ~I'm afraid I can't do that. *unsheathe your blade* Play nice now, before things turn ugly.~ GOTO G_14
+       ++ ~I'm afraid I can't do that. *unsheathe your blade* Play nice now, before things get ugly.~ GOTO G_14
        ++ ~I don't want to hurt you, Gerard, but you'll soon leave me no choice.~ GOTO G_14
        +~CheckStatGT(Player1,17,STR)~+ ~Do you think your guards stand any chance against me? If you don't hand over that necklace then I'll be forced to slaughter you all!~ GOTO G_12
        ++ ~Did you just call me a dog? That's it! Time to die!~ GOTO G_14
@@ -48,7 +48,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_GerardQuest","GLOBAL",2)~ THEN BEGIN G_16
-   SAY ~Get out of my sight you dog. Rigaldo will get his payments.~ IF ~~ THEN EXIT
+   SAY ~Get out of my sight you dog! Rigaldo will get his payments.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN GOOD_1

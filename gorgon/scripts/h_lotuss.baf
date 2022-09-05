@@ -3,5 +3,5 @@ IF
 THEN
 	RESPONSE #100
 		 SmallWait(5)
-		 StartDialog("h_lotusd",[PC])
+		 StartDialog("MTOWN3",[PC])
 END

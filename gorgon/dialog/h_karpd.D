@@ -10,7 +10,7 @@ IF ~~ THEN BEGIN THREAT_2
    SAY ~You're a monster!~
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring06",LastTalkedToBy)
+   GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)
    ReputationInc(-1)
@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN THREAT_3
    SAY ~Here. Now go, please!~
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring06",LastTalkedToBy)
+   GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    ReputationInc(-1)
    EscapeArea()~ EXIT
@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN BLACKMAIL_2
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_3
-   SAY ~Please whoever you are, I need this sale. I must buy passage for my son and I'm nowhere near the amount of coin I need. The buyer is already on his way.~
+   SAY ~Please, whoever you are, I need this sale. I must buy passage for my son and I'm nowhere near the amount of coin I need. The buyer is already on his way!~
        ++ ~And I don't rightly care! I won't inform your husband of your deeds but if you dont give them to me then I'll bury your face in the dirt!~ GOTO BLACKMAIL_2
        ++ ~I will not pay you for them. But perhaps I can find a way to help your son.~ GOTO BLACKMAIL_4
 END
@@ -51,7 +51,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    AddJournalEntry(@318,QUEST)
-   GiveItem("h_ring06",LastTalkedToBy)
+   GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)~ EXIT
 END
 
@@ -92,13 +92,13 @@ IF ~~ THEN BEGIN CHARM_4
 END
 
 IF ~~ THEN BEGIN CHARM_5
-   SAY ~I think you are not who you say you are, and I won't deal with the likes of you any longer.~
+   SAY ~I think you are not who you say you are, and I won't be dealing with the likes of you any longer.~
        ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
        ++ ~Alright, well maybe I'll go find your husband then and inform him of what is going on.~ GOTO BLACKMAIL_1
 END
 
 IF ~~ THEN BEGIN CHARM_6
-   SAY ~*Laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
+   SAY ~*laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
 END
 
 IF ~~ THEN BEGIN CHARM_6.5
@@ -117,7 +117,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    AddJournalEntry(@318,QUEST)
-   GiveItem("h_ring06",LastTalkedToBy)
+   GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)~ EXIT
 END
 
@@ -125,7 +125,7 @@ IF ~~ THEN BEGIN CHARM_9
    SAY ~Oh, ok sorry. I didn't mean to trouble you. Take care.~
 IF ~~ THEN DO ~
    AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring06",LastTalkedToBy)
+   GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    EscapeArea()~ EXIT
 END
@@ -153,6 +153,6 @@ END
 
 EXTEND_TOP KARP 0
    +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~ GOTO THREAT_1
-   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Hello Karp. No need to be afraid. I know about the rings, and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~ GOTO BLACKMAIL_1
+   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Hello Karp. No need to be afraid. I know about the rings and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~ GOTO BLACKMAIL_1
    +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~You must be Karp, yes? I have just finished my journey south from Ulgoth's Beard and I am here to collect the pair of rings I purchased.~ GOTO CHARM_1
 END

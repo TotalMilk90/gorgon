@@ -125,14 +125,14 @@ EXTEND_TOP ~%area_prefix%3200.bcs~ ~gorgon/scripts/h_highha.baf~
 
 // New Areas
 
+COMPILE ~gorgon/scripts/h_guilda.baf~
 COPY ~gorgon/areas/h_guilda.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           // TO-DO: fix music entries
           WRITE_ASCII 0x154 ~BG3300~ #8 //update area pointer for ExitGorgon, this should be looked up dynamically, but meh
      END
 
-//EXTEND_TOP ~h_guilda.bcs~ ~gorgon/scripts/h_guilda.baf~
-
+COMPILE ~gorgon/scripts/h_flamea.baf~
 COPY ~gorgon/areas/h_flamea.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           // TO-DO: fix music entries
@@ -218,7 +218,6 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
 
 //   Copy existing items so they have unique file names
 
-COPY_EXISTING ~RING06.itm~ ~override/h_ring06.itm~
 COPY_EXISTING ~DART03.itm~ ~override/h_dart03.itm~
 
 //   Add things to existing creatures
@@ -236,8 +235,8 @@ COPY_EXISTING ~HOUSG2.cre~ ~override~
      WRITE_ASCII SCRIPT_DEFAULT ~h_guards~
 
 COPY_EXISTING ~KARP.cre~ ~override~                           // Karp
-     ADD_CRE_ITEM ~h_ring06~ #0 #0 #0 ~NONE~ ~INV~
-     ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~INV2~
+     ADD_CRE_ITEM ~h_ring05~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY_EXISTING ~GAMES.cre~ ~override~                          // Gamesmen
      ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
@@ -403,36 +402,42 @@ COPY ~gorgon/items/h_ring04.itm~ ~override/h_ring04.itm~      // Looter's Band
      SAY NAME2 @64
      SAY UNIDENTIFIED_DESC @65
      SAY DESC @65
+     
+COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Karp's Ring
+     SAY NAME1 @66
+     SAY NAME2 @66
+     SAY UNIDENTIFIED_DESC @67
+     SAY DESC @67
 
 COPY ~gorgon/items/h_snak2r.itm~ ~override/h_snak2r.itm~      // Snakes Ring(not usable)
-     SAY NAME1 @66
-     SAY NAME2 @66
-     SAY UNIDENTIFIED_DESC @66
-     SAY DESC @66
-
-COPY ~gorgon/items/h_snak2w.itm~ ~override/h_snak2w.itm~      // Snakes Attack(2)(not usable)
-     SAY NAME1 @66
-     SAY NAME2 @66
-     SAY UNIDENTIFIED_DESC @66
-     SAY DESC @66
-
-COPY ~gorgon/items/h_snakew.itm~ ~override/h_snakew.itm~      // Snakes Attack(not usable)
-     SAY NAME1 @66
-     SAY NAME2 @66
-     SAY UNIDENTIFIED_DESC @66
-     SAY DESC @66
-
-COPY ~gorgon/items/h_sw1h01.itm~ ~override/h_sw1h01.itm~      // Kerykeion: Euryale's Promise
-     SAY NAME1 @67
-     SAY NAME2 @67
+     SAY NAME1 @68
+     SAY NAME2 @68
      SAY UNIDENTIFIED_DESC @68
      SAY DESC @68
 
-COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Stheno's Blade
+COPY ~gorgon/items/h_snak2w.itm~ ~override/h_snak2w.itm~      // Snakes Attack(2)(not usable)
+     SAY NAME1 @68
+     SAY NAME2 @68
+     SAY UNIDENTIFIED_DESC @68
+     SAY DESC @68
+
+COPY ~gorgon/items/h_snakew.itm~ ~override/h_snakew.itm~      // Snakes Attack(not usable)
+     SAY NAME1 @68
+     SAY NAME2 @68
+     SAY UNIDENTIFIED_DESC @68
+     SAY DESC @68
+
+COPY ~gorgon/items/h_sw1h01.itm~ ~override/h_sw1h01.itm~      // Kerykeion: Euryale's Promise
      SAY NAME1 @69
      SAY NAME2 @69
      SAY UNIDENTIFIED_DESC @70
      SAY DESC @70
+
+COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Stheno's Blade
+     SAY NAME1 @71
+     SAY NAME2 @71
+     SAY UNIDENTIFIED_DESC @72
+     SAY DESC @72
 
 // New Creatures
 

@@ -63,7 +63,7 @@ IF
          Global("h_SpawnAriosh","GLOBAL",4)
 THEN
          RESPONSE #100
-                  CreateCreature("h_ariosc",[846.1185],N)
+                  CreateCreature("h_ariosc",[846.1185],S)
                   CreateCreature("h_roguec",[1006.1057],SW)
                   CreateCreature("h_roguec",[1059.1101],SW)
                   SetGlobal("h_SpawnAriosh","GLOBAL",5)

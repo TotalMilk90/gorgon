@@ -18,12 +18,13 @@ END
 IF ~~ THEN BEGIN 2.5
    SAY ~*laughing* That's my nickname for little ol' Rigaldo. Oh, I do love how much he detests that name.~
        ++ ~By "private contracts", do you really mean assassin-for-hire?~ GOTO 3
-       ++ ~Pleasure to meet you Liedel. What current bounties do you have available?~ GOTO 4
+       ++ ~What current bounties do you have available?~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 3
    SAY ~Does that bother you? To be fair, most people do shy away from the job at first, until learning how lucrative the trade can be.~
        ++ ~What current bounties do you have available.~ GOTO 4
+       ++ ~Who is Riggy?~ GOTO 2.5
        ++ ~I'm not interested in any bounty hunting right now.~ GOTO DECLINE_0
 END
 
@@ -34,9 +35,9 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_DeclineBounty","GLOBAL",1)~ THEN BEGIN DECLINE_1
-   SAY ~You've returned. What can I help you with, <CHARNAME>?~
+   SAY ~Well, look who decided to come back. *laughing* Changed your tune, have you? Or did you just come for a chat?~
        ++ ~What current bounties do you have available.~ GOTO 4
-       ++ ~Nothing at the moment.~ EXIT
+       ++ ~I'll be going now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -44,15 +45,15 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~The first one is for a man named Carth. He borrowed money from the Zhentarim and failed to pay them back on time. They request his debt to be settled with either coin, or his life.~ IF ~~ THEN GOTO 6
+   SAY ~The first one is for a man named, Carth. He borrowed money from the Zhentarim and failed to pay them back on time. They request his debt to be settled with either coin, or his life.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~He was last seen heading north, past the Coast Way. He is a rather large man who wouldn't last a day in the wilderness, so I would search for him at an inn or tavern.~ IF ~~ THEN GOTO 7
+   SAY ~He was last seen heading north, past the Coast Way. He is a rather large man who wouldn't last a day in the wilderness, so I would search for him in a surrounding inn or tavern.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~The second contract is for a rogue by the name of Vapula Simberg. He was once a member of the thieves guild in Baldur's Gate, but after years of depravity he couldn't stomach the work anymore.~ IF ~~ THEN GOTO 8
+   SAY ~The second contract is for a rogue by the name of, Vapula Simberg. He was once a member of the thieves guild in Baldur's Gate, but after years of depravity he couldn't stomach the work anymore.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -81,7 +82,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@419,QUEST)~ EXIT
 END
 
-IF ~Global("h_LiedelQuest","GLOBAL",2)~ THEN BEGIN BOUNTY_1
+IF ~Global("h_LiedelQuest","GLOBAL",2) GlobalLT("h_BountyNumber","GLOBAL",3)~ THEN BEGIN BOUNTY_1
    SAY ~Back already, darling? Do you have any news for me?~
        +~Global("h_CarthBounty","GLOBAL",1)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_1
        +~Global("h_CarthBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_3
@@ -157,6 +158,9 @@ IF ~~ THEN DO ~
    AddJournalEntry(@424,QUEST_DONE)~ EXIT
 END
 
+IF ~Global("h_LiedelQuest","GLOBAL",2) Global("h_BountyNumber","GLOBAL",3)~ THEN BEGIN MIDDLE_0
+   SAY ~*yawn* Things are a bit slow at the moment. Not that I'm really surprised, though. What more can you expect from this boring little town?~ IF ~~ THEN EXIT
+END
 
           ///////////////////////////////////
           //////// Second Bounty List ///////
@@ -194,7 +198,7 @@ IF ~~ THEN BEGIN SECOND_6
 END
 
 IF ~~ THEN BEGIN SECOND_7
-   SAY ~You can either help Zhontac with his quest, or kill him and collect his bounty. The most profitable play of course would be to do both. Help Zhontac first and then kill him after recieveing your reward.~ IF ~~ THEN GOTO SECOND_8
+   SAY ~You can either help Zhontac with his quest, or kill him and collect his bounty. The most profitable play of course would be to do both. Help Zhontac first and then kill him after recieving your reward.~ IF ~~ THEN GOTO SECOND_8
 END
 
 IF ~~ THEN BEGIN SECOND_8
@@ -213,7 +217,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@438,QUEST)~ EXIT
 END
 
-IF ~Global("h_LiedelQuest","GLOBAL",4)~ THEN BEGIN BOUNTY_2
+IF ~Global("h_LiedelQuest","GLOBAL",4) GlobalLT("h_BountyNumber","GLOBAL",6)~ THEN BEGIN BOUNTY_2
    SAY ~Back already, darling? Do you have any news for me?~
        +~Global("h_CarthBounty","GLOBAL",1)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_1
        +~Global("h_CarthBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_3
@@ -330,6 +334,10 @@ IF ~~ THEN DO ~
    AddJournalEntry(@440,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT
+END
+
+IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6)~ THEN BEGIN RID_0
+   SAY ~Gods, I get so bored around here and Riggy has been all business lately, so he's no help.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0

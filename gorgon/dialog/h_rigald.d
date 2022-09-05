@@ -221,7 +221,7 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",7)~ THEN BEGIN KARP_10
    SAY ~If you're speaking to me then I assume you are ready to make your report and have the requested items in your possession.~
-       +~PartyHasItem("h_ring06")~+ ~I do. I have both of the rings here with me.~ GOTO KARP_11
+       +~PartyHasItem("h_ring05")~+ ~I do. I was able to procure both of her rings.~ GOTO KARP_11
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
@@ -230,7 +230,8 @@ IF ~~ THEN BEGIN KARP_11
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",8)
    AddJournalEntry(@317,QUEST_DONE)
-   TakePartyItem("h_ring06")
+   TakePartyItem("h_ring05")
+   DestroyItem("h_ring05")
    AddExperienceParty(600)~ EXIT
 END
 
@@ -273,7 +274,7 @@ IF ~~ THEN BEGIN CARNIVAL_7
 END
 
 IF ~~ THEN BEGIN CARNIVAL_7.5
-   SAY ~Don't worry yourself too much, though. Not only do the Shadow Thieves have surprisingly little stake in the gambling trade, but the bulk of their forces tend to stay below the Cloud Peaks.~
+   SAY ~Don't worry yourself too much, though. The Shadow Thieves have surprisingly little stake in the gambling trade and the bulk of their forces tend to remain below the Cloud Peaks.~
        ++ ~What exactly do we need the gambling licenses for?~ GOTO CARNIVAL_6
        ++ ~Understood. I'll be back shortly.~ GOTO CARNIVAL_8
 END
@@ -345,7 +346,7 @@ IF ~~ THEN BEGIN SPICE_4
 END
 
 IF ~~ THEN BEGIN SPICE_4.5
-   SAY ~Purely anecdotal. Perhaps you had rasied his suspicion in some way. If you meant to imply that my intel was questionable, however, know that I do not deal with uncertainties.~
+   SAY ~Is that so? Well, perhaps you had rasied his suspicion in some way and he didn't like the cut of your cloth. If you meant to imply that my intel was questionable, however, know that I do not deal with uncertainties.~
        ++ ~Understood. I will get him to pay his dues.~ GOTO SPICE_5
 END
 
@@ -417,11 +418,11 @@ IF ~Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_1
 END
 
 IF ~~ THEN BEGIN LOTUS_2
-   SAY ~I contacted Borland's spice supplier and we were able to come to terms on a very profitable arrangement.~ IF ~~ THEN GOTO LOTUS_3
+   SAY ~I made contact with Borland's spice supplier and we were able to come to terms on a very profitable arrangement.~ IF ~~ THEN GOTO LOTUS_3
 END
 
 IF ~~ THEN BEGIN LOTUS_3
-   SAY ~He will be delivering us regular shipments of the finest black lotus petals on the market and we have just received our fist batch.~ IF ~~ THEN GOTO LOTUS_4
+   SAY ~He will be delivering regular shipments to our warehouses of the finest black lotus petals on the market, and we have just received our fist batch.~ IF ~~ THEN GOTO LOTUS_4
 END
 
 IF ~~ THEN BEGIN LOTUS_4
@@ -438,7 +439,7 @@ IF ~~ THEN BEGIN LOTUS_5
 END
 
 IF ~~ THEN BEGIN LOTUS_6
-   SAY ~You will be selling five pounds of black lotus at 600 gold pieces per pound. I will award you with a 20% cut upon successful transportation of the product.~
+   SAY ~You will be transporting five pounds of black lotus at 600 gold pieces per pound. I will award you with a 20% cut upon your success.~
        ++ ~Is it safe to go back into Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7
 END

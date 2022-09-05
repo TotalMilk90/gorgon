@@ -17,4 +17,21 @@ IF ~~ THEN DO ~
    AddJournalEntry(@319,QUEST)~ EXIT
 END
 
+/*   Would you like to play a little game with me to help pass the time?~
+       ++ ~What's the game?~ GOTO RID_1
+       ++ ~Sorry, I don't really have the time for that.~ EXIT
+END
+
+IF ~~ THEN BEGIN RID_1
+   SAY ~I will put you through a series of 4 riddles. For each one that you answer wrong, you will have to give me, say... 100 gold. For each one that you guess right, however, I'll give you a random item from my Bag of Mysteries!~
+       +~PartyGoldGT(399)~+ ~Bag of Mysteries? Alright, this sounds fun. Let's play.
+       +~PartyGoldLT(400)~+ ~It seems I don't have enough gold to play your game.~ GOTO RID_2
+       ++ ~I'm not interested.~ EXIT
+END
+
+IF ~~ THEN BEGIN RID_2
+   SAY ~Are you serious? *laughing* How are you this far along without having 400 gold pieces on you?~ IF ~~ THEN EXIT
+END
+*/
+
 

@@ -47,7 +47,7 @@ END
 
 IF ~~ THEN BEGIN JOIN_8
    SAY ~Oh my, quite a surprise you would be so informed. A refreshing contrast to the usual drab I am forced to deal with. Ravenscar's influence does leave the walls yes, to be sure, but his jurisdiction stays within.~
-       ++ ~And what of the Shadows Thieves? We are not far from Amn.~ GOTO JOIN_9
+       ++ ~What of the Shadows Thieves? We are not far from Amn.~ GOTO JOIN_9
        ++ ~What could I expect to gain from joining your guild?~ GOTO JOIN_10
        ++ ~What types of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_14
@@ -130,11 +130,11 @@ END
 
 
 IF ~Global("h_BaldwinQuest","GLOBAL",2)~ THEN BEGIN MAGE_1
-   SAY ~Ah, <CHARNAME>! Just the person I wanted to see. Rigaldo tells me you are doing fine work, and I think it is time I filled you in on some official guild business.~ IF ~~ THEN GOTO MAGE_2
+   SAY ~Ah, <CHARNAME>. Just the person I wanted to see. Rigaldo tells me you are doing fine work, and I think it is time I filled you in on some official guild business.~ IF ~~ THEN GOTO MAGE_2
 END
 
 IF ~~ THEN BEGIN MAGE_2
-   SAY ~A network of spies under my employ are investigating the location of an ancient staff called the Kerykeion.~ IF ~~ THEN GOTO MAGE_3
+   SAY ~A network of elite spies under my employ, whom I refer to as my Snake Heads, are investigating the location of an ancient staff called the Kerykeion.~ IF ~~ THEN GOTO MAGE_3
 END
 
 IF ~~ THEN BEGIN MAGE_3
@@ -310,15 +310,15 @@ IF ~~ THEN BEGIN NAGATE_4
 END
 
 IF ~~ THEN BEGIN NAGATE_5
-   SAY ~<CHARNAME>, I need you to head north immediately. They are meeting with a rogue named Nagate, by some old ruins south of some camp.~ IF ~~ THEN GOTO NAGATE_6
+   SAY ~<CHARNAME>, I need you to head north immediately. They are meeting with a rogue named Nagate, near some old elven ruins.~ IF ~~ THEN GOTO NAGATE_6
 END
 
 IF ~~ THEN BEGIN NAGATE_6
-   SAY ~Be on your guard when you arrive. It seems the Shadow Thieves have suspicions the meeting may actually be a trap.~ IF ~~ THEN GOTO NAGATE_7
+   SAY ~Be on your guard when you arrive. It seems the Shadow Thieves had their own suspicions the meeting may actually be a trap.~ IF ~~ THEN GOTO NAGATE_7
 END
 
 IF ~~ THEN BEGIN NAGATE_7
-   SAY ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill this Nagate, if you have to.~
+   SAY ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill Nagate, of any Shadow Thief in your path.~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildMusic","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",6)

@@ -1,6 +1,6 @@
 APPEND MTOWN3
 
-IF WEIGHT #-1 ~Global("h_LotusQuest","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN L_10
+IF WEIGHT #-0 ~Global("h_LotusQuest","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN L_10
    SAY ~I would offer you a chance to partake in the pleasures of the black lotus, but I'm afraid we've just ran out.~
        ++ ~I seem to have arrived just in time then, as I have a fresh supply that I am ready to unload.~ GOTO L_11
 END
@@ -97,7 +97,7 @@ IF ~~ THEN DO ~
    GiveGoldForce(2400)~ EXIT
 END
 
-IF  WEIGHT #-1 ~Global("h_LotusCutscene","GLOBAL",1)~ THEN BEGIN L_18
+IF  WEIGHT #-0 ~Global("h_LotusCutscene","GLOBAL",1)~ THEN BEGIN L_18
    SAY ~Whoa. I could have sworn I was just talking to an elephant...~
 IF ~~ THEN DO ~
    SetGlobal("h_LotusCutscene","GLOBAL",0)~ EXIT

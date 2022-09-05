@@ -13,7 +13,7 @@ END
 
 IF ~~ THEN BEGIN 2
    SAY ~Unfortunate bit of business that is. As you can tell by my face though, she deserves whatever's coming to her.~
-       ++ ~She said she was only defending herself from you, and that you only fell because you were drunk.~ GOTO 3
+       ++ ~She said she was only defending herself from you, and that you fell because you were drunk.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3

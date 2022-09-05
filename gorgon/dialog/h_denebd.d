@@ -10,7 +10,7 @@ IF ~True()~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Of course you've come for the Kerykeion. Nobody just wanders up here by mistake. Sorry to inform you though, you won't be leaving here with it, in fact you won't be leaving here at all!~
+   SAY ~Of course you've come for the Kerykeion. Nobody just wanders up here by mistake. Sorry to inform you though, you won't be leaving here with it. In fact, you won't be leaving here at all!~
        ++ ~Who are these other thieves you speak of?~ GOTO 2
        ++ ~What snakes? There is nothing here except us and these damned gibberlings!~ GOTO 2.5
        ++ ~Wait! Is there no other solution? We don't need to fight.~ GOTO 3
@@ -27,7 +27,7 @@ END
 
 IF ~~ THEN BEGIN 2.5
    SAY ~They are me, and I am them. When darkness falls they rise again!~
-       ++ ~Poor girl, you are obviously demented. I have no choice but to put you out of your misery.~ GOTO 3
+       ++ ~Poor girl, you are obviously demented. Allow me to end your misery.~ GOTO 3
        ++ ~I have come in search of the Kerykeion and heard it may be in your possession.~ GOTO 1
        ++ ~Who are these other thieves you speak of?~ GOTO 2
        ++ ~Wait! Is there no other solution? We don't need to fight.~ GOTO 3

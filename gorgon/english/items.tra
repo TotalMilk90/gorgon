@@ -253,10 +253,22 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@66=~Snake~
+@66=~Karp's Ring~
+@67=~Ring of Protection +1: Ring of the Princes
+This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least thirteen generations, though they were all apparently lost within the space of one. Enmity between the king and the family of the creator may be to blame.
+
+STATISTICS:
+
+Equipped abilities:
+- Armor Class: +1
+- Saving Throws: +1
+
+Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@67=~Kerykeion: Euryale's Promise~
-@68=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
+@68=~Snake~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@69=~Kerykeion: Euryale's Promise~
+@70=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
 
 STATISTICS:
 
@@ -275,8 +287,8 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@69=~Kerykeion: Stheno's Blade~
-@70=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
+@71=~Kerykeion: Stheno's Blade~
+@72=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
 
 STATISTICS:
 

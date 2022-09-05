@@ -1,18 +1,18 @@
 BEGIN h_aishad
 
 IF ~GlobalLT("h_LiedelQuest","GLOBAL",2) Global("h_AishaBounty","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~Oh my, you startled me! Please, I don't mean any rudeness, but I wish to be left alone.~ IF ~~ THEN EXIT
+   SAY ~Oh, my, you startled me! Please, I don't mean any rudeness, but I wish to be left alone.~ IF ~~ THEN EXIT
 END
 
 IF ~GlobalGT("h_LiedelQuest","GLOBAL",1) Global("h_AishaBounty","GLOBAL",0)~ THEN BEGIN 1
-   SAY ~Oh my, you startled me! Please, I don't mean any rudeness, but I wish to be left alone.~
+   SAY ~Oh, my, you startled me! Please, I don't mean any rudeness, but I wish to be left alone.~
        ++ ~Don't be alarmed, Aisha. I know about the bounty and I'm just here to find out why someone would want you dead.~ GOTO 3
        ++ ~I'm here to collect your bounty, Aisha. Let's not make this harder than it needs to be.~ GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
    SAY ~Wait! Please let me explain before you make your judgement!~
-       ++ ~Ok, I will listen to what you have to say.~ GOTO 3
+       ++ ~Fine, I'll listen to what you have to say.~ GOTO 3
        ++ ~Sorry, but I don't have time for this. (Snap her neck.)~ GOTO 10
 END
 
@@ -29,7 +29,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~The next day I learned he placed a bounty on my head and I've been hiding out here ever since.~
+   SAY ~The next day I learned he placed a bounty on me and I've been hiding out here ever since.~
        ++ ~Where can I find this Amrius? Maybe I can convince him to remove the bounty.~ GOTO 7
        ++ ~Sorry Aisha, but I have a job to do. (Snap her neck.)~ GOTO 10
 END

@@ -27,12 +27,12 @@ IF ~~ THEN BEGIN 4.5
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~The cook was so delighted by my appetite that he convinced Bently to put me up until I can get back on my feet. But, because of the bounty, I am forced to stay in hiding and can't leave for work.~ IF ~~ THEN GOTO 6
+   SAY ~The cook was so delighted by my appetite that he convinced Bently to put me up until I can get back on my feet. However, due to the bounty I am forced to stay in hiding and can't leave for work.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
    SAY ~Please, I just don't know what to do!~
-       ++ ~How much gold do you still owe them? Maybe I could pay the debt for you.~ GOTO 7
+       ++ ~How much gold do you still owe them? Maybe I could settle the debt for you.~ GOTO 7
        ++ ~Sorry lad, but business is business. (Snap his neck.)~ DO ~
    Kill("h_carthc")
    SetGlobal("h_CarthBounty","GLOBAL",1)

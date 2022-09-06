@@ -19,12 +19,14 @@ ACTION_IF GAME_IS ~bgee~
 BEGIN
 	OUTER_SPRINT "area_prefix" AR
 	OUTER_SET isEET = 0
+        INCLUDE ~gorgon/lib/g3_bgee_cpmvars.tpa~
 END
 	
 ACTION_IF GAME_IS ~eet~
 BEGIN
 	OUTER_SPRINT "area_prefix" BG
 	OUTER_SET isEET = 1
+	INCLUDE ~eet/other/cpmvars/eet_cpmvars.tpa~
 END
 
 // Dialog
@@ -73,7 +75,7 @@ COMPILE ~gorgon/dialog/h_game3d.d~
 COMPILE ~gorgon/dialog/h_borlad.d~
 COMPILE ~gorgon/dialog/h_gerard.d~
 COMPILE ~gorgon/dialog/h_karpd.d~
-COMPILE ~gorgon/dialog/h_lotusd.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_lotusd.d~
 COMPILE ~gorgon/dialog/h_gellad.d~
 COMPILE ~gorgon/dialog/h_carn0d.d~
 COMPILE ~gorgon/dialog/h_carn3d.d~
@@ -107,7 +109,6 @@ COMPILE ~gorgon/scripts/h_mereds.baf~
 COMPILE ~gorgon/scripts/h_euryns.baf~
 COMPILE ~gorgon/scripts/h_rich2s.baf~
 COMPILE ~gorgon/scripts/h_liedes.baf~
-COMPILE ~gorgon/scripts/h_lotuss.baf~
 
 // Area Scripts
 
@@ -249,9 +250,6 @@ COPY_EXISTING ~GAMES4.cre~ ~override~
 
 COPY_EXISTING ~GAMES5.cre~ ~override~
      ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
-     
-COPY_EXISTING ~MTOWN3.cre~ ~override~                         // Commoner(Lotus)
-     WRITE_ASCII SCRIPT_DEFAULT ~h_lotuss~
 
 // Store
 

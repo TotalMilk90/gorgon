@@ -1,7 +1,0 @@
-IF
-	Global("h_LotusCutscene","GLOBAL",1)
-THEN
-	RESPONSE #100
-		 SmallWait(5)
-		 StartDialog("MTOWN3",[PC])
-END

@@ -114,4 +114,4 @@ STATISTICS:
 
 INGREDIENTS:
 -Broken Kerykeion Piece
-
+-Ogre Blade

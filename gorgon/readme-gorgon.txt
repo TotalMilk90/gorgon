@@ -30,10 +30,6 @@ Future Content
 ==============
 -Danika, a Demarchess of Mask, joinable NPC
 -Demarch/ess of Mask, a new cleric kit
--Quests following the conclusion of the mod's story
--Quests from the smaller guild sections(smugglers, gamesmen, and courtesans)
--Encounters involving Beregost's citizens
--A few new items and possibly upgrades
  
 ================
 Acknowledgements
@@ -42,8 +38,8 @@ This mod would not have been possible without DnD Detective's mod tutorial
 videos on YouTube. They really helped me bridge the gap between knowing
 absolutely nothing about how to start a mod, to being able to create working
 content. This mod would also have been completely lacking if not for all the 
-gracious help I recieved from the G3 community, who answered and provided
-reference for all my questions.
+gracious help I recieved from the entire G3 community, especially CamDawg, who
+answered and provided reference for all my questions.
 
 BAMWorkshop: Erephine and Sam
 IESDP: igi and lynx
@@ -55,6 +51,12 @@ WeiDU: Wes Weimer, the bigg and Wisp
 ===============
 Version History
 ===============
+Version 3:
+-Added EET compatibility (Thanks to Graion Dilach)
+-Added dialog traification (Thanks to JohnBob)
+-Added a new quest and a game of riddles
+-Minor dialog improvements
+
 Version 2:
 -Fixed a quest loop and some broken scripts
 -Lots of minor dialog and quest improvements

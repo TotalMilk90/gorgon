@@ -193,14 +193,19 @@ Weight: 0~
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@52=~Ring~
-@53=~Ring of Minor Lock Picking~
-@54=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+@52=~Counterfeit Gold~
+@53=~Although noticable, the weight, feel and hue of this coin is only slightly off compared to real gold. It could easily be mistaken as legitimate if passed over with a quick glance.
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@54=~Ring~
+@55=~Ring of Minor Lock Picking~
+@56=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
 STATISTICS:
 
 Weight: 0~
-@55=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
+@57=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
 
 STATISTICS:
 
@@ -209,14 +214,14 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@56=~Ring~
-@57=~Ring of Awareness~
-@58=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+@58=~Ring~
+@59=~Ring of Awareness~
+@60=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
 STATISTICS:
 
 Weight: 0~
-@59=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
+@61=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
 
 STATISTICS:
 
@@ -225,14 +230,14 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@60=~Ring~
-@61=~Ring of the Cutpurse~
-@62=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+@62=~Ring~
+@63=~Ring of the Cutpurse~
+@64=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
 
 STATISTICS:
 
 Weight: 0~
-@63=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
+@65=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
 
 STATISTICS:
 
@@ -241,8 +246,8 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@64=~Looter's Band~
-@65=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
+@66=~Looter's Band~
+@67=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
 
 STATISTICS:
 
@@ -253,8 +258,8 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@66=~Karp's Ring~
-@67=~Ring of Protection +1: Ring of the Princes
+@68=~Karp's Ring~
+@69=~Ring of Protection +1: Ring of the Princes
 This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least thirteen generations, though they were all apparently lost within the space of one. Enmity between the king and the family of the creator may be to blame.
 
 STATISTICS:
@@ -265,10 +270,10 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@68=~Snake~
+@70=~Snake~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@69=~Kerykeion: Euryale's Promise~
-@70=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
+@71=~Kerykeion: Euryale's Promise~
+@72=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
 
 STATISTICS:
 
@@ -287,8 +292,8 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@71=~Kerykeion: Stheno's Blade~
-@72=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
+@73=~Kerykeion: Stheno's Blade~
+@74=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
 
 STATISTICS:
 

@@ -156,13 +156,16 @@ IF ~~ THEN BEGIN GERARD_10
 END
 
 IF ~~ THEN BEGIN GERARD_11
-   SAY ~Also, before you depart, Baldwin wishes a word with you. I wouldn't keep him waiting.~
+   SAY ~Other guild members may have odd jobs for you to pick up as well. Also, before you depart, Baldwin wishes a word with you. I wouldn't keep him waiting.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",5)
    SetGlobal("h_BaldwinQuest","GLOBAL",2)
    SetGlobal("h_LiedelQuest","GLOBAL",1)
+   SetGlobal("h_GilbaldQuest","GLOBAL",1)
+   SetGlobal("h_ZedaRiddle","GLOBAL",1)
    AddJournalEntry(@314,QUEST_DONE)
    TakePartyItem("h_misc05")
+   DestroyItem("h_misc05")
    GiveGoldForce(200)
    AddExperienceParty(300)~ EXIT
 END

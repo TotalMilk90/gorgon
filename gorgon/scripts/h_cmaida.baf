@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnMaid","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_cmaidc",[462.571],NW)
+                 SetGlobal("h_SpawnMaid","GLOBAL",1)
+                 Continue()
+END

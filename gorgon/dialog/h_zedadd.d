@@ -7,7 +7,7 @@ END
 IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
    SAY ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
        ++ ~I'll keep that in mind.~ EXIT
-       +~GlobalGT("h_RigaldoQuest","GLOBAL",6) Global("h_ZedaRiddle","GLOBAL",0)~+ ~I'm looking for something to do. Do you have any work available?~ GOTO RIDDLE_0
+       +~Global("h_ZedaRiddle","GLOBAL",1)~+ ~I'm looking for something to do. Do you have any work available?~ GOTO RIDDLE_0
        +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
 END
 
@@ -33,7 +33,7 @@ IF ~~ THEN BEGIN RIDDLE_1
 END
 
 IF ~~ THEN BEGIN RIDDLE_1.5
-   SAY ~For each one that you guess right, however, you will get a random prize from my, Bag of Mysteries. Once we begin you *must* commit to answering all 4 riddles before the game will end.~
+   SAY ~For each one that you guess right, however, you will get a random prize from my Bag of Mysteries. Once we begin you *must* commit to answering all 4 riddles before the game will end.~
        +~PartyGoldGT(399)~+ ~Bag of Mysteries? Alright, I'll play your little game.~ GOTO RIDDLE_3
        +~PartyGoldLT(400)~+ ~It seems I don't have enough gold to play your game.~ GOTO RIDDLE_2
        ++ ~I'm not interested.~ EXIT
@@ -164,9 +164,9 @@ END
 
 IF ~~ THEN BEGIN END_0
    SAY ~I hope you had as much fun as I did. Time to go refill my Bag of Mysteries for my next victim!~
-       ++ ~You have an odd sense of humor, you know that?~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",1)~ EXIT
-       ++ ~What am I supposed to do with all this junk...~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",1)~ EXIT
-       ++ ~Thanks, Zeda, that was fun.~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",1)~ EXIT
+       ++ ~You have an odd sense of humor, you know that?~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",2)~ EXIT
+       ++ ~What am I supposed to do with all this junk...~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",2)~ EXIT
+       ++ ~Thanks, Zeda, that was fun.~ DO ~SetGlobal("h_ZedaRiddle","GLOBAL",2)~ EXIT
 END
 
 

@@ -91,3 +91,13 @@ THEN
                  PlaySong(0)
                  Continue()
 END
+
+IF
+        Global("h_SpawnXevec","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_xevecc",[1939.1413],S)
+                 SetGlobal("h_SpawnXevec","GLOBAL",2)
+                 Continue()
+END

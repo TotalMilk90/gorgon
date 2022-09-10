@@ -8,7 +8,7 @@ IF ~~ THEN BEGIN FINAL_1
    SAY ~Thank you for your assistance, <CHARNAME>. Your help has been nothing short of invaluable to me.~
        ++ ~Of course, Baldwin. How do we proceed from here?~ GOTO FINAL_2
        ++ ~I cannot let you continue with this. I have been warned of the dangers this weapon will bring and it must be destroyed!~ GOTO FINAL_6
-       ++ ~You are alone, Baldwin, and have all the pieces laid in front of you, yet it still remains disassembled. I think I shall kill you and take it for myself!~ GOTO FINAL_7
+       ++ ~You are alone, Baldwin, and have all the pieces laid out in front of you, yet, it still remains disassembled. I think I shall kill you and take it for myself!~ GOTO FINAL_7
 END
 
 IF ~~ THEN BEGIN FINAL_2
@@ -59,7 +59,7 @@ CHAIN
    == h_bald2d
 ~Sorry, but that won't be happening. Hiring the Shadow Thieves against us was a deadly mistake.~
    =
-~Hand over the Kerykeion and I shall reward you with a quick death. Refuse and you will learn how I received my namesake.~
+~Hand over the Kerykeion and I shall reward you with a quick death. Refuse and you will learn how I received of my namesake.~
    == NOBL10
 ~Kill me if you must, Butcher. But let it be known that I will no longer suffer your indignities any longer.~
    == h_bald2d

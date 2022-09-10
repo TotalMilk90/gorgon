@@ -152,11 +152,15 @@ IF ~~ THEN BEGIN GERARD_9
 END
 
 IF ~~ THEN BEGIN GERARD_10
-   SAY ~Congratulations, <CHARNAME>. Your trial phase has concluded and you have been promoted to a full-fledged member of the Gorgon's Eye. If you wish, you may now speak with Liedel for a current list of all our active bounties.~ IF ~~ THEN GOTO GERARD_11
+   SAY ~Congratulations, <CHARNAME>. Your trial phase has concluded and you have been promoted to a full-fledged member of the Gorgon's Eye.~ IF ~~ THEN GOTO GERARD_11
 END
 
 IF ~~ THEN BEGIN GERARD_11
-   SAY ~Other guild members may have odd jobs for you to pick up as well. Also, before you depart, Baldwin wishes a word with you. I wouldn't keep him waiting.~
+   SAY ~You may now speak with Liedel for a current list of all our active bounties. Other guild members may have odd jobs for you to pick up as well.~ IF ~~ THEN GOTO GERARD_12
+END
+
+IF ~~ THEN BEGIN GERARD_12
+   SAY ~Also, before you depart, Baldwin wishes a word with you. I wouldn't keep him waiting.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",5)
    SetGlobal("h_BaldwinQuest","GLOBAL",2)
@@ -170,7 +174,7 @@ IF ~~ THEN DO ~
    AddExperienceParty(300)~ EXIT
 END
 
-IF ~Global("h_RigaldoQuest","GLOBAL",5)~ THEN BEGIN GERARD_12
+IF ~Global("h_RigaldoQuest","GLOBAL",5)~ THEN BEGIN GERARD_13
    SAY ~Baldwin wishes a word with you. Finish your business with him and then return to me for your next assignment.~ IF ~~ THEN EXIT
 END
 
@@ -349,7 +353,7 @@ IF ~~ THEN BEGIN SPICE_4
 END
 
 IF ~~ THEN BEGIN SPICE_4.5
-   SAY ~Is that so? Well, perhaps you had rasied his suspicion in some way and he didn't like the cut of your cloth. If you meant to imply that my intel was questionable, however, know that I do not deal with uncertainties.~
+   SAY ~Is that so? Well, perhaps you had rasied his suspicion in some way. If you meant to imply that my intel was questionable, however, know that I do not deal with uncertainties.~
        ++ ~Understood. I will get him to pay his dues.~ GOTO SPICE_5
 END
 
@@ -391,7 +395,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN SPICE_9
-   SAY ~Not the most ideal outcome but at least you did not come back empty handed. Here is your reward for the lotus.~
+   SAY ~Not the most ideal outcome but at least you didn't come back empty handed. Here is your reward for the lotus.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",13)
    SetGlobal("h_SpawnAriosh","GLOBAL",1)
@@ -425,11 +429,11 @@ IF ~~ THEN BEGIN LOTUS_2
 END
 
 IF ~~ THEN BEGIN LOTUS_3
-   SAY ~He will be delivering regular shipments to our warehouses of the finest black lotus petals on the market, and we have just received our fist batch.~ IF ~~ THEN GOTO LOTUS_4
+   SAY ~He will be making regular shipments to our warehouses of the finest black lotus petals on the market.~ IF ~~ THEN GOTO LOTUS_4
 END
 
 IF ~~ THEN BEGIN LOTUS_4
-   SAY ~I am sending you to the Nashkel Carnival to deliver the lotus to our buyer. He will be awaiting you in the eastern-most tent.~
+   SAY ~I am sending you to the Nashkel Carnival to deliver the first batch to our buyer. He will be awaiting you in the eastern-most tent.~
        ++ ~Is it safe to go back into Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~How much coin should I expect to recieve from the buyer?~ GOTO LOTUS_6
        ++ ~Is there anything else I should know before departing?~ GOTO LOTUS_7

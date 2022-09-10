@@ -5,7 +5,7 @@ IF ~GlobalLT("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN 1
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",0)~ THEN BEGIN CARNIVAL_0
-   SAY ~Aye, <CHARNAME>, there you are. We're on orders to await your signal. Are we ready to make our move?~
+   SAY ~Aye, <CHARNAME>. We're on orders to await your signal. Are we ready to make our move?~
        +~NumItemsParty("h_dart03",16)~+ ~Yes, I've secured all their weapons. Divy them up and ready yourselves for action.~ GOTO CARNIVAL_5
        +~Gender(Player1,FEMALE) NumItemsPartyLT("h_dart03",16)~+ ~Not yet. I'm just reporting in. I'll be heading down presently, so be on alert.~ GOTO CARNIVAL_1
        +~Gender(Player1,MALE) NumItemsPartyLT("h_dart03",16)~+ ~Not yet. I'm just reporting in. I'll be heading down presently, so be on alert.~ GOTO CARNIVAL_2

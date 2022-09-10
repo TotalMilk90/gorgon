@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN UPGRADE_1
        +~OR(3) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08")~+ ~Could you do anything with this wizard item?~ GOTO TORQUE_1
        +~OR(2) PartyHasItem("h_dagg01") PartyHasItem("SW1H09")~+ ~Could you do anything with this sword?~ GOTO KUKRI_1
        +~OR(2) PartyHasItem("RING21") PartyHasItem("HELM05")~+ ~Could you do anything with this item that grants infravision?~ GOTO COWL_1
-       +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ ~Could you do anything with this thieving ring?~ GOTO RING_1
+       +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ ~Could you do anything with this thieves ring?~ GOTO RING_1
        +~PartyHasItem("h_misc06")~+ ~Do you think you can forge anything from this giant piece of metal?~ GOTO OGREBLADE_1
        ++ ~I'll have to come back later.~ EXIT
 END
@@ -157,9 +157,9 @@ END
 IF ~~ THEN BEGIN OGREBLADE_3
    SAY ~Allow me to conduct some testing and I'll get back to you if I have any success.~
 IF ~~ THEN DO ~
+   SetGlobal("h_OgreBlade","GLOBAL",1)
    TakePartyItem("h_misc06")
-   DestroyItem("h_misc06")
-   AddExperienceParty(700)~ EXIT
+   DestroyItem("h_misc06")~ EXIT
 END
 
 IF ~~ THEN BEGIN KERY_1
@@ -178,7 +178,7 @@ IF ~~ THEN BEGIN KERY_4
    SAY ~If I am able to find success in my experiments, what type of weapon would you prefer to be crafted?~
        ++ ~Could you forge it into a reusable dart.~ DO ~ SetGlobal("h_KeryDart","GLOBAL",1)~ GOTO KERY_5
        ++ ~Could you forge it into short sword.~ DO ~ SetGlobal("h_KerySword","GLOBAL",1)~ GOTO KERY_5
-       ++ ~Could you forge it into a katana.~ DO ~ SetGlobal("h_KeryKatana","GLOBAL",1)~ GOTO KERY_5
+       +~Global("h_OgreBlade","GLOBAL",1)~+ ~Could you forge it into a katana.~ DO ~ SetGlobal("h_KeryKatana","GLOBAL",1)~ GOTO KERY_5
 END
 
 IF ~~ THEN BEGIN KERY_5
@@ -186,7 +186,6 @@ IF ~~ THEN BEGIN KERY_5
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",6)
    SetGlobalTimer("h_KeryWeapon","GLOBAL",FIVE_DAYS)
-   AddJournalEntry(@510,QUEST)
    TakePartyItem("h_misc03")
    DestroyItem("h_misc03")~ EXIT
 END
@@ -195,7 +194,6 @@ IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryDart","
    SAY ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into the weapon of your choice.~
 IF ~~ THEN DO ~
    SetGlobal("h_KeryDart","GLOBAL",2)
-   AddJournalEntry(@511,QUEST_DONE)
    GiveItemCreate("h_dart01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
@@ -203,7 +201,6 @@ IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KerySword",
    SAY ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into your preferred weapon.~
 IF ~~ THEN DO ~
    SetGlobal("h_KerySword","GLOBAL",2)
-   AddJournalEntry(@511,QUEST_DONE)
    GiveItemCreate("h_sw1h01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
@@ -212,7 +209,6 @@ IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryKatana"
    SAY ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into your preferred weapon.~
 IF ~~ THEN DO ~
    SetGlobal("h_KeryDart","GLOBAL",2)
-   AddJournalEntry(@511,QUEST_DONE)
    GiveItemCreate("h_sw1h02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
@@ -249,23 +245,23 @@ IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOB
 END
 
 IF ~~ THEN BEGIN BETRAY_2
-   SAY ~There's a good lass. Now listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
+   SAY ~There's a good lass. Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_2.5
-   SAY ~There's a good lad. Now listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
+   SAY ~There's a good lad. Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_3
-   SAY ~What did I just say? Now listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
+   SAY ~I said keep your voice down! Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion without finishing his proper inspections.~ IF ~~ THEN GOTO BETRAY_5
+   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion without finishing the proper modifications.~ IF ~~ THEN GOTO BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_5
-   SAY ~When he does, the device should fail and should kill him instantly. Afterwards, we will assume control of the guild and you will recieve your reward.~
+   SAY ~When he does, the device will fail and should kill him instantly. Afterwards, we will assume control of the guild and you will recieve your reward.~
        ++ ~What about the rest of the guildmates?~ GOTO BETRAY_6
        ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
        ++ ~I am ready to begin.~ GOTO BETRAY_9

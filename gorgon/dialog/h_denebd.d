@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 2.5
-   SAY ~They are me, and I am them. When darkness falls they rise again!~
+   SAY ~They are me, and I am them. When darkness falls, they rise again!~
        ++ ~Poor girl, you are obviously demented. Allow me to end your misery.~ GOTO 3
        ++ ~I have come in search of the Kerykeion and heard it may be in your possession.~ GOTO 1
        ++ ~Who are these other thieves you speak of?~ GOTO 2

@@ -8,7 +8,7 @@ IF WEIGHT #-1 ~Global("h_GerardQuest","GLOBAL",0) Global("h_RigaldoQuest","GLOBA
 END
 
 IF ~~ THEN BEGIN G_11
-   SAY ~Payment? You're one of Rigaldo's dogs then? Hmph! I shan't debase myself by dealing with the likes of you lot. Tell him he will not be recieving another penny from me. Now begone!~
+   SAY ~Payment? You're one of Rigaldo's dogs then? Hmph! I shan't debase myself by dealing with the likes of you lot. Tell him he will not be recieving another penny from me. Now, begone!~
        ++ ~Give me the necklace if you want to live!~ GOTO G_14
        ++ ~I'm afraid I can't do that. *unsheathe your blade* Play nice now, before things get ugly.~ GOTO G_14
        ++ ~I don't want to hurt you, Gerard, but you'll soon leave me no choice.~ GOTO G_14

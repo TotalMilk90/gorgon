@@ -1,5 +1,9 @@
 BEGIN h_lieded
 
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
+   SAY ~Oh, this is exciting isn't it! It's giving me quite the thrill.~
+END
+
 IF ~Global("h_LiedelQuest","GLOBAL",0)~ THEN BEGIN 0
    SAY ~Beat it rookie. Come back when your abilities have been better tested.~ IF ~~ THEN EXIT
 END
@@ -73,7 +77,7 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
-   SAY ~That is all I have for now. Come back after you have made any progress.~
+   SAY ~That is all I have for now. Return to me when you have made any progress.~
 IF ~~ THEN DO ~
    SetGlobal("h_DeclineBounty","GLOBAL",2)
    SetGlobal("h_LiedelQuest","GLOBAL",2)
@@ -159,7 +163,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",2) Global("h_BountyNumber","GLOBAL",3)~ THEN BEGIN MIDDLE_0
-   SAY ~*yawn* Things are a bit slow at the moment. Not that I'm really surprised, though. What more can you expect from this boring little town?~ IF ~~ THEN EXIT
+   SAY ~*yawn* Things are a bit slow at the moment. Not that I'm surprised, though. What more can you really expect from a boring little town like this?~ IF ~~ THEN EXIT
 END
 
           ///////////////////////////////////
@@ -206,7 +210,7 @@ IF ~~ THEN BEGIN SECOND_8
 END
 
 IF ~~ THEN BEGIN SECOND_9
-   SAY ~That is all I have for now. Come back after you have made any progress.~
+   SAY ~That is all I have for now. Return to me when you have made any progress.~
 IF ~~ THEN DO ~
    SetGlobal("h_LiedelQuest","GLOBAL",4)
    SetGlobal("h_SpawnEuropea","GLOBAL",1)
@@ -244,8 +248,8 @@ IF ~~ THEN BEGIN EURO_2
    SAY ~Poor girl. I'll inform her owner. Here is your reward, 1,000 gold coins for returning her alive.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
-   TakePartyItem("h_misc10")
-   DestroyItem("h_misc10")
+   TakePartyItem("h_misc11")
+   DestroyItem("h_misc11")
    AddJournalEntry(@429,QUEST_DONE)
    GiveGoldForce(1000)
    AddExperienceParty(600)
@@ -337,7 +341,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6)~ THEN BEGIN RID_0
-   SAY ~Gods, I get so bored around here and Riggy has been all business lately, so he's no help.~ IF ~~ THEN EXIT
+   SAY ~Gods, I get so bored around here, I don't know how much more of it I can take. Even Riggy's been all business lately so he's no help.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0

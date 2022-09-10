@@ -51,11 +51,11 @@ CHAIN
    == h_game2d
 ~Well, you see... I was going over the count from last night...~
    =
-~and...~
+~... and...~
    == h_gilbad
 ~By gods, spit it out man!~
    == h_game2d
-~I think we've been had! Some of these coins don't feel right!~
+~I think we've been had! Some of these coins don't seem right!~
    == h_gilbad
 ~Toss one here, let me have a look.~
    =

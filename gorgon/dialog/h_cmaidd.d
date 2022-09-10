@@ -18,37 +18,37 @@ IF ~~ THEN DO ~
 END
 
 IF ~GlobalGT("h_TalkedToMaid","GLOBAL",0)~ THEN BEGIN 3
-   SAY ~I thought I told you to leave.~
+   SAY ~I thought I asked you to leave.~
        ++ ~I'll be going now.~ EXIT
        +~NumItemsPartyGT("h_misc15",1)~+ ~Care to explain how this coin ended up in your possession?~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
    SAY ~What! How did you get that?~
-       ++ ~The jig is up! I know you've used these to pay Xevec, so he would kill Samantha for you!~ GOTO 5
+       ++ ~The jig is up! You paid Xevec these fake coins to kill Samantha for you!~ GOTO 5
        ++ ~It doesn't matter. You were involved with using these at our casino and now you will pay the price. (Snap her neck.)~ DO ~
    Kill("h_cmaidc")
-   SetGlobal("h_KilledMaid","GLOBAL",1)
+   SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~*sigh* Alright, fine, it's true. I hate that devil-woman! She has done nothing but make my life a living hell!~
-       ++ ~I don't understand though, why did you use counterfeit gold?~ GOTO 6
+   SAY ~Alright, fine, it's true! I hate that devil-woman! She has done nothing but make my life a living hell!~
+       ++ ~Why did you use counterfeit gold though?~ GOTO 6
        ++ ~Well, I'm glad that's over. Nothing personal, but I'm going to have to kill you now. (Snap her neck.)~ DO ~
    Kill("h_cmaidc")
-   SetGlobal("h_KilledMaid","GLOBAL",1)
+   SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~I don't have enough real gold to pay for that type of task. I sought out Xevec because I believed him fool enough to never notice the difference.~ IF ~~ THEN GOTO 7
+   SAY ~I didn't have enough real gold to pay for that type of task. I sought out Xevec because I believed him fool enough to never notice the difference.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
    SAY ~So, now that you know, what is it that you plan on doing with this information?~
        ++ ~You need to turn yourself into the authorities.~ GOTO 9
-       ++ ~Give me everything on you that is of value. I'll put all the blame on Xevec and allow you to live.~ GOTO 8
+       ++ ~Give me everything on you of value and I'll allow you to live.~ GOTO 8
        ++ ~I'm going to kill you of course. You were the reason counterfeit gold was used at our casino. (Snap her neck.)~ DO ~
    Kill("h_cmaidc")
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
@@ -67,7 +67,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~I don't have a choice in the matter do I? At least I'll still have my life, I guess. Ugh, I don't want to go back to jail again.~
+   SAY ~*sigh* I don't have a choice in the matter do I? At least I'll still have my life, I guess. Ugh, I don't want to go back to jail again.~
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@617,QUEST)

@@ -1,7 +1,7 @@
 BEGIN ~h_game2d~
 
 IF WEIGHT #-1 ~Global("h_GilbaldQuest","GLOBAL",2)~ THEN BEGIN GOLD_0
-   SAY ~I hope Gilbald goes easy on me. If you can successfully find the culprit, then maybe this whole thing will just blow over and I'll be let off easy.~ IF ~~ THEN GOTO GOLD_1
+   SAY ~I hope Gilbald goes easy on me. If you can successfully find the culprit, then maybe this whole thing will just blow over and I'll be let off with only a warning.~ IF ~~ THEN GOTO GOLD_1
 END
 
 IF ~~ THEN BEGIN GOLD_1

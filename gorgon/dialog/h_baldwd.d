@@ -16,7 +16,7 @@ IF ~~ THEN BEGIN JOIN_1
 END
 
 IF ~~ THEN BEGIN JOIN_2
-   SAY ~I make it my business to know who wanders about the city. And you are but one of many.~ IF ~~ THEN GOTO JOIN_3
+   SAY ~I make it my business to know who wanders about the city, and you are but one of many.~ IF ~~ THEN GOTO JOIN_3
 END
 
 IF ~~ THEN BEGIN JOIN_3
@@ -28,7 +28,7 @@ IF ~~ THEN BEGIN JOIN_4
 END
 
 IF ~~ THEN BEGIN JOIN_5
-   SAY ~Now then, if I recall there is a rather large bounty on your head, and yet here you stand surrounded by my cutthroats and hunters.~ IF ~~ THEN GOTO JOIN_6
+   SAY ~Now then, if I recall, there is a rather large bounty on your head, and yet here you stand surrounded by my cutthroats and hunters.~ IF ~~ THEN GOTO JOIN_6
 END
 
 IF ~~ THEN BEGIN JOIN_6
@@ -213,7 +213,7 @@ END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_14
    SAY ~<CHARNAME>, you've returned. Were you able to locate this mage? Tell me, was she in possession of the staff?~
-       +~PartyHasItem("h_misc01")~+ ~She was. However, we may not be the only ones searching for the Kerykeion. Other thieves were there before me.~ GOTO MAGE_15
+       +~PartyHasItem("h_misc01")~+ ~She was. However, we may not be the only ones searching for the Kerykeion. It seems there were some other thieves who attacked her before I arrived.~ GOTO MAGE_15
        ++ ~I have a few other things I need to do first.~ EXIT
 END
 
@@ -318,7 +318,7 @@ IF ~~ THEN BEGIN NAGATE_6
 END
 
 IF ~~ THEN BEGIN NAGATE_7
-   SAY ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill Nagate, of any Shadow Thief in your path.~
+   SAY ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill Nagate, or any Shadow Thief who dare cross our path.~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildMusic","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",6)
@@ -400,7 +400,7 @@ IF ~~ THEN BEGIN THAMUZ_9
 END
 
 IF ~~ THEN BEGIN THAMUZ_10
-   SAY ~I will inform you when my spies turn up anything new. In the meantime, return to your usual guild work.~
+   SAY ~I will inform you when my spies turn up anything new. In the meantime, Rigaldo may have another job for you and I believe Liedel has received a new set of bounties to boot.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
    SetGlobal("h_RigaldoQuest","GLOBAL",15)
@@ -480,13 +480,13 @@ IF ~~ THEN BEGIN GERARD_5
 END
 
 IF ~~ THEN BEGIN GERARD_6
-   SAY ~It appears that way, yes. He was also in regular contact with them distributing knowledge of our activities.~
+   SAY ~It appears that way, yes. He and the good people of Beregost have been in regular contact with the Shadow Thieves, spying on us and distributing their knowledge of our activities.~
        ++ ~What if we are being led into a trap?~ GOTO GERARD_7
        ++ ~How do you wish to proceed?~ GOTO GERARD_8
 END
 
 IF ~~ THEN BEGIN GERARD_7
-   SAY ~It's possible, but it will be worth the risk. If I am able to procure the final piece and successfully reassemble the staff, then no trap will be able to ensnare us.~
+   SAY ~It is possible, but it will be worth the risk. If I am able to procure the final piece of the Kerykeion and successfully reassemble it, then no trap will be able to ensnare us.~
        ++ ~Gerard has had the piece this whole time?~ GOTO GERARD_6
        ++ ~How do you wish to proceed?~ GOTO GERARD_8
 END

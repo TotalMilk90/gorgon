@@ -14,27 +14,26 @@ END
 IF ~~ THEN BEGIN h_3
    SAY ~Eh? Samantha is a good girl who would give no cause for such things. Sounds like nonsense to me.~
        ++ ~Are you sure about that? I talked with the maid and she doesn't seem to care for her at all.~ GOTO h_4
-       +~PartyHasItem("h_misc15")~+ ~Does this coin look familiar to you?~ GOTO h_7
 END
 
 IF ~~ THEN BEGIN h_4
-   SAY ~That is of no surprise. Samantha and I both detest the maid and with good reason. Not a ten-day ago, she was caught with Samantha's missing necklace stuffed into her pockets.~ IF ~~ THEN GOTO h_5
+   SAY ~That is of no surprise. Samantha and I both detest the wretch, and with good reason. Not a ten-day ago, she was caught with Samantha's missing necklace stuffed into her pockets.~ IF ~~ THEN GOTO h_5
 END
 
 IF ~~ THEN BEGIN h_5
-   SAY ~I would have her sent to the dungeons myself, yet she is a relative to my husband and he would allow no such thing. It was claimed an accident and the matter was put to rest.~ IF ~~ THEN GOTO h_6
+   SAY ~I would have her sent off to the dungeons myself, yet she is a relative of my husband and he would not allow it.~ IF ~~ THEN GOTO h_6
 END
 
 IF ~~ THEN BEGIN h_6
-   SAY ~The truth, however, is clear and I hold no trust for her. I dare to imagine what else she may have stolen from us under our own roof.~
+   SAY ~I dare to imagine what else she may have stolen from my house.~
        +~PartyHasItem("h_misc15")~+ ~Does this coin look familiar to you?~ GOTO h_7
-       ++ ~I'll be going now.~ DO ~SetGlobal("h_TalkedToMaid","GLOBAL",2)~ EXIT
 END
 
 IF ~~ THEN BEGIN h_7
-   SAY ~It does not. In fact, it's grotesque forgery makes me feel unwell. Remove it from my sight at once.~
-       ++ ~I talked with the maid and she doesn't seem to care for her at all.~ GOTO h_4
-       ++ ~I'll be going now.~ DO ~SetGlobal("h_TalkedToMaid","GLOBAL",2)~ EXIT
+   SAY ~It does not. In fact, its grotesque forgery makes me feel unwell. Remove it from my sight at once.~
+IF ~~ THEN DO ~
+   SetGlobal("h_TalkedToMaid","GLOBAL",2)
+   AddJournalEntry(@620,QUEST)~ EXIT
 END
 
 END

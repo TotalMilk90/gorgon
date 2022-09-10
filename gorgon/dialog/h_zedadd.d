@@ -1,5 +1,9 @@
 BEGIN h_zedadd
 
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
+   SAY ~I'm grabbin' myself a bow and heading for cover! I'm not much of the fighting type.~
+END
+
 IF ~Global("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 0
    SAY ~*sniff* *sniff* Hmmm. You smell of books... and blood.~ IF ~~ THEN EXIT
 END
@@ -23,7 +27,7 @@ IF ~~ THEN BEGIN RIDDLE_0
 END
 
 IF ~~ THEN BEGIN RIDDLE_0.5
-   SAY ~Anyways, sorry, but my work ain't the kind you can just jump into. However, I do have a game we could play, if you're just trying to pass the time.~
+   SAY ~Anyways, my work ain't the kind you can just jump into. However, I do have a game we could play, if you're just trying to pass the time.~
        ++ ~What's the game?~ GOTO RIDDLE_1
        ++ ~I'm not interested.~ EXIT
 END

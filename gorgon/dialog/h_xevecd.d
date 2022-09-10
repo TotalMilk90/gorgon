@@ -46,12 +46,12 @@ END
 
 IF ~~ THEN BEGIN 8
    SAY ~She wanted me to kill a young woman by the name of Sam, who is residing in Nashkel. She gave me a large payment up front and promised a substantial amount more after I finished.~
-       ++ ~Hmm. Alright, Xevec, I believe you. I will look into this further but if I find out that you're lying, then you're a dead man.~ GOTO 9
+       ++ ~Hmm. Alright, Xevec, I believe you. I will look into this further but if I find out you're lying, then you're a dead man.~ GOTO 9
        ++ ~I don't have time for all that. Time to die, Xevec!~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~I'm lying! I promise! The woman who hired me made it sound as if she knew Sam personally. Seek out the mark and you may find the woman close by.~
+   SAY ~I'm not lying! I promise! She made it sound as if she knew Sam personally. Seek out the mark and you may find the woman close by.~
 IF ~~ THEN DO ~
    SetGlobal("h_GilbaldQuest","GLOBAL",5)
    AddJournalEntry(@613,QUEST)~ EXIT
@@ -87,7 +87,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 14
-   SAY ~Let's have it then! There's a reason my skills are desired!~
+   SAY ~Let's have it then! There's a reason my skills are so desired!~
 IF ~~ THEN DO ~
    SetGlobal("h_KilledXevec","GLOBAL",2)
    AddJournalEntry(@614,QUEST)

@@ -5,7 +5,7 @@ IF ~Global("h_SpawnRichard","GLOBAL",3)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~<CHARNAME>! We must defeat Baldwin before he is allowed to escape! Allow my rogues will assist you with the others!~
+   SAY ~<CHARNAME>! We must defeat Baldwin before he is allowed to escape! My rogues will assist you with the rest of the guild!~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnRichard","GLOBAL",4)
    SetGlobal("h_ShadowWar","GLOBAL",9)
@@ -48,13 +48,13 @@ CHAIN
    == h_baldwd
 ~Hello, brother. You've come just in time to witness my ascension into godhood.~
    == h_rich2d
-~The Kerykeion has driven you to madness it seems. Surrender it to me and I will bring you in before the Shadowmaster. If you cooperate, your life will be spared.~
+~The Kerykeion has driven you to madness it seems. Surrender it to me and I will bring you in before the Shadowmaster. If you cooperate, your life shall be spared.~
    == h_baldwd
 ~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp. Yet, you offer me your dungeons, while I could have the world instead!~
    =
-~It was a dream we both shared, do you remember? Or did you forget that too, along with your honor, after betraying your own brother!~
+~It was a dream we both shared once, do you remember? Or did you forget that too, along with your honor, after betraying your own brother!~
    == h_rich2d
-~I have not forgotten, yet I can not say the same for you. I spoke words of warning against the Kerykeion, not desire for its ressurection!~
+~I have not forgotten, yet I can't say the same for you. I spoke words of warning against the Kerykeion, not desire for its ressurection!~
    =
 ~You were the one who betrayed us. It appears your mania has distorted your memories and led you down a path of delusion.~
    =
@@ -70,17 +70,17 @@ CHAIN
    == h_rich2d
 ~Baldwin, your guild betrays you. <CHARNAME>, Rhade, they have seen through your delusions and now fight alongside us.~
    =
-~As for the others, I give you this chance to join with me and strike down your master! Can't you see is only using you for his own gain!~
+~As for the others, I give you this chance to join with me and strike down your master! Can't you see is only using you for his own agenda!~
    == h_zedadd
 ~<CHARNAME>, it's not true is it? How could you do this your own guild!~
    =
 ~I knew I smelled somethin' funny on you when you first walked in here!~
    == h_ariosd
-~If it weren't for Baldwin, I'd still be out in the streets. I'll die before I let this guild fall into the hands of you lot!~
+~If it weren't for Baldwin, I'd still be out on the streets. I'll die before I let this guild fall into the hands of you lot!~
    == h_rigald
 ~What have you done, you traitorous bastards! Are you truly fool enough to bring the Shadow Thieves into our own den!~
    =
-~*unsheathes blade* No matter, even alone I could slice through the lot of you like butter!~
+~No matter, *unsheathes blade* even alone I could slice through the lot of you like butter!~
    == h_lieded
 ~*laughing* Finally, some action around here! Sorry, Baldwin, but I think it's time for me to switch things up a bit.~
    =

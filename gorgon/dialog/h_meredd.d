@@ -9,7 +9,7 @@ IF ~~ THEN BEGIN 1
        ++ ~No, not at this time.~ GOTO 2
        +~GlobalGT("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(19)~+ ~Yes, I think I would be.~ GOTO 4
        +~Global("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(39)~+ ~Yes, I think I would be.~ GOTO 3
-       +~Global("h_GilbaldQuest","GLOBAL",3)~+ ~I'm looking into a man named, Xevec who may have used counterfeit gold at Gilbald's casino. Can you tell me anything more about him?~ GOTO G_0
+       +~Global("h_GilbaldQuest","GLOBAL",3)~+ ~I'm looking into a man named Xevec, who may have used counterfeit gold at Gilbald's casino. Can you tell me anything more about him?~ GOTO G_0
 END
 
 IF ~~ THEN BEGIN 2
@@ -146,7 +146,7 @@ IF ~~ THEN BEGIN G_8
        ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
        ++ ~Can you tell me anything more specific about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
        ++ ~Can you check to see if this gold coin matches up with any of the ones he used here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
-       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You have been a great help.~ GOTO G_8
+       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You have been a great help.~ GOTO G_9
 END
 
 IF ~~ THEN BEGIN G_9

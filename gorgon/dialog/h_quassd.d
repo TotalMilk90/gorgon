@@ -12,7 +12,7 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 1.5
-   SAY ~However, I did not come here seeking confrontation.~ IF ~~ THEN GOTO 3
+   SAY ~However, I did not come here pursuing confrontation.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
@@ -46,7 +46,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~We already have a spy on the inside who will contact you when necessary. Their identity will be revealed by their use of the code word, "The shortbow of the Shaar.".~ IF ~~ THEN GOTO 9
+   SAY ~We have a spy on the inside who will contact you when necessary. Their identity will be revealed by their use of the code word, "The shortbow of the Shaar.".~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9

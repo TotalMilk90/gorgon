@@ -20,7 +20,7 @@ goods, a few new items and a very small item-upgrade. It can be accessed
 immediately after leaving Candlekeep and is open to all players, excluding
 those with a lawful-good alignment.</p>
 
-<h>Quest Content</h2>
+<h2>Quest Content</h2>
 <p>Roughly 1/3 of the new quests involve thief related activities, (pickpocketing,
 extortion, smuggling), another 1/3 of them are bounty hunting quests, and the
 other 1/3 are battles involving the main questline. There are 3 different

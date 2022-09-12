@@ -1,7 +1,7 @@
 APPEND GAMES5
 
 IF WEIGHT #-1 ~GlobalGT("h_RigaldoQuest","GLOBAL",9) GlobalLT("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN CARN_0
-   SAY ~How'd those bastards even get ahold our weapons in the first place?~ IF ~~ THEN EXIT
+   SAY @3000 IF ~~ THEN EXIT
 END
 
 

@@ -1,62 +1,62 @@
 BEGIN h_cmaidd
 
 IF ~Global("h_TalkedToMaid","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~Ugh! I can't stand the madam's wretch of a daughter! Someone oughta teach that *brat* a lesson before I go upstairs and do it myself!~
-       ++ ~She can't be that bad can she?~ GOTO 1
-       +~NumItemsParty("h_misc15",1)~+ ~Does this coin look familiar to you?~ GOTO 2
-       +~NumItemsPartyGT("h_misc15",1)~+ ~Care to explain how this coin ended up in your possession?~ GOTO 4
+   SAY @3400
+       ++ @3401 GOTO 1
+       +~NumItemsParty("h_misc15",1)~+ @3402 GOTO 2
+       +~NumItemsPartyGT("h_misc15",1)~+ @3403 GOTO 4
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Whoops! Did I say that out loud? Please don't tell the sir and madam, I'm just tired is all.~ IF ~~ THEN EXIT
+   SAY @3404 IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Oh! Uh... nope. I can't say that it does. I have a lot of work to do so I'll need to ask you leave.~
+   SAY @3405
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToMaid","GLOBAL",1)~ EXIT
 END
 
 IF ~GlobalGT("h_TalkedToMaid","GLOBAL",0)~ THEN BEGIN 3
-   SAY ~I thought I asked you to leave.~
-       ++ ~I'll be going now.~ EXIT
-       +~NumItemsPartyGT("h_misc15",1)~+ ~Care to explain how this coin ended up in your possession?~ GOTO 4
+   SAY @3406
+       ++ @3407 EXIT
+       +~NumItemsPartyGT("h_misc15",1)~+ @3403 GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~What! How did you get that?~
-       ++ ~The jig is up! You paid Xevec these fake coins to kill Samantha for you!~ GOTO 5
-       ++ ~It doesn't matter. You were involved with using these at our casino and now you will pay the price. (Snap her neck.)~ DO ~
+   SAY @3408
+       ++ @3409 GOTO 5
+       ++ @3410 DO ~
    Kill("h_cmaidc")
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~Alright, fine, it's true! I hate that devil-woman! She has done nothing but make my life a living hell!~
-       ++ ~Why did you use counterfeit gold though?~ GOTO 6
-       ++ ~Well, I'm glad that's over. Nothing personal, but I'm going to have to kill you now. (Snap her neck.)~ DO ~
+   SAY @3411
+       ++ @3412 GOTO 6
+       ++ @3413 DO ~
    Kill("h_cmaidc")
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~I didn't have enough real gold to pay for that type of task. I sought out Xevec because I believed him fool enough to never notice the difference.~ IF ~~ THEN GOTO 7
+   SAY @3414 IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~So, now that you know, what is it that you plan on doing with this information?~
-       ++ ~You need to turn yourself into the authorities.~ GOTO 9
-       ++ ~Give me everything on you of value and I'll allow you to live.~ GOTO 8
-       ++ ~I'm going to kill you of course. You were the reason counterfeit gold was used at our casino. (Snap her neck.)~ DO ~
+   SAY @3415
+       ++ @3416 GOTO 9
+       ++ @3417 GOTO 8
+       ++ @3418 DO ~
    Kill("h_cmaidc")
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Certainly, thank you! Please, take these and we will go on as if this never happened.~
+   SAY @3419
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@617,QUEST)
@@ -67,7 +67,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~*sigh* I don't have a choice in the matter do I? At least I'll still have my life, I guess. Ugh, I don't want to go back to jail again.~
+   SAY @3420
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@617,QUEST)

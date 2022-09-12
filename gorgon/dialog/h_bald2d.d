@@ -1,18 +1,18 @@
 BEGIN h_bald2d
 
 IF ~Global("h_BaldwinQuest","GLOBAL",10)~ THEN BEGIN FINAL_0
-   SAY ~It is done. The final piece of the Kerykeion is finally in my possession!~ IF ~~ THEN GOTO FINAL_1
+   SAY @1800 IF ~~ THEN GOTO FINAL_1
 END
 
 IF ~~ THEN BEGIN FINAL_1
-   SAY ~Thank you for your assistance, <CHARNAME>. Your help has been nothing short of invaluable to me.~
-       ++ ~Of course, Baldwin. How do we proceed from here?~ GOTO FINAL_2
-       ++ ~I cannot let you continue with this. I have been warned of the dangers this weapon will bring and it must be destroyed!~ GOTO FINAL_6
-       ++ ~You are alone, Baldwin, and have all the pieces laid out in front of you, yet, it still remains disassembled. I think I shall kill you and take it for myself!~ GOTO FINAL_7
+   SAY @1801
+       ++ @1802 GOTO FINAL_2
+       ++ @1803 GOTO FINAL_6
+       ++ @1804 GOTO FINAL_7
 END
 
 IF ~~ THEN BEGIN FINAL_2
-   SAY ~I will be leaving the guild to begin my crusade into Amn, where I will use the Kerykeion to eliminate the Shadow Thieves from this world.~ IF ~~ THEN GOTO FINAL_4
+   SAY @1805 IF ~~ THEN GOTO FINAL_4
 END
 /*
 IF ~~ THEN BEGIN FINAL_3
@@ -20,27 +20,27 @@ IF ~~ THEN BEGIN FINAL_3
 END
 */
 IF ~~ THEN BEGIN FINAL_4
-   SAY ~The Gorgon's Eye will need a new leader, of course, and I plan to leave it under your directive. You have shown great promise in this field and I believe you the most capable for this task.~ IF ~~ THEN GOTO FINAL_5
+   SAY @1806 IF ~~ THEN GOTO FINAL_5
 END
 
 IF ~~ THEN BEGIN FINAL_5
-   SAY ~Speak with Saradin upon your return and he will guide you through the activities of your new role.~ IF ~~ THEN GOTO FINAL_9
+   SAY @1807 IF ~~ THEN GOTO FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_6
-   SAY ~Destroyed? You poor, ignorant fool. I have toiled for years to obtain this staff and I'll not have those efforts wasted on your baseless fears.~ IF ~~ THEN GOTO FINAL_8
+   SAY @1808 IF ~~ THEN GOTO FINAL_8
 END
 
 IF ~~ THEN BEGIN FINAL_7
-   SAY ~Treason is it? I guess I cannot blame you, with the opportunity for such power being within your sight.~ IF ~~ THEN GOTO FINAL_8
+   SAY @1809 IF ~~ THEN GOTO FINAL_8
 END
 
 IF ~~ THEN BEGIN FINAL_8
-   SAY ~If this is your wish then now is your chance to strike. I must warn you though, I have no plans of dying today. Taking your life will be a testament of my strength, proving my worthiness to wield the Kerykeion!~ IF ~~ THEN GOTO FINAL_9
+   SAY @1810 IF ~~ THEN GOTO FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_9
-   SAY ~Hold... We are not alone.~
+   SAY @1811
 IF ~~ THEN DO ~
    CreateCreature("h_sthiec",[402.156],S)
    CreateCreature("h_richac",[331.351],E)
@@ -53,17 +53,17 @@ END
 
 CHAIN
    IF ~Global("h_BaldwinQuest","GLOBAL",9)~ THEN h_bald2d 0
-~Evening, Gerard. I suspect you understand the reason for my visit.~
+@1812
    == NOBL10
-~Absolutely not. What is the meaning of this intrusion? I demand you leave my premises at once!~
+@1813
    == h_bald2d
-~Sorry, but that won't be happening. Hiring the Shadow Thieves against us was a deadly mistake.~
+@1814
    =
-~Hand over the Kerykeion and I shall reward you with a quick death. Refuse and you will learn how I received of my namesake.~
+@1815
    == NOBL10
-~Kill me if you must, Butcher. But let it be known that I will no longer suffer your indignities any longer.~
+@1816
    == h_bald2d
-~If that is your wish, then so be it.~
+@1817
    DO ~
       Kill("NOBL10")
       SetGlobal("h_BaldwinQuest","GLOBAL",10) ~

@@ -1,16 +1,16 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v3~
+VERSION ~v3.0~
 
 LANGUAGE
     ~English~
     ~English~
-~gorgon/english/setup.tra~
-~gorgon/english/items.tra~
-~gorgon/english/names.tra~
-~gorgon/english/quests.tra~
-~gorgon/english/dialog.tra~
+~gorgon/lang/english/setup.tra~
+~gorgon/lang/english/items.tra~
+~gorgon/lang/english/names.tra~
+~gorgon/lang/english/quests.tra~
+~gorgon/lang/english/dialog.tra~
 
 BEGIN @1
 
@@ -74,6 +74,7 @@ COMPILE ~gorgon/dialog/h_game3d.d~
 COMPILE ~gorgon/dialog/h_xevecd.d~
 COMPILE ~gorgon/dialog/h_galatd.d~
 COMPILE ~gorgon/dialog/h_isleyd.d~
+COMPILE ~gorgon/dialog/h_cmaidd.d~
 
 
 // Appended Dialog
@@ -247,8 +248,9 @@ COPY_EXISTING ~HOUSG2.cre~ ~override~
      WRITE_ASCII SCRIPT_DEFAULT ~h_guards~
 
 COPY_EXISTING ~KARP.cre~ ~override~                           // Karp
-     ADD_CRE_ITEM ~h_ring05~ #0 #0 #0 ~IDENTIFIED~ ~INV~
-     ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~h_ring05~ #0 #0 #0 ~NONE~ ~INV~
+     ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~INV~
+     ADD_CRE_ITEM ~h_misc06~ #0 #0 #0 ~NONE~ ~INV~
 
 COPY_EXISTING ~GAMES.cre~ ~override~                          // Gamesmen
      ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~

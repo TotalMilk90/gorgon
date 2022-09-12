@@ -1,24 +1,24 @@
 APPEND Karp
 
 IF ~~ THEN BEGIN THREAT_1
-   SAY ~Wha... What? Please don't kill me, I have a s-s-son to care for! I'll give you the rings!~
-       ++ ~What else have you found buried around here? Give me everything else you've got on you as well!~ GOTO THREAT_2
-       ++ ~There's a good lass. Hurry up now.~ GOTO THREAT_3
+   SAY @6800
+       ++ @6801 GOTO THREAT_2
+       ++ @6802 GOTO THREAT_3
 END
 
 IF ~~ THEN BEGIN THREAT_2
-   SAY ~You're a monster!~
+   SAY @6803
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
    GiveItem("h_ring05",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
-   GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)
+   GiveItem("h_misc06",LastTalkedToBy)
    ReputationInc(-1)
    EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN THREAT_3
-   SAY ~Here. Now go, please!~
+   SAY @6804
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
    GiveItem("h_ring05",LastTalkedToBy)
@@ -28,25 +28,25 @@ IF ~~ THEN DO
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_1
-   SAY ~Wha... What? Why would you do this? My husband beats me and he beats my son! I need this money so we can flee! Please.. Please don't do this!~
-       ++ ~Then surely you won't want him finding out. Hand them over and I'll be on my way.~ GOTO BLACKMAIL_2
-       ++ ~Well, that does change things. In good conscience I cannot subject you to that. However, I also cannot leave without those rings.~ GOTO BLACKMAIL_3
+   SAY @6805
+       ++ @6806 GOTO BLACKMAIL_2
+       ++ @6807 GOTO BLACKMAIL_3
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_2
-   SAY ~You're an evil wretch you know that? Take the damned rings then and off to the nine hells with you!~
-       ++ ~What else have you found buried around here? Give me everything else you've got on you as well!~ GOTO THREAT_2
-       ++ ~There's a good lass. Hurry up now.~ GOTO THREAT_3
+   SAY @6808
+       ++ @6801 GOTO THREAT_2
+       ++ @6802 GOTO THREAT_3
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_3
-   SAY ~Please, whoever you are, I need this sale. I must buy passage for my son and I'm nowhere near the amount of coin I need. The buyer is already on his way!~
-       ++ ~And I don't rightly care! I won't inform your husband of your deeds but if you dont give them to me then I'll bury your face in the dirt!~ GOTO BLACKMAIL_2
-       ++ ~I will not pay you for them. But perhaps I can find a way to help your son.~ GOTO BLACKMAIL_4
+   SAY @6809
+       ++ @6810 GOTO BLACKMAIL_2
+       ++ @6811 GOTO BLACKMAIL_4
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_4
-   SAY ~If you can guarantee his safe passage then I suppose I could trade you the rings. I have a sister in Athkatla, who is willing to take him in until I can afford my expense as well. I guess I have no choice but to trust you. Here are the rings then.~
+   SAY @6812
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
@@ -56,63 +56,63 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN CHARM_1
-   SAY ~Oh, err... Yes of course, I wasn't expecting you so soon. You look a little more brutish than was described.~
-       ++ ~I am just weary from my travels, m'lady, please forgive my appearance.~ GOTO CHARM_4
-       ++ ~Well, know that I am quite embarrassed to be so dirty in front of someone as lovely as you.~ GOTO CHARM_3
-       ++ ~Yes, and with your name I was expecting to meet with a fish, but that isn't the case now is it?~ GOTO CHARM_2
-       ++ ~Oh, yes well with all the bandits on the road, it does add a bit of roughness to you as you travel.~ GOTO CHARM_4
-       ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
+   SAY @6813
+       ++ @6814 GOTO CHARM_4
+       ++ @6815 GOTO CHARM_3
+       ++ @6816 GOTO CHARM_2
+       ++ @6817 GOTO CHARM_4
+       ++ @6818 GOTO THREAT_1
 END
 
 IF ~~ THEN BEGIN CHARM_2
-   SAY ~Haw haw! It's been a few years since I've heard that one. My daddy was a fisherman you know.~
-       +~CheckStatGT(Player1,17,CHR)~+ ~Well you do seem like a fine catch if I've ever seen one.~ GOTO CHARM_3.5
-       +~CheckStatLT(Player1,18,CHR)~+ ~Well you do seem like a fine catch if I've ever seen one.~ GOTO CHARM_3
-       ++ ~Was he now? I've always enjoyed the sport myself. Shall we get to business then?~ GOTO CHARM_4
-       ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
+   SAY @6819
+       +~CheckStatGT(Player1,17,CHR)~+ @6820 GOTO CHARM_3.5
+       +~CheckStatLT(Player1,18,CHR)~+ @6820 GOTO CHARM_3
+       ++ @6821 GOTO CHARM_4
+       ++ @6818 GOTO THREAT_1
 END
 
 IF ~~ THEN BEGIN CHARM_3
-   SAY ~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_4
+   SAY @6822 IF ~~ THEN GOTO CHARM_4
 END
 
 IF ~~ THEN BEGIN CHARM_3.5
-   SAY ~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_6.5
+   SAY @6822 IF ~~ THEN GOTO CHARM_6.5
 END
 
 IF ~~ THEN BEGIN CHARM_4
-   SAY ~Hmm, I'd like to ask you a question, if I may. What did one snowman say to the other snowman?~
-       ++ ~Melting is snow fun.~ GOTO CHARM_5
-       ++ ~Ice to see you.~ GOTO CHARM_5
-       ++ ~Let's roll.~ GOTO CHARM_5
-       ++ ~We are stuck in a bloody snowglobe!~ GOTO CHARM_5
-       ++ ~Freeze!~ GOTO CHARM_5
-       ++ ~Smells like carrots.~ GOTO CHARM_6
-       ++ ~What kind of question is that?~ GOTO CHARM_5
+   SAY @6823
+       ++ @6824 GOTO CHARM_5
+       ++ @6825 GOTO CHARM_5
+       ++ @6826 GOTO CHARM_5
+       ++ @6827 GOTO CHARM_5
+       ++ @6828 GOTO CHARM_5
+       ++ @6829 GOTO CHARM_6
+       ++ @6830 GOTO CHARM_5
 END
 
 IF ~~ THEN BEGIN CHARM_5
-   SAY ~I think you are not who you say you are, and I won't be dealing with the likes of you any longer.~
-       ++ ~Bah, enough of this! I am here to sieze your rings. Hand them over nice-like and I won't have to bury your face in the dirt.~ GOTO THREAT_1
-       ++ ~Alright, well maybe I'll go find your husband then and inform him of what is going on.~ GOTO BLACKMAIL_1
+   SAY @6831
+       ++ @6818 GOTO THREAT_1
+       ++ @6832 GOTO BLACKMAIL_1
 END
 
 IF ~~ THEN BEGIN CHARM_6
-   SAY ~*laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
+   SAY @6833 IF ~~ THEN GOTO CHARM_7
 END
 
 IF ~~ THEN BEGIN CHARM_6.5
-   SAY ~You know, I was worried for a moment that you weren't the one I was supposed to meet, but now I have no doubts. Here are your rings.~ IF ~~ THEN GOTO CHARM_7
+   SAY @6834 IF ~~ THEN GOTO CHARM_7
 END
 
 IF ~~ THEN BEGIN CHARM_7
-   SAY ~Actually, may I ask a favor of you? I'm looking to discretely obtain passage to Athkatla, for my son and I. If you know of anyone who could provide such a service, I would be eternally grateful.~
-       ++ ~Sure, I will ask around and look into it for you.~ GOTO CHARM_8
-       ++ ~Sorry but I don't really have the time for that right now.~ GOTO CHARM_9
+   SAY @6835
+       ++ @6836 GOTO CHARM_8
+       ++ @6837 GOTO CHARM_9
 END
 
 IF ~~ THEN BEGIN CHARM_8
-   SAY ~Oh, thank you! I'll still be here in the meantime, wandering about the farm.~
+   SAY @6838
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
@@ -122,7 +122,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN CHARM_9
-   SAY ~Oh, ok sorry. I didn't mean to trouble you. Take care.~
+   SAY @6839
 IF ~~ THEN DO ~
    AddJournalEntry(@316,QUEST)
    GiveItem("h_ring05",LastTalkedToBy)
@@ -131,20 +131,20 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~True() Global("h_KarpWork","GLOBAL",1)~ THEN BEGIN JOB_0
-   SAY ~You came back. Have you found a way out for my son?~
-       ++ ~I'm sorry but I haven't heard of anything just yet.~ EXIT
+   SAY @6840
+       ++ @6841 EXIT
 END
 
 IF WEIGHT #-2 ~True() Global("h_KarpWork","GLOBAL",2)~ THEN BEGIN JOB_1
-   SAY ~You came back. Have you found a way out for my son?~
-       ++ ~I have something lined up for you in Beregost. Flee tonight with your son and you will be contacted when you are sighted within the city.~ GOTO JOB_2
+   SAY @6840
+       ++ @6842 GOTO JOB_2
 END
 
 IF ~~ THEN BEGIN JOB_2
-   SAY ~Thank you, truly. Here, I want you to have something. I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
+   SAY @6843
 IF ~~ THEN DO ~
    AddJournalEntry(@320,QUEST_DONE)
-   GiveItemCreate("AMUL22",LastTalkedToBy,0,0,0)
+   GiveItem("h_misc06",LastTalkedToBy)
    AddExperienceParty(300)
    EscapeArea()~ EXIT
 END
@@ -152,7 +152,7 @@ END
 END
 
 EXTEND_TOP KARP 0
-   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~ GOTO THREAT_1
-   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Hello Karp. No need to be afraid. I know about the rings and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~ GOTO BLACKMAIL_1
-   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~You must be Karp, yes? I have just finished my journey south from Ulgoth's Beard and I am here to collect the pair of rings I purchased.~ GOTO CHARM_1
+   +~Global("h_RigaldoQuest","GLOBAL",7)~+ @6844 GOTO THREAT_1
+   +~Global("h_RigaldoQuest","GLOBAL",7)~+ @6845 GOTO BLACKMAIL_1
+   +~Global("h_RigaldoQuest","GLOBAL",7)~+ @6846 GOTO CHARM_1
 END

@@ -1,0 +1,25 @@
+IF
+	See([PC])
+THEN
+	RESPONSE #100
+		 ClearAllActions()
+                 StartCutSceneMode()
+                 CutSceneId(Player1)
+                 Explore()
+                 MoveViewObject("h_isleyc",VERY_FAST)
+                 Wait(2)
+                 EndCutSceneMode()
+		 StartDialog("h_isleyd",[PC])
+END
+
+IF
+	Global("h_MerediaQuest","GLOBAL",3)
+THEN
+	RESPONSE #100
+	         StartCutSceneMode()
+                 CutSceneId("h_isleyc")
+                 FaceObject([PC])
+                 SmallWait(5)
+                 EndCutSceneMode()
+                 StartDialog("h_isleyd",[PC])
+END

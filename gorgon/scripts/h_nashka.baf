@@ -1,0 +1,10 @@
+IF
+        Global("h_SpawnVapula","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_isleyc",[3972.1344],N)
+                 CreateCreature("h_ilenac",[3973.1304],S)
+                 SetGlobal("h_SpawnIsley","GLOBAL",2)
+                 Continue()
+END

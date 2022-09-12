@@ -24,6 +24,17 @@ underground thieves den into the town of Beregost. It contains 18 new quests,
 goods, a few new items and a very small item-upgrade. It can be accessed
 immediately after leaving Candlekeep and is open to all players, excluding
 those with a lawful-good alignment.
+
+=============
+Quest Content
+=============
+About 1/3 of the new quests involve thief related activities, (pickpocketing,
+extortion, smuggling), another 1/3 of them are bounty hunting quests, and the
+other 1/3 are battles involving the main questline. You will need to complete
+every quest in order to progress into the finale. There are 3 different
+conclusions to the story based off the choices you make towards the end. One
+being that you can become the guild master and receive weekly payouts based off
+the risk level that you assign your guild.
  
 ================
 Acknowledgements
@@ -33,9 +44,8 @@ videos on YouTube. They really helped me bridge the gap between knowing
 absolutely nothing about how to start a mod, to being able to create working
 content.
 
-This mod would also have been completely lacking if not for all the 
-gracious help I recieved from CamDawg and the entire G3 community, who answered
-and provided reference for all my questions.
+I also want to give a special thanks to CamDawg and the entire G3 community,
+who answered and provided reference for all my questions.
 
 BAMWorkshop: Erephine and Sam
 IESDP: igi and lynx

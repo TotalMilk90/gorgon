@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnGalatea","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_galatc",[253.252],S)
+                 SetGlobal("h_SpawnGalatea","GLOBAL",2)
+                 Continue()
+END

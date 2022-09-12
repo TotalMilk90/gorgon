@@ -54,6 +54,7 @@ COMPILE ~gorgon/dialog/h_quassd.d~
 COMPILE ~gorgon/dialog/h_carthd.d~
 COMPILE ~gorgon/dialog/h_vapuld.d~
 COMPILE ~gorgon/dialog/h_aishad.d~
+COMPILE ~gorgon/dialog/h_ilenad.d~
 COMPILE ~gorgon/dialog/h_amriud.d~
 COMPILE ~gorgon/dialog/h_injurd.d~
 COMPILE ~gorgon/dialog/h_katred.d~
@@ -71,7 +72,9 @@ COMPILE ~gorgon/dialog/h_rich2d.d~
 COMPILE ~gorgon/dialog/h_gamesd.d~
 COMPILE ~gorgon/dialog/h_game3d.d~
 COMPILE ~gorgon/dialog/h_xevecd.d~
-COMPILE ~gorgon/dialog/h_cmaidd.d~
+COMPILE ~gorgon/dialog/h_galatd.d~
+COMPILE ~gorgon/dialog/h_isleyd.d~
+
 
 // Appended Dialog
 
@@ -113,6 +116,7 @@ COMPILE ~gorgon/scripts/h_mereds.baf~
 COMPILE ~gorgon/scripts/h_euryns.baf~
 COMPILE ~gorgon/scripts/h_rich2s.baf~
 COMPILE ~gorgon/scripts/h_liedes.baf~
+COMPILE ~gorgon/scripts/h_isleys.baf~
 
 // Area Scripts
 
@@ -128,6 +132,8 @@ EXTEND_TOP ~%area_prefix%3308.bcs~ ~gorgon/scripts/h_tbw2fa.baf~
 EXTEND_TOP ~%area_prefix%2900.bcs~ ~gorgon/scripts/h_larswa.baf~
 EXTEND_TOP ~%area_prefix%3200.bcs~ ~gorgon/scripts/h_highha.baf~
 EXTEND_TOP ~%area_prefix%4804.bcs~ ~gorgon/scripts/h_cmaida.baf~
+EXTEND_TOP ~%area_prefix%4800.bcs~ ~gorgon/scripts/h_nashka.baf~
+EXTEND_TOP ~%area_prefix%3302.bcs~ ~gorgon/scripts/h_galata.baf~
 
 // New Areas
 
@@ -189,6 +195,8 @@ COPY ~gorgon/bam/h_slavdb.bam~ ~override~
 COPY ~gorgon/bam/h_misc1b.bam~ ~override~
 COPY ~gorgon/bam/h_misc2b.bam~ ~override~
 COPY ~gorgon/bam/h_misc3b.bam~ ~override~
+COPY ~gorgon/bam/h_redcib.bam~ ~override~
+COPY ~gorgon/bam/h_redcdb.bam~ ~override~
 
 //   Add entrance to area file
 
@@ -387,66 +395,72 @@ COPY ~gorgon/items/h_misc15.itm~ ~override/h_misc15.itm~      // Counterfeit Gol
      SAY NAME2 @52
      SAY UNIDENTIFIED_DESC @53
      SAY DESC @53
+     
+COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Bloodied Cloth
+     SAY NAME1 @54
+     SAY NAME2 @54
+     SAY UNIDENTIFIED_DESC @55
+     SAY DESC @55
 
 COPY ~gorgon/items/h_ring01.itm~ ~override/h_ring01.itm~      // Ring of Minor Lock Picking
-     SAY NAME1 @54
-     SAY NAME2 @55
-     SAY UNIDENTIFIED_DESC @56
-     SAY DESC @57
+     SAY NAME1 @56
+     SAY NAME2 @57
+     SAY UNIDENTIFIED_DESC @58
+     SAY DESC @59
 
 COPY ~gorgon/items/h_ring02.itm~ ~override/h_ring02.itm~      // Ring of Awareness
-     SAY NAME1 @58
-     SAY NAME2 @59
-     SAY UNIDENTIFIED_DESC @60
-     SAY DESC @61
+     SAY NAME1 @60
+     SAY NAME2 @61
+     SAY UNIDENTIFIED_DESC @62
+     SAY DESC @63
 
 COPY ~gorgon/items/h_ring03.itm~ ~override/h_ring03.itm~      // Ring of the Cutpurse
-     SAY NAME1 @62
-     SAY NAME2 @63
-     SAY UNIDENTIFIED_DESC @64
-     SAY DESC @65
+     SAY NAME1 @64
+     SAY NAME2 @65
+     SAY UNIDENTIFIED_DESC @66
+     SAY DESC @67
 
 COPY ~gorgon/items/h_ring04.itm~ ~override/h_ring04.itm~      // Looter's Band
-     SAY NAME1 @66
-     SAY NAME2 @66
-     SAY UNIDENTIFIED_DESC @67
-     SAY DESC @67
-     
-COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Karp's Ring
      SAY NAME1 @68
      SAY NAME2 @68
      SAY UNIDENTIFIED_DESC @69
      SAY DESC @69
 
+COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Karp's Ring
+     SAY NAME1 @70
+     SAY NAME2 @70
+     SAY UNIDENTIFIED_DESC @71
+     SAY DESC @71
+
 COPY ~gorgon/items/h_snak2r.itm~ ~override/h_snak2r.itm~      // Snakes Ring(not usable)
-     SAY NAME1 @70
-     SAY NAME2 @70
-     SAY UNIDENTIFIED_DESC @70
-     SAY DESC @70
-
-COPY ~gorgon/items/h_snak2w.itm~ ~override/h_snak2w.itm~      // Snakes Attack(2)(not usable)
-     SAY NAME1 @70
-     SAY NAME2 @70
-     SAY UNIDENTIFIED_DESC @70
-     SAY DESC @70
-
-COPY ~gorgon/items/h_snakew.itm~ ~override/h_snakew.itm~      // Snakes Attack(not usable)
-     SAY NAME1 @70
-     SAY NAME2 @70
-     SAY UNIDENTIFIED_DESC @70
-     SAY DESC @70
-
-COPY ~gorgon/items/h_sw1h01.itm~ ~override/h_sw1h01.itm~      // Kerykeion: Euryale's Promise
-     SAY NAME1 @71
-     SAY NAME2 @71
+     SAY NAME1 @72
+     SAY NAME2 @72
      SAY UNIDENTIFIED_DESC @72
      SAY DESC @72
 
-COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Stheno's Blade
+COPY ~gorgon/items/h_snak2w.itm~ ~override/h_snak2w.itm~      // Snakes Attack(2)(not usable)
+     SAY NAME1 @72
+     SAY NAME2 @72
+     SAY UNIDENTIFIED_DESC @72
+     SAY DESC @72
+
+COPY ~gorgon/items/h_snakew.itm~ ~override/h_snakew.itm~      // Snakes Attack(not usable)
+     SAY NAME1 @72
+     SAY NAME2 @72
+     SAY UNIDENTIFIED_DESC @72
+     SAY DESC @72
+
+COPY ~gorgon/items/h_sw1h01.itm~ ~override/h_sw1h01.itm~      // Kerykeion: Euryale's Promise
      SAY NAME1 @73
      SAY NAME2 @73
      SAY UNIDENTIFIED_DESC @74
      SAY DESC @74
+
+COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Stheno's Blade
+     SAY NAME1 @75
+     SAY NAME2 @75
+     SAY UNIDENTIFIED_DESC @76
+     SAY DESC @76
 
 // New Creatures
 
@@ -502,10 +516,6 @@ COPY ~gorgon/cre/h_cour4c.cre~ ~override/h_cour4c.cre~        // Courtesan(4)(Ma
      SAY NAME1 @119
      SAY NAME2 @119
 
-COPY ~gorgon/cre/h_courtc.cre~ ~override/h_courtc.cre~        // Courtesan
-     SAY NAME1 @119
-     SAY NAME2 @119
-
 COPY ~gorgon/cre/h_danikc.cre~ ~override/h_danikc.cre~        // Danika
      SAY NAME1 @120
      SAY NAME2 @120
@@ -530,121 +540,133 @@ COPY ~gorgon/cre/h_flamec.cre~ ~override/h_flamec.cre~        // Flaming Fist
      SAY NAME1 @124
      SAY NAME2 @124
 
+COPY ~gorgon/cre/h_galatc.cre~ ~override/h_galatc.cre~        // Galatea
+     SAY NAME1 @125
+     SAY NAME2 @125
+
 COPY ~gorgon/cre/h_game2c.cre~ ~override/h_game2c.cre~        // Gamesman(2)
-     SAY NAME1 @125
-     SAY NAME2 @125
-
-COPY ~gorgon/cre/h_game3c.cre~ ~override/h_game3c.cre~        // Gamesman(3)
-     SAY NAME1 @125
-     SAY NAME2 @125
-
-COPY ~gorgon/cre/h_gamesc.cre~ ~override/h_gamesc.cre~        // Gamesman
-     SAY NAME1 @125
-     SAY NAME2 @125
-
-COPY ~gorgon/cre/h_gilbac.cre~ ~override/h_gilbac.cre~        // Gilbald
      SAY NAME1 @126
      SAY NAME2 @126
 
-COPY ~gorgon/cre/h_huntec.cre~ ~override/h_huntec.cre~        // Hunter
+COPY ~gorgon/cre/h_game3c.cre~ ~override/h_game3c.cre~        // Gamesman(3)
+     SAY NAME1 @126
+     SAY NAME2 @126
+
+COPY ~gorgon/cre/h_gamesc.cre~ ~override/h_gamesc.cre~        // Gamesman
+     SAY NAME1 @126
+     SAY NAME2 @126
+
+COPY ~gorgon/cre/h_gilbac.cre~ ~override/h_gilbac.cre~        // Gilbald
      SAY NAME1 @127
      SAY NAME2 @127
 
-COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
+COPY ~gorgon/cre/h_huntec.cre~ ~override/h_huntec.cre~        // Hunter
      SAY NAME1 @128
      SAY NAME2 @128
 
-COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
+COPY ~gorgon/cre/h_ilenac.cre~ ~override/h_ilenac.cre~        // Ilena
      SAY NAME1 @129
      SAY NAME2 @129
-
-COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
+     
+COPY ~gorgon/cre/h_isleyc.cre~ ~override/h_isleyc.cre~        // Isley
      SAY NAME1 @130
      SAY NAME2 @130
 
-COPY ~gorgon/cre/h_meredc.cre~ ~override/h_meredc.cre~        // Meredia
+COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
      SAY NAME1 @131
      SAY NAME2 @131
 
-COPY ~gorgon/cre/h_nagatc.cre~ ~override/h_nagatc.cre~        // Nagate
+COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
      SAY NAME1 @132
      SAY NAME2 @132
 
-COPY ~gorgon/cre/h_quassc.cre~ ~override/h_quassc.cre~        // Quass
+COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
      SAY NAME1 @133
      SAY NAME2 @133
 
-COPY ~gorgon/cre/h_rich2c.cre~ ~override/h_rich2c.cre~        // Richard(2)
+COPY ~gorgon/cre/h_meredc.cre~ ~override/h_meredc.cre~        // Meredia
      SAY NAME1 @134
      SAY NAME2 @134
 
-COPY ~gorgon/cre/h_richac.cre~ ~override/h_richac.cre~        // Richard
-     SAY NAME1 @134
-     SAY NAME2 @134
-
-COPY ~gorgon/cre/h_rigalc.cre~ ~override/h_rigalc.cre~        // Rigaldo
+COPY ~gorgon/cre/h_nagatc.cre~ ~override/h_nagatc.cre~        // Nagate
      SAY NAME1 @135
      SAY NAME2 @135
 
-COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
+COPY ~gorgon/cre/h_quassc.cre~ ~override/h_quassc.cre~        // Quass
      SAY NAME1 @136
      SAY NAME2 @136
 
-COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
-     SAY NAME1 @136
-     SAY NAME2 @136
-
-COPY ~gorgon/cre/h_saradc.cre~ ~override/h_saradc.cre~        // Saradin
+COPY ~gorgon/cre/h_rich2c.cre~ ~override/h_rich2c.cre~        // Richard(2)
      SAY NAME1 @137
      SAY NAME2 @137
 
-COPY ~gorgon/cre/h_smuggc.cre~ ~override/h_smuggc.cre~        // Smuggler
+COPY ~gorgon/cre/h_richac.cre~ ~override/h_richac.cre~        // Richard
+     SAY NAME1 @137
+     SAY NAME2 @137
+
+COPY ~gorgon/cre/h_rigalc.cre~ ~override/h_rigalc.cre~        // Rigaldo
      SAY NAME1 @138
      SAY NAME2 @138
 
-COPY ~gorgon/cre/h_sthi2c.cre~ ~override/h_sthi2c.cre~        // Shadow Thief(2)
+COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
      SAY NAME1 @139
      SAY NAME2 @139
 
-COPY ~gorgon/cre/h_sthiec.cre~ ~override/h_sthiec.cre~        // Shadow Thief
+COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
      SAY NAME1 @139
      SAY NAME2 @139
 
-COPY ~gorgon/cre/h_thiefc.cre~ ~override/h_thiefc.cre~        // Shadow Thief(Regular Thief)
-     SAY NAME1 @139
-     SAY NAME2 @139
-
-COPY ~gorgon/cre/h_snakec.cre~ ~override/h_snakec.cre~        // Snake
+COPY ~gorgon/cre/h_saradc.cre~ ~override/h_saradc.cre~        // Saradin
      SAY NAME1 @140
      SAY NAME2 @140
 
-COPY ~gorgon/cre/h_thamuc.cre~ ~override/h_thamuc.cre~        // Thamuz
+COPY ~gorgon/cre/h_smuggc.cre~ ~override/h_smuggc.cre~        // Smuggler
      SAY NAME1 @141
      SAY NAME2 @141
 
-COPY ~gorgon/cre/h_tuztcc.cre~ ~override/h_tuztcc.cre~        // Tuzt
+COPY ~gorgon/cre/h_sthi2c.cre~ ~override/h_sthi2c.cre~        // Shadow Thief(2)
      SAY NAME1 @142
      SAY NAME2 @142
 
-COPY ~gorgon/cre/h_vapulc.cre~ ~override/h_vapulc.cre~        // Vapula Simberg
+COPY ~gorgon/cre/h_sthiec.cre~ ~override/h_sthiec.cre~        // Shadow Thief
+     SAY NAME1 @142
+     SAY NAME2 @142
+
+COPY ~gorgon/cre/h_thiefc.cre~ ~override/h_thiefc.cre~        // Shadow Thief(Regular Thief)
+     SAY NAME1 @142
+     SAY NAME2 @142
+
+COPY ~gorgon/cre/h_snakec.cre~ ~override/h_snakec.cre~        // Snake
      SAY NAME1 @143
      SAY NAME2 @143
 
-COPY ~gorgon/cre/h_xevecc.cre~ ~override/h_xevecc.cre~        // Xevec
+COPY ~gorgon/cre/h_thamuc.cre~ ~override/h_thamuc.cre~        // Thamuz
      SAY NAME1 @144
      SAY NAME2 @144
 
-COPY ~gorgon/cre/h_yumilc.cre~ ~override/h_yumilc.cre~        // Yumil
+COPY ~gorgon/cre/h_tuztcc.cre~ ~override/h_tuztcc.cre~        // Tuzt
      SAY NAME1 @145
      SAY NAME2 @145
 
-COPY ~gorgon/cre/h_zedacc.cre~ ~override/h_zedacc.cre~        // Zeda
+COPY ~gorgon/cre/h_vapulc.cre~ ~override/h_vapulc.cre~        // Vapula Simberg
      SAY NAME1 @146
      SAY NAME2 @146
 
-COPY ~gorgon/cre/h_zhontc.cre~ ~override/h_zhontc.cre~        // Zhontac
+COPY ~gorgon/cre/h_xevecc.cre~ ~override/h_xevecc.cre~        // Xevec
      SAY NAME1 @147
      SAY NAME2 @147
+
+COPY ~gorgon/cre/h_yumilc.cre~ ~override/h_yumilc.cre~        // Yumil
+     SAY NAME1 @148
+     SAY NAME2 @148
+
+COPY ~gorgon/cre/h_zedacc.cre~ ~override/h_zedacc.cre~        // Zeda
+     SAY NAME1 @149
+     SAY NAME2 @149
+
+COPY ~gorgon/cre/h_zhontc.cre~ ~override/h_zhontc.cre~        // Zhontac
+     SAY NAME1 @150
+     SAY NAME2 @150
 
 // Journal Entries
 
@@ -653,4 +675,5 @@ ADD_JOURNAL @200 @201 @202 @203
             @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619
+            @710 @711 @712 @713 @714 @715 @716
             USING ~gorgon/english/quests.tra~

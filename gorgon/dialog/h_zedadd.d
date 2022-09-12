@@ -12,6 +12,7 @@ IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
    SAY ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
        ++ ~I'll keep that in mind.~ EXIT
        +~Global("h_ZedaRiddle","GLOBAL",1)~+ ~I'm looking for something to do. Do you have any work available?~ GOTO RIDDLE_0
+       +~Global("h_SecondRiddle","GLOBAL",1) Global("h_ZedaRiddle","GLOBAL",2)~+ ~I want to play Bag of Mysteries again!~ GOTO SECOND_0
        +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
 END
 
@@ -56,7 +57,7 @@ IF ~~ THEN BEGIN RIDDLE_4
        ++ ~The candle.~ GOTO WRONG_1
        ++ ~The wood stove.~ GOTO WRONG_1
        ++ ~The room.~ GOTO WRONG_1
-       ++ ~The match.~ DO ~AddExperienceParty(250)~ GOTO CORRECT_1
+       ++ ~The match.~ DO ~AddExperienceParty(50)~ GOTO CORRECT_1
        ++ ~The oil lamp.~ GOTO WRONG_1
 END
 
@@ -81,7 +82,7 @@ END
 
 IF ~~ THEN BEGIN RIDDLE_5
    SAY ~There are three priests who all say Destin is their brother. Yet, Destin says he has no brothers. Who is lying?~
-       ++ ~No one.~ DO ~AddExperienceParty(250)~ GOTO CORRECT_2
+       ++ ~No one.~ DO ~AddExperienceParty(100)~ GOTO CORRECT_2
        ++ ~The priests.~ GOTO WRONG_2
        ++ ~Destin.~ GOTO WRONG_2
        ++ ~You.~ GOTO WRONG_2
@@ -113,7 +114,7 @@ IF ~~ THEN BEGIN RIDDLE_6
        ++ ~A pair of mirrors.~ GOTO WRONG_3
        ++ ~Gusts of wind.~ GOTO WRONG_3
        ++ ~Two birds flying.~ GOTO WRONG_3
-       ++ ~Day and night.~ DO ~AddExperienceParty(250)~ GOTO CORRECT_3
+       ++ ~Day and night.~ DO ~AddExperienceParty(150)~ GOTO CORRECT_3
        ++ ~A fever and its cure.~ GOTO WRONG_3
        ++ ~A broken heart and a person in love.~ GOTO WRONG_3
        ++ ~Different temperatures.~ GOTO WRONG_3
@@ -147,7 +148,7 @@ IF ~~ THEN BEGIN RIDDLE_7
        ++ ~Sound waves.~ GOTO WRONG_4
        ++ ~A message.~ GOTO WRONG_4
        ++ ~Darkness.~ GOTO WRONG_4
-       ++ ~An echo.~ DO ~AddExperienceParty(250)~ GOTO CORRECT_4
+       ++ ~An echo.~ DO ~AddExperienceParty(200)~ GOTO CORRECT_4
        ++ ~Shadows.~ GOTO WRONG_4
 END
 
@@ -174,5 +175,149 @@ IF ~~ THEN BEGIN END_0
 END
 
 
+       //////////////////////
+       ////////Second////////
+       //////////////////////
 
 
+IF ~~ THEN BEGIN SECOND_0
+   SAY ~Well, you're in luck then! I have restocked my riddles and refilled my bag with lots of goodies!~ IF ~~ THEN GOTO SECOND_1
+END
+                                                                                                   
+IF ~~ THEN BEGIN SECOND_1
+   SAY ~I will put you through a series of 4 riddles. If you guess wrong, you will pay me 200 gold this time. If you guess right, you can choose a random prize from my Bag of Mysteries. Once we begin you *must* commit to answering each riddle before the game will end.~
+       +~PartyGoldGT(799)~+ ~I'm ready to begin~ GOTO SECOND_3
+       +~PartyGoldLT(800)~+ ~It seems I don't have enough gold to play your game.~ GOTO SECOND_2
+       ++ ~On second thought, I'm not interested right now.~ EXIT
+END
+
+IF ~~ THEN BEGIN SECOND_2
+   SAY ~Are you serious? *laughing* You really don't have 800 gold pieces on you?~ IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN SECOND_3
+   SAY ~Alright, let's get started then. Here is the first riddle.~ IF ~~ THEN GOTO SECOND_4
+END
+
+IF ~~ THEN BEGIN SECOND_4
+   SAY ~I have a head, yet no body. I have leaves, yet no branches. What am I?~
+       ++ ~A book.~ GOTO NO_0
+       ++ ~Lettuce.~ DO ~AddExperienceParty(100)~ GOTO YES_0
+       ++ ~A tree.~ GOTO NO_0
+       ++ ~A flower.~ GOTO NO_0
+       ++ ~A shadow.~ GOTO NO_0
+       ++ ~A family tree.~ GOTO NO_0
+       ++ ~An army.~ GOTO NO_0
+END
+
+IF ~~ THEN BEGIN NO_0
+   SAY ~Oof. Not off to the best start. The correct answer was "lettuce". That'll be 200 gold please and thank you.~
+IF ~~ THEN DO ~
+   TakePartyGold(200)~ GOTO SECOND_6
+END
+
+IF ~~ THEN BEGIN YES_0
+   SAY ~Correct! Stick your hand in the Bag of Mysteries and pull out your first prize. Which pocket would you like to check?~
+       +~Global("h_LeftSecond","GLOBAL",0)~+ ~Left.~ DO ~SetGlobal("h_LeftSecond","GLOBAL",1) GiveItemCreate("RING11",LastTalkedToBy,0,0,0)~ GOTO SECOND_5
+       +~Global("h_RightSecond","GLOBAL",0)~+ ~Right.~ DO ~SetGlobal("h_RightSecond","GLOBAL",1) GiveGoldForce(1)~ GOTO SECOND_5
+       +~Global("h_TopSecond","GLOBAL",0)~+ ~Top.~ DO ~SetGlobal("h_TopSecond","GLOBAL",1) GiveItemCreate("BELT01",LastTalkedToBy,0,0,0)~ GOTO SECOND_5
+       +~Global("h_FrontSecond","GLOBAL",0)~+ ~Front.~ DO ~SetGlobal("h_FrontSecond","GLOBAL",1) GiveItemCreate("BOOK21",LastTalkedToBy,0,0,0)~ GOTO SECOND_5
+       +~Global("h_SecretSecond","GLOBAL",0)~+ ~Secret.~ DO ~SetGlobal("h_SecretSecond","GLOBAL",1) GiveItemCreate("DART01",LastTalkedToBy,0,0,0)~ GOTO SECOND_5
+END
+
+IF ~~ THEN BEGIN SECOND_5
+   SAY ~*giggles* This never gets old. Onto to the next riddle!~ IF ~~ THEN GOTO SECOND_6
+END
+
+IF ~~ THEN BEGIN SECOND_6
+   SAY ~The more you take of me, the more you leave behind.~
+       ++ ~Coins.~ GOTO NO_1
+       ++ ~Memories.~ GOTO NO_1
+       ++ ~Sleep.~ GOTO NO_1
+       ++ ~Time.~ GOTO NO_1
+       ++ ~Footsteps.~ DO ~AddExperienceParty(200)~ GOTO YES_1
+       ++ ~Water.~ GOTO NO_1
+       ++ ~Oxygen.~ GOTO NO_1
+       ++ ~Daylight.~ GOTO NO_1
+END
+
+IF ~~ THEN BEGIN NO_1
+   SAY ~*shakes her head* That's gonna cost ya'.~
+IF ~~ THEN DO ~
+   TakePartyGold(200)~ GOTO SECOND_8
+END
+
+IF ~~ THEN BEGIN YES_1
+   SAY ~That's right! Which pocket would you like to check?~
+       +~Global("h_LeftSecond","GLOBAL",0)~+ ~Left.~ DO ~SetGlobal("h_LeftSecond","GLOBAL",1) GiveItemCreate("RING11",LastTalkedToBy,0,0,0)~ GOTO SECOND_7
+       +~Global("h_RightSecond","GLOBAL",0)~+ ~Right.~ DO ~SetGlobal("h_RightSecond","GLOBAL",1) GiveGoldForce(1)~ GOTO SECOND_7
+       +~Global("h_TopSecond","GLOBAL",0)~+ ~Top.~ DO ~SetGlobal("h_TopSecond","GLOBAL",1) GiveItemCreate("BELT01",LastTalkedToBy,0,0,0)~ GOTO SECOND_7
+       +~Global("h_FrontSecond","GLOBAL",0)~+ ~Front.~ DO ~SetGlobal("h_FrontSecond","GLOBAL",1) GiveItemCreate("BOOK21",LastTalkedToBy,0,0,0)~ GOTO SECOND_7
+       +~Global("h_SecretSecond","GLOBAL",0)~+ ~Secret.~ DO ~SetGlobal("h_SecretSecond","GLOBAL",1) GiveItemCreate("DART01",LastTalkedToBy,0,0,0)~ GOTO SECOND_7
+END
+
+IF ~~ THEN BEGIN SECOND_7
+   SAY ~*laughing* This never gets old. Onto to the next riddle!~ IF ~~ THEN GOTO SECOND_8
+END
+
+IF ~~ THEN BEGIN SECOND_8
+   SAY ~Walk on the living, they don't even mumble. Walk on the dead, they mutter and grumble.~
+       ++ ~Zombies.~ GOTO NO_2
+       ++ ~Grass.~ GOTO NO_2
+       ++ ~Skeleton.~ GOTO NO_2
+       ++ ~Planets.~ GOTO NO_2
+       ++ ~Fire.~ GOTO NO_2
+       ++ ~Leaves.~ DO ~AddExperienceParty(300)~ GOTO YES_2
+END
+
+IF ~~ THEN BEGIN NO_2
+   SAY ~Sorry, but the right answer was "leaves". You know, the things that get all crunchy after they die?~
+IF ~~ THEN DO ~
+   TakePartyGold(200)~ GOTO SECOND_10
+END
+
+IF ~~ THEN BEGIN YES_2
+   SAY ~Good answer! Leaves get all crunchy after they die. Which pocket would you like to check?~
+       +~Global("h_LeftSecond","GLOBAL",0)~+ ~Left.~ DO ~SetGlobal("h_LeftSecond","GLOBAL",1) GiveItemCreate("RING11",LastTalkedToBy,0,0,0)~ GOTO SECOND_9
+       +~Global("h_RightSecond","GLOBAL",0)~+ ~Right.~ DO ~SetGlobal("h_RightSecond","GLOBAL",1) GiveGoldForce(1)~ GOTO SECOND_9
+       +~Global("h_TopSecond","GLOBAL",0)~+ ~Top.~ DO ~SetGlobal("h_TopSecond","GLOBAL",1) GiveItemCreate("BELT01",LastTalkedToBy,0,0,0)~ GOTO SECOND_9
+       +~Global("h_FrontSecond","GLOBAL",0)~+ ~Front.~ DO ~SetGlobal("h_FrontSecond","GLOBAL",1) GiveItemCreate("BOOK21",LastTalkedToBy,0,0,0)~ GOTO SECOND_9
+       +~Global("h_SecretSecond","GLOBAL",0)~+ ~Secret.~ DO ~SetGlobal("h_SecretSecond","GLOBAL",1) GiveItemCreate("DART01",LastTalkedToBy,0,0,0)~ GOTO SECOND_9
+END
+
+IF ~~ THEN BEGIN SECOND_9
+   SAY ~*laughing* This never gets old. Onto to the next riddle!~ IF ~~ THEN GOTO SECOND_10
+END
+
+IF ~~ THEN BEGIN SECOND_10
+   SAY ~Forwards I am heavy, yet backwards I am not.~
+       ++ ~A hat.~ GOTO NO_3
+       ++ ~A coat.~ GOTO NO_3
+       ++ ~The past.~ GOTO NO_3
+       ++ ~A thought.~ GOTO NO_3
+       ++ ~A sentence.~ GOTO NO_3
+       ++ ~The present.~ GOTO NO_3
+       ++ ~Ton.~ DO ~AddExperienceParty(400)~ GOTO YES_3
+       ++ ~The future.~ GOTO NO_3
+END
+
+IF ~~ THEN BEGIN NO_3
+   SAY ~A tricky one, this was. The answer was "ton", as backwards it spells n-o-t.~
+IF ~~ THEN DO ~
+   TakePartyGold(200)~ GOTO SECOND_11
+END
+
+IF ~~ THEN BEGIN YES_3
+   SAY ~That is correct! This is your last pick. Which pocket would you like to check?~
+       +~Global("h_LeftSecond","GLOBAL",0)~+ ~Left.~ DO ~SetGlobal("h_LeftSecond","GLOBAL",1) GiveItemCreate("RING11",LastTalkedToBy,0,0,0)~ GOTO SECOND_11
+       +~Global("h_RightSecond","GLOBAL",0)~+ ~Right.~ DO ~SetGlobal("h_RightSecond","GLOBAL",1) GiveGoldForce(1)~ GOTO SECOND_11
+       +~Global("h_TopSecond","GLOBAL",0)~+ ~Top.~ DO ~SetGlobal("h_TopSecond","GLOBAL",1) GiveItemCreate("BELT01",LastTalkedToBy,0,0,0)~ GOTO SECOND_11
+       +~Global("h_FrontSecond","GLOBAL",0)~+ ~Front.~ DO ~SetGlobal("h_FrontSecond","GLOBAL",1) GiveItemCreate("BOOK21",LastTalkedToBy,0,0,0)~ GOTO SECOND_11
+       +~Global("h_SecretSecond","GLOBAL",0)~+ ~Secret.~ DO ~SetGlobal("h_SecretSecond","GLOBAL",1) GiveItemCreate("DART01",LastTalkedToBy,0,0,0)~ GOTO SECOND_11
+END
+
+IF ~~ THEN BEGIN SECOND_11
+   SAY ~I hope you enjoyed my new prizes, hehe!~
+       ++ ~Yes, more junk that I don't need.~ DO ~SetGlobal("h_SecondRiddle","GLOBAL",2)~ EXIT
+       ++ ~Thanks, Zeda, that was fun.~ DO ~SetGlobal("h_SecondRiddle","GLOBAL",2)~ EXIT
+END

@@ -247,8 +247,7 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc01")
    GiveItemCreate("h_ring01",LastTalkedToBy,0,0,0)
    AddExperienceParty(800)
-   MoveToPoint([922.1052])
-   Face(SW)~ EXIT
+   EscapeAreaMove("h_guilda",922,1052,SW)~ EXIT
 END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",4)~ THEN BEGIN MAGE_21
@@ -400,11 +399,13 @@ IF ~~ THEN BEGIN THAMUZ_9
 END
 
 IF ~~ THEN BEGIN THAMUZ_10
-   SAY ~I will inform you when my spies turn up anything new. In the meantime, Rigaldo may have another job for you and I believe Liedel has received a new set of bounties to boot.~
+   SAY ~I will inform you when my spies turn up anything new. In the meantime, ask around the guild for more work.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
    SetGlobal("h_RigaldoQuest","GLOBAL",15)
    SetGlobal("h_LiedelQuest","GLOBAL",3)
+   SetGlobal("h_SecondRiddle","GLOBAL",1)
+   SetGlobal("h_MerediaQuest","GLOBAL",1)
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")

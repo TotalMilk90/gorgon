@@ -5,7 +5,7 @@ IF ~Global("h_ZhontacBounty","GLOBAL",0)~ THEN BEGIN 0
 END
 
 IF ~Global("h_ZhontacBounty","GLOBAL",1)~ THEN BEGIN 1
-   SAY ~Oh my, visitors! I don't have anything to offer you, except a warning to watch your step while back here, the ground has become quite uneven. You must be here regarding my offer?~
+   SAY ~Oh, my! Visitors! I don't have anything to offer you, except a warning to watch your step while back here, the ground has become quite uneven. You must be here regarding my offer?~
        ++ ~Yes I am. Tell me what it is you need me to do.~ GOTO 3
        ++ ~Actually, I'm here to kill you. Your last victim escaped and placed a bounty on your head. I'll be glad to take it!~ GOTO 2
 END

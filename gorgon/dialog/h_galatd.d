@@ -1,10 +1,10 @@
 BEGIN h_galatd
 
 IF ~True()~ THEN BEGIN 0
-   SAY ~Help... me 'usband... he tried to kill me!~
-       ++ ~Where can I find your husband?~ GOTO 1
-       ++ ~Was he with a woman named, Ilena?~ GOTO 2
-       ++ ~Here, let me help you!~ GOTO 3
+   SAY ~'elp!... Me 'usband... he tried to kill me!~
+       ++ ~Is your husbands name Isley?~ GOTO 1
+       ++ ~Do you know if he as he with a woman named Ilena?~ GOTO 2
+       ++ ~Here, let me help you. You're going to be ok.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 1

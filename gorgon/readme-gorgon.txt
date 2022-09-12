@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.3
+V.3.0
 
 =======
 Prequel
@@ -28,13 +28,12 @@ those with a lawful-good alignment.
 =============
 Quest Content
 =============
-About 1/3 of the new quests involve thief related activities, (pickpocketing,
+Roughly 1/3 of the new quests involve thief related activities, (pickpocketing,
 extortion, smuggling), another 1/3 of them are bounty hunting quests, and the
-other 1/3 are battles involving the main questline. You will need to complete
-every quest in order to progress into the finale. There are 3 different
-conclusions to the story based off the choices you make towards the end. One
-being that you can become the guild master and receive weekly payouts based off
-the risk level that you assign your guild.
+other 1/3 are battles involving the main questline. There are 3 different
+conclusions to the story based off the choices you make towards the end of the
+campaign. One being that you can become the guild master and receive weekly
+payouts based off the risk level that you assign your guild.
  
 ================
 Acknowledgements
@@ -57,11 +56,11 @@ WeiDU: Wes Weimer, the bigg and Wisp
 ===============
 Version History
 ===============
-Version 3:
+Version 3.0:
 -Added EET compatibility (Thanks to Graion Dilach)
 -Added dialog traification (Thanks to JohnBob)
--Added a new quest
--Minor dialog improvements and bug fixes
+-Added 2 new quests
+-Dialog improvements and bug fixes
 
 Version 2: BETA
 -Fixed a quest loop and some broken scripts

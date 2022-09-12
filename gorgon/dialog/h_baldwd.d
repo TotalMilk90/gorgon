@@ -406,6 +406,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_LiedelQuest","GLOBAL",3)
    SetGlobal("h_SecondRiddle","GLOBAL",1)
    SetGlobal("h_MerediaQuest","GLOBAL",1)
+   ActionOverride("h_ilenac",EscapeArea())
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")

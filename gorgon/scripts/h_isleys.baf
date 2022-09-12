@@ -1,19 +1,21 @@
 IF
 	See([PC])
+	NumberOfTimesTalkedTo(0)
 THEN
 	RESPONSE #100
 		 ClearAllActions()
+		 SmallWait(5)
                  StartCutSceneMode()
                  CutSceneId(Player1)
-                 Explore()
                  MoveViewObject("h_isleyc",VERY_FAST)
-                 Wait(2)
+                 Explore()
+                 Wait(3)
                  EndCutSceneMode()
 		 StartDialog("h_isleyd",[PC])
 END
 
 IF
-	Global("h_MerediaQuest","GLOBAL",3)
+	Global("h_IsleyDialog","GLOBAL",1)
 THEN
 	RESPONSE #100
 	         StartCutSceneMode()
@@ -22,4 +24,5 @@ THEN
                  SmallWait(5)
                  EndCutSceneMode()
                  StartDialog("h_isleyd",[PC])
+                 SetGlobal("h_IsleyDialog","GLOBAL",2)
 END

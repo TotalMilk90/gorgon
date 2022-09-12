@@ -1,19 +1,19 @@
 BEGIN h_meredd
 
 IF WEIGHT #-1 ~Global("h_MerediaQuest","GLOBAL",1)~ THEN BEGIN Q_0
-   SAY ~<CHARNAME>! May I speak to you for a moment?~
+   SAY ~<CHARNAME>! If you're not busy, may I ask a favor of you?~
        ++ ~Of course, Meredia, what's wrong?~ GOTO Q_1
-       ++ ~I'm in a hurry, make it quick.~ GOTO Q_1
+       ++ ~I'm in a hurry so make it quick.~ GOTO Q_1
        ++ ~Sorry, I don't have time right now.~ GOTO Q_3
 END
 
 IF ~~ THEN BEGIN Q_1
-   SAY ~I'm worried for one of my girls, Ilena. She went over to one of her clients last night and has not yet returned.~ IF ~~ THEN GOTO Q_2
+   SAY ~I am starting to worry for one of my girls, Ilena. She visited a client late last night and has still not yet returned.~ IF ~~ THEN GOTO Q_2
 END
 
 IF ~~ THEN BEGIN Q_2
-   SAY ~Could you go check on her for me? The clients name is Isley and they were staying at the house next to Taerom's.~
-       ++ ~Sure, I'll go check her.~ GOTO Q_4
+   SAY ~Could you check on her for me? She was meeting with a man named Isley at the house next door to Taerom's.~
+       ++ ~Sure, I'll go check on her.~ GOTO Q_4
        ++ ~Sorry, I don't have time right now.~ GOTO Q_3
 END
 
@@ -34,27 +34,27 @@ END
 IF WEIGHT #-2 ~GlobalGT("h_MerediaQuest","GLOBAL",1) GlobalLT("h_MerediaQuest","GLOBAL",4)~ THEN BEGIN Q_5
    SAY ~Have you brought any news of Ilena?~
        ++ ~Nothing new, yet.~ EXIT
-       +~PartyHasItem("h_misc16")~+ ~Isley attacked his wife and left her dying on the floor. I found this piece of cloth along with a bloody helmet inside the house.~ GOTO Q_6
+       +~PartyHasItem("h_misc16")~+ ~Isley attacked his wife and left her dying on the floor. I found this piece of cloth and a helmet inside the house.~ GOTO Q_6
        +~Global("h_IlenaDied","GLOBAL",1)~+ ~I'm sorry, Meredia. I was able to kill Isley for what he did, but not before he took Ilena's life.~ GOTO DEAD_0
 END
 
 IF ~~ THEN BEGIN Q_6
-   SAY ~Let me see that! It's the same color of Ilena's dress!~
+   SAY ~That is the same color of Ilena's dress!~
 IF ~~ THEN DO ~
    TakePartyItem("h_misc16")
    DestroyItem("h_misc16")~ GOTO Q_7
 END
 
 IF ~~ THEN BEGIN Q_7
-   SAY ~But this fabric isn't right. Hmmm. This style of threading is more commonly found in military uniforms. The helmet you found would substantiate that as well.~ IF ~~ THEN GOTO Q_8
+   SAY ~But this fabric isn't right. This style of threading is more common among military uniforms! The helmet you found would substantiate that as well.~ IF ~~ THEN GOTO Q_8
 END
 
 IF ~~ THEN BEGIN Q_8
-   SAY ~This is not good, <CHARNAME>, and I am beginning to fear for the worst. Isley must have fled after attacking his wife and taken Ilena with him.~ IF ~~ THEN GOTO Q_9
+   SAY ~This is not good. My only hope is that Ilena is safe and still alive. Isley probably fled like a coward after attacking his wife and he must have taken Ilena with him!~ IF ~~ THEN GOTO Q_9
 END
 
 IF ~~ THEN BEGIN Q_9
-   SAY ~We just need to figure out what style of uniform this is from.~
+   SAY ~If you can figure out what style of uniform this is then maybe you'll be able to find them!~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnIsley","GLOBAL",1)
    AddJournalEntry(@712,QUEST)~ EXIT
@@ -65,7 +65,11 @@ IF WEIGHT #-3 ~Global("h_MerediaQuest","GLOBAL",4)~ THEN BEGIN ALIVE_0
 END
 
 IF ~~ THEN BEGIN ALIVE_1
-   SAY ~We have all pooled our gold together and wish you to have it as a reward.~
+   SAY ~We have all pooled our gold together and wish you to have it as a reward.~ IF ~~ THEN GOTO ALIVE_2
+END
+
+IF ~~ THEN BEGIN ALIVE_2
+   SAY ~Thank you for everything you have done, truly.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
    AddJournalEntry(@715,QUEST_DONE)
@@ -84,44 +88,6 @@ IF ~~ THEN DO ~
    AddJournalEntry(@716,QUEST_DONE)
    AddExperienceParty(800)~ EXIT
 END
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

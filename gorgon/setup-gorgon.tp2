@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v2~
+VERSION ~v3~
 
 LANGUAGE
     ~English~
@@ -195,8 +195,6 @@ COPY ~gorgon/bam/h_slavdb.bam~ ~override~
 COPY ~gorgon/bam/h_misc1b.bam~ ~override~
 COPY ~gorgon/bam/h_misc2b.bam~ ~override~
 COPY ~gorgon/bam/h_misc3b.bam~ ~override~
-COPY ~gorgon/bam/h_redcib.bam~ ~override~
-COPY ~gorgon/bam/h_redcdb.bam~ ~override~
 
 //   Add entrance to area file
 
@@ -396,7 +394,7 @@ COPY ~gorgon/items/h_misc15.itm~ ~override/h_misc15.itm~      // Counterfeit Gol
      SAY UNIDENTIFIED_DESC @53
      SAY DESC @53
      
-COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Bloodied Cloth
+COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Torn Fabric
      SAY NAME1 @54
      SAY NAME2 @54
      SAY UNIDENTIFIED_DESC @55

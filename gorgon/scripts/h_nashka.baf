@@ -1,5 +1,5 @@
 IF
-        Global("h_SpawnVapula","GLOBAL",1)
+        Global("h_SpawnIsley","GLOBAL",1)
 
 THEN
         RESPONSE #100

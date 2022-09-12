@@ -10,7 +10,7 @@ THEN
                   CreateCreature("h_danikc",[1467.1580],W)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
-                  CreateCreature("h_courtc",[1883.1134],SW)
+                  CreateCreature("h_ilenac",[1883.1134],SW)
                   CreateCreature("h_cour2c",[1888.1198],W)
                   CreateCreature("h_cour3c",[1964.1108],S)
                   CreateCreature("h_cour4c",[1897.1053],S)
@@ -19,7 +19,7 @@ THEN
                   CreateCreature("h_gamesc",[1464.1125],S)
                   CreateCreature("h_game2c",[1407.1122],S)
                   CreateCreature("h_game3c",[1344.1207],E)
-                  
+
                   CreateCreature("h_zedacc",[1021.1309],W)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
@@ -108,4 +108,14 @@ THEN
          RESPONSE #100
                   Wait(100)
                   PlaySound("h_figmus")
+                  Continue()
+END
+
+IF
+         Global("h_RespawnIlena","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_ilenac",[1883.1134],SW)
+                  SetGlobal("h_RespawnIlena","GLOBAL",2)
+                  Continue()
 END

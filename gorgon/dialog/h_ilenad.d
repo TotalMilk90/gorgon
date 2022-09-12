@@ -1,21 +1,26 @@
 BEGIN h_ilenad
 
 IF WEIGHT #-1 ~Global("h_MerediaQuest","GLOBAL",3)~ THEN BEGIN QUEST_0
-   SAY ~<CHARNAME>! You rescued me from that damn lunatic! Oh, thank you!~ IF ~~ THEN GOTO QUEST_1
+   SAY ~Oh, <CHARNAME>! I'm so glad you found me!~ IF ~~ THEN GOTO QUEST_1
 END
 
 IF ~~ THEN BEGIN QUEST_1
-   SAY ~His wife came home and caught us together! I tried to leave before things turned ugle but he wouldn't let me.~ IF ~~ THEN GOTO QUEST_2
+   SAY ~His wife came home and caught us together! I had to watch as he cut her down with his sword!~ IF ~~ THEN GOTO QUEST_2
 END
 
 IF ~~ THEN BEGIN QUEST_2
-   SAY ~Hegot all crazy-eyed and attacked his wife! Then he knocked me out and brought me here. I didn't know what he was planning to do with me!~ IF ~~ THEN GOTO QUEST_3
+   SAY ~I tried to run but he grabbed me and knocked me out. When I woke up we were on the road heading south. I was so scared, I didn't know what he was going to do with me!~ IF ~~ THEN GOTO QUEST_3
 END
 
 IF ~~ THEN BEGIN QUEST_3
-   SAY ~I'm heading back to the den! Thanks again, <CHARNAME>, I don't know how I can ever repay you.~
+   SAY ~Thank you, <CHARNAME>. You saved my life! My hero! I don't know how I can ever repay you.~ IF ~~ THEN GOTO QUEST_4
+END
+
+IF ~~ THEN BEGIN QUEST_4
+   SAY ~I'm heading back to the den now. I'm sure Meredia has been worried sick about me.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",4)
+   SetGlobal("h_RespawnIlena","GLOBAL",1)
    AddJournalEntry(@714,QUEST)
    EscapeArea()~ EXIT
 END

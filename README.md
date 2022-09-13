@@ -14,19 +14,11 @@ nothing to stand in his way.</p>
 
 <h2>Mod Overview</h2>
 <p>The Gorgon's Eye is a small content mod for BG:EE/SoD and EET that adds an
-underground thieves den into the town of Beregost. It contains 18 new quests,
+underground thieves den into the town of Beregost. It contains 20 new quests,
 2 new areas(reused), dozens of new characters, a new store that buys stolen
 goods, a few new items and a very small item-upgrade. It can be accessed
 immediately after leaving Candlekeep and is open to all players, excluding
 those with a lawful-good alignment.</p>
-
-<h2>Quest Content</h2>
-<p>Roughly 1/3 of the new quests involve thief related activities, (pickpocketing,
-extortion, smuggling), another 1/3 of them are bounty hunting quests, and the
-other 1/3 are battles involving the main questline. There are 3 different
-conclusions to the story based off the choices you make towards the end of the
-campaign. One being that you can become the guild master and receive weekly
-payouts based off the risk level that you assign your guild.</p>
 
 <h2>Acknowledgements</h2>
 <p>This mod would not have been possible without DnD Detective's mod tutorial 

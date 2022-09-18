@@ -34,7 +34,7 @@ IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",1)~ T
    SAY @1408
        +~NumItemsParty("h_dart03",16)~+ @1409 GOTO CARNIVAL_5
        +~NumItemsPartyLT("h_dart03",16)~+ @1404 GOTO CARNIVAL_3
-       +~NumItemsPartyLT("h_dart03",16)~+ @1410 GOTO CARNIVAL_3
+       +~NumItemsPartyLT("h_dart03",16)~+ @1410 EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_5

@@ -111,7 +111,7 @@
 @2001 = ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one... <CHARNAME>, is it?~
 @2002 = ~Another assassin then? You're not the first to threaten my life only to forfeit their own.~
 @2003 = ~How is it that you know my name? Who are you?~
-@2004 = ~<CHARNAME>? Never heard of 'em. Now if you'll excuse me I must be going.~
+@2004 = ~<CHARNAME>? Never heard of 'em. Now, if you'll excuse me, I must be going.~
 @2005 = ~You can lower your weapons, no need to be alarmed. I am not your enemy. At least I don't have to be.~
 @2006 = ~I make it my business to know who wanders about the city, and you are but one of many.~
 @2007 = ~I am Baldwin, and you have found yourself in the den of the Gorgon's Eye.~
@@ -183,8 +183,8 @@
 @2072 = ~No, that is all.~
 @2073 = ~Let me see that!~
 @2074 = ~...~
-@2075 = ~Belay those orders! The attack was a feint! Their main force is heading north towards the Wood of Sharp Teeth.~
-@2076 = ~It appears they are planning negotiations with a group of smugglers for the purchase of a Kerykeion piece! Dammit, those bastards have been one step ahead of us this whole time.~
+@2075 = ~Belay those orders! The attack was a feint! Their main force is heading north towards the Wood of Sharp Teeth!~
+@2076 = ~It appears they are planning negotiations with a group of smugglers for the purchase of a Kerykeion piece! Dammit, those bastards have been one step ahead of us this whole time!~
 @2077 = ~<CHARNAME>, I need you to head north immediately. They are meeting with a rogue named Nagate, near some old elven ruins.~
 @2078 = ~Be on your guard when you arrive. It seems the Shadow Thieves had their own suspicions the meeting may actually be a trap.~
 @2079 = ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill Nagate, or any Shadow Thief who dare cross our path.~
@@ -372,7 +372,7 @@
 @4217 = ~Perfect. I have already made the preparations so the transformation should be instantaneous.~
 @4218 = ~I can modify an Acid Kukri +1 by combining it with a Short Sword +2.~
 @4219 = ~To perform the required alchemy, I would need the following reagants: 2 Antidotes, 1 Scroll of Melf's Acid Arrow, and 1 Sphene Gem.~
-@4220 = ~I can combine the Helmet of Infravision with a Ring of Infravision to create a hooded cowl.~
+@4220 = ~I can combine the Helmet of Infravision, a Ring of Infravision, and a Ring of Invisibility to create a hooded cowl.~
 @4221 = ~To perform the required alchemy, I would need the following reagants: 2 Potions of Invisibility, 1 Scroll of Clairvoyance, and 1 Moonstone Gem.~
 @4222 = ~I can combine the Ring of Minor Lockpicking. the Ring of Awareness, and the Ring of the Cutpurse into a single band that would still maintain all of their abilities.~
 @4223 = ~To perform the required alchemy, I would need the following reagants: 3 Potions of Master Thievery, 1 Scroll of Knock, and 1 Rogue Stone.~
@@ -382,14 +382,14 @@
 @4227 = ~Let me take a look at it.~
 @4228 = ~It doesn't appear functional in its current form, but I may be able to transfer its power into a different weapon.~
 @4229 = ~However, this material is completely foreign to me. I will need some time to conduct further testing.~
-@4230 = ~If I am able to find success in my experiments, what type of weapon would you prefer to be crafted?~
-@4231 = ~Could you forge it into a reusable dart.~
+@4230 = ~If I am able to find success in my experiments, which type of weapon would you prefer to be crafted?~
+@4231 = ~Could you forge it into a throwing dart.~
 @4232 = ~Could you forge it into short sword.~
 @4233 = ~Could you forge it into a katana.~
 @4234 = ~I should be able to do that. Give me about a week and I'll be finished with it, granted the process goes smoothly.~
 @4235 = ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into the weapon of your choice.~
 @4236 = ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into your preferred weapon.~
-@4237 = ~I'll be here for a while longer to make sure the acquisition goes smoothly. Do you need any equipment in the meantime?~
+@4237 = ~I'll be here for a little while longer to make sure the acquisition goes smoothly. Do you need any equipment in the meantime?~
 @4238 = ~Richard gave me a piece of the Kerykeion. Would you be able to do anything with it?~
 @4239 = ~Here, take these and prepare yourselves well for the coming skirmish. The Shadow Thieves are not untested in the ways of urban warfare.~
 @4240 = ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
@@ -588,7 +588,7 @@
 @6402 = ~Who's asking?~
 @6403 = ~Sorry, you have the wrong person.~
 @6404 = ~I can't fault your cautiousness, yet I know who you are, <CHARNAME>.~
-@6405 = ~I am one of Baldwin's, Snake Heads, a black ops squadron of his most trusted and covert spies.~
+@6405 = ~I am one of Baldwin's Snake Heads, a black ops squadron of his most trusted and covert spies.~
 @6406 = ~You look pretty roughed up. How are you even alive, yet alone talking?~
 @6407 = ~What happened to you?~
 @6408 = ~There is a reason I was chosen for ths position.~
@@ -870,7 +870,7 @@
 @7844 = ~By Sune! They're all fake! Hundreds of them! How did I not notice? It has to be from Xevec, no one else spent as much as him last night!~
 @7845 = ~He lives somewhere on the streets of Beregost, but I don't know where exactly.~
 @7846 = ~I have seen him in the north-end on occasion. You might want to first check there.~
-@7847 = ~Not problem, <CHARNAME>. It's always a pleasure seeing you.~
+@7847 = ~Not a problem, <CHARNAME>. It's always a pleasure seeing you.~
 
 //h_nagatd.d......@8000 - @8199
 
@@ -1010,7 +1010,7 @@
 @9011 = ~Excellent. I will be sending you on a trial run of sorts so that I can properly gauge your abilities.~
 @9012 = ~I can handle any test of yours. What is it you would have me do?~
 @9013 = ~On second thought, I don't really have time for this right now.~
-@9014 = ~There is a dealer of gems and other various trinkets who is currently vacating a room at Feldpost's Inn. He is on his way to the Nashkel Carnival to present his wares, so he won't be staying here for much longer.~
+@9014 = ~There is a dealer of gems and other various trinkets who is currently vacating a room at Feldepost's Inn. He is on his way to the Nashkel Carnival to present his wares, so he won't be staying here for much longer.~
 @9015 = ~Our intel suggests he likes to keep his most prized item on his person at all times. Your task is to go and relieve him of whatever that may be.~
 @9016 = ~Sounds simple enough. Is there anything else that I should know?~
 @9017 = ~He enjoys his privacy above all else and won't have his guards accompanying him during his stay. This should be an easy in-and-out for any thief.~
@@ -1318,8 +1318,8 @@
 
 //h_yumild.d......@10600 - @10799
 
-@10600 = ~There's a small tunnel in the trees behind Feldpost's. Sometimes my friends and I like to throw rocks down there.~
-@10601 = ~One night, we got really close and could hear strange noises coming out of it. When we went to look inside, a bunch of shadowy ghosts came flying out! Now we're too scared to go back.~
+@10600 = ~There's a small tunnel in the trees behind Feldepost's! My friends and I like to throw rocks down there sometimes.~
+@10601 = ~One night, we got reeeally close and started hearing strange noises coming out of it. When we took a closer look, a bunch of shadowy ghosts came flying out! Now we're too scared to go back.~
 
 //h_zedadd.d......@10800 - @10999
 
@@ -1392,7 +1392,7 @@
 @10866 = ~Thanks, Zeda, that was fun.~
 @10867 = ~Well, you're in luck then! I have restocked my riddles and refilled my bag with lots of goodies!~
 @10868 = ~I will put you through a series of 4 riddles. If you guess wrong, you will pay me 200 gold this time. If you guess right, you can choose a random prize from my Bag of Mysteries. Once we begin you *must* commit to answering each riddle before the game will end.~
-@10869 = ~I'm ready to begin~
+@10869 = ~I'm ready to begin.~
 @10870 = ~On second thought, I'm not interested right now.~
 @10871 = ~Are you serious? *laughing* You really don't have 800 gold pieces on you?~
 @10872 = ~Alright, let's get started then. Here is the first riddle.~
@@ -1417,7 +1417,7 @@
 @10891 = ~Daylight.~
 @10892 = ~*shakes her head* That's gonna cost ya'.~
 @10893 = ~That's right! Which pocket would you like to check?~
-@10894 = ~*laughing* This never gets old. Onto to the next riddle!~
+@10894 = ~*giggles* This never gets old. Onto to the next riddle!~
 @10895 = ~Walk on the living, they don't even mumble. Walk on the dead, they mutter and grumble.~
 @10896 = ~Zombies.~
 @10897 = ~Grass.~

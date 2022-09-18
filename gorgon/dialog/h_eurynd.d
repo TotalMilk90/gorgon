@@ -94,7 +94,7 @@ END
 
 IF ~~ THEN BEGIN COWL_2
    SAY @4221
-       +~PartyHasItem("HELM05") PartyHasItem("RING21") NumItemsPartyGT("POTN10",1) PartyHasItem("SCRL1D") PartyHasItem("MISC27") PartyGoldGT(9999)~+ @4216 GOTO COWL_3
+       +~PartyHasItem("HELM05") PartyHasItem("RING21") PartyHasItem("RING05") NumItemsPartyGT("POTN10",1) PartyHasItem("SCRL1D") PartyHasItem("MISC27") PartyGoldGT(9999)~+ @4216 GOTO COWL_3
        ++ @4213 EXIT
 END
 
@@ -105,11 +105,13 @@ IF ~~ THEN DO ~
    DestroyGold(10000)
    TakePartyItemNum("HELM05",1)
    TakePartyItemNum("RING21",1)
+   TakePartyItemNum("RING05",1)
    TakePartyItemNum("POTN10",2)
    TakePartyItemNum("SCRL1D",1)
    TakePartyItemNum("MISC27",1)
    DestroyItem("HELM05")
    DestroyItem("RING21")
+   DestroyItem("RING05")
    DestroyItem("POTN10")
    DestroyItem("SCRL1D")
    DestroyItem("MISC27")

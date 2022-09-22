@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.3.0
+V.3.1
 
 =======
 Prequel
@@ -46,6 +46,10 @@ WeiDU: Wes Weimer, the bigg and Wisp
 ===============
 Version History
 ===============
+Version 3.1:
+-Added new stores and items
+-Minor fixes
+
 Version 3.0:
 -Added EET compatibility (Thanks to Graion Dilach)
 -Added dialog traification (Thanks to JohnBob)

@@ -24,8 +24,8 @@ THEN
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
                   
-                  CreateCreature("h_kageic",[1194.1429],W)
-                  CreateCreature("h_ophelc",[1234.1371],W)
+                  CreateCreature("h_kageic",[1194.1429],E)
+                  CreateCreature("h_ophelc",[1234.1371],SE)
 
 
                   SetGlobal("h_GuildSpawn","GLOBAL",1)

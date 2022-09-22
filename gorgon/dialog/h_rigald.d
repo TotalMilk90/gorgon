@@ -228,7 +228,7 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",7)~ THEN BEGIN KARP_10
    SAY @9059
-       +~PartyHasItem("h_ring05")~+ @9060 GOTO KARP_11
+       +~PartyHasItem("h_misc17")~+ @9060 GOTO KARP_11
        ++ @9021 EXIT
 END
 
@@ -237,8 +237,8 @@ IF ~~ THEN BEGIN KARP_11
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",8)
    AddJournalEntry(@317,QUEST_DONE)
-   TakePartyItem("h_ring05")
-   DestroyItem("h_ring05")
+   TakePartyItem("h_misc17")
+   DestroyItem("h_misc17")
    AddExperienceParty(600)~ EXIT
 END
 

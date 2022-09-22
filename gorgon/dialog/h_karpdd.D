@@ -10,7 +10,7 @@ IF ~~ THEN BEGIN THREAT_2
    SAY @6803
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring05",LastTalkedToBy)
+   GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    GiveItem("h_misc06",LastTalkedToBy)
    ReputationInc(-1)
@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN THREAT_3
    SAY @6804
 IF ~~ THEN DO
    ~AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring05",LastTalkedToBy)
+   GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    ReputationInc(-1)
    EscapeArea()~ EXIT
@@ -51,7 +51,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    AddJournalEntry(@318,QUEST)
-   GiveItem("h_ring05",LastTalkedToBy)
+   GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)~ EXIT
 END
 
@@ -117,7 +117,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    AddJournalEntry(@318,QUEST)
-   GiveItem("h_ring05",LastTalkedToBy)
+   GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)~ EXIT
 END
 
@@ -125,7 +125,7 @@ IF ~~ THEN BEGIN CHARM_9
    SAY @6839
 IF ~~ THEN DO ~
    AddJournalEntry(@316,QUEST)
-   GiveItem("h_ring05",LastTalkedToBy)
+   GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    EscapeArea()~ EXIT
 END

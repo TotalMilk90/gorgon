@@ -1,5 +1,5 @@
-@10=~Crystalline Torque~
-@11=~This necklace was forged using a variety of magical items with the purpose of enhancing the wearers clarity and intelligence.
+@2=~Crystalline Torque~
+@3=~This necklace was forged using a variety of magical items with the purpose of enhancing the wearers clarity and intelligence.
 
 STATISTICS:
 
@@ -12,9 +12,251 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@12=~Dagger~
-@13=~Acid Kukri +1~
-@14=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+@4=~Acid Arrow +2~
+@5=~This arrow is coated in acid. When it strikes an enemy, it not only pierces flesh but also eats it away, enlarging and deepening the wound.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d6+2, +2d6 acid
+Damage Type: Missile
+Launcher: Bow
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@6=~Bolt of Acid +1~
+@7=~One drop of scorpion venom was applied directly to the tip of this bolt.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d8+1, +1d8 acid
+Damage Type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@8=~Bolt of Acid +2~
+@9=~This bolt has been infused with both scorpion and snake venom.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 2d8+2, +2d8 acid
+Damage Type: Missile
+Launcher: Crossbow
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@10=~The Thief's Compendium~
+@11=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to build immunities to various poisons that are commonly used by assassins.
+
+STATISTICS:
+
+Constitution: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@12=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively increase ones endurance, allowing rogues to stay in a single position for hours awaiting their prey.
+
+STATISTICS:
+
+Strength: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@13=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on many different sleight of hand techniques and maneuvers.
+
+STATISTICS:
+
+Dexterity: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@14=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on a wide array of topics meant to prepare a thief to work comfortably in any type of setting.
+
+STATISTICS:
+
+Intelligence: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@15=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the art of tact and persuasion.
+
+STATISTICS:
+
+Charisma: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@16=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details of notable thieves throughout history, covering their use of judgement and best practices of their time.
+
+STATISTICS:
+
+Wisdom: Raised by 1 point permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@17=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the proper use of both physical and mental evasion.
+
+STATISTICS:
+
+Armor Class: Adds +1 bonus permanently
+Saving Throws: Adds +1 bonus permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@18=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different creatures weak points and how to strike them more efficiently.
+
+STATISTICS:
+
+THAC0: Adds +1 bonus permanently
+Damage: Adds +1 bonus permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@19=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to resist different magical effects through the use of mental tricks.
+
+STATISTICS:
+
+Magic Resistance: Raised by 5% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@20=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist and overcome physical pain.
+
+STATISTICS:
+
+Crushing Resistance: Raised by 5% permanently
+Slashing Resistance: Raised by 5% permanently
+Piercing Resistance: Raised by 5% permanently
+Missile Resistance: Raised by 5% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@21=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist the natural elements of the world.
+
+STATISTICS:
+
+Cold Resistance: Raised by 5% permanently
+Fire Resistance: Raised by 5% permanently
+Electricity Resistance: Raised by 5% permanently
+Acid Resistance: Raised by 5% permanently
+Poison Resistance: Raised by 5% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@22=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively locate and strike an enemy's weak spot while remaining unseen.
+
+STATISTICS:
+
+Backstab Multiplier: Raised by 1 permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@23=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details about the different tools and techniques used in the art of lockpicking.
+
+STATISTICS:
+
+Open Locks: Raised by 10% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@24=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to spot, disarm and set many different types of traps.
+
+STATISTICS:
+
+Find Traps: Raised by 10% permanently
+Set Traps: Raised by 10% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@25=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different sleight of hand and pickpocketing techniques meant to keep marks unaware and distracted.
+
+STATISTICS:
+
+Pick Pockets: Raised by 10% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@26=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details regarding stealth and how to be better remain hidden from sight and sound.
+
+STATISTICS:
+
+Move Silently: Raised by 10% permanently
+Hide In Shadows: Raised by 10% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@27=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to detect and distinguish illusions from reality.
+
+STATISTICS:
+
+Detect Illusion: Raised by 10% permanently
+Special: The book is consumed upon use
+Usage: Place into quick item slot
+
+Weight: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@28=~Bullet of Acid +1~
+@29=~These bullets are made from hardened snake venom.
+
+STATISTICS:
+
+THAC0: +1
+Damage: 1d4+1, +1d6 acid
+Damage Type: Missile
+Launcher: Sling
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@30=~Bullet of Acid +2~
+@31=~These bullets are made from hardened snake venom. The acid is so corrosive that it can pierce clean through most creatures.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d4+2, +2d6 acid
+Damage Type: Missile
+Launcher: Sling
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@32=~Dagger~
+@33=~Acid Kukri +1~
+@34=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
 STATISTICS:
 
@@ -26,7 +268,7 @@ Requires:
  3 Strength
 
 Weight: 1~
-@15=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain.
+@35=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain.
 
 STATISTICS:
 
@@ -44,8 +286,8 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@16=~Acid Kukri +2~
-@17=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain. This weapon was modified by the blacksmith Rhade, of the Gorgon's Eye thieves guild.
+@36=~Acid Kukri +2~
+@37=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain. This weapon was modified by the blacksmith Rhade, of the Gorgon's Eye thieves guild.
 
 STATISTICS:
 
@@ -63,9 +305,9 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@18=~Dagger~
-@19=~Dagger +2: Snake Venom~
-@20=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+@38=~Dagger~
+@39=~Dagger +2: Snake Venom~
+@40=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
 STATISTICS:
 
@@ -77,7 +319,7 @@ Requires:
  3 Strength
 
 Weight: 1~
-@21=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger had received years of different vemon applications making it an extremely deadly weapon.
+@41=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger had received years of different vemon applications making it an extremely deadly weapon.
 
 STATISTICS:
 
@@ -95,8 +337,8 @@ Requires:
 
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@22=~Keryokien: Medusa's Bite~
-@23=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
+@42=~Keryokien: Medusa's Bite~
+@43=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
 
 STATISTICS:
 
@@ -114,8 +356,22 @@ Type: One-handed
 
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@24=~Cowl of Shadows~
-@25=~Magics, potions and alchemy were used to alter the shape and material of a variety of magical items to create this cowl. While worn, it sharpens the users eyesight to a state of near perfection. Illusions become revealed to you as mere parlor tricks and enemies become clear and visible no matter the time of night. It simultaneously helps the user to become hidden from sight themselves.
+@44=~Dart of Acid +2~
+@45=~With the teeth of a black dragon for heads and the mighty wyrm's sinews for shafts, these wicked arrows dissolve into deadly acid on impact. An extra layer of corrosive acid was applied to this dart.
+
+STATISTICS:
+
+THAC0: +2
+Damage: 1d3+2, 2d6 acid (save vs. spell)
+Damage Type: Missile
+Speed Factor: 1
+Proficiency Type: Dart
+Type: One-handed
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@46=~Cowl of Shadows~
+@47=~Magics, potions and alchemy were used to alter the shape and material of a variety of magical items to create this cowl. While worn, it sharpens the users eyesight to a state of near perfection. Illusions become revealed to you as mere parlor tricks and enemies become clear and visible no matter the time of night. It simultaneously helps the user to become hidden from sight themselves.
 
 STATISTICS:
 
@@ -129,142 +385,82 @@ Equipped abilities:
 
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@26=~Broken Kerykeion Piece~
-@27=~This is a piece of a legendary staff called the Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
+@48=~Broken Kerykeion Piece~
+@49=~This is a piece of a legendary staff called the Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@28=~Precious Gem~
-@29=~A rare and valuable looking diamond.
+@50=~Precious Gem~
+@51=~A rare and valuable looking diamond.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@30=~Gerard's Necklace~
-@31=~This heirloom belongs to the Travenhurst family.
+@52=~Gerard's Necklace~
+@53=~This heirloom belongs to the Travenhurst family.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@32=~Chunk of Metal~
-@33=~Ogre Blade~
-@34=~A massive piece of metal that vaguely resembles the shape of a sword.
+@54=~Chunk of Metal~
+@55=~Ogre Blade~
+@56=~A massive piece of metal that vaguely resembles the shape of a sword.
 
 Weight: 10~
-@35=~This gigantic looking blade was forged by the Ogre; its form is too irregular and unrefined to be acknowledged as a sword. In its current shape this weapon is unusable.
+@57=~This gigantic looking blade was forged by the Ogre; its form is too irregular and unrefined to be acknowledged as a sword. In its current shape this weapon is unusable.
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@36=~Black Lotus~
-@37=~A potent poison that has sedative and hallucinogenic properties when taken in low doses.
+@58=~Black Lotus~
+@59=~A potent poison that has sedative and hallucinogenic properties when taken in low doses.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@38=~Shadow Thief Reports~
-@39=~These documents are written in code presumably only decipherable by members of the Shadow Thieves.
+@60=~Shadow Thief Reports~
+@61=~These documents are written in code presumably only decipherable by members of the Shadow Thieves.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@40=~Vapula's Pendant~
-@41=~This is Vapula Simberg's personal pendant.
+@62=~Vapula's Pendant~
+@63=~This is Vapula Simberg's personal pendant.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@42=~Europea's Slave Collar~
-@43=~This device is used to disrupt neural connections in the brain, causing its wearer to be more emotionless and complacent. It appears to be slightly damaged.
+@64=~Europea's Slave Collar~
+@65=~This device is used to disrupt neural connections in the brain, causing its wearer to be more emotionless and complacent. It appears to be slightly damaged.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@44=~Europea's Body~
-@45=~This is the body of Europea.
+@66=~Europea's Body~
+@67=~This is the body of Europea.
 
 Weight: 65~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@46=~Magnus' Corpse~
-@47=~This is the body of Magnus.
+@68=~Magnus' Corpse~
+@69=~This is the body of Magnus.
 
 Weight: 115~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@48=~Discrete Missive~
-@49=~This small letter is written in code only decipherable by the Shadow Thieves.
+@70=~Discrete Missive~
+@71=~This small letter is written in code only decipherable by the Shadow Thieves.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@50=~Fake Kerykeion Piece~
-@51=~This is a fake piece of the Kerykeion. If someone were to use this alongside a real one, it would instantly kill them.
+@72=~Fake Kerykeion Piece~
+@73=~This is a fake piece of the Kerykeion. If someone were to use this alongside a real one, it would instantly kill them.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@52=~Counterfeit Gold~
-@53=~Although noticable, the weight, feel and hue of this coin is only slightly off compared to real gold. It could easily be mistaken as legitimate if passed over with a quick glance.
+@74=~Counterfeit Gold~
+@75=~Although noticable, the weight, feel and hue of this coin is only slightly off compared to real gold. It could easily be mistaken as legitimate if passed over with a quick glance.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@54=~Torn Fabric~
-@55=~This is a torn piece of cloth that you found clenched in Galatea's hand. 
+@76=~Torn Fabric~
+@77=~This is a torn piece of cloth that you found clenched in Galatea's hand.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@56=~Ring~
-@57=~Ring of Minor Lock Picking~
-@58=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0~
-@59=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
-
-STATISTICS:
-
-Equipped abilities:
-- Open Locks: +15%
-
-Weight: 0~
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@60=~Ring~
-@61=~Ring of Awareness~
-@62=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0~
-@63=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
-
-STATISTICS:
-
-Equipped abilities:
-- Find Traps: +15%
-
-Weight: 0~
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@64=~Ring~
-@65=~Ring of the Cutpurse~
-@66=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
-
-STATISTICS:
-
-Weight: 0~
-@67=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
-
-STATISTICS:
-
-Equipped abilities:
-- Pick Pockets: +15%
-
-Weight: 0~
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@68=~Looter's Band~
-@69=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
-
-STATISTICS:
-
-Equipped abilities:
-- Pick Pockets: +15%
-- Open Locks: +15%
-- Find Traps: +15%
-
-Weight: 0~
-//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@70=~Karp's Ring~
-@71=~Ring of Protection +1: Ring of the Princes
+@78=~Karp's Ring~
+@79=~Ring of Protection +1: Ring of the Princes
 This ring and several of its type were originally crafted to protect the sons of King Castter De'wess, though who uttered the enchantment is unknown. History records that the rings remained within that family for at least thirteen generations, though they were all apparently lost within the space of one. Enmity between the king and the family of the creator may be to blame.
 
 STATISTICS:
@@ -275,10 +471,97 @@ Equipped abilities:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@72=~Snake~
+@80=~Gamesman's Stun Dart~
+@81=~The Dart of Stunning looks like any other dart, other than the fact that it seems to pulse slightly when held in the hand. The true effects can be seen when one strikes an opponent and they fall to the ground stunned.
+
+Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@73=~Kerykeion: Euryale's Promise~
-@74=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
+@82=~Vial of Snake Venom~
+@83=~A deadly poison typically favored by assassins. A small layer applied to any weapon will have devastating effects to anyone who it comes in contact with.
+
+STATISTICS:
+
+- Applied to weapon
+- Hit target suffers 5 points of poison damage
+- Hit target suffers 1 poison damage per second for 12 seconds (save vs. poison)
+- Duration: 5 rounds
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@84=~Gorgon's Breath~
+@85=~This is a bottle of concentrated gorgon's breath. It was found among a large stockpile of potions hidden in the forest of Cormanthor. Alongside them laid a broken bottle and a petrified elf.
+
+STATISTICS:
+
+- Applied to weapon
+- Hit target becomes stunned for 5 rounds
+
+Weight: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@86=~Ring~
+@87=~Ring of Minor Lock Picking~
+@88=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@89=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
+
+STATISTICS:
+
+Equipped abilities:
+- Open Locks: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@90=~Ring~
+@91=~Ring of Awareness~
+@92=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@93=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
+
+STATISTICS:
+
+Equipped abilities:
+- Find Traps: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@94=~Ring~
+@95=~Ring of the Cutpurse~
+@96=~A ring is a small band of precious metal that is used as jewelry. Some rare rings have had enchantments placed upon them that confer various magical abilities. These rings are highly sought after, especially by those of the adventuring profession.
+
+STATISTICS:
+
+Weight: 0~
+@97=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
+
+STATISTICS:
+
+Equipped abilities:
+- Pick Pockets: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@98=~Looter's Band~
+@99=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
+
+STATISTICS:
+
+Equipped abilities:
+- Pick Pockets: +15%
+- Open Locks: +15%
+- Find Traps: +15%
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@100=~Snake~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@101=~Kerykeion: Euryale's Promise~
+@102=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
 
 STATISTICS:
 
@@ -297,8 +580,8 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@75=~Kerykeion: Stheno's Blade~
-@76=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
+@103=~Kerykeion: Stheno's Blade~
+@104=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
 
 STATISTICS:
 
@@ -317,3 +600,35 @@ Requires:
  12 Strength
 
 Weight: 8~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@105=~Dagger~
+@106=~Stealthwhisper~
+@107=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+
+STATISTICS:
+
+Damage: 1d4 (piercing)
+Speed Factor: 2
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~
+@108=~A piece of the legendary long sword, "Stealthwhisper", wielded by the diety Mask. It was reforged into this dagger, keeping most of its innate power.
+
+STATISTICS:
+
+Combat abilities:
+- Increases number of attacks by 1
+
+THAC0: +4
+Damage: 1d4 +4, +5 cold
+Damage Type: Piercing
+Speed Factor: 0
+Proficiency Type: Dagger
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 1~

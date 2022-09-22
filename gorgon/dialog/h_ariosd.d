@@ -6,10 +6,10 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",0)~ THEN BEGIN CARNIVAL_0
    SAY @1401
-       +~NumItemsParty("h_dart03",16)~+ @1402 GOTO CARNIVAL_5
-       +~Gender(Player1,FEMALE) NumItemsPartyLT("h_dart03",16)~+ @1403 GOTO CARNIVAL_1
-       +~Gender(Player1,MALE) NumItemsPartyLT("h_dart03",16)~+ @1403 GOTO CARNIVAL_2
-       +~NumItemsPartyLT("h_dart03",16)~+ @1404 GOTO CARNIVAL_3
+       +~NumItemsParty("h_misc18",8)~+ @1402 GOTO CARNIVAL_5
+       +~Gender(Player1,FEMALE) NumItemsPartyLT("h_misc18",8)~+ @1403 GOTO CARNIVAL_1
+       +~Gender(Player1,MALE) NumItemsPartyLT("h_misc18",8)~+ @1403 GOTO CARNIVAL_2
+       +~NumItemsPartyLT("h_misc18",8)~+ @1404 GOTO CARNIVAL_3
 END
 
 IF ~~ THEN BEGIN CARNIVAL_1
@@ -32,9 +32,9 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",1)~ THEN BEGIN CARNIVAL_4
    SAY @1408
-       +~NumItemsParty("h_dart03",16)~+ @1409 GOTO CARNIVAL_5
-       +~NumItemsPartyLT("h_dart03",16)~+ @1404 GOTO CARNIVAL_3
-       +~NumItemsPartyLT("h_dart03",16)~+ @1410 EXIT
+       +~NumItemsParty("h_misc18",8)~+ @1409 GOTO CARNIVAL_5
+       +~NumItemsPartyLT("h_misc18",8)~+ @1404 GOTO CARNIVAL_3
+       +~NumItemsPartyLT("h_misc18",8)~+ @1410 EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_5
@@ -43,7 +43,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_GuildThieves","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",10)
    AddJournalEntry(@322,QUEST)
-   TakePartyItemAll("h_dart03")~ EXIT
+   TakePartyItemAll("h_misc18")~ EXIT
 END
 
 IF ~Global("h_SpawnAriosh","GLOBAL",5)~ THEN BEGIN END_0

@@ -189,14 +189,24 @@ COPY ~gorgon/portraits/h_zedapp.bmp~ ~override~
 
 //   New BAMs
 
+COPY ~gorgon/bam/h_arow1b.bam~ ~override~
+COPY ~gorgon/bam/h_bolt1b.bam~ ~override~
+COPY ~gorgon/bam/h_bolt2b.bam~ ~override~
+COPY ~gorgon/bam/h_booksb.bam~ ~override~
+COPY ~gorgon/bam/h_bull1b.bam~ ~override~
+COPY ~gorgon/bam/h_bull2b.bam~ ~override~
+COPY ~gorgon/bam/h_dart2b.bam~ ~override~
 COPY ~gorgon/bam/h_dartbb.bam~ ~override~
-COPY ~gorgon/bam/h_spiceb.bam~ ~override~
 COPY ~gorgon/bam/h_katanb.bam~ ~override~
-COPY ~gorgon/bam/h_slaveb.bam~ ~override~
-COPY ~gorgon/bam/h_slavdb.bam~ ~override~
 COPY ~gorgon/bam/h_misc1b.bam~ ~override~
 COPY ~gorgon/bam/h_misc2b.bam~ ~override~
 COPY ~gorgon/bam/h_misc3b.bam~ ~override~
+COPY ~gorgon/bam/h_potn1b.bam~ ~override~
+COPY ~gorgon/bam/h_potn2b.bam~ ~override~
+COPY ~gorgon/bam/h_slaveb.bam~ ~override~
+COPY ~gorgon/bam/h_slavdb.bam~ ~override~
+COPY ~gorgon/bam/h_spiceb.bam~ ~override~
+COPY ~gorgon/bam/h_sw1h3b.bam~ ~override~
 
 //   Add entrance to area file
 
@@ -230,10 +240,6 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
     fj_name           = OutsideGorgon
   END
 
-//   Copy existing items so they have unique file names
-
-COPY_EXISTING ~DART03.itm~ ~override/h_dart03.itm~
-
 //   Add things to existing creatures
 
 COPY_EXISTING ~TRAVE2.cre~ ~override~                         // Traveler
@@ -249,219 +255,386 @@ COPY_EXISTING ~HOUSG2.cre~ ~override~
      WRITE_ASCII SCRIPT_DEFAULT ~h_guards~
 
 COPY_EXISTING ~KARP.cre~ ~override~                           // Karp
-     ADD_CRE_ITEM ~h_ring05~ #0 #0 #0 ~NONE~ ~INV~
+     ADD_CRE_ITEM ~h_misc17~ #0 #0 #0 ~NONE~ ~INV~
      ADD_CRE_ITEM ~RING06~ #0 #0 #0 ~NONE~ ~INV~
      ADD_CRE_ITEM ~h_misc06~ #0 #0 #0 ~NONE~ ~INV~
 
 COPY_EXISTING ~GAMES.cre~ ~override~                          // Gamesmen
-     ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~h_misc18~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY_EXISTING ~GAMES3.cre~ ~override~
-     ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~h_misc18~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY_EXISTING ~GAMES4.cre~ ~override~
-     ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~h_misc18~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY_EXISTING ~GAMES5.cre~ ~override~
-     ADD_CRE_ITEM ~h_dart03~ #2 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~h_misc18~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 
 // Store
 
 COPY ~gorgon/stores/h_rhasto.sto~ ~override~
 
+// New Spells(For potions)
+
+COPY ~gorgon/spells~ ~override~
+COPY ~gorgon/eff~ ~override~
+
 // New Items
 
 COPY ~gorgon/items/h_amul01.itm~ ~override/h_amul01.itm~      // Crystalline Torque
+     SAY NAME1 @2
+     SAY NAME2 @2
+     SAY UNIDENTIFIED_DESC @3
+     SAY DESC @3
+
+COPY ~gorgon/items/h_arow01.itm~ ~override/h_arow01.itm~      // Acid Arrow +2
+     SAY NAME1 @4
+     SAY NAME2 @4
+     SAY UNIDENTIFIED_DESC @5
+     SAY DESC @5
+     
+COPY ~gorgon/items/h_bolt01.itm~ ~override/h_bolt01.itm~      // Bolt of Acid +1
+     SAY NAME1 @6
+     SAY NAME2 @6
+     SAY UNIDENTIFIED_DESC @7
+     SAY DESC @7
+     
+COPY ~gorgon/items/h_bolt02.itm~ ~override/h_bolt02.itm~      // Bolt of Acid +2
+     SAY NAME1 @8
+     SAY NAME2 @8
+     SAY UNIDENTIFIED_DESC @9
+     SAY DESC @9
+
+COPY ~gorgon/items/h_book01.itm~ ~override/h_book01.itm~      // The Thief's Compendium(Constitution)
      SAY NAME1 @10
      SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @11
      SAY DESC @11
 
-COPY ~gorgon/items/h_dagg01.itm~ ~override/h_dagg01.itm~      // Acid Kukri +1
-     SAY NAME1 @12
-     SAY NAME2 @13
+COPY ~gorgon/items/h_book02.itm~ ~override/h_book02.itm~      // The Thief's Compendium(Strength)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @12
+     SAY DESC @12
+     
+COPY ~gorgon/items/h_book03.itm~ ~override/h_book03.itm~      // The Thief's Compendium(Dexterity)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @13
+     SAY DESC @13
+     
+COPY ~gorgon/items/h_book04.itm~ ~override/h_book04.itm~      // The Thief's Compendium(Intelligence)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @14
+     SAY DESC @14
+     
+COPY ~gorgon/items/h_book05.itm~ ~override/h_book05.itm~      // The Thief's Compendium(Charisma)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @15
      SAY DESC @15
-
-COPY ~gorgon/items/h_dagg02.itm~ ~override/h_dagg02.itm~      // Acid Kukri +2
-     SAY NAME1 @16
-     SAY NAME2 @16
+     
+COPY ~gorgon/items/h_book06.itm~ ~override/h_book06.itm~      // The Thief's Compendium(Wisdom)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @16
+     SAY DESC @16
+     
+COPY ~gorgon/items/h_book07.itm~ ~override/h_book07.itm~      // The Thief's Compendium(Armor Class / Saving Throws)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @17
      SAY DESC @17
+     
+COPY ~gorgon/items/h_book08.itm~ ~override/h_book08.itm~      // The Thief's Compendium(THAC0 / Damage)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @18
+     SAY DESC @18
 
-COPY ~gorgon/items/h_dagg03.itm~ ~override/h_dagg03.itm~      // Dagger +2: Snake Venom
-     SAY NAME1 @18
-     SAY NAME2 @19
+COPY ~gorgon/items/h_book09.itm~ ~override/h_book09.itm~      // The Thief's Compendium(Magic Resistance)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @19
+     SAY DESC @19
+     
+COPY ~gorgon/items/h_book10.itm~ ~override/h_book10.itm~      // The Thief's Compendium(Physical Resistance)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @20
+     SAY DESC @20
+     
+COPY ~gorgon/items/h_book11.itm~ ~override/h_book11.itm~      // The Thief's Compendium(Elemental Resistance)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @21
      SAY DESC @21
-
-COPY ~gorgon/items/h_dart01.itm~ ~override/h_dart01.itm~      // Kerykeion: Medusa's Bite
-     SAY NAME1 @22
-     SAY NAME2 @22
+     
+COPY ~gorgon/items/h_book12.itm~ ~override/h_book12.itm~      // The Thief's Compendium(Backstab)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @22
+     SAY DESC @22
+     
+COPY ~gorgon/items/h_book13.itm~ ~override/h_book13.itm~      // The Thief's Compendium(Open Locks)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @23
      SAY DESC @23
 
-COPY ~gorgon/items/h_helm01.itm~ ~override/h_helm01.itm~      // Cowl of Shadows
-     SAY NAME1 @24
-     SAY NAME2 @24
+COPY ~gorgon/items/h_book14.itm~ ~override/h_book14.itm~      // The Thief's Compendium(Find Traps / Set Traps)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @24
+     SAY DESC @24
+     
+COPY ~gorgon/items/h_book15.itm~ ~override/h_book15.itm~      // The Thief's Compendium(Pick Pockets)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @25
      SAY DESC @25
+     
+COPY ~gorgon/items/h_book16.itm~ ~override/h_book16.itm~      // The Thief's Compendium(Move Silently / Hide in Shadows)
+     SAY NAME1 @10
+     SAY NAME2 @10
+     SAY UNIDENTIFIED_DESC @26
+     SAY DESC @26
 
-COPY ~gorgon/items/h_misc01.itm~ ~override/h_misc01.itm~      // Broken Kerykeion Piece 1
-     SAY NAME1 @26
-     SAY NAME2 @26
+COPY ~gorgon/items/h_book17.itm~ ~override/h_book17.itm~      // The Thief's Compendium(Detect Illusion)
+     SAY NAME1 @10
+     SAY NAME2 @10
      SAY UNIDENTIFIED_DESC @27
      SAY DESC @27
 
-COPY ~gorgon/items/h_misc02.itm~ ~override/h_misc02.itm~      // Broken Kerykeion Piece 2
-     SAY NAME1 @26
-     SAY NAME2 @26
-     SAY UNIDENTIFIED_DESC @27
-     SAY DESC @27
-
-COPY ~gorgon/items/h_misc03.itm~ ~override/h_misc03.itm~      // Broken Kerykeion Piece 3
-     SAY NAME1 @26
-     SAY NAME2 @26
-     SAY UNIDENTIFIED_DESC @27
-     SAY DESC @27
-
-COPY ~gorgon/items/h_misc04.itm~ ~override/h_misc04.itm~      // Precious Gem
+COPY ~gorgon/items/h_bull01.itm~ ~override/h_bull01.itm~      // Bullet of Acid +1
      SAY NAME1 @28
      SAY NAME2 @28
      SAY UNIDENTIFIED_DESC @29
      SAY DESC @29
-
-COPY ~gorgon/items/h_misc05.itm~ ~override/h_misc05.itm~      // Gerard's Necklace
+     
+COPY ~gorgon/items/h_bull02.itm~ ~override/h_bull02.itm~      // Bullet of Acid +2
      SAY NAME1 @30
      SAY NAME2 @30
      SAY UNIDENTIFIED_DESC @31
      SAY DESC @31
 
-COPY ~gorgon/items/h_misc06.itm~ ~override/h_misc06.itm~      // Ogre Blade
+COPY ~gorgon/items/h_dagg01.itm~ ~override/h_dagg01.itm~      // Acid Kukri +1
      SAY NAME1 @32
      SAY NAME2 @33
      SAY UNIDENTIFIED_DESC @34
      SAY DESC @35
 
-COPY ~gorgon/items/h_misc07.itm~ ~override/h_misc07.itm~      // Black Lotus
+COPY ~gorgon/items/h_dagg02.itm~ ~override/h_dagg02.itm~      // Acid Kukri +2
      SAY NAME1 @36
      SAY NAME2 @36
      SAY UNIDENTIFIED_DESC @37
      SAY DESC @37
 
-COPY ~gorgon/items/h_misc08.itm~ ~override/h_misc08.itm~      // Shadow Thief Reports
+COPY ~gorgon/items/h_dagg03.itm~ ~override/h_dagg03.itm~      // Dagger +2: Snake Venom
      SAY NAME1 @38
-     SAY NAME2 @38
-     SAY UNIDENTIFIED_DESC @39
-     SAY DESC @39
-
-COPY ~gorgon/items/h_misc09.itm~ ~override/h_misc09.itm~      // Vapula's Pendant
-     SAY NAME1 @40
-     SAY NAME2 @40
-     SAY UNIDENTIFIED_DESC @41
+     SAY NAME2 @39
+     SAY UNIDENTIFIED_DESC @40
      SAY DESC @41
 
-COPY ~gorgon/items/h_misc10.itm~ ~override/h_misc10.itm~      // Europea's Slave Collar
+COPY ~gorgon/items/h_dart01.itm~ ~override/h_dart01.itm~      // Kerykeion: Medusa's Bite
      SAY NAME1 @42
      SAY NAME2 @42
      SAY UNIDENTIFIED_DESC @43
      SAY DESC @43
 
-COPY ~gorgon/items/h_misc11.itm~ ~override/h_misc11.itm~      // Europea's Body
+COPY ~gorgon/items/h_dart02.itm~ ~override/h_dart02.itm~      // Dart of Acid +2
      SAY NAME1 @44
      SAY NAME2 @44
      SAY UNIDENTIFIED_DESC @45
      SAY DESC @45
 
-COPY ~gorgon/items/h_misc12.itm~ ~override/h_misc12.itm~      // Magnus' Corpse
+COPY ~gorgon/items/h_helm01.itm~ ~override/h_helm01.itm~      // Cowl of Shadows
      SAY NAME1 @46
      SAY NAME2 @46
      SAY UNIDENTIFIED_DESC @47
      SAY DESC @47
 
-COPY ~gorgon/items/h_misc13.itm~ ~override/h_misc13.itm~      // Discrete Missive
+COPY ~gorgon/items/h_misc01.itm~ ~override/h_misc01.itm~      // Broken Kerykeion Piece 1
      SAY NAME1 @48
      SAY NAME2 @48
      SAY UNIDENTIFIED_DESC @49
      SAY DESC @49
-     
-COPY ~gorgon/items/h_misc14.itm~ ~override/h_misc14.itm~      // Fake Kerykeion Piece
+
+COPY ~gorgon/items/h_misc02.itm~ ~override/h_misc02.itm~      // Broken Kerykeion Piece 2
+     SAY NAME1 @48
+     SAY NAME2 @48
+     SAY UNIDENTIFIED_DESC @49
+     SAY DESC @49
+
+COPY ~gorgon/items/h_misc03.itm~ ~override/h_misc03.itm~      // Broken Kerykeion Piece 3
+     SAY NAME1 @48
+     SAY NAME2 @48
+     SAY UNIDENTIFIED_DESC @49
+     SAY DESC @49
+
+COPY ~gorgon/items/h_misc04.itm~ ~override/h_misc04.itm~      // Precious Gem
      SAY NAME1 @50
      SAY NAME2 @50
      SAY UNIDENTIFIED_DESC @51
      SAY DESC @51
-     
-COPY ~gorgon/items/h_misc15.itm~ ~override/h_misc15.itm~      // Counterfeit Gold
+
+COPY ~gorgon/items/h_misc05.itm~ ~override/h_misc05.itm~      // Gerard's Necklace
      SAY NAME1 @52
      SAY NAME2 @52
      SAY UNIDENTIFIED_DESC @53
      SAY DESC @53
-     
-COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Torn Fabric
-     SAY NAME1 @54
-     SAY NAME2 @54
-     SAY UNIDENTIFIED_DESC @55
-     SAY DESC @55
 
-COPY ~gorgon/items/h_ring01.itm~ ~override/h_ring01.itm~      // Ring of Minor Lock Picking
-     SAY NAME1 @56
-     SAY NAME2 @57
-     SAY UNIDENTIFIED_DESC @58
+COPY ~gorgon/items/h_misc06.itm~ ~override/h_misc06.itm~      // Ogre Blade
+     SAY NAME1 @54
+     SAY NAME2 @55
+     SAY UNIDENTIFIED_DESC @56
+     SAY DESC @57
+
+COPY ~gorgon/items/h_misc07.itm~ ~override/h_misc07.itm~      // Black Lotus
+     SAY NAME1 @58
+     SAY NAME2 @58
+     SAY UNIDENTIFIED_DESC @59
      SAY DESC @59
 
-COPY ~gorgon/items/h_ring02.itm~ ~override/h_ring02.itm~      // Ring of Awareness
+COPY ~gorgon/items/h_misc08.itm~ ~override/h_misc08.itm~      // Shadow Thief Reports
      SAY NAME1 @60
-     SAY NAME2 @61
-     SAY UNIDENTIFIED_DESC @62
+     SAY NAME2 @60
+     SAY UNIDENTIFIED_DESC @61
+     SAY DESC @61
+
+COPY ~gorgon/items/h_misc09.itm~ ~override/h_misc09.itm~      // Vapula's Pendant
+     SAY NAME1 @62
+     SAY NAME2 @62
+     SAY UNIDENTIFIED_DESC @63
      SAY DESC @63
 
-COPY ~gorgon/items/h_ring03.itm~ ~override/h_ring03.itm~      // Ring of the Cutpurse
+COPY ~gorgon/items/h_misc10.itm~ ~override/h_misc10.itm~      // Europea's Slave Collar
      SAY NAME1 @64
-     SAY NAME2 @65
-     SAY UNIDENTIFIED_DESC @66
+     SAY NAME2 @64
+     SAY UNIDENTIFIED_DESC @65
+     SAY DESC @65
+
+COPY ~gorgon/items/h_misc11.itm~ ~override/h_misc11.itm~      // Europea's Body
+     SAY NAME1 @66
+     SAY NAME2 @66
+     SAY UNIDENTIFIED_DESC @67
      SAY DESC @67
 
-COPY ~gorgon/items/h_ring04.itm~ ~override/h_ring04.itm~      // Looter's Band
+COPY ~gorgon/items/h_misc12.itm~ ~override/h_misc12.itm~      // Magnus' Corpse
      SAY NAME1 @68
      SAY NAME2 @68
      SAY UNIDENTIFIED_DESC @69
      SAY DESC @69
 
-COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Karp's Ring
+COPY ~gorgon/items/h_misc13.itm~ ~override/h_misc13.itm~      // Discrete Missive
      SAY NAME1 @70
      SAY NAME2 @70
      SAY UNIDENTIFIED_DESC @71
      SAY DESC @71
 
-COPY ~gorgon/items/h_snak2r.itm~ ~override/h_snak2r.itm~      // Snakes Ring(not usable)
+COPY ~gorgon/items/h_misc14.itm~ ~override/h_misc14.itm~      // Fake Kerykeion Piece
      SAY NAME1 @72
      SAY NAME2 @72
-     SAY UNIDENTIFIED_DESC @72
-     SAY DESC @72
+     SAY UNIDENTIFIED_DESC @73
+     SAY DESC @73
+
+COPY ~gorgon/items/h_misc15.itm~ ~override/h_misc15.itm~      // Counterfeit Gold
+     SAY NAME1 @74
+     SAY NAME2 @74
+     SAY UNIDENTIFIED_DESC @75
+     SAY DESC @75
+
+COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Torn Fabric
+     SAY NAME1 @76
+     SAY NAME2 @76
+     SAY UNIDENTIFIED_DESC @77
+     SAY DESC @77
+     
+COPY ~gorgon/items/h_misc17.itm~ ~override/h_misc17.itm~      // Karp's Ring
+     SAY NAME1 @78
+     SAY NAME2 @78
+     SAY UNIDENTIFIED_DESC @79
+     SAY DESC @79
+     
+COPY ~gorgon/items/h_misc18.itm~ ~override/h_misc18.itm~      // Gamesman's Stun Dart
+     SAY NAME1 @80
+     SAY NAME2 @80
+     SAY UNIDENTIFIED_DESC @81
+     SAY DESC @81
+
+COPY ~gorgon/items/h_potn01.itm~ ~override/h_potn01.itm~      // Vial of Snake Venom
+     SAY NAME1 @82
+     SAY NAME2 @82
+     SAY UNIDENTIFIED_DESC @83
+     SAY DESC @83
+
+COPY ~gorgon/items/h_potn02.itm~ ~override/h_potn02.itm~      // Gorgon's Breath
+     SAY NAME1 @84
+     SAY NAME2 @84
+     SAY UNIDENTIFIED_DESC @85
+     SAY DESC @85
+
+COPY ~gorgon/items/h_ring01.itm~ ~override/h_ring01.itm~      // Ring of Minor Lock Picking
+     SAY NAME1 @86
+     SAY NAME2 @87
+     SAY UNIDENTIFIED_DESC @88
+     SAY DESC @89
+
+COPY ~gorgon/items/h_ring02.itm~ ~override/h_ring02.itm~      // Ring of Awareness
+     SAY NAME1 @90
+     SAY NAME2 @91
+     SAY UNIDENTIFIED_DESC @92
+     SAY DESC @93
+
+COPY ~gorgon/items/h_ring03.itm~ ~override/h_ring03.itm~      // Ring of the Cutpurse
+     SAY NAME1 @94
+     SAY NAME2 @95
+     SAY UNIDENTIFIED_DESC @96
+     SAY DESC @97
+
+COPY ~gorgon/items/h_ring04.itm~ ~override/h_ring04.itm~      // Looter's Band
+     SAY NAME1 @98
+     SAY NAME2 @98
+     SAY UNIDENTIFIED_DESC @99
+     SAY DESC @99
+
+COPY ~gorgon/items/h_snak2r.itm~ ~override/h_snak2r.itm~      // Snakes Ring(not usable)
+     SAY NAME1 @100
+     SAY NAME2 @100
+     SAY UNIDENTIFIED_DESC @100
+     SAY DESC @100
 
 COPY ~gorgon/items/h_snak2w.itm~ ~override/h_snak2w.itm~      // Snakes Attack(2)(not usable)
-     SAY NAME1 @72
-     SAY NAME2 @72
-     SAY UNIDENTIFIED_DESC @72
-     SAY DESC @72
+     SAY NAME1 @100
+     SAY NAME2 @100
+     SAY UNIDENTIFIED_DESC @100
+     SAY DESC @100
 
 COPY ~gorgon/items/h_snakew.itm~ ~override/h_snakew.itm~      // Snakes Attack(not usable)
-     SAY NAME1 @72
-     SAY NAME2 @72
-     SAY UNIDENTIFIED_DESC @72
-     SAY DESC @72
+     SAY NAME1 @100
+     SAY NAME2 @100
+     SAY UNIDENTIFIED_DESC @100
+     SAY DESC @100
 
 COPY ~gorgon/items/h_sw1h01.itm~ ~override/h_sw1h01.itm~      // Kerykeion: Euryale's Promise
-     SAY NAME1 @73
-     SAY NAME2 @73
-     SAY UNIDENTIFIED_DESC @74
-     SAY DESC @74
+     SAY NAME1 @101
+     SAY NAME2 @101
+     SAY UNIDENTIFIED_DESC @102
+     SAY DESC @102
 
 COPY ~gorgon/items/h_sw1h02.itm~ ~override/h_sw1h02.itm~      // Kerykeion: Stheno's Blade
-     SAY NAME1 @75
-     SAY NAME2 @75
-     SAY UNIDENTIFIED_DESC @76
-     SAY DESC @76
+     SAY NAME1 @103
+     SAY NAME2 @103
+     SAY UNIDENTIFIED_DESC @104
+     SAY DESC @104
+     
+COPY ~gorgon/items/h_sw1h03.itm~ ~override/h_sw1h03.itm~      // Stealthwhisper
+     SAY NAME1 @105
+     SAY NAME2 @106
+     SAY UNIDENTIFIED_DESC @107
+     SAY DESC @108
 
 // New Creatures
 

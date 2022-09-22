@@ -40,6 +40,13 @@ Portraits: The NwN Vault
 WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
+<h3>Version 3.1:</h3>
+<ul>
+  <li>Added new stores and items</li>
+  <li>Fixed jounral entry bug</li>
+  <li>Minor fixes and improvements</li>
+ </ul>
+ 
 <h3>Version 3.0:</h3>
 <ul>
   <li>Added EET compatibility (Thanks to Graion Dilach)</li>

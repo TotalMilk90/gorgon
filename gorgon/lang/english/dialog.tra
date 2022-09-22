@@ -326,7 +326,75 @@
 
 //h_danikd.d......@3600 - @3799
 
-@3600 = ~I'm not quite ready to leave yet, but one day I wish to learn the ways of a Demarchess of Mask and travel throughout the realms.~
+@3600 = ~Care to make a donation to the Lord of Shadows?~
+@3601 = ~No thanks.~
+@3602 = ~What would I get in return?~
+@3603 = ~You would get a great many things, as I can see you walk a similar path as our own.~
+@3604 = ~I am Danika, a fellow rogue, yet I am not pledged to the Gorgon's Eye.~
+@3605 = ~I am a demarchess of Mask, the Lord of Shadows, and I offer my services here through council and strategy.~
+@3606 = ~Any donation given I will meet with considerable reward. A series of texts meant to increase the efficiency of any rogue lies in my possession and I will offer it to you for study.~
+@3607 = ~It is called "The Thief's Compendium", and it contains a total of 17 books with various instructions and techniques to better enhance a rogue's abilities.~
+@3608 = ~How much would I have to donate?~
+@3609 = ~As you were then.~
+@3610 = ~20,000 gold for each of the first 5 volumes. If you are able to obtain them all, then you may move onto the next set.~
+@3611 = ~How am I supposed to raise that much coin?~
+@3612 = ~*smirks* By doing what we do best, of course.~
+@3613 = ~Think on it, and then return to me if you are willing.~
+@3614 = ~What is it you seek?~
+@3615 = ~Nothing at the moment.~
+@3616 = ~Can you tell me more about "The Thief's Compendium".~
+@3617 = ~I have come to make a donation.~
+@3618 = ~You currently have access to the first tier of volumes. For 20,000 gold I will allow you to choose one for personal study. Here are the books I have to offer, if you have the coin.~
+@3619 = ~The Art of Lockpicking.~
+@3620 = ~Setting, Locating and Disarming Traps.~
+@3621 = ~Sleight of Hand Techniques and Excerises.~
+@3622 = ~Silence and Shadows.~
+@3623 = ~Seeing Through Illusions.~
+@3624 = ~I'll come back another time.~
+@3625 = ~This text will increase your lockpicking skill by 10%. Are you sure this is the book you would like?~
+@3626 = ~Yes, I am sure.~
+@3627 = ~Let me see the list of books again.~
+@3628 = ~Mask thanks for you for your donation and will share with you his favor.~
+@3629 = ~This text will increase your Find Traps and Set Traps skills by 10% each. Are you sure this is the book you would like?~
+@3630 = ~This text will increase your pickpocket skill by 10%. Are you sure this is the book you would like?~
+@3631 = ~This text will increase your Move Silently and Hide In Shadows skills by 10% each. Are you sure this is the book you would like?~
+@3632 = ~This text will increase your Detect Illusion skill by 10%. Are you sure this is the book you would like?~
+@3633 = ~You currently have access to the second tier of volumes. For 50,000 gold I will allow you to choose one for personal study. Here are the books I have to offer, if you have the coin.~
+@3634 = ~Art of the Dodge.~
+@3635 = ~Weapon Techniques.~
+@3636 = ~Resisting Spells.~
+@3637 = ~Mind over Matter.~
+@3638 = ~Protection from the Elements.~
+@3639 = ~The Art of the Backstab.~
+@3640 = ~This text will decrease your Armor Class and Saving Throws by 1. Are you sure this is the book you would like?~
+@3641 = ~This text will decrease your THAC0 by 1 and increase your damage by 1. Are you sure this is the book you would like?~
+@3642 = ~This text will increase your Magic Resistance by 5%. Are you sure this is the book you would like?~
+@3643 = ~This text will increase your Crushing, Slashing, Piercing and Missile Resistance by 5% each. Are you sure this is the book you would like?~
+@3644 = ~This text will increase your Cold, Fire, Electricity, Acid and Poison Resistance by 5% each. Are you sure this is the book you would like?~
+@3645 = ~This text will increase your Backstab Multiplier by 1. Are you sure this is the book you would like?~
+@3646 = ~You currently have access to the third and final tier of volumes. For 100,000 gold I will allow you to choose one for personal study. Here are the books I have to offer, if you have the coin.~
+@3647 = ~Immunity Building and Health~
+@3648 = ~Muscle Endurance Training.~
+@3649 = ~The Art of Movement.~
+@3650 = ~Common Topics of Discussion.~
+@3651 = ~The Confidence Man.~
+@3652 = ~A History of Thieves.~
+@3653 = ~This text will increase your Constitution by 1. Are you sure this is the book you would like?~
+@3654 = ~This text will increase your Strength by 1. Are you sure this is the book you would like?~
+@3655 = ~This text will increase your Dexterity by 1. Are you sure this is the book you would like?~
+@3656 = ~This text will increase your Intelligence by 1. Are you sure this is the book you would like?~
+@3657 = ~This text will increase your Charisma by 1. Are you sure this is the book you would like?~
+@3658 = ~This text will increase your Wisdom by 1. Are you sure this is the book you would like?~
+@3659 = ~It is a series of texts developed by the followers of Mask that offer the reader unique knowledge of the thieving arts.~
+@3660 = ~The first section contains 5 volumes with information regarding a basic set of skills every thief should know. Each volume will require a donation of 20,000 gold.~
+@3661 = ~The second section contains 6 volumes that cover more advanced skills and lessons on resisting physical and magical dangers. Each volume will require a donation of 50,000 gold.~
+@3662 = ~The third section contains 6 volumes with in depth information on a variety of topics meant to increase all of your natural abilities. Each volume will require a donation of 100,000 gold.~
+@3663 = ~Completing the entire compendium will cost a total of 1 million gold.~
+@3664 = ~You have certainly proven yourself as a faithful servant of Mask.~
+@3665 = ~As a parting gift for your success, I shall bestow upon you a fragment of one of Mask's personal weapons.~
+@3666 = ~I must depart now, as my services are needed elsewhere. Farewell, Brother Shadow.~
+@3667 = ~I must depart now, as my services are needed elsewhere. Farewell, Sister Shadow.~
+
 
 //h_denebd.d......@3800 - @3999
 
@@ -1478,3 +1546,16 @@
 @11032 = ~Yes, yes, I have to concentrate now so be on your way.~
 @11033 = ~Then you are a fool who will be another corpse for me to dissect!~
 
+//h_kageid.d......@11200 - @11399
+
+@11200 = ~Are you in need of any ammunition?. I have hand crafted everything myself.~
+@11201 = ~Not at this time.~
+@11202 = ~Sure, let me take a look.~
+@11203 = ~Right this way.~
+
+//h_opheld.d......@11400 - @11599
+
+@11400 = ~Careful! I have dangerous potions all about and if one were to spill the consequences could be severe.~
+@11401 = ~Sorry to have disturbed you.~
+@11402 = ~Can I take a look at your inventory?~
+@11403 = ~Alright, but be quick about it.~

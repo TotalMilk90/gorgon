@@ -75,6 +75,8 @@ COMPILE ~gorgon/dialog/h_xevecd.d~
 COMPILE ~gorgon/dialog/h_galatd.d~
 COMPILE ~gorgon/dialog/h_isleyd.d~
 COMPILE ~gorgon/dialog/h_cmaidd.d~
+COMPILE ~gorgon/dialog/h_kageid.d~
+COMPILE ~gorgon/dialog/h_opheld.d~
 
 
 // Appended Dialog
@@ -271,9 +273,9 @@ COPY_EXISTING ~GAMES4.cre~ ~override~
 COPY_EXISTING ~GAMES5.cre~ ~override~
      ADD_CRE_ITEM ~h_misc18~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 
-// Store
+// Stores
 
-COPY ~gorgon/stores/h_rhasto.sto~ ~override~
+COPY ~gorgon/stores~ ~override~
 
 // New Spells(For potions)
 
@@ -745,102 +747,110 @@ COPY ~gorgon/cre/h_ilenac.cre~ ~override/h_ilenac.cre~        // Ilena
 COPY ~gorgon/cre/h_isleyc.cre~ ~override/h_isleyc.cre~        // Isley
      SAY NAME1 @130
      SAY NAME2 @130
-
-COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
+     
+COPY ~gorgon/cre/h_kageic.cre~ ~override/h_kageic.cre~        // Kageiye
      SAY NAME1 @131
      SAY NAME2 @131
 
-COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
+COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
      SAY NAME1 @132
      SAY NAME2 @132
 
-COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
+COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
      SAY NAME1 @133
      SAY NAME2 @133
 
-COPY ~gorgon/cre/h_meredc.cre~ ~override/h_meredc.cre~        // Meredia
+COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
      SAY NAME1 @134
      SAY NAME2 @134
 
-COPY ~gorgon/cre/h_nagatc.cre~ ~override/h_nagatc.cre~        // Nagate
+COPY ~gorgon/cre/h_meredc.cre~ ~override/h_meredc.cre~        // Meredia
      SAY NAME1 @135
      SAY NAME2 @135
 
-COPY ~gorgon/cre/h_quassc.cre~ ~override/h_quassc.cre~        // Quass
+COPY ~gorgon/cre/h_nagatc.cre~ ~override/h_nagatc.cre~        // Nagate
      SAY NAME1 @136
      SAY NAME2 @136
-
-COPY ~gorgon/cre/h_rich2c.cre~ ~override/h_rich2c.cre~        // Richard(2)
+     
+COPY ~gorgon/cre/h_ophelc.cre~ ~override/h_ophelc.cre~        // Ophelia
      SAY NAME1 @137
      SAY NAME2 @137
 
-COPY ~gorgon/cre/h_richac.cre~ ~override/h_richac.cre~        // Richard
-     SAY NAME1 @137
-     SAY NAME2 @137
-
-COPY ~gorgon/cre/h_rigalc.cre~ ~override/h_rigalc.cre~        // Rigaldo
+COPY ~gorgon/cre/h_quassc.cre~ ~override/h_quassc.cre~        // Quass
      SAY NAME1 @138
      SAY NAME2 @138
 
-COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
+COPY ~gorgon/cre/h_rich2c.cre~ ~override/h_rich2c.cre~        // Richard(2)
      SAY NAME1 @139
      SAY NAME2 @139
 
-COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
+COPY ~gorgon/cre/h_richac.cre~ ~override/h_richac.cre~        // Richard
      SAY NAME1 @139
      SAY NAME2 @139
 
-COPY ~gorgon/cre/h_saradc.cre~ ~override/h_saradc.cre~        // Saradin
+COPY ~gorgon/cre/h_rigalc.cre~ ~override/h_rigalc.cre~        // Rigaldo
      SAY NAME1 @140
      SAY NAME2 @140
 
-COPY ~gorgon/cre/h_smuggc.cre~ ~override/h_smuggc.cre~        // Smuggler
+COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
      SAY NAME1 @141
      SAY NAME2 @141
 
-COPY ~gorgon/cre/h_sthi2c.cre~ ~override/h_sthi2c.cre~        // Shadow Thief(2)
+COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
+     SAY NAME1 @141
+     SAY NAME2 @141
+
+COPY ~gorgon/cre/h_saradc.cre~ ~override/h_saradc.cre~        // Saradin
      SAY NAME1 @142
      SAY NAME2 @142
 
-COPY ~gorgon/cre/h_sthiec.cre~ ~override/h_sthiec.cre~        // Shadow Thief
-     SAY NAME1 @142
-     SAY NAME2 @142
-
-COPY ~gorgon/cre/h_thiefc.cre~ ~override/h_thiefc.cre~        // Shadow Thief(Regular Thief)
-     SAY NAME1 @142
-     SAY NAME2 @142
-
-COPY ~gorgon/cre/h_snakec.cre~ ~override/h_snakec.cre~        // Snake
+COPY ~gorgon/cre/h_smuggc.cre~ ~override/h_smuggc.cre~        // Smuggler
      SAY NAME1 @143
      SAY NAME2 @143
 
-COPY ~gorgon/cre/h_thamuc.cre~ ~override/h_thamuc.cre~        // Thamuz
+COPY ~gorgon/cre/h_sthi2c.cre~ ~override/h_sthi2c.cre~        // Shadow Thief(2)
      SAY NAME1 @144
      SAY NAME2 @144
 
-COPY ~gorgon/cre/h_tuztcc.cre~ ~override/h_tuztcc.cre~        // Tuzt
+COPY ~gorgon/cre/h_sthiec.cre~ ~override/h_sthiec.cre~        // Shadow Thief
+     SAY NAME1 @144
+     SAY NAME2 @144
+
+COPY ~gorgon/cre/h_thiefc.cre~ ~override/h_thiefc.cre~        // Shadow Thief(Regular Thief)
+     SAY NAME1 @144
+     SAY NAME2 @144
+
+COPY ~gorgon/cre/h_snakec.cre~ ~override/h_snakec.cre~        // Snake
      SAY NAME1 @145
      SAY NAME2 @145
 
-COPY ~gorgon/cre/h_vapulc.cre~ ~override/h_vapulc.cre~        // Vapula Simberg
+COPY ~gorgon/cre/h_thamuc.cre~ ~override/h_thamuc.cre~        // Thamuz
      SAY NAME1 @146
      SAY NAME2 @146
 
-COPY ~gorgon/cre/h_xevecc.cre~ ~override/h_xevecc.cre~        // Xevec
+COPY ~gorgon/cre/h_tuztcc.cre~ ~override/h_tuztcc.cre~        // Tuzt
      SAY NAME1 @147
      SAY NAME2 @147
 
-COPY ~gorgon/cre/h_yumilc.cre~ ~override/h_yumilc.cre~        // Yumil
+COPY ~gorgon/cre/h_vapulc.cre~ ~override/h_vapulc.cre~        // Vapula Simberg
      SAY NAME1 @148
      SAY NAME2 @148
 
-COPY ~gorgon/cre/h_zedacc.cre~ ~override/h_zedacc.cre~        // Zeda
+COPY ~gorgon/cre/h_xevecc.cre~ ~override/h_xevecc.cre~        // Xevec
      SAY NAME1 @149
      SAY NAME2 @149
 
-COPY ~gorgon/cre/h_zhontc.cre~ ~override/h_zhontc.cre~        // Zhontac
+COPY ~gorgon/cre/h_yumilc.cre~ ~override/h_yumilc.cre~        // Yumil
      SAY NAME1 @150
      SAY NAME2 @150
+
+COPY ~gorgon/cre/h_zedacc.cre~ ~override/h_zedacc.cre~        // Zeda
+     SAY NAME1 @151
+     SAY NAME2 @151
+
+COPY ~gorgon/cre/h_zhontc.cre~ ~override/h_zhontc.cre~        // Zhontac
+     SAY NAME1 @152
+     SAY NAME2 @152
 
 // Journal Entries
 

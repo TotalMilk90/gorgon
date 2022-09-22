@@ -7,7 +7,7 @@ THEN
                   CreateCreature("h_rigalc",[945.1121],S)
                   CreateCreature("h_liedec",[762.1342],NE)
                   CreateCreature("h_eurync",[700.1220],SE)
-                  CreateCreature("h_danikc",[1467.1580],W)
+                  CreateCreature("h_danikc",[1358.343],S)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
                   CreateCreature("h_ilenac",[1883.1134],SW)
@@ -23,6 +23,9 @@ THEN
                   CreateCreature("h_zedacc",[1021.1309],W)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
+                  
+                  CreateCreature("h_kageic",[1194.1429],W)
+                  CreateCreature("h_ophelc",[1234.1371],W)
 
 
                   SetGlobal("h_GuildSpawn","GLOBAL",1)

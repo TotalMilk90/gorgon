@@ -43,7 +43,7 @@ WeiDU: Wes Weimer, the bigg and Wisp
 <h3>Version 3.1:</h3>
 <ul>
   <li>Added new stores and items</li>
-  <li>Fixed jounral entry bug</li>
+  <li>Fixed journal entry bug</li>
   <li>Minor fixes and improvements</li>
  </ul>
  

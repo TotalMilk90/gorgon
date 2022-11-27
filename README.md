@@ -40,6 +40,13 @@ Portraits: The NwN Vault
 WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
+<h3>Version 3.2:</h3>
+<ul>
+  <li>Fixed bug where Rhade would give infinite katanas</li>
+  <li>Fixed bug where becoming guild master would block coin quest progress</li>
+  <li>Fixed some typos</li>
+ </ul>
+
 <h3>Version 3.1:</h3>
 <ul>
   <li>Added new stores and items</li>

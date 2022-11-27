@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.3.1
+V.3.2
 
 =======
 Prequel
@@ -46,6 +46,11 @@ WeiDU: Wes Weimer, the bigg and Wisp
 ===============
 Version History
 ===============
+Version 3.2:
+-Fixed bug where Rhade would give infinite katanas
+-Fixed bug where becoming guild master would block coin quest progress
+-Fixed some typos
+
 Version 3.1:
 -Added new stores and items
 -Minor fixes

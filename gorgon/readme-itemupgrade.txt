@@ -18,6 +18,8 @@ INGREDIENTS:
 -2 Potions of Clarity
 -1 Diamond.
 -10,000 gold
+
+FORGE TIME: Instant
 __________________________________________________
 Acid Kukri +2 (Dagger)
 
@@ -37,6 +39,8 @@ INGREDIENTS:
 -1 Scroll of Melf's Acid Arrow
 -1 Sphene Gem
 -10,000 gold
+
+FORGE TIME: Instant
 __________________________________________________
 Cowl of Shadows (Helmet)
 
@@ -55,6 +59,8 @@ INGREDIENTS:
 -1 Scroll of Clairvoyance
 -1 Moonstone Gem
 -10,000 gold
+
+FORGE TIME: Instant
 __________________________________________________
 Looter's Band (Ring)
 
@@ -71,6 +77,8 @@ INGREDIENTS:
 -1 Scroll of Knock
 -1 Rogue Stone
 -10,000 gold
+
+FORGE TIME: Instant
 __________________________________________________
 Keryokien: Medusa's Bite (Dart)
 
@@ -86,6 +94,8 @@ STATISTICS:
 
 INGREDIENTS:
 -Broken Kerykeion Piece
+
+FORGE TIME: 5 days and in Chapter 5 or later
 __________________________________________________
 Keryokien: Euryale's Promise (Short Sword)
 
@@ -99,6 +109,8 @@ STATISTICS:
 
 INGREDIENTS:
 -Broken Kerykeion Piece
+
+FORGE TIME: 5 days and in Chapter 5 or later
 __________________________________________________
 Keryokien: Stheno's Blade (Katana)
 
@@ -115,3 +127,33 @@ STATISTICS:
 INGREDIENTS:
 -Broken Kerykeion Piece
 -Ogre Blade
+
+FORGE TIME: 5 days and in Chapter 5 or later
+__________________________________________________
+The Thief's Compendium
+
+FIRST TIER: 20k each
+
+Open Locks: 10% bonus
+Find/Set Traps: 10% bonus
+Pick Pockets: 10% bonus
+Move Silently/Hide In Shadows: 10% bonus
+Detect Illusion: 10% bonus
+
+SECOND TIER: 50k each
+
+Armor Class/Saving Throws: +1 bonus
+THAC0/Damage: +1 bonus
+Magic Resistance: 5% bonus
+Physical Resistances: 5% bonus
+Elemental Resistances: 5% bonus
+Backstab Multiplier: +1
+
+THIRD TIER: 100k each
+
+Constitution: +1 bonus
+Strength: +1 bonus
+Dexterity: +1 bonus
+Intelligence: +1 bonus
+Charisma: +1 bonus
+Wisdom: +1 bonus

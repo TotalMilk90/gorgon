@@ -161,6 +161,7 @@ IF ~Global("h_Meredia","GLOBAL",1) Global("h_EndMeredia","GLOBAL",0)~ THEN BEGIN
    SAY @7830
        ++ @7831 GOTO 21
        ++ @7832 EXIT
+       +~Global("h_GilbaldQuest","GLOBAL",3)~+ @7826 GOTO G_0
 END
 
 IF ~~ THEN BEGIN 21

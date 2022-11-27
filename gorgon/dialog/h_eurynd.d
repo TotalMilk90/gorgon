@@ -1,7 +1,7 @@
 BEGIN h_eurynd
 
 IF ~True()~ THEN BEGIN 0
-   SAY @4200 IF ~~ THEN EXIT
+   SAY @4200
        ++ @4201 GOTO STORE_1
        ++ @4202 EXIT
        ++ @4203 GOTO UPGRADE_1
@@ -210,7 +210,7 @@ END
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryKatana","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_8
    SAY @4236
 IF ~~ THEN DO ~
-   SetGlobal("h_KeryDart","GLOBAL",2)
+   SetGlobal("h_KeryKatana","GLOBAL",2)
    GiveItemCreate("h_sw1h02",LastTalkedToBy,0,0,0)~ EXIT
 END
 

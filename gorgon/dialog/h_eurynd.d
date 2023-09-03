@@ -17,8 +17,8 @@ END
 
 IF ~~ THEN BEGIN UPGRADE_1
    SAY @4207
-       +~OR(3) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08")~+ @4208 GOTO TORQUE_1
-       +~OR(2) PartyHasItem("h_dagg01") PartyHasItem("SW1H09")~+ @4209 GOTO KUKRI_1
+       +~OR(4) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08") PartyHasItem("RING08_")~+ @4208 GOTO TORQUE_1
+       +~OR(3) PartyHasItem("h_dagg01") PartyHasItem("SW1H09") PartyHasItem("SW1H09_")~+ @4209 GOTO KUKRI_1
        +~OR(2) PartyHasItem("RING21") PartyHasItem("HELM05")~+ @4210 GOTO COWL_1
        +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ @4211 GOTO RING_1
        +~PartyHasItem("h_misc06")~+ @4212 GOTO OGREBLADE_1
@@ -32,6 +32,7 @@ END
 IF ~~ THEN BEGIN TORQUE_2
    SAY @4215
        +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ @4216 GOTO TORQUE_3
+       +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08_") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ @4216 GOTO TORQUE_3
        ++ @4213 EXIT
 END
 
@@ -45,6 +46,7 @@ IF ~~ THEN DO ~
    TakePartyItemNum("CLCK16",1)
    TakePartyItemNum("CHAN07",1)
    TakePartyItemNum("RING08",1)
+   TakePartyItemNum("RING08_",1)
    TakePartyItemNum("POTN29",2)
    TakePartyItemNum("POTN21",2)
    TakePartyItemNum("MISC42",1)
@@ -53,6 +55,7 @@ IF ~~ THEN DO ~
    DestroyItem("CLCK16")
    DestroyItem("CHAN07")
    DestroyItem("RING08")
+   DestroyItem("RING08_")
    DestroyItem("POTN29")
    DestroyItem("POTN21")
    DestroyItem("MISC42")
@@ -66,6 +69,7 @@ END
 IF ~~ THEN BEGIN KUKRI_2
    SAY @4219
        +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ @4216 GOTO KUKRI_3
+       +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09_") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ @4216 GOTO KUKRI_3
        ++ @4213 EXIT
 END
 
@@ -76,11 +80,13 @@ IF ~~ THEN DO ~
    DestroyGold(10000)
    TakePartyItemNum("h_dagg01",1)
    TakePartyItemNum("SW1H09",1)
+   TakePartyItemNum("SW1H09_",1)
    TakePartyItemNum("POTN20",2)
    TakePartyItemNum("SCRL95",1)
    TakePartyItemNum("MISC37",1)
    DestroyItem("h_dagg01")
    DestroyItem("SW1H09")
+   DestroyItem("SW1H09_")
    DestroyItem("POTN20")
    DestroyItem("SCRL95")
    DestroyItem("POTN21")

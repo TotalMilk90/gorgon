@@ -8,6 +8,7 @@ Equipped abilities:
 - Intelligence: +1
 - Armor Class: +1
 - Saving Throws: +1
+- Magic Resistance: +5%
 - Can memorize 1 extra 1st-5th level spell
 
 Weight: 0~
@@ -319,7 +320,7 @@ Requires:
  3 Strength
 
 Weight: 1~
-@41=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger had received years of different vemon applications making it an extremely deadly weapon.
+@41=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger has received years of different vemon applications making it an extremely deadly weapon.
 
 STATISTICS:
 
@@ -386,7 +387,7 @@ Equipped abilities:
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @48=~Broken Kerykeion Piece~
-@49=~This is a piece of a legendary staff called the Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
+@49=~This is a piece of the legendary staff, Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -415,7 +416,7 @@ Weight: 10~
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @60=~Shadow Thief Reports~
-@61=~These documents are written in code presumably only decipherable by members of the Shadow Thieves.
+@61=~These documents are written in code presumably only decipherable by members of the Shadow Thieves. These are sure to be of interest to Baldwin.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -450,7 +451,7 @@ Weight: 0~
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @74=~Counterfeit Gold~
-@75=~Although noticable, the weight, feel and hue of this coin is only slightly off compared to real gold. It could easily be mistaken as legitimate if passed over with a quick glance.
+@75=~Although barely noticable, the weight, feel and hue of this coin is slightly off compared to real gold. It could easily be mistaken as legitimate if passed over with a quick glance.
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -586,9 +587,9 @@ Weight: 3~
 STATISTICS:
 
 Combat abilities:
-- 50% chance to stun target for half a round (save vs. spell)
-- 25% chance to confuse target for 2 rounds (save vs. spell)
-- 10% chance to deal an additional 5 acid damage
+- 10% chance to stun target for half a round (save vs. spell)
+- 10% chance to confuse target for 2 rounds (save vs. spell)
+- 5% chance to deal an additional 5 acid damage
 
 THAC0: +3
 Damage: 1d10 +3
@@ -621,6 +622,7 @@ STATISTICS:
 
 Combat abilities:
 - Increases number of attacks by 1
+- Chance to score a critical hit +10%
 
 THAC0: +4
 Damage: 1d4 +4, +5 cold

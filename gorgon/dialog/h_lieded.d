@@ -1,7 +1,7 @@
 BEGIN h_lieded
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
-   SAY @7200
+   SAY @7200 IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",0)~ THEN BEGIN 0

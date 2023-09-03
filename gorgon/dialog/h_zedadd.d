@@ -1,7 +1,7 @@
 BEGIN h_zedadd
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
-   SAY @10800
+   SAY @10800 IF ~~ THEN EXIT
 END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 0

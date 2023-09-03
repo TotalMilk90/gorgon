@@ -40,6 +40,12 @@ Portraits: The NwN Vault
 WeiDU: Wes Weimer, the bigg and Wisp
 
 <h2>Version History</h2>
+<h3>Version 3.3:</h3>
+<ul>
+  <li>Nerfed/upgraded some items</li>
+  <li>Fixed EET item upgrades</li>
+  <li>Fixed typos and dialog errors</li>
+ </ul>
 <h3>Version 3.2:</h3>
 <ul>
   <li>Fixed bug where Rhade would give infinite katanas</li>

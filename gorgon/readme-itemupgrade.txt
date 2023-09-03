@@ -6,6 +6,7 @@ STATISTICS:
 -Intelligence: +1
 -Armor Class: +1
 -Saving Throws: +1
+-Magic Resistance: +5%
 -Can memorize 1 extra 1st-5th level spell
 
 INGREDIENTS:
@@ -80,7 +81,7 @@ INGREDIENTS:
 
 FORGE TIME: Instant
 __________________________________________________
-Keryokien: Medusa's Bite (Dart)
+Kerykeion: Medusa's Bite (Dart)
 
 STATISTICS:
 -Each hit causes 1 point of poison damage every 2 seconds for a total of 12 seconds (save vs. poison)
@@ -97,11 +98,12 @@ INGREDIENTS:
 
 FORGE TIME: 5 days and in Chapter 5 or later
 __________________________________________________
-Keryokien: Euryale's Promise (Short Sword)
+Kerykeion: Euryale's Promise (Short Sword)
 
 STATISTICS:
 -Increases backstab modifier by 1
 -Increases number of attacks by 1
+
 -THAC0: +3
 -Damage: 1d10+3, +3 poison
 -Damage Type: Piercing
@@ -112,15 +114,15 @@ INGREDIENTS:
 
 FORGE TIME: 5 days and in Chapter 5 or later
 __________________________________________________
-Keryokien: Stheno's Blade (Katana)
+Kerykeion: Stheno's Blade (Katana)
 
 STATISTICS:
--Hit target becomes stunned for half a round (save vs. spell)
--25% chance to confuse target for 2 rounds (save vs. spell)
--10% chance to deal an additional 10 acid damage
+-10% chance to stun target for half a round (save vs. spell)
+-10% chance to confuse target for 2 rounds (save vs. spell)
+-5% chance to deal an additional 5 acid damage
 
 -THAC0: +3
--Damage: 1d10 +3 +2 acid
+-Damage: 1d10 +3 +3 acid
 -Damage Type: Crushing
 -Speed Factor: 2
 

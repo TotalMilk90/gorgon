@@ -11,5 +11,6 @@ IF
          Global("h_BetrayBaldwin","GLOBAL",3)
 THEN
 	 RESPONSE #100
-                  Deactivate(Myself)
+                  //Deactivate(Myself)
+                  DestroySelf()
 END

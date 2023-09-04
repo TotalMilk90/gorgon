@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v3.2~
+VERSION ~v3.3~
 
 LANGUAGE
     ~English~
@@ -861,3 +861,80 @@ ADD_JOURNAL @200 @201 @202 @203
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
             USING ~gorgon/lang/english/quests.tra~
+
+BEGIN @100000
+
+COPY_EXISTING_REGEXP ~BEG.*cre~ ~override~                    // Beggar
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~SLAV.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~BOYB.*cre~ ~override~                   // Child
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~CHILN.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~GIRB.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~GIRL.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE01~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+
+COPY_EXISTING_REGEXP ~FTOB.*cre~ ~override~                   // Commoner
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FTOW.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FTWB.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FAT.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MTBE.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MTOB.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MTOW.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MTW.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~PROS.*cre~ ~override~                   // Courtesan
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FARM.*cre~ ~override~                   // Farmer
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~HALF.*cre~ ~override~                   // Halfling
+     ADD_CRE_ITEM ~RNDTRE02~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+
+COPY_EXISTING_REGEXP ~AMNIS.*cre~ ~override~                  // Amnian Soldier
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~HOUS.*cre~ ~override~                   // Guard
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~IRON.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~LEAG.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FLAM.*cre~ ~override~                   // Flaming Fist
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MERC.*cre~ ~override~                   // Watcher
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~CREW.*cre~ ~override~                   // Crewmate
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~BART.*cre~ ~override~                   // Bartender
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~COOK.*cre~ ~override~                   // Cook
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~FCOOK.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MCOOK.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MERC.*cre~ ~override~                   // Merchant
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~SHOP.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE03~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+
+COPY_EXISTING_REGEXP ~MONKT.*cre~ ~override~                  // Priest
+     ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~READ.*cre~ ~override~                   // Reader
+     ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~MONKT.*cre~ ~override~                  // Tutor
+     ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+     
+COPY_EXISTING_REGEXP ~NOB.*cre~ ~override~                    // Noble
+     ADD_CRE_ITEM ~RNDTRE05~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+COPY_EXISTING_REGEXP ~NOW.*cre~ ~override~
+     ADD_CRE_ITEM ~RNDTRE05~ #1 #0 #0 ~IDENTIFIED~ ~INV~

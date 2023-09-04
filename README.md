@@ -20,6 +20,9 @@ goods, a few new items and a very small item-upgrade. It can be accessed
 immediately after leaving Candlekeep and is open to all players, excluding
 those with a lawful-good alignment.</p>
 
+<p>The component "Add more pickpocketable items" will distribute random treasure to
+almost every generic npc. (Commoners, nobles, etc.)</p>
+
 <h2>Acknowledgements</h2>
 <p>This mod would not have been possible without DnD Detective's mod tutorial 
 videos on YouTube. They really helped me bridge the gap between knowing
@@ -42,6 +45,7 @@ WeiDU: Wes Weimer, the bigg and Wisp
 <h2>Version History</h2>
 <h3>Version 3.3:</h3>
 <ul>
+  <li>Added pickpocket component</li>
   <li>Nerfed/upgraded some items</li>
   <li>Fixed EET item upgrades</li>
   <li>Fixed typos and dialog errors</li>

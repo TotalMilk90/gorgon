@@ -24,6 +24,9 @@ underground thieves den into the town of Beregost. It contains 20 new quests,
 goods, a few new items and a very small item-upgrade. It can be accessed
 immediately after leaving Candlekeep and is open to all players, excluding
 those with a lawful-good alignment.
+
+The component "Add more pickpocketable items" will distribute random treasure
+to almost every generic npc. (Commoners, nobles, etc.) 
  
 ================
 Acknowledgements
@@ -47,6 +50,7 @@ WeiDU: Wes Weimer, the bigg and Wisp
 Version History
 ===============
 Version 3.3:
+-Added pickpocket component
 -Nerfed/upgraded some items
 -Fixed EET item upgrades
 -Fixed typos and dialog errors

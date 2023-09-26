@@ -1,0 +1,17 @@
+IF
+        Global("h_SpawnZylark","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 Wait(1)
+                 StartDialog("h_zylard",[PC])
+END
+
+IF
+        Global("h_SpawnZylark","GLOBAL",2)
+
+THEN
+        RESPONSE #100
+                 Enemy()
+END
+

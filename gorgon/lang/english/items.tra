@@ -25,6 +25,24 @@ Launcher: Bow
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@109=~Blackjack~
+@180=~The blackjack is a favored tool among the Gorgon's Eye thieves guild. A weighted leather strap tightly belted around a wooden bat, it is used to deliver swift and silent knockout blows to unsuspecting victims.
+
+Combat abilities:
+- Deals non-lethal damage
+
+STATISTICS:
+
+Damage: 1d3
+Damage Type: Crushing
+Speed Factor: 2
+Proficiency Type: Club
+Type: One-handed
+Requires:
+ 3 Strength
+
+Weight: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @6=~Bolt of Acid +1~
 @7=~One drop of scorpion venom was applied directly to the tip of this bolt.
 
@@ -114,7 +132,6 @@ Weight: 25~
 
 STATISTICS:
 
-Armor Class: Adds +1 bonus permanently
 Saving Throws: Adds +1 bonus permanently
 Special: The book is consumed upon use
 Usage: Place into quick item slot
@@ -338,8 +355,8 @@ Requires:
 
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@42=~Keryokien: Medusa's Bite~
-@43=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
+@42=~Kerykeion: Medusa's Bite~
+@43=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
 
 STATISTICS:
 
@@ -562,7 +579,7 @@ Weight: 0~
 @100=~Snake~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @101=~Kerykeion: Euryale's Promise~
-@102=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Euryale flowing through it. Its slim design makes it ideal for quick attacks.
+@102=~This short sword was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Euryale flowing through it. Its slim design makes it ideal for quick attacks.
 
 STATISTICS:
 
@@ -571,7 +588,7 @@ Combat abilities:
 - Increases number of attacks by 1
 
 THAC0: +3
-Damage: 1d10+3, +3 poison
+Damage: 1d10+3
 Damage Type: Piercing
 Speed Factor: 0
 Proficiency Type: Short Sword
@@ -582,14 +599,13 @@ Requires:
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @103=~Kerykeion: Stheno's Blade~
-@104=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister, Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned and confused. This blade is coated in highly acidic ogre blood.
+@104=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned. This blade is coated in highly acidic ogre blood.
 
 STATISTICS:
 
 Combat abilities:
 - 10% chance to stun target for half a round (save vs. spell)
-- 10% chance to confuse target for 2 rounds (save vs. spell)
-- 5% chance to deal an additional 5 acid damage
+- 10% chance to deal an additional 5 acid damage
 
 THAC0: +3
 Damage: 1d10 +3

@@ -7,7 +7,7 @@ THEN
                   CreateCreature("h_rigalc",[945.1121],S)
                   CreateCreature("h_liedec",[762.1342],NE)
                   CreateCreature("h_eurync",[700.1220],SE)
-                  CreateCreature("h_danikc",[1358.343],S)
+                  CreateCreature("h_nagacc",[1358.343],S)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
                   CreateCreature("h_ilenac",[1883.1134],SW)
@@ -39,6 +39,11 @@ THEN
                   CreateCreature("h_ariosc",[846.1185],N)
                   CreateCreature("h_roguec",[1006.1057],SW)
                   CreateCreature("h_roguec",[1059.1101],SW)
+                  
+                  CreateCreature("h_roguec",[1262.680],NE)
+                  CreateCreature("h_roguec",[1400.750],N)
+                  CreateCreature("h_roguec",[1672.726],N)
+                  CreateCreature("h_roguec",[1796.656],NW)
                   SetGlobal("h_GuildThieves","GLOBAL",1)
                   Continue()
 END

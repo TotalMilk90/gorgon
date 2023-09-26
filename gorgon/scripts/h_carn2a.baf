@@ -1,0 +1,8 @@
+IF
+         Global("h_SpawnPruflas","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_pruflc",[425.271],SW)
+                  SetGlobal("h_SpawnPruflas","GLOBAL",1)
+                  Continue()
+END

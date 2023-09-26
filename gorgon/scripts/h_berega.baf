@@ -101,3 +101,24 @@ THEN
                  SetGlobal("h_SpawnXevec","GLOBAL",2)
                  Continue()
 END
+/*
+IF
+        PartyHasItem("h_misc04")
+        Global("h_SpawnZieke","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_ziekbc",[1517.2773],NW)
+                 SetGlobal("h_SpawnZieke","GLOBAL",1)
+                 Continue()
+END
+*/
+IF
+        Global("h_SpawnZylark","GLOBAL",3)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_flamec",[3704.2014],E)
+                 SetGlobal("h_SpawnZylark","GLOBAL",4)
+                 Continue()
+END

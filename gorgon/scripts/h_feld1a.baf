@@ -1,0 +1,11 @@
+IF
+        Global("h_SpawnZiekeNight","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_zieknc",[556.468],S)
+                 SetGlobal("h_SpawnZiekeNight","GLOBAL",2)
+                 Continue()
+END
+
+

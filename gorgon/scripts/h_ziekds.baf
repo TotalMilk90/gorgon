@@ -1,0 +1,34 @@
+IF
+         See([PC])
+         PartyHasItem("h_misc04")
+         Global("h_CaughtByDay","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_ziekdd",[PC])
+END
+
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		 SetGlobal("h_CaughtByNight","GLOBAL",1)
+		 SetGlobal("h_CaughtByDay","GLOBAL",1)
+END
+
+IF
+         Global("h_CaughtByDay","GLOBAL",1)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Enemy()
+END
+
+IF
+        GlobalGT("h_RigaldoQuest","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  //Deactivate(Myself)
+                  DestroySelf()
+END
+

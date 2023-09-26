@@ -1,10 +1,14 @@
-@200=~I have stumbled upon a thieves guild operating inside of Beregost and I have decided to join their ranks. I am unsure what to think of these seedy characters, but for the time being I will have to trust them. Hopefully, I'll be able to earn easy coin and gain useful experience during my tenure. I should first seek out Rigaldo, who will be in charge of directing my tasks within the guild.~
+@200=~The Beregost locals talk of a haunted tunnel behind Feldepost's Inn. It might be worth investigating to uncover the truth.~
 
-@201=~The Shadow Thieves wish to me betray Baldwin if he is able to get ahold of the final Kerykeion piece. I still don't quite understand why this weapon is so dangerous or what it can even do. If it is as destructive as they say then perhaps I should side with them. They did offer to leave me and the rest of the guild alone if I should cooperate. We will have to see what the future holds.~
+@201=~A young lad informed me of some unsavory looking characters entering a tunnel behind Feldpost's Inn. Perhaps I should conduct a thorough investigation of the area.~
 
-@202=~I came across one of Baldwin's spies who had just returned from a battle against the Shadow Thieves. He obtained some documents that have information regarding the client who hired them against us. I should bring these back to Baldwin at once.~
+@202=~I've aligned myself with the Gorgon's Eye thieves guild in Beregost. In the days to come, uncertainty reigns, but for now, there's a promise of coin to be had. I should first seek Rigaldo, who will direct my tasks within the guild.~
 
-@203=~I was just approached by a boy who claims he witnessed ghosts flying out of a tunnel behind Feldepost's Inn. Perhaps if I have time I'll go investigate his claim and discover if there is any truth to it.~
+@203=~I've encountered one of Baldwin's operatives fresh from a skirmish with the Shadow Thieves. He's secured vital documents regarding the guild's future. These must be promptly delivered to Baldwin for assessment.~
+
+
+
+
 
 
           ///////////////////////////////////
@@ -82,33 +86,33 @@ Baldwin is dead and the Kerykeion is irreparable. The only surviving piece was i
           ///////////////////////////////////
 
           
-@310=~The Traveler's Gem
+@310=~Diamond in the Rough
 
-My first assignment for the Gorgon's Eye thieves guild is to steal a gem off a dealer staying in a room at Feldepost's Inn.~
+My first assignment for the Gorgon's Eye thieves guild is to steal a diamond from Zieke, a fence staying at Feldepost's Inn. I should watch out for his guards who keep a tight perimeter. I could try to sneak by them, or knock them unconscious. Whatever it takes to remain unnoticed.~
 
-@311=~The Traveler's Gem
+@311=~Diamond in the Rough
 
-I was able to steal the gem and return it to Rigaldo. He gave me a ring that makes pickpocketting easier. Surely this would have made my mission easier if he'd just given it to me behorehand.~
+I grabbed the diamond and made it back alive. Rigaldo gave me a nice thieving ring as a prize. Would have been nice to have it before the mission though.~
 
 @312=~Mugging in the Manor
 
-Rigaldo has tasked me with obtaining a necklace from Gerard Travenhurst inside the large manor in northern Beregost. I am to use threat of violence to convince him to give it up.~
+Rigaldo wants me to convince Gerard Travenhurst to resume paying his guild dues and to cough up his family pendant as interest. I can find him in the large manor in northern Beregost.~
 
 @313=~Mugging in the Manor
 
-I was able to successfully procure Gerard's necklace. I should return it to Rigaldo at the Gorgon's Eye hideout.~
+Gerard saw reason and agreed to my demands. I have his necklace and his word of continued payment. I should head back to Rigaldo at the Gorgon's Eye hideout and deliver the news, even though I have a feeling he already knows.~
 
 @314=~Mugging in the Manor
 
-Rigaldo has been pleased with my work and promoted me to a full fledged member of the Gorgon's Eye. With this comes new missions that I will be able to accept.~
+After my success with Gerard, I was promoted to an official member of the Gorgon's Eye thieves guild.~
 
 @315=~Buried Treasure
 
-There is a farmer by the name of Karp who keeps finding valuable items buried on her farmland. Recently she has dug up two magical rings and I am to go steal them off her.~
+There is a farmer by the name of Karp who keeps finding valuable items buried on her farmland. Recently she has dug up two magical rings and Rigalo wants me to collect them.~
 
 @316=~Buried Treasure
 
-I was able to "convince" Karp to hand over her rings. I should bring them back to Rigaldo for my reward.~
+I was able to convince Karp to hand over her rings. I should bring them back to Rigaldo for my reward.~
 
 @317=~Buried Treasure
 
@@ -120,7 +124,7 @@ Karp is looking to get her son smuggled south into the Amnian city, Athkatla. I 
 
 @319=~A Fishy Request
 
-Zeda was more than happy to help with Karp's request, so long as she has enough coin to procure her services. I should go inform Karp to meet her in Beregost~
+Zeda was more than happy to help with Karp's request, so long as she has enough coin to procure her services. I should go inform Karp to meet her in Beregost.~
 
 @320=~A Fishy Request
 
@@ -128,7 +132,7 @@ Karp was happy to know that her son will now be safe. She took off immediately t
 
 @321=~It's All Fun and Games
 
-I am to go to the Nashkel Carnival gambling tents and steal the gamesmen's weapons. Then I am to meet with Ariosh and his rogues behind the tents and distribute the weapons to them. They will enter the casinos and take everything they can.~
+I am to go to the Nashkel Carnival gambling tents and steal the gamesmen's weapons. Then I am to meet with Ariosh and his rogues behind the tents and distribute the weapons to them. They will enter the unguarded casinos and take as much as they can.~
 
 @322=~It's All Fun and Games
 
@@ -140,7 +144,7 @@ Rigaldo was pleased with my work and gave me a large cut of the winnings.~
 
 @324=~Borland's Spicy Secret
 
-Borland is selling spice in Beregost and Rigaldo wants him to start paying us a cut of his profits. If he refuses then I am to rob him off all his spices and coin.~
+Borland is selling spice in Beregost and Rigaldo wants him to start paying us a cut of his profits. If he refuses then I need to clear out his inventory of spice and coin.~
 
 @325=~Borland's Spicy Secret
 
@@ -170,6 +174,34 @@ I delivered the black lotus to the buyer and should head back to the guild with 
 
 I returned the gold I received for the black lotus and Rigaldo gave me back my reward.~
 
+@332=~Order of the Black Lotus
+
+Rigaldo wants me to convince Pruflas to return home to his wife. I can find him in the easternmost tent at the Nashkel Carnival.~
+
+@333=~Order of the Black Lotus
+
+The buyer wants me to remove Pruflas before he will conduct business with me.~
+
+@334=~Order of the Black Lotus
+
+I convinced Pruflas to return home.~
+
+@335=~Order of the Black Lotus
+
+I overdosed Pruflas with black lotus and killed him... acccidently.~
+
+@336=~Order of the Black Lotus
+
+I helped the black lotus tent with Pruflas.~
+
+@337=~Order of the Black Lotus
+
+I returned to Rigaldo and collected 500 gold coins.~
+
+@338=~Order of the Black Lotus
+
+Rigaldo told me I failed the mission.~
+
 
           ///////////////////////////////////
           ///////// Liedel's Quests /////////
@@ -178,15 +210,15 @@ I returned the gold I received for the black lotus and Rigaldo gave me back my r
 
 @410=~Liedel's Bounty: Carth
 
-There is a bounty on a large man named Carth. I should look for him at any inns or taverns I find north of the Coast Way.~
+There is a bounty on a large man named Carth. I should look for him at any inns or taverns that I find north of the Coast Way.~
 
 @411=~Liedel's Bounty: Carth
 
-I found Carth hiding in a room at the Friendly Arm Inn. I killed him without incident and should return to Liedel to collect my reward.~
+I found Carth hiding in a room at the Friendly Arm Inn. I killed him without incident and should return to Liedel for my reward.~
 
 @412=~Liedel's Bounty: Carth
 
-I found Carth hiding in a room at the Friendly Arm Inn. I felt bad for the man so I ended up giving him 300 gold coins so he could pay off his debt, thus removing the bounty. I should return to Liedel and inform her of what transpired.~
+I found Carth hiding in a room at the Friendly Arm Inn. I felt bad for the man so I ended up giving him 300 gold coins so he could pay off his debt and remove the bounty. I should return to Liedel and inform her of what transpired.~
 
 @413=~Liedel's Bounty: Carth
 
@@ -202,11 +234,11 @@ There is a bounty on a rogue named Vapula Simberg. He testified against his fell
 
 @416=~Liedel's Bounty: Vapula Simberg
 
-I found Vapula at the Temple of Lathander in Beregost. I had to fight him in what he called a "trial by combat under the eyes of the gods". The gods must have favored me because I was able to kill him. I should return his pendant to Liedel as proof that he is dead.~
+I found Vapula at the Temple of Lathander in Beregost. I had to fight him in what he called a, "trial by combat under the eyes of the gods". The gods must have favored me because I was able to kill him. I should return his pendant to Liedel as proof that he is dead.~
 
 @417=~Liedel's Bounty: Vapula Simberg
 
-I found Vapula at the Temple of Lathander in Beregost. He turned from a life of crime into a life of piousness and I chose not to kill him over that. He gave me his pendant to return so that his aggressors with think him dead, making him free to wander the land atoning for his sins.~
+I found Vapula at the Temple of Lathander in Beregost. He turned from a life of crime into a life of piousness and I chose not to kill him over that. He gave me his pendant to bring back so that his aggressors with think him dead, making him free to wander the land atoning for his sins.~
 
 @418=~Liedel's Bounty: Vapula Simberg 
 
@@ -222,7 +254,7 @@ I killed Aisha and should return to Liedel for my reward.~
 
 @421=~Liedel's Bounty: Aisha
 
-A man named Amrius is responsible for placing Aisha's bounty. I want to speak with him before making any decisions. I should be able to find him at The Burning Wizard here in Beregost.~
+A man named Amrius is responsible for placing Aisha's bounty. I want to speak with him before I make any decisions. I should be able to find him at The Burning Wizard here in Beregost.~
 
 @422=~Liedel's Bounty: Aisha
 
@@ -250,11 +282,11 @@ I found Europea but was a little too late, as another group of bounty hunters we
 
 @428=~Liedel's Bounty: Europea
 
-The castle Europea spoke of was indeed the Friendly Arm Inn. I brought her to the temple and the cleric there recognized her immediately. She gave me her slave collar so I can bring it back for my reward and to end the bounty that was placed on her.~
+The castle Europea spoke of was indeed the Friendly Arm Inn. I brought her to the temple and the cleric recognized her immediately. She gave me her slave collar so I can bring it back for my reward and to end the bounty that was placed on her.~
 
 @429=~Liedel's Bounty: Europea
 
-I brought Europea's slave collar back to Liedel and received my reward. I'm happy to know she is secretly in safe hands and will no longer be hunted.~
+I brought Europea's slave collar back to Liedel and received my reward. I'm happy to know she is secretly in safe hands and will no longer be hunted down.~
 
 @430=~Liedel's Bounty: Europea
 
@@ -290,15 +322,15 @@ I informed Liedel about Katreda and the bounty is now settled.~
 
 @438=~Liedel's Bounty: Zhontac
 
-A necromancer by the name of Zhontac is looking for corpses to practice his magic on. What a sick bastard this one is. He can be found during the night, prowling about in his backyard on the eastern part of Beregost.~
+A necromancer by the name of Zhontac is looking for corpses to practice his magic on. He can be found during the night, prowling about in his backyard on the eastern part of Beregost.~
 
 @439=~Liedel's Bounty: Zhontac
 
-Zhontac wants me to kill a blue-haired man named Magnus. He hangs out near the southern fountains during the day in Beregost. He wants me to bring back his corpse so he can experiment on it.~
+Zhontac wants me to kill a blue-haired man named Magnus. He hangs out near the southern fountains in Beregost during the daytime. He wants me to bring back his corpse so he can experiment on it.~
 
 @440=~Liedel's Bounty: Zhontac
 
-I decided to kill Zhontac. I should inform Liedel.~
+I decided to kill Zhontac. I should go inform Liedel.~
 
 @441=~Liedel's Bounty: Zhontac
 
@@ -310,11 +342,11 @@ I couldn't go through with killing Magnus, so I ended up just warning him of Zho
 
 @443=~Liedel's Bounty: Zhontac
 
-I finished Zhontac's quest and decided to let him finish his research. If he is successful it will actually help a lot of people.~
+I finished Zhontac's quest and decided to let him finish his research. If he is successful it could actually help a lot of people.~
 
 @444=~Liedel's Bounty: Zhontac
 
-I informed Liedel that I let Zhontac live. She was surprised but it seemed like the right thing to do.~
+I informed Liedel that I let Zhontac live. She was surprised but to me it seemed like the right thing to do.~
 
 @445=~Liedel's Bounty: Zhontac
 

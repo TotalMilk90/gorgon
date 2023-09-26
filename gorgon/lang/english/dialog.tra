@@ -1,61 +1,61 @@
 //h_aishad.d......@1000 - @1199
 
-@1000 = ~Oh my, you startled me! Please, I don't mean to be rude but I do wish to be left alone.~
-@1001 = ~Don't be alarmed, Aisha. I know about the bounty and I'm just here to find out why someone would want you dead.~
-@1002 = ~I'm here to collect your bounty, Aisha. Let's not make this harder than it needs to be.~
-@1003 = ~Wait! Please let me explain before you make your judgement!~
-@1004 = ~Fine, I'll listen to what you have to say.~
-@1005 = ~Sorry sweetheart, but I'm not interested. (Snap her neck.)~
-@1006 = ~It was that fool Amrius who placed it on me! He tried to force himself upon me after I denied his clumsy, drunken advances.~
+@1000 = ~Eek, you startled me! I-I'm truly sorry, but I'd appreciate some space if you don't mind.~
+@1001 = ~Steady yourself, Aisha. I'm clued in on the bounty. I just want to know why someones got it in for you.~
+@1002 = ~Cut the crap, Aisha. I'm here for the bounty. Best not make this messier than it needs to be.~
+@1003 = ~Hold on! Please, give me a chance to explain before you make your judgement!~
+@1004 = ~Alright, spill it. I'm listening.~
+@1005 = ~Sorry sweetheart, but you ain't my type. (Snap her neck.)~
+@1006 = ~It was that fool Amrius who placed it on me! He tried to force himself on me after I denied his clumsy, drunken advances.~
 @1007 = ~I tried to fight back, but he was too strong. When he was trying to carry me out of the tavern, he lost his balance and collapsed into one of the tables.~
-@1008 = ~He was covered in food, drink and blood from something cutting his face. Everyone around him saw and laughed. I took the opportunity to flee as fast as I could!~
-@1009 = ~The next day I learned he placed a bounty on me and I've been hiding out here ever since.~
+@1008 = ~He was drenched in food, drink and blood, his face mangled from who knows what. Everyone around him saw and laughed. I took the opportunity to flee as fast as I could!~
+@1009 = ~The next day I learned of the bounty and I've been holed up here ever since.~
 @1010 = ~Where can I find this Amrius? Maybe I can convince him to remove the bounty.~
-@1011 = ~Sorry, but I have a job to do. (Snap her neck.)~
-@1012 = ~Really? You would do that for me? Th-thank you! I know he frequents The Burning Wizard fairly often, so he could be staying there.~
-@1013 = ~You're back! Did you end up speaking with Amrius?~
+@1011 = ~Sorry, but I've got a job to do. (Snap her neck.)~
+@1012 = ~Really? You would do that for me? Th-thank you! I know he frequents The Burning Wizard, maybe you'll find him there.~
+@1013 = ~You're back! Did you manage to speak with Amrius?~
 @1014 = ~Yes, you don't have to worry about him anymore.~
 @1015 = ~Not yet, I'll be heading there shortly.~
-@1016 = ~Actually, I've decided to just kill you and collect the bounty.~
-@1017 = ~Oh, wonderful! Thank you so much! Here, I don't have much gold, but hopefully this necklace will be a suitable reward.~
-@1018 = ~No! Stay back!~
-@1019 = ~Thanks again for helping me. I wish there was more I could do to repay you.~
+@1016 = ~Truth be told, I've decided to kill you and cash in on that bounty. (Snap her neck.)~
+@1017 = ~Oh, wonderful! Thank you so much! I have little gold, but hopefully this necklace can stand in as a suitable reward.~
+@1018 = ~N-no! Stay back!~
+@1019 = ~Thank you again for helping me. I wish there was more I could do to repay you.~
 
 //h_amriud.d......@1200 - @1399
 
-@1200 = ~Bugger off. I don't know you and I don't care to.~
+@1200 = ~Sod off. I don't know you and I don't care to.~
 @1201 = ~I'll be going now.~
 @1202 = ~I'm here regarding the bounty on Aisha.~
-@1203 = ~Unfortunate bit of business that is. As you can tell by my face though, she deserves what's coming to her.~
+@1203 = ~Unfortunate bit of business that is. As you can tell by my mug though, she deserves what's comin'.~
 @1204 = ~She said she was only defending herself from you, and that you fell because you were drunk.~
-@1205 = ~She would say anything to dissuade her attacker. She assaulted me, ask anybody in there. She pushed me into the table, cut my face and made me look an utter fool!~
-@1206 = ~I want you to remove the bounty, she doesn't deserve to die.~
-@1207 = ~If you don't remove the bounty, then I'll just kill you instead!~
-@1208 = ~Is there anything I can do to make you reconsider?~
-@1209 = ~After observing your condition, I am seeming to agree with you. I found Aisha next door at the Red Sheaf and I think I'll go pay her another visit.~
-@1210 = ~Why would I do that? She dishonered and embarrassed me in front of the whole tavern.~
+@1205 = ~She would say anything to dissuade her attacker. She jumped me, ask anybody in there. She slammed me into a table, cut my face, and made me look like a right git!~
+@1206 = ~I want that bounty gone, Aisha ain't worth a one-way ticket to the afterlife.~
+@1207 = ~If you don't ditch the bounty, then I'll do you in instead!~
+@1208 = ~What can I do to make you reconsider?~
+@1209 = ~Seeing you now, I'm leaning your way. Found Aisha next door at the Red Sheaf. I think I'll go pay her another visit.~
+@1210 = ~Why in the bleedin' hell would I do that? She dishonered and shamed me in front of the whole tavern!~
 @1211 = ~Bring it on then! I ain't afraid of you!~
-@1212 = ~I'll remove the bounty for 300 gold coins. That amount would ease my ego enough to move on.~
+@1212 = ~I'll remove the bounty for 300 gold coins. Enough to soothe my ego and move on.~
 @1213 = ~I'll be back with the money.~
-@1214 = ~Here take the coin then. I'll go inform Aisha.~
+@1214 = ~Take the coin then. I'll go inform Aisha.~
 @1215 = ~Yeah, you do that.~
-@1216 = ~Alright, fine. I wouldn't be able to win a fight in my current condition anyway. As long as she doesn't show her face near me again, there won't be a problem.~
-@1217 = ~Excellent, I could tell you were a person of reason.~
-@1218 = ~You again, what is it you want now?~
-@1219 = ~I want you to remove the bounty, Aisha doesn't deserve to die.~
+@1216 = ~Alright, fine. I can't pick a brawl in my current condition, anyway. So long as Aisha keeps her distance, there won't be any problems.~
+@1217 = ~Smart. Seems you've got a head on your shoulders after all.~
+@1218 = ~Thought I told you to sod off.~
+@1219 = ~I want that bounty gone, Aisha ain't worth a one-way ticket to the afterlife.~
 @1220 = ~Nothing, I'll be going now.~
 @1221 = ~I've got nothin' to say to you.~
 
 //h_ariosd.d......@1400 - @1599
 
-@1400 = ~We used to run these streets alone 'til Baldwin showed up. Got us set up with his guild and straightened us out right quick. Now we're taking twice the coin with half the risk!~
-@1401 = ~Aye, <CHARNAME>. We're on orders to await your signal. Are we ready to make our move?~
-@1402 = ~Yes, I've secured all their weapons. Divy them up and ready yourselves for action.~
-@1403 = ~Not yet. I'm just reporting in. I'll be heading down presently so be on alert.~
-@1404 = ~What was I supposed to do again?~
-@1405 = ~Roger that. Alright you men! You heard the lass. Stand fast until she returns with the weapons.~
-@1406 = ~Roger that. Alright you men! You heard the lad. Stand fast until he returns with the weapons.~
-@1407 = ~Gods, what was Rigaldo thinking sending us a rookie for this mission? Go inside those tents there and steal the weapons off every gamesman inside. Then come back and bring them to us. We will take it from there.~
+@1400 = ~We used to run these streets alone 'til Baldwin showed up. Got us set up with his guild and we straightened up right quick. Now we're taking twice the coin with half the heat!~
+@1401 = ~Aye, <CHARNAME>. We're on orders to await your signal. Ready to roll when you give the word.~
+@1402 = ~Weapons secured, boys. Divy 'em up and prep for action.~
+@1403 = ~Just reporting in before we start to play. Be on alert.~
+@1404 = ~Err. What's the plan again?~
+@1405 = ~Copy that. Alright you men! You heard the lass. Stand fast 'til she brings back the weapons.~
+@1406 = ~Copy that. Alright you men! You heard the lad. Stand fast 'til he brings back the weapons.~
+@1407 = ~Gods, what was Rigaldo thinking sending us a rookie for this mission? Get in those tents, swipe the weapons off every gamesman, then return them to us. We'll handle the rest.~
 @1408 = ~Back already? Whats the word then?~
 @1409 = ~I've secured all their weapons. Divy them up and ready yourselves for action.~
 @1410 = ~Nothing yet. I'm heading down now.~
@@ -98,6 +98,7 @@
 @1809 = ~Treason is it? I guess I cannot blame you, with the opportunity for such power being within your sight.~
 @1810 = ~If this is your wish then now is your chance to strike. I must warn you though, I have no plans of dying today. Taking your life will be a testament of my strength, proving my worthiness to wield the Kerykeion!~
 @1811 = ~Hold... We are not alone.~
+
 @1812 = ~Evening, Gerard. I suspect you understand the reason for my visit.~
 @1813 = ~Absolutely not. What is the meaning of this intrusion? I demand you leave my premises at once!~
 @1814 = ~Sorry, but that won't be happening. Hiring the Shadow Thieves against us was a deadly mistake on your part.~
@@ -107,7 +108,7 @@
 
 //h_baldwd.d......@2000 - @2199
 
-@2000 = ~I think you've stumbled into the wrong place, friend. I'm sure there's a cat stuck in a tree somewhere that requires your aid. Now, begone from me. Your stench of sanctimonious bullshit disgusts and offends me.~
+@2000 = ~I think you've stumbled into the wrong place, friend. There's likely a cat ensnared in the branches outside, desperate for your gallant rescue. Now, begone from me. Your stench of sanctimonious bullshit disgusts and offends me.~
 @2001 = ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one... <CHARNAME>, is it?~
 @2002 = ~Another assassin then? You're not the first to threaten my life only to forfeit their own.~
 @2003 = ~How is it that you know my name? Who are you?~
@@ -118,14 +119,14 @@
 @2008 = ~It may not appear much, but appearances are meant to deceive, are they not? Rest assured, our operations run throughout all quarters south of the gate.~
 @2009 = ~Now then, if I recall, there is a rather large bounty on your head. And yet, here you stand... surrounded by my cutthroats and hunters.~
 @2010 = ~I could have you killed at the lift of my finger, collect my reward and think nothing of it. However, I believe your abilities may prove to be worth just a bit more.~
-@2011 = ~I extend to you an offer to join us, if ambition and coin be your interest.~
-@2012 = ~I thought Ravenscar controlled the whole of the Sword Coast.~
-@2013 = ~What could I expect to gain from joining your guild?~
-@2014 = ~What types of tasks would be required of me?~
+@2011 = ~I extend to you an offer to join us, if ambition and coin align with your interests.~
+@2012 = ~-Intelligence- I thought Ravenscar's shadow covered the whole of the Sword Coast.~
+@2013 = ~What might I gain from joining your guild?~
+@2014 = ~What manner of tasks would be required of me?~
 @2015 = ~I accept your offer and look forward to the opportunities it will provide.~
-@2016 = ~I'm not sure if I can trust you, but if the coin is good then I accept.~
-@2017 = ~I don't think I'm interested in working for a bunch of thieves.~
-@2018 = ~Oh my, quite a surprise you would be so informed. A refreshing contrast to the usual drab I am forced to deal with. Ravenscar's influence does leave the walls yes, to be sure, but his jurisdiction stays within.~
+@2016 = ~Trust is a scarce commodity, but if the coin is right, I'm in.~
+@2017 = ~Petty thievery is of no interest to me.~
+@2018 = ~Oh my, quite a surprise that you would be so informed. A refreshing contrast to the usual drab I am forced to deal with. Ravenscar's influence does leave the walls yes, to be sure, but his jurisdiction stays within.~
 @2019 = ~What of the Shadows Thieves? We are not far from Amn.~
 @2020 = ~Linvail's dogs don't typically sniff around this far north. I have staked my claim to this territory and none have sent challenge.~
 @2021 = ~I offer you an opportunity to gain unique skills in the sneaksman's trade from some of the finest theives in Faerun. You would be armed and trained, and recieve a cut from the guilds earnings.~
@@ -135,12 +136,13 @@
 @2025 = ~Though I am skeptical of your nature, I have decided I would like to join your guild.~
 @2026 = ~No, I have no desire to work with a bunch of thieves.~
 @2027 = ~Excellent, welcome aboard then! Make yourself at home and all that. Or don't. It matters little to me.~
-@2121 = ~Rigaldo will be in charge of directing your assignments within the guild. Any questions should be put to him, or even Saradin for that matter, if he'll stomach your company for long that is. Off with you now though, as I must attend to my duties.~
+@2121 = ~Rigaldo will be in charge of directing your assignments within the guild. Relay your questions to him, or even Saradin for that matter, if he'll stomach your company for long that is. Off with you now though, as I must attend to my duties.~
 @2028 = ~Why do you disturb me further?~
 @2029 = ~How did you know my name? Who are you?~
-@2030 = ~I'll be leaving now.~
-@2031 = ~No time to chat, I'm afraid. Attend to your regular duties unless instructed otherwise.~
-@2032 = ~Ah, <CHARNAME>. Just the person I wanted to see. Rigaldo tells me you are doing fine work and I think it is time I filled you in on some official guild business.~
+@2030 = ~I'll take my leave now.~
+@2031 = ~Small talk won't serve you here. Attend to your duties and fulfill your role.~
+
+@2032 = ~Ah, <CHARNAME>. Just the person I wanted to see. Rigaldo tells me you are doing fine work and I think it's time I filled you in on some official guild business.~
 @2033 = ~A network of elite spies under my employ, whom I refer to as my Snake Heads, are investigating the location of an ancient staff called the Kerykeion.~
 @2034 = ~We believe that it was brought to Faerun during the Time of Troubles, but was destroyed in some ghastly battle.~
 @2035 = ~Most historians have viewed it as myth, but I believe they just lack the sort of... curiousity that people in our profession find themselves with.~
@@ -162,7 +164,8 @@
 @2051 = ~I will go locate this mage and bring back the piece if she has it.~
 @2052 = ~You will not *expect* any reward for carrying out your required duties.~
 @2053 = ~Aye, it's settled then. Return to me when you have finished your duty.~
-@2054 = ~<CHARNAME>, you've returned. Were you able to locate this mage? Tell me, was she in possession of the staff?~
+
+@2054 = ~<CHARNAME>, you've returned. Tell me, were you able to locate this mage? Was she in possession of the staff?~
 @2055 = ~She was. However, we may not be the only ones searching for the Kerykeion. It seems there were some other thieves who attacked her before I arrived.~
 @2056 = ~I have a few other things I need to do first.~
 @2057 = ~That is curious indeed. None but our own should have known of this endeavor.~
@@ -170,7 +173,8 @@
 @2059 = ~With the addition of your report, I can only conclude that we are being watched. By whom, I am unsure.~
 @2060 = ~Going forward, be on your guard while about the city. I will have my spies investigate further.~
 @2061 = ~At any rate, we were able to obtain what they could not. Strength may be on our side. Excellent work, <CHARNAME>.~
-@2062 = ~Here is your reward. A ring I picked up from my days in Athkatla. I will send word when new information on the Kerykeion becomes available. If you'll excuse me, I have some pressing business to attend to.~
+@2062 = ~Here is your reward. A ring I picked up from my days in Athkatla. I will send word when new information becomes available. If you'll excuse me, I have some pressing business to attend to.~
+
 @2063 = ~<CHARNAME>! Go to the surface and eliminate all the Shadow Thieves from the city.~
 @2064 = ~Ariosh mentioned Thamuz was leading their offensive, do you know who he is?~
 @2065 = ~I have found these reports among the dead, but it's written in a code that I cannot decipher.~
@@ -189,6 +193,7 @@
 @2078 = ~Be on your guard when you arrive. It seems the Shadow Thieves have their own suspicions about the meeting possibly being a trap.~
 @2079 = ~Regardless, if you hurry, you should be able to make it before their battalion arrives. Don't hesitate to kill Nagate, or any Shadow Thief who dares to cross our path.~
 @2080 = ~You have your orders, now get to it!~
+
 @2081 = ~Finally, you've returned. What is your report?~
 @2082 = ~I arrived just in time to witness Nagate's assassination at the hands of Thamuz.~
 @2083 = ~What of the Kerykeion?~
@@ -208,6 +213,7 @@
 @2097 = ~I've always suspected as much. I assumed it was them who beat us to the witch in the Gibberling Mountains, as well as those I saw snooping around town before their attack.~
 @2098 = ~What exactly is your plan after obtaining the Kerykeion?~
 @2099 = ~I will inform you when my spies turn up anything new. In the meantime, ask around the guild for more work.~
+
 @2100 = ~I have found the last piece of the Kerykeion.~
 @2101 = ~You, what? How is that possible! Speak, quickly!~
 @2102 = ~I found it among the remains of some Shadow Thieves I killed on my last mission.~
@@ -217,7 +223,8 @@
 @2106 = ~Is that so? Give it here, so that I may examine it further.~
 @2107 = ~*laughing* It is almost unbelievable, is it not? That fate would bring you here, into my den, and stay my hand from killing you.~
 @2108 = ~There is still much work to be done, however. Leave me now, while I make the necessary preparations for its assembly.~
-@2109 = ~I ran into one of your Snake Heads. He ended up succumbing to his injuries after engaging with the Shadow Thieves. He found this document among their belongings.~
+
+@2109 = ~I was given this missive by one your Snake heads, before he succumbed to his injuries.~
 @2110 = ~Give it here, quickly!~
 @2111 = ~That foolish bastard. *laughing* Oh, he is a dead man indeed.~
 @2112 = ~<CHARNAME>, all of our work is finally about to pay off. It was our own, Gerard Travenhurst, who was responsible for enlisting the services of the Shadow Thieves.~
@@ -233,15 +240,15 @@
 //h_borlad.D......@2200 - @2399
 
 @2200 = ~Welcome to my home, friends. What is it I can do for you today?~
-@2201 = ~Hello Borland. I am here to make arrangements regarding your new payments to the Gorgon's Eye.~
-@2202 = ~I know about your little spice operation, Borland, and I'm shutting you down. I will no longer tolerate your drugs infiltrating this city.~
+@2201 = ~Greetings Borland. I've come to make arrangements regarding your new payments to the Gorgon's Eye.~
+@2202 = ~I know about your little spice operation, Borland, and I'm shutting you down.~
 @2203 = ~Sorry, wrong house. I shall take my leave now.~
 @2204 = ~Payments? What is the meaning of this? I have no loan through you.~
 @2205 = ~You've been selling black lotus without the consent of the Gorgon's Eye. If you wish to continue, you will need to pay us a cut of your profits.~
 @2206 = ~Consent? Why the bloody hell do I need your consent to conduct business in my own home?~
 @2207 = ~Maybe I'll go tell the guards of your little operation here and see what they think.~
 @2208 = ~You haven't thought this through have you? I have the backing of an entire guild behind me. Do you really wish to make us your enemies?~
-@2209 = ~If you are going to be difficult, then I have no choice but to use violence. I shall beat you mercilessly until you concede.~
+@2209 = ~Time for some violence then, Borland. Get ready for a right beating!~
 @2210 = ~Because I demand it! *unsheathe your blade* Do as I say or I'll paint the room red with your blood.~
 @2211 = ~Look, Borland, It's not a bad deal. Think of it as a security cost. You'll still make out well and you won't have to worry about any... unforeseen accidents.~
 @2212 = ~Go ahead, they won't listen to you. I have too much renown in this city. Plus, a few of them are on my client list.~
@@ -250,14 +257,14 @@
 @2215 = ~Sorry, but that won't quite cut it. On top of the monthly payments, I will need you to hand over your remaining black lotus, as well as all your coin.~
 @2216 = ~*sigh* Alright, I will comply then. I have no wish to die over a small loss in profits. The trade will still be lucrative enough.~
 @2217 = ~You know, this used to be a respectable town before you gangsters came and took over.~
-@2218 = ~What a bloodthirsty bunch of louts you are! You know, this used to be a respectable town before you gangsters came and took over.~
+@2218 = ~You know what? To hell with this! Zylark! Get out here and protect me!~
 @2219 = ~Get out of my house you damned thief. I have not forgotten our arrangement.~
 @2220 = ~Is that so? And what do you plan to do about it?~
 @2221 = ~If you don't comply, then I will be forced to turn you into the authorities.~
-@2222 = ~Do you not care about all the lives you are ruining?~
-@2223 = ~Then I have no choice but to use violence. I shall beat you mercilessly until you agree to cease your drug peddling.~
-@2224 = ~Why should I? I don't force my product on anyone. It is their choice. Although, to be fair, the trade is so lucrative I probably wouldn't care anyways.~
-@2225 = ~Damn you barbarians! Take the lotus then! Just know that you are making a big mistake messing with one such as me.~
+@2222 = ~Don't you feel any shame in what you are doing? Do you not care about the lives you are ruining?~
+@2223 = ~I'll stop you by force if I have to then, Borland!~
+@2224 = ~Why should I? I don't force my product on anyone. It is their choice. Although, to be fair, the trade is so lucrative I really wouldn't care anyways.~
+@2225 = ~Damn you barbarians! Take the lotus then! I'll make the payments... just know that you're making a big mistake messing with one such as me.~
 @2226 = ~I'd watch your back around here if I were you.~
 
 //h_carn0d.D......@2400 - @2599
@@ -278,19 +285,19 @@
 
 //h_carthd.d......@3200 - @3399
 
-@3200 = ~Can't a man enjoy some privacy in his own room? Unless you're the waiter then please, begone.~
+@3200 = ~Can't a man savor a moment's solitude in his own chamber? Unless you're the waiter then please, begone.~
 @3201 = ~Sorry Carth, but I hope you've had a good last meal. There is a bounty on your head and I'm here to collect it.~
 @3202 = ~You must be Carth. I am here regarding your debt with the Zhentarim.~
 @3203 = ~Oh, Gods! Please, wait!~
 @3204 = ~I was going to pay them back, I was! It's just... right before I was to leave, I was beset by the smells of the most delectable lamb and garlic mash drifting up from the kitchens.~
 @3205 = ~The beautiful aroma was enough to drive a man mad I tell you! No rational mind could allow their body to pass on such a pleasure.~
-@3206 = ~Before I knew it, a dozen empty plates lay stacked in front of me and I hadn't a single coin left.~
-@3207 = ~The cook was so delighted by my appetite that he convinced Bently to put me up until I can get back on my feet. However, due to the bounty I am forced to stay in hiding and can't leave for work.~
+@3206 = ~Before I knew it, a dozen clean plates were all that remained, and not a single coin in my pocket."~
+@3207 = ~The chef, overjoyed by my appetite, persuaded Bently to provide me shelter until I regain my footing. But due to the bounty, I'm confined here.~
 @3208 = ~Please, I just don't know what to do!~
-@3209 = ~How much gold do you still owe them? Maybe I could settle the debt for you.~
+@3209 = ~How much remains of your debt? Perhaps I can settle it for you.~
 @3210 = ~Sorry lad, but business is business. (Snap his neck.)~
-@3211 = ~You would do that? Thank you! My loan was for exactly 300 gold pieces.~
-@3212 = ~Here, take the coin then, but if I find out you've used it to buy another feast, I won't be as forgiving next time.~
+@3211 = ~You would do that? Thank you! The loan stands at a precise 300 gold coins.~
+@3212 = ~Here, take the coin then. But, if I find out you've used it to buy another feast, I won't be as forgiving next time.~
 @3213 = ~I don't have that much coin. Stay here until I can raise a bit more.~
 @3214 = ~That's a bit too steep for me. Sorry, Carth, it's nothing personal. (Snap his neck.)~
 @3215 = ~Ok. I'll stay right here until you return. Thank you!~
@@ -353,7 +360,7 @@
 @3624 = ~I'll come back another time.~
 @3625 = ~This text will increase your lockpicking skill by 10%. Are you sure this is the book you would like?~
 @3626 = ~Yes, I am sure.~
-@3627 = ~Let me see the list of books again.~
+@3627 = ~Let me see the list of texts again.~
 @3628 = ~Mask thanks you for your service and will share with you his favor.~
 @3629 = ~This text will increase your Find Traps and Set Traps skills by 10% each. Are you sure this is the book you would like?~
 @3630 = ~This text will increase your pickpocket skill by 10%. Are you sure this is the book you would like?~
@@ -485,22 +492,22 @@
 
 //h_flam2d.d......@4400 - @4599
 
-@4400 = ~Halt and go no further! You are in the presence of the Flaming Fist. We demand that you identify yourselves and the purpose of your travel.~
+@4400 = ~Halt and go no further! You stand before the Flaming Fist. We demand that you identify yourself and state the purpose of your travel.~
 @4401 = ~I don't care who you are. I'm not telling you my name nor where I am heading.~
 @4402 = ~My name is <CHARNAME>, and we are traveling to Nashkel to visit the carnival.~
 @4403 = ~We are just adventurers looking to explore the region.~
 @4404 = ~No, I don't think I'll be doing that. If you'll not step aside then draw steel and prepare to die!~
 @4405 = ~Don't get smart with me, girl. This is your last chance to comply, otherwise I will declare you an enemy of the Sword Coast.~
 @4406 = ~Don't get smart with me, boy. This is your last chance to comply, otherwise I will declare you an enemy of the Sword Coast.~
-@4407 = ~Hmm. Is that so? These roads are often frequented by bandits and the like. You would do well to watch yourself around here.~
-@4408 = ~Hold a moment. What is that you have there? Stay your weapons while I do a proper search upon your person.~
+@4407 = ~Hmm. Is that so? These roads are notorious for bandit attacks. You would do wise to exercise caution.~
+@4408 = ~Hold a moment. What is that in your possession? Stay your weapons while I conduct a thorough search.~
 @4409 = ~Now, now, there is no need for that. Allow me to pass and I'll be on my way.~
 @4410 = ~I have nothing but sundries and rations for our travels. Now please, let us continue on our way.~
-@4411 = ~This is black lotus! Explain yourselves, and do it quickly!~
+@4411 = ~This is black lotus! Explain yourself, and do it quick!~
 @4412 = ~What? How did that get in there? I bought some cooking spices from a merchant before we departed, he must have given me the wrong items.~
-@4413 = ~It is the finest lotus to be found in the Sword Coast. How about a sample, to allow us on our way?~
+@4413 = ~This is the finest lotus to be found in the Sword Coast. How about a little taste, to allow us on our way?~
 @4414 = ~Yes, I think that will do nicely. Move along then.~
-@4415 = ~Nice try, smuggler. You think me a fool then? I am the law in this region and I sentence you to death!~
+@4415 = ~You won't deceive me, smuggler. Do you take me for a fool? I am the enforcer of the law in this territory, and I pronounce your sentence, death!~
 @4416 = ~You damned fool! Men, we are under attack!~
 
 //h_galatd.d......@4600 - @4799
@@ -599,7 +606,7 @@
 @5612 = ~You fool, this is exactly why I employ sentry at my door. Guards protect me!~
 @5613 = ~Take the bloody necklace then you dumb brutes!~
 @5614 = ~Get out of my sight you dog! Rigaldo will get his payments.~
-@5615 = ~A peaceful solution that ends with robbery? Bah! I've never heard of such absurdity. Leave at once or I'll have my guards escort you by force.~
+@5615 = ~A peaceful solution that ends with robbery? Bah! I've never heard of such absurdity. Leave at once or I'll have my guards escort you out by force.~
 @5616 = ~Is there any way I could pay or trade you for it, or perhaps do something for you in return?~
 @5617 = ~I don't want to hurt you Gerard, but you'll soon leave me no choice.~
 @5618 = ~Do you think your guards stand any chance against me? If you don't hand over that necklace now, then I'll be forced to slaughter you all!~
@@ -651,26 +658,26 @@
 
 //h_injurd.d......@6400 - @6599
 
-@6400 = ~You there! You are in league with the Gorgon's Eye, are you not?~
-@6401 = ~Yes, I am. What can I do for you?~
+@6400 = ~You move in shadows, allied with the Gorgon's Eye, are you not?~
+@6401 = ~Indeed, I do. State your purpose.~
 @6402 = ~Who's asking?~
-@6403 = ~Sorry, you have the wrong person.~
-@6404 = ~I can't fault your cautiousness, yet I know who you are, <CHARNAME>.~
-@6405 = ~I am one of Baldwin's Snake Heads, a black ops squadron of his most trusted and covert spies.~
-@6406 = ~You look pretty roughed up. How are you even alive, yet alone talking?~
+@6403 = ~I think you are mistaken.~
+@6404 = ~I commend your caution, <CHARNAME>. Yet, as an ally, it is misplaced.~
+@6405 = ~I am one of Baldwin's Snake Heads, a blade enshrouded in darkness, privy to it's deepest mysteries.~
+@6406 = ~You look pretty roughed up. How are you even alive?~
 @6407 = ~What happened to you?~
 @6408 = ~There is a reason I was chosen for ths position.~
-@6409 = ~I had discovered a contigent of Shadow Thieves not far from here and was forced into action. I was able to slay them but as you can see it was at quite the expense to myself.~
-@6410 = ~Among their bloodied remains, I located this document with information regarding the client who hired the Shadow Thieves against us.~
-@6411 = ~You must bring this letter to Baldwin at once. Stop nowhere and tell no one else.~
+@6409 = ~I had discovered a contingent of Shadow Thieves and was compelled to intervine. Their demise came at great cost, yet the reward of information was invaluable.~
+@6410 = ~Amidst their remains, I unearthed a missive revealing the identity of the patron who commissioned the Shadow Thieves against us.~
+@6411 = ~You must deliver this correspondence to Baldwin, at once. Hesitate not, and divulge not a word to another.~
 @6412 = ~Alright, I'll go deliver the message now.~
-@6413 = ~What of your wounds? I can provide some first aid before bringing you back for proper healing.~
-@6414 = ~My injuries are far too severe. Even if I survive I will be broken and unable to resume my duty.~
-@6415 = ~There is one final task I ask of you. You must kill me here so that our enemies cannot get to me.~
+@6413 = ~And what of your wounds? Allow me to provide care before I can escort you for proper healing.~
+@6414 = ~My injuries are too severe. Even if I endure, I shall be fractured, unfit to resume my duty.~
+@6415 = ~With this, there is one final task I will ask of you. Kill me here, so that our enemies cannot get to me.~
 @6416 = ~I understand. Make you peace then.~
-@6417 = ~I won't kill you if there is a chance for you to be saved.~
+@6417 = ~I won't kill you, not if there's a chance for you to be saved.~
 @6418 = ~Farewell, <CHARNAME>.~
-@6419 = ~I will do it myself then. Farewell, <CHARNAME>.~
+@6419 = ~Nobility will not alter this course. I shall have to do it myself then. Farewell, <CHARNAME>.~
 
 //h_isleyd.d......@6600 - @6799
 
@@ -714,7 +721,7 @@
 @6802 = ~There's a good lass. Hurry up now.~
 @6803 = ~You're a monster!~
 @6804 = ~Here. Now go, please!~
-@6805 = ~Wha... What? Why would you do this? My husband beats me and he beats my son! I need this money so we can flee! Please.. Please don't do this!~
+@6805 = ~Wha... What? Why would you do this? My husband beats me and he beats my son! This gold is our only hope for escape! Please.. spare us this torment!~
 @6806 = ~Then surely you won't want him finding out. Hand them over and I'll be on my way.~
 @6807 = ~Well, that does change things. In good conscience I cannot subject you to that. However, I also cannot leave without those rings.~
 @6808 = ~You're an evil wretch you know that? Take the damned rings then and off to the nine hells with you!~
@@ -722,7 +729,7 @@
 @6810 = ~And I don't rightly care! I won't inform your husband of your deeds but if you dont give them to me then I'll bury your face in the dirt!~
 @6811 = ~I will not pay you for them. But perhaps I can find a way to help your son.~
 @6812 = ~If you can guarantee his safe passage then I suppose I could trade you the rings. I have a sister in Athkatla who is willing to take him in until I can afford my expense as well. I guess I have no choice but to trust you. Here are the rings then.~
-@6813 = ~Oh, err... Yes of course, I wasn't expecting you so soon. You look a little more brutish than was described.~
+@6813 = ~Oh, err... Yes of course, I wasn't expecting you so soon. You look a little more rough than was described.~
 @6814 = ~I am just weary from my travels, m'lady, please forgive my appearance.~
 @6815 = ~Well, know that I am quite embarrassed to be so dirty in front of someone as lovely as you.~
 @6816 = ~Yes, and with your name I was expecting to meet with a fish, but that isn't the case now is it?~
@@ -744,29 +751,33 @@
 @6832 = ~Alright, well maybe I'll go find your husband then and inform him of what is going on.~
 @6833 = ~*laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~
 @6834 = ~You know, I was worried for a moment that you weren't the one I was supposed to meet, but now I have no doubts. Here are your rings.~
-@6835 = ~Actually, may I ask a favor of you? I'm looking to discretely obtain passage to Athkatla for my son and I. If you know of anyone who could provide such a service, I would be eternally grateful.~
+@6835 = ~Actually, may I ask a favor of you? I'm looking to obtain discrete passage to Athkatla for my son and I. If you know of anyone who could provide such a service, I would be eternally grateful.~
 @6836 = ~Sure, I will ask around and look into it for you.~
-@6837 = ~Sorry but I don't really have the time for that right now.~
+@6837 = ~Sorry, but I don't really have the time for that right now.~
 @6838 = ~Oh, thank you! I'll still be here in the meantime, wandering about the farm.~
 @6839 = ~Oh, ok sorry. I didn't mean to trouble you. Take care.~
-@6840 = ~You came back. Have you found a way out for my son?~
+@6840 = ~You came back! Have you found a way out for us?~
 @6841 = ~I'm sorry but I haven't heard of anything just yet.~
 @6842 = ~I have something lined up for you in Beregost. Flee tonight with your son and you will be contacted when you are sighted within the city.~
 @6843 = ~Thank you, truly. Here, I want you to have something. I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
 @6844 = ~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~
 @6845 = ~Hello Karp. No need to be afraid. I know about the rings and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~
 @6846 = ~You must be Karp, yes? I have just finished my journey south from Ulgoth's Beard and I am here to collect the pair of rings I purchased.~
+@6847 = ~Excuse me, miss. Would you care to explain why you've illegally been selling items on the black market?~
+@6848 = ~Wh.. What? How do you know about that?~
+@6849 = ~*sigh* It is true. I'll admit it. It's because my husband, he... he beats me! He beats my son too! I'm selling these rings so I can find a way out for my boy!~
+@6850 = ~If I were able to find him safe passage would you be willing to trade me the rings?~
 
 //h_katred.d......@7000 - @7199
 
 @7000 = ~Isn't the Glimmerwood just beautiful?~
-@7001 = ~Oh, please help me! These woods are in grave danger!~
+@7001 = ~Oh, please, help me! These woods are in grave danger!~
 @7002 = ~Foul men have come to defile these ancient lands. They wish to destroy its trees and make it their personal hunting ground.~
 @7003 = ~I have fought them off as best I could, but I'm afraid I will soon be overpowered. Please adventurer, I beg you for your assistance!~
 @7004 = ~I will help protect your home. Where can I find those responsible?~
 @7005 = ~Sorry lady, but I was hired to remove you from the area. I'll advise you to leave peacefully, otherwise I will resort to violence.~
-@7006 = ~You would help these men destroy this forest for a few coin? Are all you outsiders guided by nothing but greed? It's sickening! *sigh* Fine, I will play your little game.~
-@7007 = ~If you would assist me instead, I can offer you an old and magical weapon amulet. Surely it is worth more than what those beasts have offered.~
+@7006 = ~You would aid these men for a handful of coin? Is greed the only guide for outsiders like you? It's revolting! Very well, I'll play your game.~
+@7007 = ~If you'd assist me instead, I can offer you an ancient and enchanted amulet. Surely it holds greater worth than what those beasts have offered.~
 @7008 = ~I was sent here to do a job and I mean to finish it. This is your final warning.~
 @7009 = ~You've got a deal. Where can I find these men?~
 @7010 = ~You monsters are all the same! I am not afraid to protect these lands with my life! Be warned, I am not without skill.~
@@ -781,9 +792,9 @@
 
 //h_lieded.d......@7200 - @7399
 
-@7200 = ~Oh, this is exciting isn't it! It's giving me quite the thrill.~
+@7200 = ~Oh, this is quite exhilarating, isn't it? It's sending shivers down my spine, stirring up a certain... appetite for more.~
 @7201 = ~Beat it, rookie. Come back when your abilities have been better tested.~
-@7202 = ~Riggy tells me you show some promise in the field. That is quite the praise coming from someone with his standing.~
+@7202 = ~Riggy tells me you show small promise in the field. Believe it or not, that is actually quite the praise coming from someone with his standing.~
 @7203 = ~I think it's time I properly introduce myself. My name is Liedel, and I am a purveyor of private contracts and bounties you won't find posted in the light of town.~
 @7204 = ~By "private contracts", do you really mean assassin-for-hire?~
 @7205 = ~Who is Riggy?~
@@ -805,12 +816,13 @@
 @7221 = ~The third bounty is for a courtesan here in Beregost, named Aisha. I'm absent all the details but it seems to be over a lovers quarrel or some such.~
 @7222 = ~She has no known family and doesn't have the means to get far on her own. She is most likely hiding out somewhere in the city.~
 @7223 = ~That is all I have for now. Return to me when you have made any progress.~
-@7224 = ~Back already, darling? Do you have any news for me?~
+
+@7224 = ~I was waiting for you, love. I'm all ears, ready to savor the secrets that dance upon your lips.~
 @7225 = ~I am here regarding the bounty on Carth.~
 @7226 = ~I am here regarding the bounty on Vapula.~
 @7227 = ~I am here regarding the bounty on Aisha.~
 @7228 = ~Nothing to report as of yet.~
-@7229 = ~Alright, I'm listening.~
+@7229 = ~Pray, what news have you surely uncovered for my eager ears?~
 @7230 = ~I killed him after I found him hiding out at the Friendly Arm Inn.~
 @7231 = ~Good work, <CHARNAME>. Here is you reward then, 500 gold coins.~
 @7232 = ~That bounty was recently pulled, it seems he was able to repay his debt.~
@@ -847,7 +859,7 @@
 @7263 = ~Gods, I get so bored around here, I don't know how much more of it I can take. Even Riggy's been all business lately so he's no help.~
 @7264 = ~What is it? Am I expected to bow in the presence of the new guildmaster?~
 @7265 = ~Oh, my. That was exhilarating! Poor Riggy though. It was clear he'd be overmatched, but that foolish pride of his...~
-@7266 = ~At any rate, I've decided that I will enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, <CHARNAME>.~
+@7266 = ~At any rate, I've decided to enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, <CHARNAME>.~
 
 //h_lotusd.D......@7400 - @7599
 
@@ -891,34 +903,34 @@
 
 //h_meredd.d......@7800 - @7999
 
-@7800 = ~<CHARNAME>! If you're not busy, may I ask a favor of you?~
+@7800 = ~<CHARNAME>! If you've a moment to spare, I have a little favor to ask...~
 @7801 = ~Of course, Meredia, what's wrong?~
-@7802 = ~I'm in a hurry so make it quick.~
-@7803 = ~Sorry, I don't have time right now.~
-@7804 = ~I am starting to worry for one of my girls, Ilena. She visited a client late last night and has still not yet returned.~
-@7805 = ~Could you check on her for me? She was meeting with a man named Isley at the house next door to Taerom's.~
-@7806 = ~Sure, I'll go check on her.~
-@7807 = ~Jerk.~
-@7808 = ~Thank you, <CHARNAME>. Please hurry, I am beginning to fear for her safety.~
+@7802 = ~I'm in a hurry, sweetie, so make it quick.~
+@7803 = ~I don't have time for this right now.~
+@7804 = ~I'm beginning to fret over Ilena, one of my girls. She had a rendezvous with a gentleman last night and has yet to return.~
+@7805 = ~Would you be a dear and check on her for me? The clients name was Isley, and she met him at the house next door to Taerom's.~
+@7806 = ~Of course. I'll go check on her.~
+@7807 = ~Oh, how charming.~
+@7808 = ~Thank you, my dear. I'm starting to fear for her safety.~
 @7809 = ~Have you brought any news of Ilena?~
-@7810 = ~Nothing new, yet.~
-@7811 = ~Isley attacked his wife and left her dying on the floor. I found this piece of cloth and a helmet inside the house.~
-@7812 = ~I'm sorry, Meredia. I was able to kill Isley for what he did, but not before he took Ilena's life.~
+@7810 = ~Nothing fresh, I'm afraid.~
+@7811 = ~Isley attacked his wife and left her gasping on the floor. I found this scrap of fabric and a helmet at the scene.~
+@7812 = ~Meredia, I'm sorry. I was able to take out Isley, but not before he took Ilena's life.~
 @7813 = ~That is the same color of Ilena's dress!~
-@7814 = ~But this fabric isn't right. This style of threading is more common among military uniforms! The helmet you found would substantiate that as well.~
-@7815 = ~This is not good. My only hope is that Ilena is safe and still alive. Isley probably fled like a coward after attacking his wife and he must have taken Ilena with him!~
-@7816 = ~If you can figure out what style of uniform this is then maybe you'll be able to find them!~
+@7814 = ~Wait... no. The fabric isn't right. This type of stitching is more akin to military garb. The helmet you found would suggest the same.~
+@7815 = ~This isn't good. I can only hope Ilena's still breathing, even if held captive by that wretch, Isley!~
+@7816 = ~If you can figure out style of uniform, you might just lead us to them.~
 @7817 = ~Ilena has returned safe and sound. You are an honorable <MANWOMAN>, <CHARNAME>.~
 @7818 = ~We have all pooled our gold together and wish you to have it as a reward.~
 @7819 = ~Thank you for everything you have done, truly.~
 @7820 = ~Ilena... I'm sorry.~
 @7821 = ~Thank you for doing what you could, <CHARNAME>.~
-@7822 = ~Welcome yourselves to the Gorgon's Den, where we offer a diverse and highly skilled staff ready to attend your every desire.~
+@7822 = ~Welcome yourselves to the Gorgon's Den. We offer a diverse and highly skilled staff ready to attend to your every desire.~
 @7823 = ~Our current rates are 40 gold for the hour. Guild members will pay half. Would you be interested in our services?~
 @7824 = ~No, not at this time.~
 @7825 = ~Yes, I think I would be.~
 @7826 = ~I'm looking into a man named Xevec, who may have used counterfeit gold at Gilbald's casino. Can you tell me anything more about him?~
-@7827 = ~Suit yourself. We'll be here when the urge strikes.~
+@7827 = ~We'll be here when the urge strikes.~
 @7828 = ~Very good. Right this way then and I will introduce you to the available whores this evening.~
 @7829 = ~I hope everything was to your satisfication. See us again soon, will you?~
 @7830 = ~Welcome, <CHARNAME>. Congratulations on becoming the new guildmaster. If you wish, you may use our services free of charge, of course.~
@@ -926,8 +938,8 @@
 @7832 = ~Not at this time.~
 @7833 = ~Yes, I know Xevec well. In fact, he spent quite some time with us just last night. What would you like to know?~
 @7834 = ~Did he say or do anything that was unusual last night?~
-@7835 = ~Can you tell me anything more specific about him?~
-@7836 = ~Can you check to see if this gold coin matches up with any of the ones he used here?~
+@7835 = ~Anythiung specific you can tell me about him?~
+@7836 = ~Can you check to see if this coin matches any he spent here?~
 @7837 = ~Do you know where I could find him?~
 @7838 = ~He wouldn't stop talking about a new job he was getting, that according to him, "Would set him up for life.".~
 @7839 = ~Whoever hired Xevec paid him a hefty sum up front. He decided to spend it here to celebrate his success.~
@@ -1026,7 +1038,7 @@
 @8617 = ~...~
 @8618 = ~<CHARNAME>?~
 @8619 = ~Baldwin, your guild betrays you. <CHARNAME>, Rhade, they have seen through your delusions and fight alongside us.~
-@8620 = ~As for the others, I give you this chance to join with me and strike down your master! He is only using you for his own selfish desires!~
+@8620 = ~As for the rest of you! I give you this chance to join with us and strike down your master! He is only exploiting you for his own selfish desires!~
 @8621 = ~<CHARNAME>, it's not true is it? How could you do this to your own guild!~
 @8622 = ~I knew I smelled somethin' funny on you when you first walked in here!~
 @8623 = ~If it weren't for Baldwin I'd still be out on the streets. I'll die before I let this guild fall into the hands of you lot!~
@@ -1065,44 +1077,45 @@
 //h_rigald.d......@9000 - @9199
 
 @9000 = ~Mind yourself now, or see you'll leave with less than you came.~
-@9001 = ~You must be one of Baldwin's new recuits then, aye? My name's Rigaldo and I'm the head pickpocket around here. I'll be your superior officer and I expect you to address me as such.~
-@9002 = ~You will be reporting to me for all of your guild assignments as they become available. My expectations are high and I trust all my rogues to deliver. Do you have any questions before we begin?~
+@9001 = ~You must be one of Baldwin's new recuits then, aye? Name's Rigaldo, head pickpocket in this den. I'll be your superior officer and I expect you to address me as such.~
+@9002 = ~You will be reporting to me for all of your guild assignments as they become available. I hold high expectations and expect my rogues to deliver. Do you have any questions before we begin?~
 @9003 = ~Why do you and Baldwin look like Shadow Thieves?~
 @9004 = ~What if I am tasked with doing something that I do not agree with?~
-@9005 = ~None, I eagerly await my first mission.~
-@9006 = ~And how would you know what a Shadow Thief looks like, eh?~
+@9005 = ~None. I eagerly await my first mission.~
+@9006 = ~And how, I wonder, have you become privy to the visage of a Shadow Thief?~
 @9007 = ~Only from books and tales of their exploits. I grew up studying in Candlekeep.~
-@9008 = ~I doubt any book would have reliable words on such a secretive organization, but I can't deny your perception. Indeed, Baldwin and I were once members of the Shadow Thieves, but we no longer share that affiliation.~
+@9008 = ~I doubt any book would have reliable words on such a secretive organization, but I can't deny your perception. Indeed, Baldwin and I were once bore the mantle of the Shadow Thieves, but our affiliations have long since diverged.~
 @9009 = ~I am ready to recieve my first mission.~
-@9010 = ~Any unwillingness to follow orders will result in the immediate conclusion of your enlistment.~
-@9011 = ~Excellent. I will be sending you on a trial run of sorts so that I can properly gauge your abilities.~
+@9010 = ~Then you will be banished from the guild. Or possibly put to death, depending on the infraction, or of Baldwin's mood.~
+@9011 = ~Excellent news. I will start you off with the scut-work so that I can properly evaluate your abilities.~
 @9012 = ~I can handle any test of yours. What is it you would have me do?~
 @9013 = ~On second thought, I don't really have time for this right now.~
-@9014 = ~There is a dealer of gems and other various trinkets who is currently vacating a room at Feldepost's Inn. He is on his way to the Nashkel Carnival to present his wares, so he won't be staying here for much longer.~
-@9015 = ~Our intel suggests he likes to keep his most prized possession on his person at all times. Your task is to go and relieve him of whatever that may be.~
+@9014 = ~There is a fence passing through our town who is in possession of an especially valuable diamond. He is on his way to meet a buyer at the Nashkel Carnival and won't be around here for long.~
+@9015 = ~He is currently staying in a room at Feldepost's Inn. Your task will be to infiltrate his chamber and steal the diamond. He will most likely carry it on his person.~
 @9016 = ~Sounds simple enough. Is there anything else that I should know?~
-@9017 = ~He enjoys his privacy above all else and won't have his guards accompanying him during his stay. This should be an easy in-and-out for any thief.~
+@9017 = ~His name is Zieke but he simply goes by, "The Traveler". A zealot for privacy, he's unlikely to have his guards accompanying him in the room. This should be an easy in-and-out for any thief.~
 @9018 = ~It won't be long before he leaves for the carnival, so best not to delay your efforts.~
-@9019 = ~Welcome back my little friends. How did you fair on your first deed?~
-@9020 = ~Well enough I'd say for such an easy task. I was able to procure this quite expensive looking diamond.~
+@9019 = ~Welcome back my little friend. How did you fair on your first deed?~
+@9020 = ~Well enough, I'd say. A minor skirmish with his bodyguards, but in the end I was successful in procuring the diamond.~
 @9021 = ~I have a few other things I need to do first.~
-@9022 = ~Yes, well, better to acquaint your feet to the water before diving in. Congratulations on completing your first mission! There's no better thrill than the rush of cutting a purse now is there?~
-@9023 = ~You have proven to possess the necessary skills to succeed on your own merits, and without these instincts, a thief is nothing.~
-@9024 = ~However, we do have certain tools we can use to enhance our capabilities. We don't depend on them, but instead use them to compliment our existing skills.~
-@9025 = ~With that being said, I shall reward you with this ring. It is from a series that I have crafted myself. When used properly, it can sharpen your sleight of hand and make easy work of your marks while out in the field.~
+@9022 = ~A little clumsy in the field but you handled yourself quite well, considering.~
+@9023 = ~Oh? You weren't aware I'd be watching you? Well not me personally, I have more important pursuits that demand my full attention.~
+@9024 = ~But I was told your work was reasonable and deserved of merit.~
+@9025 = ~Accept this ring as a token of your accomplishment. It is from a series of thieving attire that I crafted myself. You shall find it useful in your future endeavors of larceny.~
 @9026 = ~If you are ready to begin, I have another assignment for you.~
 @9027 = ~I am ready for my next mission.~
 @9028 = ~I am sure you're aware of the large manor here in northern Beregost, yes? Well, its proprietor Gerard Travenhurst pays us to ensure that his house remains safe and... unburgled.~
 @9029 = ~However, in a rather rash act of rebellion, Mr. Travenhurst has not only failed to pay us but has hired extra security at his premises.~
 @9030 = ~I will have you go down and straighten this man out. Demand he hand over his family pendant and resume his usual payments. Only then will we forgive his discourtesy.~
-@9031 = ~Why just his pendant, is it that expensive of a piece?~
-@9032 = ~I dislike the task, but I understand you have a reputation to maintain.~
-@9033 = ~What should I do if he refuses to hand it over?~
-@9034 = ~Good as done. I'll return when I have the pendant in my possession.~
+@9031 = ~Good as done. I'll return when I have the pendant in my possession.~
+@9032 = ~Why just his pendant, is it that expensive of a piece?~
+@9033 = ~What if he's playing hard to get?~
+@9034 = ~I dislike this task and want no part of it.~
 @9035 = ~The pendant's worth is measured in sentiment, as opposed to coin. This is his most prized family heirloom and is an obvious way to get our message across.~
 @9036 = ~I'll return when I have the pendant in my possession.~
-@9037 = ~*We* have a reputation to maintain. Or did you forget you are among our ranks? Off with you now, and don't return empty-handed.~
+@9037 = ~Then leave. If you're too much of a coward to handle our line of work then I won't waste my with you any longer.~
 @9038 = ~For a helpless noble, he does have quite the spirit. If he doesn't respond to threats, then violence may be the only answer.~
+
 @9039 = ~Well? What did good ol' Gerard have to say for himself? Were you able to acquire his pendant?~
 @9040 = ~Here it is. Gerard will be resuming his payments and his guards will no longer be an issue.~
 @9041 = ~I must admit, upon first glance I didn't take you for the ruffian sort, but you've certainly demonstrated otherwise. Here is your payment for the task.~
@@ -1110,40 +1123,43 @@
 @9043 = ~You may now speak with Liedel for a current list of all our active bounties. Other guild members may have odd jobs for you to pick up as well.~
 @9044 = ~Also, before you depart, Baldwin wishes a word with you. I wouldn't keep him waiting.~
 @9045 = ~Baldwin wishes a word with you. Finish your business with him and then return to me for your next assignment.~
-@9046 = ~Ah, my friends! Back for another venture in the pursuit of coin, are we? Well, a strange report from Nashkel just reached my ear and I'll be sending you down to investigate.~
+
+@9046 = ~Ah, my friends! Back for another venture in the pursuit of coin, are we? Well, I got wind of a right curious tale from Nashkel, and I'll be sending you to investigate.~
 @9047 = ~A lass by the name of Karp, has mysteriously found several magical items buried on her farmland this past season.~
 @9048 = ~Her latest find was a pair of rings that are to be sold to a man from Ulgoth's Beard, who is traveling down now as we speak.~
 @9049 = ~Our intelligence has reported back two things of note. First, she has been auctioning these items off through fences and smugglers, instead of selling them to storefronts on the up and up.~
 @9050 = ~Second, and giving probable cause for her secretive deals, she is withholding all of her findings from her husband, the poor sod.~
 @9051 = ~I will have you travel south and obtain these rings in a manner that is fitting to your judgement.~
 @9052 = ~You could extort the woman with threat of reveal to her husband, or you could put on a ruse, feigning as the man from Ulgoth's Beard. You could also just intimidate her into giving them up, if you've the brawn for it.~
-@9053 = ~If you wish to skip all the drudgery, then you could simply pick the rings off her as well.~
+@9053 = ~If you wish to skip all the drudgery, however, then you could always just pick the rings off her if you can.~
 @9054 = ~I'm not against using blackmail. If she's willing to engage in shady dealings behind her husband's back, then she may not be so innocent herself.~
 @9055 = ~Acting as the buyer sounds like good fun and a chance for me to use my charm and charisma.~
 @9056 = ~I think I'll just practice my thieving skills and steal the rings off her when she's not looking.~
 @9057 = ~I'm not sure what I will do yet until I speak with this Karp first.~
 @9058 = ~Yes, well, if you manage to procure both of theses rings before their eventual sale, then I will allow you to keep one as compensation for your efforts.~
 @9059 = ~If you're speaking to me then I assume you are ready to make your report and have the requested items in your possession.~
-@9060 = ~I do. I was able to procure both of her rings.~
+@9060 = ~I have both of the rings right here.~
 @9061 = ~Excellent! You have certainly earned your reward. As we agreed, you may keep one of them to do with as you wish.~
-@9062 = ~We are planning an extensive operation at the Naskel Carnival and I want you in charge of some preparatory work. I will be assigning you several different targets, so prepare yourself accordingly.~
-@9063 = ~There are two large tents where all their gambling winnings and licenses are stored. Your targets are the gamesmen inside who will all be armed with stun darts. Your task is to sneak in quietly and disarm them of their weapons.~
+
+@9062 = ~We are planning an extensive operation at the Naskel Carnival and I want you in charge of some of the preparatory work. I will be assigning you several different targets, so prepare yourself accordingly.~
+@9063 = ~There are two large tents where all their gambling winnings and licenses are stored. Your targets are the gamesmen inside who will all be armed with stun darts. Your task will be to sneak in quietly and disarm them of their weapons.~
 @9064 = ~Ariosh and his rogues will be stationed behind the westernmost tent, awaiting your arrival. After you've retrieved the weapons, head to the rendezvous point and distribute the darts among them.~
 @9065 = ~We will use their own weapons against them.~
-@9066 = ~They will grab the licenses and as much coin as they can carry, while you report back to me for further instruction. If everything goes accordingly, then we'll all be a lot richer by days end.~
+@9066 = ~They will grab the licenses and as much coin as they can carry while you report back to me for further instruction. If everything goes accordingly then we'll all be a lot richer by days end.~
 @9067 = ~What exactly do we need the gambling licenses for?~
 @9068 = ~Isn't that Shadow Thief territoy? What if they find out about what we are doing?~
-@9069 = ~Understood. I'll be back shortly.~
+@9069 = ~Understood. I'll head down there shortly.~
 @9070 = ~They will be used to expand and legitimize some of our operations in Amn, making their appropriation our prime objective.~
 @9071 = ~Isn't that in Shadow Thief territoy? What if they find out about what we are doing?~
-@9072 = ~They most certainly will, you can be sure of that. It is unnerving, I'll admit, but these orders come directly from Baldwin.~
+@9072 = ~They most certainly will, you can be sure of that. It is unnerving I'll admit, but these orders come directly from Baldwin.~
 @9073 = ~Don't worry yourself too much, though. The Shadow Thieves have surprisingly little stake in the gambling trade and the bulk of their forces tend to remain below the Cloud Peaks.~
 @9074 = ~As you can see we are entrusting you with more responsibility in this mission. This will certainly test your skills as a pickpocket and if successful, will increase your standing within the guild.~
 @9075 = ~This is a sizable operation and there is no room for error. Relieve every gamesman of their weapons before informing the men. They will take it from there.~
 @9076 = ~I am already aware of your deed and the outcome could not have been more favorable. With the gamesmen unarmed, the mission was a complete success.~
 @9077 = ~With the licenses in our possession, we can now begin preparations for our expansion further south. Your reward is well earned.~
+
 @9078 = ~No new leads as of yet. Ask around the guild, someone may have some work for you in the meantime.~
-@9079 = ~I have a small task lined up that I wish you to perform.~
+@9079 = ~Are you ready for your next mission? I have a small task lined up that I need you to perform.~
 @9080 = ~There is a bit of a local legend around here who goes by the name Borland of Beregost. He's known for opening his door to travelers seeking shelter and offering them a free place to rest.~
 @9081 = ~However, he is not as innocent as he may seem. He is using his home and hospitality as a front to sell black lotus and other spices to his guests.~
 @9082 = ~Your task is a simple one. If Borland wishes to continue his dealings then he has to pay us a cut of his profits.~
@@ -1159,6 +1175,7 @@
 @9092 = ~I knew I could count on you. Here is your reward for the deed.~
 @9093 = ~I knew I could count on you. Here is your reward for the deed and I'll even throw in a little extra for the lotus.~
 @9094 = ~Not the most ideal outcome but at least you didn't come back empty handed. Here is your reward for the lotus.~
+
 @9095 = ~I knew going after their casinos was a careless idea. Grab your weapons from Rhade and prepare yourselves. This will be a bloody night.~
 @9096 = ~Nice work taking care of those Shadow Thieves. I know first hand how troublesome they can be.~
 @9097 = ~I have a new mission for you that will involve smuggling some goods into Amn.~
@@ -1178,17 +1195,36 @@
 @9111 = ~Very impressive work, <CHARNAME>. I'll take the 3000 gold and return your 20%, with an extra 5% for your trouble, totalling 750 gold.~
 @9112 = ~Damn those corrupt bastards! Yet, either way, I applaud your quick thinking. At our price point we still made out fairly well. I'll take the 2400 gold and return your 20%, totalling 480 gold.~
 @9113 = ~So, you'll be our new leader then? Things were going pretty good until Baldwin's mania took over. Keep a level head and things will go just fine.~
+@9114 = ~Was I not clear the first time? Or have you grown a spine since we last spoke?~
+@9115 = ~I'll do it. I'll convince Gerard to give up his necklace.~
+@9116 = ~I'll be going now.~
+@9117 = ~Good. Now get to his estate and finish your orders.~
+@9118 = ~If you won't do it then I'll have to send Ariosh instead. And if that's the case Gerard's safety cannot be guarenteed. In fact, he'll probably be dead or crippled by the end of it.~
+@9119 = ~You would do this to an innocent man?~
+@9120 = ~Innocent? *smirks* You know nothing about this man's past do you? What his guards have gotten away with? The bribes that he has paid? How he obtained his fortunes? In some ways they're more monstrous than even our worst.~
+@9121 = ~I'm still not going to do it.~
+@9122 = ~Alright, alright. I'll visit Gerard then and make my own judgement.~
+@9123 = ~Just don't come back empty handed.~
+@9124 = ~By gods, you were right! That man was insufferable and his guards were just a couple of brutes!~
+@9125 = ~Not everyone is as innocent as you make think. Our profession thrives on secrets and you'll find the wealthy always have the most to hide.~
+@9126 = ~I'll go have a word with him.~
 
 //h_rogued.d......@9200 - @9399
 
 @9200 = ~First time I seen yer face down here.~
-@9201 = ~Keep it movin'. I've been snippin' purses here since afore ye was born.~
-@9202 = ~Watch yer back in there.~
-@9203 = ~Aye, <CHARNAME>. How ye be fairing lately?~
+@9201 = ~Snip, snip, snip. Watch your purse. Heh.~
+@9202 = ~Who are you supposed to be then, eh? Here to clean the latrines?~
+@9203 = ~Keep it movin'. I've been snippin' purses here since afore ye was born.~
+@9204 = ~Don't ask me for no favors. Not until I can test out yer skills meself.~
+@9205 = ~A sharp blade and a quick foot, that's all I need to rely on.~
+@9206 = ~Watch yer back in there.~
+@9207 = ~Aye, <CHARNAME>. How ye be fairing lately?~
+@9208 = ~Good to have ye on board.~
+@9209 = ~I'll never forget the look on them faces when they saw we had their darts!~
 
 //h_saradd.d......@9400 - @9599
 
-@9400 = ~Sorry, but I haven't the time nor desire to speak with you at present.~
+@9400 = ~I haven't the time nor desire to speak with you at present.~
 @9401 = ~Yes? What is it I can help you with?~
 @9402 = ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~
 @9403 = ~How did Baldwin become known as "The Butcher"?~
@@ -1297,6 +1333,10 @@
 //h_smuggd.d......@9600 - @9799
 
 @9600 = ~I pick things up and I put things down. Just not in the same spot is all.~
+@9601 = ~Spice, illegal weapons, priceless art? I can get them all.~
+@9602 = ~The first rule of smuggling... never get caught!~
+@9603 = ~Ever heard of the Onion Knight? Great smuggler he was.~
+@9604 = ~Over the mountains and through the woods, I can go anywhere to deliver your goods.~
 
 //h_thamud.d......@9800 - @9999
 
@@ -1341,16 +1381,16 @@
 @10203 = ~If you know my name then you know my crimes.~
 @10204 = ~I knew this day would come sooner or later. I am not afraid. If death is my final atonement then I will gladly give my life.~
 @10205 = ~So be it. Prepare yourself then, and I will send you to your god presently.~
-@10206 = ~Hold on now. What made you betray your guild in the first place?~
-@10207 = ~Someone had to stand up to the evil we were committing. I could not allow another innocent person to be killed or mugged over nothing but measly coin!~
-@10208 = ~I decided to turn on my guild, and was reborn under the light of Lathander.~
-@10209 = ~If I was able to find you, there will surely be others. They will not stop until you are dead.~
+@10206 = ~What drove you to betray your guild in the first place?~
+@10207 = ~Someone had to stand up to the evil we were committing. I couldn't abide another innocent life taken or robbed for mere coin!~
+@10208 = ~I chose to turn against my guild, and was reborn under the light of Lathander.~
+@10209 = ~If I managed to track you down, others will surely follow. They will not stop until you are dead.~
 @10210 = ~No more words, Vapula. Let us end this.~
-@10211 = ~Allow me to flee then! I will travel the southern roads and aid those in need. If you bring back my pendant, they will surely believe me dead.~
-@10212 = ~Alright, I will do as you ask. Good luck to you, Vapula, and safe travels.~
+@10211 = ~Permit me to flee, then! I'll journey the southern roads, aiding those in need. If you return my pendant, they'll assume I've met my end.~
+@10212 = ~Very well, I'll do it. Good luck to you, Vapula.~
 @10213 = ~Sorry, Vapula, but it's too risky to let you live.~
 @10214 = ~A trial by combat then, under the watchful eyes of the gods! Let them judge whose cause is more righteous!~
-@10215 = ~Thank you, friend. I will never forgive myself for my past sins, but at least I can dedicate my future to making ammends.~
+@10215 = ~Thank you, my friend. I'll never forgive myself for my past transgressions, but at least I can devote my future to making amends.~
 
 //h_xevecd.d......@10400 - @10599
 
@@ -1382,17 +1422,24 @@
 @10425 = ~That is great news! I knew you would clear my name.~
 @10426 = ~Well, not quite. Regardless of intent, you have used counterfeit gold and the punishment is death.~
 @10427 = ~I will still have to inform Gilbald of your involvement and he will decide your fate.~
-@10428 = ~I understand. Gilald is a reasonable man. When he hears the facts I'm sure he will show benevolence in his ruling.~
+@10428 = ~I understand. Gilbald is a reasonable man. When he hears the facts I'm sure he will show benevolence in his ruling.~
 
 //h_yumild.d......@10600 - @10799
 
-@10600 = ~There's a small tunnel in the trees behind Feldepost's! My friends and I like to throw rocks down there sometimes.~
-@10601 = ~One night, we got reeeally close and started hearing strange noises coming out of it. When we took a closer look, a bunch of shadowy ghosts came flying out! Now we're too scared to go back.~
+@10600 = ~Have you seen all those white trees behind Feldepost's? There's a haunted tunnel back there that I like to throw rocks at!~
+@10601 = ~What makes you think it's haunted?~
+@10602 = ~Piss off kid, I don't have time for this.~
+@10603 = ~I don't think it's haunted; I KNOW it's haunted! I've seen ghosts and shadows, flickering lights at night, strange noises, all the obvious signs of spirits!~
+@10604 = ~Heh. Thanks for the laugh, kid. Now beat it.~
+@10605 = ~Hmm. Maybe I'll go check it out.~
+@10606 = ~I'm not going anywhere near there!~
+@10607 = ~Don't say I didn't warn ya!~
+@10608 = ~Aww don't be a coward! I'ts FUN!~
 
 //h_zedadd.d......@10800 - @10999
 
 @10800 = ~I'm grabbin' myself a bow and heading for cover! I'm not much of the fighting type.~
-@10801 = ~*sniff* *sniff* Hmmm. You smell of books... and blood.~
+@10801 = ~You smell of books... and blood.~
 @10802 = ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
 @10803 = ~I'll keep that in mind.~
 @10804 = ~I'm looking for something to do. Do you have any work available?~
@@ -1520,7 +1567,7 @@
 @11006 = ~I could never trust anyone such as you, prepare to die!~
 @11007 = ~I'm working on a way to mimic the effects of a resurrection spell, while only using a fraction of the mental acuity involved in its normal spellcasting.~
 @11008 = ~The effects of this research would drastically lower the cost and effort that is typically involved with this type of service.~
-@11009 = ~Something that was once restricted to the rich and elite will now be available to even the poorest of citizens.~
+@11009 = ~Something that was once restricted to the rich and elite might now be available to even the poorest of citizens.~
 @11010 = ~If that is your goal, why not seek aid from the temples or infirmaries? Surely they would help with such a noble goal.~
 @11011 = ~I don't care about any of that. Time to die!~
 @11012 = ~Those imbeciles view my approach perverse and unorthodox. Yet, their unwillingness to justify my methods is making themselves those very things!~
@@ -1548,14 +1595,18 @@
 
 //h_kageid.d......@11200 - @11399
 
-@11200 = ~Are you in need of any ammunition?. I hand crafted everything here myself.~
+@11200 = ~Are you in need of any ammunition?. I have hand crafted everything myself.~
 @11201 = ~Not at this time.~
 @11202 = ~Sure, let me take a look.~
 @11203 = ~Right this way.~
 
 //h_opheld.d......@11400 - @11599
 
-@11400 = ~Careful! I have dangerous potions all about and if one were to spill the consequences would be severe.~
+@11400 = ~Careful! I have dangerous potions all about. If one were to spill the consequences could be severe.~
 @11401 = ~Sorry to have disturbed you.~
 @11402 = ~Can I take a look at your inventory?~
 @11403 = ~Alright, but be quick about it.~
+
+//h_zieke.d.......@11600 - @11799
+
+//@11600 = ~

@@ -10,7 +10,7 @@ LANGUAGE
 ~gorgon/lang/english/items.tra~
 ~gorgon/lang/english/names.tra~
 ~gorgon/lang/english/quests.tra~
-~gorgon/lang/english/dialog.tra~
+//~gorgon/lang/english/dialog.tra~
 
 BEGIN @1
 
@@ -41,7 +41,7 @@ COMPILE ~gorgon/dialog/h_lieded.d~
 COMPILE ~gorgon/dialog/h_eurynd.d~
 COMPILE ~gorgon/dialog/h_ariosd.d~
 COMPILE ~gorgon/dialog/h_bald2d.d~
-COMPILE ~gorgon/dialog/h_danikd.d~
+COMPILE ~gorgon/dialog/h_nagadd.d~
 COMPILE ~gorgon/dialog/h_gilbad.d~
 COMPILE ~gorgon/dialog/h_meredd.d~
 COMPILE ~gorgon/dialog/h_denebd.d~
@@ -50,6 +50,7 @@ COMPILE ~gorgon/dialog/h_richad.d~
 COMPILE ~gorgon/dialog/h_rogued.d~
 COMPILE ~gorgon/dialog/h_thamud.d~
 COMPILE ~gorgon/dialog/h_flam2d.d~
+COMPILE ~gorgon/dialog/h_flamed.d~
 COMPILE ~gorgon/dialog/h_quassd.d~
 COMPILE ~gorgon/dialog/h_carthd.d~
 COMPILE ~gorgon/dialog/h_vapuld.d~
@@ -77,7 +78,13 @@ COMPILE ~gorgon/dialog/h_isleyd.d~
 COMPILE ~gorgon/dialog/h_cmaidd.d~
 COMPILE ~gorgon/dialog/h_kageid.d~
 COMPILE ~gorgon/dialog/h_opheld.d~
-
+COMPILE ~gorgon/dialog/h_ziekdd.d~
+COMPILE ~gorgon/dialog/h_zieknd.d~
+COMPILE ~gorgon/dialog/h_zieked.d~
+COMPILE ~gorgon/dialog/h_zylard.d~
+COMPILE ~gorgon/dialog/h_prufld.d~
+COMPILE ~gorgon/dialog/h_courtd.d~
+COMPILE ~gorgon/dialog/interjections.d~
 
 // Appended Dialog
 
@@ -120,6 +127,10 @@ COMPILE ~gorgon/scripts/h_euryns.baf~
 COMPILE ~gorgon/scripts/h_rich2s.baf~
 COMPILE ~gorgon/scripts/h_liedes.baf~
 COMPILE ~gorgon/scripts/h_isleys.baf~
+COMPILE ~gorgon/scripts/h_zylars.baf~
+COMPILE ~gorgon/scripts/h_ziekns.baf~
+COMPILE ~gorgon/scripts/h_ziekds.baf~
+COMPILE ~gorgon/scripts/h_ziekes.baf~
 
 // Area Scripts
 
@@ -137,6 +148,9 @@ EXTEND_TOP ~%area_prefix%3200.bcs~ ~gorgon/scripts/h_highha.baf~
 EXTEND_TOP ~%area_prefix%4804.bcs~ ~gorgon/scripts/h_cmaida.baf~
 EXTEND_TOP ~%area_prefix%4800.bcs~ ~gorgon/scripts/h_nashka.baf~
 EXTEND_TOP ~%area_prefix%3302.bcs~ ~gorgon/scripts/h_galata.baf~
+EXTEND_TOP ~%area_prefix%3351.bcs~ ~gorgon/scripts/h_feld1a.baf~
+EXTEND_TOP ~%area_prefix%3352.bcs~ ~gorgon/scripts/h_feld2a.baf~
+EXTEND_TOP ~%area_prefix%4902.bcs~ ~gorgon/scripts/h_carn2a.baf~
 
 // New Areas
 
@@ -173,7 +187,7 @@ END
 
 COPY ~gorgon/portraits/h_ariosp.bmp~ ~override~
 COPY ~gorgon/portraits/h_baldwp.bmp~ ~override~
-COPY ~gorgon/portraits/h_danikp.bmp~ ~override~
+COPY ~gorgon/portraits/h_nagapp.bmp~ ~override~
 COPY ~gorgon/portraits/h_denebp.bmp~ ~override~
 COPY ~gorgon/portraits/h_eurynp.bmp~ ~override~
 COPY ~gorgon/portraits/h_gilbap.bmp~ ~override~
@@ -209,6 +223,7 @@ COPY ~gorgon/bam/h_slaveb.bam~ ~override~
 COPY ~gorgon/bam/h_slavdb.bam~ ~override~
 COPY ~gorgon/bam/h_spiceb.bam~ ~override~
 COPY ~gorgon/bam/h_sw1h3b.bam~ ~override~
+COPY ~gorgon/bam/h_blun1b.bam~ ~override~
 
 //   Add entrance to area file
 
@@ -243,9 +258,6 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
   END
 
 //   Add things to existing creatures
-
-COPY_EXISTING ~TRAVE2.cre~ ~override~                         // Traveler
-     ADD_CRE_ITEM ~h_misc04~ #0 #0 #0 ~IDENTIFIED~ ~INV~
 
 COPY_EXISTING ~NOBL10.cre~ ~override~                         // Gerard Travenhurst
      WRITE_ASCII 0x280 ~NOBL10~ #32
@@ -637,6 +649,12 @@ COPY ~gorgon/items/h_sw1h03.itm~ ~override/h_sw1h03.itm~      // Stealthwhisper
      SAY NAME2 @106
      SAY UNIDENTIFIED_DESC @107
      SAY DESC @108
+     
+COPY ~gorgon/items/h_blun01.itm~ ~override/h_blun01.itm~      // Blackjack
+     SAY NAME1 @109
+     SAY NAME2 @109
+     SAY UNIDENTIFIED_DESC @180
+     SAY DESC @180
 
 // New Creatures
 
@@ -692,7 +710,7 @@ COPY ~gorgon/cre/h_cour4c.cre~ ~override/h_cour4c.cre~        // Courtesan(4)(Ma
      SAY NAME1 @119
      SAY NAME2 @119
 
-COPY ~gorgon/cre/h_danikc.cre~ ~override/h_danikc.cre~        // Danika
+COPY ~gorgon/cre/h_nagacc.cre~ ~override/h_nagacc.cre~        // Naga
      SAY NAME1 @120
      SAY NAME2 @120
 
@@ -851,12 +869,33 @@ COPY ~gorgon/cre/h_zedacc.cre~ ~override/h_zedacc.cre~        // Zeda
 COPY ~gorgon/cre/h_zhontc.cre~ ~override/h_zhontc.cre~        // Zhontac
      SAY NAME1 @152
      SAY NAME2 @152
+     
+COPY ~gorgon/cre/h_ziekdc.cre~ ~override/h_ziekdc.cre~        // Zieke's Bodyguard(Day)
+     SAY NAME1 @153
+     SAY NAME2 @153
+     
+COPY ~gorgon/cre/h_zylarc.cre~ ~override/h_zylarc.cre~        // Zylark
+     SAY NAME1 @154
+     SAY NAME2 @154
+     
+COPY ~gorgon/cre/h_ziekec.cre~ ~override/h_ziekec.cre~        // Zieke
+     SAY NAME1 @155
+     SAY NAME2 @155
+     
+COPY ~gorgon/cre/h_zieknc.cre~ ~override/h_zieknc.cre~        // Zieke's Bodyguard(Night)
+     SAY NAME1 @153
+     SAY NAME2 @153
+     
+COPY ~gorgon/cre/h_pruflc.cre~ ~override/h_pruflc.cre~        // Pruflas
+     SAY NAME1 @156
+     SAY NAME2 @156
+
 
 // Journal Entries
 
 ADD_JOURNAL @200 @201 @202 @203
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
-            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331
+            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716

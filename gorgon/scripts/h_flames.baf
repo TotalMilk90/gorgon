@@ -12,3 +12,18 @@ THEN
 	RESPONSE #100
 		 EscapeArea()
 END
+
+IF
+	Global("h_SpawnZylark","GLOBAL",4)
+THEN
+	RESPONSE #100
+		 Wait(1)
+                 StartDialog("h_flamed",[PC])
+END
+
+IF
+	Global("h_SpawnZylark","GLOBAL",5)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

@@ -1,11 +1,11 @@
 The Gorgon's Eye
-V.3.3
+V.3.4
 
 =======
 Prequel
 =======
 After violating the terms of his separation from the Shadow Thieves, Baldwin
-"The Butcher" Glendale, fled north to Beregost, where he formed his own guild,
+"The Butcher" Glendale fled north to Beregost where he formed his own guild,
 the Gorgon's Eye. He pressed the local pickpockets and began amassing a vast
 network of contacts and spies. The townspeople have begun to show signs of
 unrest, however, and are making plans of their own to combat this new threat.
@@ -19,36 +19,48 @@ nothing to stand in his way.
 Mod Overview
 ============
 The Gorgon's Eye is a small content mod for BG:EE/SoD and EET that adds an
-underground thieves den into the town of Beregost. It contains 20 new quests,
-2 new areas(reused), dozens of new characters, a new store that buys stolen
-goods, a few new items and a very small item-upgrade. It can be accessed
-immediately after leaving Candlekeep and is open to all players, excluding
-those with a lawful-good alignment.
+underground thieves den into the town of Beregost. It contains new quests, 
+characters, stores and items. It can be accessed immediately after leaving
+Candlekeep and is open to all players, excluding those with a lawful-good
+alignment.
 
 The component "Add more pickpocketable items" will distribute random treasure
-to almost every generic npc. (Commoners, nobles, etc.) 
- 
-================
-Acknowledgements
-================
-This mod would not have been possible without DnD Detective's mod tutorial 
-videos on YouTube. They really helped me bridge the gap between knowing
-absolutely nothing about how to start a mod, to being able to create working
-content.
+to generic npcs. (Commoners, nobles, etc.)
 
-I also want to give a special thanks to CamDawg and the entire G3 community,
-who answered and provided reference for all my questions.
+=====
+NOTES
+=====
+This mod will surely play best as a non-good aligned, thief PC, however:
 
-BAMWorkshop: Erephine and Sam
-IESDP: igi and lynx
-Music: Hayato Matsuo, Masaharu Iwata and Hitoshi Sakimoto
-NearInfinity: Argent77, Jon Olav Hauglid and FredSRichardson
-Portraits: The NwN Vault  
-WeiDU: Wes Weimer, the bigg and Wisp
+-You don't need to be, or even have, a thief in your party to complete
+these missions, but it is recommended to at least have someone with the
+pickpocket skill.
+
+-Effort has gone into making satisfying options for good-aligned players. For
+role-play, if you are ok with your character joining a thieves guild with the
+intention of working for thieves, then I believe you can justify the options
+you are given for the rest of the mod.
+
+Examples: Some quests will involve stealing, extorting, smuggling and
+assassinating. However, they will typically be "bad" people themseleves, and if
+not, then you will have the option to help the person instead.
+
+
+
+
+
 
 ===============
 Version History
 ===============
+Version 3.4:
+-Added new encounters to, "T he Traveler's Gem" and, "Borland's Spicy Secret"
+-Added new dialog for most of Rigaldo's quests
+-Removed AC Bonus from Thieve's Compendium
+-Nerfed Stheno's Blade and Euryale's Promise
+-Added spells to Ophelia's store
+-Added more thieves/dialog in the guildhall
+
 Version 3.3:
 -Added pickpocket component
 -Nerfed/upgraded some items
@@ -77,6 +89,24 @@ Version 2: BETA
 
 Version 1: ALPHA
 -Initial Release
+
+================
+Acknowledgements
+================
+This mod would not have been possible without DnD Detective's mod tutorial 
+videos on YouTube. They really helped me bridge the gap between knowing
+absolutely nothing about how to start a mod, to being able to create working
+content.
+
+I also want to give a special thanks to CamDawg and the entire G3 community,
+who answered and provided reference for all my questions.
+
+BAMWorkshop: Erephine and Sam
+IESDP: igi and lynx
+Music: Hayato Matsuo, Masaharu Iwata and Hitoshi Sakimoto
+NearInfinity: Argent77, Jon Olav Hauglid and FredSRichardson
+Portraits: The NwN Vault  
+WeiDU: Wes Weimer, the bigg and Wisp
 
 =====
 Legal

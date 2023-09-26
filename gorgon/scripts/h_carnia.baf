@@ -11,6 +11,7 @@ END
 
 IF
          Global("h_ShadowWar","GLOBAL",5)
+         Global("h_SpawnQuass","GLOBAL",1)
 THEN
          RESPONSE #100
                   DayNight(MIDNIGHT)

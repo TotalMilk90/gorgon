@@ -1,44 +1,44 @@
 BEGIN h_ariosd
 
 IF ~GlobalLT("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN 1
-   SAY @1400 IF ~~ THEN EXIT
+   SAY ~We used to run these streets alone 'til Baldwin showed up. Got us set up with his guild and straightened us up right quick. Now we're taking twice the coin with half the heat!~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",0)~ THEN BEGIN CARNIVAL_0
-   SAY @1401
-       +~NumItemsParty("h_misc18",8)~+ @1402 GOTO CARNIVAL_5
-       +~Gender(Player1,FEMALE) NumItemsPartyLT("h_misc18",8)~+ @1403 GOTO CARNIVAL_1
-       +~Gender(Player1,MALE) NumItemsPartyLT("h_misc18",8)~+ @1403 GOTO CARNIVAL_2
-       +~NumItemsPartyLT("h_misc18",8)~+ @1404 GOTO CARNIVAL_3
+   SAY ~Aye, <CHARNAME>. We're on orders to await your signal. Ready to roll when you give the word.~
+       +~NumItemsParty("h_misc18",8)~+ ~Weapons secured, boys. Divy 'em up and prep for action.~ GOTO CARNIVAL_5
+       +~Gender(Player1,FEMALE) NumItemsPartyLT("h_misc18",8)~+ ~Just reporting in before we kick off. Stay on your toes.~ GOTO CARNIVAL_1
+       +~Gender(Player1,MALE) NumItemsPartyLT("h_misc18",8)~+ ~Just reporting in before we kick off. Stay on your toes.~ GOTO CARNIVAL_2
+       +~NumItemsPartyLT("h_misc18",8)~+ ~Err. What's the plan again?~ GOTO CARNIVAL_3
 END
 
 IF ~~ THEN BEGIN CARNIVAL_1
-   SAY @1405
+   SAY ~Copy that. Alright you men! You heard the lass. Stand fast 'til she brings back the weapons.~
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_2
-   SAY @1406
+   SAY ~Copy that. Alright you men! You heard the lad. Stand fast 'til she brings back the weapons.~
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_3
-   SAY @1407
+   SAY ~Gods, what was Rigaldo thinking sending us a rookie for this mission? Get in those tents, swipe the weapons off every gamesman, then return them to us. We'll handle the rest.~
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",1)~ THEN BEGIN CARNIVAL_4
-   SAY @1408
-       +~NumItemsParty("h_misc18",8)~+ @1409 GOTO CARNIVAL_5
-       +~NumItemsPartyLT("h_misc18",8)~+ @1404 GOTO CARNIVAL_3
-       +~NumItemsPartyLT("h_misc18",8)~+ @1410 EXIT
+   SAY ~Back already? What's the play?~
+       +~NumItemsParty("h_misc18",8)~+ ~Weapons secured, boys. Divy 'em up and prep for action.~ GOTO CARNIVAL_5
+       +~NumItemsPartyLT("h_misc18",8)~+ ~Err. What's the plan again?~ GOTO CARNIVAL_3
+       +~NumItemsPartyLT("h_misc18",8)~+ ~Just reporting in before we kick off. Stay on your toes.~ EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_5
-   SAY @1411
+   SAY ~Aye! Listen up you men! Grab your gear and move out! Let's teach these southern boys a right lesson about the Gorgon's Eye!~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildThieves","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",10)
@@ -47,32 +47,32 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_SpawnAriosh","GLOBAL",5)~ THEN BEGIN END_0
-   SAY @1412 IF ~~ THEN EXIT
+   SAY ~Welcome back, boss.~ IF ~~ THEN EXIT
 END
 
 CHAIN
    IF ~Global("h_SpawnAriosh","GLOBAL",2)~ THEN h_ariosd 0
-@1413
+~Baldwin! The Shadow Thieves have infiltrated the city! A dozen of their rank fight above us as we speak!~
    =
-@1414
+~Scores remain outside Beregost with Thamuz at its helm! They will be here by nightfall!~
    == h_baldwd
-@1415
+~So, they've finally decided to make their move now, have they? Men! Steady yourselves and clear for action!~
    =
-@1416
+~Ariosh! Mount the outer fortifications and activate the traps at the city's edge.~
    == h_ariosd
-@1417
+~Aye, Aye!~
    == h_baldwd
-@1418
+~Rhade! Spread our supplies throughout the guild. Send word to the Night Masks and any sell-swords lookin' for a payday. We're gonna need as many blades as we can get after tonight's bloodbath.~
    == h_eurynd
-@1419
+~Copy that.~
    == h_baldwd
-@1420
+~Rigaldo! Call our numbers back from duty and get your men blades for the grindstone.~
    == h_rigald
-@1421
+~Aye, sir!~
    == h_baldwd   
-@1422
+~<CHARNAME>, I will need you to eliminate the Shadow Thieves within the city while we prepare for the incoming siege.~
    =
-@1423
+~Grab your guild armaments from Rhade and then move out. Report back when you've purged the city of these rats.~
    DO ~
       SetGlobal("h_BaldwinQuest","GLOBAL",5)
       SetGlobal("h_SpawnAriosh","GLOBAL",3)

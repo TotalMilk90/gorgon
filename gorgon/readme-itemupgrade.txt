@@ -105,7 +105,7 @@ STATISTICS:
 -Increases number of attacks by 1
 
 -THAC0: +3
--Damage: 1d10+3, +3 poison
+-Damage: 1d10+3
 -Damage Type: Piercing
 -Speed Factor: 0
 
@@ -118,11 +118,10 @@ Kerykeion: Stheno's Blade (Katana)
 
 STATISTICS:
 -10% chance to stun target for half a round (save vs. spell)
--10% chance to confuse target for 2 rounds (save vs. spell)
--5% chance to deal an additional 5 acid damage
+-10% chance to deal an additional 5 acid damage
 
 -THAC0: +3
--Damage: 1d10 +3 +3 acid
+-Damage: 1d10 +3
 -Damage Type: Crushing
 -Speed Factor: 2
 
@@ -144,7 +143,7 @@ Detect Illusion: 10% bonus
 
 SECOND TIER: 50k each
 
-Armor Class/Saving Throws: +1 bonus
+Saving Throws: +1 bonus
 THAC0/Damage: +1 bonus
 Magic Resistance: 5% bonus
 Physical Resistances: 5% bonus

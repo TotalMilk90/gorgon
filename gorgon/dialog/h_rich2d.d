@@ -1,11 +1,11 @@
 BEGIN h_rich2d
 
 IF ~Global("h_SpawnRichard","GLOBAL",3)~ THEN BEGIN 1
-   SAY @8600 IF ~~ THEN GOTO 2
+   SAY ~<CHARNAME>! The plan was a failure. We must eliminate this abomination before it's too late! My rogues will aid you in securing the rest of the guild.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
-   SAY @8601
+   SAY ~If this creature should manage to escape, Faerun's fate will be sealed.~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnRichard","GLOBAL",4)
    SetGlobal("h_ShadowWar","GLOBAL",9)
@@ -16,23 +16,31 @@ END
 
 
 IF WEIGHT #-1 ~Dead("h_snak2c")~ THEN BEGIN 3
-   SAY @8602 IF ~~ THEN GOTO 4
+   SAY ~The Kerykeion's power must have been more potent than we foresaw, allowing him to transform into that... monstrosity.~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
-   SAY @8603 IF ~~ THEN GOTO 5
+   SAY ~Nevertheless, Baldwin now lies defeated, and the Kerykeion has disintegrated beyond repair.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
-   SAY @8604 IF ~~ THEN GOTO 6
+   SAY ~The final authentic fragment, however, has been kept in my possession, hidden for years.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
-   SAY @8605 IF ~~ THEN GOTO 7
+   SAY ~My brother has soiled any significance it once held. I will offer it to you as a token of gratitude for your assistance, and as an effort to move past our shared history.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-   SAY @8606
+   SAY ~The Gorgon's Eye guildhall is now yours, subservient only to the Shadow Thieves.~ IF ~~ THEN GOTO 8
+END
+
+IF ~~ THEN BEGIN 8
+   SAY ~I will appoint Procus as your lieutenant. Speak with him and he will attend to your affairs.~ IF ~~ THEN GOTO 9
+END
+
+IF ~~ THEN BEGIN 9
+   SAY ~Submit your dues and continue your duty. This will be a profitabe arrangement for us both. Good day.~
 IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",10)
    SetGlobal("h_GuildMusic","GLOBAL",4)
@@ -44,57 +52,71 @@ END
 
 CHAIN
      IF ~Global("h_BetrayBaldwin","GLOBAL",4)~ THEN h_rich2d 0
-@8607
-   == h_baldwd
-@8608
+~Baldwin, enough! Take hold of your senses and cease this folly at once!~
+   == h_bald2d
+~Ah, my dear brother, here to witness my ascent into godhood, are you? How considerate.~
+   == h_richad
+~Godhood? Are you mad! I've come to stop you, and to take ownership of the Kerykeion.~
+   =
+~Surrender it, and I will bring you in before the Shadowmaster. There may still be mercy.~
+   == h_bald2d
+~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp.~
+   =
+~And here you stand, offering me your dungeons... when I could have the world, instead!~
+   == h_richad
+~Do not let the pull of the Kerykeion consume you! Relieve yourself of its grasp, and we will somehow find a path back from this madness.~
+   == h_bald2d
+~Ah, the voice of reason speaks! But it's far too late for that, the power is mine now, and with it, I shall have my retribution.~
+   =
+~It was a dream we both shared once, do you remember? Or is even that lost to you now, along with your honor, after betraying your own brother!~
+   == h_richad
+~I have not forgotten. Yet, I cannot say the same for you.~
+   =
+~It is you who are lost, brother. Ensnared in the malevolent embrace of the Kerykeion, and from it, you've emerged a dark taint of delusion.~
+   =
+~You butcherd your kin. Cut them down like helpless dogs. There was no desire for retribtion in your eyes, only malice.~
+   == h_bald2d
+~You remain restrained by fear, lacking ambition, and that is why you will fail. You are still the same coward as you were on the day of banishment.~
+   =
+~Comrades, ready yourselves for battle! <CHARNAME>, protect me while I finish preparing the Kerykeion for fusion!~
+   =
+~...~
+   =
+~<CHARNAME>?~
    == h_rich2d
-@8609
-   == h_baldwd
-@8610
+~Baldwin, your guild betrays you. <CHARNAME> has seen through your delusions and fights alongside us.~
    =
-@8611
-   == h_rich2d
-@8612
+~Rhade, a plant in your organization since the dawning of the Gorgon's Eye.~
    =
-@8613
-   =
-@8614
-   == h_baldwd
-@8615
-   =
-@8616
-   =
-@8617
-   =
-@8618
-   == h_rich2d
-@8619
-   =
-@8620
+~As for the rest of you, I give you this chance to join with us and strike down your master! He is only exploiting you for his own selfish desires!~
    == h_zedadd
-@8621
+~<CHARNAME>, it's not true is it? How could you do this to your own guild!~
    =
-@8622
+~I knew I smelled somethin' funny on you when you first walked in here!~
    == h_ariosd
-@8623
+~If it weren't for Baldwin I'd still be out on the streets. I'll die before I let this guild fall into the hands of you lot!~
    == h_rigald
-@8624
+~You treacherous wretch! You dare bring our enemies to our very doorstep? You'll pay for this, mark my words.~
    =
-@8625
+~You were a decent footpad, <CHARNAME>, but now you've gone and double-crossed us. Won't be no redemption for that.~
    == h_lieded
-@8626
+~Finally, some action around here! Sorry, Baldwin, but I think it's time for me to switch things up a bit.~
    =
-@8627
+~Consider this my formal resignation from the Gorgon's Eye.~
    =
-@8628
+~I sensed you harbored secrets, <CHARNAME>, but Eury? That was beyond my reckoning.~
    == h_eurynd
-@8629
-   = 
-@8630
-   == h_baldwd
-@8631
+~Heh, I'll take that as a compliment.~
    =
-@8632
+~Shall we get to it then?~
+   == h_baldwd
+~It matters not how many of you turn coat against me. Your futile efforts have granted me ample time to complete my arcane preparations!~
+   =
+~You shall all kneel before me as I ascend to the echelons of godhood!~
+   =
+~Dark sisters, I free you from your bonds! Grant me your eternal power!~
+   =
+~AaaAAHHHH!!!~
       DO ~
          Kill("h_baldwc")
          CreateCreature("h_snak2c",[919.1086],S)

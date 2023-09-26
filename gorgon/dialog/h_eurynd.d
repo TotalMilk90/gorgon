@@ -1,43 +1,43 @@
 BEGIN h_eurynd
 
 IF ~True()~ THEN BEGIN 0
-   SAY @4200
-       ++ @4201 GOTO STORE_1
-       ++ @4202 EXIT
-       ++ @4203 GOTO UPGRADE_1
-       +~Global("h_GuildItems","GLOBAL",1)~+ @4204 GOTO ARMOR_2
-       +~PartyHasItem("h_misc03")~+ @4205 GOTO KERY_1
+   SAY ~I have a wide array of munitions for sale if you're interested in perusing my wares. Additionally, should you acquire any... liberated goods, I can help you locate interested buyers.~
+       ++ ~Sure, let me see what you have.~ GOTO STORE_1
+       ++ ~Do I have any equipment that you can upgrade?~ GOTO UPGRADE_1
+       +~Global("h_GuildItems","GLOBAL",1)~+ ~I am here to collect my guild armaments.~ GOTO ARMOR_2
+       +~PartyHasItem("h_misc03")~+ ~I have brought back what remains of the Kerykeion. Would you be able to repair it in any way?~ GOTO KERY_1
+       ++ ~I'll be leaving now.~ EXIT
 END
 
 IF ~~ THEN BEGIN STORE_1
-   SAY @4206
+   SAY ~Excellent, right this way.~
 IF ~~ THEN DO ~
    StartStore("h_rhasto",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN UPGRADE_1
-   SAY @4207
-       +~OR(4) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08") PartyHasItem("RING08_")~+ @4208 GOTO TORQUE_1
-       +~OR(3) PartyHasItem("h_dagg01") PartyHasItem("SW1H09") PartyHasItem("SW1H09_")~+ @4209 GOTO KUKRI_1
-       +~OR(2) PartyHasItem("RING21") PartyHasItem("HELM05")~+ @4210 GOTO COWL_1
-       +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ @4211 GOTO RING_1
-       +~PartyHasItem("h_misc06")~+ @4212 GOTO OGREBLADE_1
-       ++ @4213 EXIT
+   SAY ~Show me what you've brought. Keep in mind, there's a fee of 10,000 gold pieces for any enhancements.~
+       +~OR(4) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08") PartyHasItem("RING08_")~+ ~Could you do anything with this wizard's item?~ GOTO TORQUE_1
+       +~OR(3) PartyHasItem("h_dagg01") PartyHasItem("SW1H09") PartyHasItem("SW1H09_")~+ ~Could you do anything with this sword?~ GOTO KUKRI_1
+       +~OR(2) PartyHasItem("RING21") PartyHasItem("HELM05")~+ ~Could you do anything with this item I have that grants infravision?~ GOTO COWL_1
+       +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ ~Could you do anything with this thieving ring?~ GOTO RING_1
+       +~PartyHasItem("h_misc06")~+ ~Do you think you could forge anything out of this giant piece of metal?~ GOTO OGREBLADE_1
+       ++ ~I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN TORQUE_1
-   SAY @4214 IF ~~ THEN GOTO TORQUE_2
+   SAY ~I could combine the links of a Chainmail +3 with an Amulet of Metaspell Influence, an Amulet of Protection +1, the Ring of Wizardry, and the threads from a Robe of the Neutral Archmagi to create some type of necklace.~ IF ~~ THEN GOTO TORQUE_2
 END
 
 IF ~~ THEN BEGIN TORQUE_2
-   SAY @4215
-       +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ @4216 GOTO TORQUE_3
-       +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08_") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ @4216 GOTO TORQUE_3
-       ++ @4213 EXIT
+   SAY ~To perform the required alchemy, I would need the following reagants: 2 Potions of Genius, 2 Potions of Clarity, and 1 Diamond.~
+       +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO TORQUE_3
+       +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08_") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO TORQUE_3
+       ++ ~I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN TORQUE_3
-   SAY @4217
+   SAY ~Perfect. I have already made the preparations so the transformation should be instantaneous.~
 IF ~~ THEN DO ~
    TakePartyGold(10000)
    DestroyGold(10000)
@@ -63,18 +63,18 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KUKRI_1
-   SAY @4218 IF ~~ THEN GOTO KUKRI_2
+   SAY ~I could modify the Acid Kukri +1 by combining it with a Short Sword +2.~ IF ~~ THEN GOTO KUKRI_2
 END
 
 IF ~~ THEN BEGIN KUKRI_2
-   SAY @4219
-       +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ @4216 GOTO KUKRI_3
-       +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09_") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ @4216 GOTO KUKRI_3
-       ++ @4213 EXIT
+   SAY ~To perform the required alchemy, I would need the following reagants: 2 Antidotes, 1 Scroll of Melf's Acid Arrow, and 1 Sphene Gem.~
+       +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO KUKRI_3
+       +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09_") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO KUKRI_3
+       ++ ~I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN KUKRI_3
-   SAY @4217
+   SAY ~Perfect. I have already made the preparations so the transformation should be instantaneous.~
 IF ~~ THEN DO ~
    TakePartyGold(10000)
    DestroyGold(10000)
@@ -95,17 +95,17 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN COWL_1
-   SAY @4220 IF ~~ THEN GOTO COWL_2
+   SAY ~I could combine the Helmet of Infravision, a Ring of Infravision, and a Ring of Invisibility to create a hooded cowl.~ IF ~~ THEN GOTO COWL_2
 END
 
 IF ~~ THEN BEGIN COWL_2
-   SAY @4221
-       +~PartyHasItem("HELM05") PartyHasItem("RING21") PartyHasItem("RING05") NumItemsPartyGT("POTN10",1) PartyHasItem("SCRL1D") PartyHasItem("MISC27") PartyGoldGT(9999)~+ @4216 GOTO COWL_3
-       ++ @4213 EXIT
+   SAY ~I can combine the Ring of Minor Lockpicking. the Ring of Awareness, and the Ring of the Cutpurse into a single band that would still maintain all of their abilities.~
+       +~PartyHasItem("HELM05") PartyHasItem("RING21") PartyHasItem("RING05") NumItemsPartyGT("POTN10",1) PartyHasItem("SCRL1D") PartyHasItem("MISC27") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO COWL_3
+       ++ ~I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN COWL_3
-   SAY @4217
+   SAY ~Perfect. I have already made the preparations so the transformation should be instantaneous.~
 IF ~~ THEN DO ~
    TakePartyGold(10000)
    DestroyGold(10000)
@@ -125,17 +125,17 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN RING_1
-   SAY @4222 IF ~~ THEN GOTO RING_2
+   SAY ~I can combine the Ring of Minor Lockpicking. the Ring of Awareness, and the Ring of the Cutpurse into a single band that would still maintain all of their abilities.~ IF ~~ THEN GOTO RING_2
 END
 
 IF ~~ THEN BEGIN RING_2
-   SAY @4223
-       +~PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03") NumItemsPartyGT("POTN36",2) PartyHasItem("SCRL91") PartyHasItem("MISC45") PartyGoldGT(9999)~+ @4216 GOTO RING_3
-       ++ @4213 EXIT
+   SAY ~To perform the required alchemy, I would need the following reagants: 3 Potions of Master Thievery, 1 Scroll of Knock, and 1 Rogue Stone.~
+       +~PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03") NumItemsPartyGT("POTN36",2) PartyHasItem("SCRL91") PartyHasItem("MISC45") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO RING_3
+       ++ ~I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN RING_3
-   SAY @4217
+   SAY ~Perfect. I have already made the preparations so the transformation should be instantaneous.~
 IF ~~ THEN DO ~
    TakePartyGold(10000)
    DestroyGold(10000)
@@ -155,15 +155,15 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN OGREBLADE_1
-   SAY @4224 IF ~~ THEN GOTO OGREBLADE_2
+   SAY ~Interesting. It appears as if it were some type of weapon at one point. I can also detect a strong magical energy infused within it.~ IF ~~ THEN GOTO OGREBLADE_2
 END
 
 IF ~~ THEN BEGIN OGREBLADE_2
-   SAY @4225 IF ~~ THEN GOTO OGREBLADE_3
+   SAY ~Whatever material this is, it doesn't seem like it can be properly tempered without the use of powerful magic.~ IF ~~ THEN GOTO OGREBLADE_3
 END
 
 IF ~~ THEN BEGIN OGREBLADE_3
-   SAY @4226
+   SAY ~Allow me time to conduct some tests and I'll get back to you if anything comes of it.~
 IF ~~ THEN DO ~
    SetGlobal("h_OgreBlade","GLOBAL",1)
    TakePartyItem("h_misc06")
@@ -171,26 +171,26 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KERY_1
-   SAY @4227 IF ~~ THEN GOTO KERY_2
+   SAY ~Let me take a look at it.~ IF ~~ THEN GOTO KERY_2
 END
 
 IF ~~ THEN BEGIN KERY_2
-   SAY @4228 IF ~~ THEN GOTO KERY_3
+   SAY ~It doesn't appear functional in its current form, but I may be able to transfer some of its power into a different weapon.~ IF ~~ THEN GOTO KERY_3
 END
 
 IF ~~ THEN BEGIN KERY_3
-   SAY @4229 IF ~~ THEN GOTO KERY_4
+   SAY ~However, this material is completely foreign to me. I will need some time to conduct further testing.~ IF ~~ THEN GOTO KERY_4
 END
 
 IF ~~ THEN BEGIN KERY_4
-   SAY @4230
-       ++ @4231 DO ~ SetGlobal("h_KeryDart","GLOBAL",1)~ GOTO KERY_5
-       ++ @4232 DO ~ SetGlobal("h_KerySword","GLOBAL",1)~ GOTO KERY_5
-       +~Global("h_OgreBlade","GLOBAL",1)~+ @4233 DO ~ SetGlobal("h_KeryKatana","GLOBAL",1)~ GOTO KERY_5
+   SAY ~If I am able to find success in my experiments, which type of weapon would you prefer to be crafted?~
+       ++ ~Could you forge it into a throwing dart.~ DO ~ SetGlobal("h_KeryDart","GLOBAL",1)~ GOTO KERY_5
+       ++ ~Could you forge it into short sword.~ DO ~ SetGlobal("h_KerySword","GLOBAL",1)~ GOTO KERY_5
+       +~Global("h_OgreBlade","GLOBAL",1)~+ ~Could you forge it into a katana.~ DO ~ SetGlobal("h_KeryKatana","GLOBAL",1)~ GOTO KERY_5
 END
 
 IF ~~ THEN BEGIN KERY_5
-   SAY @4234
+   SAY ~I should be able to do that. But keep in mind I'll have no time frame on when it will be completed. There is truly no way of knowing. Continue on with your usual business and check back with me from time to time.~
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",6)
    SetGlobalTimer("h_KeryWeapon","GLOBAL",FIVE_DAYS)
@@ -199,14 +199,14 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryDart","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_6
-   SAY @4235
+   SAY ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into a deviously, deadly dart.~
 IF ~~ THEN DO ~
    SetGlobal("h_KeryDart","GLOBAL",2)
    GiveItemCreate("h_dart01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KerySword","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_7
-   SAY @4236
+   SAY ~Welcome back, <CHARNAME>. The process was a success and the Kerykeion piece has been transformed into a very stealthy blade.~
 IF ~~ THEN DO ~
    SetGlobal("h_KerySword","GLOBAL",2)
    GiveItemCreate("h_sw1h01",LastTalkedToBy,0,0,0)~ EXIT
@@ -214,22 +214,22 @@ END
 
 
 IF WEIGHT #-1 ~GlobalTimerExpired("h_KeryWeapon","GLOBAL") Global("h_KeryKatana","GLOBAL",1) GlobalGT("Chapter","GLOBAL",4)~ THEN BEGIN KERY_8
-   SAY @4236
+   SAY ~I was able to infuse the Kerykeion piece with the large chunk of metal you brought me. It resulted in this extremely powerful katana.~
 IF ~~ THEN DO ~
    SetGlobal("h_KeryKatana","GLOBAL",2)
    GiveItemCreate("h_sw1h02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF WEIGHT #-2 ~Global("h_BetrayBaldwin","GLOBAL",5)~ THEN BEGIN BETRAY_1
-   SAY @4237
-       ++ @4201 GOTO STORE_1
-       ++ @4202 EXIT
-       ++ @4203 GOTO UPGRADE_1
-       +~PartyHasItem("h_misc03")~+ @4238 GOTO KERY_1
+   SAY ~I'll be here for a little while longer to make sure the acquisition goes smoothly. Do you need any equipment in the meantime?~
+       ++ ~Sure, let me see what you have.~ GOTO STORE_1
+       ++ ~Do I have any equipment that you can upgrade?~ GOTO UPGRADE_1
+       +~PartyHasItem("h_misc03")~+ ~I have brought back what remains of the Kerykeion. Would you be able to repair it in any way?~ GOTO KERY_1
+       ++ ~I'll be leaving now.~ EXIT
 END
 
 IF ~~ THEN BEGIN ARMOR_2
-   SAY @4239
+   SAY ~Here, take these and prepare yourselves well for the coming skirmish. The Shadow Thieves are not untested in the ways of urban warfare.~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildItems","GLOBAL",2)
    GiveItemCreate("h_dagg01",LastTalkedToBy,0,0,0)
@@ -237,7 +237,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",6) Global("h_BetrayBaldwin","GLOBAL",2) Global("h_FakeKery","GLOBAL",1)~ THEN BEGIN BETRAY_0
-   SAY @4240
+   SAY ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",3)
    SetGlobal("h_GuildMusic","GLOBAL",3)
@@ -246,60 +246,60 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOBAL",0)~ THEN BEGIN BETRAY_1
-   SAY @4241
-       ++ @4242 GOTO BETRAY_3
-       +~Gender(Player1,FEMALE)~+ @4243 GOTO BETRAY_2
-       +~Gender(Player1,MALE)~+ @4243 GOTO BETRAY_2.5
+   SAY ~Keep your voice down and be smart. Are we on the same page?~
+       ++ ~So, it's you then. You're the Shadow Thieves plant!~ GOTO BETRAY_3
+       +~Gender(Player1,FEMALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2
+       +~Gender(Player1,MALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2.5
 END
 
 IF ~~ THEN BEGIN BETRAY_2
-   SAY @4244 IF ~~ THEN GOTO BETRAY_4
+   SAY ~There's a good lass. Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_2.5
-   SAY @4245 IF ~~ THEN GOTO BETRAY_4
+   SAY ~There's a good lad. Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_3
-   SAY @4246 IF ~~ THEN GOTO BETRAY_4
+   SAY ~I said keep your voice down! Now, listen up, we need to be quick.~ IF ~~ THEN GOTO BETRAY_4
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY @4247 IF ~~ THEN GOTO BETRAY_5
+   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion without finishing the proper modifications.~ IF ~~ THEN GOTO BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_5
-   SAY @4248
-       ++ @4249 GOTO BETRAY_6
-       ++ @4250 GOTO BETRAY_8
-       ++ @4251 GOTO BETRAY_9
-       ++ @4252 GOTO BETRAY_10
+   SAY ~When he does, the device will fail and should kill him instantly. Afterwards, we will assume control of the guild and you will recieve your reward.~
+       ++ ~What about the rest of the guildmates?~ GOTO BETRAY_6
+       ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
+       ++ ~I am ready to begin.~ GOTO BETRAY_9
+       ++ ~I need a little more time to prepare.~ GOTO BETRAY_10
 END
 
 IF ~~ THEN BEGIN BETRAY_6
-   SAY @4253
-       ++ @4254 GOTO BETRAY_7
-       ++ @4250 GOTO BETRAY_8
-       ++ @4251 GOTO BETRAY_9
-       ++ @4252 GOTO BETRAY_10
+   SAY ~They are a stubborn bunch, yet their loyalty to Baldwin remains in question. If they are smart, they will surrender. If not... then be prepared to fight.~
+       ++ ~I didn't want to kill everyone, I just wanted to stop Baldwin.~ GOTO BETRAY_7
+       ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
+       ++ ~I am ready to begin.~ GOTO BETRAY_9
+       ++ ~I need a little more time to prepare.~GOTO BETRAY_10
 END
 
 IF ~~ THEN BEGIN BETRAY_7
-   SAY @4255
-       ++ @4250 GOTO BETRAY_8
-       ++ @4251 GOTO BETRAY_9
-       ++ @4252 GOTO BETRAY_10
+   SAY ~It might be a little too late for that, I'm afraid. We have brought the Shadow Thieves into their home. That is not something they will easily overlook.~
+       ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
+       ++ ~I am ready to begin.~ GOTO BETRAY_9
+       ++ ~I need a little more time to prepare.~ GOTO BETRAY_10
 END
 
 IF ~~ THEN BEGIN BETRAY_8
-   SAY @4256
-       ++ @4249 GOTO BETRAY_6
-       ++ @4251 GOTO BETRAY_9
-       ++ @4252 GOTO BETRAY_10
+   SAY ~Then prepare yourselves and make your peace. Baldwin is not a man to be underestimated.~
+       ++ ~What about the rest of the guildmates?~ GOTO BETRAY_6
+       ++ ~I am ready to begin.~ GOTO BETRAY_9
+       ++ ~I need a little more time to prepare.~ GOTO BETRAY_10
 END
 
 IF ~~ THEN BEGIN BETRAY_9
-   SAY @4257
+   SAY ~Let us finish this then.~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnRichard","GLOBAL",1)
    SetGlobal("h_BetrayBaldwin","GLOBAL",4)
@@ -310,13 +310,13 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN BETRAY_10
-   SAY @4258
+   SAY ~Alright, but be quick about it. We can't wait for much longer.~
 IF ~~ THEN DO ~
    SetGlobal("h_StallEnding","GLOBAL",1)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOBAL",1)~ THEN BEGIN BETRAY_1
-   SAY @4259
-       ++ @4260 GOTO BETRAY_9
-       ++ @4261 GOTO BETRAY_10
+   SAY ~We can not stall for much longer. Have you finished making your preparations?~
+       ++ ~I am ready to begin.~ GOTO BETRAY_9
+       ++ ~I need a little more time to prepare.~ GOTO BETRAY_10
 END

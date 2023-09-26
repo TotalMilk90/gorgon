@@ -1,83 +1,89 @@
 BEGIN h_lieded
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
-   SAY @7200 IF ~~ THEN EXIT
+   SAY ~Oh, this is quite exhilarating, isn't it? It's sending shivers down my spine, stirring up a certain... appetite for more.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",0)~ THEN BEGIN 0
-   SAY @7201 IF ~~ THEN EXIT
+   SAY ~Well, look at you, a fresh face in our little den of shadows. Quite the promising sight, if I do say so.~  IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",1) Global("h_DeclineBounty","GLOBAL",0)~ THEN BEGIN 1
-   SAY @7202 IF ~~ THEN GOTO 2
+   SAY ~Riggy's been singing your praises, says you've shown some real promise in the field. High commendation, coming from a man with his stature.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
-   SAY @7203
-       ++ @7204 GOTO 3
-       ++ @7205 GOTO 2.5
-       ++ @7206 GOTO 4
-END
-
-IF ~~ THEN BEGIN 2.5
-   SAY @7207
-       ++ @7204 GOTO 3
-       ++ @7208 GOTO 4
+   SAY ~I believe it's high time we became better acquainted, darling. I'm Liedel. I deal in private contracts and bounties you won't find posted in the light of town.~
+       ++ ~Pleasure, Liedel. My name is <CHARNAME>. And speaking of names, who is this Riggy you mentioned?~ GOTO 5
+       ++ ~By "private contracts", do you really mean, assassin-for-hire?~ GOTO 6
+       ++ ~What current bounties do you have available.~ GOTO 7
+       ++ ~I'm not interested right now.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
-   SAY @7209
-       ++ @7210 GOTO 4
-       ++ @7205 GOTO 2.5
-       ++ @7211 GOTO DECLINE_0
-END
-
-IF ~~ THEN BEGIN DECLINE_0
-   SAY @7212
+   SAY ~Such a shame, love. Perhaps the shadows will call to you another time.~
 IF ~~ THEN DO ~
    SetGlobal("h_DeclineBounty","GLOBAL",1)~ EXIT
 END
 
-IF ~Global("h_DeclineBounty","GLOBAL",1)~ THEN BEGIN DECLINE_1
-   SAY @7213
-       ++ @7210 GOTO 4
-       ++ @7214 EXIT
-END
-
-IF ~~ THEN BEGIN 4
-   SAY @7215 IF ~~ THEN GOTO 5
+IF ~Global("h_DeclineBounty","GLOBAL",1)~ THEN BEGIN 4
+   SAY ~Back for more, I see. Have you come seeking more than just conversation, or is it the thrill of our banter that brings you back?~
+       ++ ~What current bounties do you have available.~ GOTO 7
+       ++ ~I'm not interested right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
-   SAY @7216 IF ~~ THEN GOTO 6
+   SAY ~*laughing* Oh, it's just my little pet name for our dear Rigaldo. How he fumes at it, which only makes it more delightful.~
+       ++ ~By "private contracts", do you really mean, assassin-for-hire?~ GOTO 6
+       ++ ~What current bounties do you have available.~ GOTO 7
+       ++ ~I'm not interested right now.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 6
-   SAY @7217 IF ~~ THEN GOTO 7
+   SAY ~Does it unsettle you, darling? Don't look so pathetic, most feel some hesitation at first, until seeing how alluring the trade can be.~
+       ++ ~Pleasure, Liedel. My name is <CHARNAME>. And speaking of names, who is this Riggy you mentioned?~ GOTO 5
+       ++ ~What current bounties do you have available.~ GOTO 7
+       ++ ~I'm not interested right now.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 7
-   SAY @7218 IF ~~ THEN GOTO 8
+   SAY ~Right down to business, love? Now, that's a trait I admire.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
-   SAY @7219 IF ~~ THEN GOTO 9
+   SAY ~Currently, I have three bounties waiting in the shadows, unclaimed.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
-   SAY @7220 IF ~~ THEN GOTO 10
+   SAY ~The first concerns a man named Carth. He dared to cross the Zhentarim, borrowing coin and failing to repay his debts in time. They've called for recompense, be it in gold or blood.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
-   SAY @7221 IF ~~ THEN GOTO 11
+   SAY ~Carth was last seen heading north, up the Coast Way. He's a hulking figure, ill-suited for the wilderness. Seek him in the surrounding inns or taverns, where he might seek refuge.~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11
-   SAY @7222 IF ~~ THEN GOTO 12
+   SAY ~The second contract is for a rogue by the name of Vapula Simberg. He was once a member of the Baldur's Gate thieves guild, but grew weary of the darkness.~ IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12
-   SAY @7223
+   SAY ~Vapula turned witness, betraying his former comrades and leading them to prisons and in the grip of hefty fines,~ IF ~~ THEN GOTO 13
+END
+
+IF ~~ THEN BEGIN 13
+   SAY ~Latest whispers suggest he's found sanctuary in piety, cloaked in newfound devotion. I recommend you scour the temples, for that's where his penance may unfold.~ IF ~~ THEN GOTO 14
+END
+
+IF ~~ THEN BEGIN 14
+   SAY ~Last up, a courtesan by the name Aisha. The details are scant, but it seems a lovers' dispute stirs the cauldron.~ IF ~~ THEN GOTO 15
+END
+
+IF ~~ THEN BEGIN 15
+   SAY ~Aisha bears no family name, nor the means to vanish in the dead of night. She is concealing herself somewhere within the city's limits, you can count on that.~ IF ~~ THEN GOTO 16
+END
+
+IF ~~ THEN BEGIN 16
+   SAY ~That is all I have for the present. Return to me once you've made your mark on the shadows, my dear. I eagerly await your return.~
 IF ~~ THEN DO ~
    SetGlobal("h_DeclineBounty","GLOBAL",2)
    SetGlobal("h_LiedelQuest","GLOBAL",2)
@@ -87,22 +93,22 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",2) GlobalLT("h_BountyNumber","GLOBAL",3)~ THEN BEGIN BOUNTY_1
-   SAY @7224
-       +~Global("h_CarthBounty","GLOBAL",1)~+ @7225 GOTO CARTH_1
-       +~Global("h_CarthBounty","GLOBAL",3)~+ @7225 GOTO CARTH_3
-       +~PartyHasItem("h_misc09")~+ @7226 GOTO VAPULA_1
-       +~Global("h_AishaBounty","GLOBAL",4)~+ @7227 GOTO AISHA_3
-       +~Global("h_AishaBounty","GLOBAL",5)~+ @7227 GOTO AISHA_1
-       ++ @7228 EXIT
+   SAY ~You have my attention, love. I'm ready to savor the secrets that dance upon your lips.~
+       +~Global("h_CarthBounty","GLOBAL",1)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_1
+       +~Global("h_CarthBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_3
+       +~PartyHasItem("h_misc09")~+ ~I am here regarding the bounty on Vapula.~ GOTO VAPULA_1
+       +~Global("h_AishaBounty","GLOBAL",4)~+ ~I am here regarding the bounty on Aisha.~ GOTO AISHA_3
+       +~Global("h_AishaBounty","GLOBAL",5)~+ ~I am here regarding the bounty on Aisha.~ GOTO AISHA_1
+       ++ ~Nothing to report yet.~ EXIT
 END
 
 IF ~~ THEN BEGIN CARTH_1
-   SAY @7229
-       ++ @7230 GOTO CARTH_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I found him stuffing his face at the Friendly Arm. Tell the Zhents his debt was paid with blood.~ GOTO CARTH_2
 END
 
 IF ~~ THEN BEGIN CARTH_2
-   SAY @7231
+   SAY ~That I will, my capable companion. Here is the reward for the bounty, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_CarthBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -112,7 +118,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN CARTH_3
-   SAY @7232
+   SAY ~Well, it seems the Incredible Carth was able to settle his debt after all. It's not often our bounties find a way out.~
 IF ~~ THEN DO ~
    SetGlobal("h_CarthBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -120,16 +126,16 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN VAPULA_1
-   SAY @7229
-       ++ @7233 GOTO VAPULA_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I tracked him down to the Temple of Lathander and dealt him a swift blow. Here's his pendant as confirmation.~ GOTO VAPULA_2
 END
 
 IF ~~ THEN BEGIN VAPULA_2
-   SAY @7234 IF ~~ THEN GOTO VAPULA_3
+   SAY ~The burning sun of the morning lord, how grotesque. The pendant bears the weight of authenticity, however. Excellent work, darling.~ IF ~~ THEN GOTO VAPULA_3
 END
 
 IF ~~ THEN BEGIN VAPULA_3
-   SAY @7231
+   SAY ~Another chapter closed in our shadowed tale. Here is the standard fee, five-hundred gold coins.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    AddJournalEntry(@418,QUEST_DONE)
@@ -140,12 +146,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN AISHA_1
-   SAY @7229
-       ++ @7235 GOTO AISHA_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I found her holed up at the Red Sheaf. Now she's full of holes at the Red Sheaf.~ GOTO AISHA_2
 END
 
 IF ~~ THEN BEGIN AISHA_2
-   SAY @7231
+   SAY ~I see you've a knack for tying up loose ends. Here's the prize, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -155,7 +161,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN AISHA_3
-   SAY @7236
+   SAY ~A change of heart from poor Amrius. He has decided to rescind the bounty, and as such, is no longer available.~
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -163,7 +169,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",2) Global("h_BountyNumber","GLOBAL",3)~ THEN BEGIN MIDDLE_0
-   SAY @7237 IF ~~ THEN EXIT
+   SAY ~Well, it seems the shadows have taken a brief respite from our dance. How utterly boring. Perhaps you could find a way to... entertain me, dear companion?~ IF ~~ THEN EXIT
 END
 
           ///////////////////////////////////
@@ -172,45 +178,45 @@ END
 
 
 IF ~Global("h_LiedelQuest","GLOBAL",3)~ THEN BEGIN SECOND_0
-   SAY @7238
-       ++ @7239 GOTO SECOND_1
-       ++ @7211 EXIT
+   SAY ~Finally, a spark in the darkness. I was beginning to grow restless. I have a fresh list of bounties for you, if you're up for the task.~
+       ++ ~Let's hear what you've got for me.~ GOTO SECOND_1
+       ++ ~I'm not interested right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN SECOND_1
-   SAY @7240 IF ~~ THEN GOTO SECOND_2
+   SAY ~First on the list is runaway slave from Beregost, Europea. She managed to put the slip on her owner and fled off into the western woods.~ IF ~~ THEN GOTO SECOND_2
 END
 
 IF ~~ THEN BEGIN SECOND_2
-   SAY @7241 IF ~~ THEN GOTO SECOND_3
+   SAY ~If you're skillful enough to bring her back breathing, the reward is quite the handsome sum. But if not, her owner would settle for her slave-collar as a morbid keepsake.~ IF ~~ THEN GOTO SECOND_3
 END
 
 IF ~~ THEN BEGIN SECOND_3
-   SAY @7242 IF ~~ THEN GOTO SECOND_4
+   SAY ~Next, we have a peculiar case involving a dryad named Katreda. A pair of hunters are eager to carve a section out of Larswood for their hunting compound.~ IF ~~ THEN GOTO SECOND_4
 END
 
 IF ~~ THEN BEGIN SECOND_4
-   SAY @7243 IF ~~ THEN GOTO SECOND_5
+   SAY ~Katreda, however, is proving to be quite the thorn in their side. They'd appreciate it if you could convince her to cease, one way or another.~ IF ~~ THEN GOTO SECOND_5
 END
 
 IF ~~ THEN BEGIN SECOND_5
-   SAY @7244 IF ~~ THEN GOTO SECOND_6
+   SAY ~Now, for the peculiar request that's come our way, courtesy of a charming necromancer, Zhontac.~ IF ~~ THEN GOTO SECOND_6
 END
 
 IF ~~ THEN BEGIN SECOND_6
-   SAY @7245 IF ~~ THEN GOTO SECOND_7
+   SAY ~He has his eye on a fresh human specimen required to practice his enigmatic experiments on.~ IF ~~ THEN GOTO SECOND_7
 END
 
 IF ~~ THEN BEGIN SECOND_7
-   SAY @7246 IF ~~ THEN GOTO SECOND_8
+   SAY ~Coincidentally, one of his previous "volunteers" managed to escape, and now there's a bounty on Zhontac's head himself.~ IF ~~ THEN GOTO SECOND_8
 END
 
 IF ~~ THEN BEGIN SECOND_8
-   SAY @7247 IF ~~ THEN GOTO SECOND_9
+   SAY ~You have a choice. You can either help Zhontac with his quest, or eliminate him for his bounty. For the most lucrative outcome, I'd suggest aiding Zhontac first, then ensuring he meets his demise after securing your reward.~ IF ~~ THEN GOTO SECOND_9
 END
 
 IF ~~ THEN BEGIN SECOND_9
-   SAY @7223
+   SAY ~In either case, he can be found in his backyard on the eastern side of town, practicing his dark arts after nightfall.~
 IF ~~ THEN DO ~
    SetGlobal("h_LiedelQuest","GLOBAL",4)
    SetGlobal("h_SpawnEuropea","GLOBAL",1)
@@ -222,30 +228,30 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",4) GlobalLT("h_BountyNumber","GLOBAL",6)~ THEN BEGIN BOUNTY_2
-   SAY @7224
-       +~Global("h_CarthBounty","GLOBAL",1)~+ @7225 GOTO CARTH_1
-       +~Global("h_CarthBounty","GLOBAL",3)~+ @7225 GOTO CARTH_3
-       +~PartyHasItem("h_misc09")~+ @7226 GOTO VAPULA_1
-       +~Global("h_AishaBounty","GLOBAL",4)~+ @7227 GOTO AISHA_3
-       +~Global("h_AishaBounty","GLOBAL",5)~+ @7227 GOTO AISHA_1
+   SAY ~You have my attention, love. I'm ready to savor the secrets that dance upon your lips.~
+       +~Global("h_CarthBounty","GLOBAL",1)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_1
+       +~Global("h_CarthBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Carth.~ GOTO CARTH_3
+       +~PartyHasItem("h_misc09")~+ ~I am here regarding the bounty on Vapula.~ GOTO VAPULA_1
+       +~Global("h_AishaBounty","GLOBAL",4)~+ ~I am here regarding the bounty on Aisha.~ GOTO AISHA_3
+       +~Global("h_AishaBounty","GLOBAL",5)~+ ~I am here regarding the bounty on Aisha.~ GOTO AISHA_1
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-       +~PartyHasItem("h_misc11")~+ @7248 GOTO EURO_1
-       +~PartyHasItem("h_misc10")~+ @7248 GOTO EURO_3
-       +~Global("h_KatredaBounty","GLOBAL",2)~+ @7249 GOTO KATREDA_1
-       +~Global("h_KatredaBounty","GLOBAL",5)~+ @7249 GOTO KATREDA_3
-       +~Global("h_MagnusBounty","GLOBAL",3)~+ @7250 GOTO ZHONTAC_1
-       +~Global("h_KilledMagnus","GLOBAL",2)~+ @7250 GOTO ZHONTAC_3
-       +~Global("h_ZhontacBounty","GLOBAL",4)~+ @7250 GOTO ZHONTAC_5
-       ++ @7228 EXIT
+       +~PartyHasItem("h_misc11")~+ ~I am here regarding the bounty on Europea.~ GOTO EURO_1
+       +~PartyHasItem("h_misc10")~+ ~I am here regarding the bounty on Europea.~ GOTO EURO_3
+       +~Global("h_KatredaBounty","GLOBAL",2)~+ ~I am here regarding the bounty on Katreda.~ GOTO KATREDA_1
+       +~Global("h_KatredaBounty","GLOBAL",5)~+ ~I am here regarding the bounty on Katreda.~ GOTO KATREDA_3
+       +~Global("h_MagnusBounty","GLOBAL",3)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_1
+       +~Global("h_KilledMagnus","GLOBAL",2)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_3
+       +~Global("h_ZhontacBounty","GLOBAL",4)~+ ~I am here regarding the bounty on Zhontac.~ GOTO ZHONTAC_5
+       ++ ~Nothing to report as of yet.~ EXIT
 END
 
 IF ~~ THEN BEGIN EURO_1
-   SAY @7229
-       ++ @7251 GOTO EURO_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I have her here with me. A little worse for the wear but alive nonetheless.~ GOTO EURO_2
 END
 
 IF ~~ THEN BEGIN EURO_2
-   SAY @7252
+   SAY ~Ah, the poor thing. I'll inform the client. As for you, enjoy your payday, one-thousand gold coins for this one.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc11")
@@ -257,12 +263,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN EURO_3
-   SAY @7229
-       ++ @7253 GOTO EURO_4
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I found her lifeless form deep in the woods. Here is her slave collar for proof.~ GOTO EURO_4
 END
 
 IF ~~ THEN BEGIN EURO_4
-   SAY @7254
+   SAY ~Ah, the poor thing. I'll inform the client. Here, take it, five-hundred gold coins for the collar.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc10")
@@ -273,12 +279,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KATREDA_1
-   SAY @7229
-       ++ @7255 GOTO KATREDA_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~She would not back down, forcing my hand to bring about her permanent end.~ GOTO KATREDA_2
 END
 
 IF ~~ THEN BEGIN KATREDA_2
-   SAY @7256
+   SAY ~It seems Katreda's determination got the best of her. Another payout then, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -288,7 +294,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KATREDA_3
-   SAY @7236
+   SAY ~No prizemoney for this job, love. Comms with Asnable have gone silent. The dryad must have made her move. Were you involved in this somehow?~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -296,12 +302,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN ZHONTAC_1
-   SAY @7229
-       ++ @7257 GOTO ZHONTAC_2
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I fulfilled his request and opted to spare him so he can see his research through.~ GOTO ZHONTAC_2
 END
 
 IF ~~ THEN BEGIN ZHONTAC_2
-   SAY @7258
+   SAY ~Leaving moeny on the table doesn't suit your style, <CHARNAME>. Here's the usual rate then, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_MagnusBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -311,12 +317,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN ZHONTAC_3
-   SAY @7229
-       ++ @7259 GOTO ZHONTAC_4
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I worked his request, then disposed of him shortly after.~ GOTO ZHONTAC_4
 END
 
 IF ~~ THEN BEGIN ZHONTAC_4
-   SAY @7260
+   SAY ~Impressive work, darling. I'm thrilled for you. Here's the payout, one-thousand gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_KilledMagnus","GLOBAL",3)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -326,12 +332,12 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN ZHONTAC_5
-   SAY @7229
-       ++ @7261 GOTO ZHONTAC_6
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~I chose to claim his bounty outright, sparing myself from entertaining his peculiar request.~ GOTO ZHONTAC_6
 END
 
 IF ~~ THEN BEGIN ZHONTAC_6
-   SAY @7262
+   SAY ~Can't say I blame you on that one, love. Claim your prize, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_ZhontacBounty","GLOBAL",5)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -341,19 +347,19 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6)~ THEN BEGIN RID_0
-   SAY @7263 IF ~~ THEN EXIT
+   SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, <CHARNAME>?~  IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0
-   SAY @7264 IF ~~ THEN EXIT
+   SAY ~Well, well, look at you, <CHARNAME>. The new guildmaster, no less. I must admit, power does have its allure. Impressive work, love.~ IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",5)~ THEN BEGIN BETRAY_1
-   SAY @7265 IF ~~ THEN GOTO BETRAY_2
+   SAY ~Oh, my, that was quite the rush! It certainly ignites a certain... passion, doesn't it? Poor Riggy, though, and that stubborn pride of his.~ IF ~~ THEN GOTO BETRAY_2
 END
 
 IF ~~ THEN BEGIN BETRAY_2
-   SAY @7266
+   SAY ~At any rate, I've decided to enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, <CHARNAME>.~
 IF ~~ THEN DO ~
    EscapeArea()~ EXIT
 END

@@ -1,5 +1,5 @@
 @2=~Crystalline Torque~
-@3=~This necklace was forged using a variety of magical items with the purpose of enhancing the wearers clarity and intelligence.
+@3=~The Crystalline Torque is an elegant necklace, delicately wrought from silver and adorned with a single shimmering crystal. The crystal, nestled within a filigree of fine silverwork, emanates a soft, pulsating glow that seems to synchronize with the wearer's heartbeat. Adorning the amulet bestows the wearer with a heightened sense of focus and mental dexterity, by creating a harmonious blend that resonates with ones inner clarity.
 
 STATISTICS:
 
@@ -25,8 +25,8 @@ Launcher: Bow
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@109=~Blackjack~
-@180=~The blackjack is a favored tool among the Gorgon's Eye thieves guild. A weighted leather strap tightly belted around a wooden bat, it is used to deliver swift and silent knockout blows to unsuspecting victims.
+@6=~Blackjack~
+@7=~The blackjack is a favored tool among the Gorgon's Eye thieves guild. A weighted leather strap tightly belted around a wooden bat, it is used to deliver swift and silent knockout blows to unsuspecting victims.
 
 Combat abilities:
 - Deals non-lethal damage
@@ -43,8 +43,8 @@ Requires:
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@6=~Bolt of Acid +1~
-@7=~One drop of scorpion venom was applied directly to the tip of this bolt.
+@8=~Bolt of Acid +1~
+@9=~One drop of scorpion venom was applied directly to the tip of this bolt.
 
 STATISTICS:
 
@@ -55,8 +55,8 @@ Launcher: Crossbow
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@8=~Bolt of Acid +2~
-@9=~This bolt has been infused with both scorpion and snake venom.
+@10=~Bolt of Acid +2~
+@11=~This bolt has been infused with both scorpion and snake venom.
 
 STATISTICS:
 
@@ -67,48 +67,52 @@ Launcher: Crossbow
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@10=~The Thief's Compendium~
-@11=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to build immunities to various poisons that are commonly used by assassins.
+@12=~The Thief's Compendium~
+@13=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to build immunities to various poisons that are commonly used by assassins.
 
 STATISTICS:
 
 Constitution: Raised by 1 point permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@12=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively increase ones endurance, allowing rogues to stay in a single position for hours awaiting their prey.
+@14=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively increase ones endurance, allowing rogues to stay in a single position for hours awaiting their prey.
 
 STATISTICS:
 
 Strength: Raised by 1 point permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@13=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on many different sleight of hand techniques and maneuvers.
+@15=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on many different sleight of hand techniques and maneuvers.
 
 STATISTICS:
 
 Dexterity: Raised by 1 point permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@14=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on a wide array of topics meant to prepare a thief to work comfortably in any type of setting.
+@16=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on a wide array of topics meant to prepare a thief to work comfortably in any type of setting.
 
 STATISTICS:
 
 Intelligence: Raised by 1 point permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@15=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the art of tact and persuasion.
+@17=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the art of tact and persuasion.
 
 STATISTICS:
 
@@ -118,48 +122,53 @@ Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@16=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details of notable thieves throughout history, covering their use of judgement and best practices of their time.
+@18=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details of notable thieves throughout history, covering their use of judgement and best practices of their time.
 
 STATISTICS:
 
 Wisdom: Raised by 1 point permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 25~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@17=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the proper use of both physical and mental evasion.
+@19=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on the proper use of both physical and mental evasion.
 
 STATISTICS:
 
+Armor Class: Adds +1 bonus permanently
 Saving Throws: Adds +1 bonus permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@18=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different creatures weak points and how to strike them more efficiently.
+@20=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different creatures weak points and how to strike them more efficiently.
 
 STATISTICS:
 
 THAC0: Adds +1 bonus permanently
 Damage: Adds +1 bonus permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@19=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to resist different magical effects through the use of mental tricks.
+@21=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to resist different magical effects through the use of mental tricks.
 
 STATISTICS:
 
 Magic Resistance: Raised by 5% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@20=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist and overcome physical pain.
+@22=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist and overcome physical pain.
 
 STATISTICS:
 
@@ -167,12 +176,13 @@ Crushing Resistance: Raised by 5% permanently
 Slashing Resistance: Raised by 5% permanently
 Piercing Resistance: Raised by 5% permanently
 Missile Resistance: Raised by 5% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@21=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist the natural elements of the world.
+@23=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to train your mind and body to resist the natural elements of the world.
 
 STATISTICS:
 
@@ -181,75 +191,82 @@ Fire Resistance: Raised by 5% permanently
 Electricity Resistance: Raised by 5% permanently
 Acid Resistance: Raised by 5% permanently
 Poison Resistance: Raised by 5% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@22=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively locate and strike an enemy's weak spot while remaining unseen.
+@24=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to effectively locate and strike an enemy's weak spot while remaining unseen.
 
 STATISTICS:
 
 Backstab Multiplier: Raised by 1 permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@23=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details about the different tools and techniques used in the art of lockpicking.
+@25=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details about the different tools and techniques used in the art of lockpicking.
 
 STATISTICS:
 
 Open Locks: Raised by 10% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 5~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@24=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to spot, disarm and set many different types of traps.
+@26=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to spot, disarm and set many different types of traps.
 
 STATISTICS:
 
 Find Traps: Raised by 10% permanently
 Set Traps: Raised by 10% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 5~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@25=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different sleight of hand and pickpocketing techniques meant to keep marks unaware and distracted.
+@27=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on different sleight of hand and pickpocketing techniques meant to keep marks unaware and distracted.
 
 STATISTICS:
 
 Pick Pockets: Raised by 10% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 5~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@26=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details regarding stealth and how to be better remain hidden from sight and sound.
+@28=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details regarding stealth and how to be better remain hidden from sight and sound.
 
 STATISTICS:
 
 Move Silently: Raised by 10% permanently
 Hide In Shadows: Raised by 10% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 5~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@27=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to detect and distinguish illusions from reality.
+@29=~The Thief's Compendium is a series of well-established documentation meant for both professional and fledgling thieves. Written by the followers of Mask, the Lord of Shadows, it is used as a reference for all essential and traditional skills a thief may need to call upon while engaging in their typical activities. This particular section contains details on how to detect and distinguish illusions from reality.
 
 STATISTICS:
 
 Detect Illusion: Raised by 10% permanently
+
 Special: The book is consumed upon use
 Usage: Place into quick item slot
 
 Weight: 5~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@28=~Bullet of Acid +1~
-@29=~These bullets are made from hardened snake venom.
+@30=~Bullet of Acid +1~
+@31=~These bullets are made from hardened snake venom.
 
 STATISTICS:
 
@@ -260,8 +277,8 @@ Launcher: Sling
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@30=~Bullet of Acid +2~
-@31=~These bullets are made from hardened snake venom. The acid is so corrosive that it can pierce clean through most creatures.
+@32=~Bullet of Acid +2~
+@33=~These bullets are made from hardened snake venom. The acid is so corrosive that it can pierce clean through most creatures.
 
 STATISTICS:
 
@@ -272,9 +289,9 @@ Launcher: Sling
 
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@32=~Dagger~
-@33=~Acid Kukri +1~
-@34=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+@34=~Dagger~
+@35=~Acid Kukri +1~
+@36=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
 STATISTICS:
 
@@ -286,7 +303,7 @@ Requires:
  3 Strength
 
 Weight: 1~
-@35=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain.
+@37=~Although similiar a dagger, the kukri is used for more swift and effective slashing movements due to its uniquely desgined curvature. It is an exquisite weapon crafted by the skilled hands of the renowned Elven smiths of Evereska. Its blade gleams with an ethereal greenish tint, a testament to both its Elven craftsmanship and the arcane enchantments woven into its steel.
 
 STATISTICS:
 
@@ -304,8 +321,8 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@36=~Acid Kukri +2~
-@37=~Although similiar to daggers, kukris are used for more efficient slashing movements due to their uniquely desgined curvature. This particular blade has been coated in a deadly acid that causes agonizing and long lasting pain. This weapon was modified by the blacksmith Rhade, of the Gorgon's Eye thieves guild.
+@38=~Acid Kukri +2~
+@39=~Although similiar a dagger, the kukri is used for more swift and effective slashing movements due to its uniquely desgined curvature. It is an exquisite weapon crafted by the skilled hands of the renowned Elven smiths of Evereska. Its blade gleams with an ethereal greenish tint, a testament to both its Elven craftsmanship and the arcane enchantments woven into its steel. This weapon has been modified by the alchemist Rhade, who further enhanced the potency of the acid that coats the blade.
 
 STATISTICS:
 
@@ -323,9 +340,9 @@ Requires:
 
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@38=~Dagger~
-@39=~Dagger +2: Snake Venom~
-@40=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
+@34=~Dagger~
+@40=~Dagger +2: Snake Venom~
+@36=~The typical dagger has a pointed, usually double-edged blade, as opposed to a knife, which has a single edge and is a bit shorter.
 
 STATISTICS:
 
@@ -337,7 +354,7 @@ Requires:
  3 Strength
 
 Weight: 1~
-@41=~This is a modified version of the Dagger of Venom that was originally given to Baldwin "The Butcher" Glendale during his enlistment in the Shadow Thieves. He had many dangerous snakes under his care and would routinely extract their venom to coat his weapons. This dagger has received years of different vemon applications making it an extremely deadly weapon.
+@41=~This weapon is a lethal instrument, its blade glinting with a malevolent sheen. Originally known as the Dagger of Venom, a favored tool of assassins and spies within the Shadow Thieves, this weapon has been meticulously altered over the years to embody the nefarious legacy of Baldwin "The Butcher" Glendale. Under his employ in the Shadow Thieves, Glendale kept a sinister menagerie of dangerous serpents, routinely extracting their venom to coat his weapons. This dagger stands as a testament to the countless applications of this deadly concoction.
 
 STATISTICS:
 
@@ -356,7 +373,7 @@ Requires:
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @42=~Kerykeion: Medusa's Bite~
-@43=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Medusa flowing through it. It's shape resembles that of a sharp fang and when thrown will return safely back to the user.
+@43=~This dart was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Medusa flowing through it. It's shape resembles that of a sharp fang. Whenever this weapon is thrown it will magically return back to the user.
 
 STATISTICS:
 
@@ -389,7 +406,7 @@ Type: One-handed
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @46=~Cowl of Shadows~
-@47=~Magics, potions and alchemy were used to alter the shape and material of a variety of magical items to create this cowl. While worn, it sharpens the users eyesight to a state of near perfection. Illusions become revealed to you as mere parlor tricks and enemies become clear and visible no matter the time of night. It simultaneously helps the user to become hidden from sight themselves.
+@47=~Magics, potions and alchemy were used to alter the shape and material of a variety of magical items to create this cowl. While worn, it sharpens the users eyesight to a state of near perfection. Illusions become revealed to you as mere parlor tricks and enemies become clear and visible no matter the time of night.
 
 STATISTICS:
 
@@ -404,7 +421,7 @@ Equipped abilities:
 Weight: 2~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @48=~Broken Kerykeion Piece~
-@49=~This is a piece of the legendary staff, Kerykeion. Originally forged in the depths of the Underworld by the Gorgon Sisters, it made its way to Faerun sometime during the Time of Troubles.
+@49=~This is fragment of the Kerykeion, a legendary staff forged in the Underworld by the enigmatic Gorgon Sisters. It found its way to Faerun during the tumultuous Time of Troubles.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -423,7 +440,7 @@ Weight: 0~
 @56=~A massive piece of metal that vaguely resembles the shape of a sword.
 
 Weight: 10~
-@57=~This gigantic looking blade was forged by the Ogre; its form is too irregular and unrefined to be acknowledged as a sword. In its current shape this weapon is unusable.
+@57=~This gigantic looking blade was forged by the Ogre, yet its form is too irregular and unrefined to be acknowledged as a sword. In its current state this weapon is unusable.
 
 Weight: 10~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -463,7 +480,7 @@ Weight: 115~
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @72=~Fake Kerykeion Piece~
-@73=~This is a fake piece of the Kerykeion. If someone were to use this alongside a real one, it would instantly kill them.
+@73=~A skillfully crafted imitation, concealing a perilous enchantment. Forged by the cunning hands of the Shadow Thieves, this replica harbors a deadly secret. Its sole intent, to entice Baldwin into integrating it with the genuine Kerykeion shards, triggering a devastating trap that ensures his swift demise.
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -523,7 +540,11 @@ Weight: 1~
 STATISTICS:
 
 Weight: 0~
-@89=~This ring was made for fledgling thieves to help familiarize them with the art of lock-picking.
+@89=~Crafted by the skilled hands of the elusive locksmith known as Elara Shadowhand, the Ring of Minor Lockpicking serves as a patient mentor to those just beginning their journey into the shadows. Elara, herself a master of the art of lock manipulation, recognized the need for a tool that would gently guide fledgling thieves in honing their craft.
+
+Legend tells of Elara's secluded workshop, hidden away in the heart of a sprawling metropolis. There, she spent countless hours refining her techniques and studying the mechanisms of locks and keys. Her dedication culminated in the creation of the first Ring of Minor Lockpicking, a testament to her commitment to nurturing the skills of the next generation of rogues.
+
+The ring's enchantments are designed to provide subtle assistance to those seeking to perfect the delicate art of lock-picking. When worn, the wearer finds their fingers moving with an almost instinctual precision, allowing them to more deftly manipulate tumblers and pins. It is as though the ring imparts a gentle nudge in the right direction, teaching through touch and muscle memory.
 
 STATISTICS:
 
@@ -539,7 +560,11 @@ Weight: 0~
 STATISTICS:
 
 Weight: 0~
-@93=~The Ring of Awareness hieghtens its wearer's senses, making them more attentive to their surroundings.
+@93=~Forged by the enigmatic artificer known as Maelis Windwhisper, the Ring of Awareness is a testament to the art of foresight and meticulous craftsmanship. Maelis, renowned for his affinity for traps and mechanisms, sought to create a tool that would grant its wearer an unparalleled ability to perceive hidden dangers.
+
+Legend holds that Maelis spent years delving into ancient tomes of arcane engineering and studying the intricacies of traps in forgotten dungeons. Through his tireless efforts, he unearthed the secrets of imbuing ordinary objects with extraordinary properties. It was during a starlit night in the heart of the Moonwood that he completed the final enchantments on the first Ring of Awareness.
+
+The ring's power lies in its uncanny ability to heighten the senses of its wearer, particularly in the realm of trap detection. Those who don this ring find themselves endowed with a preternatural awareness of their surroundings, allowing them to discern even the most cunningly concealed mechanisms and snares.
 
 STATISTICS:
 
@@ -555,7 +580,11 @@ Weight: 0~
 STATISTICS:
 
 Weight: 0~
-@97=~This ring was made by Rigaldo of the Gorgon's Eye thieves guild. There are small needles sticking out of its edge that can easily cut through almost any purse.
+@97=~The Ring of the Cutpurse is a sinister accessory, its design betraying its nefarious purpose. Crafted with a keen eye for subterfuge, this ring aids its wearer in the art of pilfering. Its band is etched with delicate engravings reminiscent of shadowy alleyways and covert dealings, a testament to its clandestine origins.
+
+Forged in the shadowy forges of the underworld, it became a prized possession among those with a penchant for stealth and larceny. Crafted with a single purpose in mind, this ring is an essential tool for those who thrive in the shadows, seeking to lighten the purses of unsuspecting victims.
+
+The ring's power lies in its ability to enhance the dexterity and finesse of its wearer, enabling them to deftly navigate the crowded streets and swiftly relieve unsuspecting targets of their valuables. Those who possess this ring find themselves endowed with an uncanny ability to move in and out of crowds, their fingers dancing nimbly as they lighten the purses of the unwary.
 
 STATISTICS:
 
@@ -565,7 +594,7 @@ Equipped abilities:
 Weight: 0~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @98=~Looter's Band~
-@99=~The Looter's Band was forged from three different magical thieving rings. This is the perfect ring for any treasure hunter, regardless if they have good intentions or not.
+@99=~Crafted from the melding of three distinct magical thieving rings, its design is an elegant fusion of enchantments. When worn, it bestows its wearer with a heightened sense of awareness and an uncanny knack for uncovering hidden treasures. It provides the wearer with an uncanny ability to sense valuable items hidden away, whether in dusty tombs, ancient crypts, or the pockets of unsuspecting victims.
 
 STATISTICS:
 
@@ -599,7 +628,7 @@ Requires:
 Weight: 3~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @103=~Kerykeion: Stheno's Blade~
-@104=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned. This blade is coated in highly acidic ogre blood.
+@104=~This katana was made using a fragment of the Kerykeion, giving it unique and terrifying powers. It has the essence of the Gorgon Sister Stheno flowing through it. It was forged by combining the fragment with the original Ogre Blade. Its impact is so powerful that it leaves its targets stunned. This blade is also heavily coated in highly acidic ogre blood.
 
 STATISTICS:
 
@@ -632,7 +661,19 @@ Requires:
  3 Strength
 
 Weight: 1~
-@108=~A piece of the legendary long sword, "Stealthwhisper", wielded by the diety Mask. It was reforged into this dagger, keeping most of its innate power.
+@108=~The Lord of Shadows, Mask, is a deity of intrigue, secrets, and thievery, revered by rogues, spies, and those who dwell in the shadows. Throughout the realms, Mask's influence extends to the darkest corners of the world, where whispers of his name invoke both reverence and trepidation.
+
+The original Stealthwhisper was a longsword of unparalleled craftsmanship, imbued with the essence of its divine owner. Forged in the fiery depths of the divine realms, it was said to carry the very essence of stealth and cunning. Those who wielded it were rumored to become nigh invisible, slipping through shadows with an ethereal grace.
+
+Through the ages, the fate of Stealthwhisper remained shrouded in mystery, its whereabouts known only to the most dedicated of Mask's followers. It became a relic of mythic proportions, sought by those who yearned for the power to move through the world unseen.
+
+It was in an era of tumultuous upheaval that the longsword, Stealthwhisper, met its tragic fate. The details of its sundering remain obscure, lost in the annals of time. Some say it was shattered in a cataclysmic battle, while others believe it was deliberately divided, its fragments scattered across the realms.
+
+One such fragment found its way into the mortal realm, where it was discovered by a skilled artisan and blade master. Recognizing the divine essence within, the artisan undertook a daunting task: to reforge the fragment into a weapon that might harness a fraction of its former glory. Thus, Stealthwhisper was reborn.
+
+Though its form was altered, the dagger retained a portion of the original longsword's mystique. Those who wield it find themselves bestowed with a measure of Mask's elusive grace, enabling them to move through the world with an uncanny stealth. Shadows seem to embrace them, granting an almost supernatural ability to evade detection.
+
+Stealthwhisper serves as a testament to the enduring power of Mask and the indomitable spirit of those who seek to harness the shadows. For those who dare to wield it, it offers a tantalizing taste of the divine, a reminder that even fragments of the gods can hold unimaginable power.
 
 STATISTICS:
 
@@ -650,3 +691,16 @@ Requires:
  3 Strength
 
 Weight: 1~
+
+@109=~Noble Coin Purse~
+@110=~These elegant coin purses are finely crafted from rich, embroidered silk, showcasing the mark of Waterdeep's nobility. With a sturdy clasp of polished silver, they are designed to securely hold a significant amount of coins. A symbol of affluence and prestige, these purses are a coveted accessory for those with discerning tastes in both fashion and wealth. Remarkably, despite the weight of their contents, the pouch possesses a subtle magical enchantment, allowing it to feel almost weightless when carried. This added convenience makes it a prized possession for any astute collector or cunning rogue.
+
+Weight: 0~
+
+@111=~Gorgon's Eye Coffer~
+@112=~This sack, woven from shadowy fibers, conceals a trove of contraband. Its contents, shimmering with a dark allure, hint at the illicit treasures within. Crafted with meticulous skill by the skilled hands of the Gorgon's Eye, these sacks are not merely containers, but symbols of the guild's expertise in the art of stealth and subterfuge. Infused with enchantments of concealment, they ensure the safety of their contents, allowing them to pass undetected through the keenest of eyes. When the time comes, the sacks are swiftly retrieved, and their spoils reap the rewards of the Gorgon's Eye's shadowy endeavors. Each one is a testament to the guild's mastery over the underworld, and a reminder to all who cross their path that some treasures are best left untouched.
+
+Weight: 3~
+
+@113=~Forged Letter~
+@114=~This carefully crafted letter bears the insignia of the City Watch, complete with official-looking seals and signatures. It commands the traitor to meet at the southern fountains at nightfall for what appears to be an important rendezvous.~

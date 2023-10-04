@@ -1,0 +1,43 @@
+IF
+         See([PC])
+         PartyHasItem("h_misc21")
+         Global("h_ChanceToRun","GLOBAL",0)
+         Global("h_CaughtbyWatch","GLOBAL",0)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_citywd",[PC])
+END
+
+IF
+         Global("h_ChanceToRun","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(5)
+                  SetGlobal("h_ChanceToRun","GLOBAL",2)
+END
+
+IF
+         See([PC])
+         Global("h_ChanceToRun","GLOBAL",2)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  StartDialog("h_citywd",[PC])
+END
+
+IF
+         Global("h_CaughtByWatch","GLOBAL",1)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Enemy()
+END
+
+IF
+         GlobalGT("h_ArioshQuest","GLOBAL",7)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+END

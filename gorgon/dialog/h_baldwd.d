@@ -5,7 +5,7 @@ IF WEIGHT #-1 ~Alignment(Player1,LAWFUL_GOOD)~ THEN BEGIN 0
 END
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN JOIN_0
-   SAY ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one... <CHARNAME>, is it?~
+   SAY ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one. <CHARNAME>, is it?~
        ++ ~Another assassin then? You're not the first to threaten my life only to forfeit their own.~ GOTO JOIN_1
        ++ ~How did you come by my name? Who are you?~ GOTO JOIN_2
        ++ ~<CHARNAME>? Never heard of 'em. Now, if you'll excuse me, I must be going.~ GOTO JOIN_15
@@ -38,7 +38,7 @@ END
 IF ~~ THEN BEGIN JOIN_7
    SAY ~I extend to you an offer to join us, if ambition and coin align with your interests.~
        ++ ~I thought Ravenscar controlled the whole of the Sword Coast?~ GOTO JOIN_8
-       ++ ~What might I gain from joining your guild?~ GOTO JOIN_10
+       ++ ~What would I gain from joining your guild?~ GOTO JOIN_10
        ++ ~What manner of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_17
        ++ ~I don't know if I can trust you, but if the coin is right, I'm in.~ GOTO JOIN_17
@@ -48,7 +48,7 @@ END
 IF ~~ THEN BEGIN JOIN_8
    SAY ~Oh my, quite a surprise that you would be so informed. A refreshing contrast to the usual drab I am forced to deal with. Ravenscar's influence does leave the walls yes, to be sure, but his jurisdiction stays within.~
        ++ ~What of the Shadows Thieves? We are not far from Amn.~ GOTO JOIN_9
-       ++ ~What might I gain from joining your guild?~ GOTO JOIN_10
+       ++ ~What would I gain from joining your guild?~ GOTO JOIN_10
        ++ ~What manner of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_17
        ++ ~I don't know if I can trust you, but if the coin is right, I'm in.~ GOTO JOIN_17
@@ -58,7 +58,7 @@ END
 IF ~~ THEN BEGIN JOIN_9
    SAY ~Linvail's dogs don't typically sniff around this far north. I have staked my claim to this territory and none have sent challenge.~
        ++ ~I thought Ravenscar controlled the whole of the Sword Coast?~ GOTO JOIN_8
-       ++ ~What might I gain from joining your guild?~ GOTO JOIN_10
+       ++ ~What would I gain from joining your guild?~ GOTO JOIN_10
        ++ ~What manner of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_17
        ++ ~I don't know if I can trust you, but if the coin is right, I'm in.~ GOTO JOIN_17
@@ -81,7 +81,7 @@ END
 IF ~~ THEN BEGIN JOIN_12
    SAY ~Pickpocketing and persuading treasures away from unwilling hands. Engaging in covert heists and acquiring guarded intelligence. Many of these undertakings will demand shadows, while others, a bolder touch.~
        ++ ~I thought Ravenscar controlled the whole of the Sword Coast?~ GOTO JOIN_8
-       ++ ~What might I gain from joining your guild?~ GOTO JOIN_10
+       ++ ~What would I gain from joining your guild?~ GOTO JOIN_10
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_17
        ++ ~I don't know if I can trust you, but if the coin is right, I'm in.~ GOTO JOIN_17
        ++ ~Petty thievery is of no interest to me.~ GOTO JOIN_13
@@ -101,7 +101,7 @@ IF ~Global("h_DidNotJoin","GLOBAL",2)~ THEN BEGIN JOIN_14
 END
 
 IF ~~ THEN BEGIN JOIN_15
-   SAY ~I see. As you were then.~
+   SAY ~A pity. As you were then.~
 IF ~~ THEN DO ~
    SetGlobal("h_DidNotJoin","GLOBAL",1)~ EXIT
 END
@@ -113,15 +113,15 @@ IF ~Global("h_DidNotJoin","GLOBAL",1)~ THEN BEGIN JOIN_16
 END
 
 IF ~~ THEN BEGIN JOIN_17
-   SAY ~Excellent, welcome aboard then! Make yourself at home and all that. Or don't. It matters little to me.~ IF ~~ THEN GOTO JOIN_18
+   SAY ~Excellent, welcome aboard! Make yourself at home and all that. Or don't. It matters little to me.~ IF ~~ THEN GOTO JOIN_18
 END
 
 IF ~~ THEN BEGIN JOIN_18
-   SAY ~Rigaldo will be in charge of directing your assignments within the guild. Relay your questions to him, or even Saradin for that matter, if he'll stomach your company for long.~ IF ~~ THEN GOTO JOIN_19
+   SAY ~Rigaldo will be in charge of directing your assignments within the guild. Relay your questions to him, or even Saradin for that matter, if he'll stomach your company for long, that is.~ IF ~~ THEN GOTO JOIN_19
 END
 
 IF ~~ THEN BEGIN JOIN_19
-   SAY ~That will be all for now. I've other matters to attend.~
+   SAY ~That will be all for now. I've other matters to attend. Go forth and carry out your duty.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",1)
    SetGlobal("h_DidNotJoin","GLOBAL",3)
@@ -139,6 +139,7 @@ END
           ////////// Mage in the Mountains //////////
           ///////////////////////////////////////////
 
+//22
 
 IF ~Global("h_BaldwinQuest","GLOBAL",2)~ THEN BEGIN MAGE_0
    SAY ~Ah, <CHARNAME>. Just the person I wanted to see. Rigaldo speaks highly of your skills, and envisions a promising future for you within the guild.~ IF ~~ THEN GOTO MAGE_1
@@ -161,7 +162,7 @@ IF ~~ THEN BEGIN MAGE_4
 END
 
 IF ~~ THEN BEGIN MAGE_5
-   SAY ~We believe it made its way to Faerun during the Time of Troubles, but was detroyed shortly after and seperated in three fragments.~ IF ~~ THEN GOTO MAGE_6
+   SAY ~We believe it made its way to Faerun during the Time of Troubles, but was detroyed shortly after and seperated into three fragments.~ IF ~~ THEN GOTO MAGE_6
 END
 
 IF ~~ THEN BEGIN MAGE_6
@@ -231,7 +232,7 @@ IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_16
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc01")~ THEN BEGIN MAGE_17
-   SAY ~The Kerykeion! Hand it here, quickly!~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
+   SAY ~I can sense the aura of the Kerykeion around you. Hand it here, quickly.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_18
@@ -247,21 +248,21 @@ END
 
 IF ~~ THEN BEGIN MAGE_20
    SAY ~Then she was weak, and unworthy of its gift. There is a strength required to wield it, a mental fortitude to shield oneself from the darkness.~
-       +~GlobalGT("h_MageNumber","GLOBAL",2)~+ ~That is all I have to report.~ GOTO MAGE_23
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
 END
 
 IF ~~ THEN BEGIN MAGE_21
    SAY ~That is curious news, indeed. None but our own should have known of this endeavor.~
-       +~GlobalGT("h_MageNumber","GLOBAL",2)~+ ~That is all I have to report.~ GOTO MAGE_23
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
 END
 
 IF ~~ THEN BEGIN MAGE_22
    SAY ~Ah, yes fascinating! My research spoke of this unique power, the gorgon's offspring. A true testament to the serpent gods.~
-       +~GlobalGT("h_MageNumber","GLOBAL",2)~+ ~That is all I have to report.~ GOTO MAGE_23
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
 END
@@ -299,19 +300,20 @@ END
           /////// Bombs over Beregost ///////
           ///////////////////////////////////
 
+//51
 
 IF ~Global("h_BaldwinQuest","GLOBAL",5)~ THEN BEGIN BOMBS_0
    SAY ~<CHARNAME>! Ascend to the surface and eliminate all the Shadow Thieves from the city.~
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Ariosh mentioned Thamuz leads their offensive. Do you know who he is?~ GOTO BOMBS_1
        ++ ~Why have they decided to attack us now?~ GOTO BOMBS_2
+       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
 IF ~~ THEN BEGIN BOMBS_1
    SAY ~Aye. Thamuz and I were once comrades. He's a lethal rogue, a master of stealth and deception. Do not underestimate him.~
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Why have they decided to attack us now?~ GOTO BOMBS_2
+       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
@@ -325,8 +327,8 @@ END
 
 IF ~~ THEN BEGIN BOMBS_4
    SAY ~Regardless, we have more pressing matters at hand and should defer these speculations for another time.~
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1   //10 7
        ++ ~Ariosh mentioned Thamuz leads their offensive. Do you know who he is?~ GOTO BOMBS_1
+       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
@@ -335,6 +337,7 @@ END
           ///////// Learn of Nagate /////////
           ///////////////////////////////////
 
+//56
 
 IF ~~ THEN BEGIN NAGATE_1
    SAY ~Let me see that!~ IF ~~ THEN GOTO NAGATE_2
@@ -383,9 +386,10 @@ END
           //////// Return From Thamuz ///////
           ///////////////////////////////////
 
+//44
 
 IF ~Global("h_BaldwinQuest","GLOBAL",7)~ THEN BEGIN THAMUZ_0
-   SAY ~You've made it back alive I see. What is your report?~
+   SAY ~You've made it back alive, I see. What is your report?~
        ++ ~I arrived just in time to witness Nagate's demise at the hands of Thamuz.~ GOTO THAMUZ_1
 END
 
@@ -403,8 +407,8 @@ IF ~~ THEN BEGIN THAMUZ_2
 END
 
 IF ~~ THEN BEGIN THAMUZ_4
-   SAY ~Is that do? I shall dispatch my agents to probe this allegation. Anything else?~
-       ++ ~He asserted that no mortal possesses the capacity to wield the Kerykeion. To attempt it would imperil us all.~ GOTO THAMUZ_5
+   SAY ~Is that so? I shall dispatch my agents to probe this allegation. Anything else?~
+       ++ ~He asserted that wielding the Kerykeion is folly, and will cause nothing but destruction.~ GOTO THAMUZ_5
        ++ ~They've been keeping tabs on our every move since you founded the Gorgon's Eye.~ GOTO THAMUZ_9
        ++ ~I want to know your intentions with the Kerykeion.~ GOTO THAMUZ_7
        ++ ~That concludes my report.~ GOTO THAMUZ_10
@@ -487,7 +491,7 @@ IF ~~ THEN BEGIN BETRAY_3
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY ~You have done a tremendous service here, <CHARNAME>. I will see to it that you recieve a fitting reward.~ IF ~~ THEN GOTO BETRAY_5
+   SAY ~You have done a tremendous service here, <CHARNAME>, and I will see to it that you recieve a fitting reward.~ IF ~~ THEN GOTO BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_5
@@ -495,7 +499,7 @@ IF ~~ THEN BEGIN BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_6
-   SAY ~Tie up any loose ends you have around the guild and complete your missions, but don't stray too far. I'll need all hands on standy for the coming trials.~
+   SAY ~Tie up any loose ends you have around the guild and complete your missions, but don't stray too far. I'll need every one of us on standy for the coming trials.~
 IF ~~ THEN DO ~
    SetGlobal("h_FakeKery","GLOBAL",1)
    TakePartyItem("h_misc14")

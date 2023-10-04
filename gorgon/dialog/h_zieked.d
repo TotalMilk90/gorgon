@@ -11,7 +11,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByNight","GLOBAL",1)~ THEN BEGIN 1
-   SAY ~You're after the diamond, aren't you! Take it then, rogue, but be warned. I'll make sure you're barred from every corner of the black market. You're finished, I can promise you that.~
+   SAY ~You're after the diamond, aren't you! Take it then, thief, but be warned. I'll make sure you're barred from every corner of the black market. You're finished, I can promise you that.~
 IF ~~ THEN DO ~
    GiveItem("h_misc04",LastTalkedToBy)
    EscapeArea()~ EXIT

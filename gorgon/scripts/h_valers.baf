@@ -1,0 +1,7 @@
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnValera","GLOBAL",1)
+END

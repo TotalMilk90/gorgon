@@ -265,11 +265,11 @@ IF ~~ THEN BEGIN BETRAY_3
 END
 
 IF ~~ THEN BEGIN BETRAY_4
-   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion without finishing the proper modifications.~ IF ~~ THEN GOTO BETRAY_5
+   SAY ~I have men in the shadows awaiting my signal. When they are revealed, Baldwin will be forced to activate the Kerykeion, too rushed to discern the trap within.~ IF ~~ THEN GOTO BETRAY_5
 END
 
 IF ~~ THEN BEGIN BETRAY_5
-   SAY ~When he does, the device will fail and should kill him instantly. Afterwards, we will assume control of the guild and you will recieve your reward.~
+   SAY ~When he does, the fusion process will fail, and it should kill him instantly. Afterwards, we will assume control of the guild and await further instructions.~
        ++ ~What about the rest of the guildmates?~ GOTO BETRAY_6
        ++ ~What if the plan fails and Baldwin survives?~ GOTO BETRAY_8
        ++ ~I am ready to begin.~ GOTO BETRAY_9

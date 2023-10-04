@@ -20,7 +20,7 @@ THEN
                   CreateCreature("h_game2c",[1407.1122],S)
                   CreateCreature("h_game3c",[1344.1207],E)
 
-                  CreateCreature("h_zedacc",[1021.1309],W)
+                  CreateCreature("h_zedacc",[1021.1309],NW)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
                   
@@ -125,5 +125,25 @@ THEN
          RESPONSE #100
                   CreateCreature("h_ilenac",[1883.1134],SW)
                   SetGlobal("h_RespawnIlena","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_ValeraQuest","GLOBAL",2)
+         Global("h_BlackJoin","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_blackc",[848.1241],N)
+                  SetGlobal("h_ValeraQuest","GLOBAL",3)
+                  Continue()
+END
+
+IF
+         Global("h_ValeraQuest","GLOBAL",2)
+         Global("h_BlackJoin","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_blactc",[848.1241],N)
+                  SetGlobal("h_ValeraQuest","GLOBAL",3)
                   Continue()
 END

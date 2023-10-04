@@ -1,0 +1,49 @@
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnBlackthorn","GLOBAL",1)
+END
+
+IF
+	See([PC])
+	Global("h_ArioshQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+	         FaceObject([PC])
+	         Wait(1)
+		 StartDialog("h_blackd",[PC])
+END
+
+IF
+	Global("h_BlackFight","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_BlackJoin","GLOBAL",1)
+	Global("h_ValeraQuest","GLOBAL",0)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+	Global("h_BlackLeave","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+	Global("h_BlackJoin","GLOBAL",1)
+	Global("h_ValeraQuest","GLOBAL",3)
+THEN
+        RESPONSE #100
+                 SmallWait(1)
+                 StartDialog("h_blackd",[PC])
+END

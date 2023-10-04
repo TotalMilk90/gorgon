@@ -9,7 +9,7 @@ IF ~Global("h_KatredaBounty","GLOBAL",1)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Foul men have come to defile these ancient lands. They aim to fell its trees and turn it into their personal hunting grounds.~ IF ~~ THEN GOTO 3
+   SAY ~Foul men have come to defile these ancient lands. They aim to fell its trees and turn it into their personal hunting ground.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3

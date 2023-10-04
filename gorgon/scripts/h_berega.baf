@@ -101,18 +101,7 @@ THEN
                  SetGlobal("h_SpawnXevec","GLOBAL",2)
                  Continue()
 END
-/*
-IF
-        PartyHasItem("h_misc04")
-        Global("h_SpawnZieke","GLOBAL",0)
 
-THEN
-        RESPONSE #100
-                 CreateCreature("h_ziekbc",[1517.2773],NW)
-                 SetGlobal("h_SpawnZieke","GLOBAL",1)
-                 Continue()
-END
-*/
 IF
         Global("h_SpawnZylark","GLOBAL",3)
 
@@ -121,4 +110,144 @@ THEN
                  CreateCreature("h_flamec",[3704.2014],E)
                  SetGlobal("h_SpawnZylark","GLOBAL",4)
                  Continue()
+END
+
+IF
+        TimeOfDay(NIGHT)
+        Global("h_SpawnParty","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_drunkc",[4092.3763],E)
+                 CreateCreature("h_drunkc",[4168.3763],W)
+                 CreateCreature("h_drunkc",[3996.3751],E)
+                 CreateCreature("h_drunkc",[4150.3579],W)
+                 CreateCreature("h_drunkc",[4062.3554],E)
+                 CreateCreature("h_drunkc",[4268.3521],N)
+                 CreateCreature("h_drunkc",[4354.3624],W)
+                 CreateCreature("h_drun2c",[3983.3707],E)
+
+                 CreateCreature("h_prostc",[4129.3793],N)
+                 CreateCreature("h_prostc",[4028.3720],W)
+                 CreateCreature("h_prostc",[4250.3482],SE)
+                 CreateCreature("h_pros2c",[4285.3721],NW)
+                 CreateCreature("h_prostc",[4120.3595],E)
+
+                 CreateCreature("h_boberc",[4390.3553],W)
+
+                 CreateCreature("h_bouncc",[4130.3691],NE)
+                 CreateCreature("h_lordtc",[4188.3632],E)
+                 CreateCreature("h_ladyec",[4225.3632],W)
+
+                 SetGlobal("h_SpawnParty","GLOBAL",2)
+                 Continue()
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_SpawnBlackthorn","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_blackc",[1492.1101],S)
+                  CreateCreature("h_blactc",[1411.1013],SE)
+                  CreateCreature("h_blactc",[1519.1001],SW)
+                  SetGlobal("h_SpawnBlackthorn","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnCityWatch","GLOBAL",0)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_citywc",[4376.3093],S)
+                  CreateCreature("h_citywc",[3206.2330],S)
+                  CreateCreature("h_citywc",[2216.2192],S)
+                  CreateCreature("h_citywc",[2138.1314],SE)
+                  CreateCreature("h_citywc",[613.1151],S)
+                  CreateCreature("h_citywc",[1697.3500],W)
+                  CreateCreature("h_whitec",[2294.2192],SW)
+
+                  SetGlobal("h_SpawnCityWatch","GLOBAL",1)
+                  Continue()
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_AddLoot","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  ActionOverride("Container 16",CreateItem("h_misc21",0,0,0))
+                  ActionOverride("Container 13",CreateItem("h_misc21",0,0,0))
+                  ActionOverride("Container 6",CreateItem("h_misc21",0,0,0))
+                  SetGlobal("h_AddLoot","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_ReplaceCityWatch","GLOBAL",2)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_citywc",[4376.3093],E)
+                  CreateCreature("h_citywc",[3206.2330],SW)
+                  CreateCreature("h_citywc",[2216.2192],S)
+                  CreateCreature("h_citywc",[2138.1314],SE)
+                  CreateCreature("h_citywc",[613.1151],S)
+                  CreateCreature("h_citywc",[1697.3500],W)
+                  CreateCreature("h_whitec",[2294.2192],SW)
+                  SetGlobal("h_ReplaceCityWatch","GLOBAL",3)
+                  Continue()
+END
+
+IF
+         Global("h_NewCityWatch","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_city2c",[653.1376],E)
+                  CreateCreature("h_city2c",[2312.1320],SW)
+                  CreateCreature("h_city2c",[1506.3410],N)
+                  CreateCreature("h_city2c",[3028.3550],S)
+                  CreateCreature("h_city2c",[3216.2366],SE)
+                  CreateCreature("h_city2c",[4480.2969],SW)
+                  CreateCreature("h_city2c",[3862.1747],SW)
+                  CreateCreature("h_city2c",[2199.2418],E)
+                  SetGlobal("h_NewCityWatch","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         TimeOfDay(DAY)
+         HasItem("h_misc22","Container 9")
+         Global("h_ArioshQuest","GLOBAL",9)
+THEN
+         RESPONSE #100
+                  SetGlobal("h_SpawnVelera","GLOBAL",1)
+                  AddJournalEntry(@525,QUEST)
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_SpawnVelera","GLOBAL",1)
+         HasItem("h_misc22","Container 9")
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_valerc",[2504.2912],S)
+                  SetGlobal("h_SpawnVelera","GLOBAL",2)
+                  SetGlobal("h_DestroyNote","GLOBAL",1)
+                  Continue()
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_DestroyNote","GLOBAL",1)
+         HasItem("h_misc22","Container 9")
+
+THEN
+         RESPONSE #100
+                  SetGlobal("h_DestroyNote","GLOBAL",2)
+                  ActionOverride("Container 9",DestroyItem("h_misc22"))
+                  Continue()
 END

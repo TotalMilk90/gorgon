@@ -11,7 +11,7 @@ IF ~Global("h_MagnusBounty","GLOBAL",1)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Why? What could I have done to earn this enmity? I spend most of my time in isolation, with no quarrels or debts to anyone.~
+   SAY ~Why? What could I have done to earn this enmity? I spend most of my time in isolation, with no quarrels or debts with anyone.~
        ++ ~He seeks to use your remains for his resurrection experiments. He believes your blue hair may hold some value for his research.~ GOTO 3
        ++ ~I can't recall. Honestly, I'd rather not get involved. I just thought it best to inform you.~ GOTO 9
 END

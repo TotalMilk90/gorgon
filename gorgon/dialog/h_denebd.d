@@ -18,7 +18,7 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Don't feign ignorance. Rogues, all of them, dancing in the moonlight. And now you, another puppet in my grand, mad play!~
+   SAY ~Don't feign ignorance. Rogues, all of them, dancing in the moonlight. And now you, another puppet fell victim to my prowess.~
        ++ ~I have come in search of the Kerykeion, and heard it lies within your grasp.~ GOTO 1
        ++ ~What serpents do you speak of? Surely not these damned gibberlings!~ GOTO 3
        ++ ~Wait! Is there no other alternative? We don't need to fight.~ GOTO 4

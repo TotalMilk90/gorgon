@@ -49,13 +49,13 @@ IF ~~ THEN BEGIN 10
    SAY ~Farewell, <CHARNAME>. Complete our duty.~
 IF ~~ THEN DO ~
    Kill("h_injurc")
-   AddJournalEntry(@202,USER)~ EXIT
+   AddJournalEntry(@203,USER)~ EXIT
 END
 
 IF ~~ THEN BEGIN 11
    SAY ~Nobility will not alter this course. I shall do it myself. Farewell, <CHARNAME>. Complete your duty.~
 IF ~~ THEN DO ~
    Kill("h_injurc")
-   AddJournalEntry(@202,USER)~ EXIT
+   AddJournalEntry(@203,USER)~ EXIT
 END
 

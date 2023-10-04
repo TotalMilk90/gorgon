@@ -1,14 +1,14 @@
 BEGIN h_nagatd
 
 IF ~True()~ THEN BEGIN 0
-   SAY ~You seem a touch displaced my friend.Do you require any assistance?~
+   SAY ~You seem a touch displaced my friend. Do you require any assistance?~
        ++ ~I'm fine, thanks. You must be Nagate. I'm here regarding the Kerykeion.~ GOTO 1
        ++ ~Inform your men to emerge from the shadows, Nagate. Surrender the Kerykeion, and I'll consider sparing your lives.~ GOTO 8
        ++ ~I've no patience for these theatrics. Unsheathe your daggers, and let's end this farce.~ GOTO 8
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Shadow Thieves, then, are we? I am Nagate, and I do possess what you seek.~
+   SAY ~Shadow Thieves, then, eh? I am Nagate, and I hold a shard of the Kerykeion.~
        ++ ~The price wasn't mentioned. How much are you asking?~ GOTO 2
        ++ ~I've no patience for these theatrics. Unsheathe your daggers, and let's end this farce.~ GOTO 8
 END

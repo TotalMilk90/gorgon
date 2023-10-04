@@ -5,3 +5,10 @@ THEN
                   //Deactivate(Myself)
                   DestroySelf()
 END
+
+IF
+        Global("h_ZiekeRun","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  EscapeArea()
+END

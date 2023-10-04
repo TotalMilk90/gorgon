@@ -32,40 +32,45 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~The Gorgon's Eye guildhall is now yours, subservient only to the Shadow Thieves.~ IF ~~ THEN GOTO 8
+   SAY ~Rhade will stay behind and orchestrate the preparations for the guild's closure and the subsequent transfer of assets.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~I will appoint Procus as your lieutenant. Speak with him and he will attend to your affairs.~ IF ~~ THEN GOTO 9
+   SAY ~We have efficiently evaluated the Gorgon's Eye worth and are prepared to promptly allocate your share.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Submit your dues and continue your duty. This will be a profitabe arrangement for us both. Good day.~
+   SAY ~With this, I extend my regards and bid you a good day.~
 IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",10)
    SetGlobal("h_GuildMusic","GLOBAL",4)
    AddJournalEntry(@225,QUEST_DONE)
    GiveItemCreate("h_misc03",LastTalkedToBy,0,0,0)
+   GiveGoldForce(20000)
    EscapeArea()~ EXIT
 END
 
+/* The Gorgon's Eye guildhall is now yours, subservient only to the Shadow Thieves.
+   I will appoint Procus as your lieutenant. Speak with him and he will attend to your affairs.
+   Submit your dues and continue your duty. This will be a profitabe arrangement for us both. Good day.
+*/
 
 CHAIN
      IF ~Global("h_BetrayBaldwin","GLOBAL",4)~ THEN h_rich2d 0
 ~Baldwin, enough! Take hold of your senses and cease this folly at once!~
-   == h_bald2d
+   == h_baldwd
 ~Ah, my dear brother, here to witness my ascent into godhood, are you? How considerate.~
    == h_richad
 ~Godhood? Are you mad! I've come to stop you, and to take ownership of the Kerykeion.~
    =
 ~Surrender it, and I will bring you in before the Shadowmaster. There may still be mercy.~
-   == h_bald2d
+   == h_baldwd
 ~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp.~
    =
 ~And here you stand, offering me your dungeons... when I could have the world, instead!~
    == h_richad
 ~Do not let the pull of the Kerykeion consume you! Relieve yourself of its grasp, and we will somehow find a path back from this madness.~
-   == h_bald2d
+   == h_baldwd
 ~Ah, the voice of reason speaks! But it's far too late for that, the power is mine now, and with it, I shall have my retribution.~
    =
 ~It was a dream we both shared once, do you remember? Or is even that lost to you now, along with your honor, after betraying your own brother!~
@@ -75,7 +80,7 @@ CHAIN
 ~It is you who are lost, brother. Ensnared in the malevolent embrace of the Kerykeion, and from it, you've emerged a dark taint of delusion.~
    =
 ~You butcherd your kin. Cut them down like helpless dogs. There was no desire for retribtion in your eyes, only malice.~
-   == h_bald2d
+   == h_baldwd
 ~You remain restrained by fear, lacking ambition, and that is why you will fail. You are still the same coward as you were on the day of banishment.~
    =
 ~Comrades, ready yourselves for battle! <CHARNAME>, protect me while I finish preparing the Kerykeion for fusion!~

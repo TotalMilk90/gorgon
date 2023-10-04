@@ -1,0 +1,8 @@
+IF
+	Global("h_DrunkBrawl","GLOBAL",1)
+THEN
+	RESPONSE #100
+	         Wait(3)
+		 StartDialog("h_ladyed",[PC])
+END
+

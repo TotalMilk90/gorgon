@@ -14,7 +14,7 @@ END
 
 IF ~~ THEN BEGIN 2
    SAY ~I believe it's high time we became better acquainted, darling. I'm Liedel. I deal in private contracts and bounties you won't find posted in the light of town.~
-       ++ ~Pleasure, Liedel. My name is <CHARNAME>. And speaking of names, who is this Riggy you mentioned?~ GOTO 5
+       ++ ~Pleasure, Liedel. My name is <CHARNAME>. Seaking of names, who is this Riggy you mentioned?~ GOTO 5
        ++ ~By "private contracts", do you really mean, assassin-for-hire?~ GOTO 6
        ++ ~What current bounties do you have available.~ GOTO 7
        ++ ~I'm not interested right now.~ GOTO 3
@@ -27,13 +27,13 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_DeclineBounty","GLOBAL",1)~ THEN BEGIN 4
-   SAY ~Back for more, I see. Have you come seeking more than just conversation, or is it the thrill of our banter that brings you back?~
+   SAY ~Back for more, I see. Have you come seeking more than just conversation, or is it the thrill of our banter that brings you before me?~
        ++ ~What current bounties do you have available.~ GOTO 7
        ++ ~I'm not interested right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~*laughing* Oh, it's just my little pet name for our dear Rigaldo. How he fumes at it, which only makes it more delightful.~
+   SAY ~Oh, it's just my little pet name for our dear Rigaldo. How he fumes at it, which only makes it more delightful.~
        ++ ~By "private contracts", do you really mean, assassin-for-hire?~ GOTO 6
        ++ ~What current bounties do you have available.~ GOTO 7
        ++ ~I'm not interested right now.~ GOTO 3
@@ -67,7 +67,7 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
-   SAY ~Vapula turned witness, betraying his former comrades and leading them to prisons and in the grip of hefty fines,~ IF ~~ THEN GOTO 13
+   SAY ~Vapula turned witness, betraying his former comrades and leading them to prisons and in the grip of hefty fines.~ IF ~~ THEN GOTO 13
 END
 
 IF ~~ THEN BEGIN 13
@@ -104,7 +104,7 @@ END
 
 IF ~~ THEN BEGIN CARTH_1
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
-       ++ ~I found him stuffing his face at the Friendly Arm. Tell the Zhents his debt was paid with blood.~ GOTO CARTH_2
+       ++ ~I found him stuffing his face at the Friendly Arm Inn. Tell the Zhents his debt was paid in blood.~ GOTO CARTH_2
 END
 
 IF ~~ THEN BEGIN CARTH_2
@@ -176,7 +176,7 @@ END
           //////// Second Bounty List ///////
           ///////////////////////////////////
 
-
+//29
 IF ~Global("h_LiedelQuest","GLOBAL",3)~ THEN BEGIN SECOND_0
    SAY ~Finally, a spark in the darkness. I was beginning to grow restless. I have a fresh list of bounties for you, if you're up for the task.~
        ++ ~Let's hear what you've got for me.~ GOTO SECOND_1
@@ -247,7 +247,7 @@ END
 
 IF ~~ THEN BEGIN EURO_1
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
-       ++ ~I have her here with me. A little worse for the wear but alive nonetheless.~ GOTO EURO_2
+       ++ ~I have her here with me. A little worse for the wear, but alive nonetheless.~ GOTO EURO_2
 END
 
 IF ~~ THEN BEGIN EURO_2
@@ -294,7 +294,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KATREDA_3
-   SAY ~No prizemoney for this job, love. Comms with Asnable have gone silent. The dryad must have made her move. Were you involved in this somehow?~
+   SAY ~No prizemoney for this job, love. Communcation with Asnable went silent. The dryad must have made her move. Were you involved in this somehow?~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -307,7 +307,7 @@ IF ~~ THEN BEGIN ZHONTAC_1
 END
 
 IF ~~ THEN BEGIN ZHONTAC_2
-   SAY ~Leaving moeny on the table doesn't suit your style, <CHARNAME>. Here's the usual rate then, five-hundred gold coins.~
+   SAY ~Leaving money on the table doesn't suit you, <CHARNAME>. Here's the usual rate then, five-hundred gold coins.~
 IF ~~ THEN DO ~
    SetGlobal("h_MagnusBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -341,7 +341,7 @@ IF ~~ THEN BEGIN ZHONTAC_6
 IF ~~ THEN DO ~
    SetGlobal("h_ZhontacBounty","GLOBAL",5)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
-   AddJournalEntry(@440,QUEST_DONE)
+   AddJournalEntry(@446,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT
 END

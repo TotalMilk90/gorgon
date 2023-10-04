@@ -42,16 +42,14 @@ IF ~~ THEN BEGIN B_14
 END
 
 IF ~~ THEN BEGIN B_15
-   SAY ~Just know that you're making a big mistake messing with one such as me.~
+   SAY ~You know what? Screw you and the whole bloody Gorgon's Eye! Zylark! Get out here and kill this fool!~
 IF ~~ THEN DO ~
-   SetGlobal("h_BorlandQuest","GLOBAL",1)
-   SetGlobal("h_GuildThieves","GLOBAL",5)
-   SetGlobal("h_SpawnZylark","GLOBAL",3)
-   AddJournalEntry(@325,QUEST)~ EXIT
+   SetGlobal("h_SpawnZylark","GLOBAL",1)
+   CreateCreature("h_zylarc",[280.352],E)~ EXIT
 END
 
 IF ~~ THEN BEGIN B_16
-   SAY ~Why, you insolent little... to hell with this! Zylark! Get out here and kill this looter!~
+   SAY ~Why, you insolent little... to hell with this! Zylark! Get out here and kill this fool!~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnZylark","GLOBAL",1)
    CreateCreature("h_zylarc",[280.352],E)~ EXIT

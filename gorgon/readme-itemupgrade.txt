@@ -88,8 +88,8 @@ STATISTICS:
 -5% chance to stun target for 1 round (save vs. spell)
 -Returns to the wielder's hand when thrown
 
--THAC0: +3
--Damage: 1d3+3, +2 acid
+-THAC0: +2
+-Damage: 1d3+2, +2 acid
 -Damage Type: Missile
 -Speed Factor: 0
 
@@ -104,8 +104,8 @@ STATISTICS:
 -Increases backstab modifier by 1
 -Increases number of attacks by 1
 
--THAC0: +3
--Damage: 1d10+3
+-THAC0: +2
+-Damage: 1d10+2
 -Damage Type: Piercing
 -Speed Factor: 0
 
@@ -120,8 +120,8 @@ STATISTICS:
 -10% chance to stun target for half a round (save vs. spell)
 -10% chance to deal an additional 5 acid damage
 
--THAC0: +3
--Damage: 1d10 +3
+-THAC0: +2
+-Damage: 1d10 +2
 -Damage Type: Crushing
 -Speed Factor: 2
 
@@ -143,7 +143,7 @@ Detect Illusion: 10% bonus
 
 SECOND TIER: 50k each
 
-Saving Throws: +1 bonus
+Armor Class/Saving Throws: +1 bonus
 THAC0/Damage: +1 bonus
 Magic Resistance: 5% bonus
 Physical Resistances: 5% bonus

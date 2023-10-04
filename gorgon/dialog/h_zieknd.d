@@ -18,6 +18,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_CaughtByNight","GLOBAL",1)
    SetGlobal("h_CaughtByDay","GLOBAL",1)
    SetGlobal("h_CaughtByGuards","GLOBAL",1)
+   SetGlobal("h_ZiekeRun","GLOBAL",1)
    CreateCreature("h_zieknc",[538.653],N)
    CreateCreature("h_zieknc",[611.684],N)
    Enemy()~ EXIT

@@ -1,6 +1,6 @@
 APPEND ~mtown3%eet_var%~
 
-IF WEIGHT #-1 ~Global("h_ExtraQuest","GLOBAL",1) Global("h_PruflasQuest","GLOBAL",1)~ THEN BEGIN PRUF_0
+IF WEIGHT #-1 ~Global("h_ExtraQuest","GLOBAL",1) Global("h_PruflasQuest","GLOBAL",0)~ THEN BEGIN PRUF_0
    SAY ~Apologies, but constantly hearing Pruflas' chatter about trees and squirrels is making it impossible to concentrate! I cannot conduct business whilst he prattles so!~ IF ~~ THEN GOTO PRUF_1
 END
 

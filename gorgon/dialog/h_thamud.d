@@ -16,7 +16,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I am Thamuz, an envoy of the Shadow Thieves. I can trust you are aware of our organization.~
+   SAY ~I am Thamuz, and I represent an orgainzation known as the Shadow Thieves. I have to admit, your arrival was swifter than anticipated. Well done.~
        ++ ~Why did you kill Nagate. Wasn't your intent to negotiate?~ GOTO 4
        ++ ~Baldwin spoke of you. He said you were once comrades.~ GOTO 5
        ++ ~Why did you attack us in Beregost, what is your objective?~ GOTO 6
@@ -35,24 +35,25 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~I do not anticipate you comprehending the complexities of our affairs. However, as your survival is unlikely, I shall impart some truths.~ IF ~~ THEN GOTO 7
+   SAY ~I do not anticipate you comprehending the complexities of our affairs. However, as your survival is unlikely, I shall entertain your queries.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Baldwin has been permitted his little gambit in Beregost, for he posed no threat to us. Every move of his has been under our scrutiny.~ IF ~~ THEN GOTO 8
+   SAY ~Baldwin has been permitted his little gambit in Beregost, for he posed no threat to us. His moves are forever under our scrutiny. However, allowing him to obtain the Kerykeion was not an option. The threat he would pose to this world is beyond your understanding.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Baldwin obtaining the Kerykeion was not an option. The threat he would pose to this world is beyond your understanding.~ IF ~~ THEN GOTO 8.5
+   SAY ~Furthermore, on a more subdued note, it appears you've earned another foe, one who has generously paid for your eradication from Beregost.~
+       ++ ~Who is this foe you speak of?~ GOTO 8.5
 END
 
 IF ~~ THEN BEGIN 8.5
-   SAY ~Furthermore, it appears you've earned another foe, one who has generously paid for your eradication from Beregost.~
+   SAY ~Some matters dwell in the realm of secrecy and shadows, beyond the light of disclosure. This is one of them.~
        ++ ~What knowledge do you possess of Baldwin and the Kerykeion?~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Bah! You serve him, oblivious to the inevitable outcome. I am unsurprised to find such ignorance within his ranks.~ IF ~~ THEN GOTO 10
+   SAY ~You serve him, oblivious to the inevitable outcome? It is disappointing to find such ignorance within his ranks, I'll admit. I expected more.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
@@ -85,7 +86,7 @@ IF ~~ THEN BEGIN 14
 END
 
 IF ~~ THEN BEGIN 15
-   SAY ~The shards themselves, seperated as they are, have a power that can harnessed by mortals with formidable will. However, once united, the exponential surge will consume everything in its wake.~
+   SAY ~The shards themselves, seperated as they are, have a power that can be harnessed by mortals with formidable will. However, once united, the exponential surge will consume everything in its wake.~
        ++ ~What makes him believe he can control it?~ GOTO 14
        ++ ~What does Baldwin hope to achieve?~ GOTO 16
        ++ ~I have no desire to fight you, Thamuz. I plan to stop Baldwin myself, before it's too late.~ GOTO 17
@@ -101,7 +102,7 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
-   SAY ~An amusing ploy, albiet an unsavory reflection of your loyalty, yet it is one that I cannot satisfy. You've taken the lives of my comrades, and for that, there can be no forgiveness.~
+   SAY ~An amusing ploy, albiet an unsavory reflection of your loyalty, yet, it is one that I cannot satisfy. You've taken the lives of my comrades, and for that, there can be no forgiveness.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",7)
    SetGlobal("h_ShadowWar","GLOBAL",4)

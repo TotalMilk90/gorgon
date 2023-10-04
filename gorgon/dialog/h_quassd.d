@@ -32,6 +32,7 @@ END
 IF ~~ THEN BEGIN 5
    SAY ~He must not succeed in obtaining the final piece of the Kerykeion, and I could use your assurance in preventing it.~
        ++ ~Spare me the lecture. Thamuz told me the tale. What's in it for me?~ GOTO 6
+       ++ ~Why should I help you?~ GOTO 6
        ++ ~Nice try, but I would never betray my guild.~ GOTO 8
 END
 
@@ -40,7 +41,12 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~After Baldwin is dealt with, we will appropriate the Gorgon's Eye guildhall and appoint you as the acting leader, under our command, of course.~
+   SAY ~After Baldwin is dealt with, we will appropriate the Gorgon's Eye guildhall and redistribute its resources throughout our organization.~ IF ~~ THEN GOTO 7.5
+   //appoint you as the acting leader, under our command, of course.
+END
+
+IF ~~ THEN BEGIN 7.5
+   SAY ~You will be entitled to a substantial share of the spoils.~
        ++ ~I refuse. I will not betray the Gorgon's Eye.~ GOTO 8
        ++ ~I accept. I will betray the Gorgon's Eye.~ GOTO 9
 END
@@ -69,14 +75,14 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
-   SAY ~You must use tact when presenting him the piece. Act as if nothing is amiss and play your part well.~
+   SAY ~You must use tact when presenting him the piece. Play your part well, and act as if nothing is amiss.~
        ++ ~What happens if Baldwin figures out it's a fake?~ GOTO 13
        ++ ~What if the fusion process fails?~ GOTO 14
        ++ ~I understand. Is there anything else?~ GOTO 15
 END
 
 IF ~~ THEN BEGIN 13
-   SAY ~It has been meticulously crafted to be indistinguishable from a genuine shard. However, if Baldwin suspects, he must be compelled to attempt the fusion. It is a risk that we are forced to take.~
+   SAY ~It has been meticulously crafted to be indistinguishable from a genuine shard. However, if Baldwin suspects, he must still be compelled to attempt the fusion. It is a risk that we are forced to take.~
        ++ ~How do I ensure Baldwin tries to fuse the fake piece?~ GOTO 12
        ++ ~What if the fusion process fails?~ GOTO 14
        ++ ~I understand. Is there anything else?~ GOTO 15

@@ -3,9 +3,8 @@ BEGIN h_prufld
 IF ~True()~ THEN BEGIN 0
    SAY ~Stars in the sky, flowers in the air... Everything's dancing, don't you see?~
        ++ ~I can't see any stars because we are inside.~ EXIT
-   //    +~Global("h_ExtraQuest","GLOBAL",2)~+ ~Pruflas, lad, what seems to be the problem here? You need to leave this place and return to your wife.~ GOTO 1
-       +~Global("h_PruflasQuest","GLOBAL",1)~+ ~Pruflas, lad, what seems to be the problem here? You need to leave this place and return to your wife.~ GOTO 1
-       +~Global("h_PruflasQuest","GLOBAL",2)~+ ~Alright, Pruflas. If reaching nirvana is the only way to get you to leave then I'll do it.~ GOTO 9
+       +~Global("h_PruflasQuest","GLOBAL",1)~+ ~Pruflas, lad, what seems to be the problem here? You need to leave this place and return home to your wife.~ GOTO 1
+       +~Global("h_PruflasQuest","GLOBAL",2)~+ ~Alright, Pruflas. If reaching nirvana is the only way to get you to leave, then I'll do it.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 1
@@ -39,7 +38,7 @@ END
 
 IF ~~ THEN BEGIN 7
    SAY ~It is imperative to strike the right balance. So, if you aid me in attaining nirvana, I pledge to return to my wife.~
-       ++ ~Forget it! I'm not going to help you with this. It's crazy!~ GOTO 8
+       ++ ~Forget it! I'm not going to help you with this.~ GOTO 8
        ++ ~Alright, sounds simple enough.~ GOTO 9
 END
 

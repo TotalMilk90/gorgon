@@ -1,0 +1,29 @@
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnBlackthorn","GLOBAL",1)
+END
+
+IF
+	Global("h_BlackFight","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_BlackJoin","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+	Global("h_BlackLeave","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END

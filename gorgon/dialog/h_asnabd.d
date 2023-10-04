@@ -5,7 +5,7 @@ IF ~Global("h_KatredaBounty","GLOBAL",3)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~You wouldn't happen to be here on our behalf, would you? I've put a reward on the head of that witch Katreda, but so far, no one has stepped up to the task.~
+   SAY ~You wouldn't happen to be here on our behalf, would you? I've put a reward on the head of that witch, Katreda, but so far, no one has stepped up to the task.~
        ++ ~I'm here to assist Katreda. Gather your men and depart. Seek another forest for your lodge.~ GOTO 2
        ++ ~Katreda has offered me a more substantial reward. You'll have to do better if you want my help.~ GOTO 3
 END

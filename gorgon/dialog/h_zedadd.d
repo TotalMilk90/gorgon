@@ -14,9 +14,17 @@ IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
        +~Global("h_ZedaRiddle","GLOBAL",1)~+ ~I'm looking work. Do you have any jobs for me?~ GOTO RIDDLE_0
        +~Global("h_SecondRiddle","GLOBAL",1) Global("h_ZedaRiddle","GLOBAL",2)~+ ~I'd like to play Bag of Mysteries again.~ GOTO SECOND_0
        +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
+       +~Global("h_KarpWorkGood","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO GOOD_2
 END
 
 IF ~~ THEN BEGIN 2
+   SAY ~Didn't ya hear what I said? Of course I can! As long as she has the coin that is. Send them my way and I'll set them up with a proper escort.~
+IF ~~ THEN DO ~
+   SetGlobal("h_KarpWork","GLOBAL",2)
+   AddJournalEntry(@319,QUEST)~ EXIT
+END
+
+IF ~~ THEN BEGIN GOOD_2
    SAY ~Didn't ya hear what I said? Of course I can! As long as she has the coin that is. Send them my way and I'll set them up with a proper escort.~
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",2)

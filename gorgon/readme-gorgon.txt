@@ -20,46 +20,37 @@ Mod Overview
 ============
 The Gorgon's Eye is a small content mod for BG:EE/SoD and EET that adds an
 underground thieves den into the town of Beregost. It contains new quests, 
-characters, stores and items. It can be accessed immediately after leaving
-Candlekeep and is open to all players, excluding those with a lawful-good
-alignment.
+characters, stores and items. Your missions will include theft, extortion,
+bounty hunting, and battles against rival thieves. However, good-aligned
+characters will have satisfying options for roleplay, granted you can
+personally justify actually joining a thieves guild. The area can be accessed
+immediately after leaving Candlekeep and is open to all players, excluding
+those with a lawful-good alignment.
 
 The component "Add more pickpocketable items" will distribute random treasure
 to generic npcs. (Commoners, nobles, etc.)
-
-=====
-NOTES
-=====
-This mod will surely play best as a non-good aligned, thief PC, however:
-
--You don't need to be, or even have, a thief in your party to complete
-these missions, but it is recommended to at least have someone with the
-pickpocket skill.
-
--Effort has gone into making satisfying options for good-aligned players. For
-role-play, if you are ok with your character joining a thieves guild with the
-intention of working for thieves, then I believe you can justify the options
-you are given for the rest of the mod.
-
-Examples: Some quests will involve stealing, extorting, smuggling and
-assassinating. However, they will typically be "bad" people themseleves, and if
-not, then you will have the option to help the person instead.
-
-
-
-
-
 
 ===============
 Version History
 ===============
 Version 3.4:
--Added new encounters to, "T he Traveler's Gem" and, "Borland's Spicy Secret"
--Added new dialog for most of Rigaldo's quests
--Removed AC Bonus from Thieve's Compendium
--Nerfed Stheno's Blade and Euryale's Promise
+-Fixed "Thief's Compendium" books to grant correct bonuses
+-Replaced Danika with Naga who now offers temple services
+-Added new weapon "Blackjack"
+-Added 2 new quests from Ariosh
+-Added new quest alternative for "Order of the Black Lotus"
+-Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
+-Increased payout for guild profits
+-Adjusted reward for "No Honor Among Thieves"
+-Nerfed Kerykeion weapons
+-Fixed missing icon for "Kerykeion: Medusa's Bite"
+-Added NPC interjections
+-Added more satisfying options and for good-aligned players
+-Fixed and revised journal entries and item descriptions
+-Added more lore to Saradin, Baldwin, and the Kerykeion's history
+-Added more dialog and made full-scale revisions
 -Added spells to Ophelia's store
--Added more thieves/dialog in the guildhall
+-Added more background NPCs to the guildhall
 
 Version 3.3:
 -Added pickpocket component

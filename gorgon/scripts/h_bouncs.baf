@@ -1,0 +1,32 @@
+IF
+         See([PC])
+         PartyHasItem("h_misc20")
+         GlobalLT("h_BouncerTalk","GLOBAL",3)
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_bouncd",[PC])
+END
+
+IF
+	Global("h_EndParty","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 DestroySelf()
+END
+
+IF
+	Global("h_DrunkBrawl","GLOBAL",2)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  EscapeArea()
+                  SetGlobal("h_SpawnParty","GLOBAL",1)
+END
+

@@ -3,7 +3,7 @@ BEGIN h_nagadd
 IF ~Global("h_ThiefBook","GLOBAL",0)~ THEN BEGIN 0
    SAY ~Care to make a donation to the Lord of Shadows?~
        ++ ~No thanks.~ EXIT
-       ++ ~I'd like to see what services you have available.~ EXIT
+       ++ ~I'd like to see what services you have available.~ GOTO TEMPLE_0
        +~Class([PC],THIEF_ALL)~+ ~What would I get in return?~ GOTO 1
 END
 
@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~Any donation given will be met with considerable reward. A series of texts meant to increase the efficiency of any rogue lies in my possession and I will offer it to you for study.~ IF ~~ THEN GOTO 5
+   SAY ~Any donation given will be met with considerable reward. A series of texts meant to increase the efficiency of any rogue lies in my possession, and I will offer it to you for study.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -34,21 +34,13 @@ IF ~~ THEN BEGIN 5
        ++ ~How much would I have to donate?~ GOTO 7
 END
 
-/*
-IF ~~ THEN BEGIN 6
-   SAY ~As you were then.~
-IF ~~ THEN DO ~
-   SetGlobal("h_ThiefBook","GLOBAL",1)~ EXIT
-END
-*/
-
 IF ~~ THEN BEGIN 7
-   SAY ~20,000 gold for each of the first 5 volumes. If you are able to obtain them all, then you may move onto the next set.~
+   SAY ~20,000 gold for each of the first 5 volumes. If you are able to obtain them all, then you may move onto the next series of texts.~
        ++ ~How am I supposed to raise that much coin?~ GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~*smirks* By doing what we do best, of course.~ IF ~~ THEN GOTO 9
+   SAY ~By doing what we do best, of course.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
@@ -60,6 +52,7 @@ END
 
 IF ~Global("h_ThiefBook","GLOBAL",1)~ THEN BEGIN 10
    SAY ~What is it you seek?~
+       ++ ~I'd like to see what services you have available.~ GOTO TEMPLE_0
        ++ ~Can you tell me more about, 'The Thief's Compendium'.~ GOTO INFO_0
        +~GlobalLT("h_BookNumber","GLOBAL",5)~+ ~I would like to make a donation.~ GOTO DONATE_1
        +~GlobalGT("h_BookNumber","GLOBAL",4) GlobalLT("h_BookNumber","GLOBAL",11)~+ ~I would like to make a donation.~ GOTO DONATE_2

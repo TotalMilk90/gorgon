@@ -4,7 +4,7 @@ IF ~Global("h_SpawnZylark","GLOBAL",4)~ THEN BEGIN 0
    SAY ~You there! What was all that commotion in there? What kind of business do you have with Borland?~
        ++ ~Officer! This man has been peddling illegal substances, and I've come to put an end to it. You must apprehend him immediately.~ GOTO 1
        ++ ~Get lost. My business is my own.~ GOTO 3
-       ++ ~Who? I heard noises over here myself  and came by to investigate.~ GOTO 4
+       ++ ~Who? I heard noises over here myself and came by to investigate.~ GOTO 4
        +~PartyHasItem("h_misc07")~+ ~Look, I have a pound of spice on me. Why don't you take it and allow me to leave.~ GOTO 6
        ++ ~Sorry officer, just clumsy is all. I dropped a helmet on my damned foot and screamed for bloody murder.~ GOTO 7
        ++ ~I don't have time for this! Step aside or things'll get ugly.~ GOTO FIGHT_0

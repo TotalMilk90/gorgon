@@ -1,0 +1,14 @@
+IF
+	Global("h_DrunkBrawl","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 Attack("h_drunkc")
+END
+
+IF
+	Global("h_DrunkBrawl","GLOBAL",2)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+

@@ -129,110 +129,8 @@ END
 
 IF ~~ THEN BEGIN SARA_5
    SAY ~It is in this capacity that I find myself aligned with the Gorgon's Eye and its astute leader, Baldwin. Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
-       ++ ~How does one become a follower of Mask?~ GOTO SARA_6
-       ++ ~I'm interested in learning more about the Church of Mask.~ GOTO SARA_10
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+       ++ ~I'd like to ask you about something else.~ GOTO 1
 END
-
-IF ~~ THEN BEGIN SARA_6
-   SAY ~To become a follower of Mask, one typically undergoes a process of initiation and dedication. It often begins with a sincere reverence for the ideals and teachings associated with the god of thievery and intrigue.~ IF ~~ THEN GOTO SARA_7
-END
-
-IF ~~ THEN BEGIN SARA_7
-   SAY ~Some may be drawn to Mask due to their natural inclinations towards stealth, subterfuge, and acquiring wealth through covert means. Many are drawn to his aspects of secrecy, deception, and the careful planning that can be applied to various pursuits.~ IF ~~ THEN GOTO SARA_8
-END
-
-IF ~~ THEN BEGIN SARA_8
-   SAY ~To formalize their commitment, individuals may seek out an established temple or shrine dedicated to Mask, where they would express their devotion and undergo a ritual of initiation.~ IF ~~ THEN GOTO SARA_9
-END
-
-IF ~~ THEN BEGIN SARA_9
-   SAY ~This may involve pledging loyalty to Mask's principles, learning the rites and traditions of the faith, and sometimes even undergoing tests of skill and cunning to prove their worthiness.~
-       +~Class([PC],THIEF_ALL) Global("h_JoinMask","GLOBAL",0)~+ ~I want to walk the path of shadows and embrace the teachings of Mask.~ GOTO SARA_19
-       ++ ~I'm interested in learning more about the Church of Mask.~ GOTO SARA_10
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
-END
-
-IF ~~ THEN BEGIN SARA_10
-   SAY ~The Church of Mask is an organized religious institution dedicated to the worship of the god Mask. It is a clandestine and secretive organization that revolves around the principles of thievery, stealth, deception, and the acquisition of wealth through covert means.~ IF ~~ THEN GOTO SARA_11
-END
-
-IF ~~ THEN BEGIN SARA_11
-   SAY ~The church is known for its intricate hierarchy, with different ranks and factions, notably the Nightrunners, Catfoots and Demarchs, each specializing in different aspects of thievery.~ IF ~~ THEN GOTO SARA_11.5
-END
-
-IF ~~ THEN BEGIN SARA_11.5
-   SAY ~These factions often work in tandem to further the goals of the church.~
-       ++ ~What can you tell me about the Nightrunners?~ GOTO SARA_12
-       ++ ~What can you tell me about the Catfoots?~ GOTO SARA_14
-       ++ ~What can you tell me about the Demarchs?~ GOTO SARA_16
-       ++ ~How does one become a follower of Mask?~ GOTO SARA_6
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
-END
-
-IF ~~ THEN BEGIN SARA_12
-   SAY ~The Nightrunners are a secretive and particularly ruthless sect within the Church of Mask. They are known for their proficiency in covert operations in the wilderness, assassination, and other darker aspects of thievery.~ IF ~~ THEN GOTO SARA_13
-END
-
-IF ~~ THEN BEGIN SARA_13
-   SAY ~Nightrunners are often involved in high-stakes heists and missions that require a level of expertise in dungeon crawling, and operations away from thickly settled areas.~
-       ++ ~What can you tell me about the Catfoots?~ GOTO SARA_14
-       ++ ~What can you tell me about the Demarchs?~ GOTO SARA_16
-       ++ ~How does one become a follower of Mask?~ GOTO SARA_6
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
-END
-
-IF ~~ THEN BEGIN SARA_14
-   SAY ~The Catfoots are a more traditional faction within the Church, who mainly operate in more urban settings. They focus on skilled burglary, infiltration, and more standard forms of thievery.~ IF ~~ THEN GOTO SARA_15
-END
-
-IF ~~ THEN BEGIN SARA_15
-   SAY ~They tend to operate with a bit more subtlety and finesse, avoiding the bloodshed and brutality that other factions might employ.~
-       ++ ~What can you tell me about the Nightrunners?~ GOTO SARA_12
-       ++ ~What can you tell me about the Demarchs?~ GOTO SARA_16
-       ++ ~How does one become a follower of Mask?~ GOTO SARA_6
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
-END
-
-IF ~~ THEN BEGIN SARA_16
-   SAY ~In addition to the Nightrunners and Catfoots, the Church of Mask is further bolstered by the presence of the clergy, known as Demarchs and Demarchesses.~ IF ~~ THEN GOTO SARA_15
-END
-
-IF ~~ THEN BEGIN SARA_17
-   SAY ~They serve as intermediaries between Mask and his followers, offering guidance, leading ceremonies, and ensuring the smooth operation of the church's affairs.~ IF ~~ THEN GOTO SARA_18
-END
-
-IF ~~ THEN BEGIN SARA_18
-   SAY ~Demarchs and Demarchesses wield potent arcane abilities granted by Mask. They can conjure and manipulate shadows, obscuring their presence or creating illusory distractions.~
-       ++ ~What can you tell me about the Nightrunners?~ GOTO SARA_12
-       ++ ~What can you tell me about the Catfoots?~ GOTO SARA_14
-       ++ ~How does one become a follower of Mask?~ GOTO SARA_6
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
-END
-
-IF ~~ THEN BEGIN SARA_19
-   SAY ~Hmm. Becoming a Maskarran is no small matter. It requires true dedication and a keen understanding of our deity's teachings.~ IF ~~ THEN GOTO SARA_20
-END
-
-IF ~~ THEN BEGIN SARA_20
-   SAY ~Speak of your devotion and demonstrate your understanding of the art of thievery, and if I find you to be genuine in your intent, I may deem you fit to walk the shadowed path of Mask.~ IF ~~ THEN GOTO SARA_21
-END
-
-IF ~~ THEN BEGIN SARA_21
-   SAY ~Your initial step is to seek out Danika, a Demarchess of Mask. From her, you shall learn the creed that binds our order. Listen well, for it is the foundation of our beliefs.~ IF ~~ THEN GOTO SARA_22
-END
-
-IF ~~ THEN BEGIN SARA_22
-   SAY ~Once you have committed the creed to heart, return to me and recite it with unwavering devotion. Let its words flow from you, a testament to your dedication to our cause.~
-       ++ ~I will return when I have understood the creed.~ GOTO SARA_23
-END
-
-IF ~~ THEN BEGIN SARA_23
-   SAY ~Learn well, and may the shadows guide your steps.~
-IF ~~ THEN DO ~
-   SetGlobal("h_JoinMask","GLOBAL",1)~ EXIT
-END
-
 
 IF ~~ THEN BEGIN BUTCHER_2
    SAY ~"The Butcher" moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
@@ -571,20 +469,20 @@ IF ~~ THEN BEGIN PAY_1
 END
 
 IF ~~ THEN BEGIN PAY_2
-   SAY ~Your guild is operating at a low level of risk and has managed to bring in a total of 750 gold coins. Would you like to make any changes to our activites?~
-       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(750)~ GOTO PAY_5
+   SAY ~The guild is operating at a low level of risk and has managed to bring in a total of 1000 gold coins. Would you like to make any changes to our activites?~
+       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(1000)~ GOTO PAY_5
        ++ ~I'd like to change their set of instructions.~ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0)~ GOTO GUILD_1
 END
 
 IF ~~ THEN BEGIN PAY_3
-   SAY ~Your guild is operating at a moderate level of risk and has managed to bring in a total of 1500 gold coins. Would you like to make any changes to our activites?~
-       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(1500)~ GOTO PAY_5
+   SAY ~The guild is operating at a moderate level of risk and has managed to bring in a total of 2000 gold coins. Would you like to make any changes to our activites?~
+       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(2000)~ GOTO PAY_5
        ++ ~I'd like to change their set of instructions.~ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(1500)~ GOTO GUILD_1
 END
 
 IF ~~ THEN BEGIN PAY_4
-   SAY ~Your guild is operating at a high level of risk and has managed to bring in a total of 2000 gold coins. Would you like to make any changes to our activites?~
-       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(2000)~ GOTO PAY_5
+   SAY ~The guild is operating at a high level of risk and has managed to bring in a total of 3000 gold coins. Would you like to make any changes to our activites?~
+       ++ ~I will keep them as they are for now.~ DO ~ GiveGoldForce(3000)~ GOTO PAY_5
        ++ ~I'd like to change their set of instructions.~ DO ~ SetGlobal("h_GuildRisk","GLOBAL",0) GiveGoldForce(2000)~ GOTO GUILD_1
 END
 

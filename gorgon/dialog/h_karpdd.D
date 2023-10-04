@@ -1,5 +1,13 @@
 APPEND Karp
 
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpWork","GLOBAL",0) Global("h_KarpWorkGood","GLOBAL",0)~ THEN BEGIN START_0
+   SAY ~Looks like we'll be gettin' a good harvest this year, thank the gods for that. Now, what is it I can help you with?~
+       +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~ GOTO THREAT_1
+       +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Hello Karp. No need to be afraid. I know about the rings and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~ GOTO BLACKMAIL_1
+       +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Karp, I take it? I have just finished my journey south from Ulgoth's Beard and I am here to collect the pair of rings I purchased.~ GOTO CHARM_1
+       +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~You must be Karp, yes? I'm curious about your unlawful dealings in the black market. Care to elaborate?~ GOTO GOOD_1
+END
+
 IF ~~ THEN BEGIN THREAT_1
    SAY ~Wha... What? Please don't kill me, I have a s-s-son to care for! H-here! I'll give you the rings!~
        ++ ~Not good enough, sweetheart. Surrender everything else you've found buried around here as well!~ GOTO THREAT_2
@@ -50,17 +58,36 @@ IF ~~ THEN BEGIN BLACKMAIL_4
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_5
-   SAY ~We are seeking a way further south, to the city of Athkatla. I have a sister there who is willing to take us in. If you can guarentee our safety, I will trade you the rings.~ IF ~~ THEN GOTO BLACKMAIL_6
+   SAY ~We are seeking a way further south, to the city of Athkatla. I have a sister there who is willing to take us in. If you can guarantee our safety, I will trade you the rings.~ IF ~~ THEN GOTO BLACKMAIL_6
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_6
    SAY ~I'll still be around here in the meantime, tending to the farm.~
 IF ~~ THEN DO ~
-   SetGlobal("h_KarpWork","GLOBAL",1)
-   AddJournalEntry(@316,QUEST)
+   SetGlobal("h_KarpWorkGood","GLOBAL",1)
+   AddJournalEntry(@318,QUEST)~ EXIT
+END
+
+IF WEIGHT #-3 ~True() Global("h_KarpWorkGood","GLOBAL",1)~ THEN BEGIN GOOD_10
+   SAY ~You came back! Have you found a way out for us?~
+       ++ ~I'm sorry, I haven't heard of anything just yet.~ EXIT
+END
+
+IF WEIGHT #-3 ~True() Global("h_KarpWorkGood","GLOBAL",2)~ THEN BEGIN GOOD_11
+   SAY ~You came back! Have you found a way out for us?~
+       ++ ~I have something lined up for you in Beregost. Flee tonight with your son and you will be contacted when you are sighted within the city.~ GOTO GOOD_20
+END
+
+IF ~~ THEN BEGIN GOOD_20
+   SAY ~Thank you, truly. Here are the rings as promised. I also want you to have something else. I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
+IF ~~ THEN DO ~
+   AddJournalEntry(@320,QUEST_DONE)
    AddJournalEntry(@318,QUEST)
    GiveItem("h_misc17",LastTalkedToBy)
-   GiveItem("RING06",LastTalkedToBy)~ EXIT
+   GiveItem("RING06",LastTalkedToBy)
+   GiveItem("h_misc06",LastTalkedToBy)
+   AddExperienceParty(300)
+   EscapeArea()~ EXIT
 END
 
 IF ~~ THEN BEGIN CHARM_1
@@ -168,10 +195,11 @@ IF ~~ THEN BEGIN GOOD_2
 END
 
 END
-
+/*
 EXTEND_TOP KARP 0
-   +~Global("h_RigaldoQuest","GLOBAL",7)~+~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~ GOTO THREAT_1
+   +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Listen here you dungy peasant! I know about the rings and I'm here to sieze them, so give them up right quick and I won't have to bury your body in the hole which you found them!~ GOTO THREAT_1
    +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Hello Karp. No need to be afraid. I know about the rings and I know it's a secret from your husband. Be a good lass and hand them over, else you wish for him to find out.~ GOTO BLACKMAIL_1
    +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~Karp, I take it? I have just finished my journey south from Ulgoth's Beard and I am here to collect the pair of rings I purchased.~ GOTO CHARM_1
    +~Global("h_RigaldoQuest","GLOBAL",7)~+ ~You must be Karp, yes? I'm curious about your unlawful dealings in the black market. Care to elaborate?~ GOTO GOOD_1
 END
+*/

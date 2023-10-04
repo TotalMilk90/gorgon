@@ -40,3 +40,13 @@ THEN
 	RESPONSE #100
 		 Face(S)
 END
+
+IF
+        Global("h_ValeraQuest","GLOBAL",3)
+        Global("h_BlackJoin","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 Wait(1)
+                 StartDialog("h_ariosd",[PC])
+END

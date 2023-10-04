@@ -47,7 +47,7 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~His hair is the color of the clearest skies and the calmest seas. I have never seen anything like it! Imagine what could be learned from testing on someone which such a rare oddity!~ IF ~~ THEN GOTO 10
+   SAY ~His hair is the color of the clearest skies and the calmest seas. I have never seen anything like it! Imagine what could be learned from testing on someone whith such a rare oddity!~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10

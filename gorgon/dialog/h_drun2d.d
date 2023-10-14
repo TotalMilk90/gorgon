@@ -12,7 +12,7 @@ END
 
 IF ~~ THEN BEGIN SPIRITS_2
    SAY ~Hic! Who said that, eh? My mum's a... a blessed saint, I'll have you know! She's got the patience of a... of a... a nun and the heart of... a lioness, she does!~
-       ++ ~It was that man over there! He said it!~ GOTO SPIRITS_3
+       ++ ~It was that bloke over there! He said it, alright!~ GOTO SPIRITS_3
 END
 
 IF ~~ THEN BEGIN SPIRITS_3

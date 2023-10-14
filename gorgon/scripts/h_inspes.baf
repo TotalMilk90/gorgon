@@ -1,0 +1,17 @@
+IF
+         See([PC])
+         Global("h_ArioshQuest","GLOBAL",13)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_insped",[PC])
+END
+
+IF
+         Global("h_InsWatchAttack","GLOBAL",1)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Enemy()
+END
+

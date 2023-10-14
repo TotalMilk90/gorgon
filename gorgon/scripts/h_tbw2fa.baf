@@ -7,3 +7,14 @@ THEN
                  SetGlobal("h_SpawnAmrius","GLOBAL",1)
                  Continue()
 END
+
+IF
+        TimeOfDay(NIGHT)
+        Global("h_SpawnTheresa","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_therec",[235.129],N)
+                 SetGlobal("h_SpawnTheresa","GLOBAL",2)
+                 Continue()
+END

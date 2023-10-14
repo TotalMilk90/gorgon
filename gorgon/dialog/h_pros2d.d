@@ -70,15 +70,15 @@ CHAIN
    == h_bouncd
 ~Huh? Yes, what is it?~
    == h_pros2d
-~A man of duty, so admirable. I must admit, there's something rather... alluring about a guard in uniform.~
+~A man of duty, so admirable. I must admit, there's something rather alluring about a guard in uniform.~
    == h_bouncd
 ~Oh, uh, well, thank you, ma'am. It's just part of the job, you know.~
    == h_pros2d
 ~Part of the job, perhaps. But it does add a certain... appeal. You carry yourself with such confidence.~
    == h_bouncd
-~I, uh, try my best. It's important to maintain a presence, I suppose~
+~I, uh, try my best. It's important to maintain a presence, I suppose.~
    == h_pros2d
-~Presence indeed. And may I say, you have a rather intriguing aura about you. It's not every day one encounters a man with such... magnetism.~
+~Presence indeed. And may I say, you have a rather intriguing aura about you. It's not every day one encounters a man with such magnetism.~
    =
 ~You know, I'd love to hear more about your... duties. Why don't you come over and keep me company for a while?~
    DO ~

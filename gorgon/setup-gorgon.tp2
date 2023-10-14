@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v3.3~
+VERSION ~v4.0~
 
 LANGUAGE
     ~English~
@@ -37,9 +37,13 @@ COMPILE ~gorgon/dialog/h_yumild.d~
 COMPILE ~gorgon/dialog/h_baldwd.d~
 COMPILE ~gorgon/dialog/h_saradd.d~
 COMPILE ~gorgon/dialog/h_rigald.d~
-COMPILE ~gorgon/dialog/h_lieded.d~
+
+COMPILE ~gorgon/dialog/h_city5d.d~
 COMPILE ~gorgon/dialog/h_eurynd.d~
 COMPILE ~gorgon/dialog/h_ariosd.d~
+COMPILE ~gorgon/dialog/h_lieded.d~
+
+
 COMPILE ~gorgon/dialog/h_bald2d.d~
 COMPILE ~gorgon/dialog/h_nagadd.d~
 COMPILE ~gorgon/dialog/h_gilbad.d~
@@ -84,9 +88,9 @@ COMPILE ~gorgon/dialog/h_zieked.d~
 COMPILE ~gorgon/dialog/h_zylard.d~
 COMPILE ~gorgon/dialog/h_prufld.d~
 COMPILE ~gorgon/dialog/h_courtd.d~
+COMPILE ~gorgon/dialog/h_drunkd.d~
 COMPILE ~gorgon/dialog/h_bouncd.d~
 COMPILE ~gorgon/dialog/h_pros2d.d~
-COMPILE ~gorgon/dialog/h_drunkd.d~
 COMPILE ~gorgon/dialog/h_drun2d.d~
 COMPILE ~gorgon/dialog/h_prostd.d~
 COMPILE ~gorgon/dialog/h_boberd.d~
@@ -96,8 +100,18 @@ COMPILE ~gorgon/dialog/h_blackd.d~
 COMPILE ~gorgon/dialog/h_citywd.d~
 COMPILE ~gorgon/dialog/h_whited.d~
 COMPILE ~gorgon/dialog/h_valerd.d~
+COMPILE ~gorgon/dialog/h_barthd.d~
+COMPILE ~gorgon/dialog/h_city3d.d~
+
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartjd.d~
 
 
+COMPILE ~gorgon/dialog/h_insped.d~
+COMPILE ~gorgon/dialog/h_decoyd.d~
+COMPILE ~gorgon/dialog/h_ishand.d~
+COMPILE ~gorgon/dialog/h_eudikd.d~
+COMPILE ~gorgon/dialog/h_jcookd.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~ 
 // Appended Dialog
 
 COMPILE ~gorgon/dialog/h_borlad.d~
@@ -109,8 +123,19 @@ COMPILE ~gorgon/dialog/h_carn3d.d~
 COMPILE ~gorgon/dialog/h_carn4d.d~
 COMPILE ~gorgon/dialog/h_carn5d.d~
 COMPILE ~gorgon/dialog/h_nobled.d~
+COMPILE ~gorgon/dialog/h_blilyd.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_lotusd.d~
-COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
+
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartfd.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartbd.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartrd.d~
+
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_whiskd.d~
+COMPILE ~gorgon/dialog/h_city4d.d~
+
+COMPILE ~gorgon/dialog/h_clared.d~
+COMPILE ~gorgon/dialog/h_thered.d~
+
 
 // Creature Scripts
 
@@ -156,7 +181,18 @@ COMPILE ~gorgon/scripts/h_cityws.baf~
 COMPILE ~gorgon/scripts/h_city2s.baf~
 COMPILE ~gorgon/scripts/h_valers.baf~
 COMPILE ~gorgon/scripts/h_valcut.baf~
+COMPILE ~gorgon/scripts/h_city3s.baf~
+COMPILE ~gorgon/scripts/h_decoys.baf~
+COMPILE ~gorgon/scripts/h_inspes.baf~
+COMPILE ~gorgon/scripts/h_city4s.baf~
+COMPILE ~gorgon/scripts/h_ishcut.baf~
+COMPILE ~gorgon/scripts/h_jugcut.baf~
+COMPILE ~gorgon/scripts/h_fircut.baf~
 
+COMPILE ~gorgon/scripts/h_city5s.baf~
+COMPILE ~gorgon/scripts/h_citcut.baf~
+COMPILE ~gorgon/scripts/h_clares.baf~
+COMPILE ~gorgon/scripts/h_theres.baf~
 
 // Area Scripts
 
@@ -177,6 +213,9 @@ EXTEND_TOP ~%area_prefix%3302.bcs~ ~gorgon/scripts/h_galata.baf~
 EXTEND_TOP ~%area_prefix%3351.bcs~ ~gorgon/scripts/h_feld1a.baf~
 EXTEND_TOP ~%area_prefix%3352.bcs~ ~gorgon/scripts/h_feld2a.baf~
 EXTEND_TOP ~%area_prefix%4902.bcs~ ~gorgon/scripts/h_carn2a.baf~
+EXTEND_TOP ~%area_prefix%0105.bcs~ ~gorgon/scripts/h_bladea.baf~
+EXTEND_TOP ~%area_prefix%0102.bcs~ ~gorgon/scripts/h_silvea.baf~
+EXTEND_TOP ~%area_prefix%3304.bcs~ ~gorgon/scripts/h_joviaa.baf~
 
 // New Areas
 
@@ -252,6 +291,7 @@ COPY ~gorgon/bam/h_sw1h3b.bam~ ~override~
 COPY ~gorgon/bam/h_blun1b.bam~ ~override~
 COPY ~gorgon/bam/h_blun1d.bam~ ~override~
 COPY ~gorgon/bam/h_mis21b.bam~ ~override~
+COPY ~gorgon/bam/h_duesbb.bam~ ~override~
 
 //   Add entrance to area file
 
@@ -286,6 +326,9 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
   END
 
 //   Add things to existing creatures
+
+COPY_EXISTING ~BART3.cre~ ~override~                          // Red Sheaf Bartender
+     WRITE_ASCII 0x280 ~BART3~ #32
 
 COPY_EXISTING ~NOBL10.cre~ ~override~                         // Gerard Travenhurst
      WRITE_ASCII 0x280 ~NOBL10~ #32
@@ -683,7 +726,7 @@ COPY ~gorgon/items/h_sw1h03.itm~ ~override/h_sw1h03.itm~      // Stealthwhisper
      SAY NAME2 @106
      SAY UNIDENTIFIED_DESC @107
      SAY DESC @108
-     
+
 COPY ~gorgon/items/h_misc19.itm~ ~override/h_misc19.itm~      // Noble Coin Purse(Lady)
      SAY NAME1 @109
      SAY NAME2 @109
@@ -707,6 +750,30 @@ COPY ~gorgon/items/h_misc22.itm~ ~override/h_misc22.itm~      // Forged Letter
      SAY NAME2 @113
      SAY UNIDENTIFIED_DESC @114
      SAY DESC @114
+     
+COPY ~gorgon/items/h_misc23.itm~ ~override/h_misc23.itm~      // Guild Dues
+     SAY NAME1 @115
+     SAY NAME2 @115
+     SAY UNIDENTIFIED_DESC @116
+     SAY DESC @116
+
+COPY ~gorgon/items/h_misc24.itm~ ~override/h_misc24.itm~      // Moonlit Cascade
+     SAY NAME1 @117
+     SAY NAME2 @117
+     SAY UNIDENTIFIED_DESC @118
+     SAY DESC @118
+     
+COPY ~gorgon/items/h_misc25.itm~ ~override/h_misc25.itm~      // Moonshae Whiskey
+     SAY NAME1 @119
+     SAY NAME2 @119
+     SAY UNIDENTIFIED_DESC @120
+     SAY DESC @120
+     
+COPY ~gorgon/items/h_misc26.itm~ ~override/h_misc26.itm~      // Incendiary Device
+     SAY NAME1 @121
+     SAY NAME2 @121
+     SAY UNIDENTIFIED_DESC @122
+     SAY DESC @122
 
 // New Creatures
 
@@ -985,27 +1052,75 @@ COPY ~gorgon/cre/h_blactc.cre~ ~override/h_blactc.cre~        // Thief
 COPY ~gorgon/cre/h_citywc.cre~ ~override/h_citywc.cre~        // City Watch
      SAY NAME1 @953
      SAY NAME2 @953
-     
+
 COPY ~gorgon/cre/h_city2c.cre~ ~override/h_city2c.cre~        // City Watch(2)
      SAY NAME1 @953
      SAY NAME2 @953
      
+COPY ~gorgon/cre/h_city3c.cre~ ~override/h_city3c.cre~        // City Watch(3)
+     SAY NAME1 @953
+     SAY NAME2 @953
+     
+COPY ~gorgon/cre/h_city4c.cre~ ~override/h_city4c.cre~        // City Watch(4)
+     SAY NAME1 @953
+     SAY NAME2 @953
+     
+COPY ~gorgon/cre/h_city5c.cre~ ~override/h_city5c.cre~        // City Watch(5)
+     SAY NAME1 @953
+     SAY NAME2 @953
+
+COPY ~gorgon/cre/h_city6c.cre~ ~override/h_city6c.cre~        // City Watch(6)
+     SAY NAME1 @953
+     SAY NAME2 @953
+
 COPY ~gorgon/cre/h_whitec.cre~ ~override/h_whitec.cre~        // Commander Whitewood
      SAY NAME1 @954
      SAY NAME2 @954
 
-COPY ~gorgon/cre/h_valerc.cre~ ~override/h_valerc.cre~      // Valera
+COPY ~gorgon/cre/h_valerc.cre~ ~override/h_valerc.cre~        // Valera
      SAY NAME1 @955
      SAY NAME2 @955
+     
+COPY ~gorgon/cre/h_barthc.cre~ ~override/h_barthc.cre~        // Thief(2)
+     SAY NAME1 @952
+     SAY NAME2 @952
+     
+COPY ~gorgon/cre/h_inspec.cre~ ~override/h_inspec.cre~        // Inspector Branic
+     SAY NAME1 @956
+     SAY NAME2 @956
+     
+COPY ~gorgon/cre/h_decoyc.cre~ ~override/h_decoyc.cre~        // Inspector Branic(Decoy)
+     SAY NAME1 @956
+     SAY NAME2 @956
+     
+COPY ~gorgon/cre/h_ishanc.cre~ ~override/h_ishanc.cre~        // Ishani
+     SAY NAME1 @957
+     SAY NAME2 @957
+
+COPY ~gorgon/cre/h_eudikc.cre~ ~override/h_eudikc.cre~        // Lady Eudika
+     SAY NAME1 @958
+     SAY NAME2 @958
+     
+COPY ~gorgon/cre/h_jcookc.cre~ ~override/h_jcookc.cre~        // Cook
+     SAY NAME1 @959
+     SAY NAME2 @959
+     
+COPY ~gorgon/cre/h_clarec.cre~ ~override/h_clarec.cre~        // Lieutenant Clare
+     SAY NAME1 @960
+     SAY NAME2 @960
+
+COPY ~gorgon/cre/h_therec.cre~ ~override/h_therec.cre~        // Lieutenant Theresa
+     SAY NAME1 @961
+     SAY NAME2 @961
 
 
 // Journal Entries
 
-ADD_JOURNAL @200 @201 @202 @203
+ADD_JOURNAL @200 @201 @202 @203 @204
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
             @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446
-            @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527
+            @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
             USING ~gorgon/lang/english/quests.tra~

@@ -36,3 +36,25 @@ END
 IF ~Global("h_BouncerTalk","GLOBAL",3)~ THEN BEGIN 3
    SAY ~What? Step back. I'm in the midst of mustering the confidence to approach that enchanting lady over yonder.~ IF ~~ THEN EXIT
 END
+
+CHAIN
+   IF WEIGHT #-1 ~PartyHasItem("h_misc20") Global("h_SpiritsFail","GLOBAL",1)~ THEN h_bouncd FAIL_0
+~What is it now? Oh, hell... hey, you there! Enough of that nonsense, or you'll be spending the night in the cells!~
+   == h_drunkd
+~Hah! You... you think you're somethin', don't ya? Here I am... sittin' on top of the world... while you... you're just a speck... a tiny, insignificant speck...~
+   =
+~Sir Speck... think you're better... than me? You ain't... ain't nothin'. You'll... you'll see... when the shadows... swallow you whole...~
+   =
+~Go on... get lost... before... before I decide... to eat ya alive...~
+   == h_bouncd
+~That's it, you're done. You've had your fill, and now it's time to go. No more of this nonsense. Up you get!~
+   == h_drunkd
+~I've got... the best aim... in Faerun. Take this!~
+   == h_bouncd
+~Oh, hell! This ain't good.~
+   =
+~Alright, everyone, show's over! Clear out, now, or you'll be escorted out!~
+   DO ~
+      SetGlobal("h_DrunkBrawl","GLOBAL",2)
+      Kill("h_drun2c")~
+EXIT

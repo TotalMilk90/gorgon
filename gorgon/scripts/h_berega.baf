@@ -250,4 +250,59 @@ THEN
                   SetGlobal("h_DestroyNote","GLOBAL",2)
                   ActionOverride("Container 9",DestroyItem("h_misc22"))
                   Continue()
+END 
+
+IF
+         Global("h_SpawnBarth","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_barthc",[2835.1584],NE)
+                  SetGlobal("h_SpawnBarth","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnBarWatch","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_city3c",[3839.3784],W)
+                  CreateCreature("h_city3c",[3579.3770],E)
+                  SetGlobal("h_SpawnBarWatch","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         TimeOfDay(NIGHT)
+         Global("h_SpawnDecoy","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_city4c",[4421.1937],SE)
+                  CreateCreature("h_city4c",[4507.1951],SW)
+                  CreateCreature("h_decoyc",[4446.1999],NE)
+                  SetGlobal("h_SpawnDecoy","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Dead("h_decoyc")
+         Global("h_SpawnInspector","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_inspec",[4279.1694],SE)
+                  SetGlobal("h_SpawnInspector","GLOBAL",2)
+                  Continue()
+END
+
+IF
+        TimeOfDay(MORNING)
+        Global("h_SpawnClare","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_clarec",[4746.3730],SW)
+                 SetGlobal("h_SpawnClare","GLOBAL",2)
+                 Continue()
 END

@@ -1,0 +1,36 @@
+IF
+         TimeOfDay(DAY)
+         GlobalLT("h_ArioshQuest","GLOBAL",17)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnDecoy","GLOBAL",1)
+END
+
+IF
+         Global("h_DecoyAttack","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  EscapeArea()
+END
+
+IF
+         //Global("h_WatchTalk","GLOBAL",1)
+         Global("h_ArioshQuest","GLOBAL",18)
+         Global("h_FinalWatchTalk","GLOBAL",0)
+         Global("h_InsWatchAttack","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_city4d",[PC])
+END
+
+IF
+         Global("h_InsWatchAttack","GLOBAL",1)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Enemy()
+END
+
+

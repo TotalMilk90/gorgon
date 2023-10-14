@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnEudika","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_eudikc",[1655.398],S)
+                 SetGlobal("h_SpawnEudika","GLOBAL",2)
+                 Continue()
+END

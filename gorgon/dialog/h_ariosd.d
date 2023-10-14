@@ -13,7 +13,7 @@ IF ~~ THEN BEGIN STEAL_1
 END
 
 IF ~~ THEN BEGIN STEAL_2
-   SAY ~Now, if you're ready to dip your fingers into the grit and grime of the underworld, to snatch what's ours from the unsuspecting, I might just have some work for you.~ IF ~~ THEN GOTO STEAL_3
+   SAY ~Now, if you're ready to dip your fingers into the grit and grime of the underworld, to snatch what's ours from the unsuspecting, I might just have some work for ya.~ IF ~~ THEN GOTO STEAL_3
 END
 
 IF ~~ THEN BEGIN STEAL_3
@@ -37,7 +37,8 @@ END
 IF ~~ THEN BEGIN STEAL_7
    SAY ~Fair enough. No harm in knowing your limits. If you ever change your mind, you know where to find me.~
 IF ~~ THEN DO ~
-   SetGlobal("h_ArioshQuest","GLOBAL",1)~ EXIT
+   SetGlobal("h_ArioshQuest","GLOBAL",1)
+   AddJournalEntry(@204,USER)~ EXIT
 END
 
 IF ~GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",1)~ THEN BEGIN STEAL_8
@@ -55,7 +56,7 @@ IF ~~ THEN BEGIN ACCEPT_1
 END
 
 IF ~~ THEN BEGIN FIRST_0
-   SAY ~There's a pair of nobles passing through our town, loaded with coin and heading for the Nashkel Carnival. They're currently havin' a little soiree right outside the Jovial Juggler.~ IF ~~ THEN GOTO FIRST_1
+   SAY ~There's a pair of nobles passing through our town, loaded with coin and heading for the Nashkel Carnival. They're big spenders who are plannin' a little soiree outside the Jovial Juggler.~ IF ~~ THEN GOTO FIRST_1
 END
 
 IF ~~ THEN BEGIN FIRST_1
@@ -72,7 +73,8 @@ END
 
 IF ~~ THEN BEGIN FIRST_3
    SAY ~Best not be makin' a mess on this venture, neither. These bigwigs have connections, and they'll be sendin' an army down if we start dropping bodies. Got it?~
-       ++ ~Understood. No bloodshed, and no pinchin' while the guard's watching.~ GOTO FIRST_4
+       ++ ~No bloodshed, and no pinchin' while the guard's watching.~ GOTO FIRST_4
+       ++ ~I have some other things I need to do first.~ EXIT
 END
 
 IF ~~ THEN BEGIN FIRST_4
@@ -137,22 +139,22 @@ END
 
 IF ~~ THEN BEGIN SEC_3
    SAY ~You're gonna be the bait, lure 'em out, and then... well, let's just say you'll teach them the price of crossing us.~
-       ++ ~Any more intel for me? Names, or how many we're dealing with?~ GOTO SEC_4
-       ++ ~Should I ensure they never return, or is a warning enough?~ GOTO SEC_5
-       ++ ~Copy that. Where can I find them?~ GOTO SEC_6
+       ++ ~Is there any more intel for me? Names, or how many we're dealing with?~ GOTO SEC_4
+       ++ ~Want me to gut 'em or just give a lear~ GOTO SEC_5
+       ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
        ++ ~I have some other things I need to do first.~ EXIT
 END
 
 IF ~~ THEN BEGIN SEC_4
    SAY ~The leader goes by Blackthorn. Real thorn in my arse if ya ask me. He's got a small crew, just a few men with him, nothing substantial.~
        ++ ~Should I ensure they never return, or is a warning enough?~ GOTO SEC_5
-       ++ ~Copy that. Where can I find them?~ GOTO SEC_6
+       ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
 END
 
 IF ~~ THEN BEGIN SEC_5
    SAY ~I'll trust your judgment. Just make certain they grasp the severity of the matter. If a proper scare won't suffice, consider offering a more... permanent solution.~
-       ++ ~Any more intel for me? Names, or how many we're dealing with?~ GOTO SEC_4
-       ++ ~Copy that. Where can I find them?~ GOTO SEC_6
+       ++ ~Is there any more intel for me? Names, or how many we're dealing with?~ GOTO SEC_4
+       ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
 END
 
 IF ~~ THEN BEGIN SEC_6
@@ -238,11 +240,15 @@ IF ~~ THEN BEGIN THIRD_3
 END
 
 IF ~~ THEN BEGIN THIRD_4
-   SAY ~Each of those spots holds a black sack, tied up nice and tight. You'll find a mix of gems, artifacts, and a healthy share of coin. It's a good haul, no doubt about it.~ IF ~~ THEN GOTO THIRD_5
+   SAY ~Each of those spots holds a black sack, tied up nice and tight, containing a trove of illicit goods.~ IF ~~ THEN GOTO THIRD_4.5
+END
+
+IF ~~ THEN BEGIN THIRD_4.5
+   SAY ~You'll find a mix of stolen valuables, artifacts, and contraband that will fetch quite a sum on the black market.~ IF ~~ THEN GOTO THIRD_5
 END
 
 IF ~~ THEN BEGIN THIRD_5
-   SAY ~But remember, these goods ain't just valuable, they're symbols of our prowess. Treat 'em with care, and they'll repay you in kind.~
+   SAY ~It's a good haul, no doubt about it. But remember, these goods ain't just valuable, they're symbols of our prowess. Treat 'em with care, and they'll repay you in kind.~
         ++ ~If things take a turn, how should I handle the City Watch?~ GOTO THIRD_6
         ++ ~Got it. Where can I find the drop points?~ GOTO THIRD_9
 END
@@ -266,15 +272,27 @@ IF ~~ THEN BEGIN THIRD_9
 END
 
 IF ~~ THEN BEGIN THIRD_10
-   SAY ~One crate, nestled near the southern fountain, holds our first prize. Watch for the play of moonlight on the water, it'll guide your way. And remember, patience is key. Let the city's rhythm be your ally.~ IF ~~ THEN GOTO THIRD_11
+   SAY ~One crate, nestled near the southern fountain, holds our first prize.~ IF ~~ THEN GOTO THIRD_10.5
+END
+
+IF ~~ THEN BEGIN THIRD_10.5
+   SAY ~Watch for the play of moonlight on the water, it'll guide your way. And remember, patience is key. Let the city's rhythm be your ally.~ IF ~~ THEN GOTO THIRD_11
 END
 
 IF ~~ THEN BEGIN THIRD_11
-   SAY ~Hidden beneath the northern gardens, you'll find a barrel with its secrets. The shadows there are deep, and the air is thick with the scent of night-blooming flowers. Keep your senses sharp, and you'll be on your way in no time.~ IF ~~ THEN GOTO THIRD_12
+   SAY ~Hidden beneath the northern gardens, you'll find a barrel with its secrets.~ IF ~~ THEN GOTO THIRD_11.5
+END
+
+IF ~~ THEN BEGIN THIRD_11.5
+   SAY ~The shadows there are deep, and the air is thick with the scent of night-blooming flowers. Keep your senses sharp, and you'll be on your way in no time.~ IF ~~ THEN GOTO THIRD_12
 END
 
 IF ~~ THEN BEGIN THIRD_12
-   SAY ~By the Smithy, there's a sack with our prize, waiting for its rightful owner. The clink of hammer on anvil will be your backdrop. Watch for the Smithy's apprentice, he's an early riser. A quick hand will serve you well.~ IF ~~ THEN GOTO THIRD_13
+   SAY ~By the Smithy, there's a sack with our prize, waiting for its rightful owner.~ IF ~~ THEN GOTO THIRD_12.5
+END
+
+IF ~~ THEN BEGIN THIRD_12.5
+   SAY ~The clink of hammer on anvil will be your backdrop. Watch for the Smithy's apprentice, he's an early riser. A quick hand will serve you well.~ IF ~~ THEN GOTO THIRD_13
 END
 
 IF ~~ THEN BEGIN THIRD_13
@@ -291,7 +309,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",7)~ THEN BEGIN THIRD_14
    SAY ~The night's young, and those coffers ain't gonna collect themselves. Get back out there and finish the job.~ IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~NumItemsParty("h_misc21",3)~ THEN BEGIN THIRD_15
+IF WEIGHT #-2 ~NumItemsParty("h_misc21",3)~ THEN BEGIN THIRD_15
    SAY ~Back in one piece, I see. How'd the mission go? Any trouble slippin' past those City Watch dogs?~
        +~NumDeadLT("h_city2c",2) NumDeadGT("h_city2c",0)~+ ~The goods are retrieved, but I had to silence a guard. No other choice.~ GOTO THIRD_16
        +~NumDeadGT("h_city2c",1)~+ ~It got messy out there. Had to send a few of 'em to meet the reaper. But I got the job done.~ GOTO THIRD_18
@@ -372,7 +390,11 @@ IF ~~ THEN BEGIN FOUR_1
 END
 
 IF ~~ THEN BEGIN FOUR_2
-   SAY ~Now, here's where things get interesting. We've got our own bloke in the Watch, ears to the ground. He's heard they've been using a drop behind the Burning Wizard for passing love letters to our dear friend.~ IF ~~ THEN GOTO FOUR_3
+   SAY ~Now, here's where things get interesting. We've got our own bloke in the Watch, ears to the ground.~ IF ~~ THEN GOTO FOUR_2.5
+END
+
+IF ~~ THEN BEGIN FOUR_2.5
+   SAY ~Word has it they've been utilizing a secret drop behind the Burning Wizard to exchange more than just pleasantries, if you catch my drift.~ IF ~~ THEN GOTO FOUR_3
 END
 
 IF ~~ THEN BEGIN FOUR_3
@@ -381,7 +403,7 @@ END
 
 IF ~~ THEN BEGIN FOUR_4
    SAY ~Instead, it's gonna be you, blades drawn and ready for a little chat. I want this dealt with, and no half-measures.~
-       ++ ~So, we've got an inside man? Alright, what's the plan?~ GOTO FOUR_5
+       ++ ~So, we've got an inside man? Alright, what's the play?~ GOTO FOUR_5
        ++ ~A traitor among us. Let's smoke them out before they do more damage.~ GOTO FOUR_5
        ++ ~I have some other things I need to do first.~ EXIT
 END
@@ -391,7 +413,7 @@ IF ~~ THEN BEGIN FOUR_5
 END
 
 IF ~~ THEN BEGIN FOUR_6
-   SAY ~Then, when the night blankets the town, head to the fountain. Stay sharp, keep your wits about you. This is where the traitor's tale reaches its final chapter.~
+   SAY ~Then, when the night blankets the town, head to the fountain. Stay sharp, and keep your guard up. This is where the traitor's tale reaches its final chapter.~
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",9)
    AddJournalEntry(@524,QUEST)
@@ -402,7 +424,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",9)~ THEN BEGIN FOUR_7
    SAY ~Remember, <CHARNAME>, this mission is bound to get messy. Keep your wits about you, and don't hesitate to get your hands dirty.~ IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_KilledValera","GLOBAL",1)~ THEN BEGIN FOUR_8
+IF WEIGHT #-2 ~Global("h_KilledValera","GLOBAL",1)~ THEN BEGIN FOUR_8
    SAY ~Aye, you're back, and I can see it in your eyes, <CHARNAME>. You've done what needed to be done.~
        ++ ~Valera's coin has been spent. The city won't hear her whispers again.~ GOTO FOUR_9
 END
@@ -415,11 +437,11 @@ IF ~~ THEN BEGIN FOUR_10
    SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO FOUR_12
 END
 
-IF WEIGHT #-1 ~Global("h_ValeraQuest","GLOBAL",3) Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN FOUR_11
+IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",3) Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN FOUR_11
    SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO FOUR_12
 END
 
-IF WEIGHT #-1 ~Global("h_ValeraQuest","GLOBAL",4) Global("h_BlackJoin","GLOBAL",1)~ THEN BEGIN BLACK_0
+IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",4) Global("h_BlackJoin","GLOBAL",1)~ THEN BEGIN BLACK_0
    SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO FOUR_12
 END
 
@@ -431,20 +453,414 @@ IF ~~ THEN BEGIN FOUR_13
    SAY ~It's a dark path, but it's the only path that keeps us all breathin'. Remember that, <CHARNAME>. Remember what it means to walk these streets.~
 IF ~~ THEN DO ~
       SetGlobal("h_BlackLeave","GLOBAL",1)
-      SetGlobal("h_ValeraQuest","GLOBAL",4)
+      SetGlobal("h_ValeraQuest","GLOBAL",5)
+      SetGlobal("h_KilledValera","GLOBAL",2)
       SetGlobal("h_ArioshQuest","GLOBAL",10)
       AddJournalEntry(@527,QUEST_DONE)
       AddExperienceParty(900)
       GiveGoldForce(600)~ EXIT
 END
 
-IF ~Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN FIVE_0
-   SAY ~Next quest.~ IF ~~ THEN EXIT
+IF ~GlobalLT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN WAIT_0
+   SAY ~Aye, <CHARNAME>, the streets have grown quiet of late, but fret not. Patience is a blade in its own right, and in due time, opportunities will sprout like weeds in the cracks.~ IF ~~ THEN GOTO WAIT_1
 END
 
+IF ~~ THEN BEGIN WAIT_1
+   SAY ~Keep those ears to the ground, and before you know it, we'll have our hands full with mischief aplenty.~
+IF ~~ THEN DO ~
+   AddJournalEntry(@205,USER)~ EXIT
+END
 
+IF ~GlobalGT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN FIVE_0
+   SAY ~Alright, mate. Time to make our rounds and collect what's rightfully ours from the local establishments.~ IF ~~ THEN GOTO FIVE_1
+END
 
+IF ~~ THEN BEGIN FIVE_1
+   SAY ~Four inns and taverns in this fine town, each owing their safety to us. We make sure they stay open, and they pay us in return.~ IF ~~ THEN GOTO FIVE_2
+END
 
+IF ~~ THEN BEGIN FIVE_2
+   SAY ~It's the way of things, you see. These places thrive under our watchful eye, and it's high time they showed us their gratitude.~ IF ~~ THEN GOTO FIVE_3
+END
+
+IF ~~ THEN BEGIN FIVE_3
+   SAY ~Now, go forth, and ensure our coffers are well-lined. Report back when you've secured our dues.~
+       ++ ~How much coin should I be collecting from each business?~ GOTO FIVE_4
+       ++ ~What happens if they refuse to pay?~ GOTO FIVE_5
+       ++ ~Is there any specific place I should start with?~ GOTO FIVE_6
+       ++ ~Alright, I'll come back with the payments.~ GOTO FIVE_7
+END
+
+IF ~~ THEN BEGIN FIVE_4
+   SAY ~A proper sack from each lad. You'll know it's all accounted for when you lay eyes on it, nothin' to fuss about.~
+       ++ ~What happens if they refuse to pay?~ GOTO FIVE_5
+       ++ ~Is there any specific place I should start with?~ GOTO FIVE_6
+       ++ ~Alright, I'll come back with the payments.~ GOTO FIVE_7
+END
+
+IF ~~ THEN BEGIN FIVE_5
+   SAY ~Refusal isn't an option, <CHARNAME>. If necessary, be ready to to use a sharp tongue, or an even sharper blade. We can't afford any shirkers.~
+       ++ ~How much coin should I be collecting from each business?~ GOTO FIVE_4
+       ++ ~Is there any specific place I should start with?~ GOTO FIVE_6
+       ++ ~Alright, I'll come back with the payments.~ GOTO FIVE_7
+END
+
+IF ~~ THEN BEGIN FIVE_6
+   SAY ~Doesn't make a lick of difference, mate. Just make sure to hit 'em all, Feldepost's, the Juggler, Burnin' Wizard, and the Red Sheaf.~
+       ++ ~How much coin should I be collecting from each business?~ GOTO FIVE_4
+       ++ ~What happens if they refuse to pay?~ GOTO FIVE_5
+       ++ ~Alright, I'll come back with the payments.~ GOTO FIVE_7
+END
+
+IF ~~ THEN BEGIN FIVE_7
+   SAY ~Good. Make sure you do, and make sure it's all there. We'll be watching, and those blokes better know what's good for 'em.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",11)
+   AddJournalEntry(@528,QUEST)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",11)~ THEN BEGIN FIVE_8
+   SAY ~Well, <CHARNAME>, how's the coin flowing in? Any trouble with those tavern-keepers?~
+       +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",0)~+ ~Only the Red Sheaf couldn't pay. I thought it best to give them a warning instead of resorting to... drastic measures.~ GOTO FIVE_9
+       +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",1)~+ ~Only the Red Sheaf couldn't pay. I chose to make an example out of him. He won't be causing any more trouble.~ GOTO FIVE_10
+       +~NumItemsPartyLT("h_misc23",3)~+ ~Still makin' the rounds. Be back in a jiffy.~ EXIT
+END
+
+IF ~~ THEN BEGIN FIVE_9
+   SAY ~A warning, eh? Sometimes, a lesson needs to be carved in blood for it to stick.~ IF ~~ THEN GOTO FIVE_9.5
+END
+
+IF ~~ THEN BEGIN FIVE_9.5
+   SAY ~I'll have a couple of the lads pay our friend another visit. He'll learn soon enough what happens when he crosses the Gorgon's Eye.~ IF ~~ THEN GOTO FIVE_11
+END
+
+IF ~~ THEN BEGIN FIVE_10
+   SAY ~Good work, <CHARNAME>. You've got a strong hand. No room for weakness in this business. The Red Sheaf will remember this lesson.~ IF ~~ THEN GOTO FIVE_11
+END
+
+IF ~~ THEN BEGIN FIVE_11
+   SAY ~This is how we keep the wheels turning in Beregost. Every coin collected strengthens our grip, ensures our safety, and keeps the Gorgon's Eye thriving. Keep it up.~
+IF ~~ THEN DO ~
+      SetGlobal("h_ArioshQuest","GLOBAL",12)
+      AddJournalEntry(@536,QUEST_DONE)
+      TakePartyItemAll("h_misc23")
+      DestroyItem("h_misc23")
+      AddExperienceParty(900)
+      GiveGoldForce(600)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",12)~ THEN BEGIN SIX_0
+   SAY ~Listen close, <CHARNAME>, word's reachin' me from our mole in the Watch. They say we've got ourselves a proper high-hat Inspector who's crawled his way down from the Gate.~ IF ~~ THEN GOTO SIX_1
+END
+
+IF ~~ THEN BEGIN SIX_1
+   SAY ~This bloke's no pushover. Nah, he's got a sharp wit, and he ain't afraid to use it. Takes his job seriously, he does. Flaming Fist through and through.~ IF ~~ THEN GOTO SIX_2
+END
+
+IF ~~ THEN BEGIN SIX_2
+   SAY ~Except, he don't play by the usual rules, and he's none too happy 'bout the state of things 'ere. Rampant thievin', he says, and our little 'gang' gets the blame.~ IF ~~ THEN GOTO SIX_3
+END
+
+IF ~~ THEN BEGIN SIX_3
+   SAY ~Here's where you come in, mate. We need this Inspector gone, sharpish. No room for niceties, no room for second-guessin'. Just sharp steel and a quick exit.~ IF ~~ THEN GOTO SIX_4
+END
+
+IF ~~ THEN BEGIN SIX_4
+   SAY ~You make it look like the Watch's got itself a leaky roof, and we get to breathe easy.~
+       ++ ~What's so dangerous about this Inspector?~ GOTO SIX_5
+       +~Global("h_KilledValera","GLOBAL",0)~+ ~Didn't Valera warn us about this Inspector?~ GOTO SIX_9
+       ++ ~Consider it done. Where can I find this Inspector?~ GOTO SIX_10
+END
+
+IF ~~ THEN BEGIN SIX_5
+   SAY ~He's got a knack for reading between the lines, see? Knows how to play the game better than most of those Flaming Fist types.~ IF ~~ THEN GOTO SIX_6
+END
+
+IF ~~ THEN BEGIN SIX_6
+   SAY ~He's not just a musclehead, but a thinker. A master of craft and guile, not brawn and badges.~ IF ~~ THEN GOTO SIX_7
+END
+
+IF ~~ THEN BEGIN SIX_7
+   SAY ~This Inspector's got a reputation for getting things done, no matter the cost. And he's got a particular taste for rooting out trouble.~ IF ~~ THEN GOTO SIX_8
+END
+
+IF ~~ THEN BEGIN SIX_8
+   SAY ~If he's sniffing around, you can bet he's after something big. We've got to be extra careful with this one, mate. He's a different breed entirely.~
+       +~Global("h_KilledValera","GLOBAL",0)~+ ~Didn't Valera warn us about this Inspector?~ GOTO SIX_9
+       ++ ~Consider it done. Where can I find this Inspector?~ GOTO SIX_10
+END
+
+IF ~~ THEN BEGIN SIX_9
+   SAY ~Aye, so she did. Valera had her ear to the ground after all. Guess she was spouting the truth.~
+       ++ ~What's so dangerous about this guy?~ GOTO SIX_5
+       ++ ~Consider it done. Where can I find this Inspector?~ GOTO SIX_10
+END
+
+IF ~~ THEN BEGIN SIX_10
+   SAY ~Ahh, now that's the tricky bit. Our mole in the Watch has given us a bit of a lead. The Inspector is holding a meeting tonight in Beregost's eastside.~ IF ~~ THEN GOTO SIX_11
+END
+
+IF ~~ THEN BEGIN SIX_11
+   SAY ~They're trying to coordinate efforts to deal with the likes of us. It's your job to make sure they don't get too cozy with the locals, if you catch my drift.~ IF ~~ THEN GOTO SIX_12
+END
+
+IF ~~ THEN BEGIN SIX_12
+   SAY ~You'll need to be a shadow, <CHARNAME>. Slip into that meeting like a ghost. And when the moment's ripe, snuff him out. Make it swift, and leave no trace behind.~
+IF ~~ THEN DO ~
+      SetGlobal("h_ArioshQuest","GLOBAL",13)
+      SetGlobal("h_SpawnDecoy","GLOBAL",1)
+      AddJournalEntry(@537,QUEST)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",13)~ THEN BEGIN SIX_13
+   SAY ~Make it clean and make it count. You've got one chance at this, don't squander it.~
+       +~Dead("h_decoyc")~+ ~The Inspector ran a clever game on us. The meeting was a ploy to smoke out our mole, and it worked.~ GOTO SIX_14
+       +~NumDeadLT("h_decoyc",1)~+ ~I'll take him out, don't you worry.~ EXIT
+END
+
+IF ~~ THEN BEGIN SIX_14
+   SAY ~That Inspector's got more tricks up his sleeve than I gave him credit for. Damn it! We need to regroup and plan our next move.~ IF ~~ THEN GOTO SIX_15
+END
+
+IF ~~ THEN BEGIN SIX_15
+   SAY ~He'll get our man, the poor bastard. He's gonna be in for a world of pain. I don't doubt his loyalty, but the Inspector won't hold back, and I dread to think what he'll do to get his answers.~ IF ~~ THEN GOTO SIX_16
+END
+
+IF ~~ THEN BEGIN SIX_16
+   SAY ~He's surely no ordinary copper. He's sharp, and he's got a plan. We must be ready, <CHARNAME>. This game just got deadlier, and we can't afford any missteps.~ IF ~~ THEN GOTO SIX_17
+END
+
+IF ~~ THEN BEGIN SIX_17
+   SAY ~We'll need to be one step ahead if we're going to make it out of this mess.~
+IF ~~ THEN DO ~
+      SetGlobal("h_ArioshQuest","GLOBAL",14)
+      AddJournalEntry(@539,QUEST_DONE)
+      AddExperienceParty(900)
+      GiveGoldForce(600)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",14)~ THEN BEGIN SEV_0
+   SAY ~Aye, it seems we've underestimated this Inspector. We need to get inside his head, find his weaknesses, and turn the tables in our favor.~ IF ~~ THEN GOTO SEV_1
+END
+
+IF ~~ THEN BEGIN SEV_1
+   SAY ~We need to take this fight to the heart of his throne, Baldur's Gate, where there's no better contact for gatherin' intel than Black Lily.~ IF ~~ THEN GOTO SEV_2
+END
+
+IF ~~ THEN BEGIN SEV_2
+   SAY ~She's a shrewd operator, knows the ins and outs of the city better than anyone. I've known her for some time, and I'll admit, there's a certain admiration there.~ IF ~~ THEN GOTO SEV_3
+END
+
+IF ~~ THEN BEGIN SEV_3
+   SAY ~Clever, resourceful, and as sharp as a stiletto. Mind yourself with her, though; she's got a knack for sussing out any hidden agenda.~ IF ~~ THEN GOTO SEV_4
+END
+
+IF ~~ THEN BEGIN SEV_4
+   SAY ~Head to Baldur's Gate, find Black Lily, and see what she knows about this Inspector. Bring back whatever you find, and we'll use it to cut this snake down to size.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",15)
+   SetGlobal("h_BlackLilyQuest","GLOBAL",1)
+   AddJournalEntry(@540,QUEST)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",15)~ THEN BEGIN SEV_5
+   SAY ~You'll be findin' Black Lily at the Baldur's Gate thieves guild. Remember, we may dance on different streets, but we ain't at each other's throats. You'll be stepping onto neutral ground.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",16)~ THEN BEGIN SEV_6
+   SAY ~This Inspector, he's been a thorn in our side for far too long, and when you were up at the Gate, he hit us hard.~ IF ~~ THEN GOTO SEV_7
+END
+
+IF ~~ THEN BEGIN SEV_7
+   SAY ~Swept our drop spots, nabbed a dozen of our blokes, and even sent a few of 'em to meet the Reaper. He needs to pay, and we need to make sure of it.~ IF ~~ THEN GOTO SEV_8
+END
+
+IF ~~ THEN BEGIN SEV_8
+   SAY ~So, listen close, mate. In case this plan don't dance the way we'd like, I've got an insurance policy for ya.~ IF ~~ THEN GOTO SEV_9
+END
+
+IF ~~ THEN BEGIN SEV_9
+   SAY ~This 'ere's an incendiary device, specially made to set things ablaze quick as a flash. I want ya to tuck it away in the Jovial Juggler's kitchen, amidst all them liquor barrels and cookin' oils.~ IF ~~ THEN GOTO SEV_10
+END
+
+IF ~~ THEN BEGIN SEV_10
+   SAY ~Then, you let the bartender know that unless he follows your lead, that place'll be reduced to cinders.~ IF ~~ THEN GOTO SEV_10.5
+END
+
+IF ~~ THEN BEGIN SEV_10.5
+   SAY ~And if that inspector tries to pull a fast one, don't hesitate to light the fuse and give him a fiery send-off.~ IF ~~ THEN GOTO SEV_11
+END
+
+IF ~~ THEN BEGIN SEV_11
+   SAY ~But remember, it's a last resort, understand?~
+       ++ ~What's the range on this thing? How far do I need to be before I set it off?~ GOTO SEV_12
+       ++ ~What's the likelihood of collateral damage with this plan?~ GOTO SEV_14
+       ++ ~Understood, Ariosh. I'm prepared for whatever comes our way.~ GOTO SEV_16
+END
+
+IF ~~ THEN BEGIN SEV_12
+   SAY ~Aye, you'll need to be within a reasonable distance to set it off. Any spot on the ground level should work. But don't worry, I've got a potion that'll offer you some protection from the flames.~ IF ~~ THEN GOTO SEV_13
+END
+
+IF ~~ THEN BEGIN SEV_13
+   SAY ~It won't make you fireproof, mind you, but it'll help keep you from being scorched too badly.~
+       ++ ~What's the likelihood of collateral damage with this plan?~ GOTO SEV_14
+       ++ ~Understood, Ariosh. I'm prepared for whatever comes our way.~ GOTO SEV_16
+END
+
+IF ~~ THEN BEGIN SEV_14
+   SAY ~Collateral damage will be high, no doubt about it. Anyone in the vicinity when that thing goes off is likely to meet a fiery end.~ IF ~~ THEN GOTO SEV_15
+END
+
+IF ~~ THEN BEGIN SEV_15
+   SAY ~That includes the Inspector, but it also means anyone else in the way. It's a last resort, lad. We're not taking this lightly.~
+       ++ ~What's the range on this thing? How far do I need to be before I set it off?~ GOTO SEV_12
+       ++ ~Understood, Ariosh. I'm prepared for whatever comes our way.~ GOTO SEV_16
+END
+
+IF ~~ THEN BEGIN SEV_16
+   SAY ~Good. Remember, we're counting on you. Don't let us down, mate.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",17)
+   SetGlobal("h_DecoyAttack","GLOBAL",2)
+   SetGlobal("h_BarWatchAttack","GLOBAL",2)
+   AddJournalEntry(@546,QUEST)
+   GiveItemCreate("h_misc26",LastTalkedToBy,0,0,0)
+   GiveItemCreate("POTN02",LastTalkedToBy,0,0,0)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",17)~ THEN BEGIN SEV_16.5
+   SAY ~Set that device up in the kitchen, yeah? And try to be sneaky about it. Force the barkeep to play his part, sit back, and watch the final of act of the Inspector's last play.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",18)~ THEN BEGIN SEV_17
+   SAY ~Word's already gettin' 'round about something big going down at the Juggler. Let's get a formal report.~
+       +~Global("h_PoisonInspector","GLOBAL",1)~+ ~The plan was smooth sailing. Ishani played it off well and the Inspector went down without a fuss.~ GOTO SEV_18
+       +~Global("h_PoisonFailInspector","GLOBAL",1)~+ ~The Inspector saw through the ruse, forcing my hand to take action.~ GOTO SEV_19
+       +~Global("h_FightInspector","GLOBAL",1) Global("h_PoisonFailInspector","GLOBAL",0)~+ ~I didn't want to risk the plan failing, so I took matters into my own hands.~ GOTO SEV_20
+       +~Global("h_FireInspector","GLOBAL",1)~+ ~Had no choice but to blow the joint. The Inspector was burned alive.~ GOTO SEV_21
+END
+
+IF ~~ THEN BEGIN SEV_18
+   SAY ~Ishani's charms and that tainted chalice did the trick, eh? Well played.~ IF ~~ THEN GOTO SEV_22
+END
+
+IF ~~ THEN BEGIN SEV_19
+   SAY ~A twist in the plot, it seems. The Inspector wasn't an easy mark, and he smelt a rat. Your intervention was the only way to secure our hides, well done.~ IF ~~ THEN GOTO SEV_22
+END
+
+IF ~~ THEN BEGIN SEV_20
+   SAY ~Alright, mate. You didn't stick to the original script, but you got the job done, and that's what matters.~ IF ~~ THEN GOTO SEV_22
+END
+
+IF ~~ THEN BEGIN SEV_21
+   SAY ~Damn it, things got messier than I'd have liked. It was a tough call, no doubt about it. But you did what you had to do to get the job done.~ IF ~~ THEN GOTO SEV_22
+END
+
+IF ~~ THEN BEGIN SEV_22
+   SAY ~The Inspector's out of the picture, and the Watch, who thought they had us cornered, are starting to question where their loyalties lie.~ IF ~~ THEN GOTO SEV_23
+END
+
+IF ~~ THEN BEGIN SEV_23
+   SAY ~Word's spreading about our mettle, and the whispers of dissent are growing louder. Soon, it'll just be Commander Whitewood left standing, and the Gorgon's Eye will rise.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",19)
+   AddExperienceParty(900)
+   AddJournalEntry(@551,QUEST_DONE)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",19)~ THEN BEGIN EIGHT_0
+   SAY ~<CHARNAME>, we are on the cusp of victory. Whitewood is the last hurdle standing between us and absolute control of Beregost. But she's not standing alone.~ IF ~~ THEN GOTO EIGHT_1
+END
+
+IF ~~ THEN BEGIN EIGHT_1
+   SAY ~Her most ardent Valkyries, Clare and Theresa Gallant. A pair of dangerous and deadly sisters of divine heritage.~ IF ~~ THEN GOTO EIGHT_1.5
+END
+
+IF ~~ THEN BEGIN EIGHT_1.5
+   SAY ~These lieutenants, they're the cogs keeping her contraption in motion, and we've got to yank 'em out.~ IF ~~ THEN GOTO EIGHT_2
+END
+
+IF ~~ THEN BEGIN EIGHT_2
+   SAY ~Clare's a creature of habit, you see. Each dawn, like clockwork, she takes a stroll down the temple byway in the southeast. A soft spot for nature, that one.~ IF ~~ THEN GOTO EIGHT_3
+END
+
+IF ~~ THEN BEGIN EIGHT_3
+   SAY ~It's our bit of good fortune that this locale's a bit off the beaten path, away from prying eyes. No witnesses, no curious onlookers. It's the perfect moment to make our move.~ IF ~~ THEN GOTO EIGHT_4
+END
+
+IF ~~ THEN BEGIN EIGHT_4
+   SAY ~Now, Theresa, she's a different sort altogether. She's as battle-hardened as they come, wears her scars like a badge of honor.~ IF ~~ THEN GOTO EIGHT_5
+END
+
+IF ~~ THEN BEGIN EIGHT_5
+   SAY ~She's not one to frequent the finer establishments. No, she prefers the after hours rough-and-tumble of the Burning Wizard.~ IF ~~ THEN GOTO EIGHT_6
+END
+
+IF ~~ THEN BEGIN EIGHT_6
+   SAY ~You'll find her there, more often than not, nursin' a tankard of ale, or sharin' a bed with whatever 'lucky' bloke catches her eye.~ IF ~~ THEN GOTO EIGHT_7
+END
+
+IF ~~ THEN BEGIN EIGHT_7
+   SAY ~Listen up, mate. This ain't a game of brawn, it's a dance of finesse. Timing is key, and you'll need to be as quiet as a whisper in a silent room. We don't want a whiff of our scent near 'em.~ IF ~~ THEN GOTO EIGHT_8
+END
+
+IF ~~ THEN BEGIN EIGHT_8
+   SAY ~Slide through the shadows, stay low, and make sure they never even catch a glimpse of you. When you're close, strike fast, one lethal blow from behind, swift as a serpent's bite.~ IF ~~ THEN GOTO EIGHT_9
+END
+
+IF ~~ THEN BEGIN EIGHT_9
+   SAY ~This is true assassination work, reserved for the masters of stealth and precision. One strike, one life extinguished.~ IF ~~ THEN GOTO EIGHT_10
+END
+
+IF ~~ THEN BEGIN EIGHT_10
+   SAY ~It's a dance, my friend, and you're about to lead.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",20)
+   SetGlobal("h_SpawnTheresa","GLOBAL",1)
+   SetGlobal("h_SpawnClare","GLOBAL",1)
+   SetGlobal("h_BarWatchAttack","GLOBAL",1)
+   AddJournalEntry(@552,QUEST)~ EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadLT("h_clarec",1) NumDeadLT("h_therec",1)~ THEN BEGIN EIGHT_11
+   SAY ~Stealth, surprise, that's your ticket. They won't see you coming if you play your cards right.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadGT("h_clarec",0) NumDeadGT("h_therec",0)~ THEN BEGIN EIGHT_12
+   SAY ~Aye, I've heard the whispers already. Word's spread like wildfire about the Valkyrie twins meetin' their untimely end. Good work, mate.~
+       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",0)~+ ~Sleeker than a shadow, they never knew what hit 'em.~ DO ~AddExperienceParty(1200)~ GOTO EIGHT_13
+       +~Global("h_ClareTalk","GLOBAL",1) Global("h_TheresaTalk","GLOBAL",0)~+ ~Clare caught a glimpse, but it was too late for her.~ GOTO EIGHT_14
+       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",1)~+ ~Theresa had a moment, but it didn't save her.~ GOTO EIGHT_14
+       +~Global("h_ClareTalk","GLOBAL",1) Global("h_TheresaTalk","GLOBAL",1)~+ ~They both looked me in the eye before the end.~ GOTO EIGHT_14
+END
+
+IF ~~ THEN BEGIN EIGHT_13
+   SAY ~You've got the touch, mate. Snuffing 'em out without leaving a trace. You're a true master of the craft, you are.~ IF ~~ THEN GOTO EIGHT_15
+END
+
+IF ~~ THEN BEGIN EIGHT_14
+   SAY ~You managed to get the job done, but remember, true masters of stealth leave no room for doubt. Keep honing those skills.~ IF ~~ THEN GOTO EIGHT_15
+END
+
+IF ~~ THEN BEGIN EIGHT_15
+   SAY ~Alright, listen up, <CHARNAME>. You've proven yourself today. With the twins out of the picture, Whitewood's grip on the City Watch will start slippin'.~ IF ~~ THEN GOTO EIGHT_16
+END
+
+IF ~~ THEN BEGIN EIGHT_16
+   SAY ~Now, we'll need to make our move and secure our position. Gather the lads, we're going to have a little chat with the good Commander.~ IF ~~ THEN GOTO EIGHT_17
+END
+
+IF ~~ THEN BEGIN EIGHT_17
+   SAY ~This is where the real game begins, and you've earned your place at the table. Remember, we're not just thieves anymore. We're the bloody hand that guides Beregost. Let's make it count.~
+IF ~~ THEN DO ~
+   AddJournalEntry(@555,QUEST_DONE)
+   SetGlobal("h_ArioshQuest","GLOBAL",20)
+   SetGlobal("h_WatchCutscene","GLOBAL",1)
+   ClearAllActions()
+   StartCutSceneMode()
+   StartCutScene("h_citcut")~ EXIT
+END
 
 
 

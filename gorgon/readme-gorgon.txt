@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.3.4
+V.4.0
 
 =======
 Prequel
@@ -37,7 +37,7 @@ Version 3.4:
 -Fixed "Thief's Compendium" books to grant correct bonuses
 -Replaced Danika with Naga who now offers temple services
 -Added new weapon "Blackjack"
--Added 2 new quests from Ariosh
+-Added 4 new quests from Ariosh
 -Added new quest alternative for "Order of the Black Lotus"
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
 -Increased payout for guild profits

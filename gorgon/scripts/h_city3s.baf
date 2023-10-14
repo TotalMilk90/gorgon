@@ -1,0 +1,18 @@
+IF
+         See([PC])
+         Global("h_JovialDues","GLOBAL",1)
+         Global("h_BarWatchAttack","GLOBAL",0)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  StartDialog("h_city3d",[PC])
+END
+
+IF
+         Global("h_BarWatchAttack","GLOBAL",1)
+         !Allegiance(Myself,ENEMY)
+THEN
+         RESPONSE #100
+                  Enemy()
+END
+

@@ -1,0 +1,24 @@
+IF
+	Detect([PC])
+	NumberOfTimesTalkedTo(0)
+	Global("h_DecoyAttack","GLOBAL",0)
+THEN
+	RESPONSE #100
+		 ClearAllActions()
+		 SmallWait(1)
+                 StartCutSceneMode()
+                 CutSceneId(Player1)
+                 MoveViewObject("h_decoyc",VERY_FAST)
+                 Explore()
+                 Wait(3)
+                 EndCutSceneMode()
+		 StartDialog("h_decoyd",[PC])
+END
+
+IF
+         Global("h_DecoyAttack","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Attack(LastSeenBy())
+END
+

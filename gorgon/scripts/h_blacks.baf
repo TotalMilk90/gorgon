@@ -12,7 +12,7 @@ IF
 THEN
 	RESPONSE #100
 	         FaceObject([PC])
-	         Wait(1)
+	         Wait(2)
 		 StartDialog("h_blackd",[PC])
 END
 

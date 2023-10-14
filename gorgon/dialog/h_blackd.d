@@ -16,9 +16,9 @@ END
 
 IF ~~ THEN BEGIN 3
    SAY ~I'll say it again, hand over your valuables, or this night'll get proper nasty for ya.~
-       ++ ~You're making a grave mistake, lad. I'm thinkin' you won't live long enough to see the morning sun, at this rate.~ GOTO 9
-       ++ ~Turn around now and leave town, lest you meet the shadows that'll haunt your every step.~ GOTO 6
-       ++ ~Ditch the child's play and pledge your shiv to the Gorgon's Eye. It'll be in your best interest.~ GOTO 4
+       ++ ~You're making a grave mistake, lad. I'm thinkin' you won't live long enough to see the mornin' sun!~ GOTO 9
+       ++ ~We're giving you a chance to slip away with your skin intact. Cross us again, and the next time, it won't be a polite suggestion.~ GOTO 6
+       ++ ~How about you ditch the child's play and pledge your shiv to the Gorgon's Eye? It would be in your best interest.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
@@ -81,13 +81,13 @@ CHAIN
    == h_ariosd
 ~Good work, Blackthorn. You're turning out to be a real asset to the Eye. <CHARNAME> made a wise choice bringin' you in.~
    == h_blackd
-~Cheers, boss. I'ts a real bleedin' pleasure. Solid crew, and plenty of action. Feels like home, yeah?~
+~Cheers, boss. It's a real bleedin' pleasure. Solid crew, and plenty of action. Feels like home, yeah?~
    == h_ariosd
-~That's the spirit, lad. You've proven yourrself time and again, now. Keep showin' that kind of loyalty, and there'll always be a place for ya.~
+~That's the spirit, lad. You've proven yourself capable enough. Keep showin' that kind of loyalty, and there'll always be a place for ya.~
    == h_blackd
 ~Been more than happy to spill a bit o' blood for the cause. The Gorgon's Eye's got me bloody back, it does.~
    == h_ariosd
-~Alright then, mate. Kick back to your usual duties. Keep that edge keen, you hear?~
+~Alright then, mate. Kick back to your usual duties, and keep that edge keen, you hear?~
    == h_blackd
 ~You got it, boss. I'll be watchin' the shadows, ready for whatever rolls our way.~
    DO ~

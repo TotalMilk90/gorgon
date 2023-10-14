@@ -140,3 +140,36 @@ INTERJECT_COPY_TRANS h_zhontd 4 xzatozho4
   == h_zhontd IF ~IsValidForPartyDialogue("Xzar")~ THEN
     ~To the grand finale of life and the raucous applause of the afterlife!~
 END
+
+INTERJECT_COPY_TRANS bart4 5 ishtobar7
+  == h_jcookd IF ~~ THEN
+    ~Wait...I saw 'em, boss! Messin' about in the kitchen. They might be tellin' the truth!~
+END
+
+INTERJECT_COPY_TRANS h_insped 7 ishtoins7
+  == h_ishand IF ~~ THEN
+    ~Inspector Branic, it is I who called for you. I am Ishani, and I have very... sensitive information I would like to discuss with you about the Gorgon's Eye.~
+  == h_ishand IF ~~ THEN
+     ~Please, do join me. I believe you'll find our conversation to be quite enlightening.~
+END
+
+INTERJECT_COPY_TRANS h_insped 8 ishtoins8
+  == h_ishand IF ~~ THEN
+    ~Oh, Inspector, you'd be surprised at what can be uncovered with the right... persuasions.~
+  == h_ishand IF ~~ THEN
+    ~Here, let us have a drink, and my lips will unfurl with the many secrets they possess.~
+  == bart4 IF ~~ THEN
+    ~It is the rarest g-gem in our collection, all the way from the Moonshae Isles.~
+END
+
+INTERJECT_COPY_TRANS h_insped 11 ishtoins11
+  == h_ishand IF ~~ THEN
+    ~You're right, Inspector. Action is key. And that's precisely what I'm offering you today.~
+  == h_ishand IF ~~ THEN
+     ~A toast then, to secrets. May they soon see the light of day and bring about the justice we both seek.~
+END
+
+INTERJECT_COPY_TRANS h_insped 18 ishtoins18
+  == h_ishand IF ~~ THEN
+    ~I...I...~
+END

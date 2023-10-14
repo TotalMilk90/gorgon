@@ -1,0 +1,10 @@
+IF
+        Global("h_SpawnCook","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_ishanc",[601.854],SW)
+                 CreateCreature("h_jcookc",[830.433],SW)
+                 SetGlobal("h_SpawnCook","GLOBAL",2)
+                 Continue()
+END

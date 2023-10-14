@@ -1,0 +1,17 @@
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnClare","GLOBAL",1)
+END
+
+IF
+	See([PC])
+	Global("h_ClareTalk","GLOBAL",0)
+THEN
+	RESPONSE #100
+	         FaceObject([PC])
+	         SmallWait(1)
+		 StartDialog("h_clared",[PC])
+END

@@ -74,6 +74,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_CarthBounty","GLOBAL",3)
    AddJournalEntry(@412,QUEST)
    TakePartyGold(300)
+   DestroyGold(300)
    AddExperienceParty(300)
    ReputationInc(1)
    EscapeArea()~ EXIT

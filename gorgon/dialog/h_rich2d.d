@@ -60,7 +60,7 @@ CHAIN
 ~Baldwin, enough! Take hold of your senses and cease this folly at once!~
    == h_baldwd
 ~Ah, my dear brother, here to witness my ascent into godhood, are you? How considerate.~
-   == h_richad
+   == h_rich2d
 ~Godhood? Are you mad! I've come to stop you, and to take ownership of the Kerykeion.~
    =
 ~Surrender it, and I will bring you in before the Shadowmaster. There may still be mercy.~
@@ -68,13 +68,13 @@ CHAIN
 ~Do you take me a for a fool, brother? After all these years, the Kerykeion is finally within my grasp.~
    =
 ~And here you stand, offering me your dungeons... when I could have the world, instead!~
-   == h_richad
+   == h_rich2d
 ~Do not let the pull of the Kerykeion consume you! Relieve yourself of its grasp, and we will somehow find a path back from this madness.~
    == h_baldwd
 ~Ah, the voice of reason speaks! But it's far too late for that, the power is mine now, and with it, I shall have my retribution.~
    =
 ~It was a dream we both shared once, do you remember? Or is even that lost to you now, along with your honor, after betraying your own brother!~
-   == h_richad
+   == h_rich2d
 ~I have not forgotten. Yet, I cannot say the same for you.~
    =
 ~It is you who are lost, brother. Ensnared in the malevolent embrace of the Kerykeion, and from it, you've emerged a dark taint of delusion.~

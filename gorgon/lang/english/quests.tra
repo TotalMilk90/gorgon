@@ -6,6 +6,10 @@
 
 @203=~I've encountered one of Baldwin's operatives fresh from a skirmish with the Shadow Thieves. He's secured vital documents regarding the guild's future. These must be promptly delivered to Baldwin for assessment.~
 
+@204=~Ariosh made an intriguing proposition today, offering a chance to join his crew in their ventures of thievery on the streets of Beregost.The work is risky, no doubt, but it has a certain allure. For now, I've declined the offer. It doesn't quite align with my current pursuits. Still, I'll keep it in mind, jotting down the details. One never knows when a change of heart might come or when the thrill of such ventures may beckon me back into the shadows.~
+
+@205=~The streets are eerily quiet these days, a lull in the usual hustle and bustle. Ariosh assures me that soon enough, the city will stir with fresh opportunities. Patience, it seems, is the sharpest blade in a rogue's arsenal. I'll bide my time and return when the moment is ripe for new mischief.~
+
 
           ///////////////////////////////////
           //////// Baldwin's Quests /////////
@@ -356,7 +360,7 @@ Today, I reported back to Liedel with news of Zhontac's demise. I couldn't bring
 
 @510=~Shadows of Revelry
 
-Tonight's task is set, and it's a delicate one. Ariosh has entrusted me with the mission to infiltrate the grand party outside the Jovial Juggler. The targets, a Lady and a Lord, both laden with coin for their journey to the Nashkel Carnival. Stealth and diversion will be my allies. The guards, sharp-eyed and vigilant, won't make straight pickpocketing an option. I'll have to rely on my wits and the skills honed through years of practice.~
+Tonight's task is set, and it's a delicate one. Ariosh has entrusted me with the mission to infiltrate the grand party outside the Jovial Juggler. The targets, a Lady and a Lord, both laden with coin for their journey to the Nashkel Carnival. Stealth and diversion will be my allies. The guard, sharp-eyed and vigilant, won't make straight pickpocketing an option. I'll have to rely on my wits and the skills honed through years of practice.~
 
 @511=~Shadows of Revelry
 
@@ -426,7 +430,120 @@ Valera, the name still echoes in the night air. Turns out she was the turncoat, 
 
 Ariosh didn't mince words. 'Nothin' left for her now but shadows and echoes,' he said. He's right. Loose ends can be deadly. We did what had to be done for the guild. This city's a beast, and we've got to be its master, or it'll consume us all.~
 
+@528=~Street Levies
 
+Ariosh has tasked me with collecting protection money from four establishments in Beregost: Feldpost's, The Burning Wizard, Red Sheaf, and the Jovial Juggler. Each place is expected to cough up a hefty sack of coin. I'll need to use my wits, and if necessary, a bit of muscle to ensure they comply. As I make my way through the list, I'll know that refusal is not an option. Best not to keep Ariosh waiting.~
+
+@529=~Street Levies
+
+The Feldpost's Inn, while not thrilled, parted with the guild dues. No fuss, no muss. The barkeep knew better than to cross paths with the Gorgon's Eye. It was a necessary transaction, one that left an invisible mark on the inn's reputation. Another step in securing the guild's influence over Beregost.~
+
+@530=~Street Levies
+
+I confronted the Burning Wizard's barkeep, who claims a bloke dressed as a Gorgon's Eye member already made off with the fee and disappeared through the back. He'd better not be feedin' me a load of cobblers, or he'll be singin' a different tune.~
+
+@531=~Street Levies
+
+Found the fool out back, thinkin' he could outfox the Gorgon's Eye. Ended his little caper swiftly and soundly. A lesson for any other would-be troublemakers who dare cross our path.~
+
+@532=~Street Levies
+
+Tracked down the cheeky pilferer lurkin' out back. With a bit of artful persuasion, managed to make him part ways with the ill-gotten bag. Seems he didn't reckon on tanglin' with the Gorgon's Eye.~
+
+@533=~Street Levies
+
+I decided to show a bit of leniency at the Red Sheaf. Times have been tough, and the barkeep's struggling to make ends meet. I warned him, though - the Gorgon's Eye won't tolerate another missed payment. He'd better get his act together or face the consequences.~
+
+@534=~Street Levies
+
+I made an example out of the barkeep at the Red Sheaf. He thought he could cheat the Gorgon's Eye and get away with it. The message is clear now - cross us, and you pay with your life. It might be harsh, but it's the only way to maintain our reputation in these parts.~
+
+@535=~Street Levies
+
+Made my way to the Jovial Juggler, and the barkeep there seemed more on edge than most. Managed to collect the dues without much fuss, which is how it should be. Loyalty to the Eye keeps things smooth. Reminded him to keep up with the payments, or else we might have a problem on our hands. Time to move on.~
+
+@536=~Street Levies
+
+I collected the dues, but it wasn't without a hitch. The Red Sheaf fell short, and I had to make a choice. Sent a message, one way or another. Sometimes, you have to be decisive to keep the coin flowing. The streets of Beregost are a harsh place, but that's the way of things in this trade.~
+
+@537=~Shadows of Deception
+
+The task is set, eliminate the inspector. This won't be a dance in the shadows; it's a strike into the heart of danger. His presence threatens the Gorgon's Eye, and my blade is the answer. I'll need to move with utmost stealth and seize the opportune moment to end his reign. Failure is not an option, and the shadows shall be my ally in this grim endeavor. The rendezvous point is in the eastern part of town, after dark, a place where the night's cloak wraps itself tightly around the alleys and corners.~
+
+@538=~Shadows of Deception
+
+The streets of Beregost seem to grow darker with each passing day. Tonight, I found myself in the midst of an intricate plan devised by the cunning Inspector. His schemes are far from conventional, but they are effective. The decoy lay dead at my feet, a mere pawn in this elaborate game. The Inspector's words echoed in my mind, a reminder that he is not a man to be trifled with. His grasp on the city and the Watch is firm, and he has hunted our mole within their ranks. I must tread carefully, for the noose tightens around the Gorgon's Eye. As the night cloaks the town, I should return to our hideout. The shadows whisper secrets, and I must prepare for the storm that looms on the horizon. The Inspector's threats linger, a promise of the reckoning that awaits us. The Gorgon's Eye must stand strong, for our time of trial is swiftly approaching.~
+
+@539=~Shadows of Deception
+
+The Inspector played us like a fiddle. The meeting was a trap to uncover our mole, and it worked. It's a dark day for our comrade in the Watch; they'll face unimaginable horrors. We have to be doubly cautious now. The stakes have been raised, and we can't afford any more slip-ups. The Gorgon's Eye won't go down without a fight, that much is certain. We'll need to be sharper and deadlier than ever before. It's a grim game we're playing, but there's no turning back now.~
+
+@540=~Shrouded Alliances
+
+Ariosh has set a new path for me, one that leads to Baldur's Gate and a rendezvous with Black Lily, a name that carries weight in the thieving circles of the city. It's a curious alliance, but Ariosh seems to have a certain respect for her, hinting at a history beyond our immediate interests. I'm to gather intelligence on the Inspector, the Flaming Fist's heavy-hitter who's causing turmoil in Beregost. The mission is weighty, and the outcome could shift the tides in our favor. The destiny of the Gorgon's Eye hangs, in part, on the information I'm set to acquire from Black Lily. Here's to hoping she lives up to her reputation.~
+
+@541=~Shrouded Alliances
+
+I met with Black Lily, a skilled contact in Baldur's Gate. She provided some valuable intel on Inspector Branic, the thorn in our side. It seems he has a weakness for a certain type of girl, and Black Lily pointed us to Ishani, a courtesan who might be just the key we need. She can be found at the Blade and Stars in southeast Baldur's Gate. She also mentioned a rare whiskey, from the Moonshae Isles, which the Inspector takes a particular liking too. I can find it for sale at the docks, in a place called Jopalin's Tavern. Time to make our move.~
+
+@542=~Shrouded Alliances
+
+I was able to find Ishani, an enterprising young courtesan with a taste for the finer things. She's offered her assistance in handling Inspector Branic in Beregost, but not without a price. Ishani desires a necklace worn by Lady Eleanor, a friend of Brilla Silvershield. This task will surely be perilous, given the heavy guard presence. But with the necklace in hand, Ishani is willing to lend her skills for our operation against the Inspector. Time to take some risks and embark on this dangerous endeavor.~
+
+@543=~Shrouded Alliances
+
+Ishani was thrilled to see the Moonlit Cascade. She was utterly mesmerized by its beauty and craftsmanship. It's clear this necklace holds a special place in her heart. This should make our plan all the more convincing. With her charm and this exquisite piece, the Inspector won't stand a chance.~
+
+@544=~Shrouded Alliances
+
+I managed to secure a bottle of the rare Moonshae whiskey from Jopalin's Tavern. This particular spirit has a reputation for being the Inspector's favorite, and it'll serve as the perfect bait to lure him into our trap. With this, we're one step closer to reclaiming Beregost from his grasp.~
+
+@545=~Shrouded Alliances
+
+Ariosh's plan at the Jovial Juggler is set in motion.  I'm to deliver the Moonshae whiskey to the barkeep and inform him to send for the Inspector. Ishani will spin a tale of desperation, claiming that she was forced to work for the gang and now seeks to turn the tables. With her beguiling charm and quick wit, she aims to divert the Inspector's attention and persuade him to partake of the poisoned whiskey. Once he takes a sip, the undetectable toxin will do its work. I must remain vigilant, ready to step in if anything goes awry. This is our chance to rid Beregost of this plague, and we can't afford any missteps. It's time to face the Inspector head-on and bring justice to our guild.~
+
+@546=~Shrouded Alliances
+
+Ariosh has handed me an incendiary device, a last-resort plan in case things go south at the Jovial Juggler. He emphasized the severity of its consequences – collateral damage would be high, and anyone in the vicinity might not survive. It's a grim reminder of the high stakes we're playing for. This device will be used to threaten the bartender and blow the place up if the Inspector doesn't take the bait. It's a dangerous game, but one that we may be forced to play.~
+
+@547=~Shrouded Alliances
+
+The plan unfolded with a dangerous elegance. The Inspector fell for the trap, sipping from the poisoned chalice, unaware of the fate he sealed. It wasn't long before his strength waned, and he met his end. Our grip on Beregost tightens, and the Gorgon's Eye stands stronger than ever. The Commander will surely retaliate, but we are prepared for the storm that awaits. Victory tastes sweet, even amidst the shadows.~
+
+@548=~Shrouded Alliances
+
+I couldn't bear to stick to the plan. The rage and need for revenge took over. I confronted the Inspector directly, and a brutal fight ensued. It was a bloodbath, both him and the City Watch accompanying him met their end at my hands. The original plan was shattered, and the Jovial Juggler now holds its memories. I must report back to Ariosh, no matter the outcome. There may be consequences for this deviation from the plan, but for now, vengeance is mine.~
+
+@549=~Shrouded Alliances
+
+The explosion echoed through the Jovial Juggler, a maelstrom of fire and destruction. The Inspector, along with Ishani and numerous innocent bystanders, were engulfed in the inferno. The plan had succeeded, but at a terrible cost. As I stand amidst the smoking ruins, a chilling realization settles in - perhaps I went too far.~
+
+@550=~Shrouded Alliances
+
+The plan at the Jovial Juggler took a sharp turn. The Inspector saw through our ruse, claiming to have "eyes and ears everywhere." It was clear he sensed the trap. A brawl ensued, desperate and brutal. In the end, it was I who prevailed. The Inspector now lies lifeless, and Beregost is grimly reminded of our rule. I must return to Ariosh to deliver the report and determine our next move. The Gorgon's Eye will not rest until the city is cleansed of all those who stand in our way.~
+
+@551=~Shrouded Alliances
+
+In the aftermath of our operation, the Inspector lies dead, a clear signal of our determination. The Watch, once a united force, now grapples with internal strife and doubt, as our influence takes root. Commander Seraphina Whitewood stands as the final obstacle in our path to power. With the Inspector's demise, Beregost is now a city teetering on the edge of change, and the Gorgon's Eye continues its inexorable march toward dominance.~
+
+@552=~Shadows of the Valkyrie         
+
+Ariosh has set a new task before me, one that carries a sense of gravity even within the dark corridors of the Gorgon's Eye. The Valkyrie Twins, Clare and Theresa, have become key obstacles. They wield divine power, their influence stretching through the city's underbelly. Eliminating them is not merely a matter of skill, but of finesse and secrecy. It's a delicate dance, this one, and failure would mean exposing our guild to risks too great to imagine.~
+
+@553=~Shadows of the Valkyrie
+
+Clare's death did not come without a price. The element of surprise was tarnished, a lesson etched in the shadows. In this deadly dance, perfection is demanded, and any lapse could be the end. I must hone my skills further, refine my approach, if I am to navigate the shadows without leaving a trace.~
+
+@554=~Shadows of the Valkyrie
+
+Theresa's life was extinguished, but not in deafened secrecy. The battle that ensued was fierce, her gruff exterior masking a strength I hadn't anticipated. The mission was a success, and she now rests in eternal silence. Ariosh may find some satisfaction, but in the cutthroat world we dwell, excellence is our only currency. There's no room for error.~
+
+@555=~Shadows of the Valkyrie
+
+The twins, once forces to be reckoned with, now lie vanquished. Ariosh's satisfaction is apparent, but he's right - the path ahead is fraught with even darker shadows. The City Watch teeters on the brink of chaos, and we are the architects of its downfall. Word of their deaths has already begun to spread through the darkened streets. The Gorgon's Eye has proven its might once again, but there is no room for complacency. With each mission, I delve deeper into the heart of darkness, knowing that our guild's survival relies on our cunning and the shadows that shelter us. Whitewood will meet her end in this darkness.~
+
+
+         
           ///////////////////////////////////
           //////// Gilbald's Quests /////////
           ///////////////////////////////////

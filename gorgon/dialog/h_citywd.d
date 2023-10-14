@@ -43,7 +43,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc21") Global("h_ChanceToRun","GLOBAL",2)~ THEN BEGIN CAUGHT_6
-   SAY ~You've pushed your luck too far, scoundrel! You should've scrammed when you had the chance! The whole City Watch knows your out here now!~ IF ~~ THEN GOTO CAUGHT_8
+   SAY ~You've pushed your luck too far, scoundrel! You should've scrammed when you had the chance!~ IF ~~ THEN GOTO CAUGHT_8
 END
 
 IF ~~ THEN BEGIN CAUGHT_7

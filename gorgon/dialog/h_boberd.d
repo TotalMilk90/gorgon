@@ -50,8 +50,8 @@ END
 IF ~~ THEN BEGIN 5
    SAY ~Aye, it's the guard's request. He wants to keep things from gettin' too rowdy. We wouldn't want no trouble during this fine affair, now would we?~
        ++ ~Is there a way we could work around this restriction? Some guests have a taste for the stronger stuff, and they might appreciate the option.~ GOTO 6
-       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women? What do you say?~ GOTO BRIBE_0
-       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women? What do you say?~ GOTO BRIBE_1
+       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_0
+       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_1
        +~CheckStatLT(Player1,19,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_0
        +~CheckStatGT(Player1,18,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_1
        ++ ~I'll be going now.~ GOTO END_0
@@ -81,8 +81,8 @@ IF ~~ THEN BEGIN THREAT_0
        +~RandomNum(2,1)~+ ~Understand this, barkeep. Start dishin' out the hard stuff or you'll be havin' a private chat with my blade.~ GOTO FAILSPIRITS_0
        +~RandomNum(2,2)~+ ~Understand this, barkeep. Start dishin' out the hard stuff or you'll be havin' a private chat with my blade.~ GOTO THREAT_1
        ++ ~Is there a way we could work around this restriction? Some guests have a taste for the stronger stuff, and they might appreciate the option.~ GOTO 6
-       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Would that be the case here?~ GOTO BRIBE_0
-       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Would that be the case here?~ GOTO BRIBE_1
+       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_0
+       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_1
        ++ ~I'll be going now.~ GOTO END_0
 END
 
@@ -95,11 +95,11 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN BRIBE_1
-   SAY ~It's a deal. I'll see to it that the stronger spirits find their way, discreetly, of course. And you, my friend, be sure to speak highly of me to the lovely ladies.~ IF ~~ THEN GOTO BRIBE_2
+   SAY ~Oh... ahem. It's a deal. I'll see to it that the stronger spirits find their way, discreetly, of course. And you, my friend, be sure to speak highly of me to the lovely ladies.~ IF ~~ THEN GOTO BRIBE_2
 END
 
 IF ~~ THEN BEGIN BRIBE_2
-   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of one guest who appears rather prone to agitation.~
+   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of that one guest over there who appears rather prone to agitation.~
 IF ~~ THEN DO ~
    SetGlobal("h_Spirits","GLOBAL",2)
    SetGlobal("h_BouncerTalk","GLOBAL",2)
@@ -111,18 +111,12 @@ IF ~~ THEN BEGIN THREAT_1
 END
 
 IF ~~ THEN BEGIN THREAT_2
-   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of one guest who appears rather prone to agitation.~
+   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of... a particular guest over there who seems to be rather prone to agitation.~
 IF ~~ THEN DO ~
    SetGlobal("h_Spirits","GLOBAL",2)
    SetGlobal("h_BouncerTalk","GLOBAL",2)
    AddJournalEntry(@511,QUEST)~ EXIT
 END
-
-
-
-
-
-
 
 IF ~~ THEN BEGIN END_0
    SAY ~Enjoy the party. If you need your mug filled, you know where to find me.~ IF ~~ THEN EXIT

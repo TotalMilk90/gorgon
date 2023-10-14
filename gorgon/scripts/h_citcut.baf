@@ -1,0 +1,16 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        Wait(2)
+        MoveViewPoint([857.1388],FAST)
+        CreateCreature("h_city5c",[806.1487],N)
+        CreateCreature("h_city6c",[862.1491],N)
+        Wait(1)
+        ActionOverride("h_city5c",MoveToPoint([844.1279]))
+        ActionOverride("h_city6c",MoveToPoint([891.1332]))
+        Wait(2)
+        ActionOverride("h_liedec",Dialogue([PC]))
+        EndCutSceneMode()
+END

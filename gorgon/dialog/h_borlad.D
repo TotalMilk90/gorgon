@@ -83,7 +83,7 @@ END
 
 IF ~~ THEN BEGIN GOOD_3
    SAY ~Why should I? I don't force my product on anyone. It is their choice. Although, to be fair, the trade is so lucrative I really wouldn't care anyways.~
-       ++ ~Think of the lives you are ruining. The pain and torment that comes along with this trade. Do you have no conscious?~ GOTO GOOD_3
+       ++ ~Perhaps I'll inform the city guard about your little enterprise.~ GOTO GOOD_2
        ++ ~Is this truly the legacy you wish to leave, Borland? A dark taint on your reputation?~ GOTO GOOD_4
        ++ ~I'll stop you by force if I have to.~ GOTO GOOD_5
 END

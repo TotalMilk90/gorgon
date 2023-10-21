@@ -13,7 +13,7 @@ IF ~Global("h_LiedelQuest","GLOBAL",1) Global("h_DeclineBounty","GLOBAL",0)~ THE
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~I believe it's high time we became better acquainted, darling. I'm Liedel. I deal in private contracts and bounties you won't find posted in the light of town.~
+   SAY ~I believe it's high time we became better acquainted. I'm Liedel. I deal in private contracts and bounties you won't find posted in the light of town.~
        ++ ~Pleasure, Liedel. My name is <CHARNAME>. Seaking of names, who is this Riggy you mentioned?~ GOTO 5
        ++ ~By "private contracts", do you really mean, assassin-for-hire?~ GOTO 6
        ++ ~What current bounties do you have available.~ GOTO 7
@@ -47,7 +47,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Right down to business, love? Now, that's a trait I admire.~ IF ~~ THEN GOTO 8
+   SAY ~Right down to business. Now, that's a trait I admire.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -350,6 +350,14 @@ IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6)~ THEN
    SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, <CHARNAME>?~  IF ~~ THEN EXIT
 END
 
+
+
+
+
+
+
+
+
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0
    SAY ~Well, well, look at you, <CHARNAME>. The new guildmaster, no less. I must admit, power does have its allure. Impressive work, love.~ IF ~~ THEN EXIT
 END
@@ -378,24 +386,31 @@ CHAIN
    == h_ariosd
 ~You've got some nerve, I'll give you that. How'd you find us, and what's your play? Best choose your next words careful-like, or you'll be regrettin' ever settin' foot in here.~
    == h_baldwd
-~Now, now, Ariosh. Can't you sense the fear on these City Watch pups. I imagine you're ready to squeal, are you? Well? Spit it out and let's hear your piece.~
+~Hold, Ariosh. These are but City Watch pups. Let us entertain their whimpers.~
    == h_city5d
-~The... the Inspector! H-he uncovered the location of your hideout. He was planning out an assault, t-t-to catch you off guard.~
+~The... the Inspector! H-he uncovered the location of your hideout. He was planning an assault, t-t-to catch you off guard.~
    =
 ~But, we... we've seen the writing on the wall. We've had enough. We're tired of the constant fear, the bloodshed. We'll bend the knee, and submit to the will of the Gorgon's Eye.~
    =
-~The division among the Watch, it's... it's reached a breaking point. Most of us have turned against Whitewood, and there's been a violent uprising, a coup, prompted by the death of Inspector Branic.~
+~The division among the Watch, it's... it's reached a breaking point. After the Inspector, and the Valkyries, our unity has crumbled.~
    =
-~She's fled the city, and is seeking refuge at the Temple. We don't have enough men to storm the gates, but with your help we could finally end this.~
+~Dissension has ripened into a full-blown mutiny. Most of our ranks have turned against Whitewood, and they're calling for blood.~
+   =
+~She's fled the city, and is seeking refuge at the Temple. We lack the numbers to storm the gates, but with your aid, we might be able to end this madness.~
    == h_ariosd
 ~How can we be sure you ain't just stringin' us along, eh? No tricks or traps, yeah?~
    == h_city5d
-~Go and see for yourselves! The streets are in chaos, blood spilling, order and law thrown to the wind.~
-   == h_city5d
-~Skirmishes from here to the temple roads. That's where Whitewood's holed up, kept shielded by the Knights Templar.~
+~Go and see for yourselves! The streets are in chaos, painted in turmoil, order and law thrown to the wind.~
+   =
+~Skirmishes from here to the temple gates. That's where Whitewood's holed up, kept shielded by the Templar Knights.~
+   == h_ariosd
+~It seems the winds have shifted, <CHARNAME>. The city's gone mad, and Whitewood's caged herself up. I had a plan to deal with her, and now it's ripe for the taking.~
+   =
+~Head to the Temple. End this. The Gorgon's Eye will see its rightful dominance, and Beregost will know where true power lies.~ DO ~SetGlobal("h_WatchCutscene","GLOBAL",2)~
    == h_baldwd
-~<CHARNAME>, take some men and head for the temple. This is our chance to cut the head off this snake and assume control of the City Watch.~
+~Swift and ruthless, <CHARNAME>. Seize this opportunity, and give the city a taste of the Gorgon's Eye's might.~
    DO ~
-      SetGlobal("h_WatchCutscene","GLOBAL",2)
-      AddJournalEntry(@213,QUEST)~
+      //SetGlobal("h_WatchCutscene","GLOBAL",2)
+      SetGlobal("h_SpawnTemplar","GLOBAL",1)
+      AddJournalEntry(@556,QUEST)~
 EXIT

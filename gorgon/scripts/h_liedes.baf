@@ -6,3 +6,11 @@ THEN
 	         SmallWait(3)
 	         Attack([ENEMY])
 END
+
+IF
+         Global("h_WatchCutscene","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_lieded",[PC])
+END

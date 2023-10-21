@@ -1,5 +1,7 @@
 IF
          TimeOfDay(DAY)
+         Global("h_SpawnGorgonWatch","GLOBAL",0)
+         Global("h_ValeraQuest","GLOBAL",0)
 THEN
          RESPONSE #100
                   DestroySelf()
@@ -12,7 +14,7 @@ IF
 THEN
 	RESPONSE #100
 	         FaceObject([PC])
-	         Wait(2)
+	         Wait(1)
 		 StartDialog("h_blackd",[PC])
 END
 

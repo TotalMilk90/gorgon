@@ -1,0 +1,25 @@
+IF
+        Global("h_SpawnTemplar","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_whit2c",[1107.1169],SW)
+                 CreateCreature("h_tempfc",[988.1170],SW)
+                 CreateCreature("h_tempfc",[1083.1242],SW)
+                 CreateCreature("h_tempfc",[1199.1241],SW)
+                 CreateCreature("h_tempfc",[990.1086],SW)
+                 CreateCreature("h_temprc",[1153.1077],SW)
+                 CreateCreature("h_temprc",[1242.1148],SW)
+                 CreateCreature("h_tempmc",[1036.1003],SW)
+                 CreateCreature("h_tempcc",[1362.1235],SW)
+                 SetGlobal("h_SpawnTemplar","GLOBAL",2)
+                 Continue()
+END
+
+IF
+         Global("h_ArioshQuest","GLOBAL",21)
+         Dead("h_whit2c")
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@557,QUEST)
+END

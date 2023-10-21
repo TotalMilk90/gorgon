@@ -1,0 +1,20 @@
+IF
+        Global("h_ReplaceCityWatch","GLOBAL",1)
+THEN
+        RESPONSE #100
+                 DestroySelf()
+END
+
+IF
+	Global("h_AttackedWatch","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+        Global("h_HideWhitewood","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END

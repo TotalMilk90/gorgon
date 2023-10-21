@@ -9,7 +9,7 @@ END
 
 IF ~~ THEN BEGIN 2
    SAY ~So, you know this wench, do you? How the blazes did you track me down?~
-       ++ ~Found a scrap your fatigues left behind. Led me straight to ya.~ GOTO 3
+       ++ ~Found a scrap of your fatigues left behind. Led me straight to ya.~ GOTO 3
        ++ ~You got sloppy, Isley, and now it will cost you your life.~ GOTO 3
 END
 
@@ -72,7 +72,7 @@ CHAIN
    IF ~Global("h_MerediaQuest","GLOBAL",2)~ THEN h_isleyd 0
 ~Hold still while I secure the ropes. Can't risk you slippin' away, now.~
    =
-~Stand stil and keep your mouth shut. Got it?~
+~Stand still and keep your mouth shut. Got it?~
    =
 ~I'm runnin' inside to grab some supplies. Then we're gettin' the hell out of here.~
    == h_ilenad

@@ -102,6 +102,9 @@ COMPILE ~gorgon/dialog/h_whited.d~
 COMPILE ~gorgon/dialog/h_valerd.d~
 COMPILE ~gorgon/dialog/h_barthd.d~
 COMPILE ~gorgon/dialog/h_city3d.d~
+COMPILE ~gorgon/dialog/h_city6d.d~
+COMPILE ~gorgon/dialog/h_blac2d.d~
+
 
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartjd.d~
 
@@ -135,7 +138,15 @@ COMPILE ~gorgon/dialog/h_city4d.d~
 
 COMPILE ~gorgon/dialog/h_clared.d~
 COMPILE ~gorgon/dialog/h_thered.d~
+COMPILE ~gorgon/dialog/h_whit2d.d~
 
+COMPILE ~gorgon/dialog/h_procud.d~
+COMPILE ~gorgon/dialog/h_armord.d~
+COMPILE ~gorgon/dialog/h_piratd.d~
+COMPILE ~gorgon/dialog/h_selend.d~
+COMPILE ~gorgon/dialog/h_vitiad.d~
+COMPILE ~gorgon/dialog/h_tmercd.d~
+COMPILE ~gorgon/dialog/h_tguard.d~
 
 // Creature Scripts
 
@@ -170,6 +181,7 @@ COMPILE ~gorgon/scripts/h_ziekns.baf~
 COMPILE ~gorgon/scripts/h_ziekds.baf~
 COMPILE ~gorgon/scripts/h_ziekes.baf~
 
+
 COMPILE ~gorgon/scripts/h_endpas.baf~
 COMPILE ~gorgon/scripts/h_drunks.baf~
 COMPILE ~gorgon/scripts/h_ladyes.baf~
@@ -194,6 +206,13 @@ COMPILE ~gorgon/scripts/h_citcut.baf~
 COMPILE ~gorgon/scripts/h_clares.baf~
 COMPILE ~gorgon/scripts/h_theres.baf~
 
+COMPILE ~gorgon/scripts/h_whites.baf~
+COMPILE ~gorgon/scripts/h_whit2s.baf~
+COMPILE ~gorgon/scripts/h_temkns.baf~
+COMPILE ~gorgon/scripts/h_blac2s.baf~
+COMPILE ~gorgon/scripts/h_pirats.baf~
+COMPILE ~gorgon/scripts/h_tentcs.baf~
+
 // Area Scripts
 
 EXTEND_TOP ~%area_prefix%5500.bcs~ ~gorgon/scripts/h_gibbea.baf~
@@ -216,6 +235,12 @@ EXTEND_TOP ~%area_prefix%4902.bcs~ ~gorgon/scripts/h_carn2a.baf~
 EXTEND_TOP ~%area_prefix%0105.bcs~ ~gorgon/scripts/h_bladea.baf~
 EXTEND_TOP ~%area_prefix%0102.bcs~ ~gorgon/scripts/h_silvea.baf~
 EXTEND_TOP ~%area_prefix%3304.bcs~ ~gorgon/scripts/h_joviaa.baf~
+EXTEND_TOP ~%area_prefix%3400.bcs~ ~gorgon/scripts/h_tempca.baf~
+EXTEND_TOP ~%area_prefix%4901.bcs~ ~gorgon/scripts/h_ctenta.baf~
+EXTEND_TOP ~%area_prefix%4810.bcs~ ~gorgon/scripts/h_amnbaa.baf~
+EXTEND_TOP ~%area_prefix%4905.bcs~ ~gorgon/scripts/h_potena.baf~ 
+EXTEND_TOP ~%area_prefix%4805.bcs~ ~gorgon/scripts/h_nam2fa.baf~
+EXTEND_TOP ~%area_prefix%4801.bcs~ ~gorgon/scripts/h_nashia.baf~
 
 // New Areas
 
@@ -329,6 +354,9 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
 
 COPY_EXISTING ~BART3.cre~ ~override~                          // Red Sheaf Bartender
      WRITE_ASCII 0x280 ~BART3~ #32
+     
+COPY_EXISTING ~MERCH2.cre~ ~override~                          // Red Sheaf Bartender
+     WRITE_ASCII 0x280 ~MERCH2~ #32
 
 COPY_EXISTING ~NOBL10.cre~ ~override~                         // Gerard Travenhurst
      WRITE_ASCII 0x280 ~NOBL10~ #32
@@ -774,6 +802,18 @@ COPY ~gorgon/items/h_misc26.itm~ ~override/h_misc26.itm~      // Incendiary Devi
      SAY NAME2 @121
      SAY UNIDENTIFIED_DESC @122
      SAY DESC @122
+     
+COPY ~gorgon/items/h_misc27.itm~ ~override/h_misc27.itm~      // Incriminating Evidence
+     SAY NAME1 @123
+     SAY NAME2 @123
+     SAY UNIDENTIFIED_DESC @124
+     SAY DESC @124
+     
+COPY ~gorgon/items/h_misc28.itm~ ~override/h_misc28.itm~      // Coin Purse
+     SAY NAME1 @125
+     SAY NAME2 @125
+     SAY UNIDENTIFIED_DESC @126
+     SAY DESC @126
 
 // New Creatures
 
@@ -940,6 +980,10 @@ COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
 COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
      SAY NAME1 @931
      SAY NAME2 @931
+     
+COPY ~gorgon/cre/h_tguarc.cre~ ~override/h_tguarc.cre~        // Rogue(Tent)
+     SAY NAME1 @931
+     SAY NAME2 @931
 
 COPY ~gorgon/cre/h_saradc.cre~ ~override/h_saradc.cre~        // Saradin
      SAY NAME1 @932
@@ -1044,6 +1088,10 @@ COPY ~gorgon/cre/h_ladyec.cre~ ~override/h_ladyec.cre~        // Lady Elara
 COPY ~gorgon/cre/h_blackc.cre~ ~override/h_blackc.cre~        // Blackthorn
      SAY NAME1 @951
      SAY NAME2 @951
+     
+COPY ~gorgon/cre/h_blac2c.cre~ ~override/h_blac2c.cre~        // Blackthorn(2)
+     SAY NAME1 @951
+     SAY NAME2 @951
 
 COPY ~gorgon/cre/h_blactc.cre~ ~override/h_blactc.cre~        // Thief
      SAY NAME1 @952
@@ -1076,6 +1124,10 @@ COPY ~gorgon/cre/h_city6c.cre~ ~override/h_city6c.cre~        // City Watch(6)
 COPY ~gorgon/cre/h_whitec.cre~ ~override/h_whitec.cre~        // Commander Whitewood
      SAY NAME1 @954
      SAY NAME2 @954
+     
+COPY ~gorgon/cre/h_whit2c.cre~ ~override/h_whit2c.cre~        // Commander Whitewood
+     SAY NAME1 @954
+     SAY NAME2 @954
 
 COPY ~gorgon/cre/h_valerc.cre~ ~override/h_valerc.cre~        // Valera
      SAY NAME1 @955
@@ -1105,14 +1157,49 @@ COPY ~gorgon/cre/h_jcookc.cre~ ~override/h_jcookc.cre~        // Cook
      SAY NAME1 @959
      SAY NAME2 @959
      
-COPY ~gorgon/cre/h_clarec.cre~ ~override/h_clarec.cre~        // Lieutenant Clare
+COPY ~gorgon/cre/h_clarec.cre~ ~override/h_clarec.cre~        // Lieutenant Clare Gallant
      SAY NAME1 @960
      SAY NAME2 @960
 
-COPY ~gorgon/cre/h_therec.cre~ ~override/h_therec.cre~        // Lieutenant Theresa
+COPY ~gorgon/cre/h_therec.cre~ ~override/h_therec.cre~        // Lieutenant Theresa Gallant
      SAY NAME1 @961
      SAY NAME2 @961
 
+COPY ~gorgon/cre/h_tempfc.cre~ ~override/h_tempfc.cre~        // Templar Knight(Fighter)
+     SAY NAME1 @962
+     SAY NAME2 @962
+     
+COPY ~gorgon/cre/h_temprc.cre~ ~override/h_temprc.cre~        // Templar Knight(Ranger)
+     SAY NAME1 @962
+     SAY NAME2 @962
+     
+COPY ~gorgon/cre/h_tempmc.cre~ ~override/h_tempmc.cre~        // Templar Knight(Mage)
+     SAY NAME1 @962
+     SAY NAME2 @962
+     
+COPY ~gorgon/cre/h_tempcc.cre~ ~override/h_tempcc.cre~        // Templar Knight(Cleric)
+     SAY NAME1 @962
+     SAY NAME2 @962
+     
+COPY ~gorgon/cre/h_procuc.cre~ ~override/h_procuc.cre~        // Procus
+     SAY NAME1 @963
+     SAY NAME2 @963
+     
+COPY ~gorgon/cre/h_selenc.cre~ ~override/h_selenc.cre~        // Selena Stardancer
+     SAY NAME1 @964
+     SAY NAME2 @964
+
+COPY ~gorgon/cre/h_piratc.cre~ ~override/h_piratc.cre~        // Pirate
+     SAY NAME1 @965
+     SAY NAME2 @965
+     
+COPY ~gorgon/cre/h_tmercc.cre~ ~override/h_tmercc.cre~        // Merchant
+     SAY NAME1 @966
+     SAY NAME2 @966
+     
+COPY ~gorgon/cre/h_vitiac.cre~ ~override/h_vitiac.cre~        // Vitiare
+     SAY NAME1 @967
+     SAY NAME2 @967
 
 // Journal Entries
 
@@ -1120,9 +1207,10 @@ ADD_JOURNAL @200 @201 @202 @203 @204
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
             @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446
-            @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555
+            @509 @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555 @556 @557 @558
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
+            @809 @810 @811 @812 @813 @814 @815 @816 @817 @818 @819 @820
             USING ~gorgon/lang/english/quests.tra~
 
 BEGIN @100000

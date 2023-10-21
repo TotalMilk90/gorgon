@@ -4,28 +4,28 @@ THEN
          RESPONSE #100
                   DayNight(MIDNIGHT)
                   CreateCreature("h_sthiec",[320.2701],S)
-                  CreateCreature("h_sthiec",[409.2796],S)
+                  CreateCreature("h_thiefc",[409.2796],S)
                   CreateCreature("h_thiefc",[442.2697],S)
                   CreateCreature("h_thiefc",[2269.2288],S)
                   CreateCreature("h_sthi2c",[2186.2383],S)
                   CreateCreature("h_thiefc",[2220.2502],S)
                   CreateCreature("h_thiefc",[2301.2420],S)
-                  CreateCreature("h_sthiec",[2388.2360],S)
-                  CreateCreature("h_sthiec",[2358.2491],S)
+                  CreateCreature("h_thiefc",[2388.2360],S)
+                  CreateCreature("h_thiefc",[2358.2491],S)
                   CreateCreature("h_thiefc",[3482.2196],S)
                   CreateCreature("h_sthiec",[3581.2182],S)
                   CreateCreature("h_thiefc",[3590.2235],S)
-                  CreateCreature("h_sthiec",[3465.2079],S)
-                  CreateCreature("h_sthiec",[3721.2141],S)
+                  CreateCreature("h_thiefc",[3465.2079],S)
+                  CreateCreature("h_thiefc",[3721.2141],S)
                   CreateCreature("h_thiefc",[2021.1445],S)
                   CreateCreature("h_thiefc",[2265.1593],S)
                   CreateCreature("h_sthiec",[2144.1483],S)
                   CreateCreature("h_thiefc",[2092.1601],S)
-                  CreateCreature("h_sthiec",[1033.1437],S)
+                  CreateCreature("h_thiefc",[1033.1437],S)
                   CreateCreature("h_sthiec",[950.1484],S)
                   CreateCreature("h_thiefc",[1039.1495],S)
                   CreateCreature("h_sthiec",[1417.3265],S)
-                  CreateCreature("h_sthiec",[1487.3380],S)
+                  CreateCreature("h_thiefc",[1487.3380],S)
                   CreateCreature("h_thiefc",[1333.3351],S)
                   SetGlobal("h_ShadowWar","GLOBAL",2)
                   Continue()
@@ -162,7 +162,7 @@ IF
 THEN
          RESPONSE #100
                   CreateCreature("h_citywc",[4376.3093],S)
-                  CreateCreature("h_citywc",[3206.2330],S)
+                 // CreateCreature("h_citywc",[3206.2330],S)
                   CreateCreature("h_citywc",[2216.2192],S)
                   CreateCreature("h_citywc",[2138.1314],SE)
                   CreateCreature("h_citywc",[613.1151],S)
@@ -191,7 +191,7 @@ IF
 THEN
          RESPONSE #100
                   CreateCreature("h_citywc",[4376.3093],E)
-                  CreateCreature("h_citywc",[3206.2330],SW)
+                 // CreateCreature("h_citywc",[3206.2330],SW)
                   CreateCreature("h_citywc",[2216.2192],S)
                   CreateCreature("h_citywc",[2138.1314],SE)
                   CreateCreature("h_citywc",[613.1151],S)
@@ -305,4 +305,57 @@ THEN
                  CreateCreature("h_clarec",[4746.3730],SW)
                  SetGlobal("h_SpawnClare","GLOBAL",2)
                  Continue()
+END
+
+IF
+         Global("h_ClareTalk","GLOBAL",1)
+         Dead("h_clarec")
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@553,QUEST)
+                  SetGlobal("h_ClareTalk","GLOBAL",2)
+END
+
+IF
+         Global("h_SpawnGorgonWatch","GLOBAL",1)
+         Global("h_BlackJoin","GLOBAL",1)
+         NumDeadLT("h_blackc",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_city6c",[4376.3093],S)
+                  CreateCreature("h_city6c",[3206.2330],S)
+                  CreateCreature("h_city6c",[2216.2192],S)
+                  CreateCreature("h_city6c",[2138.1314],SE)
+                  CreateCreature("h_city6c",[613.1151],S)
+                  CreateCreature("h_city6c",[1697.3500],W)
+                  CreateCreature("h_blackc",[2294.2192],SW)
+
+                  SetGlobal("h_SpawnGorgonWatch","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnGorgonWatch","GLOBAL",1)
+         Global("h_BlackJoin","GLOBAL",0)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_city6c",[4376.3093],S)
+                  CreateCreature("h_city6c",[3206.2330],S)
+                  CreateCreature("h_city6c",[2216.2192],S)
+                  CreateCreature("h_city6c",[2138.1314],SE)
+                  CreateCreature("h_city6c",[613.1151],S)
+                  CreateCreature("h_city6c",[1697.3500],W)
+
+                  SetGlobal("h_SpawnGorgonWatch","GLOBAL",2)
+                  Continue()
+END
+
+IF
+        Global("h_HideWhitewood","GLOBAL",2)
+THEN
+	RESPONSE #100
+		 CreateCreature("h_whitec",[2294.2192],SW)
+		 SetGlobal("h_HideWhitewood","GLOBAL",3)
 END

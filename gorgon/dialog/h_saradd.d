@@ -9,9 +9,9 @@ END
 
 IF ~Global("h_Saradin","GLOBAL",1)~ THEN BEGIN 1
    SAY ~What is it you seek?~
-       +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ EXIT
+     //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ EXIT
        ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ GOTO KERY_2
-       ++ ~How did Baldwin become known as "The Butcher"?~ GOTO BUTCHER_2
+       ++ ~How did Baldwin become known as 'The Butcher'?~ GOTO BUTCHER_2
        ++ ~What is your role here in the guild?~ GOTO SARA_2
        ++ ~Nothing at the moment.~ EXIT
 END
@@ -81,6 +81,7 @@ IF ~~ THEN BEGIN KERY_6
    SAY ~Yet, amidst these harrowing abilities, a scroll bears witness to an even more sinister power, the unlocking of a mage's constraints on spellcasting, rendering arcane incantations a seamless extension of one's aura.~
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
        ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
+       ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
        ++ ~I'd like to ask you about something else.~ GOTO 1
 END
 
@@ -89,11 +90,11 @@ IF ~~ THEN BEGIN KERY_7
 END
 
 IF ~~ THEN BEGIN KERY_8
-   SAY ~Once bearing the name Caduceus, it was wrought by a demon in the depths of the Underworld. A being ensnared by the voracious Gorgon sisters, their insatiable hunger for power sealed its fate.~ IF ~~ THEN GOTO KERY_9
+   SAY ~Once bearing the name Caduceus, it was wrought by a demon in the depths of the Underworld. A being who would soon become ensnared by the voracious Gorgon sisters, their insatiable hunger for power sealing its fate.~ IF ~~ THEN GOTO KERY_9
 END
 
 IF ~~ THEN BEGIN KERY_9
-   SAY ~Yet, the tale takes a darker turn with the mortal half-sister, Medusa, consumed by envy.~ IF ~~ THEN GOTO KERY_10
+   SAY ~Yet, the tale takes a darker turn with their mortal half-sister, Medusa, consumed by envy at their immortality and eternal prowess.~ IF ~~ THEN GOTO KERY_10
 END
 
 IF ~~ THEN BEGIN KERY_10
@@ -101,17 +102,18 @@ IF ~~ THEN BEGIN KERY_10
 END
 
 IF ~~ THEN BEGIN KERY_11
-   SAY ~Now, their petrified forms coil endlessly around its length, a grim testament to their eternal entrapment.~  IF ~~ THEN GOTO KERY_12
+   SAY ~Their petrified forms coiled endlessly around its length, a grim testament to their eternal entrapment.~  IF ~~ THEN GOTO KERY_12
 END
 
 IF ~~ THEN BEGIN KERY_12
-   SAY ~Through epochs and realms, the Kerykeion passed hands, from god to god, until it found its way to the realms of Faerun, emerging in the wake of the Time of Troubles.~ IF ~~ THEN GOTO KERY_13
+   SAY ~Through epochs and realms, the Kerykeion passed hands, from god to god, demon to demon, until it eventually found its way to the realms of Faerun, emerging in the wake of the Time of Troubles.~ IF ~~ THEN GOTO KERY_13
 END
 
 IF ~~ THEN BEGIN KERY_13
-   SAY ~Accounts diverge on its exploits and fate, but all culminate in the same somber conclusion—the staff met its end, shattering into fragments that now lie strewn across the disparate reaches of the Sword Coast, awaiting a soul bold enough to seek its dark embrace.~
+   SAY ~Accounts diverge on its exploits and fate, but all culminate in the same somber conclusion. The staff met its end, shattering into fragments that now lie strewn across the disparate reaches of the Sword Coast, awaiting a soul bold enough to seek its dark embrace.~
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
        ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
+       ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
        ++ ~I'd like to ask you about something else.~ GOTO 1
 END
 
@@ -128,12 +130,16 @@ IF ~~ THEN BEGIN SARA_4
 END
 
 IF ~~ THEN BEGIN SARA_5
-   SAY ~It is in this capacity that I find myself aligned with the Gorgon's Eye and its astute leader, Baldwin. Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
+   SAY ~It is in this capacity that I find myself aligned with the Gorgon's Eye and its astute leader, Baldwin.~ IF ~~ THEN GOTO SARA_6
+END
+
+IF ~~ THEN BEGIN SARA_6
+   SAY ~Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
        ++ ~I'd like to ask you about something else.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN BUTCHER_2
-   SAY ~"The Butcher" moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
+   SAY ~'The Butcher' moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
 END
 
 IF ~~ THEN BEGIN BUTCHER_3
@@ -145,7 +151,7 @@ IF ~~ THEN BEGIN BUTCHER_4
 END
 
 IF ~~ THEN BEGIN BUTCHER_5
-   SAY ~To those who glimpsed the aftermath, he was "The Butcher," a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
+   SAY ~To those who glimpsed the aftermath, he was 'The Butcher', a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
        ++ ~I'd like to ask you something else.~ GOTO 1
 END
 
@@ -166,7 +172,7 @@ IF ~~ THEN BEGIN BALDWIN_6
 END
 
 IF ~~ THEN BEGIN BALDWIN_7
-   SAY ~Baldwin, at a young and impressionable age, found himself ensnared in the allure of the Caduceus. The staff's legend gripped his imagination, stoking the flames of his ambition. He yearned to wield its power and rewrite the course of history itself.~ IF ~~ THEN GOTO BALDWIN_8
+   SAY ~Baldwin, at a young and impressionable age, found himself ensnared in the allure of the Kerykeion. The staff's legend gripped his imagination, stoking the flames of his ambition. He yearned to wield its power and rewrite the course of history itself.~ IF ~~ THEN GOTO BALDWIN_8
 END
 
 IF ~~ THEN BEGIN BALDWIN_8
@@ -178,7 +184,7 @@ IF ~~ THEN BEGIN BALDWIN_9
 END
 
 IF ~~ THEN BEGIN BALDWIN_10
-   SAY ~He poured over dusty tomes, sought out long-forgotten sages, and ventured into treacherous realms in pursuit of any scrap of knowledge related to the Caduceus.~ IF ~~ THEN GOTO BALDWIN_11
+   SAY ~He poured over dusty tomes, sought out long-forgotten sages, and ventured into treacherous realms in pursuit of any scrap of knowledge related to the staff.~ IF ~~ THEN GOTO BALDWIN_11
 END
 
 IF ~~ THEN BEGIN BALDWIN_11
@@ -194,11 +200,11 @@ IF ~~ THEN BEGIN BALDWIN_12
 END
 
 IF ~~ THEN BEGIN BALDWIN_13
-   SAY ~The once loyal operative now walked a precarious line between the shadows and the seductive allure of the Caduceus.~ IF ~~ THEN GOTO BALDWIN_14
+   SAY ~The once loyal operative now walked a precarious line between the shadows and the seductive allure of the Kerykeion.~ IF ~~ THEN GOTO BALDWIN_14
 END
 
 IF ~~ THEN BEGIN BALDWIN_14
-   SAY ~His disregard for the guild's directives, his flagrant pursuit of the Caduceus, and his willingness to trespass into forbidden territories strained the fragile bonds of trust that held the guild together.~ IF ~~ THEN GOTO BALDWIN_15
+   SAY ~His disregard for the guild's directives, his flagrant pursuit of the staff, and his willingness to trespass into forbidden territories strained the fragile bonds of trust that held the guild together.~ IF ~~ THEN GOTO BALDWIN_15
 END
 
 IF ~~ THEN BEGIN BALDWIN_15
@@ -220,34 +226,42 @@ IF ~~ THEN BEGIN BALDWIN_18
 END
 
 IF ~~ THEN BEGIN BALDWIN_19
-   SAY ~Fuelled by a vengeful resolve, he struck back, exacting retribution with calculated precision. In shadows deep, he silenced those who had betrayed him, sparing only his brother Richard.~ IF ~~ THEN GOTO BALDWIN_20
+   SAY ~Fuelled by a vengeful resolve, he struck back, exacting retribution with calculated precision. In shadows deep, he silenced those who had betrayed him, sparing only his brother, Richard.~ IF ~~ THEN GOTO BALDWIN_20
 END
 
 IF ~~ THEN BEGIN BALDWIN_20
-   SAY ~Baldwin, now a pariah, set forth on a solitary journey, fueled by a singular purpose, to seize the Caduceus and claim the power that had consumed his every waking thought.~ IF ~~ THEN GOTO BALDWIN_21
+   SAY ~Baldwin, now a pariah, set forth on a solitary journey, fueled by a singular purpose, to seize the Kerykeion and claim the power that had consumed his every waking thought.~ IF ~~ THEN GOTO BALDWIN_21
 END
 
 IF ~~ THEN BEGIN BALDWIN_21
-   SAY ~With stolen documents clutched in his hand, Baldwin fled north to Beregost, a town cloaked in wilderness and mystery.~ IF ~~ THEN GOTO BALDWIN_22
+   SAY ~With stolen documents clutched in his hand, Baldwin fled north to Beregost, a town cloaked in wilderness and intrigue.~ IF ~~ THEN GOTO BALDWIN_22
 END
 
 IF ~~ THEN BEGIN BALDWIN_22
-   SAY ~Here, he forged the Gorgon's Eye, a sanctuary for outcasts, a refuge for those drawn to the allure of forbidden power. Its name echoed the ancient staff's legend, a constant reminder of his unyielding pursuit.~ IF ~~ THEN GOTO BALDWIN_23
+   SAY ~Here, he forged the Gorgon's Eye, a sanctuary for outcasts, a refuge for those drawn to the allure of forbidden power. Its name echoes the ancient staff's legend, a constant reminder of his unyielding pursuit.~ IF ~~ THEN GOTO BALDWIN_23
 END
 
 IF ~~ THEN BEGIN BALDWIN_23
-   SAY ~Baldwin's purpose was clear: to relentlessly track the path to the Kerykeion, the shadows of Beregost concealing his unwavering resolve.~
+   SAY ~Baldwin's purpose was clear. Relentlessly track the path to the Kerykeion, with the shadows of Beregost concealing his unwavering resolve.~
        ++ ~What can you tell me about Baldwin's time in the Shadow Thieves?~ GOTO BALDWIN_24
        ++ ~Can you tell me anything more about his brother, Richard?~ GOTO BALDWIN_28
        ++ ~I'd like to ask you about something else.~ GOTO KERY_2
 END
 
 IF ~~ THEN BEGIN BALDWIN_24
-   SAY ~During the intervening years between Baldwin's induction into the Shadow Thieves and his eventual banishment, he ascended through the ranks with calculated finesse. His reputation as a skilled rogue with a penchant for command solidified, particularly within the Athkatla branch in Amn.~ IF ~~ THEN GOTO BALDWIN_25
+   SAY ~During the intervening years between Baldwin's induction into the Shadow Thieves and his eventual banishment, he ascended through the ranks with calculated finesse.~ IF ~~ THEN GOTO BALDWIN_24.5
+END
+
+IF ~~ THEN BEGIN BALDWIN_24.5
+   SAY ~His reputation as a skilled rogue with a penchant for command solidified, particularly within the Athkatla branch in Amn.~ IF ~~ THEN GOTO BALDWIN_25
 END
 
 IF ~~ THEN BEGIN BALDWIN_25
-   SAY ~There, he operated directly under the formidable Renal Bloodscalp, a name synonymous with notoriety and power. Baldwin's tenure was marked by a duality of loyalty to the guild and an insatiable hunger for arcane knowledge, both fueled by his ambitions.~ IF ~~ THEN GOTO BALDWIN_26
+   SAY ~There, he operated directly under the formidable Renal Bloodscalp, a name synonymous with notoriety and power.~ IF ~~ THEN GOTO BALDWIN_25.5
+END
+
+IF ~~ THEN BEGIN BALDWIN_25.5
+   SAY ~Baldwin's tenure was marked by a duality of loyalty to the guild and an insatiable hunger for arcane knowledge, both fueled by his ambitions.~ IF ~~ THEN GOTO BALDWIN_26
 END
 
 IF ~~ THEN BEGIN BALDWIN_26
@@ -266,11 +280,11 @@ IF ~~ THEN BEGIN BALDWIN_28
 END
 
 IF ~~ THEN BEGIN BALDWIN_29
-   SAY ~Richard's approach was marked by a directness that brooked no deviation, and an unyielding resolve that garnered him respect. However, in the shadow of his younger sibling, Baldwin, Richard's aspirations paled in comparison.~ IF ~~ THEN GOTO BALDWIN_30
+   SAY ~Richard's approach was marked by a directness that brooked no deviation, and an unyielding resolve that garnered him respect. However, in the shadow of his younger sibling, Richard's aspirations paled in comparison.~ IF ~~ THEN GOTO BALDWIN_30
 END
 
 IF ~~ THEN BEGIN BALDWIN_30
-   SAY ~While he excelled in the craft of thievery and subterfuge, he lacked the same fervent ambition and relentless drive that defined Baldwin's pursuit of power and arcane knowledge.~ IF ~~ THEN GOTO BALDWIN_31
+   SAY ~While he excelled in the craft of thievery and subterfuge, he lacked the same fervent ambition and relentless drive that defined Baldwin's pursuit of power and knowledge.~ IF ~~ THEN GOTO BALDWIN_31
 END
 
 IF ~~ THEN BEGIN BALDWIN_31

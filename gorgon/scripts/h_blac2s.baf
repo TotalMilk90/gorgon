@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnNewBlack","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 StartDialog("h_blac2d",[PC])
+END
+
+

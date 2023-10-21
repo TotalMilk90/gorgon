@@ -3,7 +3,7 @@ BEGIN h_yumild
 IF ~True()~ THEN BEGIN 0
    SAY ~Have you seen all those white trees behind Feldepost's? There's a real spooky tunnel back there that's totally haunted!~
        ++ ~What makes you think that?~ GOTO 1
-       ++ ~Get lost, kid. I don't have time for this.~ GOTO 4
+       ++ ~Get lost, kid. I don't have time for this.~ EXIT
 END
 
 IF ~~ THEN BEGIN 1
@@ -19,7 +19,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I guess so. Auntie always makes us lock the doors, even though we don't have nothin' special to take. Can't cut through the back-alleys no more, neither.~
+   SAY ~I guess so. Auntie always makes us lock the doors, even though we don't have nothin' special woth takin'. Can't cut through the back-alleys no more, neither.~
        ++ ~Your auntie sounds like a wise woman. Here's a coin for telling me straight.~ GOTO 6
        ++ ~Sounds like my kind of place. Now shove off, kid.~ GOTO 7
        ++ ~Thanks for the info, kid. I'll go have a look at this tunnel for myself.~ GOTO 7

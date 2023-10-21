@@ -26,7 +26,7 @@ CHAIN
    =
 ~We're going to clean up this city, one rotten apple at a time. Give us a chance, and you'll see, sir.~
    == h_decoyd
-~Then we start now. First, we decapitate the serpents head, Baldwin. The one who pull the strings from the shadows.~
+~Then we start now. First, we decapitate the serpents head, Baldwin. The one who pulls the strings from the shadows.~
    =
 ~Once he is dealt with, the rest of his gang will crumble. They rely on his leadership more than they realize.~
    =
@@ -39,6 +39,8 @@ CHAIN
 ~It's time Beregost took a deep breath of clean air once more.~
    =
 ~...~
+   =
+~Hold. Be still...~
    =
 ~So, they've decided to make their move, have they? Men, eyes sharp. We are not alone.~
    =

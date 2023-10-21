@@ -2,7 +2,7 @@ BEGIN h_thamud
 
 IF ~Global("h_JoinShadow","GLOBAL",0)~ THEN BEGIN 0
    SAY ~Greetings, <CHARNAME>. How are you faring this evening?~
-       ++ ~Uh... pretty good?~ GOTO 1
+       ++ ~I'm doing well, thanks.~ GOTO 1
        ++ ~Care to explain what that was about?~ GOTO 2
        ++ ~Who are you and how do you know my name?~ GOTO 2
 END
@@ -35,11 +35,15 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~I do not anticipate you comprehending the complexities of our affairs. However, as your survival is unlikely, I shall entertain your queries.~ IF ~~ THEN GOTO 7
+   SAY ~I do not anticipate you to comprehend the complexities of our affairs. However, as your survival is unlikely, I shall entertain your queries.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Baldwin has been permitted his little gambit in Beregost, for he posed no threat to us. His moves are forever under our scrutiny. However, allowing him to obtain the Kerykeion was not an option. The threat he would pose to this world is beyond your understanding.~ IF ~~ THEN GOTO 8
+   SAY ~Baldwin has been permitted his little gambit in Beregost, for he posed no threat to us. His moves are forever under our scrutiny.~ IF ~~ THEN GOTO 7.5
+END
+
+IF ~~ THEN BEGIN 7.5
+   SAY ~However, allowing him to obtain the Kerykeion was not an option. The threat he would pose to this world is beyond your understanding.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -53,7 +57,7 @@ IF ~~ THEN BEGIN 8.5
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~You serve him, oblivious to the inevitable outcome? It is disappointing to find such ignorance within his ranks, I'll admit. I expected more.~ IF ~~ THEN GOTO 10
+   SAY ~You serve him, oblivious to the inevitable outcome? It is disappointing to find such ignorance within his ranks. I'll admit, I expected more.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
@@ -65,7 +69,7 @@ IF ~~ THEN BEGIN 11
 END
 
 IF ~~ THEN BEGIN 12
-   SAY ~It hungers for dominion, to subjugate the very essence of life and death. And Baldwin... a man blinded by his own ambition, believes himself capable of overcoming such a feat.~ IF ~~ THEN GOTO 13
+   SAY ~It hungers for dominion, to subjugate the very essence of life and death. And Baldwin... a man blinded by his own ambition, believes himself capable of overcoming this feat.~ IF ~~ THEN GOTO 13
 END
 
 IF ~~ THEN BEGIN 13

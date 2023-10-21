@@ -56,7 +56,7 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~Men?...~ IF ~~ THEN GOTO 11
+   SAY ~Men...?~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11

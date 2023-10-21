@@ -46,14 +46,15 @@ END
 IF ~~ THEN BEGIN 9
    SAY ~Think on it, and then return to me if you are willing.~
 IF ~~ THEN DO ~
-   SetGlobal("h_ThiefBook","GLOBAL",1)~ EXIT
+   SetGlobal("h_ThiefBook","GLOBAL",1)
+   AddJournalEntry(@206,USER)~ EXIT
 END
 
 
 IF ~Global("h_ThiefBook","GLOBAL",1)~ THEN BEGIN 10
    SAY ~What is it you seek?~
        ++ ~I'd like to see what services you have available.~ GOTO TEMPLE_0
-       ++ ~Can you tell me more about, 'The Thief's Compendium'.~ GOTO INFO_0
+       ++ ~Can you tell me more about 'The Thief's Compendium'.~ GOTO INFO_0
        +~GlobalLT("h_BookNumber","GLOBAL",5)~+ ~I would like to make a donation.~ GOTO DONATE_1
        +~GlobalGT("h_BookNumber","GLOBAL",4) GlobalLT("h_BookNumber","GLOBAL",11)~+ ~I would like to make a donation.~ GOTO DONATE_2
        +~GlobalGT("h_BookNumber","GLOBAL",10) GlobalLT("h_BookNumber","GLOBAL",17)~+ ~I would like to make a donation.~ GOTO DONATE_3

@@ -1,7 +1,11 @@
 BEGIN h_rigald
 
 IF ~Global("h_RigaldoQuest","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~You've just stumbled into the Gorgon's Eye, mate. This guild's got secrets darker than the night, and we don't take kindly to prying eyes. Best turn 'round and be on your way before things get complicated.~ IF ~~ THEN EXIT
+   SAY ~You've just stumbled into the Gorgon's Eye, mate. This guild's got secrets darker than the night, and we don't take kindly to prying eyes.~ IF ~~ THEN GOTO 01
+END
+
+IF ~~ THEN BEGIN 01
+   SAY ~Best turn 'round and be on your way before things get complicated.~ IF ~~ THEN EXIT
 END
 
           ///////////////////////////////////////
@@ -18,11 +22,11 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I'll be your main point of contact for guild work as it gets assigned. So, get to used to reporting to yours truly.~ IF ~~ THEN GOTO 4
+   SAY ~I'll be your main point of contact for guild work as it gets assigned. So, get to used to reporting to me.~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~I've got high expectations and I'm expectin' my rogues to deliver, got it? When the mark gets picked, you get the job done. No questions.~ IF ~~ THEN GOTO 5
+   SAY ~I've got high expectations and I trust my rogues to deliver, got it? When the mark gets picked, you get the job done. No questions.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -62,7 +66,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-   SAY ~This ain't the hour to get chummy. We've got business at hand and we need you up to snuff, quickly.~
+   SAY ~This ain't the hour to get chummy. We've got business at hand and we need you up to snuff, and quickly.~
        ++ ~Why do you and Baldwin have the appearance of Shadow Thieves?~ GOTO 7
        ++ ~What if I refuse a job that's against my morals?~ GOTO 10
        ++ ~What is my first mission?~ GOTO GEM_0
@@ -75,7 +79,7 @@ IF ~~ THEN BEGIN GEM_0
 END
 
 IF ~~ THEN BEGIN GEM_1
-   SAY ~There's a fence passing through our town, goes by the name, "Zieke". Got a real nice sparkler on em', a diamond from Waterdeep, and it's your job to make it ours.~ IF ~~ THEN GOTO GEM_2
+   SAY ~There's a fence passing through our town, goes by the name, 'Zieke'. Got a real nice sparkler on em', a diamond from Waterdeep, and it's your job to make it ours.~ IF ~~ THEN GOTO GEM_2
 END
 
 IF ~~ THEN BEGIN GEM_2
@@ -102,7 +106,7 @@ END
 
 IF ~~ THEN BEGIN GEM_7
    SAY ~Might be worth gettin' a jack from Rhade, I'm thinkin'. A right whack with that and it's lights out.~
-       ++ ~A fence then, eh? I won't care a bit for his loss. Sounds like my kind of challenge.~ GOTO GEM_9
+       ++ ~A fence then, eh? Sounds like my kind of challenge.~ GOTO GEM_9
        ++ ~Seems like an easy target. I'll make quick work of it.~ GOTO GEM_9
        ++ ~If the guards get in my way, I'll just have to kill them.~ GOTO GEM_8
 END
@@ -135,9 +139,9 @@ END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc04") Global("h_TalkedToZieke","GLOBAL",0)~ THEN BEGIN GEM_13
    SAY ~Had my men tail ya in case things got shifty. Let's get to business first. You've still got the goods in hand? Let's give it a proper once over.~
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddExperienceParty(900)~ GOTO GEM_14
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1) NumDeadGT("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddExperienceParty(300)~ GOTO GEM_15
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddExperienceParty(300)~ GOTO GEM_16
+       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(900)~ GOTO GEM_14
+       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1) NumDeadGT("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(400)~ GOTO GEM_15
+       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ ~Got the gem right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(400)~ GOTO GEM_16
 END
 
 IF ~~ THEN BEGIN GEM_14
@@ -161,7 +165,6 @@ IF ~~ THEN BEGIN GEM_18
    SAY ~I'll swap ya for the diamond, then. A little trinket I knocked up myself. You'll be findin' it useful in your future endeavors of larceny.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",3)
-   AddJournalEntry(@311,QUEST_DONE)
    TakePartyItem("h_misc04")
    DestroyItem("h_misc04")
    GiveItemCreate("h_ring03",LastTalkedToBy,0,0,0)~ EXIT
@@ -205,7 +208,7 @@ END
 
 IF ~~ THEN BEGIN GERARD_7
    SAY ~Let him know we don't play games, and crossing us comes at a steep price. He'll do well to remember it.~
-       ++ ~Is there anything else I should know before I depart?~ GOTO GERARD_8
+       ++ ~Is there anything else I should know before I depart?~ GOTO GERARD_9
        ++ ~Extorting a noble for protection money? No way, this isn't what I signed up for.~ GOTO GERARD_8
 END
 
@@ -271,7 +274,7 @@ IF ~~ THEN BEGIN GERARD_20
 END
 
 IF ~~ THEN BEGIN GERARD_21
-   SAY ~It's more than just a badge though, aye? You'll soon discover a heap of responsibilities and work to be done, enough to line your pockets with some serious coin, at that.~ IF ~~ THEN GOTO GERARD_22
+   SAY ~It's more than just a badge though, yeah? You'll soon discover a heap of responsibilities and work to be done, enough to line your pockets with some serious coin, at that.~ IF ~~ THEN GOTO GERARD_22
 END
 
 IF ~~ THEN BEGIN GERARD_22
@@ -284,7 +287,6 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",5)
    SetGlobal("h_BaldwinQuest","GLOBAL",2)
    SetGlobal("h_LiedelQuest","GLOBAL",1)
-   SetGlobal("h_GilbaldQuest","GLOBAL",1)
    SetGlobal("h_ZedaRiddle","GLOBAL",1)
    AddJournalEntry(@314,QUEST_DONE)
    TakePartyItem("h_misc05")
@@ -315,11 +317,11 @@ IF ~~ THEN BEGIN KARP_3
 END
 
 IF ~~ THEN BEGIN KARP_4
-   SAY ~Our sources say two things of interest. Firstly, she's been flogging these items to fences and smugglers, rather than going to the proper shops.~ IF ~~ THEN GOTO KARP_5
+   SAY ~Our sources say two things of interest. First, she's been flogging these items to fences and smugglers, rather than going to the proper shops.~ IF ~~ THEN GOTO KARP_5
 END
 
 IF ~~ THEN BEGIN KARP_5
-   SAY ~Secondly, and giving probable cause for her secretive deals, she is withholding all of her findings from her husband, the poor sod.~ IF ~~ THEN GOTO KARP_6
+   SAY ~Second, and giving probable cause for her secretive deals, she is withholding all of her findings from her husband, the poor sod.~ IF ~~ THEN GOTO KARP_6
 END
 
 IF ~~ THEN BEGIN KARP_6
@@ -331,7 +333,7 @@ IF ~~ THEN BEGIN KARP_7
 END
 
 IF ~~ THEN BEGIN KARP_8
-   SAY ~If you wish to skip all the drudgery, however, then you could always just pick the rings off her if you can.~
+   SAY ~If you wish to skip all the drudgery, however, you could always just pick the rings off her if you can.~
        ++ ~I'm not against using blackmail. If she's willing to engage in shady dealings behind her husband's back, then she may not be so innocent herself.~ GOTO KARP_9
        ++ ~Acting as the buyer sounds like good fun and a chance for me to use my charm and charisma.~ GOTO KARP_9
        ++ ~I think I'll just practice my thieving skills and steal the rings off her when she's not looking.~ GOTO KARP_9
@@ -365,8 +367,11 @@ END
           ////////// It's All Fun and Games //////////
           ////////////////////////////////////////////
 
-//67
-IF ~Global("h_RigaldoQuest","GLOBAL",8)~ THEN BEGIN CARNIVAL_0
+IF ~Global("h_RigaldoQuest","GLOBAL",8) GlobalLT("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN CARNIVAL_01
+   SAY ~Wrap things up with Ariosh, will ya? I've got a job that needs both your eyes on it, sharp as razors.~ IF ~~ THEN GOTO CARNIVAL_1
+END
+
+IF ~Global("h_RigaldoQuest","GLOBAL",8) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN CARNIVAL_0
    SAY ~Alright, mate, we've got a big job at the Nashkel Carnival and I'm puttin' you in charge of the prep-work.~ IF ~~ THEN GOTO CARNIVAL_1
 END
 
@@ -404,13 +409,13 @@ IF ~~ THEN BEGIN CARNIVAL_7
 END
 
 IF ~~ THEN BEGIN CARNIVAL_7.5
-   SAY ~Truth be told, the Shadow Thieves don't have much stake in the gambling trade, and most of their muscle tends to stick below the Cloud Peaks. So, don't get too riled up now.~
+   SAY ~Truth be told, the Shadow Thieves don't have much stake in the gambling trade, and most of their muscle tends to stick below the Cloud Peaks. So, don't get too riled up now, yeah?~
        ++ ~What do we need the gambling licenses for?~ GOTO CARNIVAL_6
        ++ ~Understood. I'll head down shortly.~ GOTO CARNIVAL_8
 END
 
 IF ~~ THEN BEGIN CARNIVAL_8
-   SAY ~You're stepping up on this job, mate. This'll really put your skills to the test, and if it pans out, your stock in the guild'll shoot up.~
+   SAY ~You're steppin' up on this job, mate. This'll really put your skills to the test, and if it pans out, your stock in the guild'll shoot up.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",9)
    SetGlobal("h_GuildThieves","GLOBAL",2)
@@ -436,19 +441,86 @@ END
 
 
           ////////////////////////////////////////////
-          ////////// Borland's Spicy Secret //////////
+          ///////////// Procus Carnival //////////////
           ////////////////////////////////////////////
 
 //80
-IF ~GlobalLT("CHAPTER","GLOBAL",3) Global("h_RigaldoQuest","GLOBAL",11)~ THEN BEGIN CHAPTER_1
+IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0)~ THEN BEGIN PROCUS_0
+   SAY ~Alright, <CHARNAME>, listen up. You've proven yourself a shrewd operator, but Nashkel, you see, it's a whole different kind of beast.~ IF ~~ THEN GOTO PROCUS_1
+END
+
+IF ~~ THEN BEGIN PROCUS_1
+   SAY ~It's a place where the Flaming Fist doesn't hold sway, but instead, they've got a proper army, organized and disciplined. We'll need to move like shadows in a well-lit room, subtle and sly.~ IF ~~ THEN GOTO PROCUS_2
+END
+
+IF ~~ THEN BEGIN PROCUS_2
+   SAY ~The Shadow Thieves, they barely cast a shadow down there, mostly keeping to their territory on the other side of the Peaks. But still, we must be cautious.~ IF ~~ THEN GOTO PROCUS_3
+END
+
+IF ~~ THEN BEGIN PROCUS_3
+   SAY ~Now, you'll need to seek out our guild contact, Procus. He'll be waitin' for ya at the carnival, stationed by the jousting lists.~ IF ~~ THEN GOTO PROCUS_3.5
+END
+
+IF ~~ THEN BEGIN PROCUS_3.5
+   SAY ~He's the key to getting us established. Help him set up a base of operations amidst the revelry.~ IF ~~ THEN GOTO PROCUS_4
+END
+
+IF ~~ THEN BEGIN PROCUS_4
+   SAY ~The carnival's the perfect cover, a sea of faces and distractions. Blend in, set up shop, and watch your back. Cunning and subtlety will be our greatest assets in making our mark here.~ IF ~~ THEN GOTO PROCUS_5
+END
+
+IF ~~ THEN BEGIN PROCUS_5
+   SAY ~Before you dash off down south, however, swing by Gilbald's for a quick once-over, will ya? Something's got me feeling a tad uneasy about one of 'em. Can't be too careful, yeah?~ IF ~~ THEN GOTO PROCUS_6
+END
+
+IF ~~ THEN BEGIN PROCUS_6
+   SAY ~Also, Liedel's got a batch of new bounties, and she won't let me hear the end of it. Frankly, I'd rather face a manticore than endure her prattlin'.~ IF ~~ THEN GOTO PROCUS_7
+END
+
+IF ~~ THEN BEGIN PROCUS_7
+   SAY ~I need you to keep her occupied for a spell, eh? Just listen to her blabber about her marks. Maybe even show a tad of interest if you're up for it.~ IF ~~ THEN GOTO PROCUS_8
+END
+
+IF ~~ THEN BEGIN PROCUS_8
+   SAY ~Once she's had her fill, we can all get back to business, savvy?~
+IF ~~ THEN DO ~
+   SetGlobal("h_SpawnProcus","GLOBAL",1)
+   SetGlobal("h_GilbaldQuest","GLOBAL",1)
+   SetGlobal("h_LiedelQuest","GLOBAL",3)
+   AddJournalEntry(@809,QUEST)~ EXIT
+END
+
+IF ~Global("h_RigaldoQuest","GLOBAL",11) GlobalLT("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN PROCUS_9
+   SAY ~Keep your ear to the ground, <CHARNAME>. Nashkel's a fickle mistress, and we're just getting started.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN PROCUS_10
+   SAY ~Back 'ere, sharp as a blade, ain't ya? Word's been blowin' through the shadows about your doin's down in Nashkel. Good work, mate.~ IF ~~ THEN GOTO PROCUS_11
+END
+
+IF ~~ THEN BEGIN PROCUS_11
+   SAY ~This little venture of ours is takin' off, and it's all thanks to you. That gold, them connections, it's all comin' together, just as we planned.~ IF ~~ THEN GOTO PROCUS_12
+END
+
+IF ~~ THEN BEGIN PROCUS_12
+   SAY ~The Gorgon's Eye's makin' its mark, and you're right in the thick of it. Well done, indeed.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ProcusQuest","GLOBAL",8)
+   AddJournalEntry(@820,QUEST_DONE)
+   GiveGoldForce(800)
+   AddExperienceParty(600)~ EXIT
+END
+
+          ////////////////////////////////////////////
+          ////////// Borland's Spicy Secret //////////
+          ////////////////////////////////////////////
+
+
+IF ~OR(2) GlobalLT("h_BountyNumber","GLOBAL",6) GlobalLT("h_GilbaldQuest","GLOBAL",6) Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",8)~ THEN BEGIN CHAPTER_2
    SAY ~No fresh leads at the moment. Have a word with the mates around the guild, they might have a bit of graft for ya.~ IF ~~ THEN EXIT
 END
 
-IF ~GlobalGT("CHAPTER","GLOBAL",2) Global("h_RigaldoQuest","GLOBAL",11) Global("h_LiedelQuest","GLOBAL",1)~ THEN BEGIN CHAPTER_2
-   SAY ~No fresh leads at the moment. Have a word with the mates around the guild, they might have a bit of graft for ya.~ IF ~~ THEN EXIT
-END
-
-IF ~GlobalGT("CHAPTER","GLOBAL",2) Global("h_RigaldoQuest","GLOBAL",11) GlobalGT("h_LiedelQuest","GLOBAL",1)~ THEN BEGIN SPICE_0
+IF ~Global("h_BountyNumber","GLOBAL",6) Global("h_GilbaldQuest","GLOBAL",6) Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",8)~ THEN BEGIN SPICE_0
    SAY ~Ready for your next bit of business? Got a small job lined up, and I'm eyein' you to handle it.~ IF ~~ THEN GOTO SPICE_1
 END
 
@@ -498,7 +570,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnAriosh","GLOBAL",1)
    SetGlobal("h_SpawnZylark","GLOBAL",6)
    AddJournalEntry(@326,QUEST_DONE)
-   AddExperienceParty(600)
+   AddExperienceParty(800)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -511,7 +583,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@326,QUEST_DONE)
    TakePartyItem("h_misc07")
    DestroyItem("h_misc07")
-   AddExperienceParty(600)
+   AddExperienceParty(800)
    GiveGoldForce(800)~ EXIT
 END
 
@@ -524,7 +596,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@326,QUEST_DONE)
    TakePartyItem("h_misc07")
    DestroyItem("h_misc07")
-   AddExperienceParty(600)
+   AddExperienceParty(800)
    GiveGoldForce(400)~ EXIT
 END
 
@@ -541,6 +613,12 @@ END
 IF ~Global("h_RigaldoQuest","GLOBAL",14)~ THEN BEGIN LOTUS_0
    SAY ~Nice work taking care of those Shadow Thieves. I know first hand how troublesome they can be.~ IF ~~ THEN EXIT
 END
+
+
+
+
+
+
 
 IF ~Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_1
    SAY ~I've got a new job for ya. We're gonna be moving some gear into Amn.~ IF ~~ THEN GOTO LOTUS_2
@@ -584,6 +662,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@336,QUEST_DONE)
+   AddExperienceParty(800)
    GiveGoldForce(500)~ EXIT
 END
 
@@ -592,8 +671,7 @@ IF ~~ THEN BEGIN REFUSE_5
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
-   AddJournalEntry(@337,QUEST_DONE)
-   GiveGoldForce(500)~ EXIT
+   AddJournalEntry(@337,QUEST_DONE)~ EXIT
 END
 
 IF ~~ THEN BEGIN LOTUS_4
@@ -648,6 +726,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
+   AddExperienceParty(800)
    TakePartyGold(3000)
    GiveGoldForce(750)~ EXIT
 END
@@ -659,6 +738,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
    AddJournalEntry(@331,QUEST_DONE)
    TakePartyItemAll("h_misc07")
+   AddExperienceParty(800)
    TakePartyGold(2400)
    GiveGoldForce(480)~ EXIT
 END

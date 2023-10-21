@@ -1,0 +1,10 @@
+IF
+         Global("h_AddCoinInn","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  ActionOverride("Container 1",CreateItem("h_misc28",0,0,0))
+                  Lock("Container 1")
+                  SetGlobal("h_AddCoinInn","GLOBAL",2)
+                  Continue()
+END

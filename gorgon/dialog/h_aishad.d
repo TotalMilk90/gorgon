@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~I tried to fight back, but he was too strong. When he was trying to carry me out of the tavern, he lost his balance and collapsed into one of the tables.~ IF ~~ THEN GOTO 5
+   SAY ~I tried to fight back, but he was too strong. When he was carrying me out of the tavern, he lost his balance and collapsed into one of the tables.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5

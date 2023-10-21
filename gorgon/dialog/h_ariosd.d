@@ -8,6 +8,10 @@ IF ~GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9) 
    SAY ~Ah, you're not one of the usual faces I see around here. The name's Ariosh, and I'm the eyes and ears on the streets.~ IF ~~ THEN GOTO STEAL_1
 END
 
+IF ~GlobalGT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",0)~ THEN BEGIN STEAL_01
+   SAY ~Ah, you're not one of the usual faces I see around here. The name's Ariosh, and I'm the eyes and ears on the streets.~ IF ~~ THEN GOTO STEAL_1
+END
+
 IF ~~ THEN BEGIN STEAL_1
    SAY ~I'm the one who sniffs out the marks with something worth takin'. Be it in the heart of the city or someone passin' through with pockets jinglin', I'm the man who knows.~ IF ~~ THEN GOTO STEAL_2
 END
@@ -47,6 +51,12 @@ IF ~GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9) 
      ++ ~This isn't my kind of venture, I'll pass.~ GOTO STEAL_7
 END
 
+IF ~GlobalGT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",1)~ THEN BEGIN STEAL_08
+ SAY ~Back for more, are ya? I've got a feeling you've had a change of heart. Ready to give it a go, or you still need some persuading?~
+     ++ ~Let's get to work.~ GOTO ACCEPT_0
+     ++ ~This isn't my kind of venture, I'll pass.~ GOTO STEAL_7
+END
+
 IF ~~ THEN BEGIN ACCEPT_0
    SAY ~Good choice, mate. You've just stepped into the real action. We'll make a fine team, mark my words.~ IF ~~ THEN GOTO ACCEPT_1
 END
@@ -68,13 +78,12 @@ IF ~~ THEN BEGIN FIRST_1.5
 END
 
 IF ~~ THEN BEGIN FIRST_2
-   SAY ~Be mindful, however, they've got a keen-eyed bloke keepin' watch. Don't be using the ol' cut 'n' run while he's on duty. You'll need to outsmart and outmaneuver him for this job.~ IF ~~ THEN GOTO FIRST_3
+   SAY ~Be mindful, however, they've got a keen-eyed bloke keepin' watch. Don't be using the ol' cut an' run while he's on duty. You'll need to outsmart and outmaneuver him for this job.~ IF ~~ THEN GOTO FIRST_3
 END
 
 IF ~~ THEN BEGIN FIRST_3
    SAY ~Best not be makin' a mess on this venture, neither. These bigwigs have connections, and they'll be sendin' an army down if we start dropping bodies. Got it?~
-       ++ ~No bloodshed, and no pinchin' while the guard's watching.~ GOTO FIRST_4
-       ++ ~I have some other things I need to do first.~ EXIT
+       ++ ~No bloodshed, and no snippin' while the guard's watching.~ GOTO FIRST_4
 END
 
 IF ~~ THEN BEGIN FIRST_4
@@ -88,12 +97,13 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnParty","GLOBAL",1)
    AddJournalEntry(@510,QUEST)~ EXIT
 END
-    //GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9)
+
 IF ~Global("h_ArioshQuest","GLOBAL",2)~ THEN BEGIN FIRST_5
    SAY ~Back from the streets, are ya? Did your wits and skills serve you well in the pursuit of our prize?~
        +~PartyHasItem("h_misc19") NumItemsPartyLT("h_misc20",1)~+ ~I only managed to swipe one purse.~ GOTO FIRST_6
        +~PartyHasItem("h_misc20") NumItemsPartyLT("h_misc19",1)~+ ~I only managed to swipe one purse.~ GOTO FIRST_6
        +~PartyHasItem("h_misc19") PartyHasItem("h_misc20")~+ ~Got both purses right here.~ GOTO FIRST_7
+       +~Global("h_BouncerCaught","GLOBAL",1) NumItemsPartyLT("h_misc20",1) NumItemsPartyLT("h_misc19",1)~+ ~Seems I've returned emptyhanded. The bouncer caught wind of me, mid-pick, and called off the party.~ GOTO FIRST_8
        ++ ~I'll be heading down shortly.~ EXIT
 END
 
@@ -108,7 +118,7 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc19")
    DestroyItem("h_misc20")
    AddExperienceParty(400)
-   GiveGoldForce(250)~ EXIT
+   GiveGoldForce(200)~ EXIT
 END
 
 IF ~~ THEN BEGIN FIRST_7
@@ -122,9 +132,22 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc19")
    DestroyItem("h_misc20")
    AddExperienceParty(600)
-   GiveGoldForce(500)~ EXIT
+   GiveGoldForce(400)~ EXIT
 END
-    //GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9)
+
+IF ~~ THEN BEGIN FIRST_8
+   SAY ~Blast it all! This ain't no nursery rhyme, <CHARNAME>. We're thieves, not clowns! You've got to up your game, or we'll be left with naught but pockets full of air.~ IF ~~ THEN GOTO FIRST_9
+END
+
+IF ~~ THEN BEGIN FIRST_9
+   SAY ~Next time, get out there and do it right, be slicker, and make sure you come back with somethin' worthwhile.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",3)
+   SetGlobal("h_EndParty","GLOBAL",1)
+   AddJournalEntry(@509,QUEST_DONE)~ EXIT
+END
+    
+
 IF ~Global("h_ArioshQuest","GLOBAL",3)~ THEN BEGIN SEC_0
    SAY ~Ah, you've got that look about you, like you're itching for more action, eh? Well, it just so happens I've got another job that might tickle your fancy.~ IF ~~ THEN GOTO SEC_1
 END
@@ -140,14 +163,14 @@ END
 IF ~~ THEN BEGIN SEC_3
    SAY ~You're gonna be the bait, lure 'em out, and then... well, let's just say you'll teach them the price of crossing us.~
        ++ ~Is there any more intel for me? Names, or how many we're dealing with?~ GOTO SEC_4
-       ++ ~Want me to gut 'em or just give a lear~ GOTO SEC_5
+       ++ ~Want me to gut 'em or just give a proper fright?~ GOTO SEC_5
        ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
        ++ ~I have some other things I need to do first.~ EXIT
 END
 
 IF ~~ THEN BEGIN SEC_4
    SAY ~The leader goes by Blackthorn. Real thorn in my arse if ya ask me. He's got a small crew, just a few men with him, nothing substantial.~
-       ++ ~Should I ensure they never return, or is a warning enough?~ GOTO SEC_5
+       ++ ~Want me to gut 'em or just give a proper fright?~ GOTO SEC_5
        ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
 END
 
@@ -164,7 +187,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnBlackthorn","GLOBAL",1)
    AddJournalEntry(@516,QUEST)~ EXIT
 END
-    //GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9)
+
 IF ~Global("h_ArioshQuest","GLOBAL",4)~ THEN BEGIN SEC_7
    SAY ~Swiftly, head to the northern gardens. That's where Blackthorn and his crew will strike, after the sun dips below the horizon.~ IF ~~ THEN EXIT
 END
@@ -198,7 +221,7 @@ IF ~~ THEN BEGIN SEC_12
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(600)
+   AddExperienceParty(900)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -215,7 +238,7 @@ IF ~~ THEN BEGIN SEC_15
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(800)
+   AddExperienceParty(900)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -240,7 +263,7 @@ IF ~~ THEN BEGIN THIRD_3
 END
 
 IF ~~ THEN BEGIN THIRD_4
-   SAY ~Each of those spots holds a black sack, tied up nice and tight, containing a trove of illicit goods.~ IF ~~ THEN GOTO THIRD_4.5
+   SAY ~Each of these spots holds a black sack, tied up nice and tight, containing a trove of illicit goods.~ IF ~~ THEN GOTO THIRD_4.5
 END
 
 IF ~~ THEN BEGIN THIRD_4.5
@@ -329,8 +352,8 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(600)
-   GiveGoldForce(600)~ EXIT
+   AddExperienceParty(400)
+   GiveGoldForce(450)~ EXIT
 END
 
 IF ~~ THEN BEGIN THIRD_18
@@ -345,7 +368,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(300)
+   AddExperienceParty(400)
    GiveGoldForce(450)~ EXIT
 END
 
@@ -361,8 +384,8 @@ IF ~~ THEN DO ~
    AddJournalEntry(@523,QUEST_DONE)
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
-   AddExperienceParty(750)
-   GiveGoldForce(600)~ EXIT
+   AddExperienceParty(600)
+   GiveGoldForce(450)~ EXIT
 END
 
 IF ~~ THEN BEGIN THIRD_22
@@ -378,7 +401,7 @@ IF ~~ THEN DO ~
    TakePartyItemAll("h_misc21")
    DestroyItem("h_misc21")
    AddExperienceParty(900)
-   GiveGoldForce(600)~ EXIT
+   GiveGoldForce(450)~ EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",8)~ THEN BEGIN FOUR_0
@@ -426,7 +449,7 @@ END
 
 IF WEIGHT #-2 ~Global("h_KilledValera","GLOBAL",1)~ THEN BEGIN FOUR_8
    SAY ~Aye, you're back, and I can see it in your eyes, <CHARNAME>. You've done what needed to be done.~
-       ++ ~Valera's coin has been spent. The city won't hear her whispers again.~ GOTO FOUR_9
+       ++ ~Valera's coin has been spent. The city won't hear her whispers again.~ DO ~SetGlobal("h_KilledValera","GLOBAL",2)~ GOTO FOUR_9
 END
 
 IF ~~ THEN BEGIN FOUR_9
@@ -454,14 +477,13 @@ IF ~~ THEN BEGIN FOUR_13
 IF ~~ THEN DO ~
       SetGlobal("h_BlackLeave","GLOBAL",1)
       SetGlobal("h_ValeraQuest","GLOBAL",5)
-      SetGlobal("h_KilledValera","GLOBAL",2)
       SetGlobal("h_ArioshQuest","GLOBAL",10)
       AddJournalEntry(@527,QUEST_DONE)
-      AddExperienceParty(900)
-      GiveGoldForce(600)~ EXIT
+      AddExperienceParty(400)
+      GiveGoldForce(200)~ EXIT
 END
 
-IF ~GlobalLT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN WAIT_0
+IF ~GlobalLT("h_BaldwinQuest","GLOBAL",8) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN WAIT_0
    SAY ~Aye, <CHARNAME>, the streets have grown quiet of late, but fret not. Patience is a blade in its own right, and in due time, opportunities will sprout like weeds in the cracks.~ IF ~~ THEN GOTO WAIT_1
 END
 
@@ -471,8 +493,12 @@ IF ~~ THEN DO ~
    AddJournalEntry(@205,USER)~ EXIT
 END
 
-IF ~GlobalGT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN FIVE_0
-   SAY ~Alright, mate. Time to make our rounds and collect what's rightfully ours from the local establishments.~ IF ~~ THEN GOTO FIVE_1
+IF ~GlobalGT("h_BaldwinQuest","GLOBAL",7) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN FIVE_0
+   SAY ~Alright, mate. I've got the low-down on some stirrings within the City Watch. But first, we've got some business to attend to.~ IF ~~ THEN GOTO FIVE_01
+END
+
+IF ~~ THEN BEGIN FIVE_01
+   SAY ~It's time to make our rounds and collect what's rightfully ours from the local establishments.~ IF ~~ THEN GOTO FIVE_1
 END
 
 IF ~~ THEN BEGIN FIVE_1
@@ -489,6 +515,7 @@ IF ~~ THEN BEGIN FIVE_3
        ++ ~What happens if they refuse to pay?~ GOTO FIVE_5
        ++ ~Is there any specific place I should start with?~ GOTO FIVE_6
        ++ ~Alright, I'll come back with the payments.~ GOTO FIVE_7
+       ++ ~I don't have time for this right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN FIVE_4
@@ -545,12 +572,12 @@ IF ~~ THEN DO ~
       AddJournalEntry(@536,QUEST_DONE)
       TakePartyItemAll("h_misc23")
       DestroyItem("h_misc23")
-      AddExperienceParty(900)
+      AddExperienceParty(800)
       GiveGoldForce(600)~ EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",12)~ THEN BEGIN SIX_0
-   SAY ~Listen close, <CHARNAME>, word's reachin' me from our mole in the Watch. They say we've got ourselves a proper high-hat Inspector who's crawled his way down from the Gate.~ IF ~~ THEN GOTO SIX_1
+   SAY ~Listen close, <CHARNAME>, word's reached me from our mole in the Watch. They say we've got ourselves a proper high-hat Inspector who's crawled his way down from the Gate.~ IF ~~ THEN GOTO SIX_1
 END
 
 IF ~~ THEN BEGIN SIX_1
@@ -567,7 +594,7 @@ END
 
 IF ~~ THEN BEGIN SIX_4
    SAY ~You make it look like the Watch's got itself a leaky roof, and we get to breathe easy.~
-       ++ ~What's so dangerous about this Inspector?~ GOTO SIX_5
+       ++ ~What's so dangerous about this guy?~ GOTO SIX_5
        +~Global("h_KilledValera","GLOBAL",0)~+ ~Didn't Valera warn us about this Inspector?~ GOTO SIX_9
        ++ ~Consider it done. Where can I find this Inspector?~ GOTO SIX_10
 END
@@ -635,8 +662,8 @@ IF ~~ THEN BEGIN SIX_17
 IF ~~ THEN DO ~
       SetGlobal("h_ArioshQuest","GLOBAL",14)
       AddJournalEntry(@539,QUEST_DONE)
-      AddExperienceParty(900)
-      GiveGoldForce(600)~ EXIT
+      AddExperienceParty(800)
+      GiveGoldForce(400)~ EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",14)~ THEN BEGIN SEV_0
@@ -724,13 +751,14 @@ IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",17)
    SetGlobal("h_DecoyAttack","GLOBAL",2)
    SetGlobal("h_BarWatchAttack","GLOBAL",2)
+   SetGlobal("h_ReplaceCityWatch","GLOBAL",1)
    AddJournalEntry(@546,QUEST)
    GiveItemCreate("h_misc26",LastTalkedToBy,0,0,0)
    GiveItemCreate("POTN02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",17)~ THEN BEGIN SEV_16.5
-   SAY ~Set that device up in the kitchen, yeah? And try to be sneaky about it. Force the barkeep to play his part, sit back, and watch the final of act of the Inspector's last play.~ IF ~~ THEN EXIT
+   SAY ~Set that device up in the kitchen, yeah? And try to be sneaky about it. Force the barkeep to play his part, sit back, and watch the final of act of the Inspector's play.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",18)~ THEN BEGIN SEV_17
@@ -765,8 +793,9 @@ IF ~~ THEN BEGIN SEV_23
    SAY ~Word's spreading about our mettle, and the whispers of dissent are growing louder. Soon, it'll just be Commander Whitewood left standing, and the Gorgon's Eye will rise.~
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",19)
-   AddExperienceParty(900)
-   AddJournalEntry(@551,QUEST_DONE)~ EXIT
+   AddJournalEntry(@551,QUEST_DONE)
+   AddExperienceParty(800)
+   GiveGoldForce(400)~ EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",19)~ THEN BEGIN EIGHT_0
@@ -774,7 +803,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",19)~ THEN BEGIN EIGHT_0
 END
 
 IF ~~ THEN BEGIN EIGHT_1
-   SAY ~Her most ardent Valkyries, Clare and Theresa Gallant. A pair of dangerous and deadly sisters of divine heritage.~ IF ~~ THEN GOTO EIGHT_1.5
+   SAY ~She commands her most ardent Valkyries, Clare and Theresa Gallant. A pair of dangerous and deadly sisters of divine heritage, forever steadfast in their sacred duty.~ IF ~~ THEN GOTO EIGHT_1.5
 END
 
 IF ~~ THEN BEGIN EIGHT_1.5
@@ -782,7 +811,7 @@ IF ~~ THEN BEGIN EIGHT_1.5
 END
 
 IF ~~ THEN BEGIN EIGHT_2
-   SAY ~Clare's a creature of habit, you see. Each dawn, like clockwork, she takes a stroll down the temple byway in the southeast. A soft spot for nature, that one.~ IF ~~ THEN GOTO EIGHT_3
+   SAY ~Clare's a creature of habit, you see. Each dawn, like clockwork, she takes a stroll down the temple byway to the southeast. A soft spot for nature, that one.~ IF ~~ THEN GOTO EIGHT_3
 END
 
 IF ~~ THEN BEGIN EIGHT_3
@@ -820,6 +849,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnTheresa","GLOBAL",1)
    SetGlobal("h_SpawnClare","GLOBAL",1)
    SetGlobal("h_BarWatchAttack","GLOBAL",1)
+   SetGlobal("h_ReplaceCityWatch","GLOBAL",1)
    AddJournalEntry(@552,QUEST)~ EXIT
 END
 
@@ -830,9 +860,9 @@ END
 IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadGT("h_clarec",0) NumDeadGT("h_therec",0)~ THEN BEGIN EIGHT_12
    SAY ~Aye, I've heard the whispers already. Word's spread like wildfire about the Valkyrie twins meetin' their untimely end. Good work, mate.~
        +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",0)~+ ~Sleeker than a shadow, they never knew what hit 'em.~ DO ~AddExperienceParty(1200)~ GOTO EIGHT_13
-       +~Global("h_ClareTalk","GLOBAL",1) Global("h_TheresaTalk","GLOBAL",0)~+ ~Clare caught a glimpse, but it was too late for her.~ GOTO EIGHT_14
-       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",1)~+ ~Theresa had a moment, but it didn't save her.~ GOTO EIGHT_14
-       +~Global("h_ClareTalk","GLOBAL",1) Global("h_TheresaTalk","GLOBAL",1)~+ ~They both looked me in the eye before the end.~ GOTO EIGHT_14
+       +~Global("h_ClareTalk","GLOBAL",2) Global("h_TheresaTalk","GLOBAL",0)~+ ~Clare caught a glimpse, but it was too late for her.~ GOTO EIGHT_14
+       +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",2)~+ ~Theresa had a moment, but it didn't save her.~ GOTO EIGHT_14
+       +~Global("h_ClareTalk","GLOBAL",2) Global("h_TheresaTalk","GLOBAL",2)~+ ~They both looked me in the eye before the end.~ GOTO EIGHT_14
 END
 
 IF ~~ THEN BEGIN EIGHT_13
@@ -855,17 +885,56 @@ IF ~~ THEN BEGIN EIGHT_17
    SAY ~This is where the real game begins, and you've earned your place at the table. Remember, we're not just thieves anymore. We're the bloody hand that guides Beregost. Let's make it count.~
 IF ~~ THEN DO ~
    AddJournalEntry(@555,QUEST_DONE)
-   SetGlobal("h_ArioshQuest","GLOBAL",20)
-   SetGlobal("h_WatchCutscene","GLOBAL",1)
+   SetGlobal("h_ArioshQuest","GLOBAL",21)
+   SetGlobal("h_ReplaceCityWatch","GLOBAL",3)
    ClearAllActions()
    StartCutSceneMode()
    StartCutScene("h_citcut")~ EXIT
 END
 
+IF ~Global("h_ArioshQuest","GLOBAL",21)~ THEN BEGIN NINE_0
+   SAY ~Remember, <CHARNAME>, this is our chance to tip the scales in our favor. Make it count. The fate of the Gorgon's Eye and the future of Beregost hang in the balance.~ IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-2 ~Global("h_ArioshQuest","GLOBAL",21) Dead("h_whit2c")~ THEN BEGIN NINE_1
+   SAY ~Well now, <CHARNAME>, that look of yours tells quite the tale. Did you cross paths with Commander Whitewood, or did she cross yours?~
+       ++ ~It was a heated dance, but in the end, her resolve crumbled. Beregost is primed for the taking.~ GOTO NINE_2
+       ++ ~She met her end, Ariosh. The Temple is a graveyard now, and the city will soon bend to our will.~ GOTO NINE_2
+END
+
+IF ~~ THEN BEGIN NINE_2
+   SAY ~Aye, <CHARNAME>, this is it. With Whitewood out of the picture, the title of Commander will pass to one of our own. The Gorgon's Eye's sway will echo across the realm.~ IF ~~ THEN GOTO NINE_3
+END
+
+IF ~~ THEN BEGIN NINE_3
+   SAY ~This town will kneel, and Beregost will be ours. From this point on, we will dictate the destiny of this city, and our power shall only grow.~ IF ~~ THEN GOTO NINE_4
+END
+
+IF ~~ THEN BEGIN NINE_4
+   SAY ~You're cut from the cloth of shadows, <CHARNAME>, a master thief, through and through.~ IF ~~ THEN GOTO NINE_5
+END
+
+IF ~~ THEN BEGIN NINE_5
+   SAY ~You belong to the gritty underbelly now, the murky cobbled alleys, where deals are sealed with a blade and secrets are whispered in the dark.~ IF ~~ THEN GOTO NINE_6
+END
+
+IF ~~ THEN BEGIN NINE_6
+   SAY ~Keep those ears sharp and your wits sharper, and there's no telling what heights you'll scale in these shadows. You were born for this life, you was.~
+IF ~~ THEN DO ~
+   SetGlobal("h_ArioshQuest","GLOBAL",22)
+   SetGlobal("h_SpawnGorgonWatch","GLOBAL",1)
+   AddJournalEntry(@558,QUEST_DONE)
+   AddExperienceParty(1200)~ EXIT
+END
+   
+IF ~Global("h_ArioshQuest","GLOBAL",22)~ THEN BEGIN TEN_0
+   SAY ~Aye, <CHARNAME>, we've got the City Watch dancing to our tune now. We've got work ahead, and it won't be easy, but together, we'll leave our mark on this town.~ IF ~~ THEN EXIT
+END
 
 
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",0)~ THEN BEGIN CARNIVAL_0
+
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN CARNIVAL_0
    SAY ~Aye, <CHARNAME>. We're on orders to await your signal. Ready to roll when you give the word.~
        +~NumItemsParty("h_misc18",8)~+ ~Weapons secured, boys. Divy 'em up and prep for action.~ GOTO CARNIVAL_5
        +~Gender(Player1,FEMALE) NumItemsPartyLT("h_misc18",8)~+ ~Just reporting in before we kick off. Stay on your toes.~ GOTO CARNIVAL_1
@@ -874,30 +943,24 @@ IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GL
 END
 
 IF ~~ THEN BEGIN CARNIVAL_1
-   SAY ~Copy that. Alright you men! You heard the lass. Stand fast 'til she brings back the weapons.~
-IF ~~ THEN DO ~
-   SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
+   SAY ~Copy that. Alright you men! You heard the lass. Stand fast 'til she brings back the weapons.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_2
-   SAY ~Copy that. Alright you men! You heard the lad. Stand fast 'til she brings back the weapons.~
-IF ~~ THEN DO ~
-   SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
+   SAY ~Copy that. Alright you men! You heard the lad. Stand fast 'til she brings back the weapons.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_3
-   SAY ~Gods, what was Rigaldo thinking sending us a rookie for this mission? Get in those tents, swipe the weapons off every gamesman, then return them to us. We'll handle the rest.~
-IF ~~ THEN DO ~
-   SetGlobal("h_TalkedToAriosh","GLOBAL",1)~ EXIT
+   SAY ~Get in those tents and swipe the weapons off every gamesman inside. Get back here, quick as you can, and dish out them darts. We'll handle the rest.~ IF ~~ THEN EXIT
 END
-
+/*
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9) Global("h_TalkedToAriosh","GLOBAL",1)~ THEN BEGIN CARNIVAL_4
    SAY ~Back already? What's the play?~
        +~NumItemsParty("h_misc18",8)~+ ~Weapons secured, boys. Divy 'em up and prep for action.~ GOTO CARNIVAL_5
        +~NumItemsPartyLT("h_misc18",8)~+ ~Just reporting in before we kick off. Stay on your toes.~ EXIT
        +~NumItemsPartyLT("h_misc18",8)~+ ~Err. What's the plan again?~ GOTO CARNIVAL_3
 END
-
+*/
 IF ~~ THEN BEGIN CARNIVAL_5
    SAY ~Aye! Listen up you men! Grab your gear and move out! Let's teach these southern boys a right lesson about the Gorgon's Eye!~
 IF ~~ THEN DO ~
@@ -936,5 +999,6 @@ CHAIN
       SetGlobal("h_SpawnAriosh","GLOBAL",3)
       SetGlobal("h_GuildItems","GLOBAL",1)
       SetGlobal("h_ShadowWar","GLOBAL",1)
+      SetGlobal("h_HideWhitewood","GLOBAL",1)
       AddJournalEntry(@213,QUEST)~
 EXIT

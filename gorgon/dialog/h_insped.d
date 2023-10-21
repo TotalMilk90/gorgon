@@ -1,7 +1,7 @@
 BEGIN h_insped
 
 IF ~Global("h_ArioshQuest","GLOBAL",13)~ THEN BEGIN 0
-   SAY ~Astounding... gods, I didn't anticipate it to be so quick.~ IF ~~ THEN GOTO 1
+   SAY ~Astounding... gods, I didn't anticipate it would work so quickly.~ IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1

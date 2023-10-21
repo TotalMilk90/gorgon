@@ -1,0 +1,25 @@
+IF
+	See([PC])
+	Global("h_ArioshQuest","GLOBAL",21)
+	Global("h_WhitewoodTalk","GLOBAL",0)
+THEN
+	RESPONSE #100
+	ClearAllActions()
+        SmallWait(5)
+        StartCutSceneMode()
+        CutSceneId(Player1)
+        ActionOverride(Player1,MoveToPoint([943.1287]))
+        //MoveViewObject("h_whitec",VERY_FAST)
+        Wait(2)
+        StartDialog("h_whit2d",[PC])
+        Wait(3)
+        EndCutSceneMode()
+END
+
+IF
+        Global("h_WhitewoodTalk","GLOBAL",2)
+        !Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

@@ -75,6 +75,11 @@ IF ~~ THEN DO ~
    AddJournalEntry(@519,QUEST)~ EXIT
 END
 
+IF WEIGHT #-1 ~Global("h_SpawnGorgonWatch","GLOBAL",2)~ THEN BEGIN 11
+   SAY ~Oi, look at me now, ain't I the new bloke in charge? City Watch Commander, that's me. Never thought I'd see the day, truth be told.~ IF ~~ THEN EXIT
+END
+
+
 CHAIN
    IF WEIGHT #-1 ~Global("h_ValeraQuest","GLOBAL",3) Global("h_BlackJoin","GLOBAL",1)~ THEN h_blackd 0
 ~She's as quiet as a grave now. No more chit-chattin' from her.~

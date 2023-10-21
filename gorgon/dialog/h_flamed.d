@@ -11,7 +11,7 @@ IF ~Global("h_SpawnZylark","GLOBAL",4)~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Is that so? No, no, I don't think I'll be doing that. You see, Borland is a good friend of mine, and I can't simply go around arresting my friends.~
+   SAY ~Is that so? No, no, I don't think I'll be doing that. You see, Borland is a good friend of mine, and I can't simply go around arresting my friends, you see.~
        ++ ~So you're in on his little enterprise too then, you corrupt bastard!~ GOTO 2
        ++ ~Look, I have a pound of spice on me. Why don't you take it and allow me to leave.~ GOTO 6
        ++ ~I don't have time for this! Step aside or things'll get ugly.~ GOTO FIGHT_0

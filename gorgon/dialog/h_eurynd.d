@@ -1,7 +1,7 @@
 BEGIN h_eurynd
 
 IF ~True()~ THEN BEGIN 0
-   SAY ~I have a wide array of munitions for sale if you're interested in perusing my wares. Additionally, should you acquire any... liberated goods, I can help you locate interested buyers.~
+   SAY ~I have a wide array of munitions for sale if you're interested in perusing my wares. Additionally, should you acquire any... liberated goods, I can help you locate any interested buyers.~
        ++ ~Sure, let me see what you have.~ GOTO STORE_1
        ++ ~Do I have any equipment that you can upgrade?~ GOTO UPGRADE_1
        +~Global("h_GuildItems","GLOBAL",1)~+ ~I am here to collect my guild armaments.~ GOTO ARMOR_2

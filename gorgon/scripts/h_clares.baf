@@ -1,5 +1,6 @@
 IF
-         TimeOfDay(DAY)
+         Time(12)
+
 THEN
          RESPONSE #100
                   DestroySelf()

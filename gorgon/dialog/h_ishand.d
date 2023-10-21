@@ -174,7 +174,7 @@ CHAIN
    IF ~Global("h_IshaniTalk","GLOBAL",3)~ THEN h_ishand 0
 ~So, this is Beregost, eh? Not a bad little town, very quaint. A tad bit damp here for my liking, but I've seen worse, I suppose.~
    == h_ariosd
-~It has its charms, yeah? You must be Ishani, I take it? Welcome to our humble abode. Let's not get too cozy, howvever. We've business to attend to.~
+~It has its charms, yeah? You must be Ishani, I take it? Welcome to our humble abode. Let's not get too cozy, however. We've business to attend to.~
    =
 ~Now, <CHARNAME> has filled me in on the Inspector's little vices, and I've whipped up a fitting plan for us, see?~
    =

@@ -5,7 +5,7 @@ IF WEIGHT #-1 ~Alignment(Player1,LAWFUL_GOOD)~ THEN BEGIN 0
 END
 
 IF ~NumTimesTalkedTo(0)~ THEN BEGIN JOIN_0
-   SAY ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... wait. I know of this one. <CHARNAME>, is it?~
+   SAY ~Only a fool would approach one such as me unannounced. Tradition would have you killed for such a disturbance but, oh... I know of this one. <CHARNAME>, is it?~
        ++ ~Another assassin then? You're not the first to threaten my life only to forfeit their own.~ GOTO JOIN_1
        ++ ~How did you come by my name? Who are you?~ GOTO JOIN_2
        ++ ~<CHARNAME>? Never heard of 'em. Now, if you'll excuse me, I must be going.~ GOTO JOIN_15
@@ -32,7 +32,7 @@ IF ~~ THEN BEGIN JOIN_5
 END
 
 IF ~~ THEN BEGIN JOIN_6
-   SAY ~I could have you killed at the lift of my finger, collect my reward and think nothing of it. However, I believe your abilities may prove to be worth just a bit more.~ IF ~~ THEN GOTO JOIN_7
+   SAY ~I could have you killed at the lift of my finger, collect my reward, and think nothing of it. However, I believe your abilities may prove to be worth just a bit more.~ IF ~~ THEN GOTO JOIN_7
 END
 
 IF ~~ THEN BEGIN JOIN_7
@@ -166,11 +166,11 @@ IF ~~ THEN BEGIN MAGE_5
 END
 
 IF ~~ THEN BEGIN MAGE_6
-   SAY ~Our objective is to collect these fragments and reconstruct the staff in working order. Our seasoned alchemists and smiths have already devised a method for this to be accomplished.~ IF ~~ THEN GOTO MAGE_6.5
+   SAY ~Our objective is to collect these fragments and reconstruct the staff in working order, which our seasoned alchemists have already devised a method of accomplishment.~ IF ~~ THEN GOTO MAGE_6.5
 END
 
 IF ~~ THEN BEGIN MAGE_6.5
-   SAY ~Our latest intel points to a dark socerer, perched high atop the Gibberling Mountains, to carry one in her possession. I want you to retrieve it.~ IF ~~ THEN GOTO MAGE_7
+   SAY ~Our latest intel points to a dark socerer, perched high atop the Gibberling Mountains, to carry a shard in her possession. I want you to retrieve it.~ IF ~~ THEN GOTO MAGE_7
 END
 
 IF ~~ THEN BEGIN MAGE_7
@@ -190,11 +190,7 @@ IF ~~ THEN BEGIN MAGE_9
 END
 
 IF ~~ THEN BEGIN MAGE_10
-   SAY ~We understand the dark allure that dwells within the heart of such mysteries. The artifact exists, each shard containing the essence of a different sister, silently waiting for rebirth.~ IF ~~ THEN GOTO MAGE_11
-END
-
-IF ~~ THEN BEGIN MAGE_11
-   SAY ~Saradin is a meticulous chronicler on the matter, seek him out for further queries, if you desire.~
+   SAY ~We understand the dark allure that dwells within the heart of such mysteries. The artifact exists, each shard containing the essence of a different sister, silently waiting for their return.~
        ++ ~How does one become a Snake Head?~ GOTO MAGE_12
        ++ ~Where are the Gibberling Mountains located?~ GOTO MAGE_14
        ++ ~I'll return when I have the shard.~ GOTO MAGE_15
@@ -205,7 +201,11 @@ IF ~~ THEN BEGIN MAGE_12
 END
 
 IF ~~ THEN BEGIN MAGE_13
-   SAY ~You must be able to think on your feet, adapt to unforeseen circumstances, and above all, maintain absolute discretion. It's not a path for the faint of heart, but those who prove themselves earn the privilege.~
+   SAY ~You must be able to think on your feet, adapt to unforeseen circumstances, and above all, maintain absolute discretion.~ IF ~~ THEN GOTO MAGE_13.5
+END
+
+IF ~~ THEN BEGIN MAGE_13.5
+   SAY ~It's not a path for the faint of heart, but those who prove themselves earn the privilege.~
        ++ ~What can you tell me about the Kerykeion?~ GOTO MAGE_8
        ++ ~Where are the Gibberling Mountains located?~ GOTO MAGE_14
        ++ ~I'll return when I have the shard.~ GOTO MAGE_15
@@ -219,7 +219,11 @@ IF ~~ THEN BEGIN MAGE_14
 END
 
 IF ~~ THEN BEGIN MAGE_15
-   SAY ~I knew I could count on you. Locate the dark witch and retrieve the artifact, whatever the cost.~
+   SAY ~I knew I could count on you. Locate the dark witch and retrieve the artifact, whatever the cost.~ IF ~~ THEN GOTO MAGE_16
+END
+
+IF ~~ THEN BEGIN MAGE_16
+   SAY ~If you so desire, Saradin is a meticulous chronicler on matters of the Kerykeion, seek him out for further queries.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",3)
    SetGlobal("h_SpawnDeneb","GLOBAL",1)
@@ -227,16 +231,16 @@ IF ~~ THEN DO ~
    AddJournalEntry(@210,QUEST)~ EXIT
 END
 
-IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_16
-   SAY ~This is an important mission. Don't fail me.~ IF ~~ THEN EXIT
+IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_16.5
+   SAY ~This mission carries significant weight, <CHARNAME>. Failure is not an option.~ IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc01")~ THEN BEGIN MAGE_17
-   SAY ~I can sense the aura of the Kerykeion around you. Hand it here, quickly.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
+   SAY ~By the gods... I can sense the aura of the Kerykeion around you. Quickly, hand it here.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_18
-   SAY ~Incredible, <CHARNAME>, you've done it! You can feel it, can you not? The intoxicating pull of its power, the whispered promises of dominion? A fractured taste of what's to come.~ IF ~~ THEN GOTO MAGE_19
+   SAY ~Incredible. You've actually done it! You can feel it, can you not? The intoxicating pull of its power, the whispered promises of dominion? A fractured taste of what's to come!~ IF ~~ THEN GOTO MAGE_19
 END
 
 IF ~~ THEN BEGIN MAGE_19
@@ -247,7 +251,7 @@ IF ~~ THEN BEGIN MAGE_19
 END
 
 IF ~~ THEN BEGIN MAGE_20
-   SAY ~Then she was weak, and unworthy of its gift. There is a strength required to wield it, a mental fortitude to shield oneself from the darkness.~
+   SAY ~There is a strength required to wield it, a mental fortitude to shield oneself from the darkness. She was unworthy of its gift.~
        +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
@@ -261,7 +265,7 @@ IF ~~ THEN BEGIN MAGE_21
 END
 
 IF ~~ THEN BEGIN MAGE_22
-   SAY ~Ah, yes fascinating! My research spoke of this unique power, the gorgon's offspring. A true testament to the serpent gods.~
+   SAY ~Fascinating... My research spoke of this unique power, the Gorgon's offspring. A true testament to the serpent gods, themselves.~
        +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
@@ -272,7 +276,7 @@ IF ~~ THEN BEGIN MAGE_23
 END
 
 IF ~~ THEN BEGIN MAGE_24
-   SAY ~With your report, it becomes evident that we are under scrutiny. An attempt to uncover our knowledge of the Kerykeion, perhaps. I will have my spies investigate this matter.~ IF ~~ THEN GOTO MAGE_25
+   SAY ~With your report, it becomes evident that we are under scrutiny. An attempt to uncover our knowledge of the Kerykeion, perhaps. My spies are currrently investigating this matter.~ IF ~~ THEN GOTO MAGE_25
 END
 
 IF ~~ THEN BEGIN MAGE_25
@@ -280,7 +284,7 @@ IF ~~ THEN BEGIN MAGE_25
 END
 
 IF ~~ THEN BEGIN MAGE_26
-   SAY ~That is all for now, you are dismissed. I will summon you if needed.~
+   SAY ~That is all I need for now, you are dismissed. I will summon you if needed.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",6)
@@ -313,7 +317,7 @@ END
 IF ~~ THEN BEGIN BOMBS_1
    SAY ~Aye. Thamuz and I were once comrades. He's a lethal rogue, a master of stealth and deception. Do not underestimate him.~
        ++ ~Why have they decided to attack us now?~ GOTO BOMBS_2
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
+       +~NumDead("h_sthiec",5) NumDead("h_thiefc",18) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
@@ -352,7 +356,7 @@ IF ~~ THEN BEGIN NAGATE_3
 END
 
 IF ~~ THEN BEGIN NAGATE_4
-   SAY ~They are planning negotiations with a cadre of smugglers for the acquisition of a Kerykeion piece! Dammit, those bastards have been one step ahead of us this whole time!~ IF ~~ THEN GOTO NAGATE_5
+   SAY ~They are planning negotiations with a cadre of smugglers for the acquisition of a Kerykeion piece! Damn it, those bastards have been one step ahead of us this whole time!~ IF ~~ THEN GOTO NAGATE_5
 END
 
 IF ~~ THEN BEGIN NAGATE_5
@@ -360,17 +364,19 @@ IF ~~ THEN BEGIN NAGATE_5
 END
 
 IF ~~ THEN BEGIN NAGATE_6
-   SAY ~Their contact goes by the name Nagate, stationed at the ancient elven ruins. If this report is to be believed, that is where you'll find them.~ IF ~~ THEN GOTO NAGATE_7
+   SAY ~Their contact goes by the name 'Nagate', stationed at the ancient elven ruins. If this report is to be believed, that is where you'll find them.~ IF ~~ THEN GOTO NAGATE_7
 END
 
 IF ~~ THEN BEGIN NAGATE_7
-   SAY ~Move out, soldier! Time is of the essence.~
+   SAY ~Make haste, time is of the essence.~
 IF ~~ THEN DO ~
    SetGlobal("h_GuildMusic","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",6)
    SetGlobal("h_RigaldoQuest","GLOBAL",14)
    SetGlobal("h_SpawnNagate","GLOBAL",1)
    SetGlobal("h_ShadowWar","GLOBAL",3)
+   SetGlobal("h_HideWhitewood","GLOBAL",2)
+   ActionOverride("h_ilenac",EscapeArea())
    AddJournalEntry(@214,QUEST_DONE)
    AddJournalEntry(@215,QUEST)
    TakePartyItem("h_misc08")
@@ -378,7 +384,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",6)~ THEN BEGIN NAGATE_8
-   SAY ~You have your orders, now get to it!~ IF ~~ THEN EXIT
+   SAY ~You have your orders, now get to it.~ IF ~~ THEN EXIT
 END
 
 
@@ -421,7 +427,7 @@ END
 IF ~~ THEN BEGIN THAMUZ_6
    SAY ~It's sheer absurdity, for I've devoted my life to studying the Kerykeion. No mortal has ever even had the opportunity to wield it, rendering his claim baseless.~
        ++ ~Someone paid them a hefty sum to exterminate us from Beregost.~ GOTO THAMUZ_4
-       ++ ~They've been keeping tabs on our every move since you foundedthe Gorgon's Eye.~ GOTO THAMUZ_9
+       ++ ~They've been keeping tabs on our every move since you founded the Gorgon's Eye.~ GOTO THAMUZ_9
        ++ ~I want to know your intentions with the Kerykeion.~ GOTO THAMUZ_7
        ++ ~That concludes my report.~ GOTO THAMUZ_10
 END
@@ -438,7 +444,7 @@ IF ~~ THEN BEGIN THAMUZ_8.5
    SAY ~We will thrive and prosper, while they bear the weight of my vengeful wrath.~
        ++ ~Someone paid them a hefty sum to exterminate us from Beregost.~ GOTO THAMUZ_4
        ++ ~He asserted that no mortal possesses the capacity to wield the Kerykeion. To attempt it would imperil us all.~ GOTO THAMUZ_5
-       ++ ~They've been keeping tabs on our every move since you foundedthe Gorgon's Eye.~ GOTO THAMUZ_9
+       ++ ~They've been keeping tabs on our every move since you founded the Gorgon's Eye.~ GOTO THAMUZ_9
        ++ ~That concludes my report.~ GOTO THAMUZ_10
 END
 
@@ -451,21 +457,31 @@ IF ~~ THEN BEGIN THAMUZ_9
 END
 
 IF ~~ THEN BEGIN THAMUZ_10
-   SAY ~Be ready to receive summons for additional orders. Until then, return to your regular duties within the guild.~
+   SAY ~Excellent work. Be ready to receive summons for additional orders regarding the Kerykeion and the Shadow Thieves. Until then, return to your regular duties.~ IF ~~ THEN GOTO THAMUZ_10.5
+END
+
+IF ~~ THEN BEGIN THAMUZ_10.5
+   SAY ~Since you've been gone, there's been a surge of new assignments circulating within the guild. Bounties, contracts, and new intel on the City Watch have all surfaced.~ IF ~~ THEN GOTO THAMUZ_11
+END
+
+IF ~~ THEN BEGIN THAMUZ_11
+   SAY ~Additionally, something's got the courtesans all spooked and stirred up. I need you to quell their commotion and handle the situation.~ IF ~~ THEN GOTO THAMUZ_12
+END
+
+IF ~~ THEN BEGIN THAMUZ_12
+   SAY ~Carry on. You are dismissed.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
    SetGlobal("h_RigaldoQuest","GLOBAL",15)
-   SetGlobal("h_LiedelQuest","GLOBAL",3)
    SetGlobal("h_SecondRiddle","GLOBAL",1)
    SetGlobal("h_MerediaQuest","GLOBAL",1)
-   ActionOverride("h_ilenac",EscapeArea())
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")
    AddExperienceParty(800)~ EXIT
 END
 
-IF ~Global("h_BaldwinQuest","GLOBAL",8) NumItemsPartyLT("h_misc13",1)~ THEN BEGIN THAMUZ_11
+IF ~Global("h_BaldwinQuest","GLOBAL",8) NumItemsPartyLT("h_misc13",1)~ THEN BEGIN THAMUZ_13
    SAY ~Small talk won't serve you here. Attend to your duties and fulfill your role.~ IF ~~ THEN EXIT
 END
 

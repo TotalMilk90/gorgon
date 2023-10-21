@@ -8,9 +8,10 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN CAUGHT_1
-   SAY ~Here's your purse back, Lord Thalric. Hurry and flee now, I'll alert the city watch.~
+   SAY ~Here's your purse back, Lord Thalric. Hurry and flee now, I'll alert the City Watch.~
 IF ~~ THEN DO ~
-   SetGlobal("h_DrunkBrawl","GLOBAL",2)~ EXIT
+   SetGlobal("h_DrunkBrawl","GLOBAL",2)
+   SetGlobal("h_BouncerCaught","GLOBAL",1)~ EXIT
 END
 
 IF ~Global("h_BouncerTalk","GLOBAL",0)~ THEN BEGIN 0

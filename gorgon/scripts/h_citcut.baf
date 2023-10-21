@@ -11,6 +11,6 @@ THEN
         ActionOverride("h_city5c",MoveToPoint([844.1279]))
         ActionOverride("h_city6c",MoveToPoint([891.1332]))
         Wait(2)
-        ActionOverride("h_liedec",Dialogue([PC]))
+        SetGlobal("h_WatchCutscene","GLOBAL",1)
         EndCutSceneMode()
 END

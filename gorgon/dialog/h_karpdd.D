@@ -54,15 +54,15 @@ IF ~~ THEN BEGIN BLACKMAIL_3
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_4
-   SAY ~Oh, well, I guess I could, yes!~ IF ~~ THEN GOTO BLACKMAIL_5
+   SAY ~Oh, well... I guess I would, yes!~ IF ~~ THEN GOTO BLACKMAIL_5
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_5
-   SAY ~We are seeking a way further south, to the city of Athkatla. I have a sister there who is willing to take us in. If you can guarantee our safety, I will trade you the rings.~ IF ~~ THEN GOTO BLACKMAIL_6
+   SAY ~We are seeking a way further south, to the city of Athkatla. I have a sister there who is willing to take us in. If you can guarantee our safety, I will trade you for the rings.~ IF ~~ THEN GOTO BLACKMAIL_6
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_6
-   SAY ~I'll still be around here in the meantime, tending to the farm.~
+   SAY ~I'll be around here in the meantime, tending to the farm.~
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWorkGood","GLOBAL",1)
    AddJournalEntry(@318,QUEST)~ EXIT
@@ -79,7 +79,7 @@ IF WEIGHT #-3 ~True() Global("h_KarpWorkGood","GLOBAL",2)~ THEN BEGIN GOOD_11
 END
 
 IF ~~ THEN BEGIN GOOD_20
-   SAY ~Thank you, truly. Here are the rings as promised. I also want you to have something else. I found it buried here over a month ago and never was able to sell it. Maybe you can find a use for it. Farewell.~
+   SAY ~Thank you, truly. Here are the rings as promised. I also want you to have something else. I found it buried here over a month ago and was never able to sell it. Maybe you can find a use for it. Farewell.~
 IF ~~ THEN DO ~
    AddJournalEntry(@320,QUEST_DONE)
    AddJournalEntry(@318,QUEST)
@@ -108,11 +108,11 @@ IF ~~ THEN BEGIN CHARM_2
 END
 
 IF ~~ THEN BEGIN CHARM_3
-   SAY ~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_4
+   SAY ~Oh my... well, thank you.~ IF ~~ THEN GOTO CHARM_4
 END
 
 IF ~~ THEN BEGIN CHARM_3.5
-   SAY~Oh my, *blushes* well, thank you...~ IF ~~ THEN GOTO CHARM_6.5
+   SAY ~Oh my... well, thank you.~ IF ~~ THEN GOTO CHARM_6.5
 END
 
 IF ~~ THEN BEGIN CHARM_4
@@ -133,7 +133,7 @@ IF ~~ THEN BEGIN CHARM_5
 END
 
 IF ~~ THEN BEGIN CHARM_6
-   SAY ~*laughs* That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
+   SAY ~Hah! That's right! I was worried for a moment that you weren't the one I was supposed to meet. Here are your rings then.~ IF ~~ THEN GOTO CHARM_7
 END
 
 IF ~~ THEN BEGIN CHARM_6.5
@@ -189,7 +189,7 @@ IF ~~ THEN BEGIN GOOD_1
 END
 
 IF ~~ THEN BEGIN GOOD_2
-   SAY ~It is true. I'll admit it. It's because my husband, he... he beats me! He beats my son too! I'm selling these rings so I can find a way out for my boy!~
+   SAY ~It is true. I'll admit it. It's because my husband, he... he beats me! He beats my son, too! I'm selling these rings so I can find a way out for my boy!~
        ++ ~And I don't rightly care! Give me the rings or I'll bury your face in the dirt!~ GOTO BLACKMAIL_2
        ++ ~If I can find you passage, would you depart with the rings?~ GOTO BLACKMAIL_4
 END

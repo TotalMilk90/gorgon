@@ -18,7 +18,7 @@ nothing to stand in his way.
 ============
 Mod Overview
 ============
-The Gorgon's Eye is a small content mod for BG:EE/SoD and EET that adds an
+The Gorgon's Eye is a content mod for BG:EE/SoD and EET that adds an
 underground thieves den into the town of Beregost. It contains new quests, 
 characters, stores and items. Your missions will include theft, extortion,
 bounty hunting, and battles against rival thieves. However, good-aligned
@@ -33,11 +33,11 @@ to generic npcs. (Commoners, nobles, etc.)
 ===============
 Version History
 ===============
-Version 3.4:
+Version 4.0:
 -Fixed "Thief's Compendium" books to grant correct bonuses
 -Replaced Danika with Naga who now offers temple services
 -Added new weapon "Blackjack"
--Added 4 new quests from Ariosh
+-Added many new quests
 -Added new quest alternative for "Order of the Black Lotus"
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
 -Increased payout for guild profits

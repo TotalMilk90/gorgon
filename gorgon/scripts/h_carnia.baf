@@ -32,3 +32,33 @@ THEN
                   PlaySong(0)
                   Continue()
 END
+
+IF
+         Global("h_SpawnProcus","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_procuc",[2757.2312],S)
+                  SetGlobal("h_SpawnProcus","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnSelena","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_selenc",[4397.1750],N)
+                  CreateCreature("h_piratc",[4404.1694],S)
+                  CreateCreature("h_piratc",[4331.1730],SE)
+                  SetGlobal("h_SpawnSelena","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnVitiare","GLOBAL",1)
+         NumDeadLT("Vitiare",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_vitiac",[4296.1771],E)
+                  SetGlobal("h_SpawnVitiare","GLOBAL",2)
+                  Continue()
+END

@@ -18,3 +18,12 @@ THEN
                  SetGlobal("h_SpawnTheresa","GLOBAL",2)
                  Continue()
 END
+
+IF
+         Global("h_TheresaTalk","GLOBAL",1)
+         Dead("h_therec")
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@554,QUEST)
+                  SetGlobal("h_TheresaTalk","GLOBAL",2)
+END

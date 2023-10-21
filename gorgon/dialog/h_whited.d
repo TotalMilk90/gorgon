@@ -1,7 +1,11 @@
 BEGIN h_whited
 
-IF ~NumTimesTalkedTo(0)~ THEN BEGIN 0
-   SAY ~Welcome to Beregost, traveler. My name is Seraphina Whitewood, and I lead the Beregost City Watch. This is a place of warmth and community, and we look out for one another here.~ IF ~~ THEN GOTO 1
+IF ~Global("h_WhitewoodDialog","GLOBAL",0)~ THEN BEGIN 0
+   SAY ~Welcome to Beregost, traveler. Take in the sights and savor the local offerings. There's much to enjoy here.~ IF ~~ THEN GOTO 01
+END
+
+IF ~~ THEN BEGIN 01
+   SAY ~This is a place of warmth and community, where we look out for eachother as best we can.~ IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
@@ -17,7 +21,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~Like I said, I'm Commander Seraphina Whitewood of the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised entirely of Beregost citizens.~ IF ~~ THEN GOTO 4
+   SAY ~My name is Seraphina Whitewood, and I lead the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised entirely of Beregost citizens.~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
@@ -70,10 +74,12 @@ IF ~~ THEN BEGIN 13
 END
 
 IF ~~ THEN BEGIN 14
-   SAY ~Very well, traveler. Remember, caution is your best ally in these uncertain times. Keep safe, and may your path be a steady one.~ IF ~~ THEN EXIT
+   SAY ~Very well, traveler. Remember, caution is your best ally in these uncertain times. Keep safe, and may your path be a steady one.~
+IF ~~ THEN DO ~
+   SetGlobal("h_WhitewoodDialog","GLOBAL",1)~ EXIT
 END
 
-IF ~NumTimesTalkedToGT(0)~ THEN BEGIN 15
+IF ~Global("h_WhitewoodDialog","GLOBAL",1)~ THEN BEGIN 15
    SAY ~Back again, I see. What can I assist you with this time?~
        ++ ~Can you tell me anything about yourself and your role here in the city?~ GOTO 3
        ++ ~What can you tell me about the Gorgon's Eye and their recent activity?~ GOTO 6

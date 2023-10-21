@@ -703,7 +703,9 @@ Weight: 0~
 Weight: 3~
 
 @113=~Forged Letter~
-@114=~This carefully crafted letter bears the insignia of the City Watch, complete with official-looking seals and signatures. It commands the traitor to meet at the southern fountains at nightfall for what appears to be an important rendezvous.~
+@114=~This carefully crafted letter bears the insignia of the City Watch, complete with official-looking seals and signatures. It commands the traitor to meet at the southern fountains at nightfall for what appears to be an important rendezvous.
+
+Weight: 0~
 
 @115=~Guild Dues~
 @116=~Sealed with the mark of the Gorgon's Eye, these coin-filled pouches are the dues paid by Beregost establishments. Each jingle is a testament to the security we provide, guaranteeing safe passage through these shadowed streets. A weighty gesture of mutual understanding in the clandestine dance of the underworld.
@@ -724,3 +726,13 @@ Weight: 2~
 @122=~This ominous container holds a volatile concoction of highly flammable substances, sealed within reinforced glass. A lit fuse extends from the cap, giving a countdown to the impending inferno. The label bears dire warnings and cautionary symbols, a testament to its destructive potential. Once ignited, it releases a torrent of searing flames, consuming all in its path. Wielding this weapon requires great care and deliberation, as its power can be harnessed for both creation and devastation. Use wisely.
 
 Weight: 2~
+
+@123=~Incriminating Evidence~
+@124=~These weathered parchment documents bear the official seal of the Amnian army, detailing a list of suspected illegal activities attributed to Captain Selena Stardancer and her notorious crew. The evidence includes accounts of smuggling operations, reports of raids on merchant vessels, and alleged connections to illicit dealings across the realm. The documents also contain testimonies from witnesses and intercepted correspondences, painting a damning portrait of Stardancer's criminal enterprises. Possession of these papers holds considerable leverage over Stardancer, making them a valuable asset for any party looking to assert authority or negotiate with the notorious swashbuckler.
+
+Weight: 0~ 
+
+@125=~Coin Purse~
+@126=~This sizable sack is brimming with a weighty assortment of gleaming coins, their metallic glint promising the potential for great wealth and prosperity. The jingling symphony of currency within serves as a constant reminder of its substantial value. The sack itself is robustly crafted, its seams reinforced to bear the considerable load. Its contents whisper of untold possibilities, awaiting the right opportunity to be put to use.
+
+Weight: 5~

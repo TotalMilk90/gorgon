@@ -1,15 +1,15 @@
 BEGIN ~h_game2d~
 
 IF WEIGHT #-1 ~Global("h_GilbaldQuest","GLOBAL",2)~ THEN BEGIN GOLD_0
-   SAY ~I'm hopin' Gilbald won't give me too much grief. If you can finger the culprit, maybe he'll let me off easy.~ IF ~~ THEN GOTO GOLD_1
+   SAY ~I'm hopin' Gilbald won't give me too much grief. If you can finger the culprit quick-like, maybe he'll let me off easy.~ IF ~~ THEN GOTO GOLD_1
 END
 
 IF ~~ THEN BEGIN GOLD_1
-   SAY ~Had three big players last night. Each one seemed a bit dodgy.~ IF ~~ THEN GOTO GOLD_2
+   SAY ~Had three big players last night, and truthfully, each one seemed a bit dodgy.~ IF ~~ THEN GOTO GOLD_2
 END
 
 IF ~~ THEN BEGIN GOLD_2
-   SAY ~There was this bloke, Xevec. A woman, didn't catch her name, and a dwarf named Hugo.~
+   SAY ~There's our usual bloke, Xevec. A woman, whom I didn't catch her name, and a one-handed dwarf, named Hugo.~
        ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
        ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
        ++ ~Tell me about Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN GOLD_3
 END
 
 IF ~~ THEN BEGIN GOLD_4
-   SAY ~Had a strange interest in the woman he was playing with, made her visibly uncomfortable. They chatted a bit, but that's it.~ IF ~~ THEN GOTO GOLD_5
+   SAY ~Had a strange interest in the woman he was playing with, made her visibly uncomfortable. They chatted for a bit, but that's it.~ IF ~~ THEN GOTO GOLD_5
 END
 
 IF ~~ THEN BEGIN GOLD_5
@@ -51,18 +51,18 @@ IF ~~ THEN BEGIN GOLD_9
 END
 
 IF ~~ THEN BEGIN GOLD_10
-   SAY ~Got tight-lipped about it when prodded. Could be a mark of a caught thief or cheat.~ IF ~~ THEN GOTO GOLD_11
+   SAY ~Got tight-lipped about it when prodded. Could be the mark of a caught thief or cheat.~ IF ~~ THEN GOTO GOLD_11
 END
 
 IF ~~ THEN BEGIN GOLD_11
-   SAY ~Possible he tried his tricks here and scarpered off to the next job. He might be a slippery one to track down.~
+   SAY ~It's possible he tried his tricks here, then scarpered off to his next job. He might be a slippery one to track down.~
        ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
        ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
        +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~That's all I need for now.~ GOTO GOLD_12
 END
 
 IF ~~ THEN BEGIN GOLD_12
-   SAY ~Roll up and take a chance on the big wheel. One will get you twenty on a winning spin.~
+   SAY ~Right. I'll leave ya to it then. Thanks, <CHARNAME>.~
 IF ~~ THEN DO ~
    SetGlobal("h_GilbaldQuest","GLOBAL",3)
    AddJournalEntry(@611,QUEST)

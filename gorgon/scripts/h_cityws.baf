@@ -4,3 +4,18 @@ THEN
          RESPONSE #100
                   DestroySelf()
 END
+
+IF
+	AttackedBy([PC],DEFAULT)
+THEN
+	RESPONSE #100
+		 SetGlobal("h_AttackedWatch","GLOBAL",1)
+END
+
+IF
+	Global("h_AttackedWatch","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

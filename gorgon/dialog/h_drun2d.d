@@ -7,7 +7,7 @@ END
 IF ~~ THEN BEGIN SPIRITS_1
    SAY ~Whoa, there's three of yas... hic! What in the hells are ya on about?~
        ++ ~By the gods! You have the manners of a tavern pig! Your mother must have been an ogre, teaching you nothing of courtesy!~ GOTO SPIRITS_2
-       ++ ~You're a sorry sight, stumbling around like a blindfolded mule. You must get that from your mother, I take it?~ GOTO SPIRITS_2
+       ++ ~You're a sorry sight, stumbling around like a blindfolded mule. You must get that from your mum, I take it?~ GOTO SPIRITS_2
 END
 
 IF ~~ THEN BEGIN SPIRITS_2

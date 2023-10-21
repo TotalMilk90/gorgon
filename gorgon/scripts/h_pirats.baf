@@ -1,0 +1,15 @@
+IF
+	Global("h_FightSelena","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_SelenaLeaveArea","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+		 SetGlobal("h_SelenaLeaveArea","GLOBAL",2)
+END

@@ -1,7 +1,7 @@
 BEGIN h_valerd
 
 IF ~Global("h_ValeraQuest","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~Well, well, if it isn't our elusive friend, <CHARNAME>, from the Gorgon's Eye. What brings you to this moonlit rendezvous?~ IF ~~ THEN GOTO 1
+   SAY ~Well, well, if it isn't our elusive friend, <CHARNAME>, from the Gorgon's Eye. What brings you to this little moonlit rendezvous?~ IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1

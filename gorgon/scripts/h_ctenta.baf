@@ -1,0 +1,49 @@
+IF
+         Global("h_SpawnProcus","GLOBAL",3)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_procuc",[722.283],SW)
+                  SetGlobal("h_SpawnProcus","GLOBAL",4)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnSelena","GLOBAL",3)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_selenc",[629.389],NE)
+                  CreateCreature("h_piratc",[724.362],NW)
+                  CreateCreature("h_piratc",[579.251],SE)
+                  SetGlobal("h_SpawnSelena","GLOBAL",4)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnVitiare","GLOBAL",3)
+         NumDeadLT("Vitiare",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_vitiac",[567.334],NE)
+                  SetGlobal("h_SpawnVitiare","GLOBAL",4)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnRepCrew","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_roguec",[629.389],NE)
+                  CreateCreature("h_roguec",[724.362],NW)
+                  CreateCreature("h_roguec",[579.251],SE)
+                  SetGlobal("h_SpawnRepCrew","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnMerchant","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_tmercc",[317.436],SW)
+                  SetGlobal("h_SpawnMerchant","GLOBAL",2)
+                  Continue()
+END

@@ -27,7 +27,7 @@ END
 IF ~~ THEN BEGIN GOOD_2
    SAY ~Didn't ya hear what I said? Of course I can! As long as she has the coin that is. Send them my way and I'll set them up with a proper escort.~
 IF ~~ THEN DO ~
-   SetGlobal("h_KarpWork","GLOBAL",2)
+   SetGlobal("h_KarpWorkGood","GLOBAL",2)
    AddJournalEntry(@319,QUEST)~ EXIT
 END
 

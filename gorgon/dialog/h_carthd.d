@@ -23,17 +23,17 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 4.5
-   SAY ~Before I knew it, a dozen clean plates were all that remained, and not a single coin in my pocket.~ IF ~~ THEN GOTO 5
+   SAY ~Before I knew it, a dozen clean plates were all that remained, and not a single coin left in my pocket.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~The chef, overjoyed by my appetite, persuaded Bently to provide me shelter until I regain my footing. But due to the bounty, I'm confined here.~ IF ~~ THEN GOTO 6
+   SAY ~The chef, overjoyed by my appetite, persuaded Bently to provide me shelter until I regain my footing. But due to the bounty, I've been confined here.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
    SAY ~Please, I just don't know what to do!~
        ++ ~How much remains of your debt? Perhaps I can settle it for you.~ GOTO 7
-       ++ ~Sorry lad, but business is business. (Snap his neck.)~ DO ~
+       ++ ~I do. (Snap his neck.)~ DO ~
    Kill("h_carthc")
    SetGlobal("h_CarthBounty","GLOBAL",1)
    AddJournalEntry(@411,QUEST)

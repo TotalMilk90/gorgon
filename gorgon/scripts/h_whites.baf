@@ -18,3 +18,10 @@ THEN
 	RESPONSE #100
 		 EscapeArea()
 END
+
+IF
+        Global("h_WhitewoodDialog","GLOBAL",3)
+THEN
+	RESPONSE #100
+		 AttackReevaluate([ENEMY],30)
+END

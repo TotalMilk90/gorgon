@@ -1,0 +1,18 @@
+IF
+    Global("h_PitsFight","GLOBAL",4)
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(2)
+        LeaveAreaLUAPanic("h_fpitsa","",[553.488],SE)
+        LeaveAreaLUA("h_fpitsa","",[553.488],SE)
+        MultiPlayerSync()
+        CreateCreature("h_dead2c",[701.503],SW)
+        CreateCreature("h_pits3c",[721.610],NW)
+        MultiPlayerSync()
+        FadeFromColor([20.0],0)
+        Wait(2)
+        EndCutSceneMode()
+END
+

@@ -23,10 +23,17 @@ THEN
                   CreateCreature("h_zedacc",[1021.1309],NW)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
-                  
+
                   CreateCreature("h_kageic",[1194.1429],E)
                   CreateCreature("h_ophelc",[1234.1371],SE)
 
+                  CreateCreature("h_deadec",[1581.1696],SSW)
+                  CreateCreature("h_catcac",[1605.1712],W)
+                  CreateCreature("h_pits1c",[1379.1795],NE)
+                  CreateCreature("h_pits2c",[1617.1803],NW)
+                  CreateCreature("h_pits3c",[1452.1827],NNE)
+                  CreateCreature("h_pits4c",[1529.1804],N)
+                  CreateCreature("h_pits5c",[1461.1672],S)
 
                   SetGlobal("h_GuildSpawn","GLOBAL",1)
                   Continue()
@@ -54,6 +61,11 @@ THEN
          RESPONSE #100
                   CreateCreature("h_roguec",[1006.1057],SW)
                   CreateCreature("h_roguec",[1059.1101],SW)
+                  
+                  CreateCreature("h_roguec",[1262.680],NE)
+                  CreateCreature("h_roguec",[1400.750],N)
+                  CreateCreature("h_roguec",[1672.726],N)
+                  CreateCreature("h_roguec",[1796.656],NW)
                   SetGlobal("h_GuildThieves","GLOBAL",6)
                   Continue()
 END

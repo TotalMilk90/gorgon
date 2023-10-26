@@ -14,3 +14,11 @@ THEN
                   SmallWait(1)
                   StartDialog("h_lieded",[PC])
 END
+
+IF
+	Global("h_HelpCityWatch","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

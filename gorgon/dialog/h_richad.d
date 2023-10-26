@@ -27,7 +27,7 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~The intention was for it to react fatally when combined with a genuine fragment, the transformation was unforeseen.~ IF ~~ THEN GOTO 6
+   SAY ~The intention was for it to react fatally when combined with a genuine fragment. This... transformation, however, was unforeseen.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
@@ -47,7 +47,11 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~Expect an envoy in the near future to discuss terms.~
+   SAY ~Expect an envoy in the near future to discuss terms.~ IF ~~ THEN GOTO 11
+END
+
+IF ~~ THEN BEGIN 11
+   SAY ~Good day.~
 IF ~~ THEN DO ~
    SetGlobal("h_Saradin","GLOBAL",3)
    SetGlobal("h_ShadowWar","GLOBAL",10)
@@ -81,9 +85,9 @@ CHAIN
    =
 ~It is you who are lost, brother. Ensnared in the malevolent embrace of the Kerykeion, and from it, you've emerged a dark taint of delusion.~
    =
-~You butcherd your kin. Cut them down like helpless dogs. There was no desire for retribtion in your eyes, only malice.~
+~You butcherd your kin. Cut them down like helpless dogs. There was no desire for retribution in your eyes, only malice.~
    == h_bald2d
-~You remain restrained by fear, lacking ambition, and that is why you will fail. You are still the same coward as you were on the day of banishment.~
+~You remain restrained by fear, lacking ambition, and that is why you will fail. You are still the same coward as you were on the day of my banishment.~
    =
 ~Enough words, you utter and profound fool. I have stalled you long enough to complete my preperations for the fusion.~
    =

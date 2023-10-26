@@ -46,9 +46,8 @@ END
 IF ~~ THEN BEGIN 10
    SAY ~Draw you blade, <CHARNAME>. Let's settle this once and for all, and see whose resolve prevails.~
 IF ~~ THEN DO ~
-   SetGlobal("h_WhitewoodTalk","GLOBAL",1)
-   SetGlobal("h_WatchCutscene","GLOBAL",3)
-   Enemy()~ EXIT
+   SetGlobal("h_WhitewoodTalk","GLOBAL",2)
+   SetGlobal("h_WatchCutscene","GLOBAL",3)~ EXIT
 END
 
 IF ~Global("h_BlackJoin","GLOBAL",1)~ THEN BEGIN B0

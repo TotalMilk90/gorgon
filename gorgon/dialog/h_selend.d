@@ -13,7 +13,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_FightSelena","GLOBAL",1)
    SetGlobal("h_SpawnRepCrew","GLOBAL",1)
    SetGlobal("h_ProcusQuest","GLOBAL",5)
-   AddJournalEntry(@815,QUEST)~ EXIT
+   AddJournalEntry(@344,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
@@ -28,7 +28,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_FightSelena","GLOBAL",1)
    SetGlobal("h_SpawnRepCrew","GLOBAL",1)
    SetGlobal("h_ProcusQuest","GLOBAL",5)
-   AddJournalEntry(@815,QUEST)~ EXIT
+   AddJournalEntry(@344,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 4
@@ -65,7 +65,7 @@ IF ~~ THEN BEGIN 10
 IF ~~ THEN DO ~
    SetGlobal("h_SelenaQuest","GLOBAL",1)
    SetGlobal("h_AddEvidence","GLOBAL",1)
-   AddJournalEntry(@816,QUEST)~ EXIT
+   AddJournalEntry(@345,QUEST)~ EXIT
 END
 
 IF ~Global("h_SelenaQuest","GLOBAL",1)~ THEN BEGIN 11
@@ -97,7 +97,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnSelena","GLOBAL",3)
    SetGlobal("h_SpawnVitiare","GLOBAL",3)
    SetGlobal("h_ProcusQuest","GLOBAL",5)
-   AddJournalEntry(@817,QUEST)
+   AddJournalEntry(@346,QUEST)
    AddExperienceParty(600)~ EXIT
 END
 

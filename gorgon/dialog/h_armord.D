@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN M3
    SAY ~You'll regret this, mark my words! I'll be sure to spread the word about the likes of you. You've made an enemy today, and you won't escape the consequences!~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@341,QUEST)
    ReputationInc(-1)
    EscapeArea()~ EXIT
 END
@@ -29,7 +29,7 @@ IF ~~ THEN BEGIN M4
    SAY ~Collapsing, you say? Gods, I don't fancy getting squished under a pile of canvas. Right, I'm off then. Good luck with... whatever it is you're up to.~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@341,QUEST)
    EscapeArea()~ EXIT
 END
 
@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN M10
    SAY ~A pleasure doing business with you. The spot is all yours. I'll start packing up right away.~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@341,QUEST)
    TakePartyGold(500)
    DestroyGold(500)
    GiveItemCreate("CHAN01",LastTalkedToBy,0,0,0)
@@ -101,7 +101,7 @@ IF ~~ THEN BEGIN M11
    SAY ~Very well, 400 gold it is. The spot's yours. Make sure to put it to good use.~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@341,QUEST)
    TakePartyGold(400)
    DestroyGold(400)
    GiveItemCreate("CHAN01",LastTalkedToBy,0,0,0)
@@ -138,7 +138,7 @@ IF ~~ THEN BEGIN M13
    SAY ~Take your time. Once you've got the 500 gold, we'll settle the deal. The spot will be waiting for you.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerchantMoney","GLOBAL",1)
-   AddJournalEntry(@811,QUEST)~ EXIT
+   AddJournalEntry(@340,QUEST)~ EXIT
 END
 
 IF WEIGHT #-1 ~Global("h_ProcusQuest","GLOBAL",1) Global("h_MerchantMoney","GLOBAL",1)~ THEN BEGIN M14
@@ -164,7 +164,7 @@ IF ~~ THEN BEGIN M16
 IF ~~ THEN DO ~
    Kill("merch2")
    SetGlobal("h_ProcusQuest","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@341,QUEST)
    ReputationInc(-2)~ EXIT
 END
 

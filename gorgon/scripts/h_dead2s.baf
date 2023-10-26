@@ -1,0 +1,84 @@
+IF
+         Global("h_PitsFight","GLOBAL",0)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_BeatKhalid","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_PitsFight","GLOBAL",2)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_BeatGrom","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_PitsFight","GLOBAL",4)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_BeatLyria","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_PitsFight","GLOBAL",6)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_BeatSerra","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_PitsFight","GLOBAL",8)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_BeatRoran","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END

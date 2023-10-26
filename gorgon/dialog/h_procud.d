@@ -89,7 +89,8 @@ IF ~~ THEN BEGIN 18
    SAY ~Good. Remember, a swift and quiet operation is what we aim for. Get that tent under our control, and we'll have a solid foundation to build on. Go on now, make your mark.~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",1)
-   AddJournalEntry(@810,QUEST)~ EXIT
+   SetGlobal("h_GuildThieves","GLOBAL",5)
+   AddJournalEntry(@339,QUEST)~ EXIT
 END
 
 IF ~Global("h_ProcusQuest","GLOBAL",1)~ THEN BEGIN 19
@@ -112,7 +113,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnProcus","GLOBAL",3)
    SetGlobal("h_SpawnMerchant","GLOBAL",1)
    CreateCreature("h_tguarc",[3197.2699],S)
-   AddJournalEntry(@813,QUEST)
+   AddJournalEntry(@342,QUEST)
    AddExperienceParty(600)
    EscapeArea()~ EXIT
 END
@@ -190,7 +191,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",4)
    SetGlobal("h_SpawnSelena","GLOBAL",1)
    SetGlobal("h_SpawnVitiare","GLOBAL",1)
-   AddJournalEntry(@814,QUEST)~ EXIT
+   AddJournalEntry(@343,QUEST)~ EXIT
 END
 
 IF ~Global("h_ProcusQuest","GLOBAL",4)~ THEN BEGIN SEC_16
@@ -254,7 +255,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_AddCoinPotion","GLOBAL",1)
    SetGlobal("h_AddCoinManor","GLOBAL",1)
    SetGlobal("h_AddCoinInn","GLOBAL",1)
-   AddJournalEntry(@818,QUEST)~ EXIT
+   AddJournalEntry(@347,QUEST)~ EXIT
 END
 
 IF ~Global("h_ProcusQuest","GLOBAL",6)~ THEN BEGIN THIRD_10
@@ -279,7 +280,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",7)
    TakePartyItemAll("h_misc28")
    DestroyItem("h_misc28")
-   AddJournalEntry(@819,QUEST)
+   AddJournalEntry(348,QUEST)
    AddExperienceParty(600)~ EXIT
 END
 IF ~Global("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN THIRD_10

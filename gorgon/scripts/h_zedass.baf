@@ -1,0 +1,9 @@
+IF
+         Global("h_WhitewoodDialog","GLOBAL",2)
+         Global("h_WatchAssault","GLOBAL",1)
+         See([PC])
+THEN
+         RESPONSE #100
+                  SmallWait(1)
+                  StartDialog("h_zedadd",[PC])
+END

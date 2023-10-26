@@ -40,9 +40,3 @@ IF ~RandomNum(8,7)~ THEN BEGIN 7
 IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN 6
-   SAY ~Watch yer back in there, mate.~
-IF ~~ THEN EXIT
-END
-
-

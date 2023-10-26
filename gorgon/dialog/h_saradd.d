@@ -303,7 +303,7 @@ IF ~~ THEN BEGIN FINAL_2
 END
 
 IF ~~ THEN BEGIN FINAL_3
-   SAY ~A pity about the staff, It saddens me to know that we will never witness its reunification. However, the piece you now possess does seems to bear the genuine mark.~ IF ~~ THEN GOTO FINAL_4
+   SAY ~A pity about the staff, It saddens me to know that we will never witness its reunification. However, the piece you now possess does seem to bear the genuine mark.~ IF ~~ THEN GOTO FINAL_4
 END
 
 IF ~~ THEN BEGIN FINAL_4

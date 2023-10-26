@@ -19,13 +19,18 @@ nothing to stand in his way.
 Mod Overview
 ============
 The Gorgon's Eye is a content mod for BG:EE/SoD and EET that adds an
-underground thieves den into the town of Beregost. It contains new quests, 
-characters, stores and items. Your missions will include theft, extortion,
-bounty hunting, and battles against rival thieves. However, good-aligned
-characters will have satisfying options for roleplay, granted you can
-personally justify actually joining a thieves guild. The area can be accessed
-immediately after leaving Candlekeep and is open to all players, excluding
-those with a lawful-good alignment.
+underground thieves den into the town of Beregost. It contains new quests,
+characters, stores and items. The area can be accessed immediately after
+leaving Candlekeep and is open to all players, excluding only those with a
+lawful-good alignment.
+
+Upon joining, you'll find yourself undertaking tasks that align with the
+operations of a typical thieves guild. You'll be required to engage in
+activities such as theft, extortion, smuggling, bounty hunting, and
+assassination. However, it's worth noting that there are satisfying options for
+good and neutral-aligned players. If at any point you find the guild's ways
+aren't to your liking, you have the option to switch allegiances and aid the
+City Watch in their mission against the Gorgon's Eye.
 
 The component "Add more pickpocketable items" will distribute random treasure
 to generic npcs. (Commoners, nobles, etc.)
@@ -34,23 +39,24 @@ to generic npcs. (Commoners, nobles, etc.)
 Version History
 ===============
 Version 4.0:
--Fixed "Thief's Compendium" books to grant correct bonuses
--Replaced Danika with Naga who now offers temple services
--Added new weapon "Blackjack"
--Added many new quests
+-Added new major questline from Ariosh
 -Added new quest alternative for "Order of the Black Lotus"
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
--Increased payout for guild profits
--Adjusted reward for "No Honor Among Thieves"
--Nerfed Kerykeion weapons
--Fixed missing icon for "Kerykeion: Medusa's Bite"
--Added NPC interjections
--Added more satisfying options and for good-aligned players
--Fixed and revised journal entries and item descriptions
--Added more lore to Saradin, Baldwin, and the Kerykeion's history
--Added more dialog and made full-scale revisions
--Added spells to Ophelia's store
+-Added a fighting arena to the guildhall
 -Added more background NPCs to the guildhall
+-Added various quest items and a new weapon "Blackjack"
+-Added spells to Ophelia's store
+-Added NPC interjections
+-Revised quest progression
+-Revised all dialog
+-Replaced Danika with Naga who now offers temple services
+-Adjusted reward for weekly guild profits
+-Adjusted reward for "No Honor Among Thieves"
+-Adjusted "Bombs over Beregost" fight to play nicer with SCS
+-Nerfed Kerykeion weapons
+-Fixed "Thief's Compendium" books to grant correct bonuses
+-Fixed missing icon for "Kerykeion: Medusa's Bite"
+-Fixed and revised journal entries and item descriptions
 
 Version 3.3:
 -Added pickpocket component
@@ -96,7 +102,7 @@ BAMWorkshop: Erephine and Sam
 IESDP: igi and lynx
 Music: Hayato Matsuo, Masaharu Iwata and Hitoshi Sakimoto
 NearInfinity: Argent77, Jon Olav Hauglid and FredSRichardson
-Portraits: The NwN Vault  
+Portraits: The NwN Vault
 WeiDU: Wes Weimer, the bigg and Wisp
 
 =====

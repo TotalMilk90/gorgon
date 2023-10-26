@@ -59,7 +59,6 @@ IF WEIGHT #-2 ~Global("h_RigaldoQuest","GLOBAL",12) Global("h_BorlandQuest","GLO
    SAY ~Damn you barbarians! Take the lotus then! I'll make the payments... just know that you're making a big mistake messing with one such as me.~
 IF ~~ THEN DO ~
    SetGlobal("h_BorlandQuest","GLOBAL",1)
-   SetGlobal("h_GuildThieves","GLOBAL",5)
    SetGlobal("h_SpawnZylark","GLOBAL",3)
    AddJournalEntry(@325,QUEST)
    GiveItemCreate("h_misc07",LastTalkedToBy,0,0,0)                                           
@@ -107,7 +106,6 @@ IF WEIGHT #-2 ~Global("h_RigaldoQuest","GLOBAL",12) Global("h_BorlandQuest","GLO
    SAY ~Damn you barbarians! Take the lotus then! I'll close down for now... just know that you're making a big mistake messing with one such as me.~
 IF ~~ THEN DO ~
    SetGlobal("h_BorlandQuest","GLOBAL",1)
-   SetGlobal("h_GuildThieves","GLOBAL",5)
    SetGlobal("h_SpawnZylark","GLOBAL",3)
    AddJournalEntry(@325,QUEST)
    GiveItemCreate("h_misc07",LastTalkedToBy,0,0,0)~ EXIT

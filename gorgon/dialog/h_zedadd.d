@@ -1,9 +1,5 @@
 BEGIN h_zedadd
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
-   SAY ~I'm grabbin' myself a bow and heading for cover! I'm not much of the fighting type.~ IF ~~ THEN EXIT
-END
-
 IF ~Global("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 0
    SAY ~You smell of books... and blood.~ IF ~~ THEN EXIT
 END
@@ -330,3 +326,28 @@ IF ~~ THEN BEGIN SECOND_11
        ++ ~Thanks, Zeda, that was fun.~ DO ~SetGlobal("h_SecondRiddle","GLOBAL",2)~ EXIT
        ++ ~I hate you.~ DO ~SetGlobal("h_SecondRiddle","GLOBAL",2)~ EXIT
 END
+
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN WAR_0
+   SAY ~I'm grabbin' myself a bow and heading for cover! I'm not much of the fighting type.~ IF ~~ THEN EXIT
+END
+
+
+
+CHAIN
+     IF WEIGHT #-1 ~Global("h_WhitewoodDialog","GLOBAL",2) Global("h_WatchAssault","GLOBAL",1)~ THEN h_zedadd BET_0
+~What in the abyss is goin' on? We've got company, mates! I knew I smelled somethin' funny!~
+   =
+~It's the Commander of the City Watch! And, by gods... that double-crossin' wretch, <CHARNAME>! Defend the hideout, quick!~
+   == h_baldwd
+~You've got a lot of gall, <CHARNAME>, Commander, showin' your faces in my den. This ain't the city streets you're used to. You've crossed a line, and there'll be a reckoning.~
+   == h_whited
+~You brought this upon yourself, Baldwin. Your reign of terror ends tonight. The City Watch won't tolerate this any longer. Surrender now, or face the consequences of your actions.~
+   == h_baldwd
+~Surrender? You've got more bravado than sense, Commander. This den's a fortress, and you'll pay in blood for your trespassing.~
+  == h_whited
+~We'll see about that, Baldwin. Your time is up. Men, advance! Take down any who stand in our way!~
+   DO ~
+      SetGlobal("h_HelpCityWatch","GLOBAL",1)
+      SetGlobal("h_WhitewoodDialog","GLOBAL",3)
+      ActionOverride("h_nagacc",DestroySelf())~ 
+EXIT

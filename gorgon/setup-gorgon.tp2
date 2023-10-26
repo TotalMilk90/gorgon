@@ -37,13 +37,10 @@ COMPILE ~gorgon/dialog/h_yumild.d~
 COMPILE ~gorgon/dialog/h_baldwd.d~
 COMPILE ~gorgon/dialog/h_saradd.d~
 COMPILE ~gorgon/dialog/h_rigald.d~
-
 COMPILE ~gorgon/dialog/h_city5d.d~
 COMPILE ~gorgon/dialog/h_eurynd.d~
 COMPILE ~gorgon/dialog/h_ariosd.d~
 COMPILE ~gorgon/dialog/h_lieded.d~
-
-
 COMPILE ~gorgon/dialog/h_bald2d.d~
 COMPILE ~gorgon/dialog/h_nagadd.d~
 COMPILE ~gorgon/dialog/h_gilbad.d~
@@ -69,6 +66,7 @@ COMPILE ~gorgon/dialog/h_europd.d~
 COMPILE ~gorgon/dialog/h_tuztdd.d~
 COMPILE ~gorgon/dialog/h_zhontd.d~
 COMPILE ~gorgon/dialog/h_magnud.d~
+COMPILE ~gorgon/dialog/h_whited.d~
 COMPILE ~gorgon/dialog/h_zedadd.d~
 COMPILE ~gorgon/dialog/h_smuggd.d~
 COMPILE ~gorgon/dialog/h_meredd.d~
@@ -98,25 +96,18 @@ COMPILE ~gorgon/dialog/h_lordtd.d~
 COMPILE ~gorgon/dialog/h_ladyed.d~
 COMPILE ~gorgon/dialog/h_blackd.d~
 COMPILE ~gorgon/dialog/h_citywd.d~
-COMPILE ~gorgon/dialog/h_whited.d~
 COMPILE ~gorgon/dialog/h_valerd.d~
 COMPILE ~gorgon/dialog/h_barthd.d~
 COMPILE ~gorgon/dialog/h_city3d.d~
 COMPILE ~gorgon/dialog/h_city6d.d~
 COMPILE ~gorgon/dialog/h_blac2d.d~
-
-
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartjd.d~
-
-
 COMPILE ~gorgon/dialog/h_insped.d~
 COMPILE ~gorgon/dialog/h_decoyd.d~
 COMPILE ~gorgon/dialog/h_ishand.d~
 COMPILE ~gorgon/dialog/h_eudikd.d~
 COMPILE ~gorgon/dialog/h_jcookd.d~
-COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~ 
-// Appended Dialog
-
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
 COMPILE ~gorgon/dialog/h_borlad.d~
 COMPILE ~gorgon/dialog/h_gerard.d~
 COMPILE ~gorgon/dialog/h_karpdd.d~
@@ -128,18 +119,14 @@ COMPILE ~gorgon/dialog/h_carn5d.d~
 COMPILE ~gorgon/dialog/h_nobled.d~
 COMPILE ~gorgon/dialog/h_blilyd.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_lotusd.d~
-
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartfd.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartbd.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_bartrd.d~
-
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_whiskd.d~
 COMPILE ~gorgon/dialog/h_city4d.d~
-
 COMPILE ~gorgon/dialog/h_clared.d~
 COMPILE ~gorgon/dialog/h_thered.d~
 COMPILE ~gorgon/dialog/h_whit2d.d~
-
 COMPILE ~gorgon/dialog/h_procud.d~
 COMPILE ~gorgon/dialog/h_armord.d~
 COMPILE ~gorgon/dialog/h_piratd.d~
@@ -147,6 +134,13 @@ COMPILE ~gorgon/dialog/h_selend.d~
 COMPILE ~gorgon/dialog/h_vitiad.d~
 COMPILE ~gorgon/dialog/h_tmercd.d~
 COMPILE ~gorgon/dialog/h_tguard.d~
+COMPILE ~gorgon/dialog/h_deaded.d~
+COMPILE ~gorgon/dialog/h_dead2d.d~
+COMPILE ~gorgon/dialog/h_pits1d.d~
+COMPILE ~gorgon/dialog/h_pits2d.d~
+COMPILE ~gorgon/dialog/h_pits3d.d~
+COMPILE ~gorgon/dialog/h_pits4d.d~
+COMPILE ~gorgon/dialog/h_pits5d.d~
 
 // Creature Scripts
 
@@ -180,15 +174,12 @@ COMPILE ~gorgon/scripts/h_zylars.baf~
 COMPILE ~gorgon/scripts/h_ziekns.baf~
 COMPILE ~gorgon/scripts/h_ziekds.baf~
 COMPILE ~gorgon/scripts/h_ziekes.baf~
-
-
 COMPILE ~gorgon/scripts/h_endpas.baf~
 COMPILE ~gorgon/scripts/h_drunks.baf~
 COMPILE ~gorgon/scripts/h_ladyes.baf~
 COMPILE ~gorgon/scripts/h_bouncs.baf~
 COMPILE ~gorgon/scripts/h_blacks.baf~
 COMPILE ~gorgon/scripts/h_blacts.baf~
-
 COMPILE ~gorgon/scripts/h_cityws.baf~
 COMPILE ~gorgon/scripts/h_city2s.baf~
 COMPILE ~gorgon/scripts/h_valers.baf~
@@ -200,18 +191,26 @@ COMPILE ~gorgon/scripts/h_city4s.baf~
 COMPILE ~gorgon/scripts/h_ishcut.baf~
 COMPILE ~gorgon/scripts/h_jugcut.baf~
 COMPILE ~gorgon/scripts/h_fircut.baf~
-
 COMPILE ~gorgon/scripts/h_city5s.baf~
 COMPILE ~gorgon/scripts/h_citcut.baf~
 COMPILE ~gorgon/scripts/h_clares.baf~
 COMPILE ~gorgon/scripts/h_theres.baf~
-
 COMPILE ~gorgon/scripts/h_whites.baf~
 COMPILE ~gorgon/scripts/h_whit2s.baf~
 COMPILE ~gorgon/scripts/h_temkns.baf~
 COMPILE ~gorgon/scripts/h_blac2s.baf~
 COMPILE ~gorgon/scripts/h_pirats.baf~
 COMPILE ~gorgon/scripts/h_tentcs.baf~
+COMPILE ~gorgon/scripts/h_betcut.baf~
+COMPILE ~gorgon/scripts/h_zedass.baf~
+COMPILE ~gorgon/scripts/h_pitcut.baf~
+COMPILE ~gorgon/scripts/h_pi2cut.baf~
+COMPILE ~gorgon/scripts/h_pi3cut.baf~
+COMPILE ~gorgon/scripts/h_pi4cut.baf~
+COMPILE ~gorgon/scripts/h_pi5cut.baf~
+COMPILE ~gorgon/scripts/h_dead2s.baf~
+COMPILE ~gorgon/scripts/h_pits1s.baf~
+COMPILE ~gorgon/scripts/h_pigcut.baf~
 
 // Area Scripts
 
@@ -256,6 +255,12 @@ COPY ~gorgon/areas/h_flamea.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           // TO-DO: fix music entries
           WRITE_ASCII 0x8 ~BG6100~ //update WED resource filename
+     END
+     
+COMPILE ~gorgon/scripts/h_fpitsa.baf~
+COPY ~gorgon/areas/h_fpitsa.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          WRITE_ASCII 0x8 ~BG1002~ //update WED resource filename
      END
 
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_flamea.baf~
@@ -355,7 +360,7 @@ COPY_EXISTING ~%area_prefix%3300.are~ ~override~
 COPY_EXISTING ~BART3.cre~ ~override~                          // Red Sheaf Bartender
      WRITE_ASCII 0x280 ~BART3~ #32
      
-COPY_EXISTING ~MERCH2.cre~ ~override~                          // Red Sheaf Bartender
+COPY_EXISTING ~MERCH2.cre~ ~override~                         // Carnival Merchant
      WRITE_ASCII 0x280 ~MERCH2~ #32
 
 COPY_EXISTING ~NOBL10.cre~ ~override~                         // Gerard Travenhurst
@@ -1200,17 +1205,51 @@ COPY ~gorgon/cre/h_tmercc.cre~ ~override/h_tmercc.cre~        // Merchant
 COPY ~gorgon/cre/h_vitiac.cre~ ~override/h_vitiac.cre~        // Vitiare
      SAY NAME1 @967
      SAY NAME2 @967
+     
+COPY ~gorgon/cre/h_deadec.cre~ ~override/h_deadec.cre~        // Diomedes
+     SAY NAME1 @968
+     SAY NAME2 @968
+     
+COPY ~gorgon/cre/h_dead2c.cre~ ~override/h_dead2c.cre~        // Diomedes(2)
+     SAY NAME1 @968
+     SAY NAME2 @968
+
+COPY ~gorgon/cre/h_catcac.cre~ ~override/h_catcac.cre~        // Shadow
+     SAY NAME1 @969
+     SAY NAME2 @969
+     
+COPY ~gorgon/cre/h_pits1c.cre~ ~override/h_pits1c.cre~        // Khalid Blackrock
+     SAY NAME1 @970
+     SAY NAME2 @970
+     
+COPY ~gorgon/cre/h_pits2c.cre~ ~override/h_pits2c.cre~        // Grom Torrek
+     SAY NAME1 @971
+     SAY NAME2 @971
+     
+COPY ~gorgon/cre/h_pits3c.cre~ ~override/h_pits3c.cre~        // Lyria Winterheart
+     SAY NAME1 @972
+     SAY NAME2 @972
+     
+COPY ~gorgon/cre/h_pits4c.cre~ ~override/h_pits4c.cre~        // Serra Swiftwind
+     SAY NAME1 @973
+     SAY NAME2 @973
+
+COPY ~gorgon/cre/h_pits5c.cre~ ~override/h_pits5c.cre~        // Roran 'Iron Fist' Zlenka
+     SAY NAME1 @974
+     SAY NAME2 @974
+
+
 
 // Journal Entries
 
-ADD_JOURNAL @200 @201 @202 @203 @204
+ADD_JOURNAL @200 @201 @202 @203 @204 @205 @206 @207 @208 @209
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
-            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337
+            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446
             @509 @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555 @556 @557 @558
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
-            @809 @810 @811 @812 @813 @814 @815 @816 @817 @818 @819 @820
+            @810 @811 @812 @813 @814 //@815 @816 @817 @818 @819 @820
             USING ~gorgon/lang/english/quests.tra~
 
 BEGIN @100000

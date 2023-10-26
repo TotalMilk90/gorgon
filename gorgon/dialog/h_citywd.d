@@ -1,5 +1,9 @@
 BEGIN h_citywd
 
+IF WEIGHT #-1 ~Global("h_WhitewoodDialog","GLOBAL",4)~ THEN BEGIN FIN_0
+   SAY ~Finally, some peace returns to our streets. You've done Beregost a great service, <CHARNAME>. We won't forget it.~ IF ~~ THEN EXIT
+END
+
 IF WEIGHT #-1 ~PartyHasItem("h_misc21") Global("h_ChanceToRun","GLOBAL",0)~ THEN BEGIN CAUGHT_0
    SAY ~Hold it right there! I've been watching you slinking around these streets like a rat in the shadows. What have you got there?~
        +~CheckStatGT(Player1,18,CHR)~+ ~Steady on, mate. No need to get all knickers in a twist. Just out for a leisurely jaunt, enjoying the night's breeze.~ GOTO CAUGHT_1

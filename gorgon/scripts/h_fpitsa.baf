@@ -1,0 +1,44 @@
+IF
+        HP("h_pits1c",1)
+        Global("h_BeatKhalid","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatKhalid","GLOBAL",1)
+END
+
+IF
+        HP("h_pits2c",1)
+        Global("h_BeatGrom","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatGrom","GLOBAL",1)
+END
+
+IF
+        HP("h_pits3c",1)
+        Global("h_BeatLyria","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatLyria","GLOBAL",1)
+END
+
+IF
+        HP("h_pits4c",1)
+        Global("h_BeatSerra","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatSerra","GLOBAL",1)
+END
+
+IF
+        HP("h_pits5c",1)
+        Global("h_BeatRoran","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatRoran","GLOBAL",1)
+END

@@ -5,7 +5,7 @@ IF ~Global("h_BaldwinQuest","GLOBAL",10)~ THEN BEGIN FINAL_0
 END
 
 IF ~~ THEN BEGIN FINAL_1
-   SAY ~Behold the culmination of power! With the Kerykeion soon in my hands, I will become unstoppable. No force, mortal or divine, can thwart me now.~ IF ~~ THEN GOTO FINAL_2
+   SAY ~Behold the culmination of power! With the Kerykeion in my hands, I will become unstoppable. No force, mortal or divine, can thwart me now.~ IF ~~ THEN GOTO FINAL_2
 END
 
 IF ~~ THEN BEGIN FINAL_2
@@ -39,7 +39,7 @@ IF ~~ THEN BEGIN FINAL_7
 END
 
 IF ~~ THEN BEGIN FINAL_8
-   SAY ~Treason, is it? You overestimate yourself, <CHARNAME>. While the fusion remains incomplete, the proximity of its components is sufficient to infuse me with newfound power.~ IF ~~ THEN GOTO FINAL_9
+   SAY ~Treason, is it? You overestimate yourself, <CHARNAME>. While the fusion remains incomplete, the proximity of its components is sufficient enough to infuse me with newfound power.~ IF ~~ THEN GOTO FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_9
@@ -47,7 +47,7 @@ IF ~~ THEN BEGIN FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_10
-   SAY ~Hold a moment!... We are not alone.~
+   SAY ~Hold a moment... We are not alone.~
 IF ~~ THEN DO ~
    CreateCreature("h_sthiec",[402.156],S)
    CreateCreature("h_richac",[331.351],E)

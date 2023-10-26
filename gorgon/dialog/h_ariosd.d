@@ -439,6 +439,7 @@ IF ~~ THEN BEGIN FOUR_6
    SAY ~Then, when the night blankets the town, head to the fountain. Stay sharp, and keep your guard up. This is where the traitor's tale reaches its final chapter.~
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",9)
+   SetGlobal("h_BlackFight","GLOBAL",2)
    AddJournalEntry(@524,QUEST)
    GiveItemCreate("h_misc22",LastTalkedToBy,0,0,0)~ EXIT
 END
@@ -764,7 +765,7 @@ END
 IF ~Global("h_ArioshQuest","GLOBAL",18)~ THEN BEGIN SEV_17
    SAY ~Word's already gettin' 'round about something big going down at the Juggler. Let's get a formal report.~
        +~Global("h_PoisonInspector","GLOBAL",1)~+ ~The plan was smooth sailing. Ishani played it off well and the Inspector went down without a fuss.~ GOTO SEV_18
-       +~Global("h_PoisonFailInspector","GLOBAL",1)~+ ~The Inspector saw through the ruse, forcing my hand to take action.~ GOTO SEV_19
+       +~Global("h_PoisonFailInspector","GLOBAL",1) Global("h_FireInspector","GLOBAL",0)~+ ~The Inspector saw through the ruse, forcing my hand to take action.~ GOTO SEV_19
        +~Global("h_FightInspector","GLOBAL",1) Global("h_PoisonFailInspector","GLOBAL",0)~+ ~I didn't want to risk the plan failing, so I took matters into my own hands.~ GOTO SEV_20
        +~Global("h_FireInspector","GLOBAL",1)~+ ~Had no choice but to blow the joint. The Inspector was burned alive.~ GOTO SEV_21
 END

@@ -1,5 +1,6 @@
 IF
          TimeOfDay(DAY)
+         Global("h_ArioshQuest","GLOBAL",4)
 THEN
          RESPONSE #100
                   DestroySelf()

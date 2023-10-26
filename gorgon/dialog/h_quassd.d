@@ -8,11 +8,7 @@ IF ~True()~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~If we brought our full might upon you, your guild would crumble.~ IF ~~ THEN GOTO 1.5
-END
-
-IF ~~ THEN BEGIN 1.5
-   SAY ~However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 3
+   SAY ~If we brought our full might upon you, your guild would crumble. However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
@@ -59,7 +55,11 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Wise choice. Here is your mission, listen closely.~ IF ~~ THEN GOTO 10
+   SAY ~You've made a wise choice. <CHARNAME>. Baldwin's recklessness threatens more than just our operations. Together, we can halt his plans and secure our future.~ IF ~~ THEN GOTO 9.5
+END
+
+IF ~~ THEN BEGIN 9.5
+   SAY ~Now, let us begin our preparations. Time is of the essence.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
@@ -67,7 +67,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-   SAY ~We have a spy amongst your ranks. When it is time to strike, they will be revealed with the utterance of the code, "The Shortbow of the Shaar."~
+   SAY ~We have a spy among your ranks. When it is time to strike, they will be revealed with the utterance of the code, "The Shortbow of the Shaar."~
        ++ ~How do I ensure Baldwin tries to fuse the fake piece?~ GOTO 12
        ++ ~What happens if Baldwin figures out it's a fake?~ GOTO 13
        ++ ~What if the fusion process fails?~ GOTO 14

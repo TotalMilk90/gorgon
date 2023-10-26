@@ -305,7 +305,7 @@ END
 
 
 IF ~Global("h_RigaldoQuest","GLOBAL",6)~ THEN BEGIN KARP_1
-   SAY ~Ah, my friends! Back for another venture in the pursuit of coin, are we? Well, I got wind of a right curious tale from Nashkel, and I'll be sending you down to investigate.~ IF ~~ THEN GOTO KARP_2
+   SAY ~Back for another venture in the pursuit of coin, are we? Well, I got wind of a right curious tale from Nashkel, and I'll be sending you down to investigate.~ IF ~~ THEN GOTO KARP_2
 END
 
 IF ~~ THEN BEGIN KARP_2
@@ -487,7 +487,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnProcus","GLOBAL",1)
    SetGlobal("h_GilbaldQuest","GLOBAL",1)
    SetGlobal("h_LiedelQuest","GLOBAL",3)
-   AddJournalEntry(@809,QUEST)~ EXIT
+   AddJournalEntry(@338,QUEST)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",11) GlobalLT("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN PROCUS_9
@@ -506,7 +506,7 @@ IF ~~ THEN BEGIN PROCUS_12
    SAY ~The Gorgon's Eye's makin' its mark, and you're right in the thick of it. Well done, indeed.~
 IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",8)
-   AddJournalEntry(@820,QUEST_DONE)
+   AddJournalEntry(@349,QUEST_DONE)
    GiveGoldForce(800)
    AddExperienceParty(600)~ EXIT
 END
@@ -616,11 +616,12 @@ END
 
 
 
-
-
-
-
-IF ~Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_1
+                                         //Liedel Bounty 3 GlobalLT("h_ArioshQuest","GLOBAL",22)
+IF ~Global("h_RigaldoQuest","GLOBAL",15) GlobalLT("h_MerediaQuest","GLOBAL",5)~ THEN BEGIN LOTUS_01
+   SAY ~No fresh leads at the moment. Have a word with the mates around the guild, they might have a bit of graft for ya.~ IF ~~ THEN EXIT
+END
+                                         //Liedel Bounty 3 Global("h_ArioshQuest","GLOBAL",22)
+IF ~Global("h_RigaldoQuest","GLOBAL",15) Global("h_MerediaQuest","GLOBAL",5)~ THEN BEGIN LOTUS_1
    SAY ~I've got a new job for ya. We're gonna be moving some gear into Amn.~ IF ~~ THEN GOTO LOTUS_2
 END
 
@@ -657,7 +658,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN REFUSE_4
-   SAY ~So I've heard. Here's the cut.~
+   SAY ~Nicely done. You've got a silver tongue, no doubt. Here's your cut for the job.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
@@ -667,7 +668,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN REFUSE_5
-   SAY ~I'm not even going to ask, mate. You failed the mission.~
+   SAY ~We need precision, not recklessness. There's no room for slip-ups in this line of work. Keep your wits about you next time, or we'll both be in hot water.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",17)
    SetGlobal("h_ShadowWar","GLOBAL",7)
@@ -679,21 +680,18 @@ IF ~~ THEN BEGIN LOTUS_4
        ++ ~Is it safe going to Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~How much gold should I be expecting from the buyer?~ GOTO LOTUS_6
        ++ ~Anything else I should know?~ GOTO LOTUS_7
-       ++ ~Peddling lotus ain't for me. Got anything else?~ GOTO REFUSE_0
 END
 
 IF ~~ THEN BEGIN LOTUS_5
    SAY ~Not on your life. But, takin' risks is the name of the game. Without it, even the sharpest of thieves can grow soft.~
        ++ ~How much gold should I be expecting from the buyer?~ GOTO LOTUS_6
        ++ ~Anything else I should know?~ GOTO LOTUS_7
-       ++ ~Peddling lotus ain't for me. Got anything else?~ GOTO REFUSE_0
 END
 
 IF ~~ THEN BEGIN LOTUS_6
    SAY ~You'll be movin' five pounds of black lotus at 600 gold pieces per pound. I'll cut ya in for a twenty-percent slice upon a successful run.~
        ++ ~Is it safe going to Amn while we are at war with the Shadow Thieves?~ GOTO LOTUS_5
        ++ ~Anything else I should know?~ GOTO LOTUS_7
-       ++ ~Peddling lotus ain't for me. Got anything else?~ GOTO REFUSE_0
 END
 
 IF ~~ THEN BEGIN LOTUS_7

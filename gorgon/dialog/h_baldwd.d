@@ -126,6 +126,8 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",1)
    SetGlobal("h_DidNotJoin","GLOBAL",3)
    SetGlobal("h_BaldwinQuest","GLOBAL",1)
+   SetGlobal("h_FightingPits","GLOBAL",1)
+   SetGlobal("h_FightersTalk","GLOBAL",1)
    AddJournalEntry(@202,USER)
    ReputationInc(-2)~ EXIT
 END
@@ -236,11 +238,11 @@ IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_16.5
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc01")~ THEN BEGIN MAGE_17
-   SAY ~By the gods... I can sense the aura of the Kerykeion around you. Quickly, hand it here.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
+   SAY ~By the gods... You've done it. I can sense the aura of the Kerykeion. Swiftly, hand it here.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_18
-   SAY ~Incredible. You've actually done it! You can feel it, can you not? The intoxicating pull of its power, the whispered promises of dominion? A fractured taste of what's to come!~ IF ~~ THEN GOTO MAGE_19
+   SAY ~Incredible. You can feel it, can you not? The intoxicating pull of its power, the whispered promises of dominion? A fractured taste of what's to come.~ IF ~~ THEN GOTO MAGE_19
 END
 
 IF ~~ THEN BEGIN MAGE_19
@@ -310,7 +312,7 @@ IF ~Global("h_BaldwinQuest","GLOBAL",5)~ THEN BEGIN BOMBS_0
    SAY ~<CHARNAME>! Ascend to the surface and eliminate all the Shadow Thieves from the city.~
        ++ ~Ariosh mentioned Thamuz leads their offensive. Do you know who he is?~ GOTO BOMBS_1
        ++ ~Why have they decided to attack us now?~ GOTO BOMBS_2
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
+       +~NumDead("h_sthiec",5) NumDead("h_thiefc",18) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
@@ -332,7 +334,7 @@ END
 IF ~~ THEN BEGIN BOMBS_4
    SAY ~Regardless, we have more pressing matters at hand and should defer these speculations for another time.~
        ++ ~Ariosh mentioned Thamuz leads their offensive. Do you know who he is?~ GOTO BOMBS_1
-       +~NumDead("h_sthiec",12) NumDead("h_thiefc",11) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
+       +~NumDead("h_sthiec",5) NumDead("h_thiefc",18) PartyHasItem("h_misc08")~+ ~I found these reports among the dead, but I can't decipher the code.~ GOTO NAGATE_1
        ++ ~Understood.~ EXIT
 END
 
@@ -465,7 +467,7 @@ IF ~~ THEN BEGIN THAMUZ_10.5
 END
 
 IF ~~ THEN BEGIN THAMUZ_11
-   SAY ~Additionally, something's got the courtesans all spooked and stirred up. I need you to quell their commotion and handle the situation.~ IF ~~ THEN GOTO THAMUZ_12
+   SAY ~Additionally, something's got the courtesans all spooked up and chatting. I need you to quell their commotion and handle the situation.~ IF ~~ THEN GOTO THAMUZ_12
 END
 
 IF ~~ THEN BEGIN THAMUZ_12
@@ -531,11 +533,11 @@ END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",8) PartyHasItem("h_misc13")~ THEN BEGIN GERARD_0
    SAY ~Small talk won't serve you here. Attend to your duties and fulfill your role.~
-       ++ ~I was given this missive by one the Snake Heads, before he succumbed to his injuries.~ GOTO GERARD_1
+       ++ ~I was given this missive by one your Snake Heads, before he succumbed to his injuries.~ GOTO GERARD_1
 END
 
 IF ~~ THEN BEGIN GERARD_1
-   SAY ~Give it here, quickly!~ IF ~~ THEN GOTO GERARD_2
+   SAY ~Give it here, swiftly!~ IF ~~ THEN GOTO GERARD_2
 END
 
 IF ~~ THEN BEGIN GERARD_2
@@ -543,7 +545,7 @@ IF ~~ THEN BEGIN GERARD_2
 END
 
 IF ~~ THEN BEGIN GERARD_3
-   SAY ~What! Oh, he is a dead man!~  IF ~~ THEN GOTO GERARD_4
+   SAY ~Oh, he is a dead man!~  IF ~~ THEN GOTO GERARD_4
 END
 
 IF ~~ THEN BEGIN GERARD_4
@@ -552,6 +554,11 @@ END
 
 IF ~~ THEN BEGIN GERARD_5
    SAY ~No honor, no loyalty. These are treacherous times, <CHARNAME>, and they demand a reckoning.~
+       ++ ~Gerard Travenhurst is the one who's been working with the Shadow Thieves?~ GOTO GERARD_5.5
+END
+
+IF ~~ THEN BEGIN GERARD_5.5
+   SAY ~Him, and a whole bloody lot of rebels from these streets. Let us not waste time. We shall pay him a visit at his manor, and he will face our reckoning.~
        ++ ~It's clear Gerard has chosen his path. He'll face the consequences of his actions soon enough.~ GOTO GERARD_6
        ++ ~We shouldn't underestimate him. It's possible we're being led into a trap.~ GOTO GERARD_7
        ++ ~Regardless of Gerard's actions, we should prioritize retrieving the Kerykeion shard.~ GOTO GERARD_8

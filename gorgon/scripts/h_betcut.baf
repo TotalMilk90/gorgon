@@ -1,0 +1,58 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(2)
+        LeaveAreaLUAPanic("h_guilda","",[861.1423],N)
+        LeaveAreaLUA("h_guilda","",[861.1423],N)
+        MultiPlayerSync()
+        CreateCreature("h_whitec",[835.1424],N)
+        CreateCreature("h_citywc",[806.1462],N)
+        CreateCreature("h_citywc",[873.1463],N)
+        MultiPlayerSync()
+        FadeFromColor([20.0],0)
+        Wait(2)
+        EndCutSceneMode()
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player2)
+        LeaveAreaLUA("h_guilda","",[695.1514],E)
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player3)
+        LeaveAreaLUA("h_guilda","",[695.1514],E)
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player4)
+        LeaveAreaLUA("h_guilda","",[695.1514],E)
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player5)
+        LeaveAreaLUA("h_guilda","",[695.1514],E)
+END
+
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player6)
+        LeaveAreaLUA("h_guilda","",[695.1514],E)
+END

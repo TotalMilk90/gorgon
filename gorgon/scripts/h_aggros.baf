@@ -12,3 +12,11 @@ THEN
 	RESPONSE #100
 		 Enemy()
 END
+
+IF
+	Global("h_HelpCityWatch","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

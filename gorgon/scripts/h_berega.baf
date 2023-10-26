@@ -146,6 +146,7 @@ END
 IF
          TimeOfDay(NIGHT)
          Global("h_SpawnBlackthorn","GLOBAL",1)
+         Global("h_ArioshQuest","GLOBAL",4)
 
 THEN
          RESPONSE #100

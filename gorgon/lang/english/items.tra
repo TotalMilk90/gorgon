@@ -736,3 +736,75 @@ Weight: 0~
 @126=~This sizable sack is brimming with a weighty assortment of gleaming coins, their metallic glint promising the potential for great wealth and prosperity. The jingling symphony of currency within serves as a constant reminder of its substantial value. The sack itself is robustly crafted, its seams reinforced to bear the considerable load. Its contents whisper of untold possibilities, awaiting the right opportunity to be put to use.
 
 Weight: 5~
+
+@127=~Piercing Trap~
+@128=~The Piercing Trap is a deadly contraption, its mechanism honed to perfection. When activated, it unleashes a storm of razor-sharp arrows, designed to pierce through flesh and armor alike with merciless precision.
+
+STATISTICS:
+
+Damage: 3d6+6
+Damage Type: Piercing
+
+Weight: 1~
+
+@129=~Poison Trap~
+@130=~The Poison Trap conceals a sinister secret within its unassuming exterior. Once triggered, it springs to life, launching arrows tipped with a lethal venom that courses through the victim's veins, delivering a venomous, lingering torment.
+
+STATISTICS:
+
+Damage: 3d6, +6 poison, +2d6 poison per round for the next 3 rounds
+Damage Type: Piercing
+
+Weight: 1~
+
+@131=~Incendiary Trap~
+@132=~The Incendiary Trap is a testament to the art of controlled destruction. With a flicker of arcane fire, it hurls forth arrows wreathed in flames, turning the air to searing heat as they scorch their intended target, leaving naught but ash in their wake.
+
+STATISTICS:
+
+Damage: 3d6, +3d6 fire
+Damage Type: Piercing
+
+Weight: 1~
+
+@133=~Elemental Trap~
+@134=~This masterful creation, known as the Elemental Trap, draws upon the very essence of the elements. When activated, it projects a volley of magically infused arrows, each bearing the power of fire, electricity, and ice. Its victims face an onslaught of elemental fury.
+
+STATISTICS:
+
+Damage: 3d6, +6 fire, +6 cold, +6 electricity
+Damage Type: Piercing
+
+Weight: 1~
+
+@135=~Stun Trap~
+@136=~The Stun Trap is a cunning invention that strikes with both stealth and potency. When set in motion, it launches venom-laced arrows designed to incapacitate the target, leaving them immobilized and vulnerable to the whims of their assailant.
+
+STATISTICS:
+
+Damage: 2d4+4
+Additional Effect: Stuns target
+Damage Type: Piercing
+
+Weight: 1~
+
+@137=~Flash Trap~
+@138=~The Flash Trap is a blinding marvel of subterfuge. Upon activation, it propels arrows that burst upon impact, flooding the area with a brilliant, searing light. Those caught in its radiance are left disoriented, their vision consumed by a blinding brilliance.
+
+STATISTICS:
+
+Damage: 2d4+4
+Additional Effect: Blinds target
+Damage Type: Piercing
+
+Weight: 1~
+
+@139=~Netheril's Grimoire of Lost Arcana~
+@140=~This ancient grimoire bears the weight of forgotten epochs, its pages inscribed with runes and sigils of a bygone era. The cover, crafted from a weathered leather bound in silver, exudes an aura of mystic power. The contents within contain incantations and spells believed to have been lost to time, secrets of an arcane legacy that once thrived in the distant lands of Netheril. Owning this tome grants its possessor the potential to unlock unparalleled depths of magical prowess, but with such power comes great responsibility and peril. Approach with caution, for within its pages lies the legacy of a civilization lost to history.
+
+Weight: 3~
+
+@141=~Featherlung Serum~
+@142=~This delicate glass vial contains a shimmering, ethereal liquid. The serum emits a faint, soothing glow, hinting at its potent properties. Crafted by the skilled hands of the alchemist, Alaric, this serum holds the potential to alleviate the suffering caused by the dreaded featherlung disease.
+
+Weight: 1~

@@ -193,7 +193,7 @@ END
 
 IF ~~ THEN BEGIN 33
    SAY ~A feat that will be sung about in the taverns and spoken of in hushed tones for ages to come!~ IF ~~ THEN GOTO 34
-END 
+END
 
 IF ~~ THEN BEGIN 34
    SAY ~This is what the pits are about, my friends! A testament to the indomitable spirit, to the unyielding will to fight! This is where legends are born and stories are forged!~ IF ~~ THEN GOTO 35
@@ -215,6 +215,53 @@ IF ~~ THEN DO ~
    AddJournalEntry(@815,QUEST)
    AddExperienceParty(1000)
    GiveGoldForce(500)
+   ClearAllActions()
+   StartCutSceneMode()
+   StartCutScene("h_pigcut")~ EXIT
+END
+
+IF ~Global("h_PitsFight","GLOBAL",10)~ THEN BEGIN 38
+   SAY ~Ladies and gentlemen, warriors and spectators, today is a day that will be remembered for ages to come. We have a special surprise for you all.~ IF ~~ THEN GOTO 39
+END
+
+IF ~~ THEN BEGIN 39
+   SAY ~After a prolonged absence, a true legend has returned to grace our arena. Isla Darkcloak has emerged from retirement to face our current champion in a DEATHMATCH!~ IF ~~ THEN GOTO 40
+END
+
+IF ~~ THEN BEGIN 40
+   SAY ~This is a rare and monumental event, a clash of champions that promises to leave an indelible mark on the history of the pits.~ IF ~~ THEN GOTO 41
+END
+
+IF ~~ THEN BEGIN 41
+   SAY ~Now, without further ado, let the battle of the ages commence!~
+IF ~~ THEN DO ~
+   SetGlobal("h_PitsFight","GLOBAL",11)
+   ActionOverride("h_islacc",Enemy())
+   EscapeArea()~ EXIT
+END
+
+IF ~Global("h_BeatIsla","GLOBAL",1)~ THEN BEGIN 42
+   SAY ~The fight is over! As the dust settles and the echoes of battle fade, history is made in the pits today!~ IF ~~ THEN GOTO 43
+END
+
+IF ~~ THEN BEGIN 43
+   SAY ~<CHARNAME> has emerged victorious, claiming a place of honor among the legends of combat. Isla Darkcloak fought with unyielding spirit, as did our reigning champion.~ IF ~~ THEN GOTO 44
+END
+
+IF ~~ THEN BEGIN 44
+   SAY ~Yet, it was <CHARNAME> who proved themselves worthy of this moment. Their skill and determination will be remembered for ages to come.~ IF ~~ THEN GOTO 45
+END
+
+IF ~~ THEN BEGIN 45
+   SAY ~Let us pay tribute to both warriors for their valor. Now, we crown a new champion, one who has faced the fiercest trials and emerged triumphant.~ IF ~~ THEN GOTO 46
+END
+
+IF ~~ THEN BEGIN 46
+   SAY ~Champion, take your place in the annals of pit-fighting glory!~
+IF ~~ THEN DO ~
+   SetGlobal("h_BeatIsla","GLOBAL",2)
+   SetGlobal("h_IslaBounty","GLOBAL",2)
+   SetGlobal("h_FightingPits","GLOBAL",5)
    ClearAllActions()
    StartCutSceneMode()
    StartCutScene("h_pigcut")~ EXIT

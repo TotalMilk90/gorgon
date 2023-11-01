@@ -24,11 +24,11 @@ characters, stores and items. The area can be accessed immediately after
 leaving Candlekeep and is open to all players, excluding only those with a
 lawful-good alignment.
 
-Upon joining, you'll find yourself undertaking tasks that align with the
-operations of a typical thieves guild. You'll be required to engage in
-activities such as theft, extortion, smuggling, bounty hunting, and
-assassination. However, it's worth noting that there are satisfying options for
-good and neutral-aligned players. If at any point you find the guild's ways
+After enlisting in the Gorgon's Eye, you'll find yourself undertaking tasks
+that align with the operations of a typical thieves guild. You'll be expected
+to engage in activities such as theft, extortion, smuggling, bounty hunting,
+and assassination. However, it's worth noting that there are satisfying options
+for good and neutral-aligned players. If at any point you find the guild's ways
 aren't to your liking, you have the option to switch allegiances and aid the
 City Watch in their mission against the Gorgon's Eye.
 
@@ -39,14 +39,17 @@ to generic npcs. (Commoners, nobles, etc.)
 Version History
 ===============
 Version 4.0:
--Added new major questline from Ariosh
+-Added new quests from Ariosh, Rigaldo and Liedel
 -Added new quest alternative for "Order of the Black Lotus"
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
--Added a fighting arena to the guildhall
--Added more background NPCs to the guildhall
+-Added new area "The Fighting Pits" accessed via the Gorgon's Eye hideout
+-Added new area "The Black Market" accessed via the Baldur's Gate thieves guild
+-Added more background NPCs to the Gorgon's Eye hideout
 -Added various quest items and a new weapon "Blackjack"
--Added spells to Ophelia's store
+-Added new thief traps as useable items
+-Added spells to Eurynome's store
 -Added NPC interjections
+-Moved Ophelia and Kageiye's stores to the Black Market area
 -Revised quest progression
 -Revised all dialog
 -Replaced Danika with Naga who now offers temple services

@@ -601,27 +601,173 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",13)~ THEN BEGIN SPICE_11
-   SAY ~I knew takin' on their casinos was a reckless move. Get your gear from Rhade and brace yourself. Tonight's gonna be a bloodbath.~ IF ~~ THEN EXIT
+   SAY ~I knew takin' on their casinos was a reckless move.~ IF ~~ THEN EXIT
 END
+
+
+
+          ////////////////////////////////////////////
+          /////////// Shadows of Knowledge ///////////
+          ////////////////////////////////////////////
+
+
+
+IF ~Global("h_RigaldoQuest","GLOBAL",14)~ THEN BEGIN BOOK_0
+   SAY ~Listen close, my nimble-fingered friend. I've got a job that's got your name written all over it.~ IF ~~ THEN GOTO BOOK_1
+END
+
+IF ~~ THEN BEGIN BOOK_1
+   SAY ~The Avowed, those monks from Candlekeep, sent word through the shadows. Seems they lost something precious, a tome, brimming with knowledge, snatched from under their scholarly noses.~ IF ~~ THEN GOTO BOOK_2
+END
+
+IF ~~ THEN BEGIN BOOK_2
+   SAY ~It was en route to the keep when it went missing, right on the road, no less. They've caught wind of our particular talents, and figure we're just the ones to retrieve it.~ IF ~~ THEN GOTO BOOK_3
+END
+
+IF ~~ THEN BEGIN BOOK_3
+   SAY ~But, they want it handled with utmost discretion. You know how them monks are, don't you?~ IF ~~ THEN GOTO BOOK_4
+END
+
+IF ~~ THEN BEGIN BOOK_4
+   SAY ~'Those who destroy knowledge, with ink, fire, or sword, are themselves destroyed.' Aye, that's their creed.~ IF ~~ THEN GOTO BOOK_5
+END
+
+IF ~~ THEN BEGIN BOOK_5
+   SAY ~Now, here's the kicker. I've heard whispers that you're no stranger to Candlekeep's hallowed halls. That true, eh? Well, you'll understand their ways better than most.~ IF ~~ THEN GOTO BOOK_6
+END
+
+IF ~~ THEN BEGIN BOOK_6
+   SAY ~So, I'm sending you to Baldur's Gate to meet with Ravenscar, leader of the thieves guild there. They've got their ear to the ground, and might just know something about this pilfered tome.~ IF ~~ THEN GOTO BOOK_7
+END
+
+IF ~~ THEN BEGIN BOOK_7
+   SAY ~Get there, have a parley, and see what they know. But remember, discreet as a whisper in the night, that's how we play this one.~
+       ++ ~Do we have any specifics on the stolen tome?~ GOTO BOOK_8
+       +~!Dead("Alatos")~+ ~What can you tell me about Ravenscar and the thieves guild in Baldur's Gate?~ GOTO BOOK_11
+       +~!Dead("Alatos")~+ ~Alright, I'll head to the city and speak with Ravenscar.~ GOTO BOOK_15
+       +~Dead("Alatos")~+ ~Ravenscar is dead. He thought he could pull a fast one on me, but I showed him otherwise.~ GOTO BOOK_16
+END
+
+IF ~~ THEN BEGIN BOOK_8
+   SAY ~They call it, 'Netheril's Grimoire of Lost Arcana'. Fancy title, eh? Sounds like a real doozy.~ IF ~~ THEN GOTO BOOK_9
+END
+
+IF ~~ THEN BEGIN BOOK_9
+   SAY ~As for the guts of it, well, that's where the real treasure hunt begins. We're talkin' arcane tricks, forgotten spells, and maybe even a pinch of Netherese know-how.~ IF ~~ THEN GOTO BOOK_10
+END
+
+IF ~~ THEN BEGIN BOOK_10
+   SAY ~Them monks are sweatin' bullets just thinkin' about it, and for good reason.~
+       +~!Dead("Alatos")~+ ~What can you tell me about Ravenscar and the thieves guild in Baldur's Gate?~ GOTO BOOK_11
+       +~!Dead("Alatos")~+ ~Alright, I'll head to the city and speak with Ravenscar.~ GOTO BOOK_15
+       +~Dead("Alatos")~+ ~Ravenscar is dead. He thought he could pull a fast one on me, but I showed him otherwise.~ GOTO BOOK_16
+END
+
+IF ~~ THEN BEGIN BOOK_11
+   SAY ~They're a savvy bunch. Known for their business sense and sharp wits. They've got their fingers in many a pie, if you catch my drift.~ IF ~~ THEN GOTO BOOK_12
+END
+
+IF ~~ THEN BEGIN BOOK_12
+   SAY ~The guild's been around the block a few times, and they've earned their stripes. Word is, they've got quite the network in the city, keepin' a sharp eye for opportunities just like this one.~ IF ~~ THEN GOTO BOOK_13
+END
+
+IF ~~ THEN BEGIN BOOK_13
+   SAY ~And don't fret about guild rivalries, mate. When you're on Ravenscar's turf, it's neutral ground. They know the value of cooperation in our line of work.~ IF ~~ THEN GOTO BOOK_14
+END
+
+IF ~~ THEN BEGIN BOOK_14
+   SAY ~So, no need for steel to be drawn, if you follow me. Just keep it civil, and you'll come away with the info we need.~
+       ++ ~Do we have any specifics on the stolen tome?~ GOTO BOOK_8
+       +~!Dead("Alatos")~+ ~Alright, I'll head to the city and speak with Ravenscar.~ GOTO BOOK_15
+END
+
+IF ~~ THEN BEGIN BOOK_15
+   SAY ~Remember, keep your wits about you and play it cool. Ravenscar's got a nose for sincerity, and he'll respect a straight shooter.~
+IF ~~ THEN DO ~
+   SetGlobal("h_BookQuest","GLOBAL",1)
+   SetGlobal("h_Ravenscar","GLOBAL",1)
+   AddJournalEntry(@350,QUEST)~ EXIT
+END
+
+IF ~~ THEN BEGIN BOOK_16
+   SAY ~Ye blundering fool! Did you think this was a game? Killing Ravenscar like that... do you have any inkling of the chaos you might have set in motion?~ IF ~~ THEN GOTO BOOK_17
+END
+
+IF ~~ THEN BEGIN BOOK_17
+   SAY ~We walk a fine line in the shadows, and now you've gone and cast a bloody spotlight on us!~ IF ~~ THEN GOTO BOOK_18
+END
+
+IF ~~ THEN BEGIN BOOK_18
+   SAY ~A war between our guilds could rip us apart, and for what? Your impulsive vengeance? Think, damn you!~ IF ~~ THEN GOTO BOOK_19
+END
+
+IF ~~ THEN BEGIN BOOK_19
+   SAY ~Bloody hells... every... every last one of 'em? Are you tellin' me <CHARNAME> single-handedly dismantled Ravenscar's entire operation?~ IF ~~ THEN GOTO BOOK_20
+END
+
+IF ~~ THEN BEGIN BOOK_20
+   SAY ~Maker's mercy... We're treadin' on dangerous ground, Baldwin. We've got a force of nature on our hands, and I fear we're standin' too close to the storm.~ IF ~~ THEN GOTO BOOK_21
+END
+
+IF ~~ THEN BEGIN BOOK_21
+   SAY ~Despite the... circumstances, we can't afford to sit idle. Head to the Gate as planned. See if you can get yourself into the black markets and dig up the whereabouts of that book.~ IF ~~ THEN GOTO BOOK_22
+END
+
+IF ~~ THEN BEGIN BOOK_22
+   SAY ~But be cautious, more than ever. This... power you possess, it's a double-edged dagger, and it can cut both ways.~
+IF ~~ THEN DO ~
+   SetGlobal("h_KilledRavenscar","GLOBAL",1)
+   AddJournalEntry(@351,QUEST)~ EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_BookQuest","GLOBAL",1)~ THEN BEGIN BOOK_23
+   SAY ~Get to Baldur's Gate, meet with Ravenscar, and see what those wily thieves have heard about the 'Netheril's Grimoire of Lost Arcana'.~ IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_KilledRavenscar","GLOBAL",1)~ THEN BEGIN BOOK_24
+   SAY ~Get to Baldur's Gate, and get inside the black markets. See what you can find out about the 'Netheril's Grimoire of Lost Arcana'.~ IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1 ~PartyHasItem("h_misc29")~ THEN BEGIN BOOK_25     
+   SAY ~Alright, back from the shadows, are ya? Got your mitts on that slippery tome or are we still playin' hide and seek?~
+       ++ ~Aye, got it right here. 'Netheril's Grimoire of Lost Arcana', just as you asked.~ DO ~TakePartyItem("h_misc29") DestroyItem("h_misc29")~ GOTO BOOK_26
+END
+
+IF ~~ THEN BEGIN BOOK_26
+   SAY ~Bloody good work, mate. You've done us proud. Those scribes in Candlekeep will be delighted to have it back, after they cough up a hefty finders-fee, of course.~ IF ~~ THEN GOTO BOOK_27
+END
+
+IF ~~ THEN BEGIN BOOK_27
+   SAY ~They've got more coin than sense, if you ask me. Promised a small fortune for this venture. Our coffers will be considerably heavier, thanks to your efforts.~ IF ~~ THEN GOTO BOOK_28
+END
+
+IF ~~ THEN BEGIN BOOK_28
+   SAY ~You've proven yourself as a valuable asset to this guild, and this reward is a testament to that. Take it, use it wisely, and know that you've earned every last bit.~ IF ~~ THEN GOTO BOOK_29
+END
+
+IF ~~ THEN BEGIN BOOK_29
+   SAY ~Our future endeavors together look brighter than ever.~
+IF ~~ THEN DO ~
+   SetGlobal("h_RigaldoQuest","GLOBAL",15)
+   AddJournalEntry(@359,QUEST_DONE)
+   AddExperienceParty(1200)
+   GiveGoldForce(1000)~ EXIT
+END
+
 
 
           /////////////////////////////////
           ////////// Black Lotus //////////
           /////////////////////////////////
 
-//94
-IF ~Global("h_RigaldoQuest","GLOBAL",14)~ THEN BEGIN LOTUS_0
-   SAY ~Nice work taking care of those Shadow Thieves. I know first hand how troublesome they can be.~ IF ~~ THEN EXIT
-END
 
 
-
-                                         //Liedel Bounty 3 GlobalLT("h_ArioshQuest","GLOBAL",22)
-IF ~Global("h_RigaldoQuest","GLOBAL",15) GlobalLT("h_MerediaQuest","GLOBAL",5)~ THEN BEGIN LOTUS_01
+                                         //GlobalLT("h_ArioshQuest","GLOBAL",22)
+IF ~Global("h_RigaldoQuest","GLOBAL",15) GlobalLT("h_MerediaQuest","GLOBAL",5) GlobalLT("h_BountyNumber","GLOBAL",9)~ THEN BEGIN LOTUS_01
    SAY ~No fresh leads at the moment. Have a word with the mates around the guild, they might have a bit of graft for ya.~ IF ~~ THEN EXIT
 END
-                                         //Liedel Bounty 3 Global("h_ArioshQuest","GLOBAL",22)
-IF ~Global("h_RigaldoQuest","GLOBAL",15) Global("h_MerediaQuest","GLOBAL",5)~ THEN BEGIN LOTUS_1
+                                         //Global("h_ArioshQuest","GLOBAL",22)
+IF ~Global("h_RigaldoQuest","GLOBAL",15) Global("h_MerediaQuest","GLOBAL",5) Global("h_BountyNumber","GLOBAL",9)~ THEN BEGIN LOTUS_1
    SAY ~I've got a new job for ya. We're gonna be moving some gear into Amn.~ IF ~~ THEN GOTO LOTUS_2
 END
 

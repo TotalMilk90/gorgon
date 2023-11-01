@@ -5,6 +5,7 @@ THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)
                  SetGlobal("h_BeatKhalid","GLOBAL",1)
+                 Continue()
 END
 
 IF
@@ -14,6 +15,7 @@ THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)
                  SetGlobal("h_BeatGrom","GLOBAL",1)
+                 Continue()
 END
 
 IF
@@ -23,6 +25,7 @@ THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)
                  SetGlobal("h_BeatLyria","GLOBAL",1)
+                 Continue()
 END
 
 IF
@@ -32,6 +35,7 @@ THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)
                  SetGlobal("h_BeatSerra","GLOBAL",1)
+                 Continue()
 END
 
 IF
@@ -41,4 +45,15 @@ THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)
                  SetGlobal("h_BeatRoran","GLOBAL",1)
+                 Continue()
+END
+
+IF
+        Dead("h_islacc")
+        Global("h_BeatIsla","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dead2c",[438.403],SE)
+                 SetGlobal("h_BeatIsla","GLOBAL",1)
+                 Continue()
 END

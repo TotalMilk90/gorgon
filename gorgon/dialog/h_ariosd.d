@@ -112,6 +112,7 @@ IF ~~ THEN BEGIN FIRST_6
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",3)
    SetGlobal("h_EndParty","GLOBAL",1)
+   SetGlobal("h_DrunkBrawl","GLOBAL",3)
    AddJournalEntry(@514,QUEST_DONE)
    TakePartyItem("h_misc19")
    TakePartyItem("h_misc20")
@@ -126,6 +127,7 @@ IF ~~ THEN BEGIN FIRST_7
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",3)
    SetGlobal("h_EndParty","GLOBAL",1)
+   SetGlobal("h_DrunkBrawl","GLOBAL",3)
    AddJournalEntry(@515,QUEST_DONE)
    TakePartyItem("h_misc19")
    TakePartyItem("h_misc20")
@@ -144,6 +146,7 @@ IF ~~ THEN BEGIN FIRST_9
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",3)
    SetGlobal("h_EndParty","GLOBAL",1)
+   SetGlobal("h_DrunkBrawl","GLOBAL",3)
    AddJournalEntry(@509,QUEST_DONE)~ EXIT
 END
     
@@ -665,6 +668,10 @@ IF ~~ THEN DO ~
       AddJournalEntry(@539,QUEST_DONE)
       AddExperienceParty(800)
       GiveGoldForce(400)~ EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_ArioshQuest","GLOBAL",14) Dead("blacklily")~ THEN BEGIN GAMEOVER
+   SAY ~Aye, it seems we've underestimated this Inspector. Keep your ears to the ground. We need to get inside his head, find his weaknesses, and turn the tables in our favor.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",14)~ THEN BEGIN SEV_0

@@ -226,6 +226,7 @@ THEN
          RESPONSE #100
                   SetGlobal("h_SpawnVelera","GLOBAL",1)
                   AddJournalEntry(@525,QUEST)
+                  Continue()
 END
 
 IF
@@ -251,7 +252,7 @@ THEN
                   SetGlobal("h_DestroyNote","GLOBAL",2)
                   ActionOverride("Container 9",DestroyItem("h_misc22"))
                   Continue()
-END 
+END
 
 IF
          Global("h_SpawnBarth","GLOBAL",1)
@@ -315,6 +316,7 @@ THEN
          RESPONSE #100
                   AddJournalEntry(@553,QUEST)
                   SetGlobal("h_ClareTalk","GLOBAL",2)
+                  Continue()
 END
 
 IF
@@ -359,4 +361,5 @@ THEN
 	RESPONSE #100
 		 CreateCreature("h_whitec",[2294.2192],SW)
 		 SetGlobal("h_HideWhitewood","GLOBAL",3)
+		 Continue()
 END

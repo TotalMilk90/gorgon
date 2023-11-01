@@ -13,13 +13,13 @@ IF ~  RandomNum(3,1)
 END
 
 IF ~~ THEN BEGIN 1
-  SAY ~The Lady smiles upon you! I take your 10 gold and you get 200!~
+  SAY ~The Lady smiles upon you! I take your 100 gold and you get 200!~
   IF ~~ THEN DO ~GiveGoldForce(200)
 ~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
-  SAY ~The Lady smiles upon you! I take your 20 gold and you get 400!~
+  SAY ~The Lady smiles upon you! I take your 250 gold and you get 500!~
   IF ~~ THEN DO ~GiveGoldForce(500)
 ~ EXIT
 END

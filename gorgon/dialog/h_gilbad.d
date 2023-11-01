@@ -70,6 +70,7 @@ CHAIN
 ~Feel free to give that rat a one-way ticket to the Reaper.~
    DO ~
       SetGlobal("h_GilbaldQuest","GLOBAL",2)
+      SetGlobal("h_SpawnMaid","GLOBAL",1)
       AddJournalEntry(@610,QUEST)~
 EXIT
 

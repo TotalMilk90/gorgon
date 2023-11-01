@@ -1,0 +1,10 @@
+IF
+         Global("h_SpawnVelendra","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_velenc",[339.650],SE)
+                  CreateCreature("h_thaldc",[384.676],NW)
+                  SetGlobal("h_SpawnVelendra","GLOBAL",2)
+                  Continue()
+END

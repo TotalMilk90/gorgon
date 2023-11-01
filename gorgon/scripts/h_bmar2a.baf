@@ -1,0 +1,12 @@
+IF
+        Global("h_SpawnBM2","GLOBAL",0)
+THEN
+        RESPONSE #100
+                 CreateCreature("h_cour2c",[256.225],S)
+                 CreateCreature("h_cour2c",[217.192],S)
+                 CreateCreature("h_cour2c",[297.192],S)
+                 CreateCreature("h_islacc",[89.287],E)
+                 CreateCreature("h_sorenc",[425.270],W)
+                 SetGlobal("h_SpawnBM2","GLOBAL",1)
+                 Continue()
+END

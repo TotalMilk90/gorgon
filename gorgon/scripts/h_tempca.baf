@@ -22,4 +22,5 @@ IF
 THEN
          RESPONSE #100
                   AddJournalEntry(@557,QUEST)
+                  Continue()
 END

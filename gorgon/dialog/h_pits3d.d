@@ -141,3 +141,19 @@ END
 IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 25
    SAY ~You did it! You took down Roran! That's no small feat, let me tell you. You're amazing! Keep honing those skills, and who knows what you might achieve.~ IF ~~ THEN EXIT
 END
+
+IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 26
+   SAY ~I can't believe Isla's back in the pits, and for a deathmatch no less. She's a legend, you know? I've looked up to her for as long as I can remember. It's an honor to even share the arena with her.~ IF ~~ THEN GOTO 27
+END
+
+IF ~~ THEN BEGIN 27
+   SAY ~As for you, well, you've certainly proven yourself, but facing Isla... That's a whole different league. Just be cautious and fight smart. She's got tricks up her sleeve that you've never seen before.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 28
+   SAY ~Death in the pits is a harsh reality, and you faced it head-on. Isla chose this path, as do we all when we step into this arena.~ IF ~~ THEN GOTO 29
+END
+
+IF ~~ THEN BEGIN 29
+   SAY ~It's a testament to your strength, whether it sits heavy on your conscience or not.~ IF ~~ THEN EXIT
+END

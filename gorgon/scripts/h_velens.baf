@@ -1,0 +1,20 @@
+IF
+	See([PC])
+	Global("h_SorenQuest","GLOBAL",1)
+THEN
+	RESPONSE #100
+	         FaceObject([PC])
+	         Wait(1)
+		 StartDialog("h_velend",[PC])
+END
+
+IF
+	!See([PC])
+        Detect([PC])
+	Global("h_SorenQuest","GLOBAL",1)
+THEN
+	RESPONSE #100
+	         SetGlobal("h_SorenQuest","GLOBAL",2)
+	         Wait(2)
+		 StartDialog("h_velend","h_thaldc")
+END

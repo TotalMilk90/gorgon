@@ -82,3 +82,11 @@ THEN
                   Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
+
+IF
+         Global("h_BeatIsla","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END

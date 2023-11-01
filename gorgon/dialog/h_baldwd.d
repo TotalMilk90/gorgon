@@ -374,7 +374,6 @@ IF ~~ THEN BEGIN NAGATE_7
 IF ~~ THEN DO ~
    SetGlobal("h_GuildMusic","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",6)
-   SetGlobal("h_RigaldoQuest","GLOBAL",14)
    SetGlobal("h_SpawnNagate","GLOBAL",1)
    SetGlobal("h_ShadowWar","GLOBAL",3)
    SetGlobal("h_HideWhitewood","GLOBAL",2)
@@ -474,9 +473,10 @@ IF ~~ THEN BEGIN THAMUZ_12
    SAY ~Carry on. You are dismissed.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
-   SetGlobal("h_RigaldoQuest","GLOBAL",15)
+   SetGlobal("h_RigaldoQuest","GLOBAL",14)
    SetGlobal("h_SecondRiddle","GLOBAL",1)
    SetGlobal("h_MerediaQuest","GLOBAL",1)
+   SetGlobal("h_LiedelQuest","GLOBAL",5)
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")

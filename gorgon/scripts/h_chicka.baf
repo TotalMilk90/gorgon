@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnAlaric","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_alaric",[671.255],NE)
+                 SetGlobal("h_SpawnAlaric","GLOBAL",1)
+                 Continue()
+END

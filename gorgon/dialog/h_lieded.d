@@ -294,7 +294,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN KATREDA_3
-   SAY ~No prizemoney for this job, love. Communcation with Asnable went silent. The dryad must have made her move. Were you involved in this somehow?~
+   SAY ~No prizemoney for this job, love. Communcation with Asnabel went silent. The dryad must have made her move. Were you involved in this somehow?~
 IF ~~ THEN DO ~
    SetGlobal("h_KatredaBounty","GLOBAL",6)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
@@ -350,15 +350,208 @@ IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6)~ THEN
    SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, <CHARNAME>?~  IF ~~ THEN EXIT
 END
 
+IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN THIRD_0
+   SAY ~Finally, something to stir the pot and break this tiresome routine. There's a fresh batch of bounties ripe for the picking. Are you up for a little excitement, love?~
+       ++ ~What targets do you have for me?~ GOTO THIRD_1
+       ++ ~I'll have to pass for now.~ EXIT
+END
+
+IF ~~ THEN BEGIN THIRD_1
+   SAY ~First up, an alchemist, Alaric, who claims to have developed a cure for featherlung, a fast spreading disease that recently devastated the city of Procampur.~ IF ~~ THEN GOTO THIRD_2
+END
+
+IF ~~ THEN BEGIN THIRD_2
+   SAY ~This cure is drawing attention from all corners of the realms. Most wanting the serum in their own hands with the alchemist forever silenced.~ IF ~~ THEN GOTO THIRD_3
+END
+
+IF ~~ THEN BEGIN THIRD_3
+   SAY ~There are priests from the temples who want it for the good of the people, and there are merchants who forsee a fortune to be made.~ IF ~~ THEN GOTO THIRD_4
+END
+
+IF ~~ THEN BEGIN THIRD_4
+   SAY ~Now, my suggestion? We sell it to the merchants. They'll pay top coin, and we could use a windfall like that, don't you think?~ IF ~~ THEN GOTO THIRD_5
+END
+
+IF ~~ THEN BEGIN THIRD_5
+   SAY ~They say Alaric's got a workshop somewhere in the market district of Baldur's Gate. A place packed full of his lab 'rats' or whatever creatures he's been using for his experiments.~ IF ~~ THEN GOTO THIRD_6
+END
+
+IF ~~ THEN BEGIN THIRD_6
+   SAY ~Now, onto our next mark, Lord Varlind, one of Grand Duke Belt's closest advisors.~ IF ~~ THEN GOTO THIRD_7
+END
+
+IF ~~ THEN BEGIN THIRD_7
+   SAY ~There's more to this story than meets the eye. Varlind has been a shadow behind the throne for years, keeping Belt wrapped around his finger, but now, his politcal peers want him out of the way.~ IF ~~ THEN GOTO THIRD_8
+END
+
+IF ~~ THEN BEGIN THIRD_8
+   SAY ~You'll find him 'holding court' at the opulent Helm and Cloak.~ IF ~~ THEN GOTO THIRD_9
+END
+
+IF ~~ THEN BEGIN THIRD_9
+   SAY ~This one's got layers, <CHARNAME>, and I'm sure you'll find the challenge quite... intriguing.~ IF ~~ THEN GOTO THIRD_10
+END
+
+IF ~~ THEN BEGIN THIRD_10
+   SAY ~And lastly, there's Isla Darkcloak, the former champion of the Fighting Pits.~ IF ~~ THEN GOTO THIRD_11
+END
+
+IF ~~ THEN BEGIN THIRD_11
+   SAY ~She's quite the legend in her own right, <CHARNAME>. Yet, they say she grew bored of the arena, where victory was almost guaranteed for her. A sentiment I can understand too well.~ IF ~~ THEN GOTO THIRD_12
+END
+
+IF ~~ THEN BEGIN THIRD_12
+   SAY ~Now, she's turned her talents to a different kind of fight, as a ruthless assassin and mercenary.~ IF ~~ THEN GOTO THIRD_13
+END
+
+IF ~~ THEN BEGIN THIRD_13
+   SAY ~Trouble is, her efficiency has earned her some powerful enemies who've decided it's time to put an end to her reign.~ IF ~~ THEN GOTO THIRD_14
+END
+
+IF ~~ THEN BEGIN THIRD_14
+   SAY ~Tracking her down won't be a walk in the park. Isla's become quite elusive.~ IF ~~ THEN GOTO THIRD_15
+END
+
+IF ~~ THEN BEGIN THIRD_15
+   SAY ~I'd suggest you start by talking to some professionals like us, <CHARNAME>. People who reside in Baldur's Gate, who know the underbelly well.~ IF ~~ THEN GOTO THIRD_16
+END
+
+IF ~~ THEN BEGIN THIRD_16
+   SAY ~Well, my love, it seems the stage is set for quite the performance. Three intriguing pieces on this wicked chessboard.~ IF ~~ THEN GOTO THIRD_17
+END
+
+IF ~~ THEN BEGIN THIRD_17
+   SAY ~You've got choices to make, and each one is bound to leave its mark. Play your cards right, and you'll walk away from this with pockets full and a reputation that'll set hearts aflutter.~
+IF ~~ THEN DO ~
+   SetGlobal("h_LiedelQuest","GLOBAL",6)
+   SetGlobal("h_SpawnAlaric","GLOBAL",1)
+   SetGlobal("h_SpawnVarlind","GLOBAL",1)
+   SetGlobal("h_IslaBounty","GLOBAL",1)
+   AddJournalEntry(@447,QUEST)
+   AddJournalEntry(@452,QUEST)
+   AddJournalEntry(@457,QUEST)~ EXIT
+END
 
 
+IF ~Global("h_LiedelQuest","GLOBAL",6) GlobalLT("h_BountyNumber","GLOBAL",9)~ THEN BEGIN BOUNTY_2
+   SAY ~You have my attention, love. I'm ready to savor the secrets that dance upon your lips.~
+       +~PartyHasItem("h_misc30")~+ ~I am here regarding the bounty on Alaric.~ GOTO ALA_1
+       +~Dead("h_varlic")~+ ~I am here regarding the bounty on Lord Varlind.~ GOTO VAR_1
+       +~Global("h_VarlindBounty","GLOBAL",1)~+ ~I am here regarding the bounty on Lord Varlind.~ GOTO VAR_3
+       +~Global("h_IslaBounty","GLOBAL",2)~+ ~I am here regarding the bounty on Isla.~ GOTO ISLA_1
+       ++ ~Nothing to report as of yet.~ EXIT
+END
+
+IF ~~ THEN BEGIN ALA_1
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~He's been... taken care of, and the serum is now in my hands.~ GOTO ALA_2
+END
+
+IF ~~ THEN BEGIN ALA_2
+   SAY ~Impressive work, <CHARNAME>. You've proven yourself once again.~ IF ~~ THEN GOTO ALA_3
+END
+
+IF ~~ THEN BEGIN ALA_3
+   SAY ~The featherlung serum is now yours to command, you've earned the right to decide its fate.~ IF ~~ THEN GOTO ALA_4
+END
+
+IF ~~ THEN BEGIN ALA_4
+   SAY ~Shall we take it to the healers, potentially saving countless lives? Or will we sell it to the merchants, securing a handsome reward for yourself and the guild?~ IF ~~ THEN GOTO ALA_5
+END
+
+IF ~~ THEN BEGIN ALA_5
+   SAY ~The choice, my dear, is entirely yours.~
+       ++ ~The healers should have the serum. It's the right thing to do.~ GOTO ALA_6
+       ++ ~The merchants will pay handsomely for this serum. It's a business decision, and I choose them.~ GOTO ALA_8
+END
+
+IF ~~ THEN BEGIN ALA_6
+   SAY ~Well, if that's your... sentiment. I suppose it's your call. The healers will have their precious serum. It's not the route I'd choose, mind you, but I can respect your decision.~ IF ~~ THEN GOTO ALA_7
+END
+
+IF ~~ THEN BEGIN ALA_7
+   SAY ~The coin they offer won't be near what the merchants would have paid. Altruism, while commendable in its own way, rarely lines one's pockets as generously.~
+IF ~~ THEN DO ~
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   TakePartyItem("h_misc30")
+   DestroyItem("h_misc30")
+   GiveGoldForce(500)
+   AddExperienceParty(900)
+   ReputationInc(1)
+   AddJournalEntry(@450,QUEST_DONE)~ EXIT
+END
+
+IF ~~ THEN BEGIN ALA_8
+   SAY ~Ah, the merchants, <CHARNAME>... Now that's a choice I can truly appreciate. Practical, strategic, and lucrative. You've certainly piqued my interest.~ IF ~~ THEN GOTO ALA_9
+END
+
+IF ~~ THEN BEGIN ALA_9
+   SAY ~The coin they offer will be substantial, I assure you. You've got a keen eye for profit, and I must say, it's rather... enticing.~
+IF ~~ THEN DO ~
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   TakePartyItem("h_misc30")
+   DestroyItem("h_misc30")
+   GiveGoldForce(1000)
+   AddExperienceParty(900)
+   ReputationInc(-1)
+   AddJournalEntry(@451,QUEST_DONE)~ EXIT
+END
+
+IF ~~ THEN BEGIN VAR_1
+   SAY ~Pray, what news have you surely uncovered for my eager ears?~
+       ++ ~Consider his chapter closed. The city's landscape may shift, but my coin purse will grow heavier.~ GOTO VAR_2
+END
+
+IF ~~ THEN BEGIN VAR_2
+   SAY ~Impressive work, love. Varlind's absence won't go unnoticed, that's for sure. Here's your well-deserved reward, 500 gold coins, as per our usual arrangement.~
+IF ~~ THEN DO ~
+   SetGlobal("h_VarlindBounty","GLOBAL",2)
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   GiveGoldForce(500)
+   AddExperienceParty(900)
+   AddJournalEntry(@455,QUEST_DONE)~ EXIT
+END
+
+IF ~~ THEN BEGIN VAR_3
+   SAY ~Well, you're a tad late, I'm afraid. His fate has been sealed by another hand.~ IF ~~ THEN GOTO VAR_4
+END
+
+IF ~~ THEN BEGIN VAR_4
+   SAY ~His body was found, lifeless, and washed up at the city's docks. Sorry love, seems someone else was faster on the draw.~
+IF ~~ THEN DO ~
+   SetGlobal("h_VarlindBounty","GLOBAL",2)
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   AddExperienceParty(900)
+   AddJournalEntry(@456,QUEST_DONE)~ EXIT
+END
+
+IF ~~ THEN BEGIN ISLA_1
+   SAY ~My, my... I must admit, watching you fight has ignited a certain fire within me. You've proven to be quite the captivating champion, and I seem to find myself drawn to your strength and prowess.~ IF ~~ THEN GOTO ISLA_2
+END
+
+IF ~~ THEN BEGIN ISLA_2
+   SAY ~There's a certain... allure to a warrior like yourself. Perhaps we could find other ways to satisfy our mutual appetites for excitement and danger. What do you say, my champion?~ IF ~~ THEN GOTO ISLA_3
+END
+
+IF ~~ THEN BEGIN ISLA_3
+   SAY ~Here is your reward, 500 gold coins, you've certainly earned it. But I must say, I believe you deserve something a bit more... special.~ IF ~~ THEN GOTO ISLA_4
+END
+
+IF ~~ THEN BEGIN ISLA_4
+   SAY ~Return to me when you're ready for a truly unforgettable experience. Until then, savor your victory in the pits.~
+IF ~~ THEN DO ~
+   SetGlobal("h_IslaBounty","GLOBAL",3)
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   AddExperienceParty(900)
+   AddJournalEntry(@461,QUEST_DONE)~ EXIT
+END
 
 
+IF ~Global("h_LiedelQuest","GLOBAL",6) Global("h_BountyNumber","GLOBAL",9)~ THEN BEGIN BOUNTY_2
+   SAY ~This lull in excitement leaves me yearning for more... stimulating activities. Perhaps you could find a way to inject a bit of excitement back into my day, <CHARNAME>?~ IF ~~ THEN EXIT
+END
 
-
-
-
-IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN FINAL_0
+IF ~Global("h_LiedelQuest","GLOBAL",7)~ THEN BEGIN FINAL_0
    SAY ~Well, well, look at you, <CHARNAME>. The new guildmaster, no less. I must admit, power does have its allure. Impressive work, love.~ IF ~~ THEN EXIT
 END
 
@@ -371,13 +564,6 @@ IF ~~ THEN BEGIN BETRAY_2
 IF ~~ THEN DO ~
    EscapeArea()~ EXIT
 END
-
-
-
-
-
-
-
 
 
 CHAIN

@@ -7,6 +7,24 @@ END
 IF ~Global("h_FightingPits","GLOBAL",1)~ THEN BEGIN 1
    SAY ~You must be the new blood, eh? Welcome to the pits. I'm Diomedes, and this here is my esteemed companion, Shadow. Don't let her charming looks fool ya, she's got a keen eye for a good fight.~
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
+       ++ ~Who is the current champion of the arena?~ GOTO A0
+       ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
+       ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
+       +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
+       ++ ~I'll be going now.~ EXIT
+END
+
+IF ~~ THEN BEGIN A0
+   SAY ~Champion of the arena, a title not easily won or kept. Currently, it's held by Roran, a ruthless fighter who crushes his opponents without mercy.~ IF ~~ THEN GOTO A1
+END
+
+IF ~~ THEN BEGIN A1
+   SAY ~And before him, there was Isla, a legend in her own right. She was a force to be reckoned with, combining strength and technique in a way I've seldom seen.~ IF ~~ THEN GOTO A2
+END
+
+IF ~~ THEN BEGIN A2
+   SAY ~Now, she's retired, leaving behind a legacy that's hard to match. If you aim to challenge Roran, you'll need to be prepared for a brutal fight.~
+       +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
        ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
@@ -24,6 +42,7 @@ END
 IF ~~ THEN BEGIN 4
    SAY ~She's got a keen sense for danger, that one. Saved my hide more times than I can count. In a way, she's the true heart of these pits, always watchful, always alert.~
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
+       ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
@@ -40,6 +59,7 @@ END
 IF ~~ THEN BEGIN 7
    SAY ~Established guild members also come down to hone their skills, and learn a thing or two from my fighters. Combat training, discipline, and a taste for blood. It's all forged right here.~
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
+       ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
@@ -55,6 +75,7 @@ END
 
 IF ~~ THEN BEGIN 10
    SAY ~We forge strength, sharpen minds, and temper spirits. It's more than just a stage for combat. It's where we find our true selves, and learn what we're truly capable of.~
+       ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
        ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
@@ -202,5 +223,57 @@ END
 IF ~~ THEN BEGIN 35
    SAY ~She left it all behind, vanished into the shadows. Finding her won't be easy, but if you're set on proving yourself, she's the one you'll have to convince.~
 IF ~~ THEN DO ~
+   SetGlobal("h_PitsChamp","GLOBAL",1)
    AddJournalEntry(@816,QUEST_DONE)~ EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 36
+   SAY ~By the gods, you've done the impossible! You've managed to convince Isla to return to the arena! I never thought I'd see this day.~ IF ~~ THEN GOTO 37
+END
+
+IF ~~ THEN BEGIN 37
+   SAY ~It's been years since I've allowed deathmatchs in these pits, but for two champions of this caliber... it's an opportunity too grand to pass up.~ IF ~~ THEN GOTO 38
+END
+
+IF ~~ THEN BEGIN 38
+   SAY ~This will be a battle for the ages, a clash that will echo through the annals of pit-fighting history.~ IF ~~ THEN GOTO 39
+END
+
+IF ~~ THEN BEGIN 39
+   SAY ~When you're ready, champion, just say the word, and we'll make our way to the arena. The pits are waiting, and so is Isla. This is history in the making.~
+       ++ ~I'm ready, Diomedes.~ DO ~SetGlobal("h_PitsFight","GLOBAL",10)~ GOTO 40
+       ++ ~I need a litte more time to prepare.~ EXIT
+END
+
+IF ~~ THEN BEGIN 40
+   SAY ~Remember, champion, this is a fight to the end. Show the world your true abilities.~
+IF ~~ THEN DO ~
+   ClearAllActions()
+   StartCutSceneMode()
+   StartCutScene("h_pi6cut")~ EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_BeatIsla","GLOBAL",2)~ THEN BEGIN 41
+   SAY ~Well, I'll be damned. You came into these pits a mystery, a nobody. Look at you now. You've climbed the ranks, defeated some of the toughest fighters around, and even took down Isla herself.~ IF ~~ THEN GOTO 42
+END
+
+IF ~~ THEN BEGIN 42
+   SAY ~You're not just a champion, my friend. You're a legend. And that's not something I say lightly. Here's your well-deserved prize money. You've earned every coin.~ IF ~~ THEN GOTO 43
+END
+
+IF ~~ THEN BEGIN 43
+   SAY ~Wear your title with pride, Champion. The pits will never forget your name.~ IF ~~ THEN EXIT
+IF ~~ THEN DO ~
+   SetGlobal("h_BeatIsla","GLOBAL",3)
+   AddJournalEntry(@460,QUEST)
+   AddExperienceParty(2000)
+   GiveGoldForce(2000)~ EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 44
+   SAY ~Remember, champion, you've etched your name into the history of these pits. The legend of your triumph will echo through the ages.~ IF ~~ THEN GOTO 45
+END
+
+IF ~~ THEN BEGIN 45
+   SAY ~Take your spoils and wear your title with pride. Until we meet again in the arena!~ IF ~~ THEN EXIT
 END

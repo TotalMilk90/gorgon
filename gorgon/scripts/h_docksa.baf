@@ -1,0 +1,22 @@
+IF
+        TimeOfDay(NIGHT)
+        Global("h_SpawnDorian","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_doriac",[925.3085],S)
+                 CreateCreature("h_silasc",[918.3127],N)
+                 SetGlobal("h_SpawnDorian","GLOBAL",2)
+                 Continue()
+END
+
+IF
+         PartyHasItem("h_misc29")
+         Global("h_RigaldoQuest","GLOBAL",14)
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@528,QUEST)
+                  SetGlobal("h_BookQuest","GLOBAL",2)
+                  SetGlobal("h_KilledRavenscar","GLOBAL",2)
+                  Continue()
+END

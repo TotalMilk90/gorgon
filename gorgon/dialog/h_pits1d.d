@@ -162,5 +162,21 @@ IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 28
    SAY ~By the gods, you've done it! You bested Roran, the reigning champion! Your mastery over ki is truly something to behold. You've certainly earned your place among the best in the pits.~ IF ~~ THEN EXIT
 END
 
+IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 29
+   SAY ~Isla's return... It troubles my heart. I believe all life is sacred, and such fights go against the teachings I hold dear.~ IF ~~ THEN GOTO 30
+END
+
+IF ~~ THEN BEGIN 30
+   SAY ~You must approach this with wisdom and caution, my friend. May you find a way to resolve this without unnecessary loss.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 31
+   SAY ~I cannot condone the taking of a life, even in the heat of battle. It saddens me to see such an end, but I understand that the pits have their own way of settling disputes.~ IF ~~ THEN GOTO 32
+END
+
+IF ~~ THEN BEGIN 32
+   SAY ~Your skill is undeniable, and it is clear you possess a strength that cannot be ignored.~ IF ~~ THEN EXIT
+END
+
 
 

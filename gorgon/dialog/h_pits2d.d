@@ -119,7 +119,7 @@ IF ~Global("h_BeatLyria","GLOBAL",2)~ THEN BEGIN 20
 END
 
 IF ~Global("h_BeatSerra","GLOBAL",2)~ THEN BEGIN 21
-   SAY ~Hah! You've got some fight in you! I've tangoed with Serra a time or two doing our trials in the North, and she's no pushover. You're starting to make a name for yourself here.~
+   SAY ~You've got some fight in you. I've tangoed with Serra a time or two doing our trials in the North, and she's no pushover. You're starting to make a name for yourself here.~
        ++ ~Grom, tell me about your history. What's your story?~ GOTO 1
        ++ ~What can you tell me about the pits? Any hard-earned lessons you'd be willing to share?~ GOTO 8
        ++ ~I see you fight with a two-handed weapon. What led you to favor that style?~ GOTO 11
@@ -127,5 +127,21 @@ IF ~Global("h_BeatSerra","GLOBAL",2)~ THEN BEGIN 21
 END
 
 IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 22
-   SAY ~Ha! Roran's been dethroned! You've got some real strength in those bones of yours. If anyone stands a chance against Isla, it's you.~ IF ~~ THEN EXIT
+   SAY ~Hah! Roran's been dethroned! You've got some real strength in those bones of yours. If anyone stands a chance against Isla, it's you.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 23
+   SAY ~Hah! Isla's returned, and she's not here for a friendly spar. This is gonna be a fight to remember!~ IF ~~ THEN GOTO 24
+END
+
+IF ~~ THEN BEGIN 24
+   SAY ~You've got your work cut out for you, but I know you're up for the challenge. Embrace the battle, my friend. It's what we live for!~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 25
+   SAY ~Brutal and unforgiving, just the way a fight should be. You've proven yourself as a force to be reckoned with.~ IF ~~ THEN GOTO 26
+END
+
+IF ~~ THEN BEGIN 26
+   SAY ~Isla was a legend, and you've etched your name beside hers in the blood-soaked sands.~ IF ~~ THEN EXIT
 END

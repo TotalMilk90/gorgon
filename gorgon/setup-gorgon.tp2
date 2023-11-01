@@ -141,6 +141,19 @@ COMPILE ~gorgon/dialog/h_pits2d.d~
 COMPILE ~gorgon/dialog/h_pits3d.d~
 COMPILE ~gorgon/dialog/h_pits4d.d~
 COMPILE ~gorgon/dialog/h_pits5d.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/h_ravend.d~
+COMPILE ~gorgon/dialog/h_sorend.d~
+COMPILE ~gorgon/dialog/h_thalid.d~
+COMPILE ~gorgon/dialog/h_isladd.d~
+COMPILE ~gorgon/dialog/h_bmarkd.d~
+COMPILE ~gorgon/dialog/h_bmar2d.d~
+COMPILE ~gorgon/dialog/h_bmar3d.d~
+COMPILE ~gorgon/dialog/h_thaldd.d~
+COMPILE ~gorgon/dialog/h_velend.d~
+COMPILE ~gorgon/dialog/h_silasd.d~
+COMPILE ~gorgon/dialog/h_doriad.d~
+COMPILE ~gorgon/dialog/h_alarid.d~
+COMPILE ~gorgon/dialog/h_varlid.d~
 
 // Creature Scripts
 
@@ -211,6 +224,9 @@ COMPILE ~gorgon/scripts/h_pi5cut.baf~
 COMPILE ~gorgon/scripts/h_dead2s.baf~
 COMPILE ~gorgon/scripts/h_pits1s.baf~
 COMPILE ~gorgon/scripts/h_pigcut.baf~
+COMPILE ~gorgon/scripts/h_velens.baf~
+COMPILE ~gorgon/scripts/h_dorias.baf~
+
 
 // Area Scripts
 
@@ -237,9 +253,14 @@ EXTEND_TOP ~%area_prefix%3304.bcs~ ~gorgon/scripts/h_joviaa.baf~
 EXTEND_TOP ~%area_prefix%3400.bcs~ ~gorgon/scripts/h_tempca.baf~
 EXTEND_TOP ~%area_prefix%4901.bcs~ ~gorgon/scripts/h_ctenta.baf~
 EXTEND_TOP ~%area_prefix%4810.bcs~ ~gorgon/scripts/h_amnbaa.baf~
-EXTEND_TOP ~%area_prefix%4905.bcs~ ~gorgon/scripts/h_potena.baf~ 
+EXTEND_TOP ~%area_prefix%4905.bcs~ ~gorgon/scripts/h_potena.baf~
 EXTEND_TOP ~%area_prefix%4805.bcs~ ~gorgon/scripts/h_nam2fa.baf~
 EXTEND_TOP ~%area_prefix%4801.bcs~ ~gorgon/scripts/h_nashia.baf~
+EXTEND_TOP ~%area_prefix%0153.bcs~ ~gorgon/scripts/h_ravena.baf~
+EXTEND_TOP ~%area_prefix%0171.bcs~ ~gorgon/scripts/h_keex2a.baf~
+EXTEND_TOP ~%area_prefix%1200.bcs~ ~gorgon/scripts/h_docksa.baf~
+EXTEND_TOP ~%area_prefix%0721.bcs~ ~gorgon/scripts/h_chicka.baf~
+EXTEND_TOP ~%area_prefix%0117.bcs~ ~gorgon/scripts/h_helm2a.baf~
 
 // New Areas
 
@@ -262,8 +283,23 @@ COPY ~gorgon/areas/h_fpitsa.are~ ~override~
      PATCH_IF (isEET == 1) BEGIN
           WRITE_ASCII 0x8 ~BG1002~ //update WED resource filename
      END
+     
+COMPILE ~gorgon/scripts/h_bmarka.baf~
+COPY ~gorgon/areas/h_bmarka.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          WRITE_ASCII 0x8 ~BG0726~ //update WED resource filename
+     END
+     
+COMPILE ~gorgon/scripts/h_bmar2a.baf~
+COPY ~gorgon/areas/h_bmar2a.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          WRITE_ASCII 0x8 ~BG0726~ //update WED resource filename
+     END
 
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_flamea.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_fpitsa.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_bmarka.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_bmar2a.baf~
 
 // Music
 
@@ -300,6 +336,8 @@ COPY ~gorgon/portraits/h_zedapp.bmp~ ~override~
 
 //   New BAMs
 
+COPY ~gorgon/bam~ ~override~
+/*
 COPY ~gorgon/bam/h_arow1b.bam~ ~override~
 COPY ~gorgon/bam/h_bolt1b.bam~ ~override~
 COPY ~gorgon/bam/h_bolt2b.bam~ ~override~
@@ -322,7 +360,7 @@ COPY ~gorgon/bam/h_blun1b.bam~ ~override~
 COPY ~gorgon/bam/h_blun1d.bam~ ~override~
 COPY ~gorgon/bam/h_mis21b.bam~ ~override~
 COPY ~gorgon/bam/h_duesbb.bam~ ~override~
-
+*/
 //   Add entrance to area file
 
 COPY_EXISTING ~%area_prefix%3300.are~ ~override~
@@ -393,7 +431,7 @@ COPY_EXISTING ~GAMES5.cre~ ~override~
 
 COPY ~gorgon/stores~ ~override~
 
-// New Spells(For potions)
+// New Spells
 
 COPY ~gorgon/spells~ ~override~
 COPY ~gorgon/eff~ ~override~
@@ -819,6 +857,56 @@ COPY ~gorgon/items/h_misc28.itm~ ~override/h_misc28.itm~      // Coin Purse
      SAY NAME2 @125
      SAY UNIDENTIFIED_DESC @126
      SAY DESC @126
+     
+COPY ~gorgon/items/h_trap01.itm~ ~override/h_trap01.itm~      // Piercing Trap
+     SAY NAME1 @127
+     SAY NAME2 @127
+     SAY UNIDENTIFIED_DESC @128
+     SAY DESC @128
+
+COPY ~gorgon/items/h_trap02.itm~ ~override/h_trap02.itm~      // Poison Trap
+     SAY NAME1 @129
+     SAY NAME2 @129
+     SAY UNIDENTIFIED_DESC @130
+     SAY DESC @130
+
+COPY ~gorgon/items/h_trap03.itm~ ~override/h_trap03.itm~      // Incendiary Trap
+     SAY NAME1 @131
+     SAY NAME2 @131
+     SAY UNIDENTIFIED_DESC @132
+     SAY DESC @132
+     
+COPY ~gorgon/items/h_trap04.itm~ ~override/h_trap04.itm~      // Elemental Trap
+     SAY NAME1 @133
+     SAY NAME2 @133
+     SAY UNIDENTIFIED_DESC @134
+     SAY DESC @134
+
+COPY ~gorgon/items/h_trap05.itm~ ~override/h_trap05.itm~      // Stun Trap
+     SAY NAME1 @135
+     SAY NAME2 @135
+     SAY UNIDENTIFIED_DESC @136
+     SAY DESC @136
+
+COPY ~gorgon/items/h_trap06.itm~ ~override/h_trap06.itm~      // Flash Trap
+     SAY NAME1 @137
+     SAY NAME2 @137
+     SAY UNIDENTIFIED_DESC @138
+     SAY DESC @138
+     
+COPY ~gorgon/items/h_misc29.itm~ ~override/h_misc29.itm~      // Netheril's Grimoire of Lost Arcana
+     SAY NAME1 @139
+     SAY NAME2 @139
+     SAY UNIDENTIFIED_DESC @140
+     SAY DESC @140
+     
+COPY ~gorgon/items/h_misc30.itm~ ~override/h_misc30.itm~      // Featherlung Serum
+     SAY NAME1 @141
+     SAY NAME2 @141
+     SAY UNIDENTIFIED_DESC @142
+     SAY DESC @142
+     
+
 
 // New Creatures
 
@@ -926,10 +1014,6 @@ COPY ~gorgon/cre/h_isleyc.cre~ ~override/h_isleyc.cre~        // Isley
      SAY NAME1 @918
      SAY NAME2 @918
 
-COPY ~gorgon/cre/h_kageic.cre~ ~override/h_kageic.cre~        // Kageiye
-     SAY NAME1 @919
-     SAY NAME2 @919
-
 COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
      SAY NAME1 @920
      SAY NAME2 @920
@@ -953,10 +1037,6 @@ COPY ~gorgon/cre/h_nagacc.cre~ ~override/h_nagacc.cre~        // Naga
 COPY ~gorgon/cre/h_nagatc.cre~ ~override/h_nagatc.cre~        // Nagate
      SAY NAME1 @925
      SAY NAME2 @925
-
-COPY ~gorgon/cre/h_ophelc.cre~ ~override/h_ophelc.cre~        // Ophelia
-     SAY NAME1 @926
-     SAY NAME2 @926
 
 COPY ~gorgon/cre/h_pruflc.cre~ ~override/h_pruflc.cre~        // Pruflas
      SAY NAME1 @927
@@ -1237,19 +1317,66 @@ COPY ~gorgon/cre/h_pits4c.cre~ ~override/h_pits4c.cre~        // Serra Swiftwind
 COPY ~gorgon/cre/h_pits5c.cre~ ~override/h_pits5c.cre~        // Roran 'Iron Fist' Zlenka
      SAY NAME1 @974
      SAY NAME2 @974
+     
+COPY ~gorgon/cre/h_sorenc.cre~ ~override/h_sorenc.cre~        // Soren
+     SAY NAME1 @975
+     SAY NAME2 @975
 
+COPY ~gorgon/cre/h_thalic.cre~ ~override/h_thalic.cre~        // Thalia
+     SAY NAME1 @976
+     SAY NAME2 @976
+
+COPY ~gorgon/cre/h_islacc.cre~ ~override/h_islacc.cre~        // Isla Darkcloak
+     SAY NAME1 @977
+     SAY NAME2 @977
+
+COPY ~gorgon/cre/h_bmarkc.cre~ ~override/h_bmarkc.cre~        // Black Market Merchant(Ammo)
+     SAY NAME1 @978
+     SAY NAME2 @978
+
+COPY ~gorgon/cre/h_bmar2c.cre~ ~override/h_bmar2c.cre~        // Black Market Merchant(Potions)
+     SAY NAME1 @978
+     SAY NAME2 @978
+
+COPY ~gorgon/cre/h_bmar3c.cre~ ~override/h_bmar3c.cre~        // Black Market Merchant(Traps)
+     SAY NAME1 @978
+     SAY NAME2 @978
+     
+COPY ~gorgon/cre/h_velenc.cre~ ~override/h_velenc.cre~        // Captain Velendra
+     SAY NAME1 @979
+     SAY NAME2 @979
+     
+COPY ~gorgon/cre/h_thaldc.cre~ ~override/h_thaldc.cre~        // Thaldor
+     SAY NAME1 @980
+     SAY NAME2 @980
+     
+COPY ~gorgon/cre/h_doriac.cre~ ~override/h_doriac.cre~        // Dorian
+     SAY NAME1 @981
+     SAY NAME2 @981
+
+COPY ~gorgon/cre/h_silasc.cre~ ~override/h_silasc.cre~        // Silas
+     SAY NAME1 @982
+     SAY NAME2 @982
+     
+COPY ~gorgon/cre/h_alaric.cre~ ~override/h_alaric.cre~        // Alaric
+     SAY NAME1 @983
+     SAY NAME2 @983
+     
+COPY ~gorgon/cre/h_varlic.cre~ ~override/h_varlic.cre~        // Lord Varlind
+     SAY NAME1 @984
+     SAY NAME2 @984
 
 
 // Journal Entries
 
 ADD_JOURNAL @200 @201 @202 @203 @204 @205 @206 @207 @208 @209
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
-            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349
-            @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446
+            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349 #350 @351 @352 @353 @354 @355 @356 @357 @358 @359
+            @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446 @447 @448 @449 @450 @451 @452 @453 @454 @455 @456 @457 @458 @459 @460 @461
             @509 @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555 @556 @557 @558
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
-            @810 @811 @812 @813 @814 //@815 @816 @817 @818 @819 @820
+            @810 @811 @812 @813 @814 @815 @816
             USING ~gorgon/lang/english/quests.tra~
 
 BEGIN @100000

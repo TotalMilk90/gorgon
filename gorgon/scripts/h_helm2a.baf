@@ -1,0 +1,9 @@
+IF
+        Global("h_SpawnVarlind","GLOBAL",1)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_varlic",[218.350],NE)
+                 SetGlobal("h_SpawnVarlind","GLOBAL",2)
+                 Continue()
+END

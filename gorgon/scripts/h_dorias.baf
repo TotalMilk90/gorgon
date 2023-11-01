@@ -1,0 +1,18 @@
+IF
+         TimeOfDay(DAY)
+         Global("h_DorianQuest","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  ActionOverride("h_silas",DestroySelf())
+                  DestroySelf()
+                  SetGlobal("h_SpawnDorian","GLOBAL",1)
+END
+
+IF
+	See([PC])
+	Global("h_DorianQuest","GLOBAL",0)
+THEN
+	RESPONSE #100
+	         Wait(1)
+		 StartDialog("h_doriad",[PC])
+END

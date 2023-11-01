@@ -332,7 +332,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_Saradin","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",18)
    SetGlobal("h_SpawnAriosh","GLOBAL",5)
-   SetGlobal("h_LiedelQuest","GLOBAL",5)
+   SetGlobal("h_LiedelQuest","GLOBAL",7)
    AddJournalEntry(@220,QUEST_DONE)
    EscapeArea()~ EXIT
 END
@@ -344,7 +344,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_Saradin","GLOBAL",4)
    SetGlobal("h_RigaldoQuest","GLOBAL",18)
    SetGlobal("h_SpawnAriosh","GLOBAL",5)
-   SetGlobal("h_LiedelQuest","GLOBAL",5)
+   SetGlobal("h_LiedelQuest","GLOBAL",7)
    AddJournalEntry(@220,QUEST_DONE)
    EscapeArea()~ EXIT
 END

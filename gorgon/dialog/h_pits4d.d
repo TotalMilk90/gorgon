@@ -130,6 +130,18 @@ IF ~~ THEN BEGIN 23
    SAY ~You are gracious in victory, and your skills are formidable. It was an honor to face you in the arena.~ IF ~~ THEN EXIT
 END
 
-IF ~~ THEN BEGIN 24
+IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 24
    SAY ~A victory well earned, <CHARNAME>. You've defeated Roran, the unchallenged champion. You've shown remarkable skill and strength and the pits will surely remember this day.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 25
+   SAY ~Death matches have never been my cup of tea, but I can't deny the intrigue of seeing Isla back in action. She's a force to be reckoned with, and I've seen her unmatched skill firsthand.~ IF ~~ THEN GOTO 26
+END
+
+IF ~~ THEN BEGIN 26
+   SAY ~As for you, champion, you've proven yourself time and again. This will be a true test of your abilities. Stay focused and stay agile. You'll need every advantage you can get.~ IF ~~ THEN EXIT
+END
+
+IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 27
+   SAY ~The circle of life and death is never more evident than in the arena. Isla fought willingly, and you were the victor. It's a harsh truth, but one we must all come to terms with in our own way.~ IF ~~ THEN EXIT
 END

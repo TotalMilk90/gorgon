@@ -74,7 +74,7 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~We forge strength, sharpen minds, and temper spirits. It's more than just a stage for combat. It's where we find our true selves, and learn what we're truly capable of.~
+   SAY ~We forge strength, sharpen minds, and temper spirits. It's more than just a stage for combat. It's where we find our real selves, and learn what we're truly capable of.~
        ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
        ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
@@ -90,7 +90,7 @@ IF ~~ THEN BEGIN 12
    SAY ~Once you reckon you've got a grip on things, come back to me, and we'll get you sorted for a match. Remember, patience and knowledge are just as vital as iron in these pits.~
 IF ~~ THEN DO ~
    SetGlobal("h_FightingPits","GLOBAL",2)
-   AddJournalEntry(@810,QUEST)~ EXIT
+   AddJournalEntry(@810,USER)~ EXIT
 END
 
 IF ~Global("h_FightingPits","GLOBAL",2)~ THEN BEGIN 13
@@ -224,7 +224,7 @@ IF ~~ THEN BEGIN 35
    SAY ~She left it all behind, vanished into the shadows. Finding her won't be easy, but if you're set on proving yourself, she's the one you'll have to convince.~
 IF ~~ THEN DO ~
    SetGlobal("h_PitsChamp","GLOBAL",1)
-   AddJournalEntry(@816,QUEST_DONE)~ EXIT
+   AddJournalEntry(@816,USER)~ EXIT
 END
 
 IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 36
@@ -265,7 +265,7 @@ IF ~~ THEN BEGIN 43
    SAY ~Wear your title with pride, Champion. The pits will never forget your name.~ IF ~~ THEN EXIT
 IF ~~ THEN DO ~
    SetGlobal("h_BeatIsla","GLOBAL",3)
-   AddJournalEntry(@460,QUEST)
+   AddJournalEntry(@460,USER)
    AddExperienceParty(2000)
    GiveGoldForce(2000)~ EXIT
 END

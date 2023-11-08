@@ -31,12 +31,13 @@ END
 
 IF ~~ THEN BEGIN A4
    SAY ~The Inspector? A-alright.~
-       ++ ~Offer him some of this. It's Moonshae whiskey, a rare find. Tell him it's a gesture of goodwill.~ GOTO A5
+       ++ ~Offer him some of this. It's Moonshae whiskey, a rare find. Tell him it's a gesture of goodwill.~ DO ~TakePartyItem("h_misc25") DestroyItem("h_misc25")~ GOTO A5
 END
 
 IF ~~ THEN BEGIN A5
    SAY ~Right... right. I'll send a runner to the Watch. Might take an hour or so for them to arrive, though.~
        ++ ~You've got one hour, mate. Don't try anything funny.~ GOTO A6
+       ++ ~Fair enough. Get to it, then.~ GOTO A6
 END
 
 IF ~~ THEN BEGIN A6
@@ -58,7 +59,7 @@ IF ~~ THEN BEGIN A8
 END
 
 IF ~~ THEN BEGIN A9
-   SAY ~You're no better than a devil, bringing hellfire and death. You're a true monster.~ IF ~~ THEN EXIT
+   SAY ~You're no better than a devil, bringing hellfire and death. You're a true monster!~ IF ~~ THEN EXIT
 END
 
 END
@@ -66,4 +67,5 @@ END
 EXTEND_TOP BART4 0
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_JovialDues","GLOBAL",0)~+ ~Good evening. I've come to collect the Gorgon's Eye dues.~ GOTO J1
    +~HasItem("h_misc26","Container 1") Global("h_ArioshQuest","GLOBAL",17)~+ ~Listen closely, mate. I've planted a little surprise in your kitchen. A bottle filled with something highly flammable, with a fuse ready to light. You want to keep this place in one piece? You'll do as I say.~ GOTO A1
+   +~HasItem("h_misc26","Container 1") Global("h_ArioshQuest","GLOBAL",17)~+ ~Send word to the Inspector. Tell him there's a woman here, Ishani, a former Gorgon's Eye member. She's got some valuable intel, and she's ready to spill it.~ GOTO A4
 END

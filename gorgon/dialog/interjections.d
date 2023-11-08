@@ -143,7 +143,7 @@ END
 
 INTERJECT_COPY_TRANS bart4 5 ishtobar7
   == h_jcookd IF ~~ THEN
-    ~Wait...I saw 'em, boss! Messin' about in the kitchen. They might be tellin' the truth!~
+    ~Wait...I saw 'em, boss! Messin' about in the kitchens. They might be tellin' the truth!~
 END
 
 INTERJECT_COPY_TRANS h_insped 7 ishtoins7

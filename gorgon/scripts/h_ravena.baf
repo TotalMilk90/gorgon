@@ -19,3 +19,12 @@ THEN
                  SetGlobal("h_SpawnThalia","GLOBAL",1)
                  Continue()
 END
+
+IF
+        Global("h_TravelToBM","GLOBAL",1)
+THEN
+        RESPONSE #100
+                 ActionOverride("h_thalic",EscapeArea())
+                 Continue()
+END
+

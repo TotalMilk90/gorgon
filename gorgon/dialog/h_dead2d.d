@@ -33,7 +33,7 @@ IF ~~ THEN BEGIN 6
 IF ~~ THEN DO ~
    SetGlobal("h_BeatKhalid","GLOBAL",2)
    SetGlobal("h_FightersTalk","GLOBAL",2)
-   AddJournalEntry(@811,QUEST)
+   AddJournalEntry(@811,USER)
    AddExperienceParty(200)
    GiveGoldForce(100)
    ClearAllActions()
@@ -66,7 +66,7 @@ IF ~~ THEN BEGIN 11
 IF ~~ THEN DO ~
    SetGlobal("h_BeatKhalid","GLOBAL",3)
    SetGlobal("h_BeatGrom","GLOBAL",2)
-   AddJournalEntry(@812,QUEST)
+   AddJournalEntry(@812,USER)
    AddExperienceParty(400)
    GiveGoldForce(200)
    ClearAllActions()
@@ -107,7 +107,7 @@ IF ~~ THEN BEGIN 18
 IF ~~ THEN DO ~
    SetGlobal("h_BeatGrom","GLOBAL",3)
    SetGlobal("h_BeatLyria","GLOBAL",2)
-   AddJournalEntry(@813,QUEST)
+   AddJournalEntry(@813,USER)
    AddExperienceParty(600)
    GiveGoldForce(300)
    ClearAllActions()
@@ -155,7 +155,7 @@ IF ~~ THEN BEGIN 26
 IF ~~ THEN DO ~
    SetGlobal("h_BeatLyria","GLOBAL",3)
    SetGlobal("h_BeatSerra","GLOBAL",2)
-   AddJournalEntry(@814,QUEST)
+   AddJournalEntry(@814,USER)
    AddExperienceParty(800)
    GiveGoldForce(400)
    ClearAllActions()
@@ -212,7 +212,8 @@ IF ~~ THEN BEGIN 37
 IF ~~ THEN DO ~
    SetGlobal("h_BeatSerra","GLOBAL",3)
    SetGlobal("h_BeatRoran","GLOBAL",2)
-   AddJournalEntry(@815,QUEST)
+   SetGlobal("h_FightingPits","GLOBAL",3)
+   AddJournalEntry(@815,USER)
    AddExperienceParty(1000)
    GiveGoldForce(500)
    ClearAllActions()

@@ -1,0 +1,13 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(3)
+        FadeFromColor([20.0],0)
+        Wait(2)
+        ActionOverride("h_lied2c",StartDialog("h_lied2d",[PC])
+        Wait(3)
+        EndCutSceneMode()
+END

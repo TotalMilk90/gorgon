@@ -18,7 +18,7 @@ IF ~Global("h_RigaldoQuest","GLOBAL",1)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Name's Rigaldo, head pickpocket in this den. Been a top dog in this field longer than most. I know the ins-and-outs of these streets down to their finest detail.~ IF ~~ THEN GOTO 3
+   SAY ~Name's Rigaldo, head pickpocket in this den. Been a top dog in this field longer than most, and I know the ins-and-outs of these streets down to their finest detail.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
@@ -75,7 +75,7 @@ END
 IF ~~ THEN BEGIN GEM_0
    SAY ~I've got a small job lined up for ya. Nothin' too fancy, mind you. A little scutwork to test your basics.~
        ++ ~I'm listening.~ GOTO GEM_1
-       ++ ~Scutwork? And here I was hoping for a big score.~ GOTO GEM_1
+       ++ ~Scutwork? I was hoping for a big score.~ GOTO GEM_1
 END
 
 IF ~~ THEN BEGIN GEM_1
@@ -93,7 +93,7 @@ END
 
 IF ~~ THEN BEGIN GEM_4
    SAY ~Two days at most. So don't go hittin' the town.~
-       ++ ~What's the low down on his guards?~ GOTO GEM_5
+       ++ ~What can you tell me about his guards?~ GOTO GEM_5
 END
 
 IF ~~ THEN BEGIN GEM_5
@@ -120,7 +120,7 @@ IF ~~ THEN BEGIN GEM_9
 END
 
 IF ~~ THEN BEGIN GEM_10
-   SAY ~This ain't child's play, mate. Prove you've got the stones to run with the big league.~
+   SAY ~This ain't child's play, mate. Prove you've got the stones to run with the big dogs.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",2)
    SetGlobal("h_SpawnZieke","GLOBAL",1)
@@ -235,18 +235,18 @@ END
 IF ~~ THEN BEGIN GERARD_13
    SAY ~So, what say you? Ready to make Gerard Travenhurst pay for his past?~
        ++ ~Consider it done. I'll have that necklace by days end.~ GOTO GERARD_14
-       ++ ~If the law won't have him, I'll see that he's brought to some justice.~ GOTO GERARD_14
+       ++ ~I'll see that he's brought to some justice.~ GOTO GERARD_14
 END
 
 IF ~~ THEN BEGIN GERARD_14
-   SAY ~Handle him good, but keep him breathin'. We need him falling in line, not pushing up daisies.~
+   SAY ~Handle him good, but make sure he's still suckin' air, aye? We need him toeing the line, not pushin' up daisies.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",4)
    AddJournalEntry(@312,QUEST)~ EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",4)~ THEN BEGIN GERARD_15
-   SAY ~Handle him good, but keep him breathin'. We need him falling in line, not pushing up daisies.~ IF ~~ THEN EXIT
+   SAY ~Off you go now, make your way to Gerard's and give 'em a little chat. Come back once he's got the memo and you've got his pendant in your mitts.~ IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc05")~ THEN BEGIN GERARD_16
@@ -282,7 +282,7 @@ IF ~~ THEN BEGIN GERARD_22
 END
 
 IF ~~ THEN BEGIN GERARD_23
-   SAY ~Before you slip away and get started, Baldwin's fixin' a word with ya. Best not to keep him waiting.~
+   SAY ~Go ahead and make your rounds, but before you slip away, Baldwin's fixin' a word with ya. Best not to keep him waiting.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",5)
    SetGlobal("h_BaldwinQuest","GLOBAL",2)
@@ -349,7 +349,9 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",7)~ THEN BEGIN KARP_10
    SAY ~If you're jawing at me, I reckon you've got your report and the bits I asked for.~
-       +~PartyHasItem("h_misc17")~+ ~Got the rings right here.~ GOTO KARP_11
+       +~PartyHasItem("h_misc17") Global("h_KarpWorkGood","GLOBAL",0) Global("h_KarpWork","GLOBAL",0)~+ ~Got the rings right here.~ GOTO KARP_11
+       +~PartyHasItem("h_misc17") Global("h_KarpWorkGood","GLOBAL",2) Global("h_KarpWork","GLOBAL",0)~+ ~Got the rings right here.~ GOTO KARP_11
+       +~PartyHasItem("h_misc17") Global("h_KarpWorkGood","GLOBAL",0) Global("h_KarpWork","GLOBAL",1)~+ ~Got the rings right here.~ GOTO KARP_12
        ++ ~I have some other things I need to do first.~ EXIT
 END
 
@@ -363,12 +365,23 @@ IF ~~ THEN DO ~
    AddExperienceParty(600)~ EXIT
 END
 
+IF ~~ THEN BEGIN KARP_12
+   SAY ~Nice work. You've earned it, mate. As agreed, one of 'em's yours to do with as you fancy.~
+IF ~~ THEN DO ~
+   SetGlobal("h_KarpWork","GLOBAL",2)
+   SetGlobal("h_RigaldoQuest","GLOBAL",8)
+   AddJournalEntry(@317,QUEST)
+   TakePartyItem("h_misc17")
+   DestroyItem("h_misc17")
+   AddExperienceParty(600)~ EXIT
+END
+
           ////////////////////////////////////////////
           ////////// It's All Fun and Games //////////
           ////////////////////////////////////////////
 
 IF ~Global("h_RigaldoQuest","GLOBAL",8) GlobalLT("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN CARNIVAL_01
-   SAY ~Wrap things up with Ariosh, will ya? I've got a job that needs both your eyes on it, sharp as razors.~ IF ~~ THEN GOTO CARNIVAL_1
+   SAY ~Wrap things up with Ariosh, will ya? I've got a job that needs both your eyes on it, sharp as razors.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",8) Global("h_ArioshQuest","GLOBAL",10)~ THEN BEGIN CARNIVAL_0
@@ -450,7 +463,7 @@ IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0)~ THE
 END
 
 IF ~~ THEN BEGIN PROCUS_1
-   SAY ~It's a place where the Flaming Fist doesn't hold sway, but instead, they've got a proper army, organized and disciplined. We'll need to move like shadows in a well-lit room, subtle and sly.~ IF ~~ THEN GOTO PROCUS_2
+   SAY ~It's a place where the Flaming Fist don't hold sway, but instead, they've got a proper army, organized and disciplined. We'll need to move like shadows in a well-lit room, subtle and sly.~ IF ~~ THEN GOTO PROCUS_2
 END
 
 IF ~~ THEN BEGIN PROCUS_2
@@ -462,7 +475,7 @@ IF ~~ THEN BEGIN PROCUS_3
 END
 
 IF ~~ THEN BEGIN PROCUS_3.5
-   SAY ~He's the key to getting us established. Help him set up a base of operations amidst the revelry.~ IF ~~ THEN GOTO PROCUS_4
+   SAY ~He's the key to getting us established. It'll be your job to help him set up a base of operations amidst the revelry.~ IF ~~ THEN GOTO PROCUS_4
 END
 
 IF ~~ THEN BEGIN PROCUS_4
@@ -470,7 +483,7 @@ IF ~~ THEN BEGIN PROCUS_4
 END
 
 IF ~~ THEN BEGIN PROCUS_5
-   SAY ~Before you dash off down south, however, swing by Gilbald's for a quick once-over, will ya? Something's got me feeling a tad uneasy about one of 'em. Can't be too careful, yeah?~ IF ~~ THEN GOTO PROCUS_6
+   SAY ~Before you dash off down south, however, swing by Gilbald's for a quick once-over, will ya? Something's got me feeling a tad uneasy about one of his dealers. Can't be too careful, yeah?~ IF ~~ THEN GOTO PROCUS_6
 END
 
 IF ~~ THEN BEGIN PROCUS_6
@@ -617,7 +630,7 @@ IF ~Global("h_RigaldoQuest","GLOBAL",14)~ THEN BEGIN BOOK_0
 END
 
 IF ~~ THEN BEGIN BOOK_1
-   SAY ~The Avowed, those monks from Candlekeep, sent word through the shadows. Seems they lost something precious, a tome, brimming with knowledge, snatched from under their scholarly noses.~ IF ~~ THEN GOTO BOOK_2
+   SAY ~The Avowed, those monks from Candlekeep, sent word through the shadows. Seems they've lost something precious. A tome, brimming with knowledge, snatched from under their scholarly noses.~ IF ~~ THEN GOTO BOOK_2
 END
 
 IF ~~ THEN BEGIN BOOK_2
@@ -625,7 +638,7 @@ IF ~~ THEN BEGIN BOOK_2
 END
 
 IF ~~ THEN BEGIN BOOK_3
-   SAY ~But, they want it handled with utmost discretion. You know how them monks are, don't you?~ IF ~~ THEN GOTO BOOK_4
+   SAY ~Of course, they want it handled with the utmost discretion. You know how them monks are, don't you?~ IF ~~ THEN GOTO BOOK_4
 END
 
 IF ~~ THEN BEGIN BOOK_4
@@ -690,7 +703,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN BOOK_16
-   SAY ~Ye blundering fool! Did you think this was a game? Killing Ravenscar like that... do you have any inkling of the chaos you might have set in motion?~ IF ~~ THEN GOTO BOOK_17
+   SAY ~You blundering fool! Did you think this was a game? Killing Ravenscar like that... do you have any inkling of the chaos you might have set in motion?~ IF ~~ THEN GOTO BOOK_17
 END
 
 IF ~~ THEN BEGIN BOOK_17
@@ -717,6 +730,7 @@ IF ~~ THEN BEGIN BOOK_22
    SAY ~But be cautious, more than ever. This... power you possess, it's a double-edged dagger, and it can cut both ways.~
 IF ~~ THEN DO ~
    SetGlobal("h_KilledRavenscar","GLOBAL",1)
+   SetGlobal("h_Ravenscar","GLOBAL",2)
    AddJournalEntry(@351,QUEST)~ EXIT
 END
 
@@ -763,11 +777,11 @@ END
 
 
                                          //GlobalLT("h_ArioshQuest","GLOBAL",22)
-IF ~Global("h_RigaldoQuest","GLOBAL",15) GlobalLT("h_MerediaQuest","GLOBAL",5) GlobalLT("h_BountyNumber","GLOBAL",9)~ THEN BEGIN LOTUS_01
+IF ~OR(2) GlobalLT("h_MerediaQuest","GLOBAL",5) GlobalLT("h_BountyNumber","GLOBAL",9) Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_01
    SAY ~No fresh leads at the moment. Have a word with the mates around the guild, they might have a bit of graft for ya.~ IF ~~ THEN EXIT
 END
                                          //Global("h_ArioshQuest","GLOBAL",22)
-IF ~Global("h_RigaldoQuest","GLOBAL",15) Global("h_MerediaQuest","GLOBAL",5) Global("h_BountyNumber","GLOBAL",9)~ THEN BEGIN LOTUS_1
+IF ~Global("h_MerediaQuest","GLOBAL",5) Global("h_BountyNumber","GLOBAL",9) Global("h_RigaldoQuest","GLOBAL",15)~ THEN BEGIN LOTUS_1
    SAY ~I've got a new job for ya. We're gonna be moving some gear into Amn.~ IF ~~ THEN GOTO LOTUS_2
 END
 
@@ -829,7 +843,11 @@ IF ~~ THEN BEGIN LOTUS_4
 END
 
 IF ~~ THEN BEGIN LOTUS_5
-   SAY ~Not on your life. But, takin' risks is the name of the game. Without it, even the sharpest of thieves can grow soft.~
+   SAY ~We've still got Procus holdin' down the fort, and things have been fairly quiet on that front.~ IF ~~ THEN GOTO LOTUS_5.5
+END
+
+IF ~~ THEN BEGIN LOTUS_5.5
+   SAY ~Still, takin' risks is the name of the game. Without it, even the sharpest of thieves can grow soft.~
        ++ ~How much gold should I be expecting from the buyer?~ GOTO LOTUS_6
        ++ ~Anything else I should know?~ GOTO LOTUS_7
 END
@@ -841,11 +859,7 @@ IF ~~ THEN BEGIN LOTUS_6
 END
 
 IF ~~ THEN BEGIN LOTUS_7
-   SAY ~Best be stickin' to the side streets. The Flaming Fist might have their eyes peeled on the main drags.~ IF ~~ THEN GOTO LOTUS_8
-END
-
-IF ~~ THEN BEGIN LOTUS_8
-   SAY ~Make good use of your sneak skills, to boot, lest those Shadow Thieves get wind of your arrival.~
+   SAY ~Best be stickin' to the side streets. The Flaming Fist might have their eyes peeled on the main drags.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",16)
    SetGlobal("h_FlamingFist","GLOBAL",1)
@@ -860,7 +874,7 @@ IF ~Global("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN LOTUS_9
        +~Global("h_LotusQuest","GLOBAL",2) PartyGoldGT(2399)~+ ~The Flaming Fist got me on the road, had to give up a pound to see them off.~  GOTO LOTUS_11
        +~Global("h_PruflasQuest","GLOBAL",3) Global("h_ExtraQuest","GLOBAL",0) NumDead("h_pruflc",0)~+ ~I was able to get Pruflas to return home to his wife.~ GOTO REFUSE_4
        +~Global("h_PruflasQuest","GLOBAL",3) Global("h_ExtraQuest","GLOBAL",0) NumDead("h_pruflc",1)~+ ~Well, I kind of killed Pruflas by giving him too much black lotus.~ GOTO REFUSE_5
-       ++ ~I have some other things I need to do first.~ EXIT
+       ++ ~Nothing new to report yet.~ EXIT
 END
 
 IF ~~ THEN BEGIN LOTUS_10

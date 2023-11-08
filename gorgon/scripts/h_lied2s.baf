@@ -1,0 +1,32 @@
+IF
+         TimeOfDay(DAY)
+THEN
+         RESPONSE #100
+                  DestroySelf()
+                  SetGlobal("h_SpawnLiedel","GLOBAL",0)
+END
+
+IF
+        Global("h_LiedelWater","GLOBAL",2)
+
+THEN
+        RESPONSE #100
+                 Smallwait(5)
+                 StartDialog("h_lied2d",[PC])
+END
+
+IF
+	See([PC])
+	Global("h_LiedelWater","GLOBAL",0)
+THEN
+	RESPONSE #100
+		 ClearAllActions()
+		 SmallWait(5)
+                 StartCutSceneMode()
+                 CutSceneId(Player1)
+                 MoveViewObject("h_lied2c",VERY_FAST)
+                 Explore()
+                 Wait(4)
+                 SetGlobal("h_LiedelWater","GLOBAL",1)
+                 EndCutSceneMode()
+END

@@ -14,7 +14,6 @@ IF
          Global("h_ShadowWar","GLOBAL",7)
 THEN
          RESPONSE #100
-                  DayNight(MIDNIGHT)
                   CreateCreature("h_injurc",[487.536],N)
                   SetGlobal("h_ShadowWar","GLOBAL",8)
 

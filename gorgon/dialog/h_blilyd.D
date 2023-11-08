@@ -29,17 +29,22 @@ IF ~~ THEN BEGIN B3.5
 END
 
 IF ~~ THEN BEGIN B4
-   SAY ~Like many of these 'men', the Inspector indulges in the finer things in life, women and wine.~ IF ~~ THEN GOTO B4.5
+   SAY ~Like many of these 'men', the Inspector indulges in the finer things in life. However, his tastes are rather particular.~ IF ~~ THEN GOTO B4.5
 END
 
 IF ~~ THEN BEGIN B4.5
-   SAY ~However, his tastes are rather particular. He savors a distinct brand of pleasure, one derived from an elusive whiskey, and an even... scarcer type of companion.~ IF ~~ THEN GOTO B5
+   SAY ~He savors a distinct brand of pleasure, one derived from an elusive whiskey, and an even... scarcer type of companion.~ IF ~~ THEN GOTO B5
 END
 
 IF ~~ THEN BEGIN B5
    SAY ~And, as you would expect, I possess the knowledge of where to procure these rare treasures. Consider it a gesture of goodwill, a testament to the mutual respect Ariosh and I share.~
        ++ ~What kind of whiskey are we talking about, and what distinguishes this companion from the rest?~ GOTO B5.5
-       ++ ~Women and wine? Are we truly staking our hopes on such basic pleasures to bring down the mighty Inspector?~ GOTO B5.5
+       ++ ~Are we truly staking our hopes on such basic pleasures to bring down the mighty Inspector?~ GOTO B5.25
+END
+
+IF ~~ THEN BEGIN B5.25
+   SAY ~Ye underestimate the power of distraction. Sometimes, the simplest vices can lead to the most elaborate downfall. It's all a matter of knowing how to play the game.~
+       ++ ~What kind of whiskey are we talking about, and what distinguishes this companion from the rest?~ GOTO B5.5
 END
 
 IF ~~ THEN BEGIN B5.5

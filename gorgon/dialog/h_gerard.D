@@ -8,7 +8,7 @@ END
 
 IF ~~ THEN BEGIN G_1
    SAY ~Payment? You're one of Rigaldo's dogs, then? Hmph! I shan't debase myself by dealing with the likes of you lot. Tell him he will not be recieving another penny from me. Now, begone!~
-       ++ ~Calling me a dog are you? Hope you're ready to eat those words. Time to die!~ GOTO G_2
+       ++ ~Calling me a dog are you? Hope you're ready to eat those words.~ GOTO G_2
        ++ ~I'm afraid I can't do that. *unsheathe your blade* Play nice now, before things get ugly.~ GOTO G_2
        ++ ~You'll cooperate if you know what's good for you, else the wrong people will find out about your past.~ GOTO G_3
        ++ ~Tough talk for a two-bit slaver. I'll see to it you're hanging from the gallows for what you've done!~ GOTO G_3

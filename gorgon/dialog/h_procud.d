@@ -245,7 +245,6 @@ END
 IF ~~ THEN BEGIN THIRD_8
    SAY ~Stealth and shadows, <CHARNAME>, you know the drill.~
        ++ ~These marks won't know what hit 'em.~ GOTO THIRD_9
-       ++ ~I've got some other matters to attend to first. I'll come back later.~ EXIT
 END
 
 IF ~~ THEN BEGIN THIRD_9
@@ -280,14 +279,14 @@ IF ~~ THEN DO ~
    SetGlobal("h_ProcusQuest","GLOBAL",7)
    TakePartyItemAll("h_misc28")
    DestroyItem("h_misc28")
-   AddJournalEntry(348,QUEST)
+   AddJournalEntry(@348,QUEST)
    AddExperienceParty(600)~ EXIT
 END
 IF ~Global("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN THIRD_10
    SAY ~Rigaldo will be itchin' to hear about our success, so make your way back and give him the news. We're on the edge of something big, my friend.~ IF ~~ THEN EXIT
 END
 
-IF ~Global("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN THIRD_11
+IF ~Global("h_ProcusQuest","GLOBAL",8)~ THEN BEGIN THIRD_11
    SAY ~Things are going steady down here. The crew is settling in, and our operations are gaining traction. We're making strides in Nashkel, thanks to your efforts.~ IF ~~ THEN EXIT
 END
 

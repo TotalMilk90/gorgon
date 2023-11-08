@@ -2,7 +2,7 @@ BEGIN h_varlid
 
 IF ~True()~ THEN BEGIN 0
    SAY ~By the gods! What is the meaning of this intrusion? Identify yourself at once!~
-       ++ ~Your own allies want you dead, Lord Varlind. What have you uncovered that's made you a target?~ GOTO 3
+       ++ ~Your own allies want you dead, Lord Varlind. What have you uncovered that's made you a target?~ GOTO 2.5
        ++ ~I'm here to collect the bounty on your head. You won't leave this room alive.~ GOTO 1
        ++ ~(Snap his neck.)~ DO ~Kill("h_varlic") AddJournalEntry(@453,QUEST)~ EXIT
 END
@@ -17,6 +17,10 @@ IF ~~ THEN BEGIN 2
        ++ ~Sorry, Varlind, but that's not my concern. (Snap his neck.)~ DO ~Kill("h_varlic") AddJournalEntry(@453,QUEST)~ EXIT
 END
 
+IF ~~ THEN BEGIN 2.5
+   SAY ~So, the day has come, has it? I knew something wicked was afoot, but to think they'd actually make a move against me...~ IF ~~ THEN GOTO 3
+END
+
 IF ~~ THEN BEGIN 3
    SAY ~You must understand, there's new players in town, ones whose motives are shrouded in darkness.~ IF ~~ THEN GOTO 4
 END
@@ -26,7 +30,7 @@ IF ~~ THEN BEGIN 4
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~My recent meeting with the Amnian emissary here has confirmed that these rumors of enmity and mobilization are entirely false.~ IF ~~ THEN GOTO 6
+   SAY ~My recent meeting with the Amnian emissary here has confirmed that the rumors of enmity and mobilization are entirely false.~ IF ~~ THEN GOTO 6
 END
 
 IF ~~ THEN BEGIN 6

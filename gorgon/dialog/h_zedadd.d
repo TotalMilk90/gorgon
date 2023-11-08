@@ -7,16 +7,23 @@ END
 IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
    SAY ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
        ++ ~I'll keep that in mind.~ EXIT
+       ++ ~I'd like to see what services you have available.~ GOTO TEMPLE_0
        +~Global("h_ZedaRiddle","GLOBAL",1)~+ ~I'm looking work. Do you have any jobs for me?~ GOTO RIDDLE_0
        +~Global("h_SecondRiddle","GLOBAL",1) Global("h_ZedaRiddle","GLOBAL",2)~+ ~I'd like to play Bag of Mysteries again.~ GOTO SECOND_0
-       +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
+       +~Global("h_KarpWork","GLOBAL",2)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
        +~Global("h_KarpWorkGood","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO GOOD_2
+END
+
+IF ~~ THEN BEGIN TEMPLE_0
+   SAY ~Then allow me to share with you a glimpse of Mask's divinity.~
+IF ~~ THEN DO ~
+   StartStore("h_nagsto",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
    SAY ~Didn't ya hear what I said? Of course I can! As long as she has the coin that is. Send them my way and I'll set them up with a proper escort.~
 IF ~~ THEN DO ~
-   SetGlobal("h_KarpWork","GLOBAL",2)
+   SetGlobal("h_KarpWork","GLOBAL",3)
    AddJournalEntry(@319,QUEST)~ EXIT
 END
 
@@ -339,15 +346,25 @@ CHAIN
    =
 ~It's the Commander of the City Watch! And, by gods... that double-crossin' wretch, <CHARNAME>! Defend the hideout, quick!~
    == h_baldwd
-~You've got a lot of gall, <CHARNAME>, Commander, showin' your faces in my den. This ain't the city streets you're used to. You've crossed a line, and there'll be a reckoning.~
+~You've got a lot of gall, <CHARNAME>, showin' your traitorous face here.~
+   =
+~And you, Commander, what an unpleasant surprise. This ain't the city streets you're used to. You've both crossed a line, and there'll be a reckoning.~
    == h_whited
-~You brought this upon yourself, Baldwin. Your reign of terror ends tonight. The City Watch won't tolerate this any longer. Surrender now, or face the consequences of your actions.~
+~You've brought this upon yourself, Baldwin. Your reign of terror ends today. The City Watch won't tolerate this any longer. Surrender now, or face the consequences of your actions.~
    == h_baldwd
 ~Surrender? You've got more bravado than sense, Commander. This den's a fortress, and you'll pay in blood for your trespassing.~
   == h_whited
-~We'll see about that, Baldwin. Your time is up. Men, advance! Take down any who stand in our way!~
+~We'll see about that now, won't we? Your time is up, Baldwin. Men, advance! Take down any who stand in our way!~
    DO ~
       SetGlobal("h_HelpCityWatch","GLOBAL",1)
       SetGlobal("h_WhitewoodDialog","GLOBAL",3)
-      ActionOverride("h_nagacc",DestroySelf())~ 
+      ActionOverride("h_gilbac",EscapeArea())
+      ActionOverride("h_gamesc",EscapeArea())
+      ActionOverride("h_game2c",EscapeArea())
+      ActionOverride("h_game3c",EscapeArea())
+      ActionOverride("h_meredc",EscapeArea())
+      ActionOverride("h_ilenac",EscapeArea())
+      ActionOverride("h_cour2c",EscapeArea())
+      ActionOverride("h_cour3c",EscapeArea())
+      ActionOverride("h_cour4c",EscapeArea())~
 EXIT

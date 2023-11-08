@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~You will die here. And when I'm through with you, I'll lead the Knights into the heart of your den and wipe out every last one of your treacherous lot.~ IF ~~ THEN GOTO 10
+   SAY ~You will die here. And when I'm through with you, I'll lead these knights into the heart of your den and wipe out every last one of your treacherous lot.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10

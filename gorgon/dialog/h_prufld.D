@@ -94,7 +94,7 @@ IF ~~ THEN BEGIN DOSE_4
 END
 
 IF ~~ THEN BEGIN DOSE_5
-   SAY ~Once, I attended a tea party with interdimensional beings. They served quantum biscuits.~
+   SAY ~I'm convinced that mushrooms are time travelers from the 5th century.~
        ++ ~(Administer a small dose.)~ GOTO DOSE_7
        ++ ~(Administer a medium dose.)~ GOTO DOSE_8
        ++ ~(Administer a large dose.)~ GOTO DOSE_9
@@ -102,7 +102,7 @@ IF ~~ THEN BEGIN DOSE_5
 END
 
 IF ~~ THEN BEGIN DOSE_6
-   SAY ~I once tried to teach a pinecone to juggle, but it kept dropping the acorns.~
+   SAY ~The oak tree...it tells stories in whispers...I'll listen...tomorrow.~
        ++ ~(Administer a small dose.)~ GOTO DOSE_8
        ++ ~(Administer a medium dose.)~ GOTO DOSE_9
        ++ ~(Administer a large dose.)~ GOTO DOSE_10
@@ -110,7 +110,7 @@ IF ~~ THEN BEGIN DOSE_6
 END
 
 IF ~~ THEN BEGIN DOSE_7
-   SAY ~I'm convinced that mushrooms are time travelers from the 25th century.~
+   SAY ~The fireflies...they painted the night...so sparkly.~
        ++ ~(Administer a small dose.)~ GOTO DOSE_9
        ++ ~(Administer a medium dose.)~ GOTO DOSE_10
        ++ ~(Administer a large dose.)~ GOTO DOSE_11
@@ -142,7 +142,11 @@ IF ~~ THEN BEGIN DOSE_10
 END
 
 IF ~~ THEN BEGIN DOSE_11
-   SAY ~Ah, the veils of illusion have lifted, and truth shines through. I see now, the interconnectedness of all things, the dance of existence.~ IF ~~ THEN GOTO 12
+   SAY ~Rocks...patient...like...grandparents...who've...seen...it...all...~
+       ++ ~(Administer a small dose.)~ GOTO DOSE_13
+       ++ ~(Administer a medium dose.)~ GOTO DOSE_14
+       ++ ~(Administer a large dose.)~ GOTO DOSE_15
+       ++ ~(Use an antidote to return Pruflas to baseline.)~ GOTO 11
 END
 
 IF ~~ THEN BEGIN DOSE_12
@@ -154,11 +158,7 @@ IF ~~ THEN BEGIN DOSE_12
 END
 
 IF ~~ THEN BEGIN DOSE_13
-   SAY ~Rocks...patient...like...grandparents...who've...seen...it...all...~
-       ++ ~(Administer a small dose.)~ GOTO DOSE_15
-       ++ ~(Administer a medium dose.)~ GOTO DOSE_16
-       ++ ~(Administer a large dose.)~ GOTO DOSE_16
-       ++ ~(Use an antidote to return Pruflas to baseline.)~ GOTO 11
+   SAY ~Ah, the veils of illusion have lifted, and truth shines through. I see now, the interconnectedness of all things, the dance of existence.~ IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN DOSE_14

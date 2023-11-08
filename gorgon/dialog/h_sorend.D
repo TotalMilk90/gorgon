@@ -6,7 +6,7 @@ END
 
 IF ~~ THEN BEGIN 1
    SAY ~You have the look of someone seeking... information. Lucky for you, knowledge is my trade. For the right price, of course.~
-       ++ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
+       +~Global("h_Ravenscar","GLOBAL",2)~+ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
        ++ ~I'm not interested.~ EXIT
 END
 
@@ -73,7 +73,7 @@ IF ~~ THEN BEGIN 14
 END
 
 IF ~~ THEN BEGIN 15
-   SAY ~Your success hinges on your own skills, your ability to blend into the shadows and move with silent grace. Trust in your instincts, and may your true rogue senses guide you.~
+   SAY ~Your success hinges on your own skills, your ability to blend into the shadows and move with silent grace. Trust in your instincts, and let your true rogue senses guide you.~
 IF ~~ THEN DO ~
    SetGlobal("h_SorenQuest","GLOBAL",1)
    SetGlobal("h_SpawnVelendra","GLOBAL",1)
@@ -102,6 +102,7 @@ IF ~~ THEN BEGIN 20
    SAY ~A discrete gathering, no doubt. This intel is yours to exploit. Go, claim what is rightfully yours.~
 IF ~~ THEN DO ~
    SetGlobal("h_SorenQuest","GLOBAL",6)
+   SetGlobal("h_SpawnDorian","GLOBAL",1)
    AddJournalEntry(@357,QUEST)~ EXIT
 END
 
@@ -123,7 +124,7 @@ END
 IF ~~ THEN BEGIN 24
    SAY ~As you wish. The offer stands, should you change your mind.~
 IF ~~ THEN DO ~
-   AddJournalEntry(@357,QUEST)
+   AddJournalEntry(@356,QUEST)
    SetGlobal("h_SorenQuest","GLOBAL",5)~ EXIT
 END
 
@@ -131,8 +132,7 @@ IF ~~ THEN BEGIN 25
    SAY ~Unfortunate, but I understand. Return when you've gathered the necessary funds. The information will be waiting for you, provided you come prepared.~
 IF ~~ THEN DO ~
    AddJournalEntry(@356,QUEST)
-   SetGlobal("h_SorenQuest","GLOBAL",5)
-   SetGlobal("h_SpawnDorian","GLOBAL",1)~ EXIT
+   SetGlobal("h_SorenQuest","GLOBAL",5)~ EXIT
 END
 
 IF ~Global("h_SorenQuest","GLOBAL",5)~ THEN BEGIN 26

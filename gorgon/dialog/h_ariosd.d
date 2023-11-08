@@ -173,7 +173,7 @@ END
 
 IF ~~ THEN BEGIN SEC_4
    SAY ~The leader goes by Blackthorn. Real thorn in my arse if ya ask me. He's got a small crew, just a few men with him, nothing substantial.~
-       ++ ~Want me to gut 'em or just give a proper fright?~ GOTO SEC_5
+       ++ ~Want me to gut 'em or just give 'em a right scare?~ GOTO SEC_5
        ++ ~I'll deal with 'em proper. Just point me in the right direction.~ GOTO SEC_6
 END
 
@@ -224,7 +224,7 @@ IF ~~ THEN BEGIN SEC_12
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(900)
+   AddExperienceParty(600)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -241,7 +241,7 @@ IF ~~ THEN BEGIN SEC_15
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",6)
    AddJournalEntry(@520,QUEST_DONE)
-   AddExperienceParty(900)
+   AddExperienceParty(600)
    GiveGoldForce(300)~ EXIT
 END
 
@@ -483,7 +483,7 @@ IF ~~ THEN DO ~
       SetGlobal("h_ValeraQuest","GLOBAL",5)
       SetGlobal("h_ArioshQuest","GLOBAL",10)
       AddJournalEntry(@527,QUEST_DONE)
-      AddExperienceParty(400)
+      AddExperienceParty(600)
       GiveGoldForce(200)~ EXIT
 END
 
@@ -654,7 +654,7 @@ IF ~~ THEN BEGIN SIX_14
 END
 
 IF ~~ THEN BEGIN SIX_15
-   SAY ~He'll get our man, the poor bastard. He's gonna be in for a world of pain. I don't doubt his loyalty, but the Inspector won't hold back, and I dread to think what he'll do to get his answers.~ IF ~~ THEN GOTO SIX_16
+   SAY ~He'll get our man, the poor bastard, and he's gonna be in for a world of pain. I don't doubt his loyalty, but the Inspector won't hold back, and I dread to think what he'll do to get his answers.~ IF ~~ THEN GOTO SIX_16
 END
 
 IF ~~ THEN BEGIN SIX_16
@@ -927,7 +927,7 @@ IF ~~ THEN BEGIN NINE_5
 END
 
 IF ~~ THEN BEGIN NINE_6
-   SAY ~Keep those ears sharp and your wits sharper, and there's no telling what heights you'll scale in these shadows. You were born for this life, you was.~
+   SAY ~Keep those ears sharp and your wits sharper, and there's no telling what heights you'll scale in these shadows. You were born for this life, you were.~
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",22)
    SetGlobal("h_SpawnGorgonWatch","GLOBAL",1)
@@ -955,7 +955,7 @@ IF ~~ THEN BEGIN CARNIVAL_1
 END
 
 IF ~~ THEN BEGIN CARNIVAL_2
-   SAY ~Copy that. Alright you men! You heard the lad. Stand fast 'til she brings back the weapons.~ IF ~~ THEN EXIT
+   SAY ~Copy that. Alright you men! You heard the lad. Stand fast 'til he brings back the weapons.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN CARNIVAL_3

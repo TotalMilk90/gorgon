@@ -1,7 +1,7 @@
 BEGIN h_pits2d
 
 IF ~Global("h_FightersTalk","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~If you're aimin' to step into the arena, you'd best be sure you're ready. Weakness don't last long here.~ IF ~~ THEN EXIT
+   SAY ~If you're aiming to step into the arena, you'd best be sure you're ready. Weakness doesn't last long here.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_FightersTalk","GLOBAL",1)~ THEN BEGIN 0.5
@@ -48,7 +48,7 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~When you're in there, let anger fuel you. Let it be the fire that makes you hit harder, swing faster. This ain't no dance, it's a brawl.~ IF ~~ THEN GOTO 10
+   SAY ~When you're in there, let anger fuel you. Let it be the fire that makes you hit harder and swing faster. This ain't no dance, it's a brawl.~ IF ~~ THEN GOTO 10
 END
 
 IF ~~ THEN BEGIN 10
@@ -59,7 +59,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-   SAY ~This beast of a blade has been with me for longer than I can remember. It's an old Dwarven make, forged from frost giant bones deep in the Spine of the World.~ IF ~~ THEN GOTO 12
+   SAY ~This beast of a blade has been with me for longer than I can remember. It's an old Dwarven make, forged from frost giant bones deep within the Spine of the World.~ IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12

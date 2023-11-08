@@ -50,7 +50,7 @@ END
 IF ~~ THEN BEGIN BLACKMAIL_3
    SAY ~Please, whoever you are, I need this sale. I must buy passage for my son and I'm nowhere near the amount of coin I need. The buyer is already on his way!~
        ++ ~And I don't rightly care! Give me the rings or I'll bury your face in the dirt!~ GOTO BLACKMAIL_2
-       ++ ~If I can find you passage, would you depart with the rings?~ GOTO BLACKMAIL_4
+       ++ ~If I can find you passage, would you be willing to depart with the rings?~ GOTO BLACKMAIL_4
 END
 
 IF ~~ THEN BEGIN BLACKMAIL_4
@@ -81,8 +81,7 @@ END
 IF ~~ THEN BEGIN GOOD_20
    SAY ~Thank you, truly. Here are the rings as promised. I also want you to have something else. I found it buried here over a month ago and was never able to sell it. Maybe you can find a use for it. Farewell.~
 IF ~~ THEN DO ~
-   AddJournalEntry(@320,QUEST_DONE)
-   AddJournalEntry(@318,QUEST)
+   AddJournalEntry(@320,QUEST)
    GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)
    GiveItem("h_misc06",LastTalkedToBy)
@@ -150,7 +149,6 @@ IF ~~ THEN BEGIN CHARM_8
    SAY ~Oh, thank you! I'll still be around here in the meantime, tending to the farm.~
 IF ~~ THEN DO ~
    SetGlobal("h_KarpWork","GLOBAL",1)
-   AddJournalEntry(@316,QUEST)
    AddJournalEntry(@318,QUEST)
    GiveItem("h_misc17",LastTalkedToBy)
    GiveItem("RING06",LastTalkedToBy)~ EXIT
@@ -170,7 +168,7 @@ IF WEIGHT #-1 ~True() Global("h_KarpWork","GLOBAL",1)~ THEN BEGIN JOB_0
        ++ ~I'm sorry, I haven't heard of anything just yet.~ EXIT
 END
 
-IF WEIGHT #-2 ~True() Global("h_KarpWork","GLOBAL",2)~ THEN BEGIN JOB_1
+IF WEIGHT #-2 ~True() Global("h_KarpWork","GLOBAL",3)~ THEN BEGIN JOB_1
    SAY ~You came back! Have you found a way out for us?~
        ++ ~I have something lined up for you in Beregost. Flee tonight with your son and you will be contacted when you are sighted within the city.~ GOTO JOB_2
 END
@@ -191,7 +189,7 @@ END
 IF ~~ THEN BEGIN GOOD_2
    SAY ~It is true. I'll admit it. It's because my husband, he... he beats me! He beats my son, too! I'm selling these rings so I can find a way out for my boy!~
        ++ ~And I don't rightly care! Give me the rings or I'll bury your face in the dirt!~ GOTO BLACKMAIL_2
-       ++ ~If I can find you passage, would you depart with the rings?~ GOTO BLACKMAIL_4
+       ++ ~If I can find you passage, would you be willing to depart with the rings?~ GOTO BLACKMAIL_4
 END
 
 END

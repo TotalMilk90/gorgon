@@ -35,10 +35,6 @@ END
 IF ~~ THEN BEGIN 5
    SAY ~Alright, fine, it's true! I hate that devil-woman! She's done nothing but make my life a living hell!~
        ++ ~Why go with fake gold, then?~ GOTO 6
-       ++ ~Well, glad that's over. Nothing personal, but I've got to snuff you out now. (Snap her neck.)~ DO ~
-   Kill("h_cmaidc")
-   SetGlobal("h_TalkedToMaid","GLOBAL",2)
-   AddJournalEntry(@616,QUEST)~ EXIT
 END
 
 IF ~~ THEN BEGIN 6
@@ -67,7 +63,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Suppose I've no say in this, do I? Least I'll still have my skin, I reckon. Ugh, don't wanna go back to jail again.~
+   SAY ~Suppose I've no say in this, do I? Least I'll still have my skin, I reckon. Ugh, I don't wanna go back to jail again.~
 IF ~~ THEN DO ~
    SetGlobal("h_TalkedToMaid","GLOBAL",2)
    AddJournalEntry(@617,QUEST)

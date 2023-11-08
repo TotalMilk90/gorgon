@@ -6,11 +6,12 @@ VERSION ~v4.0~
 LANGUAGE
     ~English~
     ~English~
-~gorgon/lang/english/setup.tra~
+~gorgon/lang/english/bios.tra~
+//~gorgon/lang/english/dialog.tra~
 ~gorgon/lang/english/items.tra~
 ~gorgon/lang/english/names.tra~
 ~gorgon/lang/english/quests.tra~
-//~gorgon/lang/english/dialog.tra~
+~gorgon/lang/english/setup.tra~
 
 BEGIN @1
 
@@ -78,8 +79,6 @@ COMPILE ~gorgon/dialog/h_xevecd.d~
 COMPILE ~gorgon/dialog/h_galatd.d~
 COMPILE ~gorgon/dialog/h_isleyd.d~
 COMPILE ~gorgon/dialog/h_cmaidd.d~
-COMPILE ~gorgon/dialog/h_kageid.d~
-COMPILE ~gorgon/dialog/h_opheld.d~
 COMPILE ~gorgon/dialog/h_ziekdd.d~
 COMPILE ~gorgon/dialog/h_zieknd.d~
 COMPILE ~gorgon/dialog/h_zieked.d~
@@ -148,12 +147,18 @@ COMPILE ~gorgon/dialog/h_isladd.d~
 COMPILE ~gorgon/dialog/h_bmarkd.d~
 COMPILE ~gorgon/dialog/h_bmar2d.d~
 COMPILE ~gorgon/dialog/h_bmar3d.d~
+COMPILE ~gorgon/dialog/h_bmar4d.d~
+COMPILE ~gorgon/dialog/h_bmar5d.d~
 COMPILE ~gorgon/dialog/h_thaldd.d~
 COMPILE ~gorgon/dialog/h_velend.d~
 COMPILE ~gorgon/dialog/h_silasd.d~
 COMPILE ~gorgon/dialog/h_doriad.d~
 COMPILE ~gorgon/dialog/h_alarid.d~
 COMPILE ~gorgon/dialog/h_varlid.d~
+COMPILE ~gorgon/dialog/h_citygd.d~
+COMPILE ~gorgon/dialog/h_rogu2d.d~
+COMPILE ~gorgon/dialog/h_lied2d.d~
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep~
 
 // Creature Scripts
 
@@ -196,12 +201,12 @@ COMPILE ~gorgon/scripts/h_blacts.baf~
 COMPILE ~gorgon/scripts/h_cityws.baf~
 COMPILE ~gorgon/scripts/h_city2s.baf~
 COMPILE ~gorgon/scripts/h_valers.baf~
-COMPILE ~gorgon/scripts/h_valcut.baf~
 COMPILE ~gorgon/scripts/h_city3s.baf~
 COMPILE ~gorgon/scripts/h_decoys.baf~
 COMPILE ~gorgon/scripts/h_inspes.baf~
 COMPILE ~gorgon/scripts/h_city4s.baf~
 COMPILE ~gorgon/scripts/h_ishcut.baf~
+COMPILE ~gorgon/scripts/h_valcut.baf~
 COMPILE ~gorgon/scripts/h_jugcut.baf~
 COMPILE ~gorgon/scripts/h_fircut.baf~
 COMPILE ~gorgon/scripts/h_city5s.baf~
@@ -221,11 +226,18 @@ COMPILE ~gorgon/scripts/h_pi2cut.baf~
 COMPILE ~gorgon/scripts/h_pi3cut.baf~
 COMPILE ~gorgon/scripts/h_pi4cut.baf~
 COMPILE ~gorgon/scripts/h_pi5cut.baf~
+COMPILE ~gorgon/scripts/h_pi6cut.baf~
 COMPILE ~gorgon/scripts/h_dead2s.baf~
 COMPILE ~gorgon/scripts/h_pits1s.baf~
 COMPILE ~gorgon/scripts/h_pigcut.baf~
 COMPILE ~gorgon/scripts/h_velens.baf~
 COMPILE ~gorgon/scripts/h_dorias.baf~
+COMPILE ~gorgon/scripts/h_bmacut.baf~
+COMPILE ~gorgon/scripts/h_ravcut.baf~
+COMPILE ~gorgon/scripts/h_citybs.baf~
+COMPILE ~gorgon/scripts/h_lied2s.baf~
+COMPILE ~gorgon/scripts/h_liecut.baf~
+COMPILE ~gorgon/scripts/h_li2cut.baf~
 
 
 // Area Scripts
@@ -316,23 +328,8 @@ END
 
 // Portraits
 
-COPY ~gorgon/portraits/h_ariosp.bmp~ ~override~
-COPY ~gorgon/portraits/h_baldwp.bmp~ ~override~
-COPY ~gorgon/portraits/h_nagapp.bmp~ ~override~
-COPY ~gorgon/portraits/h_denebp.bmp~ ~override~
-COPY ~gorgon/portraits/h_eurynp.bmp~ ~override~
-COPY ~gorgon/portraits/h_gilbap.bmp~ ~override~
-COPY ~gorgon/portraits/h_ilenap.bmp~ ~override~
-COPY ~gorgon/portraits/h_injurp.bmp~ ~override~
-COPY ~gorgon/portraits/h_liedep.bmp~ ~override~
-COPY ~gorgon/portraits/h_meredp.bmp~ ~override~
-COPY ~gorgon/portraits/h_nagatp.bmp~ ~override~
-COPY ~gorgon/portraits/h_quassp.bmp~ ~override~
-COPY ~gorgon/portraits/h_richap.bmp~ ~override~
-COPY ~gorgon/portraits/h_rigalp.bmp~ ~override~
-COPY ~gorgon/portraits/h_saradp.bmp~ ~override~
-COPY ~gorgon/portraits/h_thamup.bmp~ ~override~
-COPY ~gorgon/portraits/h_zedapp.bmp~ ~override~
+COPY ~gorgon/portraits~ ~override~
+
 
 //   New BAMs
 
@@ -1018,9 +1015,14 @@ COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
      SAY NAME1 @920
      SAY NAME2 @920
 
+COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~        // Liedel(2)
+     SAY NAME1 @921
+     SAY NAME2 @921
+     
 COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
      SAY NAME1 @921
      SAY NAME2 @921
+     SAY BIO @200000
 
 COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
      SAY NAME1 @922
@@ -1205,6 +1207,14 @@ COPY ~gorgon/cre/h_city5c.cre~ ~override/h_city5c.cre~        // City Watch(5)
 COPY ~gorgon/cre/h_city6c.cre~ ~override/h_city6c.cre~        // City Watch(6)
      SAY NAME1 @953
      SAY NAME2 @953
+     
+COPY ~gorgon/cre/h_citygc.cre~ ~override/h_citygc.cre~        // City Watch(Ally)
+     SAY NAME1 @953
+     SAY NAME2 @953
+
+COPY ~gorgon/cre/h_citybc.cre~ ~override/h_citybc.cre~        // City Watch(Enemy)
+     SAY NAME1 @953
+     SAY NAME2 @953
 
 COPY ~gorgon/cre/h_whitec.cre~ ~override/h_whitec.cre~        // Commander Whitewood
      SAY NAME1 @954
@@ -1339,6 +1349,14 @@ COPY ~gorgon/cre/h_bmar2c.cre~ ~override/h_bmar2c.cre~        // Black Market Me
      SAY NAME2 @978
 
 COPY ~gorgon/cre/h_bmar3c.cre~ ~override/h_bmar3c.cre~        // Black Market Merchant(Traps)
+     SAY NAME1 @978
+     SAY NAME2 @978
+     
+COPY ~gorgon/cre/h_bmar4c.cre~ ~override/h_bmar4c.cre~        // Black Market Merchant(Trinkets)
+     SAY NAME1 @978
+     SAY NAME2 @978
+
+COPY ~gorgon/cre/h_bmar5c.cre~ ~override/h_bmar5c.cre~        // Black Market Merchant(Weapons/Armor)
      SAY NAME1 @978
      SAY NAME2 @978
      

@@ -7,7 +7,7 @@ IF ~True()~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~A discerning choice, my friend. Right this way.~
+   SAY ~Right this way, my friend.~
 IF ~~ THEN DO ~
    StartStore("h_bm1sto",LastTalkedToBy(Myself))~ EXIT
 END

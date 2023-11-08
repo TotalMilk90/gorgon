@@ -4,6 +4,6 @@ IF
 THEN
         RESPONSE #100
                  CreateCreature("h_alaric",[671.255],NE)
-                 SetGlobal("h_SpawnAlaric","GLOBAL",1)
+                 SetGlobal("h_SpawnAlaric","GLOBAL",2)
                  Continue()
 END

@@ -6,7 +6,7 @@ IF
          !Allegiance(Myself,ENEMY)
 THEN
          RESPONSE #100
-                  Wait(1)
+                  SmallWait(1)
                   StartDialog("h_citywd",[PC])
 END
 

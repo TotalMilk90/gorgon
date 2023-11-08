@@ -80,7 +80,7 @@ CHAIN
    == h_valerd
 ~They're brewing a storm, Ariosh. The Watch is doubling down, gearing up for a sweep. Word is, someone big from the Gate is coming, and they're not here for tea and biscuits.~
    =
-~I've got a knack for playing shadows at the perfect moment. Heard the whispers straight from Whitewood, herself. Most of the Watch don't even know yet.~
+~Heard the whispers straight from Whitewood, herself. I've got a knack for playing shadows at the perfect moment. Most of the Watch don't even know yet.~
    == h_ariosd
 ~I'll give you credit, Valera, you've been weaving quite the web with that silver tongue of yours. But remember, in our world, even the best threads can unravel.~
    =

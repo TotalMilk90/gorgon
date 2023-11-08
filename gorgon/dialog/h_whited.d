@@ -15,13 +15,13 @@ END
 IF ~~ THEN BEGIN 2
    SAY ~Feel free to explore, just keep your senses sharp. If you need guidance or assistance, don't hesitate to ask.~
        ++ ~Can you tell me anything about yourself and your role here in the city?~ GOTO 3
-       ++ ~What can you tell me about the Gorgon's Eye and their recent activity?~ GOTO 6
+       ++ ~What can you tell me about the Gorgon's Eye and their recent activities?~ GOTO 6
        ++ ~Is there anything I can help assist you with?~ GOTO 11
        ++ ~I'll be going now.~ GOTO 14
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~My name is Seraphina Whitewood, and I lead the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised entirely of Beregost citizens.~ IF ~~ THEN GOTO 4
+   SAY ~My name is Seraphina Whitewood, and I lead the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised entirely of Beregost's own.~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
@@ -30,7 +30,7 @@ END
 
 IF ~~ THEN BEGIN 5
    SAY ~We face challenges from the likes of the Gorgon's Eye, and it's my responsibility to see that our streets remain safe and our community protected.~
-       ++ ~What can you tell me about the Gorgon's Eye and their recent activity?~ GOTO 6
+       ++ ~What can you tell me about the Gorgon's Eye and their recent activities?~ GOTO 6
        ++ ~Is there anything I can help assist you with?~ GOTO 11
        ++ ~I'll be going now.~ GOTO 14
 END
@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~At the helm of their operation stands a man of dangerous repute, known simply as Baldwin 'The Butcher'. His name alone strikes fear into the hearts of many, and his notoriety is well-earned.~ IF ~~ THEN GOTO 8
+   SAY ~At the helm of their operation stands a man of dangerous repute, known as Baldwin "The Butcher". His name alone strikes fear into the hearts of many, and his notoriety is well-earned.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -69,7 +69,7 @@ END
 IF ~~ THEN BEGIN 13
    SAY ~Keep an eye on things, learn the lay of the land, and perhaps in the future, we may have a task that suits your skills.~
        ++ ~Can you tell me anything about yourself and your role here in the city?~ GOTO 3
-       ++ ~What can you tell me about the Gorgon's Eye and their recent activity?~ GOTO 6
+       ++ ~What can you tell me about the Gorgon's Eye and their recent activities?~ GOTO 6
        ++ ~I'll be going now.~ GOTO 14
 END
 
@@ -84,13 +84,13 @@ IF ~Global("h_WhitewoodDialog","GLOBAL",1)~ THEN BEGIN 15
    SAY ~Back again, I see. What can I assist you with this time?~
        +~GlobalGT("h_BaldwinQuest","GLOBAL",3)~+ ~I've infiltrated the Gorgon's Eye thieves guild and I'm willing to help you fight against them.~ GOTO 16
        ++ ~Can you tell me anything about yourself and your role here in the city?~ GOTO 3
-       ++ ~What can you tell me about the Gorgon's Eye and their recent activity?~ GOTO 6
+       ++ ~What can you tell me about the Gorgon's Eye and their recent activities?~ GOTO 6
        +~GlobalLT("h_BaldwinQuest","GLOBAL",4)~+ ~Is there anything I can help assist you with?~ GOTO 11
        ++ ~I'll be going now.~ GOTO 14
 END
 
 IF ~~ THEN BEGIN 16
-   SAY ~You've done what? That's a bold move. If what you're say is true, we have a rare opportunity on our hands.~ IF ~~ THEN GOTO 17
+   SAY ~You've done what? That's a bold move. If what you say is true, then we have a rare opportunity on our hands.~ IF ~~ THEN GOTO 17
 END
 
 IF ~~ THEN BEGIN 17
@@ -104,7 +104,7 @@ IF ~~ THEN BEGIN 18
 END
 
 IF ~~ THEN BEGIN 19
-   SAY ~Take the time you need. When you're prepared to move, we'll be right here, ready to strike.~
+   SAY ~Take all the time you need. When you're prepared to move, we'll be right here, ready to strike.~
 IF ~~ THEN DO ~
    SetGlobal("h_WhitewoodDialog","GLOBAL",2)
    AddJournalEntry(@209,USER)~ EXIT

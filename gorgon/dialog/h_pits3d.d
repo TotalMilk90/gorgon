@@ -13,7 +13,7 @@ IF ~Global("h_FightersTalk","GLOBAL",1)~ THEN BEGIN 0.5
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~Ah, you're looking to learn a bit about me, aren't you? Well, I suppose there's no harm in a tale or two.~ IF ~~ THEN GOTO 2
+   SAY ~Ah, you're looking to learn a bit about me, are you? Well, I suppose there's no harm in a tale or two.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
@@ -67,7 +67,7 @@ IF ~~ THEN BEGIN 12
 END
 
 IF ~~ THEN BEGIN 13
-   SAY ~They called her 'Ironclad' Isla, and let me tell you, she was a force of nature, a living legend in these pits.~ IF ~~ THEN GOTO 14
+   SAY ~They called her Isla Darkcloak, and let me tell you, she was a force of nature, a living legend in these pits.~ IF ~~ THEN GOTO 14
 END
 
 IF ~~ THEN BEGIN 14
@@ -91,7 +91,7 @@ IF ~~ THEN BEGIN 17
 END
 
 IF ~~ THEN BEGIN 18
-   SAY ~If you ever cross paths with 'Ironclad' Isla, consider yourself warned. She's a force to be reckoned with, and there's no shame in walking away if you value your life.~
+   SAY ~If you ever cross paths with Isla, consider yourself warned. She's a force to be reckoned with, and there's no shame in walking away if you value your life.~
        ++ ~Lyria, what's your story? I'd like to learn more about you.~ GOTO 1
        ++ ~Any tips for a newcomer trying to make a mark in the pits?~ GOTO 8
        ++ ~I'll be going now.~ GOTO 19
@@ -143,7 +143,7 @@ IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 25
 END
 
 IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 26
-   SAY ~I can't believe Isla's back in the pits, and for a deathmatch no less. She's a legend, you know? I've looked up to her for as long as I can remember. It's an honor to even share the arena with her.~ IF ~~ THEN GOTO 27
+   SAY ~I can't believe Isla's back in the pits, and for a deathmatch no less. She's a legend, you know. I've looked up to her for as long as I can remember. It's an honor to even share the arena with her.~ IF ~~ THEN GOTO 27
 END
 
 IF ~~ THEN BEGIN 27

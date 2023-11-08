@@ -11,7 +11,7 @@ IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL"
 END
 
 IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",0) Class([PC],THIEF_ALL)~ THEN BEGIN 1.5
-   SAY ~You've come at a time when the shadows are still dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
+   SAY ~At this time the shadows still lie dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 2
@@ -52,8 +52,10 @@ IF ~~ THEN BEGIN 7
    SAY ~Very well. Follow me, and remember, in the markets, discretion is your closest ally.~
 IF ~~ THEN DO ~
    SetGlobal("h_TravelToBM","GLOBAL",1)
-   ActionOverride(LastTalkedToBy,LeaveAreaLUA("h_bmarka","",[214.360],N))
-   EscapeArea()~ EXIT
+   //ActionOverride(LastTalkedToBy,LeaveAreaLUA("h_bmarka","",[214.360],N))
+   ClearAllActions()
+   StartCutSceneMode()
+   StartCutScene("h_bmacut")~ EXIT
 END
 
 IF ~Global("h_TravelToBM","GLOBAL",1)~ THEN BEGIN 8
@@ -77,7 +79,10 @@ IF ~~ THEN BEGIN 11
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnThalia","GLOBAL",0)
    SetGlobal("h_TravelToBM","GLOBAL",3)
-   ActionOverride(LastTalkedToBy,LeaveAreaLUA("AR0153","",[232.286],NE))~ EXIT
+   //ActionOverride(LastTalkedToBy,LeaveAreaLUA("AR0153","",[232.286],NE))
+   ClearAllActions()
+   StartCutSceneMode()
+   StartCutScene("h_ravcut")~ EXIT
 END
 
 IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL",3) Class([PC],THIEF_ALL)~ THEN BEGIN 12
@@ -87,5 +92,5 @@ IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL"
 END
 
 IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",3) Class([PC],THIEF_ALL)~ THEN BEGIN 13
-   SAY ~You've come at a time when the shadows are still dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
+   SAY ~At this time the shadows still lie dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
 END

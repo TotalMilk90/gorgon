@@ -82,6 +82,18 @@ IF ~~ THEN BEGIN DEAD_0
 END
 
 IF ~~ THEN BEGIN DEAD_1
+   SAY ~She was a rare gem in our world, a beacon of innocence and kindness that shone brighter than any star in the night sky.~ IF ~~ THEN GOTO DEAD_2
+END
+
+IF ~~ THEN BEGIN DEAD_2
+   SAY ~Her laughter was a melody that echoed through these walls, bringing warmth to even the coldest of hearts.~ IF ~~ THEN GOTO DEAD_3
+END
+
+IF ~~ THEN BEGIN DEAD_3
+   SAY ~The world feels a little dimmer today, for we have lost a light that illuminated even the darkest corners.~ IF ~~ THEN GOTO DEAD_4
+END
+
+IF ~~ THEN BEGIN DEAD_4
    SAY ~Thank you, <CHARNAME>, for doing all you could.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
@@ -97,10 +109,10 @@ END
 
 IF ~~ THEN BEGIN 1
    SAY ~Our rates are 40 gold for the hour. Guild members pay half. Interested in a bit of... company?~
-       ++ ~Not at this time, thanks.~ GOTO 2
-       +~GlobalGT("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(19)~+ ~Oh, yes, I'd quite like that.~ GOTO 4
-       +~Global("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(39)~+ ~Oh, yes, I'd quite like that.~ GOTO 3
        +~Global("h_GilbaldQuest","GLOBAL",3)~+ ~I'm looking into a man named Xevec. Do you know anything about him?~ GOTO G_0
+       ++ ~Not at this time, thanks.~ GOTO 2
+       +~GlobalGT("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(19)~+ ~Oh, yes. I'd quite like that.~ GOTO 4
+       +~Global("h_BaldwinQuest","GLOBAL",0) PartyGoldGT(39)~+ ~Oh, yes. I'd quite like that.~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
@@ -159,7 +171,7 @@ END
 
 IF ~Global("h_Meredia","GLOBAL",1) Global("h_EndMeredia","GLOBAL",0)~ THEN BEGIN 20
    SAY ~Welcome, <CHARNAME>. As the new guildmaster, you're entitled to our services, free of charge, naturally.~
-       ++ ~Oh, yes, I'd quite like that.~ GOTO 21
+       ++ ~Oh, yes. I'd quite like that.~ GOTO 21
        ++ ~Not at this time, thanks.~ EXIT
        +~Global("h_GilbaldQuest","GLOBAL",3)~+ ~I'm looking into a man named Xevec. Do you know anything about him?~  GOTO G_0
 END
@@ -186,7 +198,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN G_0
-   SAY ~Xevec? I know him well. In fact, he spent quite the night with us just yesterday. What do you need to know about him?~
+   SAY ~Xevec? I know him well. In fact, he spent quite the night with us just yesterday. What would you like to know about him?~
        ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
        ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
        ++ ~Can you check to see if this coin matches any he spent here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
@@ -226,7 +238,7 @@ IF ~~ THEN BEGIN G_5
 END
 
 IF ~~ THEN BEGIN G_6
-   SAY ~By Sune! They're all fakes! Hundreds of 'em! How did I not see? It has to be Xevec's doing, no one else spent like him last night.~
+   SAY ~By Sune! They're all fakes! Dozens of 'em! How did I not see? It has to be Xevec's doing, no one else spent like him last night.~
        +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
        ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
        ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3

@@ -11,7 +11,7 @@ IF ~Global("h_Saradin","GLOBAL",1)~ THEN BEGIN 1
    SAY ~What is it you seek?~
      //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ EXIT
        ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ GOTO KERY_2
-       ++ ~How did Baldwin become known as 'The Butcher'?~ GOTO BUTCHER_2
+       ++ ~How did Baldwin become known as "The Butcher"?~ GOTO BUTCHER_2
        ++ ~What is your role here in the guild?~ GOTO SARA_2
        ++ ~Nothing at the moment.~ EXIT
 END
@@ -19,7 +19,7 @@ END
 IF ~~ THEN BEGIN KERY_2
    SAY ~I can tell you many things. What is it that you wish to know?~
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
-       ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
+       ++ ~What kind of power does the Kerykeion hold?~ GOTO KERY_3
        ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
        ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
        ++ ~I'd like to ask you about something else.~ GOTO 1
@@ -139,7 +139,7 @@ IF ~~ THEN BEGIN SARA_6
 END
 
 IF ~~ THEN BEGIN BUTCHER_2
-   SAY ~'The Butcher' moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
+   SAY ~"The Butcher" moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
 END
 
 IF ~~ THEN BEGIN BUTCHER_3
@@ -151,7 +151,7 @@ IF ~~ THEN BEGIN BUTCHER_4
 END
 
 IF ~~ THEN BEGIN BUTCHER_5
-   SAY ~To those who glimpsed the aftermath, he was 'The Butcher', a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
+   SAY ~To those who glimpsed the aftermath, he was, "The Butcher", a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
        ++ ~I'd like to ask you something else.~ GOTO 1
 END
 
@@ -333,6 +333,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",18)
    SetGlobal("h_SpawnAriosh","GLOBAL",5)
    SetGlobal("h_LiedelQuest","GLOBAL",7)
+   SetGlobal("h_BaldwinGuards","GLOBAL",3)
    AddJournalEntry(@220,QUEST_DONE)
    EscapeArea()~ EXIT
 END
@@ -345,6 +346,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",18)
    SetGlobal("h_SpawnAriosh","GLOBAL",5)
    SetGlobal("h_LiedelQuest","GLOBAL",7)
+   SetGlobal("h_BaldwinGuards","GLOBAL",3)
    AddJournalEntry(@220,QUEST_DONE)
    EscapeArea()~ EXIT
 END
@@ -450,7 +452,7 @@ IF ~~ THEN BEGIN GUILD_17
 END
 
 IF ~~ THEN BEGIN GUILD_18
-   SAY ~Your last officer that needs direction is Madam Meredia, who is in charge of our courtesan wing.~ IF ~~ THEN GOTO GUILD_19
+   SAY ~Your next officer that needs direction is Madam Meredia, who is in charge of our courtesan wing.~ IF ~~ THEN GOTO GUILD_19
 END
 
 IF ~~ THEN BEGIN GUILD_19
@@ -465,6 +467,34 @@ IF ~~ THEN BEGIN GUILD_20
 END
 
 IF ~~ THEN BEGIN GUILD_21
+   SAY ~I'll inform Meredia of your decision.~ IF ~~ THEN GOTO GUILD_22
+END
+
+IF ~~ THEN BEGIN GUILD_22
+   SAY ~Your last venture to oversee, is Diomedes fighting pits.~ IF ~~ THEN GOTO GUILD_23
+END
+
+IF ~~ THEN BEGIN GUILD_23
+   SAY ~Do you prefer an emphasis on honing our guilds combat skills through training, or do you lean more towards maximizing revenue from spectators?~
+       ++ ~Let's invest more time and resources into training programs, ensuring that each member reaches their full potential.~ GOTO GUILD_24
+       ++ ~I want to focus on maximising revenue from the matches, which we can use to fund better equipment and facilities.~ GOTO GUILD_24
+END
+
+IF ~~ THEN BEGIN GUILD_24
+   SAY ~Diomedes has stated his opposition towards allowing deathmatches, however, if you wish to reimplement them, the final decision is yours, of course.~ IF ~~ THEN GOTO GUILD_25
+END
+
+IF ~~ THEN BEGIN GUILD_25
+   SAY ~Allowing deathmatches raises the significant risk of losing valuable fighters whose expertise and experience could have been harnessed for the betterment of the guild.~ IF ~~ THEN GOTO GUILD_26
+END
+
+IF ~~ THEN BEGIN GUILD_26
+   SAY ~However, they have the potential to spread intrigue and draw significantly larger crowds, thus creating higher-stakes and an increased revenue stream.~
+       ++ ~The potential benefits of introducing deathmatches are too substantial to ignore. Inform Diomedes I want them reopened.~ DO ~ IncrementGlobal("h_GuildRisk","GLOBAL",1)~ GOTO GUILD_27
+       ++ ~Diomedes reservations about deathmatches are valid. We have thrived without them for a significant period and that is how we shall continue.~ DO ~ IncrementGlobal("h_GuildRisk","GLOBAL",-1)~ GOTO GUILD_27
+END
+
+IF ~~ THEN BEGIN GUILD_27
    SAY ~Alright, that is all I have for you at this time. I will make the rounds every seven days to collect our profits. Come see me then, and I will let you know how things have fared.~
 IF ~~ THEN DO ~
    SetGlobal("h_Saradin","GLOBAL",5)

@@ -6,3 +6,26 @@ THEN
                  ChangeEnemyAlly(Myself,NEUTRAL)
                  EscapeArea()
 END
+
+IF
+	Global("h_AttackedGuild","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+	Global("h_HelpCityWatch","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 EscapeArea()
+END
+
+IF
+	Global("h_ShadowWar","GLOBAL",9)
+THEN
+	RESPONSE #100
+	         EscapeArea()
+END

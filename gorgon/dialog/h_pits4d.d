@@ -1,14 +1,14 @@
 BEGIN h_pits4d
 
 IF ~Global("h_FightersTalk","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~This arena hse seen many a tale, some ending in triumph, others in heartache. What's your story, I wonder?~ IF ~~ THEN EXIT
+   SAY ~This arena has seen many a tale, some ending in triumph, others in heartache. What's your story, I wonder?~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_FightersTalk","GLOBAL",1)~ THEN BEGIN 0.5
    SAY ~In the arena, you'll find the rhythm of nature's dance and the harmony of combat. What knowledge or tales are you seeking today?~
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -51,7 +51,7 @@ END
 IF ~~ THEN BEGIN 10
    SAY ~Each fight is a lesson, a chance to learn, to adapt, and to grow stronger. In this arena, I find a different kind of harmony, a symphony of survival and mastery.~
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -70,7 +70,7 @@ END
 IF ~~ THEN BEGIN 14
    SAY ~Remember, the arena, like the wild, rewards those who are attuned to its rhythms and adapt swiftly to its ever-shifting tides.~
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -97,7 +97,7 @@ IF ~Global("h_BeatKhalid","GLOBAL",2)~ THEN BEGIN 19
    SAY ~Impressive display of skill, my friend. Khalid's no easy opponent, yet here you stand, victorious. The balance of the arena is shifting.~
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -105,7 +105,7 @@ IF ~Global("h_BeatGrom","GLOBAL",2)~ THEN BEGIN 20
    SAY ~Impressive victory over Grom. I know first hand that he's a formidable opponent. The North can be a harsh teacher, but so too can the lessons in the pits.~
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -113,7 +113,7 @@ IF ~Global("h_BeatLyria","GLOBAL",2)~ THEN BEGIN 21
    SAY ~A nimble dance, that was. Lyria's quick on her feet, but you outmaneuvered her. Nature rewards those who adapt.~
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 
@@ -122,7 +122,7 @@ IF ~Global("h_BeatSerra","GLOBAL",2)~ THEN BEGIN 22
        ++ ~Thank you, Serra. Your skills were admirable and you fought with valor.~ GOTO 23
        ++ ~Serra, can you tell me more about yourself?~ GOTO 1
        ++ ~Are there any strategies or insights you've gained from your experiences here?~ GOTO 11
-       ++ ~Can you tell me anything about some of the other fighters here?~ GOTO 15
+       ++ ~Can you tell me anything about the other fighters here?~ GOTO 15
        ++ ~I'll be going now.~ GOTO 18
 END
 

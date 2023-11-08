@@ -67,7 +67,7 @@ CHAIN
    == h_bald2d
 ~Ah, my dear brother, here to witness my ascent into godhood, are you? How considerate.~
    == h_richad
-~Godhood? Are you mad! I've come to stop you, and to take ownership of the Kerykeion.~
+~Godhood? Are you mad! I've come to stop you, and take ownership of the Kerykeion.~
    =
 ~Surrender it, and I will bring you in before the Shadowmaster. There may still be mercy.~
    == h_bald2d
@@ -81,11 +81,11 @@ CHAIN
    =
 ~It was a dream we both shared once, do you remember? Or is even that lost to you now, along with your honor, after betraying your own brother!~
    == h_richad
-~I have not forgotten. Yet, I cannot say the same for you.~
+~I have not forgotten, yet, I cannot say the same for you.~
    =
 ~It is you who are lost, brother. Ensnared in the malevolent embrace of the Kerykeion, and from it, you've emerged a dark taint of delusion.~
    =
-~You butcherd your kin. Cut them down like helpless dogs. There was no desire for retribution in your eyes, only malice.~
+~You butcherd your kin. Cut them down like helpless dogs. There is no desire for retribution in your eyes, only malice.~
    == h_bald2d
 ~You remain restrained by fear, lacking ambition, and that is why you will fail. You are still the same coward as you were on the day of my banishment.~
    =

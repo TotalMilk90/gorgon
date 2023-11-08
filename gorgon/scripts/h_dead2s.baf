@@ -3,7 +3,7 @@ IF
          See([PC])
 THEN
          RESPONSE #100
-                  SmallWait(1)
+                  Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
 
@@ -20,7 +20,7 @@ IF
          See([PC])
 THEN
          RESPONSE #100
-                  SmallWait(1)
+                  Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
 
@@ -37,7 +37,7 @@ IF
          See([PC])
 THEN
          RESPONSE #100
-                  SmallWait(1)
+                  Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
 
@@ -54,7 +54,7 @@ IF
          See([PC])
 THEN
          RESPONSE #100
-                  SmallWait(1)
+                  Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
 
@@ -71,12 +71,21 @@ IF
          See([PC])
 THEN
          RESPONSE #100
-                  SmallWait(1)
+                  Wait(1)
                   StartDialog("h_dead2d",[PC])
 END
 
 IF
          Global("h_BeatRoran","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_dead2d",[PC])
+END
+
+IF
+         Global("h_PitsFight","GLOBAL",10)
+         See([PC])
 THEN
          RESPONSE #100
                   Wait(1)

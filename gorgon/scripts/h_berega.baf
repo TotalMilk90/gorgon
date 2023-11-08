@@ -43,7 +43,7 @@ END
 
 IF
          Global("h_RigaldoQuest","GLOBAL",17)
-         Global("h_BountyNumber","GLOBAL",6)
+         Global("h_BountyNumber","GLOBAL",9)
          Global("h_BetrayBaldwin","GLOBAL",0)
          Global("h_RandomEncounterForced","GLOBAL",1)
 THEN
@@ -361,5 +361,54 @@ THEN
 	RESPONSE #100
 		 CreateCreature("h_whitec",[2294.2192],SW)
 		 SetGlobal("h_HideWhitewood","GLOBAL",3)
+		 Continue()
+END
+
+IF
+         Global("h_CityWatchBattle","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  CreateCreature("h_citygc",[533.2622],E)
+                  CreateCreature("h_citybc",[611.2628],W)
+
+                  CreateCreature("h_citygc",[1635.3148],W)
+                  CreateCreature("h_citygc",[1648.3045],W)
+                  CreateCreature("h_citybc",[1536.3088],E)
+
+                  CreateCreature("h_citygc",[2208.2290],S)
+                  CreateCreature("h_citygc",[2340.2243],S)
+                  CreateCreature("h_citygc",[2414.2354],S)
+                  CreateCreature("h_citybc",[2237.2381],N)
+                  CreateCreature("h_citybc",[2304.2451],N)
+                  CreateCreature("h_citybc",[2393.2411],N)
+
+                  CreateCreature("h_citygc",[4542.3067],E)
+                  CreateCreature("h_citybc",[4632.3119],W)
+
+                  SetGlobal("h_CityWatchBattle","GLOBAL",2)
+                  Continue()
+END
+
+IF
+        Global("h_BaldwinGuards","GLOBAL",1)
+THEN
+	RESPONSE #100
+		 CreateCreature("h_whitec",[3724.978],S)
+		 CreateCreature("h_whitec",[3590.962],S)
+		 SetGlobal("h_BaldwinGuards","GLOBAL",2)
+		 Continue()
+END
+
+IF
+        TimeOfDay(NIGHT)
+        Global("h_SpawnLiedel","GLOBAL",0)
+        GlobalGT("h_ShadowWar","GLOBAL",2)
+        Global("h_LiedelRomance","GLOBAL",3)
+        Global("h_LiedelQuest","GLOBAL",4)
+THEN
+	RESPONSE #100
+		 CreateCreature("h_lied2c",[2552.3241],N)
+		 SetGlobal("h_SpawnLiedel","GLOBAL",1)
 		 Continue()
 END

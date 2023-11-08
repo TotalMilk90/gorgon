@@ -57,17 +57,17 @@ CHAIN
    == h_game2d
 ~Looks like we've been slipped a mickey! Some of these coins ain't singin' the right tune!~
    == h_gilbad
-~Toss one here, let me give a look.~
+~Toss one here, let me have a look.~
    =
 ~Shit, you're right! Who'd be daft enough to try and snake us? They gotta know what's comin'.~
    == h_game2d
 ~Apologies, boss. Can't fathom how this slipped my radar. I'll man up and take whatever lumps you dish out.~
    == h_gilbad
-~Noted. Craftsmanship ain't half bad. Whoever's behind this ain't no slouch.~
+~Noted. Craftsmanship ain't half bad, to be honest. Whoever's behind this ain't no slouch.~
    =
 ~<CHARNAME>, look into this for me, will ya? Rather not make a scene if we don't gotta. Check with my crew for the night's score, then do some diggin'.~
    =
-~Feel free to give that rat a one-way ticket to the Reaper.~
+~If you find out who's responsible, feel free to give that rat a one-way ticket to the Reaper.~
    DO ~
       SetGlobal("h_GilbaldQuest","GLOBAL",2)
       SetGlobal("h_SpawnMaid","GLOBAL",1)

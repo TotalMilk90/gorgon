@@ -16,7 +16,7 @@ IF ~~ THEN BEGIN JOIN_1
 END
 
 IF ~~ THEN BEGIN JOIN_2
-   SAY ~I make it my business to know those prowling about the city. You are just one of many.~ IF ~~ THEN GOTO JOIN_3
+   SAY ~I make it my business to know those prowling about the city. You are but one of many.~ IF ~~ THEN GOTO JOIN_3
 END
 
 IF ~~ THEN BEGIN JOIN_3
@@ -66,7 +66,7 @@ IF ~~ THEN BEGIN JOIN_9
 END
 
 IF ~~ THEN BEGIN JOIN_10
-   SAY ~I offer you an opportunity to gain unique skills in the art of shadows from some of Faerun's finest. You will be armed, trained, and entitled to a cut of the guilds spoils.~
+   SAY ~I offer you an opportunity to gain unique skills in the art of shadows from some of Faerun's finest. You will be armed, trained, and entitled to a cut of the guild's spoils.~
        ++ ~I thought Ravenscar controlled the whole of the Sword Coast?~ GOTO JOIN_8
        ++ ~What manner of tasks would be required of me?~ GOTO JOIN_11
        ++ ~I accept your offer and look forward to the opportunities it will provide.~ GOTO JOIN_17
@@ -238,7 +238,7 @@ IF ~Global("h_BaldwinQuest","GLOBAL",3)~ THEN BEGIN MAGE_16.5
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc01")~ THEN BEGIN MAGE_17
-   SAY ~By the gods... You've done it. I can sense the aura of the Kerykeion. Swiftly, hand it here.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
+   SAY ~By the gods... You've done it. I can actually sense the aura of the Kerykeion enveloping you. Swiftly, hand it here.~ IF ~~ THEN DO ~ TakePartyItem("h_misc01") DestroyItem("h_misc01")~ GOTO MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_18
@@ -246,29 +246,29 @@ IF ~~ THEN BEGIN MAGE_18
 END
 
 IF ~~ THEN BEGIN MAGE_19
-   SAY ~I await a detailed report of your encounter. Discuss with me any matters of import.~
+   SAY ~I await a detailed report of your encounter, <CHARNAME>. Please, discuss with me any matters of import.~
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
 END
 
 IF ~~ THEN BEGIN MAGE_20
-   SAY ~There is a strength required to wield it, a mental fortitude to shield oneself from the darkness. She was unworthy of its gift.~
-       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
+   SAY ~Well, there is a strength required to wield it, a mental fortitude needed to shield oneself from the darkness. It appears she was unworthy of its gift.~
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report, Baldwin.~ GOTO MAGE_23
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
 END
 
 IF ~~ THEN BEGIN MAGE_21
-   SAY ~That is curious news, indeed. None but our own should have known of this endeavor.~
-       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
+   SAY ~Now, that is curious news, indeed. None but our own should have known of this endeavor.~
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report, Baldwin.~ GOTO MAGE_23
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~When the battle begun she was able to summon snakes under her command.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_22
 END
 
 IF ~~ THEN BEGIN MAGE_22
-   SAY ~Fascinating... My research spoke of this unique power, the Gorgon's offspring. A true testament to the serpent gods, themselves.~
-       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report.~ GOTO MAGE_23
+   SAY ~Fascinating... My research spoke of this unique power, the Gorgon's offspring. A true testament to the serpent gods.~
+       +~GlobalGT("h_MageNumber","GLOBAL",1)~+ ~That is all I have to report, Baldwin.~ GOTO MAGE_23
        ++ ~The mage appeared unstable. As if the Kerykeion had warped her mind.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_20
        ++ ~She mentioned other rogues who assailed her for the Kerykeion.~ DO ~IncrementGlobal("h_MageNumber","GLOBAL",1)~ GOTO MAGE_21
 END
@@ -278,11 +278,11 @@ IF ~~ THEN BEGIN MAGE_23
 END
 
 IF ~~ THEN BEGIN MAGE_24
-   SAY ~With your report, it becomes evident that we are under scrutiny. An attempt to uncover our knowledge of the Kerykeion, perhaps. My spies are currrently investigating this matter.~ IF ~~ THEN GOTO MAGE_25
+   SAY ~With your report, it becomes evident that we are under scrutiny. An attempt to uncover our knowledge of the Kerykeion, perhaps. I will have my spies investigate this matter more thoroughly.~ IF ~~ THEN GOTO MAGE_25
 END
 
 IF ~~ THEN BEGIN MAGE_25
-   SAY ~Attend to your regular duties, but excerise caution in your movements, especially within the city. Eye every shadow and question every face.~ IF ~~ THEN GOTO MAGE_26
+   SAY ~Attend to your regular duties, but excerise caution in your movements, especially within the city. Eye every shadow, and question every face.~ IF ~~ THEN GOTO MAGE_26
 END
 
 IF ~~ THEN BEGIN MAGE_26
@@ -366,7 +366,7 @@ IF ~~ THEN BEGIN NAGATE_5
 END
 
 IF ~~ THEN BEGIN NAGATE_6
-   SAY ~Their contact goes by the name 'Nagate', stationed at the ancient elven ruins. If this report is to be believed, that is where you'll find them.~ IF ~~ THEN GOTO NAGATE_7
+   SAY ~Their contact goes by the name, 'Nagate', stationed by some old elven ruins. If this report is to be believed, that is where you'll find them.~ IF ~~ THEN GOTO NAGATE_7
 END
 
 IF ~~ THEN BEGIN NAGATE_7
@@ -466,11 +466,11 @@ IF ~~ THEN BEGIN THAMUZ_10.5
 END
 
 IF ~~ THEN BEGIN THAMUZ_11
-   SAY ~Additionally, something's got the courtesans all spooked up and chatting. I need you to quell their commotion and handle the situation.~ IF ~~ THEN GOTO THAMUZ_12
+   SAY ~Something's got the courtesans all spooked up and chatting, as well. I need you to quell their commotion and handle the situation.~ IF ~~ THEN GOTO THAMUZ_12
 END
 
 IF ~~ THEN BEGIN THAMUZ_12
-   SAY ~Carry on. You are dismissed.~
+   SAY ~Now, carry on. You are dismissed.~
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
    SetGlobal("h_RigaldoQuest","GLOBAL",14)
@@ -579,6 +579,7 @@ END
 IF ~~ THEN BEGIN GERARD_9
    SAY ~Come, let us depart for Gerard's manor at once. The grand finale awaits, and retribution will be served.~
 IF ~~ THEN DO ~
+   SetGlobal("h_BaldwinGuards","GLOBAL",1)
    SetGlobal("h_BaldwinQuest","GLOBAL",9)
    SetGlobal("h_ShadowWar","GLOBAL",8)
    SetGlobal("h_SpawnBaldwin","GLOBAL",1)

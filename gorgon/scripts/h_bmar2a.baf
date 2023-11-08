@@ -2,11 +2,11 @@ IF
         Global("h_SpawnBM2","GLOBAL",0)
 THEN
         RESPONSE #100
-                 CreateCreature("h_cour2c",[256.225],S)
-                 CreateCreature("h_cour2c",[217.192],S)
-                 CreateCreature("h_cour2c",[297.192],S)
-                 CreateCreature("h_islacc",[89.287],E)
-                 CreateCreature("h_sorenc",[425.270],W)
+                 CreateCreature("h_islacc",[93.285],E)
+                 CreateCreature("h_sorenc",[437.262],W)
+                 CreateCreature("h_bmar3c",[191.173],S)
+                 CreateCreature("h_nagacc",[325.177],S)
+
                  SetGlobal("h_SpawnBM2","GLOBAL",1)
                  Continue()
 END

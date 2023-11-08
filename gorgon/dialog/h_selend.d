@@ -1,7 +1,7 @@
 BEGIN h_selend
 
 IF ~Global("h_SelenaQuest","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~Avast 'ere, an' 'old yer horses, ye scurvy dog! Wha's th' wind blowin' ye t' me an' me scallywags, struttin' ye about like ye own th' joint? Spit it out, why be ye here?~
+   SAY ~Avast 'ere, ye scurvy dog! Wha's th' wind blowin' ye t' me an' me scallywags, struttin' ye about like ye own th' joint? Spit it out, why be ye here?~
        ++ ~I represent the Gorgon's Eye thieves guild. We've heard of your reputation, Selena, and would like to discuss a potential partnership.~ GOTO 4
        ++ ~I'm here to ensure you and your crew don't become a problem for us in these parts. How we proceed forward is up to you.~ GOTO 2
        ++ ~This territory now belongs to me, and I've come to eliminate any contenders. Unsheathe your blades, pirate!~ GOTO 1
@@ -51,7 +51,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Bring those parchments t' me, an' ye'll find us sailin' alongside th' Gorgon's Eye flag. Keep in mind, though, this ain't a task fer th' sea-sick green'orns.~ IF ~~ THEN GOTO 9
+   SAY ~Bring those parchments t' me, an' ye'll find us sailin' alongside th' Gorgon's Eye flag. Keep in mind, though, this ain't a task fer those green in th' face or quick to th' sea-sick.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9

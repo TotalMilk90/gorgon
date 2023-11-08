@@ -7,7 +7,6 @@ THEN
                   CreateCreature("h_rigalc",[945.1121],S)
                   CreateCreature("h_liedec",[762.1342],NE)
                   CreateCreature("h_eurync",[700.1220],SE)
-                  CreateCreature("h_nagacc",[1358.343],S)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
                   CreateCreature("h_ilenac",[1883.1134],SW)
@@ -20,22 +19,30 @@ THEN
                   CreateCreature("h_game2c",[1407.1122],S)
                   CreateCreature("h_game3c",[1344.1207],E)
 
-                  CreateCreature("h_zedacc",[1021.1309],NW)
+                  CreateCreature("h_zedacc",[1054.1314],NW)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
 
                   CreateCreature("h_kageic",[1194.1429],E)
                   CreateCreature("h_ophelc",[1234.1371],SE)
 
-                  CreateCreature("h_deadec",[1581.1696],SSW)
+                  SetGlobal("h_GuildSpawn","GLOBAL",1)
+                  Continue()
+END
+
+IF
+         Global("h_FighterSpawn","GLOBAL",0)
+THEN
+         RESPONSE #100
                   CreateCreature("h_catcac",[1605.1712],W)
+                  CreateCreature("h_deadec",[1581.1696],SSW)
                   CreateCreature("h_pits1c",[1379.1795],NE)
                   CreateCreature("h_pits2c",[1617.1803],NW)
                   CreateCreature("h_pits3c",[1452.1827],NNE)
-                  CreateCreature("h_pits4c",[1529.1804],N)
+                  CreateCreature("h_pits4c",[1457.1756],SW)
                   CreateCreature("h_pits5c",[1461.1672],S)
 
-                  SetGlobal("h_GuildSpawn","GLOBAL",1)
+                  SetGlobal("h_FighterSpawn","GLOBAL",1)
                   Continue()
 END
 
@@ -51,6 +58,9 @@ THEN
                   CreateCreature("h_roguec",[1400.750],N)
                   CreateCreature("h_roguec",[1672.726],N)
                   CreateCreature("h_roguec",[1796.656],NW)
+                  
+                  CreateCreature("h_roguec",[1238.1379],E)
+                  CreateCreature("h_roguec",[1208.1438],E)
                   SetGlobal("h_GuildThieves","GLOBAL",1)
                   Continue()
 END
@@ -66,6 +76,9 @@ THEN
                   CreateCreature("h_roguec",[1400.750],N)
                   CreateCreature("h_roguec",[1672.726],N)
                   CreateCreature("h_roguec",[1796.656],NW)
+                  
+                  CreateCreature("h_roguec",[1238.1379],E)
+                  CreateCreature("h_roguec",[1208.1438],E)
                   SetGlobal("h_GuildThieves","GLOBAL",6)
                   Continue()
 END

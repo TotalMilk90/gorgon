@@ -13,7 +13,7 @@ THEN
         FadeFromColor([20.0],0)
         Wait(2)
         ActionOverride("h_ariosc",Face(S))
-        ActionOverride("h_ishanc",Dialogue([PC]))
+        ActionOverride("h_ishanc",Dialogue("h_ariosc"))
         EndCutSceneMode()
 END
 

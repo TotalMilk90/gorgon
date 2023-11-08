@@ -11,15 +11,15 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Once I saw some men back there. Bad men. They told me to get lost or the ghost'll get me!~
+   SAY ~One time, I saw some men back there. Bad men. They told me to scram or the ghost would get me!~
        ++ ~Heh. Thanks for the laugh, kid. Now beat it.~ GOTO 4
-       ++ ~I've always been interested in the paranormal. I must go have a look for myself.~ GOTO 4
-       ++ ~I'm afraid of ghosts! I'm not going anywhere near there!~ GOTO 5
+       ++ ~I've always been interested in the paranormal. I should go have a look for myself.~ GOTO 4
+       ++ ~I'm not going anywhere near there!~ GOTO 5
        ++ ~Sounds like it could be a hideout for thieves. Does this city have a reputation for crime?~ GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~I guess so. Auntie always makes us lock the doors, even though we don't have nothin' special woth takin'. Can't cut through the back-alleys no more, neither.~
+   SAY ~I guess so. Auntie always makes us lock the doors, even though we don't have nothin' special worth takin'. Can't cut through the back-alleys no more, neither.~
        ++ ~Your auntie sounds like a wise woman. Here's a coin for telling me straight.~ GOTO 6
        ++ ~Sounds like my kind of place. Now shove off, kid.~ GOTO 7
        ++ ~Thanks for the info, kid. I'll go have a look at this tunnel for myself.~ GOTO 7

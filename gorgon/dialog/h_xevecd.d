@@ -37,7 +37,7 @@ END
 IF ~~ THEN BEGIN 6
    SAY ~Deceived, tricked, by that woman with the coins! Lost my senses, I did!~
        ++ ~What woman? Who decieved you?~ GOTO 7
-       ++ ~I'm not buying it, Xevec. Make your peace.~ GOTO 10
+       ++ ~You better not be lying, Xevec.~ GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
@@ -74,9 +74,9 @@ END
 
 IF ~~ THEN BEGIN 12
    SAY ~Great news, eh? Cleared my name, didn't you?~
-       ++ ~Well, not quite. You still used counterfeit gold, and the punishment is death.~ GOTO 14
        ++ ~I'll inform Gilbald of your involvement and he will decide your fate.~ GOTO 13
-       ++ ~All clear, Xevec. Might want to stay clear of the Den for a while, to be safe.~ GOTO 13
+       ++ ~I did, Xevec. Might want to stay clear of the Den for a while, though, to be safe.~ GOTO 13
+       ++ ~Well, not quite. You still used counterfeit gold, and the punishment is death. Sorry Xevec.~ GOTO 14
 END
 
 IF ~~ THEN BEGIN 13
@@ -88,7 +88,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 14
-   SAY ~Enough chit-chat, let's get to it! Got skills, me!~
+   SAY ~Enough talking then, let's get to it! I got skills, me!~
 IF ~~ THEN DO ~
    SetGlobal("h_KilledXevec","GLOBAL",2)
    AddJournalEntry(@614,QUEST)

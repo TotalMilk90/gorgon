@@ -4,7 +4,7 @@ IF
          Global("h_CaughtByNight","GLOBAL",0)
 THEN
          RESPONSE #100
-                  Wait(1)
+                  SmallWait(1)
                   StartDialog("h_zieknd",[PC])
 END
 

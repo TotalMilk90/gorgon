@@ -2,7 +2,7 @@ BEGIN h_isleyd
 
 IF ~Global("h_MerediaQuest","GLOBAL",3)~ THEN BEGIN 1
    SAY ~Who in the blazes are you?~
-       ++ ~Hold your weapons and back off from Ilena, unless you fancy a new ventilation.~ GOTO 2
+       ++ ~Hold your weapons and back off from Ilena, now.~ GOTO 2
        ++ ~I'm here to deliver a taste of justice, murderer, and make sure Ilena walks free.~ GOTO 2
        ++ ~Names aren't important now. Ungrip Ilena, and accept your fate.~ GOTO 2
 END
@@ -41,9 +41,9 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Think me daft, do you? Why choose suicide when freedom beckons!~
+   SAY ~Think me daft, do you? Why would I choose suicide when freedom beckons before my eyes!~
        ++ ~You'll never escape your deeds! You murdered your wife and abducted Ilena! How do you think this ends?~ GOTO 8
-       ++ ~It's the only righteous path! Drop your weapons, now!~ GOTO 8
+       ++ ~It's the only righteous path! Atone for the death of your wife, and drop your weapons, now!~ GOTO 8
        ++ ~Then you leave me no choice. Time to die, Isley!~ GOTO 4
 END
 
@@ -84,7 +84,7 @@ CHAIN
    == h_ilenad
 ~*nods*~
    == h_isleyd
-~Good, lass. Wait here and I'll be back in a minute.~
+~Good, lass. Now, wait here and I'll be back in a minute.~
    DO ~
       SetGlobal("h_MerediaQuest","GLOBAL",3)
       SetGlobal("h_IsleyDialog","GLOBAL",1)~

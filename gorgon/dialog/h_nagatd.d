@@ -1,7 +1,7 @@
 BEGIN h_nagatd
 
 IF ~True()~ THEN BEGIN 0
-   SAY ~You seem a touch displaced my friend. Do you require any assistance?~
+   SAY ~You seem a touch displaced, my friend. Do you require any assistance?~
        ++ ~I'm fine, thanks. You must be Nagate. I'm here regarding the Kerykeion.~ GOTO 1
        ++ ~Inform your men to emerge from the shadows, Nagate. Surrender the Kerykeion, and I'll consider sparing your lives.~ GOTO 8
        ++ ~I've no patience for these theatrics. Unsheathe your daggers, and let's end this farce.~ GOTO 8

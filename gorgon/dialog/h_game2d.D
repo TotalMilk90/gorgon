@@ -5,19 +5,18 @@ IF WEIGHT #-1 ~Global("h_GilbaldQuest","GLOBAL",2)~ THEN BEGIN GOLD_0
 END
 
 IF ~~ THEN BEGIN GOLD_1
-   SAY ~Had three big players last night, and truthfully, each one seemed a bit dodgy.~ IF ~~ THEN GOTO GOLD_2
+   SAY ~I had three big players last night, and truthfully, each one of 'em seemed a bit dodgy.~ IF ~~ THEN GOTO GOLD_2
 END
 
 IF ~~ THEN BEGIN GOLD_2
-   SAY ~There's our usual bloke, Xevec. A woman, whom I didn't catch her name, and a one-handed dwarf, named Hugo.~
+   SAY ~There's our usual bloke, Xevec. A woman, whose name I didn't catch, and a one-handed dwarf, named Hugo.~
        ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
        ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
        ++ ~Tell me about Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~That's all I need for now.~ GOTO GOLD_12
 END
 
 IF ~~ THEN BEGIN GOLD_3
-   SAY ~Xevec's a low-born troublemaker from Beregost. Too useless for any proper job, so he resorts to petty thievin' and begging.~ IF ~~ THEN GOTO GOLD_4
+   SAY ~Xevec's a low-born troublemaker from Beregost. Too useless for any proper job, so he resorts to petty thievin' and beggin'.~ IF ~~ THEN GOTO GOLD_4
 END
 
 IF ~~ THEN BEGIN GOLD_4
@@ -25,10 +24,10 @@ IF ~~ THEN BEGIN GOLD_4
 END
 
 IF ~~ THEN BEGIN GOLD_5
-   SAY ~After she left, he headed for the courtesan wing. Might be worth havin' some words with Meredia.~
+   SAY ~After she left, he headed for the courtesan wing. Might be worth havin' some words with Meredia about him.~
+       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
        ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
        ++ ~Tell me about the Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~That's all I need for now.~ GOTO GOLD_12
 END
 
 IF ~~ THEN BEGIN GOLD_6
@@ -40,14 +39,14 @@ IF ~~ THEN BEGIN GOLD_7
 END
 
 IF ~~ THEN BEGIN GOLD_8
-   SAY ~Didn't catch her name, but I recall her mentioning someone named 'Sam'. Might be kin or somethin'.~
+   SAY ~Didn't catch her name, but I do recall her mentioning someone named, 'Sam'. Might be kin or somethin'.~
+       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
        ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
        ++ ~Tell me about Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~That's all I need for now.~ GOTO GOLD_12
 END
 
 IF ~~ THEN BEGIN GOLD_9
-   SAY ~Hugo's your typical dwarf, first-timer here. Only odd thing was the missing hand.~ IF ~~ THEN GOTO GOLD_10
+   SAY ~Hugo's your typical dwarf, first-timer here. Only odd thing on 'em was the missing hand.~ IF ~~ THEN GOTO GOLD_10
 END
 
 IF ~~ THEN BEGIN GOLD_10
@@ -56,9 +55,9 @@ END
 
 IF ~~ THEN BEGIN GOLD_11
    SAY ~It's possible he tried his tricks here, then scarpered off to his next job. He might be a slippery one to track down.~
+       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
        ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
        ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~That's all I need for now.~ GOTO GOLD_12
 END
 
 IF ~~ THEN BEGIN GOLD_12
@@ -116,7 +115,7 @@ END
 
 IF ~  True()
 ~ THEN BEGIN 6
-  SAY ~Wager 10 gold.~
+  SAY ~Roll up and take a chance on the big wheel. One will get you twenty on a winning spin.~
   IF ~  PartyGoldGT(9)
 ~ THEN REPLY ~Wager 10 gold.~ DO ~TakePartyGold(10)
 ~ GOTO 4

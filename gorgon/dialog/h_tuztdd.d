@@ -6,7 +6,7 @@ END
 
 IF ~~ THEN BEGIN 1
    SAY ~Go on, git! We got here first. This ain't no place for you fancy, city-folk milk-drinkers.~
-       ++ ~I will not stand by while this defenseless girl suffers. Leave at once or I'll be forced to take action.~ GOTO 2
+       ++ ~I'll not stand by while this defenseless girl suffers. Leave at once or I'll be forced to take action.~ GOTO 2
        ++ ~Step aside, and I won't have to kill you.~ GOTO 2
        ++ ~What did you call me, you dumb hick! I'm going to enjoy slaughtering you animals.~ GOTO 2
 END

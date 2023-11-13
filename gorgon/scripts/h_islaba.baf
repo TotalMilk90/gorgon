@@ -1,0 +1,23 @@
+IF
+         TimeOfDay(NIGHT)
+         !Dead("h_islacc")
+         Global("h_SpawnIslaAlt","GLOBAL",1)
+         GlobalLT("h_FightingPits","GLOBAL",4)
+         Global("h_TravelToBM","GLOBAL",3)
+
+THEN
+	RESPONSE #100
+		 CreateCreature("h_isla2c",[462.382],NW)
+		 SetGlobal("h_SpawnIslaAlt","GLOBAL",2)
+		 Continue()
+END
+
+IF
+         Global("h_IslaAltJournal","GLOBAL",1)
+         Dead("h_islacc")
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@553,QUEST)
+                  SetGlobal("h_IslaAltJournal","GLOBAL",2)
+                  Continue()
+END

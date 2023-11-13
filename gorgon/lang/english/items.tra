@@ -459,7 +459,7 @@ Weight: 1~
 
 Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@64=~Europea's Slave Collar~
+@64=~Europea's Thrall Collar~
 @65=~This device is used to disrupt neural connections in the brain, causing its wearer to be more emotionless and complacent. It appears to be slightly damaged.
 
 Weight: 1~
@@ -808,3 +808,8 @@ Weight: 3~
 @142=~This delicate glass vial contains a shimmering, ethereal liquid. The serum emits a faint, soothing glow, hinting at its potent properties. Crafted by the skilled hands of the alchemist, Alaric, this serum holds the potential to alleviate the suffering caused by the dreaded featherlung disease.
 
 Weight: 1~
+
+@143=~Flaming Fist Ledger~
+@144=~This hefty tome, bound in weathered leather, bears the insignia of the Flaming Fist. The pages within are filled with meticulous records and covert correspondences, detailing undisclosed operations, hidden agendas, and the intricate web of political alliances of the Flaming Fist.
+
+Weight: 3~

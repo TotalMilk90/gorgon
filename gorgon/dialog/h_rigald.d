@@ -458,7 +458,11 @@ END
           ////////////////////////////////////////////
 
 //80
-IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0)~ THEN BEGIN PROCUS_0
+IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0) GlobalLT("h_BountyNumber","GLOBAL",3)~ THEN BEGIN PROCUS_0
+   SAY ~Aye, it's gonna be a right tick 'n a half before we get things ready for our push into Amn. In the meantime, best you scurry off and tie up any loose ends you have here in the guild.~ IF ~~ THEN GOTO PROCUS_1
+END
+
+IF ~Global("h_RigaldoQuest","GLOBAL",11) Global("h_ProcusQuest","GLOBAL",0) Global("h_BountyNumber","GLOBAL",3)~ THEN BEGIN PROCUS_0
    SAY ~Alright, <CHARNAME>, listen up. You've proven yourself a shrewd operator, but Nashkel, you see, it's a whole different kind of beast.~ IF ~~ THEN GOTO PROCUS_1
 END
 
@@ -503,7 +507,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@338,QUEST)~ EXIT
 END
 
-IF ~Global("h_RigaldoQuest","GLOBAL",11) GlobalLT("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN PROCUS_9
+IF ~Global("h_RigaldoQuest","GLOBAL",11) GlobalGT("h_ProcusQuest","GLOBAL",0) GlobalLT("h_ProcusQuest","GLOBAL",7)~ THEN BEGIN PROCUS_9
    SAY ~Keep your ear to the ground, <CHARNAME>. Nashkel's a fickle mistress, and we're just getting started.~ IF ~~ THEN EXIT
 END
 

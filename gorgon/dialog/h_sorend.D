@@ -7,6 +7,7 @@ END
 IF ~~ THEN BEGIN 1
    SAY ~You have the look of someone seeking... information. Lucky for you, knowledge is my trade. For the right price, of course.~
        +~Global("h_Ravenscar","GLOBAL",2)~+ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
        ++ ~I'm not interested.~ EXIT
 END
 
@@ -81,7 +82,9 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_SorenQuest","GLOBAL",1)~ THEN BEGIN 16
-   SAY ~Rely on your true rogue senses and skills to hide in the shadows. Once you've done so, I shall be here, ready to provide you with the location of those coveted tomes.~ IF ~~ THEN EXIT
+   SAY ~Rely on your true rogue senses and skills to hide in the shadows. Once you've done so, I shall be here, ready to provide you with the location of those coveted tomes.~
+       ++ ~Understood. I'll stick to the shadows and get the job done.~ EXIT
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
 END
 
 IF ~GlobalGT("h_SorenQuest","GLOBAL",2) GlobalLT("h_SorenQuest","GLOBAL",5)~ THEN BEGIN 17
@@ -138,10 +141,83 @@ END
 IF ~Global("h_SorenQuest","GLOBAL",5)~ THEN BEGIN 26
    SAY ~I trust you've come prepared with the necessary funds? Once I have them, I'll gladly share my information about the tomes.~
        +~PartyGoldGT(1999)~+ ~Here are the 2000 gold coins. Now, tell me what I need to know.~ GOTO 19
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
        ++ ~I'm still working on it.~ EXIT
 END
 
 IF ~Global("h_SorenQuest","GLOBAL",6)~ THEN BEGIN 27
-   SAY ~Ah, the art of information. It's a dance of whispers and shadows, my friend. A dance I've become rather adept at, if I do say so myself.~ IF ~~ THEN EXIT
+   SAY ~Ah, the art of information. It's a dance of whispers and shadows, my friend. A dance I've become rather adept at, if I do say so myself.~
+       ++ ~Your talents are noted, Soren. I'll reach out when your particular brand of expertise is required.~ EXIT
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
 END
 
+IF ~~ THEN BEGIN 28
+   SAY ~Keep you voice down, will you? She's got ears like a hawk and a temper to match, so keep this conversation discreet. This is a high-profile target you're sniffin' at.~ IF ~~ THEN GOTO 29
+END
+
+IF ~~ THEN BEGIN 29
+   SAY ~Now, I do hold the keys to the secrets you seek, but such knowledge comes at a price... and not just in gold.~ IF ~~ THEN GOTO 30
+END
+
+IF ~~ THEN BEGIN 30
+   SAY ~There's a lock in the Flaming Fist HQ's basement, hiding some valuable documents I've had my eye on for a while.~ IF ~~ THEN GOTO 31
+END
+
+IF ~~ THEN BEGIN 31
+   SAY ~If you can sneak in, pick that lock, and bring those papers to me, then we'll talk about Isla Darkcloak. Consider it a fair trade... your skills for my information.~
+       ++ ~Consider those documents as good as yours.~ GOTO 35
+       ++ ~I'm not sure breaking into the Flaming Fist HQ is a risk worth taking. There must be another way to get your information.~ GOTO 32
+END
+
+IF ~~ THEN BEGIN 32
+   SAY ~That's the deal on the table, friend. It's a risky venture, but that's the price for high-value information.~ IF ~~ THEN GOTO 33
+END
+
+IF ~~ THEN BEGIN 33
+   SAY ~If you're not up for it, then you'll need to find your answers elsewhere. My terms are firm on this one.~
+       ++ ~Fine... I'll get you those documents. But this had better be worth it.~ GOTO 35
+       ++ ~I'll pass. The risks outweigh the benefits here. I'll find another way to get what I need.~ GOTO 34
+END
+
+IF ~~ THEN BEGIN 34
+   SAY ~Suit yourself. Offer's off the table then. In the shadows of Baldur's Gate, information like this doesn't come easy. Good luck finding another way in, you're going to need it.~
+IF ~~ THEN DO ~
+   SetGlobal("h_IslaSorenQuest","GLOBAL",1)~ EXIT
+END
+
+IF ~~ THEN BEGIN 35
+   SAY ~Excellent. Remember, discretion is key in this job. Get in, get the documents, and get out without a trace.~ IF ~~ THEN GOTO 36
+END
+
+IF ~~ THEN BEGIN 36
+   SAY ~Once you've got them, bring them back to me, and then we'll talk. Good luck.~
+IF ~~ THEN DO ~
+   SetGlobal("h_IslaSorenQuest","GLOBAL",2)
+   SetGlobal("h_FFHQDocuments","GLOBAL",1)
+   AddJournalEntry(@462,QUEST)~ EXIT
+END
+
+IF WEIGHT #-1 ~PartyHasItem("h_misc31")~ THEN BEGIN 37
+   SAY ~Ah, I see you've returned in one piece. I trust you were able to slip in undetected. Do you have the documents with you?~
+       ++ ~The documents are in my hands. Now it's time for you to hold up your end of the deal.~ GOTO 38
+END
+
+IF ~~ THEN BEGIN 38
+   SAY ~Alright, here's what I've got on Isla. Most nights, she frequents a tavern located near the city's gates.~ IF ~~ THEN GOTO 39
+END
+
+IF ~~ THEN BEGIN 39
+   SAY ~She prefers a spot close to the exit, a tactical choice, no doubt, for a quick getaway if needed. It's one of her rare predictable habits.~ IF ~~ THEN GOTO 40
+END
+
+IF ~~ THEN BEGIN 40
+   SAY ~If you're planning to approach her, that's your best shot. But be warned, she's always on her guard, even when she's enjoying her drink.~ IF ~~ THEN GOTO 41
+END
+
+IF ~~ THEN BEGIN 41
+   SAY ~Good luck with Isla, you're going to need it. Now, keep it moving. You've got what you need.~
+IF ~~ THEN DO ~
+   SetGlobal("h_IslaSorenQuest","GLOBAL",3)
+   SetGlobal("h_SpawnIslaAlt","GLOBAL",1)
+   AddJournalEntry(@463,QUEST)~ EXIT
+END

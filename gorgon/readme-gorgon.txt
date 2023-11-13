@@ -47,12 +47,10 @@ Version 4.0:
 -Added more background NPCs to the Gorgon's Eye hideout
 -Added various quest items and a new weapon "Blackjack"
 -Added new thief traps as useable items
--Added spells to Eurynome's store
 -Added NPC interjections
--Moved Ophelia and Kageiye's stores to the Black Market area
+-Moved guild vendors and Danika(now Naga) to the Black Market area
 -Revised quest progression
 -Revised all dialog
--Replaced Danika with Naga who now offers temple services
 -Adjusted reward for weekly guild profits
 -Adjusted reward for "No Honor Among Thieves"
 -Adjusted "Bombs over Beregost" fight to play nicer with SCS

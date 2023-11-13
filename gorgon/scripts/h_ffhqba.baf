@@ -1,0 +1,10 @@
+IF
+         Global("h_FFHQDocuments","GLOBAL",1)
+
+THEN
+         RESPONSE #100
+                  ActionOverride("Container 2",CreateItem("h_misc31",0,0,0))
+                  Lock("Container 2")
+                  SetGlobal("h_FFHQDocuments","GLOBAL",2)
+                  Continue()
+END

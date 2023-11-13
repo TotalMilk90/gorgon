@@ -117,6 +117,7 @@ END
 IF ~~ THEN BEGIN 18
    SAY ~Yes, enough words. I will avenge my comrades with your death.~
 IF ~~ THEN DO ~
+   SetGlobal("h_RespawnLiedel","GLOBAL",1)
    SetGlobal("h_BaldwinQuest","GLOBAL",7)
    SetGlobal("h_ShadowWar","GLOBAL",4)
    SetGlobal("h_SpawnAriosh","GLOBAL",4)

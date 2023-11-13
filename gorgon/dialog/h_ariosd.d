@@ -983,30 +983,35 @@ CHAIN
    IF WEIGHT #-1 ~Global("h_SpawnAriosh","GLOBAL",2)~ THEN h_ariosd 0
 ~Baldwin! The Shadow Thieves have infiltrated the city! A dozen of their rank fight above us as we speak!~
    =
-~Scores remain outside Beregost with Thamuz at its helm! They will be here by nightfall!~
+~Scores remain outside Beregost with Thamuz at its helm! They will be here by daybreak!~
    == h_baldwd
-~So, they've finally decided to make their move, have they? Men! Steady yourselves and clear for action!~
+~So, they've finally decided to make their move, have they? Guildmates! Clear for action and steady yourselves for battle!~
    =
-~Ariosh! Mount the outer fortifications and activate the traps at the city's edge.~
+~Rhade! Spread our supplies throughout the guild. Dispatch word to the Night Masks and any sell-swords looking for a payday.~
+   =
+~We're gonna need as many blades as we can get after tonight's bloodbath.~
+   =
+~Ariosh! I need those eyes of yours in the field. Scout the vanguard's movements, mark their numbers, and track their lieutenants.~
+   =
+~Find their weakest link and report back before dawn.~
    == h_ariosd
 ~Aye!~
    == h_baldwd
-~Rhade! Spread our supplies throughout the guild. Send word to the Night Masks and any sell-swords lookin' for a payday. We're gonna need as many blades as we can get after tonight's bloodbath.~
-   == h_eurynd
-~Understood.~
-   == h_baldwd
-~Rigaldo! Call our numbers back from duty and get your men blades for the grindstone.~
-   == h_rigald
+~Liedel! Activate the traps at the city's edge. Get them ready, every snare, every tripwire, and ensure they're set to strike with deadly precision.~
+   =
+~Rigaldo! Recall our numbers back from duty and get them blades for the grindstone. We need every edge razor-sharp and ready to slice through shadow and flesh.~
+   = h_rigald
 ~Sir!~
    == h_baldwd
-~<CHARNAME>, I will need you to eliminate the Shadow Thieves within the city while we prepare for the incoming siege.~
+~<CHARNAME>, our immediate priority is to cleanse the city of these rats while we prepare for the incoming siege.~
    =
-~Grab your guild armaments from Rhade and then move out. Report back when you've purged the city of these rats.~
+~Grab your guild armaments from Rhade and then embark on your mission. Report back when the city is purged of these treacherous vermin, and be swift!~
    DO ~
       SetGlobal("h_BaldwinQuest","GLOBAL",5)
       SetGlobal("h_SpawnAriosh","GLOBAL",3)
       SetGlobal("h_GuildItems","GLOBAL",1)
       SetGlobal("h_ShadowWar","GLOBAL",1)
       SetGlobal("h_HideWhitewood","GLOBAL",1)
+      ActionOverride("h_liedec",EscapeArea())
       AddJournalEntry(@213,QUEST)~
 EXIT

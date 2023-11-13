@@ -104,6 +104,15 @@ THEN
 END
 
 IF
+         Global("h_RespawnLiedel","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_liedec",[762.1342],NE)
+                  SetGlobal("h_RespawnLiedel","GLOBAL",2)
+                  Continue()
+END
+
+IF
          Global("h_GuildMusic","GLOBAL",0)
 THEN
          RESPONSE #100

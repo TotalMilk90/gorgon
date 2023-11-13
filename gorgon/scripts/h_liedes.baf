@@ -22,7 +22,7 @@ THEN
 	RESPONSE #100
 		 Enemy()
 END
-
+/*
 IF
 	Global("h_LiedelParty","GLOBAL",1)
 	!InParty("h_liedec")
@@ -30,4 +30,4 @@ THEN
 	RESPONSE #100
 		 Dialogue([PC])
 END
-
+*/

@@ -46,8 +46,8 @@ END
 IF ~~ THEN BEGIN 8
    SAY ~Thank you, my friend. I'll never forgive myself for my past transgressions, but at least I can devote my future to making amends.~
 IF ~~ THEN DO ~
+   SetGlobal("h_VapulaBounty","GLOBAL",1)
    AddJournalEntry(@417,QUEST)
    GiveItem("h_misc09",LastTalkedToBy)
-   ReputationInc(1)
    EscapeArea()~ EXIT
 END

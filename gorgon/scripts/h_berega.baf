@@ -404,7 +404,8 @@ IF
         TimeOfDay(NIGHT)
         Global("h_SpawnLiedel","GLOBAL",0)
         GlobalGT("h_ShadowWar","GLOBAL",2)
-        Global("h_LiedelRomance","GLOBAL",3)
+        Global("h_LiedelRomanceActive","GLOBAL",3)
+        GlobalGT("h_LiedelLove","GLOBAL",9)
         Global("h_LiedelQuest","GLOBAL",4)
 THEN
 	RESPONSE #100

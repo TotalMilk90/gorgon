@@ -106,7 +106,6 @@ COMPILE ~gorgon/dialog/h_decoyd.d~
 COMPILE ~gorgon/dialog/h_ishand.d~
 COMPILE ~gorgon/dialog/h_eudikd.d~
 COMPILE ~gorgon/dialog/h_jcookd.d~
-COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
 COMPILE ~gorgon/dialog/h_borlad.d~
 COMPILE ~gorgon/dialog/h_gerard.d~
 COMPILE ~gorgon/dialog/h_karpdd.d~
@@ -160,6 +159,7 @@ COMPILE ~gorgon/dialog/h_rogu2d.d~
 COMPILE ~gorgon/dialog/h_isla2d.d~
 COMPILE ~gorgon/dialog/h_lied2d.d~
 COMPILE ~gorgon/dialog/h_liedep.d~
+COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
 APPEND ~PDIALOG.2da~ ~h_liedec h_liedep~
 
 // Creature Scripts
@@ -711,6 +711,12 @@ COPY ~gorgon/items/h_misc15.itm~ ~override/h_misc15.itm~      // Counterfeit Gol
      SAY UNIDENTIFIED_DESC @75
      SAY DESC @75
 
+COPY ~gorgon/items/h_misc32.itm~ ~override/h_misc32.itm~      // Counterfeit Gold(Maid)
+     SAY NAME1 @74
+     SAY NAME2 @74
+     SAY UNIDENTIFIED_DESC @75
+     SAY DESC @75
+
 COPY ~gorgon/items/h_misc16.itm~ ~override/h_misc16.itm~      // Torn Fabric
      SAY NAME1 @76
      SAY NAME2 @76
@@ -909,12 +915,61 @@ COPY ~gorgon/items/h_misc30.itm~ ~override/h_misc30.itm~      // Featherlung Ser
      SAY UNIDENTIFIED_DESC @142
      SAY DESC @142
      
-COPY ~gorgon/items/h_misc31.itm~ ~override/h_misc31.itm~      // Featherlung Serum
+COPY ~gorgon/items/h_misc31.itm~ ~override/h_misc31.itm~      // Flaming Fist Ledger
      SAY NAME1 @143
      SAY NAME2 @143
      SAY UNIDENTIFIED_DESC @144
      SAY DESC @144
      
+COPY ~gorgon/items/h_ring05.itm~ ~override/h_ring05.itm~      // Strength Ring
+     SAY NAME1 @145
+     SAY NAME2 @145
+     SAY UNIDENTIFIED_DESC @146
+     SAY DESC @146
+
+COPY ~gorgon/items/h_ring06.itm~ ~override/h_ring06.itm~      // Dexterity Ring
+     SAY NAME1 @147
+     SAY NAME2 @147
+     SAY UNIDENTIFIED_DESC @148
+     SAY DESC @148
+     
+COPY ~gorgon/items/h_ring07.itm~ ~override/h_ring07.itm~      // Constitution Ring
+     SAY NAME1 @149
+     SAY NAME2 @149
+     SAY UNIDENTIFIED_DESC @150
+     SAY DESC @150
+
+COPY ~gorgon/items/h_ring08.itm~ ~override/h_ring08.itm~      // Intelligence Ring
+     SAY NAME1 @151
+     SAY NAME2 @151
+     SAY UNIDENTIFIED_DESC @152
+     SAY DESC @152
+
+COPY ~gorgon/items/h_ring09.itm~ ~override/h_ring09.itm~      // Wisdom Ring
+     SAY NAME1 @153
+     SAY NAME2 @153
+     SAY UNIDENTIFIED_DESC @154
+     SAY DESC @154
+
+COPY ~gorgon/items/h_ring10.itm~ ~override/h_ring10.itm~      // Charisma Ring
+     SAY NAME1 @155
+     SAY NAME2 @155
+     SAY UNIDENTIFIED_DESC @156
+     SAY DESC @156
+     
+COPY ~gorgon/items/h_amul02.itm~ ~override/h_amul02.itm~      // Nightstalker's Amulet
+     SAY NAME1 @157
+     SAY NAME2 @157
+     SAY UNIDENTIFIED_DESC @158
+     SAY DESC @158
+     
+COPY ~gorgon/items/h_leat01.itm~ ~override/h_leat01.itm~      // Isla Darkcloak's Shadowweave Armor
+     SAY NAME1 @159
+     SAY NAME2 @160
+     SAY UNIDENTIFIED_DESC @161
+     SAY DESC @162
+
+
 
 
 // New Creatures
@@ -1072,11 +1127,15 @@ COPY ~gorgon/cre/h_rigalc.cre~ ~override/h_rigalc.cre~        // Rigaldo
      SAY NAME1 @930
      SAY NAME2 @930
 
+COPY ~gorgon/cre/h_rogu2c.cre~ ~override/h_rogu2c.cre~        // Rogue(2)
+     SAY NAME1 @931
+     SAY NAME2 @931
+
 COPY ~gorgon/cre/h_roguec.cre~ ~override/h_roguec.cre~        // Rogue
      SAY NAME1 @931
      SAY NAME2 @931
 
-COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Rogue(2)
+COPY ~gorgon/cre/h_injurc.cre~ ~override/h_injurc.cre~        // Snake Head
      SAY NAME1 @931
      SAY NAME2 @931
      
@@ -1296,6 +1355,10 @@ COPY ~gorgon/cre/h_selenc.cre~ ~override/h_selenc.cre~        // Selena Stardanc
      SAY NAME1 @964
      SAY NAME2 @964
 
+COPY ~gorgon/cre/h_pira2c.cre~ ~override/h_pira2c.cre~        // Pirate(2)
+     SAY NAME1 @965
+     SAY NAME2 @965
+     
 COPY ~gorgon/cre/h_piratc.cre~ ~override/h_piratc.cre~        // Pirate
      SAY NAME1 @965
      SAY NAME2 @965
@@ -1405,7 +1468,7 @@ COPY ~gorgon/cre/h_varlic.cre~ ~override/h_varlic.cre~        // Lord Varlind
 
 ADD_JOURNAL @200 @201 @202 @203 @204 @205 @206 @207 @208 @209
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
-            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349 #350 @351 @352 @353 @354 @355 @356 @357 @358 @359
+            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349 @350 @351 @352 @353 @354 @355 @356 @357 @358 @359
             @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446 @447 @448 @449 @450 @451 @452 @453 @454 @455 @456 @457 @458 @459 @460 @461 @462 @463 @464 @465
             @509 @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555 @556 @557 @558
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620

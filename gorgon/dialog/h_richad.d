@@ -9,7 +9,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 2.5
-   SAY ~Come on you men! Slay this atrocity before it consumes us all!~
+   SAY ~Come on, you men! Slay this atrocity before it consumes us all!~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnRichard","GLOBAL",4)
    SetGlobal("h_ShadowWar","GLOBAL",9)

@@ -31,11 +31,11 @@ IF ~~ THEN BEGIN FINAL_5
 END
 
 IF ~~ THEN BEGIN FINAL_6
-   SAY ~The mantle of Guildmaster suits you, and the Gorgon's Eye will thrive under your leadership.~ IF ~~ THEN GOTO FINAL_7
+   SAY ~The mantle of Guildmaster suits you, and the Gorgon's Eye will thrive under your leadership.~ IF ~~ THEN GOTO FINAL_10
 END
 
 IF ~~ THEN BEGIN FINAL_7
-   SAY ~Destroyed? Madness! The power it holds is the very key to my ascension! You underestimate what we could become, what *I* could become! This is my destiny!~  IF ~~ THEN GOTO FINAL_8
+   SAY ~Destroyed? Madness! The power it holds is the very key to my ascension! You underestimate what we could become, what I could become! This is my destiny!~  IF ~~ THEN GOTO FINAL_9
 END
 
 IF ~~ THEN BEGIN FINAL_8

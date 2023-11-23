@@ -419,7 +419,7 @@ IF ~~ THEN BEGIN GUILD_10
 END
 
 IF ~~ THEN BEGIN GUILD_11
-   SAY ~Your next officer is Liedel. She oversees all the bounty hunting and assassination contracts that we receive~ IF ~~ THEN GOTO GUILD_12
+   SAY ~Your next officer is Liedel. She oversees all the bounty hunting and assassination contracts that we receive.~ IF ~~ THEN GOTO GUILD_12
 END
 
 IF ~~ THEN BEGIN GUILD_12
@@ -471,7 +471,7 @@ IF ~~ THEN BEGIN GUILD_21
 END
 
 IF ~~ THEN BEGIN GUILD_22
-   SAY ~Your last venture to oversee, is Diomedes fighting pits.~ IF ~~ THEN GOTO GUILD_23
+   SAY ~Your last venture to oversee, is Diomedes and his fighting pits.~ IF ~~ THEN GOTO GUILD_23
 END
 
 IF ~~ THEN BEGIN GUILD_23

@@ -36,7 +36,7 @@ IF ~~ THEN BEGIN 5
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~Oh, darling, 'private contracts' are our little euphemism for the delicate art of... persuasion. The kind that silences troubles permanently.~ IF ~~ THEN GOTO 7
+   SAY ~Oh, darling, 'private contracts' is our little euphemism for the delicate art of... persuasion. The kind that silences trouble permanently.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7
@@ -46,7 +46,7 @@ END
 IF ~~ THEN BEGIN 8
    SAY ~And you, my intriguing new companion, strike me as just the type of professional that we desire.~
        ++ ~What current bounties do you have available?~ GOTO 47
-       +~OR(3) Race(Player1,HUMAN) Race(Player1,ELF) Race(Player1,HALF_ELF) Class(Player1,THIEF_ALL) Gender(Player1,MALE) !Alignment(Player1,NEUTRAL_GOOD) CheckStatGT(Player1,13,CHR)~+ ~Well, if mastering the art of these contracts means working closely with you, I foresee a lot of late nights in our future. Strictly for professional development, of course.~ GOTO 9
+       +~OR(3) Race(Player1,HUMAN) Race(Player1,ELF) Race(Player1,HALF_ELF) Class(Player1,THIEF_ALL) Gender(Player1,MALE) CheckStatGT(Player1,13,CHR)~+ ~Well, if mastering the art of these contracts means working closely with you, I foresee a lot of late nights in our future. Perhaps you could give me some hands-on instructions? ~ GOTO 9
        ++ ~I'm not interested right now.~ GOTO 3
 END
 
@@ -110,11 +110,11 @@ END
 
 IF ~~ THEN BEGIN 22
    SAY ~Tell me, <CHARNAME>, from what shadows were you cast? What corner of this vast tapestry of realms do you hail from?~
+       ++ ~Let's skip the pleasantries and history lessons. I'm here for work, not to stroll down memory lane. What do you have for me?~ GOTO 49
        ++ ~I hail from Candlekeep, a citadel of knowledge. Yet, the most valuable lessons I've learned have been outside its walls.~ GOTO 23
        ++ ~I'm from Candlekeep, where wisdom is the currency and silence is the music. It was... quiet.~ GOTO 24
        ++ ~Born and raised behind the fortified libraries of Candlekeep. Where I enjoyed tranquility, and the steady pursuit of knowledge.~ GOTO 26
-       ++ ~Candlekeep. A place of quiet contemplation and dusty shelves. I prefer the tangible, the heft of gold and the thrill of the unseen.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 27
-       ++ ~Let's skip the pleasantries and history lessons. I'm here for work, not to stroll down memory lane. What do you have for me?~ GOTO 49
+       ++ ~Candlekeep. A place of quiet contemplation and dusty shelves. I prefer the tangible, the heft of gold and the thrill of the unseen.~ GOTO 27
 END
 
 IF ~~ THEN BEGIN 23
@@ -134,7 +134,7 @@ IF ~~ THEN BEGIN 26
 END
 
 IF ~~ THEN BEGIN 27
-   SAY ~Ah, a rogue after my own heart. The weight of a full purse does have a certain charm, as does the shadow's caress. You'll find that we offers plenty of both.~ IF ~~ THEN GOTO 28
+   SAY ~Ah, a rogue after my own heart. The weight of a full purse does have a certain charm, as does the shadow's caress. You'll find that we do offers plenty of both.~ IF ~~ THEN GOTO 28
 END
 
 IF ~~ THEN BEGIN 28
@@ -157,7 +157,7 @@ IF ~~ THEN BEGIN 31
 END
 
 IF ~~ THEN BEGIN 32
-   SAY ~It’s a land of merchants and mercenaries, where gold speaks louder than truth and shadows are often the best company one can keep.~ IF ~~ THEN GOTO 33
+   SAY ~It's a land of merchants and mercenaries, where gold speaks louder than truth and shadows are often the best company one can keep.~ IF ~~ THEN GOTO 33
 END
 
 IF ~~ THEN BEGIN 33
@@ -165,8 +165,8 @@ IF ~~ THEN BEGIN 33
 END
 
 IF ~~ THEN BEGIN 34
-   SAY  ~In Selgaunt, life is like a tapestry, colorful, complex, and sometimes frayed at the edges. It’s a place where beauty and danger intertwine, and where one learns to dance to the rhythm of both.~
-        ++ ~It sounds like you had to be sharp and resourceful. It’s impressive how you’ve carved your path through such a challenging environment.~ GOTO 35
+   SAY  ~In Selgaunt, life is like a tapestry, colorful, complex, and sometimes frayed at the edges. It's a place where beauty and danger intertwine, and where one learns to dance to the rhythm of both.~
+        ++ ~It sounds like you had to be sharp and resourceful. It's impressive how you've carved your path through such a challenging environment.~ GOTO 35
         ++ ~The city seems a world of its own. It must have been an interesting backdrop for your early years.~ GOTO 37
         ++ ~Selgaunt sounds like a nest of vipers, thriving on gold and deception. I can't say that's a place I'd find appealing.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 39
 END
@@ -192,7 +192,7 @@ IF ~~ THEN BEGIN 39
 END
 
 IF ~~ THEN BEGIN 40
-   SAY ~But in darkness, my dear, one learns the true dance of shadows. Not all truths gleam in the sunlight, some are more... alluring in the dark.~ IF ~~ THEN DO ~SetGlobal("h_LiedelRomanceActive","GLOBAL",1)~ GOTO 41
+   SAY ~But in darkness, my dear, one learns the true dance of shadows. Not all truths gleam in the sunlight, some are more... alluring in the dark.~ IF ~~ THEN GOTO 41
 END
 
 IF ~~ THEN BEGIN 41
@@ -204,7 +204,7 @@ IF ~~ THEN BEGIN 42
 END
 
 IF ~~ THEN BEGIN 43
-   SAY ~The shadow of Selgaunt may linger in me, but it's the thrill of what lies ahead that truly beckons.~ IF ~~ THEN GOTO 44
+   SAY ~The shadows of Selgaunt may linger in me, but it's the thrill of what lies ahead that truly beckons.~ IF ~~ THEN GOTO 44
 END
 
 IF ~~ THEN BEGIN 44
@@ -217,7 +217,7 @@ END
 
 IF ~~ THEN BEGIN 46
    SAY ~It's a world where only the shrewdest and most daring survive. A domain cloaked in darkness, yet brimming with seductive secrets. Do you dare to step into this realm with me?~
-       ++ ~Lead the way, Liedel. I'm ready to enter the world of shadows and secrets.~ GOTO 47
+       ++ ~Lead the way, Liedel. I'm ready to enter the world of shadows and secrets.~ DO ~SetGlobal("h_LiedelRomanceActive","GLOBAL",1)~ GOTO 47
        ++ ~I'm intrigued, but I can't say I'm fully prepared to dive in right now.~ GOTO 3
 END
 
@@ -246,7 +246,7 @@ IF ~~ THEN BEGIN 52
 END
 
 IF ~~ THEN BEGIN 53
-   SAY ~Vapula turned witness, betraying his former comrades and leading them to prisons and in the grip of hefty fines.~ IF ~~ THEN GOTO 54
+   SAY ~Vapula turned witness, betraying his former comrades, leading them to prisons and in the grip of hefty fines.~ IF ~~ THEN GOTO 54
 END
 
 IF ~~ THEN BEGIN 54
@@ -291,20 +291,20 @@ IF ~~ THEN BEGIN 60
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Global("h_CarthBounty","GLOBAL",1)~+ ~I found him stuffing his face at the Friendly Arm. You can tell the Zhents his debt was paid in blood.~ GOTO 64
        +~Global("h_CarthBounty","GLOBAL",3)~+ ~I provided him the gold needed to settle his debts. Sometimes, I believe the best resolution doesn't lie at the edge of a blade.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 66
-       +~Global("h_CarthBounty","GLOBAL",0)~+ ~What else can you tell me about the target?~ GOTO 61
+       ++ ~What else can you tell me about the target?~ GOTO 61
        ++ ~I have nothing to report at the moment.~ GOTO 59
 END
 
 IF ~~ THEN BEGIN 61
-   SAY ~Clever as he thinks he is, Carth couldn't entirely evade the Zhentarim's grasp. The tracked him as far as Beregost, until he gave them the slip in the chaos of his flight northward.~ IF ~~ THEN GOTO 61
+   SAY ~Clever as he thinks he is, Carth couldn't entirely evade the Zhentarim's grasp. The tracked him as far as Beregost, until he gave them the slip in the chaos of his flight northward.~ IF ~~ THEN GOTO 62
 END
 
 IF ~~ THEN BEGIN 62
-   SAY ~Word from the local eateries describe a scene of voracious gluttony, a beast feasting as if each bite would be his last.~ IF ~~ THEN GOTO 62
+   SAY ~Word from the local eateries describe a scene of voracious gluttony, a beast feasting as if each bite would be his last.~ IF ~~ THEN GOTO 63
 END
 
 IF ~~ THEN BEGIN 63
-   SAY ~I wouldn't be surprised if his penchant for hearty meals and soft beds leads him to a similar locale now. This trail of crumbs, you could say, might be just the lead you need.~ IF ~~ THEN GOTO 63
+   SAY ~I wouldn't be surprised if his penchant for hearty meals and soft beds leads him to a similar locale now. This trail of crumbs, you could say, might be just the lead you need.~ IF ~~ THEN GOTO 59
 END
 
 IF ~~ THEN BEGIN 64
@@ -346,8 +346,8 @@ END
 IF ~~ THEN BEGIN 70
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~PartyHasItem("h_misc09") Global("h_VapulaBounty","GLOBAL",0)~+ ~I tracked him down to the Temple of Lathander and dealt him a swift blow. Here's his pendant as confirmation.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 77
-       +~PartyHasItem("h_misc09") Global("h_VapulaBounty","GLOBAL",1)~+ ~I tracked him down to the Temple of Lathander and dealt him a swift blow. Here's his pendant as confirmation.~ GOTO 77
-       +~!PartyHasItem("h_misc09")~+ ~What else can you tell me about the target?~ GOTO 71
+       +~PartyHasItem("h_misc09") Global("h_VapulaBounty","GLOBAL",1)~+ ~I tracked him down to the Temple of Lathander and dealt him a swift blow. Here's his pendant as confirmation.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 77
+       ++ ~What else can you tell me about the target?~ GOTO 71
        ++ ~I have nothing to report at the moment.~ GOTO 59
 END
 
@@ -360,7 +360,7 @@ IF ~~ THEN BEGIN 72
 END
 
 IF ~~ THEN BEGIN 73
-   SAY ~From the sound of it, he's seeking refuge in the arms of some deity. And who better to embrace a man desperate for rebirth than... Lathander?~ IF ~~ THEN GOTO 74
+   SAY ~From the sound of it, he's seeking refuge in the arms of some deity. And who better to embrace a man desperate for rebirth than... Lathander.~ IF ~~ THEN GOTO 74
 END
 
 IF ~~ THEN BEGIN 74
@@ -368,7 +368,7 @@ IF ~~ THEN BEGIN 74
 END
 
 IF ~~ THEN BEGIN 75
-   SAY ~If Vapula seeks absolution, he'll likely find solace in his temples.~ IF ~~ THEN GOTO 76
+   SAY ~Yet, if Vapula seeks absolution, he'll likely find solace in his temples.~ IF ~~ THEN GOTO 76
 END
 
 IF ~~ THEN BEGIN 76
@@ -395,7 +395,7 @@ IF ~~ THEN BEGIN 79
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Global("h_AishaBounty","GLOBAL",4)~+ ~I found her holed up at the Red Sheaf. She's no longer anyones concern.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 83
        +~Global("h_AishaBounty","GLOBAL",5)~+ ~I found her holed up at the Red Sheaf. She's no longer anyones concern.~ GOTO 87
-       +~Global("h_AishaBounty","GLOBAL",0)~+ ~What else can you tell me about the target?~ GOTO 80
+       ++ ~What else can you tell me about the target?~ GOTO 80
        ++ ~I have nothing to report at the moment.~ GOTO 59
 END
 
@@ -420,11 +420,11 @@ IF ~~ THEN BEGIN 84
 END
 
 IF ~~ THEN BEGIN 85
-   SAY ~You dance on a strange stage, one where gold doesn’t seem to lead your steps. And yet, I somehow find your choice rather... mesmerizing.~ IF ~~ THEN GOTO 86
+   SAY ~You dance on a strange stage, one where gold doesn't seem to lead your steps. And yet, I somehow find your choice rather... amusing.~ IF ~~ THEN GOTO 86
 END
 
 IF ~~ THEN BEGIN 86
-   SAY ~You keep the mundane at bay, love, and that alone is a tantalizing surprise I find myself unexpectedly savoring.~
+   SAY ~You keep the mundane at bay, and that alone is a tantalizing surprise I find myself unexpectedly savoring.~
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBountyEnd","GLOBAL",1)
    SetGlobal("h_AishaBounty","GLOBAL",6)
@@ -433,7 +433,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 87
-   SAY ~So the siren Aisha has sung her final lament, all thanks to you. There’s something profoundly thrilling about your method, like a shadow passing unseen, yet unforgotten.~ IF ~~ THEN GOTO 88
+   SAY ~So the siren Aisha has sung her final lament, all thanks to you. There's something profoundly thrilling about your method, like a shadow passing unseen, yet unforgotten.~ IF ~~ THEN GOTO 88
 END
 
 IF ~~ THEN BEGIN 88
@@ -496,8 +496,8 @@ IF ~~ THEN BEGIN 98
        ++ ~No ulterior motives, just trying to get to know you better.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 99
        ++ ~Well, you've cracked the code, Liedel. I'm plotting to use your past against you in a devious scheme of mine.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 100
        ++ ~Relax, it's all in good fun. You seem quite the puzzle, and I can't help but feel intrigued.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 101
-       ++ ~I get it, Liedel. Your past is your own, and you're under no obligation to reveal it.~ GOTO 102
-       ++ ~Are you always this suspicious? I was just making conversation.~ GOTO 103
+       ++ ~I get it, Liedel. Your past is your own, and you're under no obligation to reveal it.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 102
+       ++ ~Are you always this suspicious? I was just making conversation.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 103
 END
 
 IF ~~ THEN BEGIN 99
@@ -563,7 +563,7 @@ END
 IF ~~ THEN BEGIN 114
    SAY ~However, my love, that's where my story ends for today. Perhaps in the future, we can explore these shadows together in more detail.~
        +~Global("h_LiedelTalk11","GLOBAL",0)~+ ~What kind of place is Selgaunt? What was it like growing up on the streets?~ DO ~SetGlobal("h_LiedelTalk11","GLOBAL",1)~ GOTO 115
-       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in. What did you learn from them?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 123
+       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in.~ DO ~SetGlobal("h_LiedelTalk12","GLOBAL",1)~ GOTO 123
        +~Global("h_LiedelTalk13","GLOBAL",0)~+ ~What was it like working alongside the Scepters? Who exactly are they?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 133
        ++ ~It's been a pleasure, Liedel, but I really should get going.~ GOTO 142
 END
@@ -601,7 +601,7 @@ END
 IF ~~ THEN BEGIN 122
    SAY ~Navigating those shadowed alleys was an unforgiving crucible that forged my spirit. They didn't break me, they built me. Every scar, every challenge, it's all part of the armor I wear now.~
        +~Global("h_LiedelTalk11","GLOBAL",0)~+ ~What kind of place is Selgaunt? What was it like growing up on the streets?~ DO ~SetGlobal("h_LiedelTalk11","GLOBAL",1)~ GOTO 115
-       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in. What did you learn from them?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 123
+       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in.~ DO ~SetGlobal("h_LiedelTalk12","GLOBAL",1)~ GOTO 123
        +~Global("h_LiedelTalk13","GLOBAL",0)~+ ~What was it like working alongside the Scepters? Who exactly are they?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 133
        ++ ~It's been a pleasure, Liedel, but I really should get going.~ GOTO 142
 END
@@ -634,7 +634,7 @@ IF ~~ THEN BEGIN 129
    SAY ~The lessons I learned from the Javaliens have been invaluable, and they continue to shape the way I navigate the intricate web of business and intrigue.~
        ++ ~It's almost like they were preparing you for the life you lead now. You've certainly taken those lessons to heart.~ GOTO 130
        ++ ~It's a bit disturbing to think that the Javaliens saw a vulnerable street urchin and thought to turn her into a tool for negotiation and trade. Just saying.~ GOTO 131
-END 
+END
 
 IF ~~ THEN BEGIN 130
    SAY ~They saw raw clay, ripe for shaping. But what they couldn't have known was the depth of shadow within that clay, the inherent affinity for the dance of duplicity and desire.~ IF ~~ THEN GOTO 132
@@ -645,9 +645,9 @@ IF ~~ THEN BEGIN 131
 END
 
 IF ~~ THEN BEGIN 132
-   SAY ~It’s a curious thing, isn't it? How the mundane lessons of commerce can evolve into the thrilling language of intrigue and seduction.~
+   SAY ~It's a curious thing, isn't it? How the mundane lessons of commerce can evolve into the thrilling language of intrigue and seduction.~
        +~Global("h_LiedelTalk11","GLOBAL",0)~+ ~What kind of place is Selgaunt? What was it like growing up on the streets?~ DO ~SetGlobal("h_LiedelTalk11","GLOBAL",1)~ GOTO 115
-       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in. What did you learn from them?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 123
+       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in.~ DO ~SetGlobal("h_LiedelTalk12","GLOBAL",1)~ GOTO 123
        +~Global("h_LiedelTalk13","GLOBAL",0)~+ ~What was it like working alongside the Scepters? Who exactly are they?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 133
        ++ ~It's been a pleasure, Liedel, but I really should get going.~ GOTO 142
 END
@@ -690,7 +690,7 @@ END
 IF ~~ THEN BEGIN 141
    SAY ~But rest assured, every step of that journey contributed to the person you see before you today.~
        +~Global("h_LiedelTalk11","GLOBAL",0)~+ ~What kind of place is Selgaunt? What was it like growing up on the streets?~ DO ~SetGlobal("h_LiedelTalk11","GLOBAL",1)~ GOTO 115
-       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in. What did you learn from them?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 123
+       +~Global("h_LiedelTalk12","GLOBAL",0)~+ ~Tell me about the Javaliens, the merchant family who took you in.~ DO ~SetGlobal("h_LiedelTalk12","GLOBAL",1)~ GOTO 123
        +~Global("h_LiedelTalk13","GLOBAL",0)~+ ~What was it like working alongside the Scepters? Who exactly are they?~ DO ~SetGlobal("h_LiedelTalk13","GLOBAL",1)~ GOTO 133
        ++ ~It's been a pleasure, Liedel, but I really should get going.~ GOTO 142
 END
@@ -700,13 +700,13 @@ IF ~~ THEN BEGIN 142
 END
 
 IF ~~ THEN BEGIN 143
-   SAY ~It seems only fair, my dear, for you to leave me with something... a soft whisper of your past before you vanish into the shadows. A small token for a poor, curious soul left wanting.~
+   SAY ~It seems only fair, my dear, for you to leave me with something... a soft whisper of your past before you vanish into the shadows. A small token for a poor, curious soul, left... wanting.~
        ++ ~Well, when you put it like that, how can I refuse? What would you like to know?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 146
-       ++ ~Alright, Liedel. Fair is fair. What exactly are you curious about, Liedel?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 146
+       ++ ~Alright, Liedel. Fair is fair. What exactly are you curious about?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 146
        ++ ~Ask away, I'm an open book... for a brief moment, at least.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 146
        ++ ~Let's save my story for another night, when the shadows are less pressing.~ GOTO 144
    END
-   
+
 IF ~~ THEN BEGIN 144
    SAY ~Leaving me in suspense, how disappointingly direct. Where's the intrigue, the playful evasion? I was prepared for a little game of cat and mouse.~ IF ~~ THEN GOTO 145
 END
@@ -726,19 +726,21 @@ IF ~~ THEN BEGIN 147
 END
 
 IF ~~ THEN BEGIN 148
-   SAY ~Tell me, what secrets does such a scholarly sanctuary as Candlekeep hold for a person like you? How does one go from the quiet halls of wisdom to the thrilling shadows of our world?~
-       +~Class(Player1,THIEF_ALL)~+ ~It wasn't just about learning from books. It was about learning from the shadows, turning every corridor and hall into a lesson in cunning and dexterity.~ GOTO 149
+   SAY ~Tell me, what was life like growing up in such a scholarly sanctuary as Candlekeep? It must have been quite a unique experience, sheltered amongst all that ancient knowledge and wisdom.~
+       +~Class(Player1,THIEF_ALL)~+ ~Candlekeep wasn't just about learning from books. It was about learning from the shadows, turning every corridor and hall into a lesson in cunning and dexterity.~ GOTO 149
        +~Class(Player1,FIGHTER_THIEF)~+ ~Candlekeep offered both the quiet of the library and the clang of the forge. While I learned the ways of stealth and deception, the call of the blade was equally strong.~ GOTO 149
        +~Class(Player1,FIGHTER_MAGE_THIEF)~+ ~Growing up in Candlekeep, I couldn't confine myself to just one discipline. I was drawn to the shadows, the spellbook, and the sword in equal measure.~ GOTO 149
        +~Class(Player1,MAGE_THIEF)~+ ~In Candlekeep, I was torn between two worlds, the silent corridors of the library and the mystical allure of magic. It was a place of knowledge and secrecy.~ GOTO 149
+       ++ ~Candlekeep was an enclave of tranquility, a world apart from the rest. It was a life of study and contemplation, surrounded by more books than one could read in a lifetime.~ GOTO 149
 END
 
 IF ~~ THEN BEGIN 149
    SAY ~Such a tantalizing start. Do go on, love. I find myself delightfully ensnared in the web of your past.~
-       +~Class(Player1,THIEF_ALL)~+ ~Among endless tomes and distracted monks, I practiced the art of stealth, the thrill of the pickpocket. My foster father’s tales of intrigue fueling my ambitions.~ GOTO 150
+       +~Class(Player1,THIEF_ALL)~+ ~Among endless tomes and distracted monks, I practiced the art of stealth, the thrill of the pickpocket. My foster father's tales of intrigue fueling my ambitions.~ GOTO 150
        +~Class(Player1,FIGHTER_THIEF)~+ ~I trained under the Watchers, and my foster father, finding a balance between the art of the sword and the shadow. It was an unconventional path, but it led me here.~ GOTO 152
        +~Class(Player1,FIGHTER_MAGE_THIEF)~+ ~It was a juggling act of thievery, combat, and magic. My foster father was preparing me for any path adventure might lead me down.~ GOTO 154
        +~Class(Player1,MAGE_THIEF)~+ ~With the learned guidance of my foster father, I delved into arcane studies and honed my skills in stealth.~ GOTO 156
+       ++ ~Days were filled with the rustle of pages and the echoes of whispered lore. My foster father was my guide through it all. He was not just a mentor in the ways of knowledge, but also in life's subtler lessons.~ GOTO 158
 END
 
 IF ~~ THEN BEGIN 150
@@ -806,10 +808,12 @@ IF ~~ THEN BEGIN 164
    SAY ~Well, <CHARNAME>, it's been a delight, a rare treat, to peel back these layers and glimpse the person beneath the rogue. Your past is as captivating as the mysteries we chase.~ IF ~~ THEN GOTO 165
 END
 
-IF ~~ THEN BEGIN 165     
+IF ~~ THEN BEGIN 165
    SAY ~I must say, uncovering your secrets has been as thrilling as any chase through the night, and I eagerly await the next chapter we might share.~
        +~GlobalGT("h_LiedelLove","GLOBAL",4)~+ ~Uncovering secrets is a mutual thrill, it seems. Time to step back into the shadows, for now.~ GOTO 166
        +~GlobalLT("h_LiedelLove","GLOBAL",5)~+ ~Uncovering secrets is a mutual thrill, it seems. Time to step back into the shadows, for now.~ GOTO 169
+       +~GlobalGT("h_LiedelLove","GLOBAL",4)~+ ~It's been an unexpected pleasure, Liedel. I'll look forward to our next encounter.~ GOTO 166
+       +~GlobalLT("h_LiedelLove","GLOBAL",5)~+ ~It's been an unexpected pleasure, Liedel. I'll look forward to our next encounter.~ GOTO 169
 END
 
 IF ~~ THEN BEGIN 166
@@ -853,7 +857,7 @@ END
 IF ~~ THEN BEGIN 175
    SAY ~Each bounty on this list is a testament to that commitment, and I trust you're ready to handle them with the diligence they deserve.~
        ++ ~Let's hear what you've got for me.~ GOTO 189
-       ++ ~Your command of these matters is quite the sight, Liedel. It's not every day you see charm and efficiency blend so well.~ GOTO 176
+       ++ ~Your command of these matters is quite the sight, Liedel. It's not every day you see charm and efficiency blend so well.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 176
        ++ ~I never took you as one to lead with such passion and dedication. I must say, this seriousness suits you.~ GOTO 176
        ++ ~I'll be honest, you're not exactly the type I expected to be in charge of anything. What's your secret? And don't tell me it's just good looks.~ GOTO 176
        ++ ~I'm not interested right now.~ EXIT
@@ -892,7 +896,7 @@ IF ~~ THEN BEGIN 182
 END
 
 IF ~~ THEN BEGIN 183
-   SAY ~In this relentless pursuit, this hunger for control, I carve my path through the shadows. Not content with the mundane, I reach for the extraordinary.~ IF ~~ THEN GOTO 184
+   SAY ~In this relentless pursuit, this desire for control, I carve my path through the shadows. Not content with the mundane, I reach for the extraordinary.~ IF ~~ THEN GOTO 184
 END
 
 IF ~~ THEN BEGIN 184
@@ -903,7 +907,7 @@ IF ~~ THEN BEGIN 184
 END
 
 IF ~~ THEN BEGIN 185
-   SAY ~A kindred spirit in the dance of power. It's refreshing to find someone who understands the thrill of commanding one's fate~ IF ~~ THEN GOTO 188
+   SAY ~A kindred spirit in the dance of power. It's refreshing to find someone who understands the thrill of commanding one's fate.~ IF ~~ THEN GOTO 188
 END
 
 IF ~~ THEN BEGIN 186
@@ -911,7 +915,7 @@ IF ~~ THEN BEGIN 186
 END
 
 IF ~~ THEN BEGIN 187
-   SAY ~We'll have to agree to disagree on that, my dear. Leadership, like beauty, is in the eye of the beholder.~ IF ~~ THEN GOTO 188
+   SAY ~We'll have to agree to disagree on that, my dear. Although, leadership, like beauty, is in the eye of the beholder.~ IF ~~ THEN GOTO 188
 END
 
 IF ~~ THEN BEGIN 188
@@ -919,7 +923,7 @@ IF ~~ THEN BEGIN 188
 END
 
 IF ~~ THEN BEGIN 189
-   SAY ~First on the list is a serving wench, Europea, indebted to a noble in Beregost. She managed to put the slip on her owner and fled off into the western woods.~ IF ~~ THEN GOTO 190
+   SAY ~First on the list is a serving wench, Europea, indebted to a noble here in Beregost. She managed to put the slip on him and fled off into the western woods.~ IF ~~ THEN GOTO 190
 END
 
 IF ~~ THEN BEGIN 190
@@ -947,7 +951,7 @@ IF ~~ THEN BEGIN 195
 END
 
 IF ~~ THEN BEGIN 196
-   SAY ~In either case, he can be found in the backyards of Beregost's eastern district, practicing his dark arts after nightfall.~ IF ~~ THEN GOTO 197
+   SAY ~In either case, he can be found in the backyards of Beregost's eastside, practicing his dark arts after nightfall.~ IF ~~ THEN GOTO 197
 END
 
 IF ~~ THEN BEGIN 197
@@ -994,7 +998,7 @@ IF ~~ THEN BEGIN 203
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~PartyHasItem("h_misc11")~+ ~I have her here with me. A little worse for the wear, but alive nonetheless.~ GOTO 206
        +~PartyHasItem("h_misc10")~+ ~I found her lifeless form deep in the woods. Here is her thrall collar as proof.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 211
-       +~!PartyHasItem("h_misc10") !PartyHasItem("h_misc11")~+ ~What else can you tell me about the target?~ GOTO 204
+       ++ ~What else can you tell me about the target?~ GOTO 204
        ++ ~I have nothing to report at the moment.~ GOTO 202
 END
 
@@ -1007,7 +1011,7 @@ IF ~~ THEN BEGIN 205
 END
 
 IF ~~ THEN BEGIN 206
-   SAY ~Hold on, love, she's just a child. Even in our domain, there are lines we shouldn't cross. This... this isn't right.~ IF ~~ THEN GOTO 207
+   SAY ~Hold on, love, she's... just a child. Even in our domain, there are lines we shouldn't cross. This... this isn't right.~ IF ~~ THEN GOTO 207
 END
 
 IF ~~ THEN BEGIN 207
@@ -1019,17 +1023,17 @@ IF ~~ THEN BEGIN 208
 END
 
 IF ~~ THEN BEGIN 209
-   SAY ~You've done your part, and you'll get your payment. I'll make sure of it from his own coffers.~ IF ~~ THEN GOTO 210
+   SAY ~You've done your part, and you'll get your payment. I'll make sure it's from his own coffers.~ IF ~~ THEN GOTO 210
 END
 
 IF ~~ THEN BEGIN 210
-   SAY ~Consider this an exception, <CHARNAME>. Sometimes, even shadows must draw a line in the sand.~
+   SAY ~We tread in dark waters, but even in our clandestine world, there are moral thresholds we must be wary of crossing. Sometimes, even shadows must draw a line in the sand.~
 IF ~~ THEN DO ~
    SetGlobal("h_EuropeaBountyEnd","GLOBAL",1)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc11")
    DestroyItem("h_misc11")
-   AddJournalEntry(@429,QUEST_DONE)
+   AddJournalEntry(@430,QUEST_DONE)
    GiveGoldForce(1000)
    AddExperienceParty(600)~ EXIT
 END
@@ -1053,7 +1057,7 @@ IF ~~ THEN DO ~
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
    TakePartyItem("h_misc10")
    DestroyItem("h_misc10")
-   AddJournalEntry(@430,QUEST_DONE)
+   AddJournalEntry(@429,QUEST_DONE)
    GiveGoldForce(500)
    AddExperienceParty(600)~ EXIT
 END
@@ -1061,8 +1065,8 @@ END
 IF ~~ THEN BEGIN 215
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Global("h_KatredaBounty","GLOBAL",2)~+ ~She would not back down, forcing my hand to bring about her permanent end.~ GOTO 219
-       +~Global("h_KatredaBounty","GLOBAL",5)~+ ~I took out Asnabel instead. I know it wasn't the job we agreed on, but it felt like the right thing to do.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 211
-       +~Global("h_KatredaBounty","GLOBAL",1)~+ ~What else can you tell me about the target?~ GOTO 216
+       +~Global("h_KatredaBounty","GLOBAL",5)~+ ~I took out Asnabel instead. I know it wasn't the job we agreed on, but it felt like the right thing to do.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 221
+       ++ ~What else can you tell me about the target?~ GOTO 216
        ++ ~I have nothing to report at the moment.~ GOTO 202
 END
 
@@ -1119,7 +1123,7 @@ IF ~~ THEN BEGIN 225
        +~Global("h_MagnusBounty","GLOBAL",3)~+ ~I fulfilled his request and opted to spare him so he can see his research through.~ DO ~AddJournalEntry(@444,QUEST_DONE)~ GOTO 230
        +~Global("h_ZhontacBounty","GLOBAL",4)~+ ~I chose to claim his bounty outright, sparing myself from entertaining his peculiar request.~ DO ~AddJournalEntry(@446,QUEST_DONE)~ GOTO 230
        +~Global("h_KilledMagnus","GLOBAL",2)~+ ~I worked his request, then disposed of him shortly after.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 232
-       +~OR(3) Global("h_MagnusBounty","GLOBAL",3) Global("h_ZhontacBounty","GLOBAL",4) Global("h_KilledMagnus","GLOBAL",2)~+ ~What else can you tell me about the target?~ GOTO 226
+       ++ ~What else can you tell me about the target?~ GOTO 226
        ++ ~I have nothing to report at the moment.~ GOTO 202
 END
 
@@ -1128,7 +1132,7 @@ IF ~~ THEN BEGIN 226
 END
 
 IF ~~ THEN BEGIN 227
-   SAY ~Interestingly, he conducts his grim business right in his backyard. He's currently seeking a subject for his experiments, someone specific, though I'm not privy to who.~ IF ~~ THEN GOTO 228
+   SAY ~Interestingly, he conducts his grim business right out in the open. He's currently seeking a subject for his experiments, someone specific, though I'm not privy to who.~ IF ~~ THEN GOTO 228
 END
 
 IF ~~ THEN BEGIN 228
@@ -1155,7 +1159,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 232
-   SAY ~My, my, a clean sweep. You have a deliciously ruthless side to you, my dear, and I must say, it’s incredibly attractive to see such decisiveness in action.~ IF ~~ THEN GOTO 233
+   SAY ~My, my, a clean sweep. You have a deliciously ruthless side to you, my dear, and I must say, it's incredibly attractive to see such decisiveness in action.~ IF ~~ THEN GOTO 233
 END
 
 IF ~~ THEN BEGIN 233
@@ -1174,11 +1178,11 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6) GlobalLT("h_LiedelRomanceActive","GLOBAL",2)~ THEN BEGIN 235
-   SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, darling?~  IF ~~ THEN EXIT
+   SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, <CHARNAME>?~  IF ~~ THEN EXIT
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",4) Global("h_BountyNumber","GLOBAL",6) Global("h_LiedelRomanceActive","GLOBAL",2)~ THEN BEGIN 236
-   SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, darling?~
+   SAY ~Gods, this place can be dreadfully dull at times. I'm not sure how much more of it I can take, honestly. Won't you have any fun with me, <CHARNAME>?~
        ++ ~Don't worry, I won't let you suffer through the boredom alone.~ GOTO 238
        ++ ~I've missed our little chats, Liedel. I'm willing to pick up where we left off.~ GOTO 238
        ++ ~Sorry, but I'm a little busy right now.~ GOTO 237
@@ -1189,7 +1193,7 @@ IF ~~ THEN BEGIN 237
 END
 
 IF ~~ THEN BEGIN 238
-   SAY ~Oh, thanks the gods for that. I have a feeling we'll find plenty of ways to keep things interesting.~ IF ~~ THEN GOTO 239
+   SAY ~Oh, thank the gods for that. I have a feeling we'll find plenty of ways to keep things interesting.~ IF ~~ THEN GOTO 239
 END
 
 IF ~~ THEN BEGIN 239
@@ -1253,7 +1257,7 @@ END
 IF ~~ THEN BEGIN 252
    SAY ~But, that's as far as the story goes for today, <CHARNAME>.~
        ++ ~How do things in the Gorgon's Eye stack up against the Night Knives?~ GOTO 255
-       ++ ~Secrets, shadows, and cunning. It's like something out of a dime store novel. Did you wear a dramatic cape too?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 253
+       ++ ~Secrets, shadows, and cunning. It's like something out of a copper store novel. Did you wear a dramatic cape too?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 253
 END
 
 IF ~~ THEN BEGIN 253
@@ -1265,23 +1269,23 @@ IF ~~ THEN BEGIN 254
 END
 
 IF ~~ THEN BEGIN 255
-   SAY ~The Night Knives and the Gorgon's Eye... they're similar in some ways, but the scale of our operations is worlds apart.~ IF ~~ THEN GOTO 256
+   SAY ~The Night Knives and the Gorgon's Eye... they're similar in some ways, but the scale of our operations are worlds apart.~ IF ~~ THEN GOTO 256
 END
 
 IF ~~ THEN BEGIN 256
-   SAY ~Selgaunt was a beast of a city, far grander than Beregost, with security that could make even the most audacious thief pause. It's a big city game, with big city stakes.~ IF ~~ THEN GOTO 257
+   SAY ~Selgaunt is a beast of a city, far grander than Beregost, with security that could make even the most audacious thief pause. It's a big city game, with big city stakes.~ IF ~~ THEN GOTO 257
 END
 
 IF ~~ THEN BEGIN 257
-   SAY ~The Night Knives thrived on the abundance of nobles, delving deep into extortion and manipulation.~ IF ~~ THEN GOTO 258
+   SAY ~The Night Knives thrive on the abundance of nobles, delving deep into extortion and manipulation.~ IF ~~ THEN GOTO 258
 END
 
 IF ~~ THEN BEGIN 258
-   SAY ~Krollir Venasten, or the 'Righteous Man' as he styled himself, was a master of playing those stakes, using his position as a priest of Mask to extend the guild's reach. ~ IF ~~ THEN GOTO 259
+   SAY ~Krollir Venasten, or the 'Righteous Man' as he styles himself, is a master of playing those stakes, using his position as a priest of Mask to extend the guild's reach.~ IF ~~ THEN GOTO 259
 END
 
 IF ~~ THEN BEGIN 259
-   SAY ~They were more than just thieves; they were power brokers in a city ripe for manipulation.~ IF ~~ THEN GOTO 260
+   SAY ~They're more than just thieves, they're power brokers in a city ripe for manipulation.~ IF ~~ THEN GOTO 260
 END
 
 IF ~~ THEN BEGIN 260
@@ -1298,21 +1302,21 @@ END
 
 IF ~~ THEN BEGIN 263
    SAY ~So, <CHARNAME>, which do you find more intriguing, I wonder? The grandeur of a big city like Selgaunt or the close-knit dance of Beregost?~
-       ++ ~There's something about the chaos of a big city that gets the blood pumping. The constant challenge, the endless opportunities. Selgaunt must have felt like a true playground.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 255
-       ++ ~I prefer the intimacy of a smaller town. You get to know the ins and outs, the hidden corners and quiet backstreets. It's a canvas that can be just as thrilling to paint on.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 256
-       ++ ~Cities are cities, towns are towns. What matters most is the challenge they present. The size is just a detail, really.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 257
+       ++ ~There's something about the chaos of a big city that gets the blood pumping. The constant challenge, the endless opportunities. Selgaunt must have felt like a true playground.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 264
+       ++ ~I prefer the intimacy of a smaller town. You get to know the ins and outs, the hidden corners and quiet backstreets. It's a canvas that can be just as thrilling to paint on.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 265
+       ++ ~Cities are cities, towns are towns. What matters most is the challenge they present. The size is just a detail, really.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 266
 END
 
 IF ~~ THEN BEGIN 264
-   SAY ~Ah, the siren call of the grand city. Selgaunt certainly had its allure. The rush of navigating through the bustling streets, outsmarting the city's finest, it's an art in itself.~ IF ~~ THEN GOTO 258
+   SAY ~Ah, the siren call of the grand city. Selgaunt certainly had its allure. The rush of navigating through the bustling streets, outsmarting the city's finest, it's an art in itself.~ IF ~~ THEN GOTO 267
 END
 
 IF ~~ THEN BEGIN 265
-   SAY ~There's a certain charm to a smaller town, isn't there? The secrets are more tightly guarded, the connections more personal. Beregost may be diminutive, but it holds its own in the dance of shadows.~ IF ~~ THEN GOTO 258
+   SAY ~There's a certain charm to a smaller town, isn't there? The secrets are more tightly guarded, the connections more personal. Beregost may be diminutive, but it holds its own in the dance of shadows.~ IF ~~ THEN GOTO 267
 END
 
 IF ~~ THEN BEGIN 266
-   SAY ~You're a rare breed, love. Indifferent to the canvas upon which we weave our stories? I can't say I share your sentiment. The environment shapes the game, after all.~ IF ~~ THEN GOTO 258
+   SAY ~You're a rare breed, love. Indifferent to the canvas upon which we weave our stories? I can't say I share your sentiment. The environment shapes the game, after all.~ IF ~~ THEN GOTO 267
 END
 
 IF ~~ THEN BEGIN 267
@@ -1329,7 +1333,7 @@ IF ~~ THEN BEGIN 268
 END
 
 IF ~~ THEN BEGIN 269
-   SAY ~Well, if you must know... there is something, I suppose. It's a rather... personal indulgence of mine. Before I tell you though, I need you to promise me that you won't laugh.~
+   SAY ~Well, if you must know... there is something, I suppose. It's a rather... personal indulgence of mine. Before I tell you though, I need you to promise me that you won't, well... laugh.~
        ++ ~Your secret's safe with me. Unless, of course, it involves talking to woodland creatures at midnight.~ GOTO 271
        ++ ~You have my word, I won't even crack a smile. Now, the suspense is killing me. What's this little quirk of yours?~ GOTO 270
        ++ ~Well, I can't promise not to laugh if I don't even know what it is, can I?~ GOTO 271
@@ -1412,18 +1416,18 @@ IF ~~ THEN BEGIN 283
 END
 
 IF ~~ THEN BEGIN 284
-   SAY ~Every time I manage to steal away from the guild, I find myself drawn there. It's like a brief respite from the shadows, a slice of tranquility where I can just be, away from it all.~
+   SAY ~Every time I manage to steal away from the guild, I find myself drawn there. It's like a brief respite from the shadows, a slice of tranquility where I can just... be away from it all.~
        ++ ~Ah, the elusive sanctuary of water fountains! Truly, Liedel, you have a knack for finding the hidden treasures in life.~ GOTO 285
        ++ ~I'll have to visit this secret oasis someday. Maybe you'll show me around?~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 286
        ++ ~Water fountains, really? I expected something a bit more... thrilling from someone who's always seeking excitement.~ GOTO 287
 END
 
 IF ~~ THEN BEGIN 285
-   SAY ~Ah, you see, darling, sometimes it's the most unexpected places that offer the sweetest surprises. Just like the delightful company I find here with you.~ IF ~~ THEN GOTO 286
+   SAY ~Ah, you see, darling, sometimes it's the most unexpected places that offer the sweetest surprises. Just like the delightful company I find here with you.~ IF ~~ THEN GOTO 288
 END
 
 IF ~~ THEN BEGIN 286
-   SAY ~Well, my love, you'll have to prove yourself worthy of such an exclusive tour, won't you?~ IF ~~ THEN  GOTO 287
+   SAY ~Well, my love, you'll have to prove yourself worthy of such an exclusive tour, won't you?~ IF ~~ THEN  GOTO 288
 END
 
 IF ~~ THEN BEGIN 287
@@ -1450,7 +1454,7 @@ END
 IF ~~ THEN BEGIN 291
    SAY ~Go then, embrace your path in the shadows, and may they reveal to you what you seek.~
 IF ~~ THEN DO ~
-   SetGlobal("h_LiedelRomanceActive","GLOBAL",0)~ EXIT
+   SetGlobal("h_LiedelRomanceActive","GLOBAL",3)~ EXIT
 END
 
 IF ~~ THEN BEGIN 292
@@ -1468,8 +1472,8 @@ END
 IF ~~ THEN BEGIN 295
    SAY ~Tell me, <CHARNAME>, do you ever wonder if there might be something more between us, beneath the surface?~
        ++ ~I've been thinking about that too, Liedel. There's a connection here, no denying it, and I want to see where it leads us.~ GOTO 299
-       ++ ~Liedel, our conversations have been... interesting, to say the least. I'm not one to rush into things. Let's take our time and see where this leads.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-5) SetGlobal("h_LiedelRomanceActive","GLOBAL",3)~ GOTO 297
-       ++ ~Let's not complicate things. I don't see a romantic connection here. Why don't we continue our interactions the way they are.~ DO ~SetGlobal("h_LiedelRomanceActive","GLOBAL",0)~ GOTO 296
+       ++ ~Liedel, our conversations have been... interesting, to say the least. I'm not one to rush into things. Let's take our time and see where this leads.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-4) SetGlobal("h_LiedelRomanceActive","GLOBAL",3)~ GOTO 297
+       ++ ~Let's not complicate things. I don't see a romantic connection here. Why don't we continue our interactions the way they are?~ DO ~SetGlobal("h_LiedelRomanceActive","GLOBAL",0)~ GOTO 296
 END
 
 IF ~~ THEN BEGIN 296
@@ -1485,7 +1489,7 @@ IF ~~ THEN BEGIN 298
 END
 
 IF ~~ THEN BEGIN 299
-   SAY ~I'm pleased to hear you say that, <CHARNAME>. Perhaps we can explore this connection further, in the days to come. Until then, my dear companion.~
+   SAY ~I'm pleased to hear you say that, <CHARNAME>. Perhaps we can explore this connection further in the days to come. Until then, my dear companion.~
 IF ~~ THEN DO ~
    SetGlobal("h_LiedelRomanceActive","GLOBAL",3)~ EXIT
 END
@@ -1501,7 +1505,7 @@ END
 IF ~Global("h_LiedelQuest","GLOBAL",5)~ THEN BEGIN 302
    SAY ~Finally, something to stir the pot and break this tiresome routine. There's a fresh batch of bounties ripe for the picking. Are you up for a little excitement, love?~
        ++ ~What new targets do you have for me?~ GOTO 338
-       +~GlobalGT("h_LiedelRomanceActive","GLOBAL",2)~+ ~How are you holding up after the attack?~ GOTO 303
+       +~Global("h_LiedelRomanceActive","GLOBAL",4)~+ ~How are you holding up after the attack?~ GOTO 303
        ++ ~I'll have to pass for now.~ EXIT
 END
 
@@ -1510,11 +1514,11 @@ IF ~~ THEN BEGIN 303
 END
 
 IF ~~ THEN BEGIN 304
-   SAY ~But, you... <CHARNAME>. I've heard whispers about what you did out there... about single-handedly decimating the Shadow Thieves in the streets.~ IF ~~ THEN GOTO 305
+   SAY ~But, you... <CHARNAME>. I've heard whispers about what you did out there... taking on the Shadow Thieves all by yourself.~ IF ~~ THEN GOTO 305
 END
 
 IF ~~ THEN BEGIN 305
-   SAY ~It sends a shiver down my spine, thinking about it. The sheer force you wielded, the effortless way you turned the tide... It's both frightening and... incredibly enticing.~ IF ~~ THEN GOTO 306
+   SAY ~It sends a shiver down my spine, thinking about it. The sheer force you wielded, the effortless way you turned the tide. It's both frightening and... incredibly enticing.~ IF ~~ THEN GOTO 306
 END
 
 IF ~~ THEN BEGIN 306
@@ -1558,7 +1562,7 @@ IF ~~ THEN BEGIN 314
 END
 
 IF ~~ THEN BEGIN 315
-   SAY ~That's a bit rich, even for you. In our world, arrogance can be as dangerous as a blade at your back.~ IF ~~ THEN GOTO 315
+   SAY ~That's a bit rich, even for you. In our world, arrogance can be as dangerous as a blade at your back.~ IF ~~ THEN GOTO 316
 END
 
 IF ~~ THEN BEGIN 316
@@ -1573,7 +1577,7 @@ IF ~~ THEN BEGIN 318
    SAY ~A dangerous game of cat and mouse, played in a forest as enigmatic as our own guild's secrets. So, how did it go?~
        ++ ~Let's skip the small talk for now and get down to business. Tell me about those new bounties.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 336
        ++ ~I found the smugglers as planned, but the Shadow Thieves showed up and complicated things. It was a tricky situation, to say the least.~ GOTO 319
-       ++ ~You should have seen it, Liedel. The smugglers, the sudden appearance of the Shadow Thieves... it was a real adrenaline rush.~ GOTO 320
+       ++ ~You should have seen it, Liedel. The smugglers, the sudden appearance of the Shadow Thieves... it was a real adrenaline rush.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 320
        ++ ~It was an eventful trip. Encounters with smugglers, a run-in with the Shadow Thieves. Let's just say it wasn't a straightforward mission.~ GOTO 321
 END
 
@@ -1582,7 +1586,7 @@ IF ~~ THEN BEGIN 319
 END
 
 IF ~~ THEN BEGIN 320
-   SAY ~Now that's my kind of mission. Sounds like you had all the fun without me. Next time, you'll have to let me in on the action.~ IF ~~ THEN GOTO 322
+   SAY ~Now, that's my kind of mission. Sounds like you had all the fun without me. Next time, you'll have to let me in on the action.~ IF ~~ THEN GOTO 322
 END
 
 IF ~~ THEN BEGIN 321
@@ -1624,15 +1628,15 @@ END
 IF ~~ THEN BEGIN 328
    SAY ~<CHARNAME>... what exactly are you trying to say? You can't possibly mean...~
        ++ ~Baldwin's plan to reconstruct the Kerykeion is a path to disaster. It's not just a weapon, it's a harbinger of death and chaos, regardless of his motives.~ DO ~SetGlobal("h_LiedelBetray","GLOBAL",1)~ GOTO 329
-       ++ ~Thamuz made it clear. The Kerykeion, in its complete form, will be catastrophic. Baldwin may think he can control it, but its power will bring nothing but ruin.~ GOTO 329
+       ++ ~Thamuz made it clear. The Kerykeion, in its complete form, will be catastrophic. Baldwin may think he can control it, but its power will bring nothing but ruin.~ DO ~SetGlobal("h_LiedelBetray","GLOBAL",1)~ GOTO 329
 END
 
 IF ~~ THEN BEGIN 329
-   SAY ~Stop. Not another word. Damn it, <CHARNAME>, have you lost all sense? Do you have any idea what you're playing at? The walls have ears, and this... this is a death wish.~ IF ~~ THEN GOTO 330
+   SAY ~Stop. Not another word. Damn it, <CHARNAME>, have you lost all sense? Do you have any idea what you're playing at? These walls have ears, and this kind of talk... it's a death wish.~ IF ~~ THEN GOTO 330
 END
 
 IF ~~ THEN BEGIN 330
-   SAY ~Baldwin is a monster, one of the most ruthless rogues I've known. If he even got a whiff of this, you'd be lucky if death is all you got.~ IF ~~ THEN GOTO 331
+   SAY ~Baldwin is a monster, one of the most ruthless rogues I've ever known. If he even got a whiff of this, you'd be lucky if death is all you got.~ IF ~~ THEN GOTO 331
 END
 
 IF ~~ THEN BEGIN 331
@@ -1684,7 +1688,7 @@ IF ~~ THEN BEGIN 342
 END
 
 IF ~~ THEN BEGIN 343
-   SAY ~Now, onto our next mark, Lord Varlind, one of Grand Duke Belt's closest advisors.~ IF ~~ THEN GOTO 344
+   SAY ~Now, our next mark, Lord Varlind, one of Grand Duke Belt's closest advisors.~ IF ~~ THEN GOTO 344
 END
 
 IF ~~ THEN BEGIN 344
@@ -1720,7 +1724,7 @@ IF ~~ THEN BEGIN 351
 END
 
 IF ~~ THEN BEGIN 352
-   SAY ~I'd suggest you start by talking to some professionals like us, love. People who reside in the shadows, and know the underbelly well.~ IF ~~ THEN GOTO 353
+   SAY ~I'd suggest you start by talking to some professionals like us. People who reside in the shadows, and know the underbelly well.~ IF ~~ THEN GOTO 353
 END
 
 IF ~~ THEN BEGIN 353
@@ -1744,8 +1748,9 @@ IF ~Global("h_LiedelQuest","GLOBAL",6) GlobalLT("h_BountyNumber","GLOBAL",9)~ TH
        +~Global("h_AlaricBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Alaric.~ GOTO 357
        +~Global("h_VarlindBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Lord Varlind.~ GOTO 369
        +~Global("h_IslaBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 381
-       +~OR(2) Global("h_LiedelKiss","GLOBAL",0) Global("h_LiedelKiss","GLOBAL",1) GlobalLT("h_LiedelLove","GLOBAL",11) Global("h_IslaBounty","GLOBAL",2)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 390
-       +~Global("h_IslaBounty","GLOBAL",2) GlobalGT("h_LiedelLove","GLOBAL",11) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 394
+       +~GlobalLT("h_LiedelLove","GLOBAL",15) Global("h_IslaBounty","GLOBAL",2)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 390
+       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",0)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 390
+       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 394
        ++ ~I'll be going now.~ EXIT
 END
 
@@ -1760,7 +1765,7 @@ END
 IF ~~ THEN BEGIN 357
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~PartyHasItem("h_misc30")~+ ~He's been... taken care of, and the serum is now in my hands.~ GOTO 362
-       +~!PartyHasItem("h_misc30")~+ ~What else can you tell me about the target?~ GOTO 358
+       ++ ~What else can you tell me about the target?~ GOTO 358
        ++ ~I have nothing to report at the moment.~ GOTO 356
 END
 
@@ -1832,7 +1837,7 @@ IF ~~ THEN BEGIN 369
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Dead("h_varlic")~+ ~Consider his chapter closed. The city's landscape may shift, but my coin purse will grow heavier.~ GOTO 374
        +~Global("h_VarlindBounty","GLOBAL",1)~+ ~Liedel, I couldn't go through with it. Varlind, he's deeply entangled in the city's fate. Killing him didn't feel right.~ GOTO 377
-       +~!Dead("h_varlic") Global("h_VarlindBounty","GLOBAL",0)~+ ~What else can you tell me about the target?~ GOTO 370
+       ++ ~What else can you tell me about the target?~ GOTO 370
        ++ ~I have nothing to report at the moment.~ GOTO 356
 END
 
@@ -1889,6 +1894,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_VarlindBounty","GLOBAL",2)
    SetGlobal("h_VarlindBountyEnd","GLOBAL",1)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   GiveGoldForce(500)
    AddExperienceParty(900)
    AddJournalEntry(@456,QUEST_DONE)~ EXIT
 END
@@ -1896,7 +1902,7 @@ END
 IF ~~ THEN BEGIN 381
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Global("h_IslaBounty","GLOBAL",3)~+ ~I tracked Isla down in Baldur's Gate and took her out. It was a tough fight, but in the end, she was no match for me.~ DO ~AddJournalEntry(@465,QUEST_DONE)~ GOTO 386
-       +~!Dead("h_islacc")~+ ~What else can you tell me about the target?~ GOTO 382
+       ++ ~What else can you tell me about the target?~ GOTO 382
        ++ ~I have nothing to report at the moment.~ GOTO 356
 END
 
@@ -1950,6 +1956,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBountyEnd","GLOBAL",1)
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   GiveGoldForce(500)
    AddExperienceParty(900)~ EXIT
 END
 
@@ -1988,6 +1995,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_IslaBountyEnd","GLOBAL",1)
    SetGlobal("h_IslaBounty","GLOBAL",4)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
+   GiveGoldForce(500)
    AddExperienceParty(900)
    AddJournalEntry(@461,QUEST_DONE)~ EXIT
 END
@@ -2002,7 +2010,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_LiedelCS","GLOBAL",1)~ THEN BEGIN 402
-   SAY ~Oh, <CHARNAME>... That was... exquisite, an expierence beyond words. You are a fire that consumes, a storm that rages.~ IF ~~ THEN GOTO 403
+   SAY ~Oh, <CHARNAME>... That was... exquisite, an experience beyond words. You are a fire that consumes, a storm that rages.~ IF ~~ THEN GOTO 403
 END
 
 IF ~~ THEN BEGIN 403
@@ -2040,7 +2048,7 @@ IF ~~ THEN BEGIN 407
 END
 
 IF ~~ THEN BEGIN 408
-   SAY ~Well, <CHARNAME>, it seems I got precisely what I wanted from you, regardless of your opinion on the matter. You were a means to an end, and nothing more. Don't take it too personally.~ IF ~~ THEN GOTO 409
+   SAY ~Whatever. I got precisely what I wanted from you, regardless of your opinion on the matter. You were a means to an end, and nothing more. Don't take it too personally.~ IF ~~ THEN GOTO 409
 END
 
 IF ~~ THEN BEGIN 409
@@ -2056,14 +2064,14 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_LiedelQuest","GLOBAL",6) Global("h_BountyNumber","GLOBAL",9) GlobalLT("h_LiedelRomanceActive","GLOBAL",3)~ THEN BEGIN 410
-   SAY ~This lull in excitement leaves me yearning for more... stimulating activities. Perhaps you could find a way to slip a bit of excitement back into my day, love?~ IF ~~ THEN EXIT
+   SAY ~This lull in excitement leaves me yearning for more... stimulating activities. Perhaps you could find a way to slip a bit of excitement back into my day?~ IF ~~ THEN EXIT
 END
 
-IF ~Global("h_LiedelQuest","GLOBAL",6) Global("h_BountyNumber","GLOBAL",9) GlobalGT("h_LiedelRomanceActive","GLOBAL",2)~ THEN BEGIN 411
-   SAY ~This lull in excitement leaves me yearning for more... stimulating activities. Perhaps you could find a way to slip a bit of excitement back into my day, love?~
+IF ~Global("h_LiedelQuest","GLOBAL",6) Global("h_BountyNumber","GLOBAL",9) GlobalGT("h_LiedelRomanceActive","GLOBAL",2) GlobalLT("h_LiedelRomanceActive","GLOBAL",6)~ THEN BEGIN 411
+   SAY ~This lull in excitement leaves me yearning for more... stimulating activities. Perhaps you could find a way to slip a bit of excitement back into my day?~
        ++ ~Stimulating activities, you say? You've got my attention, Liedel. I'm sure we can stir up some excitement together.~ GOTO 414
        ++ ~I can think of a few ways to slip in some excitement, but they might require your full cooperation.~ GOTO 414
-       ++ ~Yeah, let's rain check that excitement for later. I've got some other things I need to be doing.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-1)~ GOTO 412
+       ++ ~Yeah, let's rain check that excitement for later. I've got some other things I should be doing.~ GOTO 412
 END
 
 IF ~~ THEN BEGIN 412
@@ -2118,7 +2126,7 @@ IF ~~ THEN BEGIN 423
        +~Global("h_LiedelKiss","GLOBAL",1)~+ ~You've been through so much, Liedel, and yet you stand tall. You're a survivor, and I'm proud to be by your side.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",1)~ GOTO 426
        +~Global("h_LiedelKiss","GLOBAL",1)~+ ~She chose her side, just as you chose yours. It was only a matter of time before you did what needed to be done.~ GOTO 427
        +~Global("h_LiedelKiss","GLOBAL",0)~+ ~You're a force to be reckoned with, a survivor through and through. But what about the Night Knives? Did they continue to hunt you after you fled?~ GOTO 432
-       +~Global("h_LiedelKiss","GLOBAL",0)~+ ~I'm glad to be part of your story. You've faced darkness head-on, and emerged stronger for it. But what became of the Night Knives after you left?~ GOTO 432
+       +~Global("h_LiedelKiss","GLOBAL",0)~+ ~You've faced darkness head-on, and emerged stronger for it. But what became of the Night Knives after you left?~ GOTO 432
 END
 
 IF ~~ THEN BEGIN 424
@@ -2188,19 +2196,20 @@ IF ~~ THEN BEGIN 439
        +~Global("h_LiedelKiss","GLOBAL",1)~+ ~Rigaldo, huh? The man of the hour, it seems. I wasn't aware you two had such a... tethered history.~ GOTO 440
        +~Global("h_LiedelKiss","GLOBAL",1)~+ ~You two obviously share a history. I'm here for you, Liedel, no matter what came before.~ GOTO 441
        +~Global("h_LiedelKiss","GLOBAL",1)~+ ~You've overcome so much, Liedel. You're not alone anymore. We'll face whatever challenges come our way, together.~ GOTO 442
-       ++ ~It's funny how life can lead us to unexpected places. Beregost wasn't in your plans then, was it? What do you make of this new chapter?~ GOTO 443
+       ++ ~It's funny how life can lead us to unexpected places. Beregost wasn't in your plans then, was it?~ GOTO 443
+       ++ ~Your past with the Night Knives sounds like a tale of resilience and cunning. What do you make of this new chapter in Beregost?~ GOTO 443
 END
 
 IF ~~ THEN BEGIN 440
-   SAY ~Oh, dear <CHARNAME>, it seems jealousy has a voice. I daresay, it actually suits you well. Rigaldo was a chapter in the past, my love, and you, are the story I'm writing now.~ IF ~~ THEN GOTO 441
+   SAY ~Oh, dear <CHARNAME>, it seems jealousy has a voice. I daresay, it actually suits you well. Rigaldo was a chapter in the past, my love, and you, are the story I'm writing now.~ IF ~~ THEN GOTO 444
 END
 
 IF ~~ THEN BEGIN 441
-   SAY ~Is that a hint of jealousy, I hear? Don't worry, love, Rigaldo was a chapter in the past. What matters now is the present, and the present looking rather enticing at the moment, wouldn't you agree?~ IF ~~ THEN GOTO 442
+   SAY ~Is that a hint of jealousy, I hear? Don't worry, love, Rigaldo was a chapter in the past. What matters now is the present, and the present looking rather enticing at the moment, wouldn't you agree?~ IF ~~ THEN GOTO 444
 END
 
 IF ~~ THEN BEGIN 442
-   SAY ~Together, indeed. The road ahead may be treacherous, but with you by my side, I fear no darkness. Our story, <CHARNAME>, is only just beginning.~ IF ~~ THEN GOTO 443
+   SAY ~Together, indeed. The road ahead may be treacherous, but with you by my side, I fear no darkness. Our story, <CHARNAME>, is only just beginning.~ IF ~~ THEN GOTO 444
 END
 
 IF ~~ THEN BEGIN 443
@@ -2215,20 +2224,22 @@ IF ~~ THEN BEGIN 444
 END
 
 IF ~~ THEN BEGIN 445
-   SAY ~Oh? Venturing into more personal territory, are we? I must admit, I'm both curious and yet... cautious.~ IF ~~ THEN GOTO 447
+   SAY ~Oh? Venturing into more personal territory, are we? I must admit, I'm both curious and yet... cautious.~ IF ~~ THEN GOTO 446
 END
 
 IF ~~ THEN BEGIN 446
    SAY ~Go ahead, <CHARNAME>, ask your question. I can't promise I'll answer, but I'm intrigued to hear what you want to know.~
-       +~Global("h_LiedelKiss","GLOBAL",1) Global("h_LiedelRomanceActive","GLOBAL",5)~+ ~I wanted to talk to you about what happened between us the other night.~ GOTO 448
-       +~Global("h_LiedelKiss","GLOBAL",1) Global("h_LiedelRomanceActive","GLOBAL",4)~+ ~I wanted to talk to you about what happened between us the other night.~ GOTO 448
+       +~Global("h_LiedelRomanceActive","GLOBAL",5)~+ ~I wanted to talk to you about what happened between us the other night.~ GOTO 448
+       +~Global("h_LiedelRomanceActive","GLOBAL",4) GlobalLT("h_LiedelRomanceActive","GLOBAL",15)~+ ~I wanted to talk to you about what happened between us the other night.~ GOTO 516
+       +~Global("h_LiedelRomanceActive","GLOBAL",4) GlobalGT("h_LiedelRomanceActive","GLOBAL",14)~+ ~I wanted to talk to you about what happened between us the other night.~ GOTO 531
        ++ ~Actually, nevermind. It's nothing. I should probably get going. We can talk more some other time.~ GOTO 447
 END
 
 IF ~~ THEN BEGIN 447
    SAY ~Of course, <CHARNAME>, duties call, don't they? Always a delight to have our little talks. Until the shadows bring us together again, take care out there.~
 IF ~~ THEN DO ~
-   SetGlobal("h_LiedelRomanceActive","GLOBAL",0)~ EXIT
+   SetGlobal("h_LiedelRomanceActive","GLOBAL",0)
+   SetGlobal("h_LiedelLove","GLOBAL",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 448
@@ -2271,8 +2282,7 @@ END
 IF ~~ THEN BEGIN 456
    SAY ~The memory of that night still lingers on my skin, <CHARNAME>. The taste of desire, the heat of our passion... it's something I can't easily forget.~
        ++ ~The way you talk about it, Liedel, it's almost impossible to resist. I think it's time we explore our desires once again.~ GOTO 457
-       +~Global("h_LiedelRomanceActive","GLOBAL",5)~+ ~Our shared experiences are unforgettable, Liedel, but I actually have to get going now.~ GOTO 447
-       +~Global("h_LiedelRomanceActive","GLOBAL",4)~+ ~While I appreciate your words and the intensity of our connection, I wanted to tell you... I just don't feel the same way. I'm truly sorry if this hurts you.~ GOTO 453
+       ++ ~Our shared experiences are unforgettable, Liedel. I wish I could stay longer, but I have responsibilities to attend to.~ GOTO 447
 END
 
 IF ~~ THEN BEGIN 457
@@ -2365,7 +2375,7 @@ IF ~~ THEN BEGIN 474
 END
 
 IF ~~ THEN BEGIN 475
-   SAY ~The guild be damned, I'm with you. Wherever this wicked path leads, I'm ready to walk it by your side. Let the world burn around us, we'll dance in the flames together.~
+   SAY ~The guild be damned, I'm with you. Wherever this wicked path leads, I'm ready to walk it by your side. Let the world burn around us, and we'll dance in the flames together.~
 IF ~~ THEN DO ~
    SetGlobal("h_LiedelBetray","GLOBAL",2)~ EXIT
 END
@@ -2375,7 +2385,7 @@ IF ~GlobalLT("h_LiedelRomanceActive","GLOBAL",6) Global("h_LiedelQuest","GLOBAL"
 END
 
 IF ~Global("h_LiedelRomanceActive","GLOBAL",6) Global("h_LiedelQuest","GLOBAL",7)~ THEN BEGIN 477
-   SAY ~Well, well, look at you. The new guildmaster of the Gorgon's Eye... It has a nice ring to it, I'll admit.~ IF ~~ THEN GOTO 478
+   SAY ~Well, well, look at you, <CHARNAME>. The new guildmaster, no less. I must admit, power does have its allure. Impressive work, my dear.~ IF ~~ THEN GOTO 478
 END
 
 IF ~~ THEN BEGIN 478
@@ -2395,7 +2405,7 @@ IF ~~ THEN BEGIN 481
        ++ ~It's been great, Liedel. I'll miss what we had, but let's see what the future holds. I say we take each day as it comes, together or apart.~ GOTO 482
        ++ ~Our time together is too precious to let slip away so easily. I promise to find moments for us in between all the chaos.~ GOTO 484
        ++ ~Remember your place, Liedel. The affairs of the heart are trivial against the backdrop of power. Serve the guild, as is your duty, and do not seek more.~ GOTO 486
-       +~Global("h_LiedelWillJoin","GLOBAL",3) GlobalGT("h_LiedelLove","GLOBAL",14)~+ ~You know, Liedel, I've been thinking. Now that I'm guildmaster, there's so much more we could achieve together. Join me, and together we can chase the thrill of adventure that lies beyond these walls.~ GOTO 492
+       +~Global("h_LiedelWillJoin","GLOBAL",3) GlobalGT("h_LiedelLove","GLOBAL",17)~+ ~You know, Liedel, I've been thinking. Now that I'm guildmaster, there's so much more we could achieve together. Join me, and together we can chase the thrill of adventure that lies beyond these walls.~ GOTO 492
 END
 
 IF ~~ THEN BEGIN 482
@@ -2441,7 +2451,7 @@ IF ~~ THEN BEGIN 490
 END
    
 IF ~Global("h_LiedelQuest","GLOBAL",8)~ THEN BEGIN 491
-   SAY ~So, the guildmaster returns. I trust the weight of command hasn’t dulled your edge... or your heart. As ever, I stand ready to serve the guild’s cause, with or without your favor.~ IF ~~ THEN EXIT
+   SAY ~So, the guildmaster returns. I trust the weight of command hasn't dulled your edge... or your heart. As ever, I stand ready to serve the guild's cause, with or without your favor.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 492
@@ -2467,7 +2477,7 @@ IF ~~ THEN BEGIN 496
 END
 
 IF ~~ THEN BEGIN 497
-   SAY ~At any rate, I've decided to enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, my love.~
+   SAY ~At any rate, I've decided to enlist in the Shadow Thieves. These small-time guilds just don't do it for me anymore. Maybe I'll see you around one day, <CHARNAME>.~
 IF ~~ THEN DO ~
    EscapeArea()~ EXIT
 END
@@ -2558,6 +2568,94 @@ END
 
 
 
+IF ~~ THEN BEGIN 516
+   SAY ~Ah, that night... a moment of fiery passion under the stars, wasn't it? I won't lie, <CHARNAME>, it was thrilling, a dance of shadows and desire.~ IF ~~ THEN GOTO 517
+END
+
+IF ~~ THEN BEGIN 517
+   SAY ~You and I, we're creatures of the night, always chasing the next thrill, the next adventure. That kiss, it was a spark in the dark, intense and unforgettable.~ IF ~~ THEN GOTO 518
+END
+
+IF ~~ THEN BEGIN 518
+   SAY ~But... <CHARNAME>, sparks alone don't sustain a fire in my world. I'm someone who thrives on excitement, on the rush of danger and the pleasures of the unknown.~ IF ~~ THEN GOTO 519
+END
+
+IF ~~ THEN BEGIN 519
+   SAY ~It's not just a preference, it's who I am, it's woven into the very fabric of my being. I hope you understand. It's not about you, it's about what I need in my life.~ IF ~~ THEN GOTO 520
+END
+
+IF ~~ THEN BEGIN 520
+   SAY ~I crave someone who matches my thirst for life's adrenaline, who dances on the edge just as fiercely as I do. There's a bond between us, no doubt, but you don't ignite that wildfire in me.~ IF ~~ THEN GOTO 521
+END
+
+IF ~~ THEN BEGIN 521
+   SAY ~I value what we have, truly. Our partnership, our camaraderie, it means a lot to me. But when it comes to the deeper, wilder passions, I need more than stability. I need a tempest, and that's just not you.~
+       ++ ~I guess some connections are meant to stay on certain paths. I hoped for more, but I can't force what isn't there. We've got a good thing going as friends, let's keep it that way.~ GOTO 522
+       ++ ~I've come to realize the same thing. Our ideas of excitement and what we seek in life are just too different. It's probably for the best that we recognize this now.~ GOTO 522
+       ++ ~That works for me, Liedel. To be honest, I've always felt more of a friendly connection between us, nothing more. Let's keep it that way and focus on what we do best.~ GOTO 522
+       ++ ~It's not about excitement, it's about your inability to appreciate anything real. Maybe one day you'll realize there's more to life than your superficial, shallow pursuits.~ GOTO 524
+       ++ ~Maybe I'm just not foolish enough to throw myself into danger for the sake of a cheap thrill. I thought you had some actual depth to you, but I guess I was wrong.~ GOTO 527
+END
+
+IF ~~ THEN BEGIN 522
+   SAY ~Well, <CHARNAME>, I appreciate your honesty, and I'm not one to beat around the bush either. You're right. We do have a good thing going as friends.~ IF ~~ THEN GOTO 523
+END
+
+IF ~~ THEN BEGIN 523
+   SAY ~It's rare to find someone who understands the life we lead, and I value that understanding in you. Our escapades, our battles... that's where the real connection is, not in some starry-eyed romance.~ IF ~~ THEN GOTO 530
+END
+
+IF ~~ THEN BEGIN 524
+   SAY ~My inability to appreciate anything real? <CHARNAME>, you're missing the point. My life, my rules. You think that's superficial? That's your problem, not mine.~ IF ~~ THEN GOTO 525
+END
+
+IF ~~ THEN BEGIN 525
+   SAY ~You're so caught up in your judgment that you can't see the bigger picture. I chose a life of danger and excitement because that's where I feel alive.~ IF ~~ THEN GOTO 526
+END
+
+IF ~~ THEN BEGIN 526
+   SAY ~I don't need a lecture on depth from someone who can't fathom what it means to live on the edge. If you think that's shallow, so be it. I don't live to meet anyone else's standards.~ IF ~~ THEN GOTO 530
+END
+
+IF ~~ THEN BEGIN 527
+   SAY ~You really don't get it, do you? I live for the rush, the danger. It's not a lack of depth. It's a choice, my choice.~ IF ~~ THEN GOTO 528
+END
+
+IF ~~ THEN BEGIN 528
+   SAY ~You sit there in your safe little bubble, thinking you've got it all figured out. But you know what? You're the one who's missing out.~ IF ~~ THEN GOTO 529
+END
+
+IF ~~ THEN BEGIN 529
+   SAY ~There's a whole world of intensity and passion out there, and I pity you for not understanding the thrill of truly living on the edge.~ IF ~~ THEN GOTO 530
+END
+
+IF ~~ THEN BEGIN 530
+   SAY ~Our paths cross in the shadows, and that's enough for me. Let's leave it at that and get on with what we do best.~
+IF ~~ THEN DO ~
+   SetGlobal("h_LiedelRomanceActive","GLOBAL",0)~ EXIT
+END
+
+IF ~~ THEN BEGIN 531
+   SAY ~Ah, that night... It's been lingering in my mind too, <CHARNAME>. There's something undeniable between us, isn't there? A spark that's hard to ignore.~ IF ~~ THEN GOTO 532
+END
+
+IF ~~ THEN BEGIN 532
+   SAY ~I'm not one for sentimentality, you know that, but what we shared... it wasn't just a fleeting moment. It felt like a dance of fate and fire, something potent and exhilarating.~ IF ~~ THEN GOTO 533
+END
+
+IF ~~ THEN BEGIN 533
+   SAY ~It's rare to find someone who can match my appetite for life's deeper pleasures. I find myself wondering what it would be like to explore this... attraction further, to surrender to these flames.~ IF ~~ THEN GOTO 534
+END
+
+IF ~~ THEN BEGIN 534
+   SAY ~So, my dear companion, would you be willing to indulge me? To explore the depths of this passion we've discovered? Let's not just flirt with danger tonight, let's flirt with desire.~
+        ++ ~The way you talk about it, Liedel, it's almost impossible to resist. I think it's time we explore our desires once again.~ GOTO 457
+        ++ ~While I appreciate your words and the intensity of our connection, I wanted to tell you... I just don't feel the same way. I'm truly sorry if this hurts you.~ GOTO 453
+END
+
+
+
+
 
 
    
@@ -2572,7 +2670,7 @@ CHAIN
    == h_baldwd
 ~Hold, Ariosh. These are but City Watch pups. Let us entertain their whimpers.~
    == h_city5d
-~The... the Inspector! H-he uncovered the location of your hideout. He was planning an assault, t-t-to catch you off guard. And the Commander, she... she stil wants to see it through!~
+~The... the Inspector! H-he uncovered the location of your hideout. He was planning an assault, t-t-to catch you off guard. And the Commander, she... she still wants to see it through!~
    =
 ~But, we... we've seen the writing on the wall. We've had enough. We're tired of the constant fear, the bloodshed. We'll bend the knee, and submit to the will of the Gorgon's Eye.~
    =
@@ -2584,7 +2682,7 @@ CHAIN
    == h_ariosd
 ~How can we be sure you ain't just stringin' us along, eh? No tricks or traps, yeah?~
    == h_city5d
-~Go, and see for yourselves! The streets are in chaos, painted in turmoil, order and law thrown to the wind.~
+~Go and see for yourselves! The streets are in chaos, painted in turmoil, order and law thrown to the wind.~
    =
 ~Skirmishes from here to the temple gates. That's where Whitewood's holed up, kept shielded by the Templar Knights.~
    == h_ariosd

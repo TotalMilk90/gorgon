@@ -17,7 +17,7 @@ IF
          Dead("h_islacc")
 THEN
          RESPONSE #100
-                  AddJournalEntry(@553,QUEST)
+                  AddJournalEntry(@464,QUEST)
                   SetGlobal("h_IslaAltJournal","GLOBAL",2)
                   Continue()
 END

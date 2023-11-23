@@ -28,6 +28,7 @@ IF ~~ THEN BEGIN L_12
    SAY ~So, how much of this precious cargo have you managed to haul in?~
        +~NumItemsParty("h_misc07",5)~+ ~Five pounds of Faerun's finest. It doesn't get any better than this.~ GOTO L_13
        +~NumItemsParty("h_misc07",4)~+ ~Four pounds of Faerun's finest. It doesn't get any better than this.~ GOTO L_13
+       +~NumItemsPartyLT("h_misc07",4)~+ ~It seems I've misplaced the, uh... package. I'll have to retrace my steps and return later.~ EXIT
 END
 
 IF ~~ THEN BEGIN L_13

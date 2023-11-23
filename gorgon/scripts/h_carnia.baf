@@ -48,7 +48,7 @@ THEN
          RESPONSE #100
                   CreateCreature("h_selenc",[4397.1750],N)
                   CreateCreature("h_piratc",[4404.1694],S)
-                  CreateCreature("h_piratc",[4331.1730],SE)
+                  CreateCreature("h_pira2c",[4331.1730],SE)
                   SetGlobal("h_SpawnSelena","GLOBAL",2)
                   Continue()
 END
@@ -60,5 +60,16 @@ THEN
          RESPONSE #100
                   CreateCreature("h_vitiac",[4296.1771],E)
                   SetGlobal("h_SpawnVitiare","GLOBAL",2)
+                  Continue()
+END
+
+IF
+         Global("h_SpawnSnakeHead","GLOBAL",1)
+         Global("h_BetrayBaldwin","GLOBAL",0)
+         Global("h_RandomEncounterForced","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  SetGlobal("h_RandomEncounterForced","GLOBAL",2)
+                  ForceRandomEncounterEntry("h_flamea","h_flamee")
                   Continue()
 END

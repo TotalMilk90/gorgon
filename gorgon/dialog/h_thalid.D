@@ -1,16 +1,14 @@
 BEGIN ~h_thalid~
 
-
-
-IF WEIGHT #-1 ~!Class([PC],THIEF_ALL)~ THEN BEGIN 0
+IF WEIGHT #-1 ~!Class(LastTalkedToBy,THIEF_ALL)~ THEN BEGIN 0
    SAY ~Hm, you don't quite look like you belong in these shadows. Best turn back. These alleys hold secrets not meant for all eyes.~ IF ~~ THEN EXIT
 END
 
-IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL",0) Class([PC],THIEF_ALL)~ THEN BEGIN 1
+IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL",0) Class(LastTalkedToBy,THIEF_ALL)~ THEN BEGIN 1
    SAY ~You've come to the right shadowed corner, my friend. Not everyone recognizes the signs, but I can tell you're one of us.~ IF ~~ THEN GOTO 2
 END
 
-IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",0) Class([PC],THIEF_ALL)~ THEN BEGIN 1.5
+IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",0) Class(LastTalkedToBy,THIEF_ALL)~ THEN BEGIN 1.5
    SAY ~At this time the shadows still lie dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
 END
 
@@ -84,13 +82,13 @@ IF ~~ THEN DO ~
    StartCutSceneMode()
    StartCutScene("h_ravcut")~ EXIT
 END
-
-IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL",3) Class([PC],THIEF_ALL)~ THEN BEGIN 12
+                                                                                           //[PC]
+IF ~OR(5) Time(0) Time(1) Time(2) Time(3) Time(4) Global("h_TravelToBM","GLOBAL",3) Class(LastTalkedToBy,THIEF_ALL)~ THEN BEGIN 12
    SAY ~Ah, back for more, I see. The shadows always hold new secrets to uncover. Are you ready to venture once again into the heart of the black markets?~
        ++ ~Let's go.~ GOTO 7
        ++ ~I'm not interested right now.~ EXIT
 END
 
-IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",3) Class([PC],THIEF_ALL)~ THEN BEGIN 13
+IF ~OR(5) !Time(0) !Time(1) !Time(2) !Time(3) !Time(4) Global("h_TravelToBM","GLOBAL",3) Class(LastTalkedToBy,THIEF_ALL)~ THEN BEGIN 13
    SAY ~At this time the shadows still lie dormant. The markets are closed for now. Return after nightfall, and we'll embark on our clandestine journey.~ IF ~~ THEN EXIT
 END

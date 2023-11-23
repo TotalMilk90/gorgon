@@ -3,6 +3,7 @@ IF
 
 THEN
          RESPONSE #100
+                  Lock("Container 1")
                   ActionOverride("Container 1",CreateItem("h_misc27",0,0,0))
                   SetGlobal("h_AddEvidence","GLOBAL",2)
                   Continue()

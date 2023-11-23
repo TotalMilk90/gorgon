@@ -6,7 +6,7 @@ END
 
 IF ~~ THEN BEGIN 1
    SAY ~The mysteries of alchemy are boundless, you know! Boundless, I tell you! So, speak up, my friend, and let us unravel the secrets that dance in the eldritch vapors!~
-       ++ ~I'm here to ensure your serum reaches those in need. The suffering caused by featherlung is too great to ignore.~ GOTO 2
+       ++ ~I'm here to ensure your serum reaches those in need. The suffering caused by featherlung is far too great to ignore.~ GOTO 2
        ++ ~I've come to discuss a business proposition. Your featherlung serum could fetch a handsome price in the right hands.~ GOTO 2
        ++ ~(Snap his neck.)~ DO ~Kill("h_alaric") AddJournalEntry(@448,QUEST)~ EXIT
 END

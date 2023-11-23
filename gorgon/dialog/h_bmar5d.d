@@ -1,7 +1,7 @@
 BEGIN h_bmar5d
 
 IF ~True()~ THEN BEGIN 0
-   SAY ~Steel and shadow, my friend. Here you'll find weapons keen enough to whisper death, and armor silent as the grave. What is it you seek to sharpen your strike or shield your sins?~
-       ++ ~Reveal your hidden wares. I’m in search of a charm that whispers of power and secrets yet to be told.~ DO ~StartStore("h_bm5sto",LastTalkedToBy(Myself))~ EXIT
+   SAY ~Charms and enchantments, cloaked in secrecy. My trinkets hold power that cling to the edges of legend. Do you seek protection, or perhaps a subtler edge? Peruse my collection and choose your hidden advantage.~
+       ++ ~Reveal your hidden wares. I'm in search of a charm that whispers of power and secrets yet to be told.~ DO ~StartStore("h_bm5sto",LastTalkedToBy(Myself))~ EXIT
        ++ ~Another time, perhaps.~ EXIT
 END

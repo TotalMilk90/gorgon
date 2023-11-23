@@ -22,7 +22,11 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~Link up with the Eye, eh? I'll admit, the prospect has its allure, but I ain't exactly one for takin' orders, yeah?~
+   SAY ~Link up with the Eye, eh? I'll admit, the prospect has its allure, but I ain't exactly one for takin' orders, yeah?~ IF ~~ THEN GOTO 4.5
+END
+
+IF ~~ THEN BEGIN 4.5
+   SAY ~I've always been a bit of a lone wolf, see, playin' by my own rules, making my own way. It's not just about the freedom, it's about trust, too.~
        ++ ~If you can't take orders, you're just another loose cog in the machine, and that won't fly.~ GOTO 9
        ++ ~No one's askin' you to be a lackey, Blackthorn. The Gorgon's Eye offers opportunities, not just orders.~ GOTO 5
        ++ ~You'll regret passin' over this chance. We don't just steal scraps from the streets, we control the whole damn game.~ GOTO 5

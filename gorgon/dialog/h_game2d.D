@@ -10,9 +10,9 @@ END
 
 IF ~~ THEN BEGIN GOLD_2
    SAY ~There's our usual bloke, Xevec. A woman, whose name I didn't catch, and a one-handed dwarf, named Hugo.~
-       ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
-       ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
-       ++ ~Tell me about Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
+       +~Global("h_GamesXevec","GLOBAL",0)~+ ~Tell me about Xevec.~ DO ~SetGlobal("h_GamesXevec","GLOBAL",1)~ GOTO GOLD_3
+       +~Global("h_GamesWoman","GLOBAL",0)~+ ~Tell me about the woman.~ DO ~SetGlobal("h_GamesWoman","GLOBAL",1)~ GOTO GOLD_6
+       +~Global("h_GamesHugo","GLOBAL",0)~+ ~Tell me about Hugo.~ DO ~SetGlobal("h_GamesHugo","GLOBAL",1)~ GOTO GOLD_9
 END
 
 IF ~~ THEN BEGIN GOLD_3
@@ -25,9 +25,10 @@ END
 
 IF ~~ THEN BEGIN GOLD_5
    SAY ~After she left, he headed for the courtesan wing. Might be worth havin' some words with Meredia about him.~
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
-       ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
-       ++ ~Tell me about the Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
+       +~Global("h_GamesXevec","GLOBAL",1) Global("h_GamesWoman","GLOBAL",1) Global("h_GamesHugo","GLOBAL",1)~+ ~I'll see what I can dig up.~ GOTO GOLD_12
+       +~Global("h_GamesXevec","GLOBAL",0)~+ ~Tell me about Xevec.~ DO ~SetGlobal("h_GamesXevec","GLOBAL",1)~ GOTO GOLD_3
+       +~Global("h_GamesWoman","GLOBAL",0)~+ ~Tell me about the woman.~ DO ~SetGlobal("h_GamesWoman","GLOBAL",1)~ GOTO GOLD_6
+       +~Global("h_GamesHugo","GLOBAL",0)~+ ~Tell me about Hugo.~ DO ~SetGlobal("h_GamesHugo","GLOBAL",1)~ GOTO GOLD_9
 END
 
 IF ~~ THEN BEGIN GOLD_6
@@ -40,9 +41,10 @@ END
 
 IF ~~ THEN BEGIN GOLD_8
    SAY ~Didn't catch her name, but I do recall her mentioning someone named, 'Sam'. Might be kin or somethin'.~
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
-       ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
-       ++ ~Tell me about Hugo.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_9
+       +~Global("h_GamesXevec","GLOBAL",1) Global("h_GamesWoman","GLOBAL",1) Global("h_GamesHugo","GLOBAL",1)~+ ~I'll see what I can dig up.~ GOTO GOLD_12
+       +~Global("h_GamesXevec","GLOBAL",0)~+ ~Tell me about Xevec.~ DO ~SetGlobal("h_GamesXevec","GLOBAL",1)~ GOTO GOLD_3
+       +~Global("h_GamesWoman","GLOBAL",0)~+ ~Tell me about the woman.~ DO ~SetGlobal("h_GamesWoman","GLOBAL",1)~ GOTO GOLD_6
+       +~Global("h_GamesHugo","GLOBAL",0)~+ ~Tell me about Hugo.~ DO ~SetGlobal("h_GamesHugo","GLOBAL",1)~ GOTO GOLD_9
 END
 
 IF ~~ THEN BEGIN GOLD_9
@@ -55,9 +57,10 @@ END
 
 IF ~~ THEN BEGIN GOLD_11
    SAY ~It's possible he tried his tricks here, then scarpered off to his next job. He might be a slippery one to track down.~
-       +~GlobalGT("h_GamesNumber","GLOBAL",2)~+ ~Thanks for the intel, that's all I need for now.~ GOTO GOLD_12
-       ++ ~Tell me about Xevec.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_3
-       ++ ~Tell me about the woman.~ DO ~IncrementGlobal("h_GamesNumber","GLOBAL",1)~ GOTO GOLD_6
+       +~Global("h_GamesXevec","GLOBAL",1) Global("h_GamesWoman","GLOBAL",1) Global("h_GamesHugo","GLOBAL",1)~+ ~I'll see what I can dig up.~ GOTO GOLD_12
+       +~Global("h_GamesXevec","GLOBAL",0)~+ ~Tell me about Xevec.~ DO ~SetGlobal("h_GamesXevec","GLOBAL",1)~ GOTO GOLD_3
+       +~Global("h_GamesWoman","GLOBAL",0)~+ ~Tell me about the woman.~ DO ~SetGlobal("h_GamesWoman","GLOBAL",1)~ GOTO GOLD_6
+       +~Global("h_GamesHugo","GLOBAL",0)~+ ~Tell me about Hugo.~ DO ~SetGlobal("h_GamesHugo","GLOBAL",1)~ GOTO GOLD_9
 END
 
 IF ~~ THEN BEGIN GOLD_12

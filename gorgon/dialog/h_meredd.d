@@ -12,7 +12,11 @@ IF ~~ THEN BEGIN Q_1
 END
 
 IF ~~ THEN BEGIN Q_2
-   SAY ~Would you be a dear and check on her for me? It's the house next door to Taerom's. I believe the clients name was Isley.~
+   SAY ~Would you be a dear and check on her for me?~
+END
+
+IF ~~ THEN BEGIN Q_2.5
+   SAY~She went to the house next door to Taerom's. I believe the clients name was Isley.~
        ++ ~Of course. I'll go check on her.~ GOTO Q_4
        ++ ~I don't have time for this right now.~ GOTO Q_3
 END
@@ -33,9 +37,9 @@ END
 
 IF WEIGHT #-2 ~GlobalGT("h_MerediaQuest","GLOBAL",1) GlobalLT("h_MerediaQuest","GLOBAL",4)~ THEN BEGIN Q_5
    SAY ~Have you brought any news of Ilena?~
-       ++ ~Nothing fresh, I'm afraid.~ EXIT
        +~PartyHasItem("h_misc16")~+ ~Isley attacked his wife and left her gasping on the floor. I found this scrap of fabric and a helmet at the scene.~ GOTO Q_6
        +~Global("h_IlenaDied","GLOBAL",1)~+ ~Meredia, I'm sorry. I was able to take out Isley, but not before he took Ilena's life.~ GOTO DEAD_0
+       ++ ~Nothing fresh, I'm afraid.~ EXIT
 END
 
 IF ~~ THEN BEGIN Q_6
@@ -54,7 +58,11 @@ IF ~~ THEN BEGIN Q_8
 END
 
 IF ~~ THEN BEGIN Q_9
-   SAY ~If we can figure out the style of uniform, it might just lead us to them!~
+   SAY ~It's imperative we act quickly and discreetly. Ilena's life, and perhaps more, could be in jeopardy. If we can figure out the style of uniform, it might just lead us to them!~ IF ~~ THEN GOTO Q_9.5
+END
+
+IF ~~ THEN BEGIN Q_9.5
+   SAY ~Your skills in such matters could make all the difference. Please, find out what you can and bring any information back to me.~
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnIsley","GLOBAL",1)
    AddJournalEntry(@712,QUEST)~ EXIT
@@ -69,7 +77,7 @@ IF ~~ THEN BEGIN ALIVE_1
 END
 
 IF ~~ THEN BEGIN ALIVE_2
-   SAY ~Thank you, sweetie, for everything you've done.~
+   SAY ~You've brought peace back to our little corner of the world, and for that, you have my deepest gratitude.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
    AddJournalEntry(@715,QUEST_DONE)
@@ -94,7 +102,7 @@ IF ~~ THEN BEGIN DEAD_3
 END
 
 IF ~~ THEN BEGIN DEAD_4
-   SAY ~Thank you, <CHARNAME>, for doing all you could.~
+   SAY ~Though the outcome is tragic, your efforts to bring justice will not be forgotten. Ilena's spirit, I believe, will find peace knowing that. Thank you, for doing all you could.~
 IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",5)
    AddJournalEntry(@716,QUEST_DONE)
@@ -173,7 +181,6 @@ IF ~Global("h_Meredia","GLOBAL",1) Global("h_EndMeredia","GLOBAL",0)~ THEN BEGIN
    SAY ~Welcome, <CHARNAME>. As the new guildmaster, you're entitled to our services, free of charge, naturally.~
        ++ ~Oh, yes. I'd quite like that.~ GOTO 21
        ++ ~Not at this time, thanks.~ EXIT
-       +~Global("h_GilbaldQuest","GLOBAL",3)~+ ~I'm looking into a man named Xevec. Do you know anything about him?~  GOTO G_0
 END
 
 IF ~~ THEN BEGIN 21
@@ -199,10 +206,11 @@ END
 
 IF ~~ THEN BEGIN G_0
    SAY ~Xevec? I know him well. In fact, he spent quite the night with us just yesterday. What would you like to know about him?~
-       ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
-       ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
-       ++ ~Can you check to see if this coin matches any he spent here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
-       ++ ~Any idea where I might find him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_7
+       +~Global("h_MerediaNumber1","GLOBAL",1) Global("h_MerediaNumber1","GLOBAL",2) Global("h_MerediaNumber1","GLOBAL",3) Global("h_MerediaNumber4","GLOBAL",1)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
+       +~Global("h_MerediaNumber1","GLOBAL",0)~+ ~Did he say or do anything that was unusual last night?~ DO ~SetGlobal("h_MerediaNumber1","GLOBAL",1)~ GOTO G_1
+       +~Global("h_MerediaNumber2","GLOBAL",0)~+ ~Anything specific you can tell me about him?~ DO ~SetGlobal("h_MerediaNumber2","GLOBAL",1)~ GOTO G_3
+       +~Global("h_MerediaNumber3","GLOBAL",0)~+ ~Can you check to see if this coin matches any he spent here?~ DO ~SetGlobal("h_MerediaNumber3","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber4","GLOBAL",0)~+ ~Any idea where I might find him?~ DO ~SetGlobal("h_MerediaNumber4","GLOBAL",1)~ GOTO G_7
 END
 
 IF ~~ THEN BEGIN G_1
@@ -215,18 +223,24 @@ END
 
 IF ~~ THEN BEGIN G_2
    SAY ~Says whoever hired him handed over a hefty sum up front. I guess he decided to celebrate his success right here.~
-       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
-       ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
-       ++ ~Can you check to see if this coin matches any he spent here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
-       ++ ~Any idea where I might find him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_7
+       +~Global("h_MerediaNumber1","GLOBAL",1) Global("h_MerediaNumber1","GLOBAL",2) Global("h_MerediaNumber1","GLOBAL",3) Global("h_MerediaNumber4","GLOBAL",1)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
+       +~Global("h_MerediaNumber1","GLOBAL",0)~+ ~Did he say or do anything that was unusual last night?~ DO ~SetGlobal("h_MerediaNumber1","GLOBAL",1)~ GOTO G_1
+       +~Global("h_MerediaNumber2","GLOBAL",0)~+ ~Anything specific you can tell me about him?~ DO ~SetGlobal("h_MerediaNumber2","GLOBAL",1)~ GOTO G_3
+       +~Global("h_MerediaNumber3","GLOBAL",0)~+ ~Can you check to see if this coin matches any he spent here?~ DO ~SetGlobal("h_MerediaNumber3","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber4","GLOBAL",0)~+ ~Any idea where I might find him?~ DO ~SetGlobal("h_MerediaNumber4","GLOBAL",1)~ GOTO G_7
 END
 
 IF ~~ THEN BEGIN G_3
-   SAY ~Well, he's not the brightest man, to be sure. He's violent, crass, and always on the lookout for the next get-rich-quick scheme. Obviously, it's never worked out for him.~
-       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
-       ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
-       ++ ~Can you check to see if this coin matches any he spent here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
-       ++ ~Any idea where I might find him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_7
+   SAY ~Well, he's not the brightest man, to be sure.~ IF ~~ THEN GOTO G_3.5
+END
+
+IF ~~ THEN BEGIN G_3.5
+   SAY ~He's violent, crass, and always on the lookout for the next get-rich-quick scheme. Obviously, it's never worked out for him.~
+       +~Global("h_MerediaNumber1","GLOBAL",1) Global("h_MerediaNumber1","GLOBAL",2) Global("h_MerediaNumber1","GLOBAL",3) Global("h_MerediaNumber4","GLOBAL",1)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
+       +~Global("h_MerediaNumber1","GLOBAL",0)~+ ~Did he say or do anything that was unusual last night?~ DO ~SetGlobal("h_MerediaNumber1","GLOBAL",1)~ GOTO G_1
+       +~Global("h_MerediaNumber2","GLOBAL",0)~+ ~Anything specific you can tell me about him?~ DO ~SetGlobal("h_MerediaNumber2","GLOBAL",1)~ GOTO G_3
+       +~Global("h_MerediaNumber3","GLOBAL",0)~+ ~Can you check to see if this coin matches any he spent here?~ DO ~SetGlobal("h_MerediaNumber3","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber4","GLOBAL",0)~+ ~Any idea where I might find him?~ DO ~SetGlobal("h_MerediaNumber4","GLOBAL",1)~ GOTO G_7
 END
 
 IF ~~ THEN BEGIN G_4
@@ -239,10 +253,11 @@ END
 
 IF ~~ THEN BEGIN G_6
    SAY ~By Sune! They're all fakes! Dozens of 'em! How did I not see? It has to be Xevec's doing, no one else spent like him last night.~
-       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
-       ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
-       ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
-       ++ ~Any idea where I might find him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_7
+       +~Global("h_MerediaNumber1","GLOBAL",1) Global("h_MerediaNumber1","GLOBAL",2) Global("h_MerediaNumber1","GLOBAL",3) Global("h_MerediaNumber4","GLOBAL",1)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
+       +~Global("h_MerediaNumber1","GLOBAL",0)~+ ~Did he say or do anything that was unusual last night?~ DO ~SetGlobal("h_MerediaNumber1","GLOBAL",1)~ GOTO G_1
+       +~Global("h_MerediaNumber2","GLOBAL",0)~+ ~Anything specific you can tell me about him?~ DO ~SetGlobal("h_MerediaNumber2","GLOBAL",1)~ GOTO G_3
+       +~Global("h_MerediaNumber3","GLOBAL",0)~+ ~Can you check to see if this coin matches any he spent here?~ DO ~SetGlobal("h_MerediaNumber3","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber4","GLOBAL",0)~+ ~Any idea where I might find him?~ DO ~SetGlobal("h_MerediaNumber4","GLOBAL",1)~ GOTO G_7
 END
 
 IF ~~ THEN BEGIN G_7
@@ -251,10 +266,11 @@ END
 
 IF ~~ THEN BEGIN G_8
    SAY ~I have seen him in the north-end on occasion. You might want to check there first.~
-       +~GlobalGT("h_MerediaNumber","GLOBAL",3)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
-       ++ ~Did he say or do anything that was unusual last night?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_1
-       ++ ~Anything specific you can tell me about him?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_3
-       ++ ~Can you check to see if this coin matches any he spent here?~ DO ~IncrementGlobal("h_MerediaNumber","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber1","GLOBAL",1) Global("h_MerediaNumber1","GLOBAL",2) Global("h_MerediaNumber1","GLOBAL",3) Global("h_MerediaNumber4","GLOBAL",1)~+ ~Thanks, Meredia. You've been great.~ GOTO G_9
+       +~Global("h_MerediaNumber1","GLOBAL",0)~+ ~Did he say or do anything that was unusual last night?~ DO ~SetGlobal("h_MerediaNumber1","GLOBAL",1)~ GOTO G_1
+       +~Global("h_MerediaNumber2","GLOBAL",0)~+ ~Anything specific you can tell me about him?~ DO ~SetGlobal("h_MerediaNumber2","GLOBAL",1)~ GOTO G_3
+       +~Global("h_MerediaNumber3","GLOBAL",0)~+ ~Can you check to see if this coin matches any he spent here?~ DO ~SetGlobal("h_MerediaNumber3","GLOBAL",1)~ GOTO G_4
+       +~Global("h_MerediaNumber4","GLOBAL",0)~+ ~Any idea where I might find him?~ DO ~SetGlobal("h_MerediaNumber4","GLOBAL",1)~ GOTO G_7
 END
 
 IF ~~ THEN BEGIN G_9

@@ -102,7 +102,7 @@ THEN
                   SetGlobal("h_SpawnAriosh","GLOBAL",5)
                   Continue()
 END
-
+/*
 IF
          Global("h_RespawnLiedel","GLOBAL",1)
 THEN
@@ -111,7 +111,7 @@ THEN
                   SetGlobal("h_RespawnLiedel","GLOBAL",2)
                   Continue()
 END
-
+*/
 IF
          Global("h_GuildMusic","GLOBAL",0)
 THEN
@@ -167,11 +167,12 @@ IF
          Global("h_BlackJoin","GLOBAL",1)
 THEN
          RESPONSE #100
+                  PlaySound("ACT_07")
                   CreateCreature("h_blackc",[848.1241],N)
                   SetGlobal("h_ValeraQuest","GLOBAL",3)
                   Continue()
 END
-
+/*
 IF
          Global("h_ValeraQuest","GLOBAL",2)
          Global("h_BlackJoin","GLOBAL",0)
@@ -181,3 +182,4 @@ THEN
                   SetGlobal("h_ValeraQuest","GLOBAL",3)
                   Continue()
 END
+*/

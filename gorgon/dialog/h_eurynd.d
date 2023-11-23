@@ -236,7 +236,7 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_ring02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",6) Global("h_BetrayBaldwin","GLOBAL",2) Global("h_FakeKery","GLOBAL",1)~ THEN BEGIN BETRAY_0
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",9) GlobalGT("h_BetrayBaldwin","GLOBAL",0) Global("h_FakeKery","GLOBAL",1)~ THEN BEGIN BETRAY_0
    SAY ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",3)
@@ -248,8 +248,8 @@ END
 IF WEIGHT #-1 ~Global("h_BetrayBaldwin","GLOBAL",3) Global("h_StallEnding","GLOBAL",0)~ THEN BEGIN BETRAY_1
    SAY ~Keep your voice down and be smart. Are we on the same page?~
        ++ ~So, it's you then. You're the Shadow Thieves plant!~ GOTO BETRAY_3
-       +~Gender(Player1,FEMALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2
-       +~Gender(Player1,MALE)~+ ~I don't know what you are talking about.~ GOTO BETRAY_2.5
+       +~Gender(Player1,FEMALE)~+ ~I don't know what you're talking about.~ GOTO BETRAY_2
+       +~Gender(Player1,MALE)~+ ~I don't know what you're talking about.~ GOTO BETRAY_2.5
 END
 
 IF ~~ THEN BEGIN BETRAY_2

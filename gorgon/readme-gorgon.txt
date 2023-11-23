@@ -4,33 +4,54 @@ V.4.0
 =======
 Prequel
 =======
-After violating the terms of his separation from the Shadow Thieves, Baldwin
-"The Butcher" Glendale fled north to Beregost where he formed his own guild,
-the Gorgon's Eye. He pressed the local pickpockets and began amassing a vast
-network of contacts and spies. The townspeople have begun to show signs of
-unrest, however, and are making plans of their own to combat this new threat.
-On top of that, the impending confrontation with the Shadow Thieves lies near
-on the horizon. Currently, Baldwin is in active recruitment, seeking
-adventurers to aid him in the search for a dark and powerful staff called the
-Kerykeion. If successful, it would grant him unimaginable power, allowing
-nothing to stand in his way.
+Within the shadow-veiled alleys of Beregost, a new undercurrent of danger has begun to rise.
+
+Once a member of the elusive Shadow Thieves, Baldwin "The Butcher" Glendale found himself ensnared
+in a web of betrayal, leading to his banishment from the brotherhood he had long served. In a cold
+and calculated response, he exacted his revenge, mercilessly eliminating those who had turned
+against him. With the blood of his former comrades still fresh on his hands, he vanished into the
+night, seeking refuge in the town of Beregost, where he would lay plans for his new reign of
+terror: the Gorgon's Eye.
+
+Under his ruthless command, he swiftly united the local pickpockets and cutthroats, building a vast
+network of contacts and spies, their influence creeping through the streets like a poison. As his
+enveloping shadow spread over Beregost, the city's heart beat with fear and defiance. The citizens,
+tired of cowering in the darkness cast by this new threat, rose to action. The City Watch, a
+militia birthed from the courage and desperation of the townsfolk, emerged as a beacon of
+resistance. Funded and sanctioned by the formidable Flaming Fist, they stand ready to clash with
+the growing might of the Gorgon's Eye.
+
+Above the immediate fray, a more ominous threat still looms. The Shadow Thieves, lurking just
+beyond sight, are biding their time, and waiting to unleash their own sinister retribution. As
+Baldwin and the City Watch vie for control, this specter of the past threatens to plunge Beregost
+into an even deeper abyss of chaos and darkness. A confrontation is inevitable, and the streets
+will bear witness to a clash of hidden blades and dark ambitions.
+
+In the midst of this brewing storm, Baldwin eyes a singular path to ascendancy. The Kerykeion, a
+fabled artifact shrouded in ancient power, emerges as his beacon of salvation. With a secured path
+to power now within his sights, Baldwin is openly recruiting for his cause, seeking adventures and
+those with ambitious desires to join the ranks of his guild. As they rally to his banner for the
+promise of power and wealth, will they prove strong enough to grasp the elusive might of the
+Kerykeion, or will they merely become pawns in Baldwin's dark designs.
+
+In this game of shadows and intrigue, only the most cunning will prevail.
 
 ============
 Mod Overview
 ============
-The Gorgon's Eye is a content mod for BG:EE/SoD and EET that adds an
-underground thieves den into the town of Beregost. It contains new quests,
-characters, stores and items. The area can be accessed immediately after
-leaving Candlekeep and is open to all players, excluding only those with a
-lawful-good alignment.
+The Gorgon's Eye is a content mod for BG:EE and EET that adds an underground
+thieves den into the town of Beregost. It contains new quests, characters,
+stores and items. The area can be accessed immediately after leaving Candlekeep
+and is open to all players, excluding those with a lawful or neutral-good
+alignment.
 
 After enlisting in the Gorgon's Eye, you'll find yourself undertaking tasks
 that align with the operations of a typical thieves guild. You'll be expected
 to engage in activities such as theft, extortion, smuggling, bounty hunting,
 and assassination. However, it's worth noting that there are satisfying options
 for good and neutral-aligned players. If at any point you find the guild's ways
-aren't to your liking, you have the option to switch allegiances and aid the
-City Watch in their mission against the Gorgon's Eye.
+aren't to your liking, you have the option to switch allegiances to the City
+Watch and aid them in their mission against the Gorgon's Eye.
 
 The component "Add more pickpocketable items" will distribute random treasure
 to generic npcs. (Commoners, nobles, etc.)
@@ -44,17 +65,20 @@ Version 4.0:
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
 -Added new area "The Fighting Pits" accessed via the Gorgon's Eye hideout
 -Added new area "The Black Market" accessed via the Baldur's Gate thieves guild
+-Added new portraits to all characters
 -Added more background NPCs to the Gorgon's Eye hideout
--Added various quest items and a new weapon "Blackjack"
+-Added City Watch officers throughout Beregost
+-Added various new items
 -Added new thief traps as useable items
 -Added NPC interjections
--Moved guild vendors and Danika(now Naga) to the Black Market area
+-Moved previous guild vendors and Danika(now Naga) to the Black Market area
 -Revised quest progression
 -Revised all dialog
 -Adjusted reward for weekly guild profits
 -Adjusted reward for "No Honor Among Thieves"
 -Adjusted "Bombs over Beregost" fight to play nicer with SCS
--Nerfed Kerykeion weapons
+-Nerfed various weapons
+-Fixed Counterfiet Coin quest item
 -Fixed "Thief's Compendium" books to grant correct bonuses
 -Fixed missing icon for "Kerykeion: Medusa's Bite"
 -Fixed and revised journal entries and item descriptions

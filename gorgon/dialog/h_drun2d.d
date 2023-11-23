@@ -11,7 +11,7 @@ IF ~~ THEN BEGIN SPIRITS_1
 END
 
 IF ~~ THEN BEGIN SPIRITS_2
-   SAY ~Hic! Who said that, eh? My mum's a... a blessed saint, I'll have you know! She's got the patience of a... of a... a nun and the heart of... a lioness, she does!~
+   SAY ~Hic! Who said that, eh? Me mum's a... a blessed saint, I'll have you know! She's got the patience of a... of a... a nun and the heart of... a lioness, she does!~
        ++ ~It was that bloke over there! He said it, alright!~ GOTO SPIRITS_3
 END
 
@@ -68,7 +68,7 @@ CHAIN
    == h_drunkd
 ~I've been itch... hic... 'n for a... for a sc'ap all night! Let's... let's show 'em a real tus'sle!~
    == h_drun2d
-~I... hic... I heard what ya said 'bout my... my mum! You're in for... for a right thrashin' now!~
+~I... hic... I heard what ya said 'bout me... me mum! You're in for... for a right thrashin' now!~
    == h_bouncd
 ~By the gods, I've had my fill of this! Clear out, all of you! This party's over!~
    == h_pros2d

@@ -4,6 +4,7 @@ IF ~~ THEN BEGIN J1
    SAY ~Ah, you're with them, are ya? Don't want no trouble, here ya go. Just want to get on with my business.~
        ++ ~Smart move. We appreciate your cooperation. Keep this up, and you'll have no problems with us.~ GOTO J2
        ++ ~That's wise. Loyalty goes a long way with the Eye. Remember that.~ GOTO J2
+       ++ ~No need for any trouble, thanks for your time.~ GOTO J2
 END
 
 IF ~~ THEN BEGIN J2
@@ -66,6 +67,7 @@ END
 
 EXTEND_TOP BART4 0
    +~Global("h_ArioshQuest","GLOBAL",11) Global("h_JovialDues","GLOBAL",0)~+ ~Good evening. I've come to collect the Gorgon's Eye dues.~ GOTO J1
+   +~Global("h_ArioshQuest","GLOBAL",11) Global("h_JovialDues","GLOBAL",0)~+ ~I'm here for the Gorgon's Eye's cut. Pay up now, and we won't have any trouble.~ GOTO J1
    +~HasItem("h_misc26","Container 1") Global("h_ArioshQuest","GLOBAL",17)~+ ~Listen closely, mate. I've planted a little surprise in your kitchen. A bottle filled with something highly flammable, with a fuse ready to light. You want to keep this place in one piece? You'll do as I say.~ GOTO A1
    +~HasItem("h_misc26","Container 1") Global("h_ArioshQuest","GLOBAL",17)~+ ~Send word to the Inspector. Tell him there's a woman here, Ishani, a former Gorgon's Eye member. She's got some valuable intel, and she's ready to spill it.~ GOTO A4
 END

@@ -1,7 +1,7 @@
 BEGIN h_whit2d
 
 IF ~Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~My own men... my own trusted comrades, turned on me. Betrayed me.~ IF ~~ THEN GOTO 1
+   SAY ~My own men... my own trusted comrades, turned on me, betrayed me.~ IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1

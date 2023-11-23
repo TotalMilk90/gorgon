@@ -11,9 +11,10 @@ IF
          Global("h_SpawnSelena","GLOBAL",3)
 THEN
          RESPONSE #100
+                  Wait(2)
                   CreateCreature("h_selenc",[629.389],NE)
                   CreateCreature("h_piratc",[724.362],NW)
-                  CreateCreature("h_piratc",[579.251],SE)
+                  CreateCreature("h_pira2c",[579.251],SE)
                   SetGlobal("h_SpawnSelena","GLOBAL",4)
                   Continue()
 END

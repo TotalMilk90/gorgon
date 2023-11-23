@@ -39,7 +39,7 @@ IF ~~ THEN BEGIN B4
 END
 
 IF ~~ THEN BEGIN B5
-   SAY ~If you're keen on delving into the shadows, I'd suggest perusing the black markets of Baldur's Gate, where secrets are sold in the darkest corners the city.~ IF ~~ THEN GOTO B6
+   SAY ~If you're keen on delving into the shadows, I'd suggest perusing the black markets of Baldur's Gate, where secrets are sold in the darkest corners of the city.~ IF ~~ THEN GOTO B6
 END
 
 IF ~~ THEN BEGIN B6

@@ -5,7 +5,7 @@ THEN
 	RESPONSE #100
 		 Enemy()
 END
-
+/*
 IF
 	Global("h_SelenaLeaveArea","GLOBAL",1)
 THEN
@@ -13,3 +13,4 @@ THEN
 		 EscapeArea()
 		 SetGlobal("h_SelenaLeaveArea","GLOBAL",2)
 END
+*/

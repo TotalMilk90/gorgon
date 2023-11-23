@@ -40,7 +40,7 @@ THEN
                   ForceRandomEncounterEntry("h_flamea","h_flamee")
                   Continue()
 END
-
+/*
 IF
          Global("h_RigaldoQuest","GLOBAL",17)
          Global("h_BountyNumber","GLOBAL",9)
@@ -52,7 +52,7 @@ THEN
                   ForceRandomEncounterEntry("h_flamea","h_flamee")
                   Continue()
 END
-
+*/
 IF
          TimeOfDay(NIGHT)
          Global("h_SpawnZhontac","GLOBAL",0)
@@ -175,7 +175,6 @@ THEN
 END
 
 IF
-         TimeOfDay(NIGHT)
          Global("h_AddLoot","GLOBAL",1)
 
 THEN
@@ -299,7 +298,7 @@ THEN
 END
 
 IF
-        TimeOfDay(MORNING)
+        TimeOfDay(DAY)
         Global("h_SpawnClare","GLOBAL",1)
 
 THEN
@@ -394,8 +393,8 @@ IF
         Global("h_BaldwinGuards","GLOBAL",1)
 THEN
 	RESPONSE #100
-		 CreateCreature("h_whitec",[3724.978],S)
-		 CreateCreature("h_whitec",[3590.962],S)
+		 CreateCreature("h_rogu2c",[3724.978],S)
+		 CreateCreature("h_rogu2c",[3590.962],S)
 		 SetGlobal("h_BaldwinGuards","GLOBAL",2)
 		 Continue()
 END

@@ -15,15 +15,15 @@ IF ~Global("h_LiedelWater","GLOBAL",2)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Well, you certainly got my heart racing. I'll give you that. I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
+   SAY ~Well, you certainly got my heart racing, I'll give you that. I'll admit, I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~No harm done, love. You certainly have a way of making an entrance. I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
+   SAY ~No harm done, love. You certainly have a way of making an entrance. I'll admit, I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~You should know better than to sneak up on an assassin, love. I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
+   SAY ~You should know better than to sneak up on an assassin, love. I'll admit, I'm relieved to see you in one piece.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5
@@ -54,7 +54,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-   SAY ~W you left to fight the Shadow Thieves, I needed some solace, and this place... it brings me a strange kind of comfort.~
+   SAY ~When you left to fight the Shadow Thieves, I needed some solace, and this place... it brings me a strange kind of comfort.~
        ++ ~Ah, so the fearsome assassin has a soft spot after all. Who would have thought?~ GOTO 12
        ++ ~It's nice to know someone's got my back. Especially in times like these.~ GOTO 13
        ++ ~Save your worries, Liedel. I can handle myself just fine.~ GOTO 14
@@ -65,7 +65,7 @@ IF ~~ THEN BEGIN 12
 END
 
 IF ~~ THEN BEGIN 13
-   SAY ~We're in this together, aren't we? I wouldn't want my partner to get soft on me now, would I?~ IF ~~ THEN GOTO 15
+   SAY ~We're in this together, aren't we? I wouldn't want my partner in crime to get soft on me now, would I?~ IF ~~ THEN GOTO 15
 END
 
 IF ~~ THEN BEGIN 14
@@ -86,7 +86,7 @@ END
 
 IF ~~ THEN BEGIN 18
    SAY ~And tonight... they appear to be especially beautiful.~
-       ++ ~It's a wonderous sight, Liedel, but their not quite as beautiful as you are.~ GOTO 21
+       ++ ~It's a wonderous sight, Liedel... but their not quite as beautiful as you are.~ GOTO 21
        ++ ~You're right, they are quite something, aren't they?~ GOTO 21
        ++ ~Well, as much as I'd love to stargaze all night, I've got some things I need to do.~ GOTO 19
 END

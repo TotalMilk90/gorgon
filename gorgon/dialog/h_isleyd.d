@@ -82,7 +82,7 @@ CHAIN
    =
 ~That clear?~
    == h_ilenad
-~*nods*~
+~Mhm.~
    == h_isleyd
 ~Good, lass. Now, wait here and I'll be back in a minute.~
    DO ~

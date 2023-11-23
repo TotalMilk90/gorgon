@@ -33,7 +33,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Well, <CHARNAME>, the plan is to establish a firm foothold in this strategic location. Nashkel sits at a crossroads of trade routes and is known for its valuable gem mines.~ IF ~~ THEN GOTO 8
+   SAY ~Well, the plan is to establish a firm foothold in this strategic location. Nashkel sits at a crossroads of trade routes and is known for its valuable gem mines.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -79,7 +79,7 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
-   SAY ~Keep an eye out for interesting characters; you never know who might be a useful ally... or a potential target. Just remember to blend in, and don't draw undue attention to yourself.~
+   SAY ~Keep an eye out for interesting characters. You never know who might be a useful ally... or a potential target. Just remember to blend in, and don't draw undue attention to yourself.~
        ++ ~What's the overall plan for expanding our influence here in Nashkel?~ GOTO 7
        ++ ~What's the current situation with the Shadow Thieves in this area? Should we be concerned about them?~ GOTO 11
        ++ ~I'll get to work on securing that base.~ GOTO 18
@@ -131,7 +131,7 @@ IF ~~ THEN BEGIN SEC_2
 END
 
 IF ~~ THEN BEGIN SEC_3
-   SAY ~Now, as for our next bit of business, there's some lads about the area, freelancing their way through life. Good with their hands, but lackin' direction, if you catch my drift.~ IF ~~ THEN GOTO SEC_4
+   SAY ~Now, as for our next bit of business, there's some lads about the area, freelancin' their way through life. Good with their hands, but lackin' direction, if you catch my drift.~ IF ~~ THEN GOTO SEC_4
 END
 
 IF ~~ THEN BEGIN SEC_4
@@ -150,13 +150,13 @@ IF ~~ THEN BEGIN SEC_6
 END
 
 IF ~~ THEN BEGIN SEC_7
-   SAY ~If it comes to that, and they won't see reason, well...take whatever measures necessary to ensure they won't be a problem for us in the future.~
+   SAY ~If it comes to that, and they won't see reason, well... take whatever measures necessary to ensure they won't be a problem for us in the future.~
        ++ ~Anything else you can tell me about Selena?~ GOTO SEC_8
        ++ ~Consider it done. Where can I find Selena and her crew?~ GOTO SEC_14
 END
 
 IF ~~ THEN BEGIN SEC_8
-   SAY ~Ah, Selena Stardancer, a name that carries quite the weight in certain circles. She hails from the Pirate Isles, a place known for producing the finest swashbucklers.~ IF ~~ THEN GOTO SEC_9
+   SAY ~Selena Stardancer, a name that carries quite the weight in certain circles. She hails from the Pirate Isles, a place known for producing the finest swashbucklers.~ IF ~~ THEN GOTO SEC_9
 END
 
 IF ~~ THEN BEGIN SEC_9
@@ -245,6 +245,7 @@ END
 IF ~~ THEN BEGIN THIRD_8
    SAY ~Stealth and shadows, <CHARNAME>, you know the drill.~
        ++ ~These marks won't know what hit 'em.~ GOTO THIRD_9
+       ++ ~Got it. I'll return when I've secured the loot.~ GOTO THIRD_9
 END
 
 IF ~~ THEN BEGIN THIRD_9

@@ -57,7 +57,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 11
-   SAY ~Well, um... you know, I've never been hired for an out-of-town job before. I've never even left the city proper, to be honest, except when I was a wee little one.~ IF ~~ THEN GOTO 12
+   SAY ~Well, you know, I've never been hired for an out-of-town job before. I've never even left the city proper, to be honest.~ IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN 12
@@ -82,7 +82,7 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
-   SAY ~So, yeah, Lady Eudika. She's, uh, well acquainted with the Silvershields. She's actually staying with them at their estate.~ IF ~~ THEN GOTO 18
+   SAY ~Lady Eudika. She's, uh, well acquainted with the Silvershields, and she's currently staying with them at their estate.~ IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 18

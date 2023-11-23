@@ -1,10 +1,10 @@
 BEGIN h_cmaidd
 
 IF ~Global("h_TalkedToMaid","GLOBAL",0)~ THEN BEGIN 0
-   SAY ~Ugh! Can't stomach the madam's wretched daughter. Someone oughta give that brat a lesson before I do it myself!~
+   SAY ~Ugh! I can't stomach the madam's wretched daughter. Someone oughta give that brat a lesson before I do it myself!~
        ++ ~She can't be that awful, can she?~ GOTO 1
-       +~NumItemsParty("h_misc15",1)~+ ~Does this coin ring any bells for you?~ GOTO 2
-       +~NumItemsPartyGT("h_misc15",1)~+ ~Care to explain how this coin ended up in your pocket?~ GOTO 4
+       +~NumItemsParty("h_misc15",1) NumItemsPartyLT("h_misc32",1)~+ ~Does this coin ring any bells for you?~ GOTO 2
+       +~NumItemsParty("h_misc32",1)~+ ~Care to explain how this coin ended up in your pocket?~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 1
@@ -18,9 +18,9 @@ IF ~~ THEN DO ~
 END
 
 IF ~GlobalGT("h_TalkedToMaid","GLOBAL",0)~ THEN BEGIN 3
-   SAY ~Thought I asked you to skedaddle.~
+   SAY ~I thought I asked you to skedaddle.~
        ++ ~I'll be off now.~ EXIT
-       +~NumItemsPartyGT("h_misc15",1)~+ ~Care to explain how this coin ended up in your pocket?~ GOTO 4
+       +~NumItemsParty("h_misc32",1)~+ ~Care to explain how this coin ended up in your pocket?~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
@@ -34,11 +34,11 @@ END
 
 IF ~~ THEN BEGIN 5
    SAY ~Alright, fine, it's true! I hate that devil-woman! She's done nothing but make my life a living hell!~
-       ++ ~Why go with fake gold, then?~ GOTO 6
+       ++ ~But why go with fake gold?~ GOTO 6
 END
 
 IF ~~ THEN BEGIN 6
-   SAY ~Didn't have enough genuine gold to cover that kind of job. Sought out Xevec, thinking he'd never catch on, the fool.~ IF ~~ THEN GOTO 7
+   SAY ~I didn't have enough genuine gold to cover that kind of job, so I sought out Xevec, thinking he'd never catch on, the fool.~ IF ~~ THEN GOTO 7
 END
 
 IF ~~ THEN BEGIN 7

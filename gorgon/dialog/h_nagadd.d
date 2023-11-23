@@ -62,7 +62,11 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~Once you have proven your commitment by acquiring all five, the second tier awaits you. Here, six tomes delve into the arts of evasion, and the sharpening of one's mental and physical acuity.~ IF ~~ THEN GOTO 11
+   SAY ~Once you have proven your commitment by acquiring all five, the second tier awaits you.~ IF ~~ THEN GOTO 10.5
+END
+
+IF ~~ THEN BEGIN 10.5
+   SAY ~Here, six tomes delve into the arts of evasion, and the sharpening of one's mental and physical acuity.~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11
@@ -91,7 +95,7 @@ IF ~~ THEN BEGIN 16
 END
 
 IF ~~ THEN BEGIN 17
-   SAY ~Acquire the gold as only a disciple of Mask could—through the very arts these tomes will refine. Honor him by practicing what you seek to perfect.~ IF ~~ THEN GOTO 18
+   SAY ~Acquire the gold as only a disciple of Mask could, through the very arts these tomes will refine. Honor him by practicing what you seek to perfect.~ IF ~~ THEN GOTO 18
 END
 
 IF ~~ THEN BEGIN 18
@@ -99,7 +103,7 @@ IF ~~ THEN BEGIN 18
 END
 
 IF ~~ THEN BEGIN 19
-   SAY ~Now go forth, acolyte of the unseen. Embrace the night. Fulfill your duty to Mask with each silent step, each careful heist. Let the shadows be your cloak, and the whispers of the world your guide.~ IF ~~ THEN GOTO 20
+   SAY ~Now, go forth, acolyte of the unseen. Embrace the night. Fulfill your duty to Mask with each silent step, each careful heist. Let the shadows be your cloak, and the whispers of the world your guide.~ IF ~~ THEN GOTO 20
 END
 
 IF ~~ THEN BEGIN 20
@@ -108,7 +112,6 @@ IF ~~ THEN DO ~
    SetGlobal("h_ThiefBook","GLOBAL",1)
    AddJournalEntry(@206,USER)~ EXIT
 END
-
 
 IF ~Global("h_ThiefBook","GLOBAL",1)~ THEN BEGIN 21
    SAY ~Welcome back, shadow-walker. Are you ready to offer your tribute and delve deeper into the mysteries of the Compendium?~

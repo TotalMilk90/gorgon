@@ -46,6 +46,7 @@ IF ~~ THEN BEGIN 6
    SAY ~I'll remove the bounty for 300 gold coins. Enough to soothe my ego and move on.~
        +~PartyGoldLT(300)~+ ~I'll be back with the money.~ EXIT
        +~PartyGoldGT(299)~+ ~Take the coin then. I'll go inform Aisha.~ GOTO 7
+       ++ ~I want that bounty gone, Aisha ain't worth a one-way ticket to the afterlife.~ GOTO 4
        +~CheckStatGT(Player1,17,STR)~+ ~If you don't ditch the bounty, then I'll do you in instead!~ GOTO 8
        +~CheckStatLT(Player1,18,STR)~+ ~If you don't ditch the bounty, then I'll do you in instead!~ GOTO 5
        ++ ~Seeing you now, I'm leaning your way. Found Aisha next door at the Red Sheaf. I think I'll go pay her another visit.~ GOTO 9
@@ -61,7 +62,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Alright, fine. I can't pick a brawl in my current condition, anyway. So long as Aisha keeps her distance, there won't be any problems.~
+   SAY ~Alright, fine. I can't pick a brawl in my current condition anyway. So long as Aisha keeps her distance, there won't be any problems.~
 IF ~~ THEN DO ~
    SetGlobal("h_AishaBounty","GLOBAL",3)
    AddJournalEntry(@422,QUEST)~ EXIT

@@ -6,7 +6,7 @@ END
 
 IF ~~ THEN BEGIN 1
    SAY ~You have the look of someone seeking... information. Lucky for you, knowledge is my trade. For the right price, of course.~
-       +~Global("h_Ravenscar","GLOBAL",2)~+ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
+       +~OR(2) Global("h_Ravenscar","GLOBAL",1) Global("h_Ravenscar","GLOBAL",2)~+ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
        +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
        ++ ~I'm not interested.~ EXIT
 END
@@ -125,14 +125,14 @@ IF ~~ THEN BEGIN 23
 END
 
 IF ~~ THEN BEGIN 24
-   SAY ~As you wish. The offer stands, should you change your mind.~
+   SAY ~Unfortunate, but I understand. The offer stands, should you change your mind.~
 IF ~~ THEN DO ~
    AddJournalEntry(@356,QUEST)
    SetGlobal("h_SorenQuest","GLOBAL",5)~ EXIT
 END
 
 IF ~~ THEN BEGIN 25
-   SAY ~Unfortunate, but I understand. Return when you've gathered the necessary funds. The information will be waiting for you, provided you come prepared.~
+   SAY ~Return when you've gathered the necessary funds. The information will be waiting for you, provided you come prepared.~
 IF ~~ THEN DO ~
    AddJournalEntry(@356,QUEST)
    SetGlobal("h_SorenQuest","GLOBAL",5)~ EXIT
@@ -160,13 +160,13 @@ IF ~~ THEN BEGIN 29
 END
 
 IF ~~ THEN BEGIN 30
-   SAY ~There's a lock in the Flaming Fist HQ's basement, hiding some valuable documents I've had my eye on for a while.~ IF ~~ THEN GOTO 31
+   SAY ~There's a lock in the Flaming Fist Headquarter's basement, hiding some valuable documents I've had my eye on for a while.~ IF ~~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 31
    SAY ~If you can sneak in, pick that lock, and bring those papers to me, then we'll talk about Isla Darkcloak. Consider it a fair trade... your skills for my information.~
        ++ ~Consider those documents as good as yours.~ GOTO 35
-       ++ ~I'm not sure breaking into the Flaming Fist HQ is a risk worth taking. There must be another way to get your information.~ GOTO 32
+       ++ ~I'm not sure breaking into the Flaming Fist Headquarters is a risk worth taking. There must be another way to get your information.~ GOTO 32
 END
 
 IF ~~ THEN BEGIN 32
@@ -219,5 +219,7 @@ IF ~~ THEN BEGIN 41
 IF ~~ THEN DO ~
    SetGlobal("h_IslaSorenQuest","GLOBAL",3)
    SetGlobal("h_SpawnIslaAlt","GLOBAL",1)
-   AddJournalEntry(@463,QUEST)~ EXIT
+   AddJournalEntry(@463,QUEST)
+   TakePartyItem("h_misc31")
+   DestroyItem("h_misc31")~ EXIT
 END

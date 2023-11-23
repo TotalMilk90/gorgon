@@ -1,6 +1,6 @@
 BEGIN h_eudikd
 
-IF ~True()~ THEN BEGIN 0
+IF ~Global("h_EudikaTalk","GLOBAL",0)~ THEN BEGIN 0
    SAY ~This estate is simply magnificent, isn't it? The Silvershields have impeccable taste.~ IF ~~ THEN GOTO 1
 END
 
@@ -54,5 +54,11 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~Very well. Safe travels to you, and may you find success in all your endeavors.~ IF ~~ THEN EXIT
+   SAY ~Very well. Safe travels to you, and may you find success in all your endeavors.~
+IF ~~ THEN DO ~ 
+   SetGlobal("h_EudikaTalk","GLOBAL",1)~ EXIT
+END
+
+IF ~Global("h_EudikaTalk","GLOBAL",1)~ THEN BEGIN 10
+   SAY ~Oh, welcome back. I trust your ventures in the city have been fruitful?~ IF ~~ THEN EXIT
 END

@@ -51,6 +51,7 @@ END
 IF
         Dead("h_islacc")
         Global("h_BeatIsla","GLOBAL",0)
+        GlobalLT("h_IslaBounty","GLOBAL",2)
 THEN
         RESPONSE #100
                  CreateCreature("h_dead2c",[438.403],SE)

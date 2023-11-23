@@ -21,7 +21,7 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~My name is Seraphina Whitewood, and I lead the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised entirely of Beregost's own.~ IF ~~ THEN GOTO 4
+   SAY ~My name is Seraphina Whitewood, and I lead the Beregost City Watch. We're an auxiliary unit of the Flaming Fist, comprised solely of Beregost's own.~ IF ~~ THEN GOTO 4
 END
 
 IF ~~ THEN BEGIN 4
@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~At the helm of their operation stands a man of dangerous repute, known as Baldwin "The Butcher". His name alone strikes fear into the hearts of many, and his notoriety is well-earned.~ IF ~~ THEN GOTO 8
+   SAY ~At the helm of their operation stands a man of dangerous repute, known as Baldwin, "The Butcher". His name alone strikes fear into the hearts of many, and his notoriety is well-earned.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8

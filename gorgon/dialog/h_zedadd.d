@@ -7,17 +7,11 @@ END
 IF ~GlobalGT("h_BaldwinQuest","GLOBAL",0)~ THEN BEGIN 1
    SAY ~I grew up on the streets of Westgate and was sailing spice into Cormyr by the time I was 9. I learned a lot in those days. If you're ever in need of my skills, trust that I shall deliver.~
        ++ ~I'll keep that in mind.~ EXIT
-       ++ ~I'd like to see what services you have available.~ GOTO TEMPLE_0
+       ++ ~I'd like to see what services you have available.~ DO ~StartStore("h_nagsto",LastTalkedToBy(Myself))~ EXIT
        +~Global("h_ZedaRiddle","GLOBAL",1)~+ ~I'm looking work. Do you have any jobs for me?~ GOTO RIDDLE_0
        +~Global("h_SecondRiddle","GLOBAL",1) Global("h_ZedaRiddle","GLOBAL",2)~+ ~I'd like to play Bag of Mysteries again.~ GOTO SECOND_0
        +~Global("h_KarpWork","GLOBAL",2)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO 2
        +~Global("h_KarpWorkGood","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled into Athkatla. Is that something you can help her with?~ GOTO GOOD_2
-END
-
-IF ~~ THEN BEGIN TEMPLE_0
-   SAY ~Then allow me to share with you a glimpse of Mask's divinity.~
-IF ~~ THEN DO ~
-   StartStore("h_nagsto",LastTalkedToBy(Myself))~ EXIT
 END
 
 IF ~~ THEN BEGIN 2
@@ -45,18 +39,22 @@ IF ~~ THEN BEGIN RIDDLE_0.5
 END
 
 IF ~~ THEN BEGIN RIDDLE_1
-   SAY ~I call it, Bag of Mysteries! I will put you through a series of 4 riddles. For each one that you answer wrong, you will have to give me, say... 100 gold.~ IF ~~ THEN GOTO RIDDLE_1.5
+   SAY ~I call it, Bag of Mysteries! I will put you through a series of four riddles. For each one that you answer wrong, you will have to give me, say... 100 gold.~ IF ~~ THEN GOTO RIDDLE_1.5
 END
 
 IF ~~ THEN BEGIN RIDDLE_1.5
-   SAY ~For each one that you guess right, however, you can pick a random prize from my Bag of Mysteries. Once we begin, you *must* commit to answering all 4 riddles before the game will end.~
+   SAY ~For each one that you guess right, however, you can pick a random prize from my Bag of Mysteries.~ IF ~~ THEN GOTO RIDDLE_1.6
+END
+
+IF ~~ THEN BEGIN RIDDLE_1.6
+   SAY ~Once we begin, you must commit to answering all four riddles before the game will end.~
        +~PartyGoldGT(399)~+  ~Bag of Mysteries, eh? Alright, I'll give it a shot.~ GOTO RIDDLE_3
        +~PartyGoldLT(400)~+ ~It seems I don't have enough money to play your little game.~ GOTO RIDDLE_2
        ++ ~I'm not interested.~ EXIT
 END
 
 IF ~~ THEN BEGIN RIDDLE_2
-   SAY ~Are you serious? *laughing* How have you made it this far without having 400 gold pieces on you?~ IF ~~ THEN EXIT
+   SAY ~Are you serious? How have you made it this far without having 400 gold pieces on you?~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN RIDDLE_3
@@ -73,7 +71,7 @@ IF ~~ THEN BEGIN RIDDLE_4
 END
 
 IF ~~ THEN BEGIN WRONG_1
-   SAY ~Really? *shakes her head* That was supposed to be an easy one. Well, pay up then.~
+   SAY ~Really? That was supposed to be an easy one. Well, pay up then.~
 IF ~~ THEN DO ~
    TakePartyGold(100)~ GOTO RIDDLE_5
 END
@@ -88,7 +86,7 @@ IF ~~ THEN BEGIN CORRECT_1
 END
 
 IF ~~ THEN BEGIN PRIZE_0
-   SAY ~*laughing* I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_5
+   SAY ~I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_5
 END
 
 IF ~~ THEN BEGIN RIDDLE_5
@@ -100,7 +98,7 @@ IF ~~ THEN BEGIN RIDDLE_5
 END
 
 IF ~~ THEN BEGIN WRONG_2
-   SAY ~*shakes her head* No one was lying. The priests are Destin's sisters. Time to pay up.~
+   SAY ~No one was lying. The priests are Destin's sisters. Time to pay up.~
 IF ~~ THEN DO ~
    TakePartyGold(100)~ GOTO RIDDLE_6
 END
@@ -115,7 +113,7 @@ IF ~~ THEN BEGIN CORRECT_2
 END
 
 IF ~~ THEN BEGIN PRIZE_1
-   SAY ~*laughing* I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_6
+   SAY ~I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_6
 END
 
 IF ~~ THEN BEGIN RIDDLE_6
@@ -131,7 +129,7 @@ IF ~~ THEN BEGIN RIDDLE_6
        ++ ~The temperature.~ GOTO WRONG_3
 END
 
-IF ~~ THEN BEGIN WRONG_3
+IF ~~ THEN BEGIN WRONG_3                 //20
    SAY ~That is incorrect. A day breaks but not falls, and a night falls but not breaks. That'll be 100 gold please.~
 IF ~~ THEN DO ~
    TakePartyGold(100)~ GOTO RIDDLE_7
@@ -147,7 +145,7 @@ IF ~~ THEN BEGIN CORRECT_3
 END
 
 IF ~~ THEN BEGIN PRIZE_2
-   SAY ~*giggles* This never gets old. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_7
+   SAY ~This never gets old. Onto the next riddle!~ IF ~~ THEN GOTO RIDDLE_7
 END
 
 IF ~~ THEN BEGIN RIDDLE_7
@@ -164,7 +162,7 @@ IF ~~ THEN BEGIN RIDDLE_7
 END
 
 IF ~~ THEN BEGIN WRONG_4
-   SAY ~*shakes her head* Sorry, <CHARNAME>. The correct answer was an echo.~
+   SAY ~Sorry, <CHARNAME>. The correct answer was an echo.~
 IF ~~ THEN DO ~
    TakePartyGold(100)~ GOTO END_0
 END
@@ -192,18 +190,26 @@ END
 
 
 IF ~~ THEN BEGIN SECOND_0
-   SAY ~Well, you're in luck then! I have restocked my riddles and refilled my bag with lots of new goodies!~ IF ~~ THEN GOTO SECOND_1
+   SAY ~Well, you're in luck! I have restocked my riddles and refilled my bag with lots of new goodies!~ IF ~~ THEN GOTO SECOND_1
 END
                                                                                                    
 IF ~~ THEN BEGIN SECOND_1
-   SAY ~I will put you through a series of 4 riddles. If you guess wrong, you will pay me 200 gold this time. If you guess right, you can choose a random prize from my Bag of Mysteries. Once we begin you *must* commit to answering each riddle before the game will end.~
+   SAY ~I will put you through a series of four riddles. If you guess wrong, you will pay me 200 gold this time.~ IF ~~ THEN GOTO SECOND_1.5
+END
+
+IF ~~ THEN BEGIN SECOND_1.5
+   SAY ~If you guess right, you can choose a random prize from my Bag of Mysteries.~ IF ~~ THEN GOTO SECOND_1.6
+END
+
+IF ~~ THEN BEGIN SECOND_1.6     //30
+   SAY ~Once we begin you must commit to answering each riddle before the game will end.~
        +~PartyGoldGT(799)~+ ~I'm ready to begin.~ GOTO SECOND_3
        +~PartyGoldLT(800)~+ ~It seems I don't have enough gold to play your game.~ GOTO SECOND_2
        ++ ~On second thought, I'm not interested right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN SECOND_2
-   SAY ~Are you serious? *laughing* You really don't have 800 gold pieces on you?~ IF ~~ THEN EXIT
+   SAY ~Are you serious? You really don't have 800 gold pieces on you?~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN SECOND_3
@@ -237,7 +243,7 @@ IF ~~ THEN BEGIN YES_0
 END
 
 IF ~~ THEN BEGIN SECOND_5
-   SAY ~*laughing* I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_6
+   SAY ~I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_6
 END
 
 IF ~~ THEN BEGIN SECOND_6
@@ -253,7 +259,11 @@ IF ~~ THEN BEGIN SECOND_6
 END
 
 IF ~~ THEN BEGIN NO_1
-   SAY ~*shakes her head* That's gonna cost ya'.~
+   SAY ~Nope, That's gonna cost ya'.~ IF ~~ THEN GOTO NO_1.5
+END
+
+IF ~~ THEN BEGIN NO_1.5
+   SAY ~200 gold coins for me, thank you very much.~
 IF ~~ THEN DO ~
    TakePartyGold(200)~ GOTO SECOND_8
 END
@@ -268,7 +278,7 @@ IF ~~ THEN BEGIN YES_1
 END
 
 IF ~~ THEN BEGIN SECOND_7
-   SAY ~*laughing* I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_8
+   SAY ~I hope you enjoy your prize. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_8
 END
 
 IF ~~ THEN BEGIN SECOND_8
@@ -297,7 +307,7 @@ IF ~~ THEN BEGIN YES_2
 END
 
 IF ~~ THEN BEGIN SECOND_9
-   SAY ~*giggles* This never gets old. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_10
+   SAY ~This never gets old. Onto the next riddle!~ IF ~~ THEN GOTO SECOND_10
 END
 
 IF ~~ THEN BEGIN SECOND_10

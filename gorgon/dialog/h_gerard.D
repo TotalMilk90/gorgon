@@ -49,7 +49,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_GerardQuest","GLOBAL",1)~ THEN BEGIN G_6
-   SAY ~Take the bloody necklace then you dumb brutes!~
+   SAY ~Take the bloody necklace then, you dumb brute!~
 IF ~~ THEN DO ~
    SetGlobal("h_GerardQuest","GLOBAL",2)
    AddJournalEntry(@313,QUEST)
@@ -76,7 +76,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN G_10
-   SAY ~Here, take the bloody necklace then you bastard. You can let Rigaldo know I'll be resuming my payments.~
+   SAY ~Here, take the bloody necklace then, you bastard. You can let Rigaldo know I'll be resuming my payments.~
 IF ~~ THEN DO ~
    SetGlobal("h_GerardQuest","GLOBAL",2)
    SetGlobal("h_GerardStrength","GLOBAL",1)

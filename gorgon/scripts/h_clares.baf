@@ -1,5 +1,5 @@
 IF
-         Time(12)
+         OR(10) Time(13) Time(14) Time(15) Time(16) Time(17) Time(18) Time(19) Time(20) Time(21) TimeOfDay(NIGHT)
 
 THEN
          RESPONSE #100

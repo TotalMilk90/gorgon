@@ -34,7 +34,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~Aww don't be such a scaredy-cat!~
+   SAY ~Aww, don't be such a scaredy-cat!~
 IF ~~ THEN DO ~
    AddJournalEntry(@200,USER)
    EscapeArea()~ EXIT

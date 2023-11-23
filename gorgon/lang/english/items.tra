@@ -4,7 +4,6 @@
 STATISTICS:
 
 Equipped abilities:
-
 - Intelligence: +1
 - Armor Class: +1
 - Saving Throws: +1
@@ -382,8 +381,8 @@ Combat abilities:
 - 5% chance to stun target for 1 round (save vs. spell)
 - Returns to the wielder's hand when thrown
 
-THAC0: +3
-Damage: 1d3+3, +2 acid
+THAC0: +2
+Damage: 1d3+2, +2 acid
 Damage Type: Missile
 Speed Factor: 0
 Proficiency Type: Dart
@@ -613,11 +612,10 @@ Weight: 0~
 STATISTICS:
 
 Combat abilities:
-- Increases backstab modifier by 1
 - Increases number of attacks by 1
 
-THAC0: +3
-Damage: 1d10+3
+THAC0: +2
+Damage: 1d6 +2
 Damage Type: Piercing
 Speed Factor: 0
 Proficiency Type: Short Sword
@@ -636,8 +634,8 @@ Combat abilities:
 - 10% chance to stun target for half a round (save vs. spell)
 - 10% chance to deal an additional 5 acid damage
 
-THAC0: +3
-Damage: 1d10 +3
+THAC0: +2
+Damage: 1d10 +2
 Damage Type: Crushing
 Speed Factor: 2
 Proficiency Type: Katana/Wakizashi
@@ -813,3 +811,99 @@ Weight: 1~
 @144=~This hefty tome, bound in weathered leather, bears the insignia of the Flaming Fist. The pages within are filled with meticulous records and covert correspondences, detailing undisclosed operations, hidden agendas, and the intricate web of political alliances of the Flaming Fist.
 
 Weight: 3~
+
+@145=~Titan's Might~
+@146=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Titan's Might is a heavy iron ring etched with ancient runes of power. Eliana crafted it using a rare ore from the heart of a fallen star, believing it to be imbued with celestial strength. This ring is said to grant the wearer the mighty power of legendary titans.
+
+Equipped abilities:
+- Strength: +1
+
+Weight: 0~
+
+@147=~Agile Grace~
+@148=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Agile Grace is a delicate silver ring adorned with a feather motif. Eliana created it using silver from the mines of the Moon Pass, known for its connection to the element of air. The ring bestows grace and swiftness akin to a whispering wind.
+
+Equipped abilities:
+- Dexterity: +1
+
+Weight: 0~
+
+@149=~Stalwart Heart~
+@150=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Stalwart Heart is made of a dark, almost indestructible metal, featuring a heart encircled by thorns. Eliana forged this ring from the core of the ancient earth, symbolizing endurance and resilience. It is believed to fortify the wearer's constitution like the enduring earth.
+
+Equipped abilities:
+- Constitution: +1
+
+Weight: 0~
+
+@151=~Enlightened Mind~
+@152=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Enlightened Mind is crafted from a bright, blue-tinted metal, set with a crystal that sparkles with inner light. Eliana sought the rarest crystals from the deepest caves for its creation, representing the pursuit of hidden knowledge. The ring is said to illuminate the mind of its wearer.
+
+Equipped abilities:
+- Intelligence: +1
+
+Weight: 0~
+
+@153=~Sage's Vision~
+@154=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Ring of Sage's Vision is made from gold and shaped in the form of an owl, with emeralds for eyes. Eliana fashioned it from gold found in the sacred rivers, believed to be blessed by the gods of wisdom. This ring aids in seeing the truth beyond illusions.
+
+Equipped abilities:
+- Wisdom: +1
+
+Weight: 0~
+
+@155=~Radiant Command~
+@156=~'The Alchemist's Circle of Mastery' is a collection of six magical rings that are the masterwork of Eliana, a legendary alchemist and sage. She believed that true mastery of the alchemical arts lay in perfecting the self, and thus each ring was designed to enhance a different aspect of one's being. It's said that together, these rings represent the pinnacle of Eliana's life's work and philosophy, each a testament to her unmatched skill and wisdom. Legend has it that when united, the rings hold a secret power known only to those who can wield all aspects of mastery harmoniously.
+
+Radiant Command is a ring of polished gold, set with a ruby that glows softly. Eliana used a ruby from the heart of a volcano, signifying the fiery power of charisma. The ring is known to imbue the wearer with a commanding aura.
+
+Equipped abilities:
+- Charisma: +1
+
+Weight: 0~
+
+@157=~Nightstalker's Amulet~
+@158=~The Nightstalker's Amulet is a revered artifact believed to have been created by devout followers of Mask. This amulet, forged under a dark new moon and infused with the essence of the shadow realm, is said to resonate with the elusive power of Mask. The amulet's unique enchantment enhances the wearer's precision and lethality, granting a constant edge in combat. It features a darkened silver chain and a centerpiece made of moonstone, symbolizing the wearer's connection to the hidden and the unseen. According to legend, this amulet was once used by the most elite assassins and covert operatives devoted to the Lord of Shadows. Its ability to improve critical strikes makes it a coveted item among thieves, rogues, and adventurers who value stealth and cunning over brute strength. The Nightstalker's Amulet is not just a tool of combat; it's a symbol of the bearer's alignment with the subtler, more dangerous aspects of adventuring in a world rife with magic and mystery.
+
+STATISTICS:
+
+Equipped abilities:
+- Chance to score a critical hit +10%
+
+Weight: 0~
+
+@159=~Studded Leather Armor~
+@160=~Isla Darkcloak's Shadowweave Armor~
+@161=~Studded leather armor has little in common with normal leather armor. While leather armor is a hardened shell, studded leather armor is soft and supple with hundreds of metal rivets affixed. The rivets are so close together that they form a flexible coating of hard metal that turns aside slashing and cutting attacks. The soft leather backing is little more than a means of securing the rivets in place.
+
+STATISTICS:
+
+Armor Class: 7 (5 vs. slashing, 6 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 25~
+@162=~This finely crafted studded leather armor is as much a part of Isla Darkcloak's legend as her exploits in the fighting pits and the shadowy corners of the Sword Coast. The leather is dyed in deep, shifting shades of black and gray, almost seeming to absorb the light around it. Each stud is masterfully placed, not just for protection but also to aid in her stealthy movements.
+
+Rumor has it that Isla herself commissioned this armor from a master leatherworker who was said to use materials sourced from the Shadowfell. The armor not only provides protection but also enhances the wearer's natural agility and stealth, making Isla an even more formidable opponent and ally in the underworld. As she moved from the glory of the arena to the shadows of mercenary work, her armor became a symbol of her adaptability and prowess in both worlds.
+
+STATISTICS:
+
+Equipped abilities:
+- Dexterity: +1
+
+Armor Class: 4 (2 vs. slashing, 3 vs. piercing and missile)
+Requires:
+ 6 Strength
+
+Weight: 8~

@@ -19,7 +19,7 @@ IF ~~ THEN BEGIN A0
 END
 
 IF ~~ THEN BEGIN A1
-   SAY ~And before him, there was Isla, a legend in her own right. She was a force to be reckoned with, combining strength and technique in a way I've seldom seen.~ IF ~~ THEN GOTO A2
+   SAY ~And before him, there was Isla Darkcloak, a legend in her own right. She was a force to be reckoned with, combining strength and technique in a way I've seldom seen.~ IF ~~ THEN GOTO A2
 END
 
 IF ~~ THEN BEGIN A2
@@ -267,7 +267,8 @@ IF ~~ THEN DO ~
    SetGlobal("h_BeatIsla","GLOBAL",3)
    AddJournalEntry(@460,USER)
    AddExperienceParty(2000)
-   GiveGoldForce(2000)~ EXIT
+   GiveGoldForce(2000)
+   GiveItemCreate("h_leat01",LastTalkedToBy,0,0,0)~ EXIT
 END
 
 IF ~Global("h_FightingPits","GLOBAL",5)~ THEN BEGIN 44

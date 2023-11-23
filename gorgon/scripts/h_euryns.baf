@@ -1,8 +1,8 @@
 IF
 	See([PC])
 	Global("h_RigaldoQuest","GLOBAL",17)
-        Global("h_BountyNumber","GLOBAL",6)
-        Global("h_BetrayBaldwin","GLOBAL",2)
+        Global("h_BountyNumber","GLOBAL",9)
+        GlobalGT("h_BetrayBaldwin","GLOBAL",0)
         Global("h_FakeKery","GLOBAL",1)
 THEN
 	RESPONSE #100

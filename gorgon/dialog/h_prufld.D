@@ -158,7 +158,7 @@ IF ~~ THEN BEGIN DOSE_12
 END
 
 IF ~~ THEN BEGIN DOSE_13
-   SAY ~Ah, the veils of illusion have lifted, and truth shines through. I see now, the interconnectedness of all things, the dance of existence.~ IF ~~ THEN GOTO 12
+   SAY ~Ah, the veils of illusion have lifted, and truth shines through like the first rays of dawn.~ IF ~~ THEN GOTO 12
 END
 
 IF ~~ THEN BEGIN DOSE_14
@@ -175,6 +175,10 @@ IF ~~ THEN BEGIN DOSE_15
 END
 
 IF ~~ THEN BEGIN DOSE_16
+   SAY ~...~ IF ~~ THEN GOTO DOSE_17
+END
+
+IF ~~ THEN BEGIN DOSE_17
    SAY ~Un...gh...~
 IF ~~ THEN DO ~
    Kill("h_pruflc")
@@ -184,6 +188,18 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 12
+   SAY ~I see now, the interconnectedness of all things, the grand dance of existence weaving its intricate tapestry.~ IF ~~ THEN GOTO 13
+END
+
+IF ~~ THEN BEGIN 13
+   SAY ~The cosmos speaks in a language of silent understanding, revealing the profound unity of life and spirit.~ IF ~~ THEN GOTO 14
+END
+
+IF ~~ THEN BEGIN 14
+   SAY ~This clarity, it is more than mere perception, it is a transcendent awakening of the soul. I am reborn in the light of this newfound wisdom.~ IF ~~ THEN GOTO 15
+END
+
+IF ~~ THEN BEGIN 15
    SAY ~Thank you, dear traveler, for guiding me to this state of enlightenment. I shall return to my wife with a heart full of wisdom and gratitude. May your journey be filled with light and purpose.~
 IF ~~ THEN DO ~
    EscapeArea()

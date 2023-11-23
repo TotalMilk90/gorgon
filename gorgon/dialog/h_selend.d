@@ -92,11 +92,15 @@ END
 IF ~~ THEN BEGIN 16
    SAY ~Oh, did ye think ye could sneak 'round these parts without us knowin'? We've got our ways, we do.~
 IF ~~ THEN DO ~
+   ActionOverride("h_piratc",EscapeArea())
+   ActionOverride("h_pira2c",EscapeArea())
+   ActionOverride("Vitiare",EscapeArea())
    SetGlobal("h_SelenaQuest","GLOBAL",2)
-   SetGlobal("h_SelenaLeaveArea","GLOBAL",1)
+  // SetGlobal("h_SelenaLeaveArea","GLOBAL",1)
    SetGlobal("h_SpawnSelena","GLOBAL",3)
    SetGlobal("h_SpawnVitiare","GLOBAL",3)
    SetGlobal("h_ProcusQuest","GLOBAL",5)
+   EscapeArea()
    AddJournalEntry(@346,QUEST)
    AddExperienceParty(600)~ EXIT
 END

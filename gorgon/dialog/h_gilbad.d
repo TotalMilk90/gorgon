@@ -12,8 +12,8 @@ IF ~GlobalGT("h_GilbaldQuest","GLOBAL",1) GlobalLT("h_GilbaldQuest","GLOBAL",6)~
    SAY ~Got any leads on the perp?~
        ++ ~Nothing to report yet.~ EXIT
        +~Global("h_KilledXevec","GLOBAL",1)~+ ~It was Xevec. Found him clutchin' fake gold so I dealt with him swiftly.~ GOTO 3
-       +~Global("h_KilledXevec","GLOBAL",2)~+ ~Turns out, Xevec didn't know his fillings were fool's gold, compliments of the dame at the Nashkel manor.~ GOTO 4
-       +~Global("h_DidNotKillXevec","GLOBAL",1)~+ ~Turns out, Xevec didn't know his fillings were fool's gold, compliments of the dame at the Nashkel manor.~ GOTO 4
+       +~Global("h_KilledXevec","GLOBAL",2)~+ ~It was Xevec. Turns out he didn't know his fillings were fool's gold, compliments of the dame at the Nashkel manor.~ GOTO 4
+       +~Global("h_DidNotKillXevec","GLOBAL",1)~+ ~It was Xevec. Turns out he didn't know his fillings were fool's gold, compliments of the dame at the Nashkel manor.~ GOTO 4
 END
 
 IF ~~ THEN BEGIN 3
@@ -32,9 +32,10 @@ IF ~~ THEN BEGIN 4
 IF ~~ THEN DO ~
    SetGlobal("h_GilbaldQuest","GLOBAL",6)
    AddJournalEntry(@619,QUEST_DONE)
-   TakePartyItemAll("h_misc15")
+   TakePartyItem("h_misc15")
+   TakePartyItem("h_misc32")
    DestroyItem("h_misc15")
-   DestroyItem("h_misc15")
+   DestroyItem("h_misc32")
    AddExperienceParty(1000)
    GiveGoldForce(800)~ EXIT
 END

@@ -9,7 +9,7 @@ IF ~~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~A girl's got to make a living somehow, doesn't she? Now, <CHARNAME>, lovely as this little chat's been, I best be on my way. Plenty of shadows left to explore, you know how it is.~ IF ~~ THEN GOTO 3
+   SAY ~A girl's got to make a living somehow, doesn't she? Now, lovely as this little chat's been, I best be on my way. Plenty of shadows left to explore, you know how it is.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 3
@@ -20,7 +20,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~Well, <CHARNAME>, you've got me cornered, haven't you? Caught right in the act. I suppose I played the game a bit too close to the edge and let greed get the best of me.~ IF ~~ THEN GOTO 5
+   SAY ~Well, <CHARNAME>, you've got me cornered, haven't you? Caught right in the act. I played the game a bit too close to the edge, I suppose, and let greed get the best of me.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5

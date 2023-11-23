@@ -12,6 +12,7 @@ END
 
 IF
         Global("h_SpawnThalia","GLOBAL",0)
+        !Exists("h_thalic")
 
 THEN
         RESPONSE #100

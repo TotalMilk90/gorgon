@@ -17,7 +17,7 @@ IF ~~ THEN BEGIN 2
    SAY ~Fourty-thousand gold pieces. I do not negotiate. Given the circumstances, it's a reasonable sum.~
        ++ ~You've got a deal. Allow me to examine the piece first.~ GOTO 5
        ++ ~Where did you acquire such a find?~ GOTO 3
-       ++ ~I am not aligned with the Shadow Thieves, but maybe I can make a better deal.~ GOTO 7
+       ++ ~I am not aligned with the Shadow Thieves, but maybe I can offer a better deal.~ GOTO 7
        ++ ~I've no patience for these theatrics. Unsheathe your daggers, and let's end this farce.~ GOTO 8
 END
 
@@ -28,7 +28,7 @@ END
 IF ~~ THEN BEGIN 4
    SAY ~Fortunately, further investigation revealed its true value. Fortunately for me, that is.~
        ++ ~You've got a deal. Allow me to examine the piece first.~ GOTO 5
-       ++ ~I am not aligned with the Shadow Thieves, but maybe I can make a better deal.~ GOTO 7
+       ++ ~I am not aligned with the Shadow Thieves, but maybe I can offer a better deal.~ GOTO 7
        ++ ~I've no patience for these theatrics. Unsheathe your daggers, and let's end this farce.~ GOTO 8
 END
 
@@ -44,7 +44,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Take me for a fool, do you? No one crosses the Shadow Thieves and lives! You'd have heard that one in the future too, I reckon. If you were going to survive that is.~ IF ~~ THEN GOTO 9
+   SAY ~Take me for a fool, do you? No one crosses the Shadow Thieves and lives! You'd have heard that one at some point, I reckon. If you were going to survive that is.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 8

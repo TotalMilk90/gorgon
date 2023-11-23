@@ -19,7 +19,7 @@ IF ~~ THEN BEGIN 3
 END
 
 IF ~~ THEN BEGIN 4
-   SAY ~You would aid these men for a handful of coin? Is greed the only guide for outsiders like you? It's revolting! Very well, I'll play your game.~ IF ~~ THEN GOTO 5
+   SAY ~You would aid these men for a handful of coin? Is greed the only guide for outsiders like you? It's revolting! But, very well, I'll shall play your little game.~ IF ~~ THEN GOTO 5
 END
 
 IF ~~ THEN BEGIN 5

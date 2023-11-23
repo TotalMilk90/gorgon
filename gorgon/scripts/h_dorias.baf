@@ -3,7 +3,7 @@ IF
          Global("h_DorianQuest","GLOBAL",0)
 THEN
          RESPONSE #100
-                  ActionOverride("h_silas",DestroySelf())
+                  ActionOverride("h_silasc",DestroySelf())
                   DestroySelf()
                   SetGlobal("h_SpawnDorian","GLOBAL",1)
 END

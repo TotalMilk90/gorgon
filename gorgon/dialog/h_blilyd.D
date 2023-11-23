@@ -15,7 +15,7 @@ IF ~~ THEN BEGIN B2
 END
 
 IF ~~ THEN BEGIN B2.5
-   SAY ~What's got the countryside stirring so, that it's sent ye up to our grand city? Seeking solace from the endless rustle of leaves and the melancholic moos, are you?~
+   SAY ~Now, what's got the countryside stirring so, that it's sent ye up to our grand city? Seeking solace from the endless rustle of leaves and the melancholic moos, are you?~
        ++ ~Beregost is playing host to an uninvited guest, Inspector Branic, and I need your help removing him.~ GOTO B3
        ++ ~Inspector Branic. He's become quite the nuisance in our little town and we need him gone.~ GOTO B3
 END

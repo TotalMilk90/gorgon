@@ -8,7 +8,7 @@ IF ~True()~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~If we brought our full might upon you, your guild would crumble. However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 2
+   SAY ~If we brought our full might upon you, your guild would crumble. However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2
@@ -42,7 +42,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 7.5
-   SAY ~You will be entitled to a substantial share of the spoils.~
+   SAY ~You would be entitled to a substantial share of the spoils.~
        ++ ~I refuse. I will not betray the Gorgon's Eye.~ GOTO 8
        ++ ~I accept. I will betray the Gorgon's Eye.~ GOTO 9
 END
@@ -51,6 +51,7 @@ IF ~~ THEN BEGIN 8
    SAY ~A pity. Then we shall end this with bloodshed.~
 IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
+   SetGlobal("h_SpawnSnakeHead","GLOBAL",1)
    Enemy()~ EXIT
 END
 

@@ -50,8 +50,8 @@ END
 IF ~~ THEN BEGIN 5
    SAY ~Aye, it's the guard's request. He wants to keep things from gettin' too rowdy. We wouldn't want no trouble during this fine affair, now would we?~
        ++ ~Is there a way we could work around this restriction? Some guests have a taste for the stronger stuff, and they might appreciate the option.~ GOTO 6
-       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_0
-       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_1
+       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_0
+       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_1
        +~CheckStatLT(Player1,19,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_0
        +~CheckStatGT(Player1,18,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_1
        ++ ~I'll be going now.~ GOTO END_0
@@ -59,8 +59,8 @@ END
 
 IF ~~ THEN BEGIN 6
    SAY ~I understand your concern, I do. But I'm afraid I can't risk it. The guards are being quite vigilant, and I've got to think of the safety of everyone here. I hope you understand.~
-       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women? What do you say?~ GOTO BRIBE_0
-       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women? What do you say?~ GOTO BRIBE_1
+       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_0
+       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_1
        +~CheckStatLT(Player1,19,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_0
        +~CheckStatGT(Player1,18,STR)~+ ~I've heard serious accidents can be pretty common in this line of work. Let's just say it would be in your best interest to find a way to serve the stronger stuff.~ GOTO THREAT_1
        ++ ~I'll be going now.~ GOTO END_0
@@ -81,8 +81,8 @@ IF ~~ THEN BEGIN THREAT_0
        +~RandomNum(2,1)~+ ~Understand this, barkeep. Start dishin' out the hard stuff or you'll be havin' a private chat with my blade.~ GOTO FAILSPIRITS_0
        +~RandomNum(2,2)~+ ~Understand this, barkeep. Start dishin' out the hard stuff or you'll be havin' a private chat with my blade.~ GOTO THREAT_1
        ++ ~Is there a way we could work around this restriction? Some guests have a taste for the stronger stuff, and they might appreciate the option.~ GOTO 6
-       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_0
-       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Women?  Would that be the case here?~ GOTO BRIBE_1
+       +~CheckStatLT(Player1,16,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_0
+       +~CheckStatGT(Player1,15,CHR)~+ ~Sometimes rules can be... adjusted for the right compensation. Coin? Companionship? Would that be the case here?~ GOTO BRIBE_1
        ++ ~I'll be going now.~ GOTO END_0
 END
 
@@ -99,7 +99,11 @@ IF ~~ THEN BEGIN BRIBE_1
 END
 
 IF ~~ THEN BEGIN BRIBE_2
-   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of that one guest over there who appears rather prone to agitation.~
+   SAY ~Just try to keep any trouble to a minimum, alright? We've got some guests in the crowd who are a bit like tinder to a flame. Quick to anger and easily agitated.~ IF ~~ THEN GOTO BRIBE_3
+END
+
+IF ~~ THEN BEGIN BRIBE_3
+   SAY ~Best to steer clear of anything that might ruffle their feathers.~
 IF ~~ THEN DO ~
    SetGlobal("h_Spirits","GLOBAL",2)
    SetGlobal("h_BouncerTalk","GLOBAL",2)
@@ -111,7 +115,11 @@ IF ~~ THEN BEGIN THREAT_1
 END
 
 IF ~~ THEN BEGIN THREAT_2
-   SAY ~Just try to keep any trouble to a minimum, alright? Be especially mindful of... a particular guest over there who seems to be rather prone to agitation.~
+   SAY ~Just try to keep any trouble to a minimum, alright? We've got some guests in the crowd who are a bit like tinder to a flame. Quick to anger and easily agitated.~ IF ~~ THEN GOTO THREAT_3
+END
+
+IF ~~ THEN BEGIN THREAT_3
+   SAY ~Best to steer clear of anything that might ruffle their feathers.~
 IF ~~ THEN DO ~
    SetGlobal("h_Spirits","GLOBAL",2)
    SetGlobal("h_BouncerTalk","GLOBAL",2)

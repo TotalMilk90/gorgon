@@ -58,7 +58,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~This... this is beyond reckoning. I can't fathom the depths of darkness that lead to such an act.~ IF ~~ THEN GOTO 11
+   SAY ~This... this is beyond reckoning. I can't fathom the depths of darkness that led to such an act.~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11

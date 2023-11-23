@@ -69,7 +69,7 @@ IF ~~ THEN BEGIN 10
 END
 
 IF ~~ THEN BEGIN 10.5
-   SAY ~These folks don't mess around, and neither do I. If you want any shot at taking me down, it'll have to be from a deathmatch in the arena.~ IF ~~ THEN GOTO 11
+   SAY ~These folks don't mess around, and neither do I. If you want any shot at taking me down, it's not going to be in here.~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11

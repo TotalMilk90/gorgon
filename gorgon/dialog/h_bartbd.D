@@ -11,6 +11,7 @@ IF ~~ THEN BEGIN B2
    SAY ~Swear on me mum's life, I do! Looked the part, he did. Gorgon's Eye. Then off 'e went, headed 'round the back.~
        ++ ~You better not be trying to set me up, or else this place'll be cinders.~ GOTO B5
        ++ ~I'm not buying it. Pay up or they'll be trouble.~ GOTO B3
+       ++ ~Alright, I trust that you're not lying. I'll look into it.~ GOTO B5
 END
 
 IF ~~ THEN BEGIN B3
@@ -42,5 +43,6 @@ END
 END
 
 EXTEND_TOP BART13 0
-   +~Global("h_ArioshQuest","GLOBAL",11) Global("h_BurningDues","GLOBAL",0)~+ ~I'm here to collect the dues for the Gorgon's Eye. You know the drill.~ GOTO B1
+   +~Global("h_ArioshQuest","GLOBAL",11) Global("h_BurningDues","GLOBAL",0)~+ ~Good evening. I've come to collect the Gorgon's Eye dues.~ GOTO B1
+   +~Global("h_ArioshQuest","GLOBAL",11) Global("h_BurningDues","GLOBAL",0)~+ ~I'm here for the Gorgon's Eye's cut. Pay up now, and we won't have any trouble.~ GOTO B1
 END

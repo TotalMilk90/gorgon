@@ -1,27 +1,32 @@
 BEGIN h_xevecd
 
 IF ~Global("h_GilbaldQuest","GLOBAL",4)~ THEN BEGIN 0
-   SAY ~Don'tcha look down on me! I'll be rollin' in riches, bigger 'n the Silvershields, mark me words!~
-       ++ ~I don't think you'll live long enough to see that.~ GOTO 1
-       ++ ~You have been accused of using fake gold at the Gorgon's Eye hideout. What do you have to say for yourself?~ GOTO 2
+   SAY ~Don'tcha look down on me! I'll be rollin' in riches, bigger 'n the Silvershields, mark me words!~ IF ~~ THEN GOTO 0.5
+END
+
+IF ~~ THEN BEGIN 0.5
+   SAY ~Alright then, what is you want? Quickly! I'm an important man, ya know.~
+       ++ ~Greetings, Xevec. Care to shed some light on these counterfeit coins you've been using around town?~ GOTO 2
+       ++ ~Xevec, you've been accused of using fake gold at our establishments. What do you have to say for yourself?~ GOTO 2
+       ++ ~I think it's time for me to end you misery, Xevec. Any last words?~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
    SAY ~Nah, nah, I ain't just rollin' over! This gold's mine, earned it with my blade, fair 'n square!~
        ++ ~Allow me to test your skills then!~ GOTO 10
-       ++ ~You have been accused of using fake gold at the Gorgon's Eye hideout. What do you have to say for yourself?~  GOTO 2
+       ++ ~Xevec, you've been accused of using fake gold at our establishments. What do you have to say for yourself?~ GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
    SAY ~Absurd, I tell ya! No fake gold here, none!~
        ++ ~It was used at Gilbald's and Meredia's, and you frequented them both.~ GOTO 3
-       ++ ~Allow me to examine your gold, then.~ GOTO 4
+       ++ ~Then allow me to examine your gold.~ GOTO 4
        ++ ~I don't believe you. Time to die!~ GOTO 10
 END
 
 IF ~~ THEN BEGIN 3
    SAY ~Spent some time there, sure, but not so foolish as to flaunt fake coins in their faces, no <PRO_SIRMAAM>!~
-       ++ ~Allow me to examine your gold, then.~ GOTO 4
+       ++ ~Then allow me to examine your gold.~ GOTO 4
        ++ ~I don't believe you. Time to die!~ GOTO 10
 END
 
@@ -51,7 +56,11 @@ IF ~~ THEN BEGIN 8
 END
 
 IF ~~ THEN BEGIN 9
-   SAY ~No lies, no lies! She spoke like she knew Sam. Find the mark, find the woman, mark my words!~
+   SAY ~No lies, no lies! She spoke like she knew Sam.~ IF ~~ THEN GOTO 9.5
+END
+
+IF ~~ THEN BEGIN 9.5
+   SAY ~Find the mark, find the woman, mark my words!~
 IF ~~ THEN DO ~
    SetGlobal("h_GilbaldQuest","GLOBAL",5)
    AddJournalEntry(@613,QUEST)~ EXIT

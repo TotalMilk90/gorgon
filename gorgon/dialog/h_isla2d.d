@@ -15,7 +15,11 @@ IF ~~ THEN BEGIN 2
 END
 
 IF ~~ THEN BEGIN 3
-   SAY ~Fine, if it's a fight you're after, then I'm more than willing to oblige. Let's see if you're as tough as you think you are!~
+   SAY ~Fine, if it's a fight you're after, then I'm more than willing to oblige.~ IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 4
+   SAY ~Let's see if you're as tough as you think you are!~
 IF ~~ THEN DO ~
    SetGlobal("h_IslaAltJournal","GLOBAL",1)
    SetGlobal("h_IslaBounty","GLOBAL",3)

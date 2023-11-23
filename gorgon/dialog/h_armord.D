@@ -7,6 +7,8 @@ IF WEIGHT #-1 ~Global("h_ProcusQuest","GLOBAL",1) Global("h_MerchantMoney","GLOB
        +~CheckStatLT(Player1,18,CHR)~+ ~This tent's on the verge of collapsing. Carnival brass wants everyone out before it comes down like a sack of spuds. Best to clear out now.~ GOTO M5
        ++ ~I'm interested in setting up shop here. How about we discuss a fair price for you to move along?~ GOTO M6
        ++ ~Those wares behind you... I'd like to examine them a bit more closely. (Snap his neck.)~ GOTO M16
+       ++ ~Show me what you have.~ DO ~StartStore("sto4901",LastTalkedToBy(Myself))~ EXIT
+       ++ ~I don't need anything today.~ EXIT
 END
 
 IF ~~ THEN BEGIN M2

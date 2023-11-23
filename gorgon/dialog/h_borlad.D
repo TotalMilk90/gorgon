@@ -14,7 +14,7 @@ END
 
 IF ~~ THEN BEGIN B_11
    SAY ~Consent? Why the bloody hell do I need your consent to conduct business in my own home?~
-       ++ ~Perhaps I'll inform the city guard about your little enterprise.~ GOTO B_12
+       ++ ~Perhaps I'll inform the City Watch about your little enterprise.~ GOTO B_12
        ++ ~You haven't thought this through, friend. I have an entire guild behind me. Do you wish to make us enemies?~ GOTO B_13
        ++ ~Consider it a security fee. You'll still profit, and there won't be any... unforeseen accidents.~ GOTO B_13
        ++ ~It's time for a right lesson, Borland. Prepare yourself!~ GOTO B_14
@@ -22,7 +22,7 @@ IF ~~ THEN BEGIN B_11
 END
 
 IF ~~ THEN BEGIN B_12
-   SAY ~Ha! Good luck with that. The city guard's on my payroll, you bloke.~
+   SAY ~Ha! Good luck with that. I've got the City Watch on my payroll, you bloke.~
        ++ ~You haven't thought this through, friend. I have an entire guild behind me. Do you wish to make us enemies?~ GOTO B_13
        ++ ~Consider it a security fee. You'll still profit, and there won't be any... unforeseen accidents.~ GOTO B_13
        ++ ~It's time for a right lesson, Borland. Prepare yourself!~ GOTO B_14
@@ -67,14 +67,14 @@ END
 
 IF ~~ THEN BEGIN GOOD_1
    SAY ~Oh? And what do you plan to do about it?~
-       ++ ~Perhaps I'll inform the city guard about your little enterprise.~ GOTO GOOD_2
+       ++ ~Perhaps I'll inform the City Watch about your little enterprise.~ GOTO GOOD_2
        ++ ~Think of the lives you are ruining. The pain and torment that comes along with this trade. Do you have no conscious?~ GOTO GOOD_3
        ++ ~Is this truly the legacy you wish to leave, Borland? A dark taint on your reputation?~ GOTO GOOD_4
        ++ ~I'll stop you by force if I have to.~ GOTO GOOD_5
 END
 
 IF ~~ THEN BEGIN GOOD_2
-   SAY ~Ha! Good luck with that. The city guard's on my payroll, you bloke.~
+   SAY ~Ha! Good luck with that. The City Watch's on my payroll, you bloke.~
        ++ ~Think of the lives you are ruining. The pain and torment that comes along with this trade. Do you have no conscious?~ GOTO GOOD_3
        ++ ~Is this truly the legacy you wish to leave, Borland? A dark taint on your reputation?~ GOTO GOOD_4
        ++ ~I'll stop you by force if I have to.~ GOTO GOOD_5
@@ -82,14 +82,14 @@ END
 
 IF ~~ THEN BEGIN GOOD_3
    SAY ~Why should I? I don't force my product on anyone. It is their choice. Although, to be fair, the trade is so lucrative I really wouldn't care anyways.~
-       ++ ~Perhaps I'll inform the city guard about your little enterprise.~ GOTO GOOD_2
+       ++ ~Perhaps I'll inform the City Watch about your little enterprise.~ GOTO GOOD_2
        ++ ~Is this truly the legacy you wish to leave, Borland? A dark taint on your reputation?~ GOTO GOOD_4
        ++ ~I'll stop you by force if I have to.~ GOTO GOOD_5
 END
 
 IF ~~ THEN BEGIN GOOD_4
    SAY ~You bring tears to my eyes, stranger. Tears of laughter, that is. Reputation be damned, all I care for is profit!~
-       ++ ~Perhaps I'll inform the city guard about your little enterprise.~ GOTO GOOD_2
+       ++ ~Perhaps I'll inform the City Watch about your little enterprise.~ GOTO GOOD_2
        ++ ~Think of the lives you are ruining. The pain and torment that comes along with this trade. Do you have no conscious?~ GOTO GOOD_3
        ++ ~I'll stop you by force if I have to.~ GOTO GOOD_5
 END

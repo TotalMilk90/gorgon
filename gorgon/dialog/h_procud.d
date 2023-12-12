@@ -174,7 +174,7 @@ END
 IF ~~ THEN BEGIN SEC_12
    SAY ~Selena's a cunning one, <CHARNAME>, with a wit as sharp as her blade. She knows how to handle herself in any situation, and she's got an uncanny knack for sniffing out profitable opportunities.~ IF ~~ THEN GOTO SEC_13
 END
-
+                   
 IF ~~ THEN BEGIN SEC_13
    SAY ~Earning her respect won't be easy, but once you do, we'll have one of the shrewdest rogues in the realms on our side.~
        ++ ~What should I do if negotiations turn sideways?~ GOTO SEC_7

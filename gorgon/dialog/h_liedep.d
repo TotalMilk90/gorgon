@@ -1,16 +1,17 @@
 BEGIN h_liedep
 
-IF ~Global("KickedOut", "LOCALS", 0)~ THEN BEGIN 0
-   SAY ~A lone wolf I may be once more, but never will I forget the fire we've ignited in each other's hearts.~ IF ~~ THEN GOTO 1
+IF ~Global("h_KickedOut","GLOBAL",0)~ THEN BEGIN 0
+   SAY ~Well now, isn't this a twist in our tale? A moment ago, allies in adventure, and now... this. I must admit, I'm both intrigued and slightly amused.~ IF ~~ THEN GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~I'll seek my destiny with the Shadow Thieves, delve into the depths of intrigue and danger once more.~ IF ~~ THEN GOTO 2
+   SAY ~I understand this game. I'll return to the guild and delve into the depths of intrigue and danger once more. We both know the shadows are where I thrive best.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Goodbye, my dear companion.~
+   SAY ~Until we cross paths again, may your adventures be as thrilling as the ones we dreamt of together. Goodbye, my dear companion.~
 IF ~~ THEN DO ~
-   SetGlobal("KickedOut", "LOCALS", 1)
+   SetGlobal("h_KickedOut","GLOBAL",1)
    EscapeArea()~ EXIT
 END
+

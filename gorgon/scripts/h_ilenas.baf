@@ -1,0 +1,8 @@
+IF
+         GlobalGT("h_TravelToDen","GLOBAL",0)
+         GlobalGT("h_SpawnIlenaDen","GLOBAL",0)
+THEN
+         RESPONSE #100
+                  EscapeArea()
+END
+

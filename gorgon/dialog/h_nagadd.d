@@ -1,10 +1,5 @@
 BEGIN h_nagadd
 
-IF ~!Class([PC],THIEF_ALL)~ THEN BEGIN 0.1
-   SAY ~~ IF ~~ THEN EXIT
-END
-
-
 IF ~Global("h_ThiefBook","GLOBAL",0) Class([PC],THIEF_ALL)~ THEN BEGIN 0
    SAY ~Ah, I see you, shadow-walker, cloaked in the guise of the ordinary. Come closer and bask in the umbral embrace of Mask's sanctum, where light dare not reveal what thrives in the dark.~ IF ~~ THEN GOTO 1
 END
@@ -118,7 +113,7 @@ IF ~Global("h_ThiefBook","GLOBAL",1)~ THEN BEGIN 21
        +~GlobalLT("h_BookNumber","GLOBAL",5)~+ ~I have acquired the necessary gold, priestess. Let us proceed with the exchange for Mask's hidden knowledge.~ GOTO DONATE_1
        +~GlobalGT("h_BookNumber","GLOBAL",4) GlobalLT("h_BookNumber","GLOBAL",11)~+ ~I have acquired the necessary gold, priestess. Let us proceed with the exchange for Mask's hidden knowledge.~ GOTO DONATE_2
        +~GlobalGT("h_BookNumber","GLOBAL",10) GlobalLT("h_BookNumber","GLOBAL",17)~+ ~I have acquired the necessary gold, priestess. Let us proceed with the exchange for Mask's hidden knowledge.~ GOTO DONATE_3
-       ++ ~Nothing at the moment.~ EXIT
+       ++ ~The shadows hold their secrets close, and so do I. My tribute will come in due time.~ EXIT
 END
 
 

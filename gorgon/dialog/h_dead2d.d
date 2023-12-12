@@ -263,6 +263,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_BeatIsla","GLOBAL",2)
    SetGlobal("h_IslaBounty","GLOBAL",2)
    SetGlobal("h_FightingPits","GLOBAL",5)
+   SetGlobal("h_IslaBountyEnd","GLOBAL",1)
    ClearAllActions()
    StartCutSceneMode()
    StartCutScene("h_pigcut")~ EXIT

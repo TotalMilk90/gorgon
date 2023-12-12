@@ -52,7 +52,7 @@ IF ~~ THEN BEGIN 9
 END
 
 IF ~~ THEN BEGIN 10
-   SAY ~I will face this challenge head-on, for the sake of Baldur's Gate and all who call it home. If my fate is to be decided in this turbulent time, so be it. But, I will not go quietly.~
+   SAY ~I will stand ready, for the sake of Baldur's Gate and all who call it home. If my fate is to be decided in this turbulent time, so be it. But, I will not go quietly.~
        ++ ~Your bravery is commendable, Lord Varlind. Baldur's Gate is fortunate to have someone like you.~ GOTO 11
        ++ ~Stubbornness won't save you, Varlind. Sometimes survival means making hard choices.~ GOTO 12
        ++ ~Is there truly no alternative? Is there no path that ensures both your safety and the city's future?~ GOTO 14

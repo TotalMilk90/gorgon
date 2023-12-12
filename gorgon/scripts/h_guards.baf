@@ -15,7 +15,7 @@ THEN
 END
 
 IF
-	Global("h_GerardQuest","GLOBAL",2)
+	Global("h_GerardDismissGuards","GLOBAL",1)
 THEN
 	RESPONSE #100
 		 EscapeArea()

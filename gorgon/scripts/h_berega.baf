@@ -400,6 +400,13 @@ THEN
 END
 
 IF
+        OR(3)
+             Race(Player1,HUMAN)
+             Race(Player1,ELF)
+             Race(Player1,HALF_ELF)
+        Class(Player1,THIEF_ALL)
+        Gender(Player1,MALE)
+        CheckStatGT(Player1,11,CHR)
         TimeOfDay(NIGHT)
         Global("h_SpawnLiedel","GLOBAL",0)
         GlobalGT("h_ShadowWar","GLOBAL",2)

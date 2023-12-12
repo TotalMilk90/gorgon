@@ -9,7 +9,7 @@ IF ~Global("h_FightingPits","GLOBAL",1)~ THEN BEGIN 1
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
        ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
-       ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
+       ++ ~What's the story behind your cat? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
 END
@@ -26,7 +26,7 @@ IF ~~ THEN BEGIN A2
    SAY ~Now, she's retired, leaving behind a legacy that's hard to match. If you aim to challenge Roran, you'll need to be prepared for a brutal fight.~
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
-       ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
+       ++ ~What's the story behind your cat? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
 END
@@ -60,7 +60,7 @@ IF ~~ THEN BEGIN 7
    SAY ~Established guild members also come down to hone their skills, and learn a thing or two from my fighters. Combat training, discipline, and a taste for blood. It's all forged right here.~
        +~Global("h_JoinFightingPits","GLOBAL",0)~+ ~You run the show here, Diomedes? What exactly are the pits?~ DO ~SetGlobal("h_JoinFightingPits","GLOBAL",1)~ GOTO 8
        ++ ~Who is the current champion of the arena?~ GOTO A0
-       ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
+       ++ ~What's the story behind your cat? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
 END
@@ -77,7 +77,7 @@ IF ~~ THEN BEGIN 10
    SAY ~We forge strength, sharpen minds, and temper spirits. It's more than just a stage for combat. It's where we find our real selves, and learn what we're truly capable of.~
        ++ ~Who is the current champion of the arena?~ GOTO A0
        ++ ~How does your work here tie in with the operations of the Gorgon's Eye?~ GOTO 5
-       ++ ~What's the story behind Shadow? She looks like she's seen her fair share of action.~ GOTO 2
+       ++ ~What's the story behind your cat? She looks like she's seen her fair share of action.~ GOTO 2
        +~Global("h_JoinFightingPits","GLOBAL",1)~+ ~I'm looking to prove myself in the pits. How can I get in on the action?~ GOTO 11
        ++ ~I'll be going now.~ EXIT
 END

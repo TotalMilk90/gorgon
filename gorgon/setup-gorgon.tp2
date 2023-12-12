@@ -6,9 +6,9 @@ VERSION ~v4.0~
 LANGUAGE
     ~English~
     ~English~
-~gorgon/lang/english/bios.tra~
 //~gorgon/lang/english/dialog.tra~
 ~gorgon/lang/english/items.tra~
+~gorgon/lang/english/liedel.tra~
 ~gorgon/lang/english/names.tra~
 ~gorgon/lang/english/quests.tra~
 ~gorgon/lang/english/setup.tra~
@@ -159,6 +159,10 @@ COMPILE ~gorgon/dialog/h_rogu2d.d~
 COMPILE ~gorgon/dialog/h_isla2d.d~
 COMPILE ~gorgon/dialog/h_lied2d.d~
 COMPILE ~gorgon/dialog/h_liedep.d~
+COMPILE ~gorgon/dialog/h_ilen2d.d~
+COMPILE ~gorgon/dialog/h_rafaed.d~
+COMPILE ~gorgon/dialog/h_rafa2d.d~
+COMPILE ~gorgon/dialog/h_thie2d.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
 APPEND ~PDIALOG.2da~ ~h_liedec h_liedep~
 
@@ -242,6 +246,14 @@ COMPILE ~gorgon/scripts/h_liecut.baf~
 COMPILE ~gorgon/scripts/h_li2cut.baf~
 COMPILE ~gorgon/scripts/h_isla2s.baf~
 COMPILE ~gorgon/scripts/h_isla1s.baf~
+COMPILE ~gorgon/scripts/h_thalis.baf~
+COMPILE ~gorgon/scripts/h_ilenas.baf~
+COMPILE ~gorgon/scripts/h_rafaes.baf~
+COMPILE ~gorgon/scripts/h_ilen2s.baf~
+COMPILE ~gorgon/scripts/h_rafa2s.baf~
+COMPILE ~gorgon/scripts/h_dencut.baf~
+COMPILE ~gorgon/scripts/h_de2cut.baf~
+COMPILE ~gorgon/scripts/h_thie2s.baf~
 
 
 // Area Scripts
@@ -251,6 +263,7 @@ EXTEND_TOP ~%area_prefix%4900.bcs~ ~gorgon/scripts/h_carnia.baf~
 EXTEND_TOP ~%area_prefix%3300.bcs~ ~gorgon/scripts/h_berega.baf~
 EXTEND_TOP ~%area_prefix%1900.bcs~ ~gorgon/scripts/h_bandia.baf~
 EXTEND_TOP ~%area_prefix%3320.bcs~ ~gorgon/scripts/h_gerara.baf~
+EXTEND_TOP ~%area_prefix%3321.bcs~ ~gorgon/scripts/h_gera2a.baf~
 EXTEND_TOP ~%area_prefix%2303.bcs~ ~gorgon/scripts/h_fai3fa.baf~
 EXTEND_TOP ~%area_prefix%3401.bcs~ ~gorgon/scripts/h_templa.baf~
 EXTEND_TOP ~%area_prefix%3303.bcs~ ~gorgon/scripts/h_red2fa.baf~
@@ -314,10 +327,17 @@ COPY ~gorgon/areas/h_bmar2a.are~ ~override~
           WRITE_ASCII 0x8 ~BG0726~ //update WED resource filename
      END
 
+COMPILE ~gorgon/scripts/h_gorden.baf~
+COPY ~gorgon/areas/h_gorden.are~ ~override~
+     PATCH_IF (isEET == 1) BEGIN
+          WRITE_ASCII 0x8 ~BG0118~ //update WED resource filename
+     END
+
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_flamea.baf~
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_fpitsa.baf~
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_bmarka.baf~
 COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_bmar2a.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_gorden.baf~
 
 // Music
 
@@ -440,6 +460,12 @@ COPY ~gorgon/spells~ ~override~
 COPY ~gorgon/eff~ ~override~
 
 // New Items
+
+COPY ~gorgon/items/h_spin01.spl~ ~override/h_spin01.spl~      // Create Traps
+     SAY NAME1 @163
+     SAY NAME2 @163
+     SAY UNIDENTIFIED_DESC @164
+     SAY DESC @164
 
 COPY ~gorgon/items/h_amul01.itm~ ~override/h_amul01.itm~      // Crystalline Torque
      SAY NAME1 @2
@@ -1014,9 +1040,13 @@ COPY ~gorgon/cre/h_cmaidc.cre~ ~override/h_cmaidc.cre~        // Chambermaid
      SAY NAME1 @907
      SAY NAME2 @907
 
-COPY ~gorgon/cre/h_cour2c.cre~ ~override/h_cour2c.cre~        // Courtesan(2)
-     SAY NAME1 @908
-     SAY NAME2 @908
+COPY ~gorgon/cre/h_rafa2c.cre~ ~override/h_rafa2c.cre~        // Rafaela(2)
+     SAY NAME1 @985
+     SAY NAME2 @985
+
+COPY ~gorgon/cre/h_rafaec.cre~ ~override/h_rafaec.cre~        // Rafaela
+     SAY NAME1 @985
+     SAY NAME2 @985
 
 COPY ~gorgon/cre/h_cour3c.cre~ ~override/h_cour3c.cre~        // Courtesan(3)(Sleeping)
      SAY NAME1 @908
@@ -1070,6 +1100,10 @@ COPY ~gorgon/cre/h_huntec.cre~ ~override/h_huntec.cre~        // Hunter
      SAY NAME1 @916
      SAY NAME2 @916
 
+COPY ~gorgon/cre/h_ilen2c.cre~ ~override/h_ilen2c.cre~        // Ilena(2)
+     SAY NAME1 @917
+     SAY NAME2 @917
+
 COPY ~gorgon/cre/h_ilenac.cre~ ~override/h_ilenac.cre~        // Ilena
      SAY NAME1 @917
      SAY NAME2 @917
@@ -1081,15 +1115,6 @@ COPY ~gorgon/cre/h_isleyc.cre~ ~override/h_isleyc.cre~        // Isley
 COPY ~gorgon/cre/h_katrec.cre~ ~override/h_katrec.cre~        // Katreda
      SAY NAME1 @920
      SAY NAME2 @920
-
-COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~        // Liedel(2)
-     SAY NAME1 @921
-     SAY NAME2 @921
-     
-COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~        // Liedel
-     SAY NAME1 @921
-     SAY NAME2 @921
-     SAY BIO @200000
 
 COPY ~gorgon/cre/h_magnuc.cre~ ~override/h_magnuc.cre~        // Magnus
      SAY NAME1 @922
@@ -1255,6 +1280,14 @@ COPY ~gorgon/cre/h_blactc.cre~ ~override/h_blactc.cre~        // Thief
      SAY NAME1 @952
      SAY NAME2 @952
      
+COPY ~gorgon/cre/h_barthc.cre~ ~override/h_barthc.cre~        // Thief(Burning Wizard)
+     SAY NAME1 @952
+     SAY NAME2 @952
+     
+COPY ~gorgon/cre/h_thie2c.cre~ ~override/h_thie2c.cre~        // Thief(Gerard's Manor)
+     SAY NAME1 @952
+     SAY NAME2 @952
+     
 COPY ~gorgon/cre/h_citywc.cre~ ~override/h_citywc.cre~        // City Watch
      SAY NAME1 @953
      SAY NAME2 @953
@@ -1298,11 +1331,7 @@ COPY ~gorgon/cre/h_whit2c.cre~ ~override/h_whit2c.cre~        // Commander White
 COPY ~gorgon/cre/h_valerc.cre~ ~override/h_valerc.cre~        // Valera
      SAY NAME1 @955
      SAY NAME2 @955
-     
-COPY ~gorgon/cre/h_barthc.cre~ ~override/h_barthc.cre~        // Thief(2)
-     SAY NAME1 @952
-     SAY NAME2 @952
-     
+
 COPY ~gorgon/cre/h_inspec.cre~ ~override/h_inspec.cre~        // Inspector Branic
      SAY NAME1 @956
      SAY NAME2 @956
@@ -1468,13 +1497,72 @@ COPY ~gorgon/cre/h_varlic.cre~ ~override/h_varlic.cre~        // Lord Varlind
 
 ADD_JOURNAL @200 @201 @202 @203 @204 @205 @206 @207 @208 @209
             @210 @211 @212 @213 @214 @215 @216 @217 @218 @219 @220 @221 @222 @223 @224 @225
-            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349 @350 @351 @352 @353 @354 @355 @356 @357 @358 @359
-            @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446 @447 @448 @449 @450 @451 @452 @453 @454 @455 @456 @457 @458 @459 @460 @461 @462 @463 @464 @465
+            @310 @311 @312 @313 @314 @315 @316 @317 @318 @319 @320 @321 @322 @323 @324 @325 @326 @327 @328 @329 @330 @331 @332 @333 @334 @335 @336 @337 @338 @339 @340 @341 @342 @343 @344 @345 @346 @347 @348 @349 @350 @351 @352 @353 @354 @355 @356 @357 @358 @359 @360 @361 @362 @363
+            @410 @411 @412 @413 @414 @415 @416 @417 @418 @419 @420 @421 @422 @423 @424 @425 @426 @427 @428 @429 @430 @431 @432 @433 @434 @435 @436 @437 @438 @439 @440 @441 @442 @443 @444 @445 @446 @447 @448 @449 @450 @451 @452 @453 @454 @455 @456 @457 @458 @459 @460 @461 @462 @463 @464 @465 @466 @467 @468 @469
             @509 @510 @511 @512 @513 @514 @515 @516 @517 @518 @519 @520 @521 @522 @523 @524 @525 @526 @527 @528 @529 @530 @531 @532 @533 @534 @535 @536 @537 @538 @539 @540 @541 @542 @543 @544 @545 @546 @547 @548 @549 @550 @551 @552 @553 @554 @555 @556 @557 @558
             @610 @611 @612 @613 @614 @615 @616 @617 @618 @619 @620
             @710 @711 @712 @713 @714 @715 @716
             @810 @811 @812 @813 @814 @815 @816
             USING ~gorgon/lang/english/quests.tra~
+
+// Liedel
+
+COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~
+     SAY NAME1 @921
+     SAY NAME2 @921
+     SAY INITIAL_MEETING @1043
+     
+COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
+     SAY NAME1 @921
+     SAY NAME2 @921
+     SAY BIO @1000
+     SAY MORALE @1001
+     SAY UNHAPPY_ANNOYED @1002
+     SAY UNHAPPY_SERIOUS @1003
+     SAY LEADER @1004
+     SAY TIRED @1005
+     SAY BORED @1006
+     SAY BATTLE_CRY1 @1012
+     SAY BATTLE_CRY2 @1013
+     SAY BATTLE_CRY3 @1014
+     SAY BATTLE_CRY4 @1015
+     SAY BATTLE_CRY5 @1016
+     SAY DYING @1017
+     SAY HURT @1018
+     SAY AREA_FOREST @1007
+     SAY AREA_CITY @1008
+     SAY AREA_DUNGEON @1009
+     SAY AREA_DAY @1010
+     SAY AREA_NIGHT @1011
+     SAY SELECT_COMMON1 @1019
+     SAY SELECT_COMMON2 @1020
+     SAY SELECT_COMMON3 @1021
+     SAY SELECT_COMMON4 @1022
+     SAY SELECT_COMMON5 @1023
+     SAY SELECT_COMMON6 @1024
+     SAY SELECT_ACTION1 @1025
+     SAY SELECT_ACTION2 @1026
+     SAY SELECT_ACTION3 @1027
+     SAY SELECT_ACTION4 @1028
+     SAY SELECT_ACTION5 @1029
+     SAY SELECT_ACTION6 @1030
+     SAY SELECT_ACTION7 @1031
+     SAY REACT_TO_DIE_GENERAL @1032
+     SAY CRITICAL_HIT @1033
+     SAY CRITICAL_MISS @1034
+     SAY TARGET_IMMUNE @1035
+     SAY INVENTORY_FULL @1036
+     SAY PICKED_POCKET @1037
+     SAY HIDDEN_IN_SHADOWS @1038
+     SAY SPELL_DISRUPTED @1039
+     SAY SET_A_TRAP @1040
+     SAY SELECT_RARE1 @1041
+     SAY SELECT_RARE2 @1042
+     SAY HAPPY @1043
+
+
+
+
 
 BEGIN @100000
 

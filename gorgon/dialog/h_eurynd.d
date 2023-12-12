@@ -236,12 +236,13 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_ring02",LastTalkedToBy,0,0,0)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",9) GlobalGT("h_BetrayBaldwin","GLOBAL",0) Global("h_FakeKery","GLOBAL",1)~ THEN BEGIN BETRAY_0
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",17) Global("h_BountyNumber","GLOBAL",9) GlobalGT("h_BetrayBaldwin","GLOBAL",0) Global("h_FakeKery","GLOBAL",1) Global("h_FinalTalkRhade","GLOBAL",0)~ THEN BEGIN BETRAY_0
    SAY ~<CHARNAME>, over here a moment. A new weapon has just arrived from the far east, the Shortbow of the Shaar. I believe it may be of interest to you.~
 IF ~~ THEN DO ~
    SetGlobal("h_BetrayBaldwin","GLOBAL",3)
    SetGlobal("h_GuildMusic","GLOBAL",3)
    SetGlobal("h_ShadowWar","GLOBAL",8)
+   SetGlobal("h_FinalTalkRhade","GLOBAL",1)
    AddJournalEntry(@224,QUEST)~ EXIT
 END
 

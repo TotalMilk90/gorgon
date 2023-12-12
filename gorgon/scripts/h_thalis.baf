@@ -1,0 +1,8 @@
+IF
+         See([PC])
+         Global("h_TravelToBM","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  Wait(1)
+                  StartDialog("h_thalid",[PC])
+END

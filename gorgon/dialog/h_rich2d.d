@@ -87,7 +87,7 @@ CHAIN
    =
 ~...~
    =
-~<CHARNAME>?~
+~So, this is what it's come to, <CHARNAME>?~
    == h_rich2d
 ~Baldwin, your guild betrays you. <CHARNAME> has seen through your delusions and fights alongside us.~
    =
@@ -101,9 +101,11 @@ CHAIN
    == h_ariosd
 ~If it weren't for Baldwin I'd still be out on the streets. I'll die before I let this guild fall into the hands of you lot!~
    == h_rigald
-~You treacherous wretch! You dare bring our enemies to our very doorstep? You'll pay for this, mark my words.~
+~Betrayal, <CHARNAME>? Leading our foes to the heart of our sanctum? Such treachery cuts deeper than the sharpest blade. You've sealed your fate with this folly.~
    =
-~You were a decent footpad, <CHARNAME>, but now you've gone and double-crossed us. Won't be no redemption for that.~
+~Remember, in the shadowed world we tread, every step is watched, every act remembered. You were once a commendable member of our fold, but this... this double-cross is a sin beyond redemption.~
+   =
+~The shadows may forgive, but we, the Gorgon's Eye, do not.~
    == h_lieded
 ~Finally, some action around here! Sorry, Baldwin, but I think it's time for me to switch things up a bit.~
    =
@@ -111,7 +113,7 @@ CHAIN
    =
 ~I sensed you harbored secrets, <CHARNAME>, but Eury? That was beyond my reckoning.~
    == h_eurynd
-~Heh, I'll take that as a compliment.~
+~Heh. I'll take that as a compliment.~
    =
 ~Shall we get to it then?~
    == h_baldwd

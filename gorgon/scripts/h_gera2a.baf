@@ -1,0 +1,18 @@
+IF
+        Global("h_RigaldoQuest","GLOBAL",4)
+        Global("h_SpawnGerardThief","GLOBAL",0)
+
+THEN
+        RESPONSE #100
+                 CreateCreature("h_thie2c",[395.427],NE)
+                 SetGlobal("h_SpawnGerardThief","GLOBAL",1)
+                 Continue()
+END
+
+IF
+         PartyHasItem("h_misc05")
+THEN
+         RESPONSE #100
+                  AddJournalEntry(@313,QUEST)
+                  Continue()
+END

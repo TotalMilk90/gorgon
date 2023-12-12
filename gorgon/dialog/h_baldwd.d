@@ -105,7 +105,7 @@ IF ~~ THEN BEGIN 21
 END
 
 IF ~~ THEN BEGIN 22
-   SAY ~Armed with knowledge that has been whispered through the ages, tools that whisper death, and magics that dance on the edge of darkness, you will become a phantom that the world barely perceives, yet fears.~ IF ~~ THEN GOTO 23
+   SAY ~Armed with knowledge that has been secreted through the ages, tools that whisper death, and magics that dance on the edge of darkness, you will become a phantom that the world barely perceives, yet fears.~ IF ~~ THEN GOTO 23
 END
 
 IF ~~ THEN BEGIN 23
@@ -235,7 +235,7 @@ IF ~~ THEN BEGIN 48
 END
 
 IF ~~ THEN BEGIN 49
-   SAY ~The goodwill of the Eye is not easily regained, and its wrath, even less so.~ IF ~~ THEN EXIT
+   SAY ~The goodwill of the Gorgon's Eye is not easily regained, and its wrath, even less so.~ IF ~~ THEN EXIT
 END
 
 IF ~~ THEN BEGIN 50
@@ -570,6 +570,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnNagate","GLOBAL",1)
    SetGlobal("h_ShadowWar","GLOBAL",3)
    SetGlobal("h_HideWhitewood","GLOBAL",2)
+   SetGlobal("h_IlenaLeaves","GLOBAL",1)
    ActionOverride("h_ilenac",EscapeArea())
    AddJournalEntry(@214,QUEST_DONE)
    AddJournalEntry(@215,QUEST)~ EXIT
@@ -706,6 +707,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_MerediaQuest","GLOBAL",1)
    SetGlobal("h_LiedelQuest","GLOBAL",5)
    CreateCreature("h_liedec",[762.1342],NE)
+   PlaySound("ACT_07")
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")

@@ -14,7 +14,7 @@ CHAIN
    == h_doriad
 ~Within its confines lie incantations thought lost to time, spells that could unlock unimaginable potential.~
    == h_silasd
-~Your reputation as a master of acquisition is well-earned, Dorian. Your services are invaluable to those who seek true power.~
+~Your reputation as a master of acquisition is well-earned. Your services are invaluable to those who seek true power.~
    =
 ~Tell me, how did you come across this grimoire? I've heard whispers it was being safeguarded by the monks of Candlekeep.~
    == h_doriad
@@ -22,11 +22,11 @@ CHAIN
    =
 ~With the cloak of night, and a well-timed intervention, I liberated it from their watchful eyes, leaving the monks none the wiser.~
    == h_silasd
-~A daring feat, indeed, Dorian. However, do not underestimate the monks when it comes to safeguarding their knowledge.~
+~A daring feat, indeed. However, do not underestimate the monks when it comes to safeguarding their knowledge.~
    =
 ~They are known to possess formidable resources and an unyielding dedication to their collection of tomes. The pursuit of enlightenment is a sacred charge for them.~
    == h_doriad
-~Your caution is duly noted, Silas. Rest assured, my approach was calculated and my tracks have been well-covered.~
+~Your caution is duly noted. Rest assured, my approach was calculated and my tracks have been well-covered.~
    =
 ~The monks of Candlekeep will find no thread to unravel in their pursuit.~
    =

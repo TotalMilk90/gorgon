@@ -2,7 +2,7 @@ IF
     True()
 THEN
     RESPONSE #100
-        CutSceneId(Player1)
+        CutSceneId(LastTalkedToBy())
         FadeToColor([20.0],0)
         Wait(2)
         LeaveAreaLUAPanic("AR0153","",[186.267],N)

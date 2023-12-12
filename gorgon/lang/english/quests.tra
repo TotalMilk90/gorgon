@@ -102,17 +102,17 @@ My initial task from the Gorgon's Eye thieves guild involves purloining a diamon
 
 Well, it seems I've dipped my toes into the murky waters of the Gorgon's Eye thieves guild, and what a thrilling initiation it was. Feldpost's Inn was alive with the muffled whispers of patrons, and shadows danced in every corner. The satisfaction of success coursed through me as I made my way back to Rigaldo. The twinkle in his eye as I presented the gem spoke volumes, and he rewarded me with a treasure of my own: a magical thieving ring. As I slip it on, its latent power resonates with mine, a potent reminder of the path I've chosen. It whispers of future exploits, of shadows yet unexplored, and secrets waiting to be unveiled. The road ahead is uncertain, fraught with danger, but I am undeniably drawn towards it, eager to face whatever challenges come my way.~
 
-@312=~Shadows of Retribution
+@312=~The Price of Protection
 
-Rigaldo has tasked me with persuading Gerard Travenhurst to reinstate the protection payments and surrender his family pendant as collateral. I'll find him in the grand manor located in the northern part of Beregost.~
+Rigaldo has tasked me with a delicate mission, a test of both my lockpicking and persuasion skills. The target is Gerard, a noble who has ceased paying his dues to our guild. My job is to infiltrate his manor, steal a family heirloom from a chest in his upstairs chambers, and then use this necklace to leverage my negotiation. It's time to put my skills to the test and convince Gerard to resume his payments, be it through persuasion or intimidation. I'll find him in the grand manor located in the northern part of Beregost.~
 
-@313=~Shadows of Retribution
+@313=~The Price of Protection
 
-Gerard saw reason and agreed to my terms. I now possess his necklace and have his assurance of ongoing payments. It's time to return to Rigaldo at the Gorgon's Eye hideout and relay the news, although I suspect he might already be aware of the outcome.~
+The mission took an unexpected turn. When I reached the chest in Gerard's chamber, I found another thief already there, necklace in hand. It seems I wasn't the only one with eyes on this prize. A fight ensued, it was him or me, and I wasn't about to falter now. With the necklace now in my possession, this unexpected encounter provides another angle to persuade Gerard. If his security can't even handle multiple thieves, he surely needs our protection more than he realizes.~
 
-@314=~Shadows of Retribution
+@314=~The Price of Protection
 
-After my successful negotiation with Gerard Travenhurst, Rigaldo wasted no time in promoting me to an official member of the Gorgon's Eye thieves guild. It was a swift and unceremonious affair, marked by a nod of approval and a shared understanding of the trust bestowed upon me. This newfound status came with its own set of privileges and responsibilities, signaling a deeper involvement in the clandestine affairs of the guild.~
+Words failed where I hoped they wouldn't. My attempts to negotiate with Gerard fell on deaf ears, and things escalated quickly. In the end, I had no choice but to defend myself against his guards. It was a bloody affair, but it seemed to be the only language Gerard understood. He's agreed to resume his payments, though under duress. I can't help but feel there could have been a less violent way, but what's done is done.~
 
 @315=~Beneath the Ploughshares
 
@@ -152,15 +152,15 @@ Rigaldo was more than pleased with the results of our operation at the Nashkel C
 
 @324=~Bloody Petals
 
-Borland's illicit dealings with black lotus in Beregost have not gone unnoticed by Rigaldo. It's now my task to approach him and ensure he starts sharing a portion of his profits with the Gorgon's Eye. If he proves resistant to this arrangement, I must be prepared to take more forceful measures, which could involve relieving him of his inventory of both spice and coin. This operation demands a delicate touch, but I am more than capable of handling it.~
+Rigaldo has tasked me with handling Borland of Beregost, and his illicit Black Lotus trade. My mission is either to make him an ally, sharing his profits with the guild, or shut down his operation and seize his stock. His house, an ordinary facade across from the Red Sheaf in the east side of town, conceals these darker dealings. The choice I make here could significantly influence the guild's operations in this region and beyond, a reminder of the weight each decision carries in the world of shadows.~
 
 @325=~Bloody Petals
 
-Having paid a visit to Borland, I made my intentions clear. Now, it's time to report back to Rigaldo and update him on the outcome. It remains to be seen whether Borland will cooperate or if further action will be necessary. Either way, the wheels of our operation are in motion.~
+I managed to sway Borland of into agreeing to our terms. He wasn't pleased, but he'll be making regular contributions to the Gorgon's Eye from now on. His spice operation will continue, but under our watchful eye. It's a strategic win for the guild, extending our influence and resources.~
 
 @326=~Bloody Petals
 
-Having dealt with Borland, the sense of accomplishment lingers in the air. Rigaldo's nod of approval is satisfaction enough. It seems I'm making a name for myself within the Gorgon's Eye thieves guild, and who knows what new tasks and challenges await me next.~
+Borland's days of running his illicit spice trade are over. I convinced him to shut down his operation for good. It wasn't an easy decision for him, but it was necessary. The streets of Beregost will be safer without his Black Lotus circulating. This should strengthen the Gorgon's Eye's hold on the town.~
 
 @327=~Order of the Black Lotus
 
@@ -294,6 +294,23 @@ The weight of ages rests in my hands as I hold Netheril's Grimoire of Lost Arcan
 
 The job for Candlekeep is done. 'Netheril's Grimoire' is back in the hands of the monks, and the guild's coffers are considerably heavier for it. Rigaldo seemed pleased with the outcome, and rightfully so. The reward he handed over is more than I expected. It's a good day for a thief, indeed. Now, it's time to consider the next venture. The city is ripe with opportunities, and I aim to take full advantage.~
 
+@360=~The Price of Protection
+
+The power of words triumphs again. I managed to convince Gerard to resume his payments to the guild. It wasn't easy, and it took all my persuasion skills to navigate through his stubbornness and pride. But in the end, reason prevailed, and Gerard saw the sense in our protection.~
+
+@361=~The Price of Protection
+
+After reporting back to Rigaldo about the success of my mission, he wasted no time in promoting me to an official member of the Gorgon's Eye thieves guild. It was a swift and unceremonious affair, marked by a nod of approval and a shared understanding of the trust bestowed upon me. This newfound status came with its own set of privileges and responsibilities, signaling a deeper involvement in the clandestine affairs of the guild.~
+
+@362=~Bloody Petals
+
+I reported back to Rigaldo about the arrangement with Borland. He's going to continue his operation, but he'll be paying a share of his profits to the Gorgon's Eye. Rigaldo seemed pleased with the outcome. It's a subtle way to maintain control while expanding our resources. I received my cut for the job, the guild's success is also my success.~
+
+@363=~Bloody Petals
+
+I've just informed Rigaldo of the successful shutdown of Borland's spice trade. He commended the decision, noting that it eliminates a rogue element in Beregost. The Gorgon's Eye's grip on the town is tighter now. Rigaldo rewarded me for my efforts, it feels good to be recognized for making the tough calls.~
+
+
 
           ///////////////////////////////////
           ///////// Liedel's Quests /////////
@@ -350,11 +367,11 @@ Before I make any final decisions about Aisha's fate, I want to speak with the m
 
 @422=~Liedel's Bounty: Aisha
 
-Amrius won't be bothering Aisha anymore. I should go and inform her of the news. It's a relief to know she can finally find some peace.~
+After a series of discussions and negotiations, Amrius has been convinced to remove the bounty on Aisha. I should go inform her of this development, and let her know she will finally be free from the threat that has been hanging over her head.~
 
 @423=~Liedel's Bounty: Aisha
 
-Aisha was so grateful for my help that she gave me a reward. It's good to see that some people still appreciate kindness in this world. I'll go inform Liedel about what transpired.~
+I have just informed Aisha that the bounty on her has been lifted. However, her reaction was not what I expected. Instead of simple relief or gratitude, her response was disturbingly erratic, hinting at deeper, more turbulent emotions and connections at play. I suspect there was more to this story than I first believed.~
 
 @424=~Liedel's Bounty: Aisha
 
@@ -523,6 +540,24 @@ Isla's reputation as a formidable fighter was no exaggeration. The battle was in
 @465=~Liedel's Bounty: Isla Darkcloak
 
 Despite her fearsome reputation as a former champion and skilled assassin, I managed to best Isla in a battle that tested every skill I possess. Liedel seemed both impressed and intrigued by this feat. It's not every day one takes down a figure as renowned as Isla. This victory, while significant, leaves me pondering the path I've chosen and the battles yet to come. Each encounter shapes me, and this one will certainly leave its mark.~
+
+@466=~Liedel's Bounty: Aisha
+
+The meeting with Amrius painted a starkly different picture. He claims it was Aisha who became aggressive, driven by jealousy at seeing him with another woman. According to him, she attacked, causing the scene at the tavern. This new angle is troubling and casts doubt on Aisha's story. Was she the aggressor as Amrius suggests? Was her tale to me a fabrication, or is Amrius the one twisting the truth? It's time to find out.~
+
+@467=~Liedel's Bounty: Aisha
+
+Amrius has agreed to lift the bounty on Aisha, but his terms are steep, a staggering 1000 gold coins. This demand feels like extortion, an outrageous price for mercy. It's clear that Amrius is exploiting the situation, yet this may be the only way to ensure Aisha's safety. I'm torn between the exorbitant cost and the moral imperative to resolve this matter without bloodshed. The decision weighs heavily on me, as I consider whether to pay this hefty sum or find another way to navigate this morally murky situation.~
+
+@468=~Liedel's Bounty: Aisha
+
+After confronting Aisha with Amrius's side of the story, her reaction was unsettling. She devolved into a catty, unhinged rant about Ilena, a stark contrast to the composed demeanor she initially displayed. Her accusations against her painted a picture of deep-seated jealousy and rivalry. This sudden shift in Aisha's personality has added another layer of complexity to the situation. It's becoming clear that there's more to this story than meets the eye. I should seek out Ilena at the Gorgon's Eye to hear her perspective. Perhaps she holds the key to unraveling this tangled web of emotions and motives.~
+
+@469=~Liedel's Bounty: Aisha
+
+After speaking with Ilena, she offered yet another twisted perspective on this tangled web involving Aisha and Amrius. Fortunately, she is willing to talk to Amrius about lifting the bounty on Aisha. I should check in with Amrius tomorrow to see if Ilena's words had any impact on him. Perhaps her intervention will be the key to resolving this situation once and for all.~
+
+
 
 
 

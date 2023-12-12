@@ -1,0 +1,19 @@
+IF
+        Global("h_SpawnIlenaDen","GLOBAL",1)
+        !Exists("h_ilen2c")
+THEN
+        RESPONSE #100
+                 CreateCreature("h_ilen2c",[209.338],SW)
+                 SetGlobal("h_SpawnIlenaDen","GLOBAL",2)
+                 Continue()
+END
+
+IF
+        Global("h_SpawnRafaelaDen","GLOBAL",1)
+        !Exists("h_rafa2c")
+THEN
+        RESPONSE #100
+                 CreateCreature("h_rafa2c",[209.338],SW)
+                 SetGlobal("h_SpawnRafaelaDen","GLOBAL",2)
+                 Continue()
+END

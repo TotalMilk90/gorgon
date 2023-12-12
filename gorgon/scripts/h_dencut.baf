@@ -1,0 +1,16 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        FadeToColor([20.0],0)
+        Wait(2)
+        LeaveAreaLUAPanic("h_gorden","",[145.380],NW)
+        LeaveAreaLUA("h_gorden","",[145.380],NW)
+        FadeFromColor([20.0],0)
+        Wait(2)
+        EndCutSceneMode()
+END
+
+
+

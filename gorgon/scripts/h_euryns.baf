@@ -4,6 +4,7 @@ IF
         Global("h_BountyNumber","GLOBAL",9)
         GlobalGT("h_BetrayBaldwin","GLOBAL",0)
         Global("h_FakeKery","GLOBAL",1)
+        Global("h_FinalTalkRhade","GLOBAL",0)
 THEN
 	RESPONSE #100
 		 SmallWait(5)

@@ -3,6 +3,7 @@ BEGIN h_barthd
 IF ~Global("h_BurningDues","GLOBAL",1)~ THEN BEGIN 0
    SAY ~Shove off, will ya? I've got some countin' to do, heh.~
        ++ ~Fancy yourself a Gorgon boy, do ya? That's gonna cost ya big time.~ GOTO 1
+       ++ ~I've heard you might have taken something that doesn't belong to you, specifically from the Burning Wizard.~ GOTO 1
 END
 
 IF ~~ THEN BEGIN 1
@@ -16,7 +17,8 @@ END
 IF ~~ THEN BEGIN 3
    SAY ~Here, take the bag, plus a little extra of me own, in good faith. Now let me go, will ya?~
        ++ ~Afraid I can't do that. Stealing from us comes with consequences. You ain't leaving here alive.~ GOTO 4
-       ++ ~Wise choice, lad. Now, scurry off before I change my mind.~ GOTO 5
+       ++ ~Wise choice, lad. Now, scurry off before I change my mind.~ DO ~GiveGoldForce(20)~ GOTO 5
+       ++ ~I'll take the bag, but not your money. Stay out of trouble from now on.~ GOTO 5
 END
 
 IF ~~ THEN BEGIN 4
@@ -27,10 +29,9 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 5
-   SAY ~Yes, <SIRMAAM>, right away, <SIRMAAM>.~
+   SAY ~Yes, <SIRMAAM>, thank you, <SIRMAAM>.~
 IF ~~ THEN DO ~
    AddJournalEntry(@532,QUEST)
    GiveItem("h_misc23",LastTalkedToBy())
-   GiveGoldForce(20)
    EscapeArea()~ EXIT
 END

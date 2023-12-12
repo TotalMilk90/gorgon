@@ -9,8 +9,6 @@ THEN
                   CreateCreature("h_eurync",[700.1220],SE)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
-                  CreateCreature("h_ilenac",[1883.1134],SW)
-                  CreateCreature("h_cour2c",[1888.1198],W)
                   CreateCreature("h_cour3c",[1964.1108],S)
                   CreateCreature("h_cour4c",[1897.1053],S)
                   
@@ -102,16 +100,7 @@ THEN
                   SetGlobal("h_SpawnAriosh","GLOBAL",5)
                   Continue()
 END
-/*
-IF
-         Global("h_RespawnLiedel","GLOBAL",1)
-THEN
-         RESPONSE #100
-                  CreateCreature("h_liedec",[762.1342],NE)
-                  SetGlobal("h_RespawnLiedel","GLOBAL",2)
-                  Continue()
-END
-*/
+
 IF
          Global("h_GuildMusic","GLOBAL",0)
 THEN
@@ -172,14 +161,30 @@ THEN
                   SetGlobal("h_ValeraQuest","GLOBAL",3)
                   Continue()
 END
-/*
+
 IF
-         Global("h_ValeraQuest","GLOBAL",2)
-         Global("h_BlackJoin","GLOBAL",0)
+         Global("h_TravelToDen","GLOBAL",0)
+         Global("h_IlenaLeaves","GLOBAL",0)
+         !Exists("h_ilenac")
 THEN
          RESPONSE #100
-                  CreateCreature("h_blactc",[848.1241],N)
-                  SetGlobal("h_ValeraQuest","GLOBAL",3)
+                  CreateCreature("h_ilenac",[1883.1134],SW)
                   Continue()
 END
-*/
+
+IF
+         Global("h_TravelToDen","GLOBAL",0)
+         !Exists("h_rafaec")
+THEN
+         RESPONSE #100
+                  CreateCreature("h_rafaec",[1888.1198],W)
+                  Continue()
+END
+
+IF
+         Global("h_KickedOut","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_liedec",[762.1342],NE)
+                  SetGlobal("h_KickedOut","GLOBAL",2)
+END

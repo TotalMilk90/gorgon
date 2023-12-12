@@ -432,7 +432,7 @@ Weight: 0~
 @52=~Gerard's Necklace~
 @53=~This heirloom belongs to the Travenhurst family.
 
-Weight: 0~
+Weight: 1~
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @54=~Chunk of Metal~
 @55=~Ogre Blade~
@@ -907,3 +907,22 @@ Requires:
  6 Strength
 
 Weight: 8~
+
+@163=~Create Traps~
+@164=~This unique skill allows Liedel to utilize her extensive knowledge of deadly toxins and intricate trap mechanisms to create and set devious snares for her unsuspecting prey. Once per day, she can craft both a Poison Trap and a Stun Trap, showcasing her ability to control the battlefield and subdue her targets with precision and creativity. These traps are not only tools of her trade but also expressions of her dark artistry in the shadowy world she thrives in.
+
+Poison Trap:
+
+Damage: 3d6, +6 poison, +2d6 poison per round for the next 3 rounds
+Damage Type: Piercing
+
+Weight: 1
+
+
+Stun Trap:
+
+Damage: 2d4+4
+Additional Effect: Stuns target
+Damage Type: Piercing
+
+Weight: 1~

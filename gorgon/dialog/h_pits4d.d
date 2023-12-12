@@ -135,7 +135,7 @@ IF ~Global("h_BeatRoran","GLOBAL",2)~ THEN BEGIN 24
 END
 
 IF ~Global("h_FightingPits","GLOBAL",4)~ THEN BEGIN 25
-   SAY ~Death matches have never been my cup of tea, but I can't deny the intrigue of seeing Isla back in action. She's a force to be reckoned with, and I've seen her unmatched skill firsthand.~ IF ~~ THEN GOTO 26
+   SAY ~Deathmatches have never been my cup of tea, but I can't deny the intrigue of seeing Isla back in action. She's a force to be reckoned with, and I've seen her unmatched skill firsthand.~ IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 26

@@ -205,7 +205,8 @@ IF ~~ THEN DO ~
    EscapeArea()
    SetGlobal("h_ShadowWar","GLOBAL",5)
    SetGlobal("h_PruflasQuest","GLOBAL",3)
-   AddJournalEntry(@334,QUEST)~ EXIT
+   AddJournalEntry(@334,QUEST)
+   AddExperienceParty(800)~ EXIT
 END
 
 

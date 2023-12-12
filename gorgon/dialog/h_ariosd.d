@@ -513,7 +513,7 @@ IF ~~ THEN BEGIN 91
        ++ ~What happens if they refuse to pay?~ GOTO 93
        ++ ~Is there any specific place I should start with?~ GOTO 94
        ++ ~Alright, I'll come back with the payments.~ GOTO 95
-       ++ ~I don't have time for this right now.~ EXIT
+       ++ ~I'm not interested in this kind of work right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 92
@@ -521,6 +521,7 @@ IF ~~ THEN BEGIN 92
        ++ ~What happens if they refuse to pay?~ GOTO 93
        ++ ~Is there any specific place I should start with?~ GOTO 94
        ++ ~Alright, I'll come back with the payments.~ GOTO 95
+       ++ ~I'm not interested in this kind of work right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 93
@@ -528,6 +529,7 @@ IF ~~ THEN BEGIN 93
        ++ ~How much coin should I be collecting from each business?~ GOTO 92
        ++ ~Is there any specific place I should start with?~ GOTO 94
        ++ ~Alright, I'll come back with the payments.~ GOTO 95
+       ++ ~I'm not interested in this kind of work right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 94
@@ -535,6 +537,7 @@ IF ~~ THEN BEGIN 94
        ++ ~How much coin should I be collecting from each business?~ GOTO 92
        ++ ~What happens if they refuse to pay?~ GOTO 93
        ++ ~Alright, I'll come back with the payments.~ GOTO 95
+       ++ ~I'm not interested in this kind of work right now.~ EXIT
 END
 
 IF ~~ THEN BEGIN 95
@@ -932,6 +935,10 @@ IF ~Global("h_ArioshQuest","GLOBAL",22)~ THEN BEGIN 172
    SAY ~Aye, <CHARNAME>, we've got the City Watch dancing to our tune now. We've got work ahead, and it won't be easy, but together, we'll leave our mark on this town.~ IF ~~ THEN EXIT
 END
 
+IF ~Global("h_ArioshQuest","GLOBAL",23)~ THEN BEGIN END_0
+   SAY ~Well, if it ain't the new Guildmaster! What's the plan, boss? Just give the word, and I'm at your service.~
+IF ~~ THEN EXIT
+END
 
 
 
@@ -983,7 +990,7 @@ CHAIN
    == h_ariosd
 ~Aye!~
    == h_baldwd
-~Liedel! Activate the traps at the city's edge. Get them ready, every snare, every tripwire, and ensure they're set to strike with deadly precision.~
+~Liedel! Activate the traps at the city's edge. Get them ready, every snare, every tripwire, ensure they're set to strike with deadly precision.~
    =
 ~Rigaldo! Recall our numbers back from duty and get them blades for the grindstone. We need every edge razor-sharp and ready to slice through shadow and flesh.~
    == h_rigald

@@ -32,29 +32,27 @@ fabled artifact shrouded in ancient power, emerges as his beacon of salvation. W
 to power now within his sights, Baldwin is openly recruiting for his cause, seeking adventures and
 those with ambitious desires to join the ranks of his guild. As they rally to his banner for the
 promise of power and wealth, will they prove strong enough to grasp the elusive might of the
-Kerykeion, or will they merely become pawns in Baldwin's dark designs.
+Kerykeion, or will they merely become pawns in Baldwin's dark designs?
 
 In this game of shadows and intrigue, only the most cunning will prevail.
 
 ============
 Mod Overview
 ============
-The Gorgon's Eye is a content mod for BG:EE and EET that adds an underground
-thieves den into the town of Beregost. It contains new quests, characters,
-stores and items. The area can be accessed immediately after leaving Candlekeep
-and is open to all players, excluding those with a lawful or neutral-good
-alignment.
+The Gorgon's Eye is a content mod for BG:EE and EET that adds an underground thieves den into the
+town of Beregost. It contains new quests, characters, stores and items. The area can be accessed
+immediately after leaving Candlekeep and is open to all players, excluding those with a lawful or
+neutral-good alignment.
 
-After enlisting in the Gorgon's Eye, you'll find yourself undertaking tasks
-that align with the operations of a typical thieves guild. You'll be expected
-to engage in activities such as theft, extortion, smuggling, bounty hunting,
-and assassination. However, it's worth noting that there are satisfying options
-for good and neutral-aligned players. If at any point you find the guild's ways
-aren't to your liking, you have the option to switch allegiances to the City
-Watch and aid them in their mission against the Gorgon's Eye.
+After enlisting in the Gorgon's Eye, you'll find yourself undertaking tasks that align with the
+operations of a typical thieves guild. You'll be expected to engage in activities such as theft,
+extortion, smuggling, bounty hunting, and assassination. However, it's worth noting that there are
+some satisfying options for good and neutral-aligned players. If at any point you find the guild's
+ways aren't to your liking, you have the option to switch allegiances ans aid the City Watch in a
+raid against the Gorgon's Eye.
 
-The component "Add more pickpocketable items" will distribute random treasure
-to generic npcs. (Commoners, nobles, etc.)
+The component "Add more pickpocketable items" will distribute random treasure to generic npcs.
+(Commoners, nobles, etc.)
 
 ===============
 Version History
@@ -63,8 +61,9 @@ Version 4.0:
 -Added new quests from Ariosh, Rigaldo and Liedel
 -Added new quest alternative for "Order of the Black Lotus"
 -Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
--Added new area "The Fighting Pits" accessed via the Gorgon's Eye hideout
--Added new area "The Black Market" accessed via the Baldur's Gate thieves guild
+-Added new area "The Fighting Pits" accessed via Diomedes at the Gorgon's Eye
+-Added new area "The Gorgon's Den" accessed via Meredia at the Gorgon's Eye
+-Added new area "The Black Market" accessed via Thalia at the Baldur's Gate thieves guild
 -Added new portraits to all characters
 -Added more background NPCs to the Gorgon's Eye hideout
 -Added City Watch officers throughout Beregost
@@ -115,27 +114,32 @@ Version 1: ALPHA
 ================
 Acknowledgements
 ================
-This mod would not have been possible without DnD Detective's mod tutorial 
-videos on YouTube. They really helped me bridge the gap between knowing
-absolutely nothing about how to start a mod, to being able to create working
-content.
+This mod would not have been possible without DnD Detective's mod tutorial videos on YouTube. They
+really helped me bridge the gap between knowing absolutely nothing about how to start a mod, to
+being able to create working content.
 
-I also want to give a special thanks to CamDawg and the entire G3 community,
-who answered and provided reference for all my questions.
+I also want to give a special thanks to CamDawg and the entire G3 community, who answered and
+provided reference for all my questions.
 
-BAMWorkshop: Erephine and Sam
-IESDP: igi and lynx
 Music: Hayato Matsuo, Masaharu Iwata and Hitoshi Sakimoto
-NearInfinity: Argent77, Jon Olav Hauglid and FredSRichardson
-Portraits: The NwN Vault
-WeiDU: Wes Weimer, the bigg and Wisp
+Liedel's Voice:
+
+=================
+Mentionable Tools
+=================
+BAMWorkshop
+IESDP
+NearInfinity
+WeiDU
+EEKeeper
+ConTEXT
+GIMP
 
 =====
 Legal
 =====
-This mod is unofficial Fan Content permitted under the Fan Content Policy. Not
-approved/endorsed by Wizards. Portions of the materials used are property of
-Wizards of the Coast. ©Wizards of the Coast LLC. This mod is also not
-developed, supported, or endorsed by BioWare, Black Isle Studios, Interplay
-Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and
-copyrights are property of their respective owners.
+This mod is unofficial Fan Content permitted under the Fan Content Policy. Not approved/endorsed by
+Wizards. Portions of the materials used are property of Wizards of the Coast. ©Wizards of the
+Coast LLC. This mod is also not developed, supported, or endorsed by BioWare, Black Isle Studios,
+Interplay Entertainment Corp., Overhaul Games or Beamdog. All other trademarks and copyrights are
+property of their respective owners.

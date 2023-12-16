@@ -302,6 +302,7 @@ END
 IF ~~ THEN BEGIN BETRAY_9
    SAY ~Let us finish this then.~
 IF ~~ THEN DO ~
+   SetGlobal("h_LiedelBetray","GLOBAL",4)
    SetGlobal("h_SpawnRichard","GLOBAL",1)
    SetGlobal("h_BetrayBaldwin","GLOBAL",4)
    CreateCreature("h_rich2c",[886.1320],N)

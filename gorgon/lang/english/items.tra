@@ -740,7 +740,7 @@ Weight: 5~
 
 STATISTICS:
 
-Damage: 3d6+6
+Damage: 2d6+6
 Damage Type: Piercing
 
 Weight: 1~
@@ -750,7 +750,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: 3d6, +6 poison, +2d6 poison per round for the next 3 rounds
+Damage: 2d6, +6 poison, +1d6 poison per round for the next 3 rounds
 Damage Type: Piercing
 
 Weight: 1~
@@ -760,7 +760,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: 3d6, +3d6 fire
+Damage: 2d6, +2d6 fire
 Damage Type: Piercing
 
 Weight: 1~
@@ -770,7 +770,7 @@ Weight: 1~
 
 STATISTICS:
 
-Damage: 3d6, +6 fire, +6 cold, +6 electricity
+Damage: 2d6, +3 fire, +3 cold, +3 electricity
 Damage Type: Piercing
 
 Weight: 1~
@@ -908,20 +908,25 @@ Requires:
 
 Weight: 8~
 
-@163=~Create Traps~
-@164=~This unique skill allows Liedel to utilize her extensive knowledge of deadly toxins and intricate trap mechanisms to create and set devious snares for her unsuspecting prey. Once per day, she can craft both a Poison Trap and a Stun Trap, showcasing her ability to control the battlefield and subdue her targets with precision and creativity. These traps are not only tools of her trade but also expressions of her dark artistry in the shadowy world she thrives in.
+@163=~Create Snare~
+@164=~This unique skill allows Liedel to utilize her extensive knowledge of deadly toxins and intricate trap mechanisms to create devious snares for her unsuspecting prey. Once per day, she can craft Arachnid's Kiss, showcasing her ability to control the battlefield and subdue her targets with precision and creativity. These traps are not only tools of her trade but also expressions of her dark artistry in the shadowy world she thrives in.
 
-Poison Trap:
+Arachnid's Kiss:
+
+When triggered, this intricate contraption unleashes a flurry of arrows laced with a potent toxin. The arrows spring from hidden compartments, enveloping the target in a deadly embrace. Each arrow carries a neurotoxic venom, engineered to inflict recurring poison damage, debilitating the victim's physical capabilities, and causing intense disorientation. The toxin's paralyzing effect also stuns the target, rendering them vulnerable to further attacks. Crafted with precision and cunning, Arachnid's Kiss is a testament to Liedel's reputation as a formidable bounty hunter and a master of her deadly art.
 
 Damage: 3d6, +6 poison, +2d6 poison per round for the next 3 rounds
+Additional Effect: Stuns target
 Damage Type: Piercing
 
-Weight: 1
+Weight: 1~
 
+@165=~Arachnid's Kiss~
+@166=~When triggered, this intricate contraption unleashes a flurry of arrows laced with a potent toxin. The arrows spring from hidden compartments, enveloping the target in a deadly embrace. Each arrow carries a neurotoxic venom, engineered to inflict recurring poison damage, debilitating the victim's physical capabilities, and causing intense disorientation. The toxin's paralyzing effect also stuns the target, rendering them vulnerable to further attacks. Crafted with precision and cunning, Arachnid's Kiss is a testament to Liedel's reputation as a formidable bounty hunter and a master of her deadly art.
 
-Stun Trap:
+STATISTICS:
 
-Damage: 2d4+4
+Damage: 2d6, +6 poison, +1d6 poison per round for the next 3 rounds
 Additional Effect: Stuns target
 Damage Type: Piercing
 

@@ -1,0 +1,22 @@
+IF
+	AttackedBy([ANYONE],DEFAULT)
+THEN
+	RESPONSE #100
+		 SetGlobal("h_AttackedGuild","GLOBAL",1)
+END
+
+IF
+	Global("h_AttackedGuild","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END
+
+IF
+	Global("h_HelpCityWatch","GLOBAL",1)
+	!Allegiance(Myself,ENEMY)
+THEN
+	RESPONSE #100
+		 Enemy()
+END

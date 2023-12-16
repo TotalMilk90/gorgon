@@ -41,14 +41,14 @@ Mod Overview
 ============
 The Gorgon's Eye is a content mod for BG:EE and EET that adds an underground thieves den into the
 town of Beregost. It contains new quests, characters, stores and items. The area can be accessed
-immediately after leaving Candlekeep and is open to all players, excluding those with a lawful or
-neutral-good alignment.
+immediately after leaving Candlekeep and is open to all players, excluding those with a lawful-good
+alignment.
 
 After enlisting in the Gorgon's Eye, you'll find yourself undertaking tasks that align with the
 operations of a typical thieves guild. You'll be expected to engage in activities such as theft,
 extortion, smuggling, bounty hunting, and assassination. However, it's worth noting that there are
 some satisfying options for good and neutral-aligned players. If at any point you find the guild's
-ways aren't to your liking, you have the option to switch allegiances ans aid the City Watch in a
+ways aren't to your liking, you have the option to switch allegiances and aid the City Watch in a
 raid against the Gorgon's Eye.
 
 The component "Add more pickpocketable items" will distribute random treasure to generic npcs.
@@ -59,28 +59,23 @@ Version History
 ===============
 Version 4.0:
 -Added new quests from Ariosh, Rigaldo and Liedel
--Added new quest alternative for "Order of the Black Lotus"
--Added new encounters to "The Traveler's Gem" and "Borland's Spicy Secret"
+-Added new elements to all of Rigaldo's previous quests
 -Added new area "The Fighting Pits" accessed via Diomedes at the Gorgon's Eye
--Added new area "The Gorgon's Den" accessed via Meredia at the Gorgon's Eye
 -Added new area "The Black Market" accessed via Thalia at the Baldur's Gate thieves guild
 -Added new portraits to all characters
--Added more background NPCs to the Gorgon's Eye hideout
+-Added Liedel as a joinable NPC
 -Added City Watch officers throughout Beregost
 -Added various new items
--Added new thief traps as useable items
 -Added NPC interjections
--Moved previous guild vendors and Danika(now Naga) to the Black Market area
 -Revised quest progression
 -Revised all dialog
--Adjusted reward for weekly guild profits
--Adjusted reward for "No Honor Among Thieves"
+-Adjusted all quest rewards
 -Adjusted "Bombs over Beregost" fight to play nicer with SCS
+-Adjusted journal entries and item descriptions
 -Nerfed various weapons
 -Fixed Counterfiet Coin quest item
 -Fixed "Thief's Compendium" books to grant correct bonuses
 -Fixed missing icon for "Kerykeion: Medusa's Bite"
--Fixed and revised journal entries and item descriptions
 
 Version 3.3:
 -Added pickpocket component

@@ -8,8 +8,8 @@ LANGUAGE
     ~English~
 //~gorgon/lang/english/dialog.tra~
 ~gorgon/lang/english/items.tra~
-~gorgon/lang/english/liedel.tra~
 ~gorgon/lang/english/names.tra~
+~gorgon/lang/english/npcs.tra~
 ~gorgon/lang/english/quests.tra~
 ~gorgon/lang/english/setup.tra~
 
@@ -84,7 +84,6 @@ COMPILE ~gorgon/dialog/h_zieknd.d~
 COMPILE ~gorgon/dialog/h_zieked.d~
 COMPILE ~gorgon/dialog/h_zylard.d~
 COMPILE ~gorgon/dialog/h_prufld.d~
-COMPILE ~gorgon/dialog/h_courtd.d~
 COMPILE ~gorgon/dialog/h_drunkd.d~
 COMPILE ~gorgon/dialog/h_bouncd.d~
 COMPILE ~gorgon/dialog/h_pros2d.d~
@@ -162,6 +161,11 @@ COMPILE ~gorgon/dialog/h_liedep.d~
 COMPILE ~gorgon/dialog/h_ilen2d.d~
 COMPILE ~gorgon/dialog/h_rafaed.d~
 COMPILE ~gorgon/dialog/h_rafa2d.d~
+COMPILE ~gorgon/dialog/h_rafaed.d~
+COMPILE ~gorgon/dialog/h_miriad.d~
+COMPILE ~gorgon/dialog/h_miri2d.d~
+COMPILE ~gorgon/dialog/h_dariud.d~
+COMPILE ~gorgon/dialog/h_dari2d.d~
 COMPILE ~gorgon/dialog/h_thie2d.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
 APPEND ~PDIALOG.2da~ ~h_liedec h_liedep~
@@ -251,6 +255,10 @@ COMPILE ~gorgon/scripts/h_ilenas.baf~
 COMPILE ~gorgon/scripts/h_rafaes.baf~
 COMPILE ~gorgon/scripts/h_ilen2s.baf~
 COMPILE ~gorgon/scripts/h_rafa2s.baf~
+COMPILE ~gorgon/scripts/h_mirias.baf~
+COMPILE ~gorgon/scripts/h_miri2s.baf~
+COMPILE ~gorgon/scripts/h_darius.baf~
+COMPILE ~gorgon/scripts/h_dari2s.baf~
 COMPILE ~gorgon/scripts/h_dencut.baf~
 COMPILE ~gorgon/scripts/h_de2cut.baf~
 COMPILE ~gorgon/scripts/h_thie2s.baf~
@@ -360,30 +368,7 @@ COPY ~gorgon/portraits~ ~override~
 //   New BAMs
 
 COPY ~gorgon/bam~ ~override~
-/*
-COPY ~gorgon/bam/h_arow1b.bam~ ~override~
-COPY ~gorgon/bam/h_bolt1b.bam~ ~override~
-COPY ~gorgon/bam/h_bolt2b.bam~ ~override~
-COPY ~gorgon/bam/h_booksb.bam~ ~override~
-COPY ~gorgon/bam/h_bull1b.bam~ ~override~
-COPY ~gorgon/bam/h_bull2b.bam~ ~override~
-COPY ~gorgon/bam/h_dart2b.bam~ ~override~
-COPY ~gorgon/bam/h_dartbb.bam~ ~override~
-COPY ~gorgon/bam/h_katanb.bam~ ~override~
-COPY ~gorgon/bam/h_misc1b.bam~ ~override~
-COPY ~gorgon/bam/h_misc2b.bam~ ~override~
-COPY ~gorgon/bam/h_misc3b.bam~ ~override~
-COPY ~gorgon/bam/h_potn1b.bam~ ~override~
-COPY ~gorgon/bam/h_potn2b.bam~ ~override~
-COPY ~gorgon/bam/h_slaveb.bam~ ~override~
-COPY ~gorgon/bam/h_slavdb.bam~ ~override~
-COPY ~gorgon/bam/h_spiceb.bam~ ~override~
-COPY ~gorgon/bam/h_sw1h3b.bam~ ~override~
-COPY ~gorgon/bam/h_blun1b.bam~ ~override~
-COPY ~gorgon/bam/h_blun1d.bam~ ~override~
-COPY ~gorgon/bam/h_mis21b.bam~ ~override~
-COPY ~gorgon/bam/h_duesbb.bam~ ~override~
-*/
+
 //   Add entrance to area file
 
 COPY_EXISTING ~%area_prefix%3300.are~ ~override~
@@ -995,6 +980,11 @@ COPY ~gorgon/items/h_leat01.itm~ ~override/h_leat01.itm~      // Isla Darkcloak'
      SAY UNIDENTIFIED_DESC @161
      SAY DESC @162
 
+COPY ~gorgon/items/h_trap07.itm~ ~override/h_trap07.itm~      // Arachnid's Kiss
+     SAY NAME1 @165
+     SAY NAME2 @165
+     SAY UNIDENTIFIED_DESC @166
+     SAY DESC @166
 
 
 
@@ -1048,13 +1038,21 @@ COPY ~gorgon/cre/h_rafaec.cre~ ~override/h_rafaec.cre~        // Rafaela
      SAY NAME1 @985
      SAY NAME2 @985
 
-COPY ~gorgon/cre/h_cour3c.cre~ ~override/h_cour3c.cre~        // Courtesan(3)(Sleeping)
-     SAY NAME1 @908
-     SAY NAME2 @908
+COPY ~gorgon/cre/h_miri2c.cre~ ~override/h_miri2c.cre~        // Miria(2)
+     SAY NAME1 @988
+     SAY NAME2 @988
 
-COPY ~gorgon/cre/h_cour4c.cre~ ~override/h_cour4c.cre~        // Courtesan(4)(Male)
-     SAY NAME1 @908
-     SAY NAME2 @908
+COPY ~gorgon/cre/h_miriac.cre~ ~override/h_miriac.cre~        // Miria
+     SAY NAME1 @988
+     SAY NAME2 @988
+
+COPY ~gorgon/cre/h_dari2c.cre~ ~override/h_dari2c.cre~        // Darius(2)
+     SAY NAME1 @987
+     SAY NAME2 @987
+
+COPY ~gorgon/cre/h_dariuc.cre~ ~override/h_dariuc.cre~        // Darius
+     SAY NAME1 @987
+     SAY NAME2 @987
 
 COPY ~gorgon/cre/h_denebc.cre~ ~override/h_denebc.cre~        // Deneb
      SAY NAME1 @909
@@ -1515,50 +1513,118 @@ COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~
 COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY NAME1 @921
      SAY NAME2 @921
-     SAY BIO @1000
-     SAY MORALE @1001
-     SAY UNHAPPY_ANNOYED @1002
-     SAY UNHAPPY_SERIOUS @1003
-     SAY LEADER @1004
-     SAY TIRED @1005
-     SAY BORED @1006
-     SAY BATTLE_CRY1 @1012
-     SAY BATTLE_CRY2 @1013
-     SAY BATTLE_CRY3 @1014
-     SAY BATTLE_CRY4 @1015
-     SAY BATTLE_CRY5 @1016
-     SAY DYING @1017
-     SAY HURT @1018
-     SAY AREA_FOREST @1007
-     SAY AREA_CITY @1008
-     SAY AREA_DUNGEON @1009
-     SAY AREA_DAY @1010
-     SAY AREA_NIGHT @1011
-     SAY SELECT_COMMON1 @1019
-     SAY SELECT_COMMON2 @1020
-     SAY SELECT_COMMON3 @1021
-     SAY SELECT_COMMON4 @1022
-     SAY SELECT_COMMON5 @1023
-     SAY SELECT_COMMON6 @1024
-     SAY SELECT_ACTION1 @1025
-     SAY SELECT_ACTION2 @1026
-     SAY SELECT_ACTION3 @1027
-     SAY SELECT_ACTION4 @1028
-     SAY SELECT_ACTION5 @1029
-     SAY SELECT_ACTION6 @1030
-     SAY SELECT_ACTION7 @1031
-     SAY REACT_TO_DIE_GENERAL @1032
-     SAY CRITICAL_HIT @1033
-     SAY CRITICAL_MISS @1034
-     SAY TARGET_IMMUNE @1035
-     SAY INVENTORY_FULL @1036
-     SAY PICKED_POCKET @1037
-     SAY HIDDEN_IN_SHADOWS @1038
-     SAY SPELL_DISRUPTED @1039
-     SAY SET_A_TRAP @1040
-     SAY SELECT_RARE1 @1041
-     SAY SELECT_RARE2 @1042
-     SAY HAPPY @1043
+     SAY INITIAL_MEETING @1000
+     SAY HAPPY @1001
+     SAY MORALE @1002
+     SAY UNHAPPY_ANNOYED @1003
+     SAY UNHAPPY_SERIOUS @1004
+     SAY LEADER @1005
+     SAY TIRED @1006
+     SAY BORED @1007
+     SAY BATTLE_CRY1 @1008
+     SAY BATTLE_CRY2 @1009
+     SAY BATTLE_CRY3 @1010
+     SAY BATTLE_CRY4 @1011
+     SAY BATTLE_CRY5 @1012
+     SAY DYING @1013
+     SAY HURT @1014
+     SAY AREA_FOREST @1015
+     SAY AREA_CITY @1016
+     SAY AREA_DUNGEON @1017
+     SAY AREA_DAY @1018
+     SAY AREA_NIGHT @1019
+     SAY SELECT_COMMON1 @1020
+     SAY SELECT_COMMON2 @1021
+     SAY SELECT_COMMON3 @1022
+     SAY SELECT_COMMON4 @1023
+     SAY SELECT_COMMON5 @1024
+     SAY SELECT_COMMON6 @1025
+     SAY SELECT_ACTION1 @1026
+     SAY SELECT_ACTION2 @1027
+     SAY SELECT_ACTION3 @1028
+     SAY SELECT_ACTION4 @1029
+     SAY SELECT_ACTION5 @1030
+     SAY SELECT_ACTION6 @1031
+     SAY SELECT_ACTION7 @1032
+     SAY REACT_TO_DIE_GENERAL @1033
+     SAY SELECT_RARE1 @1034
+     SAY SELECT_RARE2 @1035
+     SAY CRITICAL_HIT @1036
+     SAY CRITICAL_MISS @1037
+     SAY TARGET_IMMUNE @1038
+     SAY INVENTORY_FULL @1039
+     SAY PICKED_POCKET @1040
+     SAY HIDDEN_IN_SHADOWS @1041
+     SAY SPELL_DISRUPTED @1042
+     SAY SET_A_TRAP @1043
+     SAY BIO @1044
+
+
+
+// Danika
+
+COPY ~gorgon/danika/h_danika.cre~ ~override/h_danika.cre~
+     SAY NAME1 @986
+     SAY NAME2 @986
+     SAY MORALE @1051
+     SAY HAPPY @1052
+     SAY UNHAPPY_ANNOYED @1053
+     SAY UNHAPPY_SERIOUS @1054
+     SAY LEADER @1055
+     SAY TIRED @1056
+     SAY BORED @1057
+     SAY BATTLE_CRY1 @1058
+     SAY BATTLE_CRY2 @1059
+     SAY BATTLE_CRY3 @1060
+     SAY BATTLE_CRY4 @1061
+     SAY BATTLE_CRY5 @1062
+     SAY DYING @1063
+     SAY HURT @1064
+     SAY AREA_FOREST @1065
+     SAY AREA_CITY @1066
+     SAY AREA_DUNGEON @1067
+     SAY AREA_DAY @1068
+     SAY AREA_NIGHT @1069
+     SAY SELECT_COMMON1 @1070
+     SAY SELECT_COMMON2 @1071
+     SAY SELECT_COMMON3 @1072
+     SAY SELECT_COMMON4 @1073
+     SAY SELECT_COMMON5 @1074
+     SAY SELECT_COMMON6 @1075
+     SAY SELECT_ACTION1 @1076
+     SAY SELECT_ACTION2 @1077
+     SAY SELECT_ACTION3 @1078
+     SAY SELECT_ACTION4 @1079
+     SAY SELECT_ACTION5 @1080
+     SAY SELECT_ACTION6 @1081
+     SAY SELECT_ACTION7 @1082
+     SAY REACT_TO_DIE_GENERAL @1083
+     SAY SELECT_RARE1 @1084
+     SAY SELECT_RARE2 @1085
+     SAY CRITICAL_HIT @1086
+     SAY CRITICAL_MISS @1087
+     SAY TARGET_IMMUNE @1088
+     SAY INVENTORY_FULL @1089
+     SAY PICKED_POCKET @1090
+     SAY HIDDEN_IN_SHADOWS @1091
+     SAY SPELL_DISRUPTED @1092
+     SAY SET_A_TRAP @1093
+     SAY BIO @1094
+
+
+COMPILE ~gorgon/danika/h_danika.d~
+COMPILE ~gorgon/danika/h_danikp.d~
+COMPILE ~gorgon/danika/h_danikj.d~
+APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj~
+
+COMPILE ~gorgon/danika/h_daniks.baf~
+
+
+
+
+
+
+
 
 
 

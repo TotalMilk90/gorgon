@@ -374,7 +374,7 @@ CHAIN
       ActionOverride("h_game3c",EscapeArea())
       ActionOverride("h_meredc",EscapeArea())
       ActionOverride("h_ilenac",EscapeArea())
-      ActionOverride("h_cour2c",EscapeArea())
-      ActionOverride("h_cour3c",EscapeArea())
-      ActionOverride("h_cour4c",EscapeArea())~
+      ActionOverride("h_rafaec",EscapeArea())
+      ActionOverride("h_miriac",EscapeArea())
+      ActionOverride("h_dariuc",EscapeArea())~
 EXIT

@@ -1,0 +1,13 @@
+IF
+         GlobalGT("h_BetrayBaldwin","GLOBAL",0)
+THEN
+	 RESPONSE #100
+                  DestroySelf()
+END
+
+IF
+         GlobalGT("h_WatchAssault","GLOBAL",0)
+THEN
+	 RESPONSE #100
+                  DestroySelf()
+END

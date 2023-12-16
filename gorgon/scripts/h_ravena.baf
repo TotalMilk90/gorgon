@@ -29,3 +29,11 @@ THEN
                  Continue()
 END
 
+IF
+         Global("h_DanikaKickedOut","GLOBAL",1)
+         Global("h_DanikaGoToAlatos","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_danika",[435.377],S)
+                  SetGlobal("h_DanikaKickedOut","GLOBAL",2)
+END

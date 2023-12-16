@@ -8,7 +8,48 @@ IF ~Global("h_Saradin","GLOBAL",0)~ THEN BEGIN 0
 END
 
 IF ~Global("h_Saradin","GLOBAL",1)~ THEN BEGIN 1
-   SAY ~What is it you seek?~
+   SAY ~<CHARNAME>, the newest shadow amidst our ranks. Your performance has been the subject of much discussion, and in your shadow, there lies potential.~ IF ~~ THEN GOTO 2
+END
+
+IF ~~ THEN BEGIN 2
+   SAY ~As a Hidden One within the Church of Mask, I observe and guide where darkness falls, and it seems you have garnered attention beyond the immediate confines of this guild.~ IF ~~ THEN GOTO 3
+END
+
+IF ~~ THEN BEGIN 3
+   SAY ~Danika, a Demarchess under my tutelage, stands at a crucial juncture in her path of service to Mask.~ IF ~~ THEN GOTO 4
+END
+
+IF ~~ THEN BEGIN 4
+   SAY ~Her training, rich in the lore and practice of our faith, must now be supplemented with practical experience.~ IF ~~ THEN GOTO 5
+END
+
+IF ~~ THEN BEGIN 5
+   SAY ~I have spoken with her about the prospect of joining you on your missions, to not only broaden her horizons but also to lend her unique skills and insights to your endeavors.~ IF ~~ THEN GOTO 6
+END
+
+IF ~~ THEN BEGIN 6
+   SAY ~This proposed alliance is more than a mere addition to your team; it represents a fusion of our sacred arts, enhancing your strategies with the subtlety and cunning our faith embodies.~ IF ~~ THEN GOTO 7
+END
+
+IF ~~ THEN BEGIN 7
+   SAY ~If you find value in this, I encourage you to discuss it further with her. She is well-prepared and awaits your decision.~ IF ~~ THEN GOTO 8
+END
+
+IF ~~ THEN BEGIN 8
+   SAY ~Together, your combined strengths could greatly benefit the objectives at hand and further the enigmatic agenda of our Lord of Shadows.~ IF ~~ THEN GOTO 9
+END
+
+IF ~~ THEN BEGIN 9
+   SAY ~Now, what is it that you seek? How may I assist you in the paths you tread within our enigmatic fold?~
+     //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ EXIT
+       ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO KERY_2
+       ++ ~How did Baldwin become known as "The Butcher"?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO BUTCHER_2
+       ++ ~What is your role here in the guild?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO SARA_2
+       ++ ~Nothing at the moment.~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ EXIT
+END
+
+IF ~Global("h_Saradin","GLOBAL",2)~ THEN BEGIN START_0
+   SAY ~What do you seek on this path? How can I guide you further in our shared pursuit under the cloak of Mask?~
      //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ EXIT
        ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ GOTO KERY_2
        ++ ~How did Baldwin become known as "The Butcher"?~ GOTO BUTCHER_2
@@ -22,7 +63,7 @@ IF ~~ THEN BEGIN KERY_2
        ++ ~What kind of power does the Kerykeion hold?~ GOTO KERY_3
        ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
        ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO 1
+       ++ ~I'd like to ask you about something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN GORGON_0
@@ -62,7 +103,7 @@ IF ~~ THEN BEGIN GORGON_8
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
        ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
        ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
-       ++ ~I'd like to ask you about something else.~ GOTO 1
+       ++ ~I'd like to ask you about something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN KERY_3
@@ -82,7 +123,7 @@ IF ~~ THEN BEGIN KERY_6
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
        ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
        ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO 1
+       ++ ~I'd like to ask you about something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN KERY_7
@@ -114,7 +155,7 @@ IF ~~ THEN BEGIN KERY_13
        ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
        ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
        ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO 1
+       ++ ~I'd like to ask you about something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN SARA_2
@@ -135,7 +176,7 @@ END
 
 IF ~~ THEN BEGIN SARA_6
    SAY ~Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
-       ++ ~I'd like to ask you about something else.~ GOTO 1
+       ++ ~I'd like to ask you about something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN BUTCHER_2
@@ -152,7 +193,7 @@ END
 
 IF ~~ THEN BEGIN BUTCHER_5
    SAY ~To those who glimpsed the aftermath, he was, "The Butcher", a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
-       ++ ~I'd like to ask you something else.~ GOTO 1
+       ++ ~I'd like to ask you something else.~ GOTO START_0
 END
 
 IF ~~ THEN BEGIN BALDWIN_3

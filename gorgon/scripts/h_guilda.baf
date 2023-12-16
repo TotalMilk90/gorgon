@@ -9,9 +9,7 @@ THEN
                   CreateCreature("h_eurync",[700.1220],SE)
 
                   CreateCreature("h_meredc",[1750.1098],SW)
-                  CreateCreature("h_cour3c",[1964.1108],S)
-                  CreateCreature("h_cour4c",[1897.1053],S)
-                  
+
                   CreateCreature("h_gilbac",[1466.1196],SE)
                   CreateCreature("h_gamesc",[1464.1125],S)
                   CreateCreature("h_game2c",[1407.1122],S)
@@ -20,9 +18,8 @@ THEN
                   CreateCreature("h_zedacc",[1054.1314],NW)
                   CreateCreature("h_smuggc",[1098.1288],W)
                   CreateCreature("h_smuggc",[1066.1358],W)
-
-                  CreateCreature("h_kageic",[1194.1429],E)
-                  CreateCreature("h_ophelc",[1234.1371],SE)
+                  
+                  CreateCreature("h_danika",[1317.451],SE)
 
                   SetGlobal("h_GuildSpawn","GLOBAL",1)
                   Continue()
@@ -182,9 +179,36 @@ THEN
 END
 
 IF
+         Global("h_TravelToDen","GLOBAL",0)
+         !Exists("h_miriac")
+THEN
+         RESPONSE #100
+                  CreateCreature("h_miriac",[1964.1108],S)
+                  Continue()
+END
+
+IF
+         Global("h_TravelToDen","GLOBAL",0)
+         !Exists("h_dariuc")
+THEN
+         RESPONSE #100
+                  CreateCreature("h_dariuc",[1897.1053],S)
+                  Continue()
+END
+
+IF
          Global("h_KickedOut","GLOBAL",1)
 THEN
          RESPONSE #100
                   CreateCreature("h_liedec",[762.1342],NE)
                   SetGlobal("h_KickedOut","GLOBAL",2)
+END
+
+IF
+         Global("h_DanikaKickedOut","GLOBAL",1)
+         Global("h_DanikaGoToGorgon","GLOBAL",1)
+THEN
+         RESPONSE #100
+                  CreateCreature("h_danika",[1317.451],SE)
+                  SetGlobal("h_DanikaKickedOut","GLOBAL",2)
 END

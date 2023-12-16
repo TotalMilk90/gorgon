@@ -17,3 +17,23 @@ THEN
                  SetGlobal("h_SpawnRafaelaDen","GLOBAL",2)
                  Continue()
 END
+
+IF
+        Global("h_SpawnMiriaDen","GLOBAL",1)
+        !Exists("h_miri2c")
+THEN
+        RESPONSE #100
+                 CreateCreature("h_miri2c",[209.338],SW)
+                 SetGlobal("h_SpawnMiriaDen","GLOBAL",2)
+                 Continue()
+END
+
+IF
+        Global("h_SpawnDariusDen","GLOBAL",1)
+        !Exists("h_dari2c")
+THEN
+        RESPONSE #100
+                 CreateCreature("h_dari2c",[209.338],SW)
+                 SetGlobal("h_SpawnDariusDen","GLOBAL",2)
+                 Continue()
+END

@@ -1,6 +1,6 @@
 BEGIN h_baldwd
 
-IF WEIGHT #-1 ~OR(2) Alignment(Player1,LAWFUL_GOOD) Alignment(Player1,NEUTRAL_GOOD)~ THEN BEGIN 0
+IF WEIGHT #-1 ~Alignment(Player1,LAWFUL_GOOD)~ THEN BEGIN 0
    SAY ~I think you've stumbled into the wrong place, friend. I'm certain there's a cat ensnared in the branches outside, desperate for your gallant rescue. Now, begone from me. The stench of your sanctimonious bullshit disgusts me.~ IF ~~ THEN EXIT
 END
 
@@ -266,6 +266,8 @@ IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",1)
    SetGlobal("h_FightingPits","GLOBAL",1)
    SetGlobal("h_FightersTalk","GLOBAL",1)
+   SetGlobal("h_LiedelTalk","GLOBAL",1)
+   SetGlobal("h_Danika","GLOBAL",1)
    AddJournalEntry(@202,USER)
    ReputationInc(-2)~ EXIT
 END
@@ -364,7 +366,7 @@ IF ~~ THEN BEGIN 75
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",3)
    SetGlobal("h_SpawnDeneb","GLOBAL",1)
-   SetGlobal("h_Saradin","GLOBAL",1)
+   SetGlobal("h_Saradin","GLOBAL",2)   // Change to 1
    AddJournalEntry(@210,QUEST)~ EXIT
 END
 

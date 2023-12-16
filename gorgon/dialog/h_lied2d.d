@@ -155,8 +155,6 @@ IF ~~ THEN BEGIN 32
    SAY ~Until our next rendezvous, my dear companion.~
 IF ~~ THEN DO ~
    IncrementGlobal("h_LiedelLove","GLOBAL",1)
-   IncrementGlobal("h_LiedelWillJoin","GLOBAL",1)
-   SetGlobal("h_LiedelRomanceActive","GLOBAL",4)
    SetGlobal("h_LiedelKiss","GLOBAL",1)
    SetGlobal("h_LiedelWater","GLOBAL",4)
    EscapeArea()~ EXIT

@@ -1,4 +1,4 @@
-BEGIN h_courtd
+BEGIN h_miriad
 
 IF ~RandomNum(8,8)~ THEN BEGIN 0
    SAY ~A touch of the intimate keeps things... steamy, wouldn't you say, love?~

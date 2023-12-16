@@ -228,7 +228,8 @@ INTERJECT_COPY_TRANS h_valerd 1 saftoval1
 ~Well, this has been a delightful stroll down memory lane, but I've got more important things to do than trade barbs with has-beens.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 28 imotolie28
+/*
+INTERJECT_COPY_TRANS h_lieded 34 imotolie34
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
 ~Hey, I'm from Candlekeep too, you know. It wasn't all dusty books and quiet lessons.~
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
@@ -258,8 +259,9 @@ INTERJECT_COPY_TRANS h_lieded 28 imotolie28
   == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
 ~It speaks volumes about the company you keep. But as for you, my dear, you've been quite the enigma, letting actions and choices speak where words do not.~
 END
+*/
 
-INTERJECT_COPY_TRANS h_lieded 50 montolie50
+INTERJECT_COPY_TRANS h_lieded 74 montolie74
   == %MONTARON_JOINED% IF ~IsValidForPartyDialogue("Montaron")~ THEN
 ~The sweet stench of treachery and debts unpaid. Crossing them that you shouldn't, that's a fool's game, a death warrant, that is.~
   == %XZAR_JOINED% IF ~IsValidForPartyDialogue("Xzar") IsValidForPartyDialogue("Montaron")~ THEN
@@ -268,12 +270,12 @@ INTERJECT_COPY_TRANS h_lieded 50 montolie50
 ~The shadows are whispering, beckoning us to partake in this delightful drama. Let us not dally!~
 END
 
-INTERJECT_COPY_TRANS h_lieded 54 nertolie54
+INTERJECT_COPY_TRANS h_lieded 78 nertolie78
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~From sneaky rogue to penitent pilgrim. Talk about a career change! What next? Is he going for a sainthood? Now, that would be a resume booster.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 56 gartolie56
+INTERJECT_COPY_TRANS h_lieded 80 gartolie80
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~The very thought of her in distress is like a dagger to my heart! She's more than just a familiar face, she's the epitome of beauty, a radiant jewel in our humble town.~
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
@@ -286,7 +288,7 @@ INTERJECT_COPY_TRANS h_lieded 56 gartolie56
 ~Digging too deep into personal affairs can be a dangerous distraction. We have a task at hand, and it's best done without unnecessary questions.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 74 victolie74
+INTERJECT_COPY_TRANS h_lieded 98 victolie98
   == %VICONIA_JOINED% IF ~IsValidForPartyDialogue("Viconia")~ THEN
 ~The mere thought is revolting. To flee into the arms of such sickening, blinding light. It's the coward's way, seeking false hope in empty promises of renewal.~
   == %VICONIA_JOINED% IF ~IsValidForPartyDialogue("Viconia")~ THEN
@@ -636,7 +638,7 @@ INTERJECT_COPY_TRANS h_rigald 170 kagtorig170
 ~You understand the value of subtlety in business, and that's exactly what we're exploiting here.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 192 jahtolie192
+INTERJECT_COPY_TRANS h_lieded 220 jahtolie220
   == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
 ~Wait, just a moment. You're speaking of displacing a dryad, a guardian of the woods, for the sake of a hunting compound?~
   == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
@@ -667,7 +669,7 @@ INTERJECT_COPY_TRANS h_lieded 192 jahtolie192
 ~And me? I'll get my cut for facilitating the deal, just as I always do. It's the way of our world... while one hesitates, another acts. Let's move on then, shall we?~
 END
 
-INTERJECT_COPY_TRANS h_lieded 198 victolie198
+INTERJECT_COPY_TRANS h_lieded 226 victolie226
   == %VICONIA_JOINED% IF ~IsValidForPartyDialogue("Viconia")~ THEN
 ~Don't overestimate the capabilities of those self-righteous buffoons. My history with them has shown me enough to know they are more bark than bite, more concerned with parading their authority than actual competence.~
   == %VICONIA_JOINED% IF ~IsValidForPartyDialogue("Viconia")~ THEN
@@ -676,7 +678,28 @@ INTERJECT_COPY_TRANS h_lieded 198 victolie198
 ~Relying on them to handle a situation with any delicacy is like expecting an ogre to perform surgery. Let's not delude ourselves into thinking they are a threat to our operations.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 229 xzatolie229
+INTERJECT_COPY_TRANS h_lieded 237 shatolie237
+  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~Let's not mince words about this 'noble'. If you don't get to him first, I will. And when I do, his end will be neither quick nor merciful.~
+  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~I'll ensure that his last moments are filled with the kind of agony and terror that will make him wish for death long before it comes.~
+  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~There's an art to pain, a beauty in the fear of a man's eyes when he realizes that death is not the worst thing that can happen to him.~
+  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~Using a child for his vile purposes... he deserves to experience every gruesome and torturous technique I've perfected over the years.~
+  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~It will be a message to any man who dares cross the line we've drawn today.~
+  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~Well, your... enthusiasm is noted, albeit in your uniquely chilling manner. Rest assured, the noble will receive his due, one way or another.~
+  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~I appreciate your readiness to step in, but let's allow subtlety and discretion to guide our actions.~
+  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~We operate in the shadows for a reason, and there's an elegance to handling such matters without resorting to overt barbarism.~
+  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
+~Our message will be clear, our retribution just, without the need for unnecessary spectacle.~
+END
+
+INTERJECT_COPY_TRANS h_lieded 257 xzatolie257
   == %XZAR_JOINED% IF ~IsValidForPartyDialogue("Xzar")~ THEN
 ~Oh, dear, you wound me with your harsh words. To dabble in the art of life and death is not a sign of insanity, no, no, no... it's a sublime exploration of the ultimate power!~
   == %XZAR_JOINED% IF ~IsValidForPartyDialogue("Xzar")~ THEN
@@ -743,27 +766,6 @@ END
 INTERJECT_COPY_TRANS h_magnud 7 xantomag7
   == %XAN_JOINED% IF ~IsValidForPartyDialogue("Xan")~ THEN
     ~Ah, the cycle of life and death, orchestrated by a necromancer no less. How perfectly mundane. Perhaps I should compose an ode to this melancholic affair, though I doubt anyone would care to listen.~
-END
-
-INTERJECT_COPY_TRANS h_lieded 209 shatolie209
-  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~Let's not mince words about this 'noble'. If you don't get to him first, I will. And when I do, his end will be neither quick nor merciful.~
-  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~I'll ensure that his last moments are filled with the kind of agony and terror that will make him wish for death long before it comes.~
-  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~There's an art to pain, a beauty in the fear of a man's eyes when he realizes that death is not the worst thing that can happen to him.~
-  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~Using a child for his vile purposes... he deserves to experience every gruesome and torturous technique I've perfected over the years.~
-  == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~It will be a message to any man who dares cross the line we've drawn today.~
-  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~Well, your... enthusiasm is noted, albeit in your uniquely chilling manner. Rest assured, the noble will receive his due, one way or another.~
-  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~I appreciate your readiness to step in, but let's allow subtlety and discretion to guide our actions.~
-  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~We operate in the shadows for a reason, and there's an elegance to handling such matters without resorting to overt barbarism.~
-  == h_lieded IF ~IsValidForPartyDialogue("Sharteel")~ THEN
-~Our message will be clear, our retribution just, without the need for unnecessary spectacle.~
 END
 
 INTERJECT_COPY_TRANS h_procud 34 saftopro34
@@ -1328,7 +1330,7 @@ INTERJECT_COPY_TRANS h_ariosd 155 alotoari155
 ~This is the nature of our work. We have to be resolute and do what's necessary for the greater good of our mission. It's not about cruelty; it's about survival and strategy.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 307 imotolie307
+INTERJECT_COPY_TRANS h_lieded 335 imotolie335
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") Global("h_LiedelKiss","GLOBAL",1)~ THEN
 ~Hey now, let's not forget who else was there, fighting off those Shadow Thieves. It wasn't just <CHARNAME> doing all the heroic stuff, you know. I was right there in the thick of it too!~
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
@@ -1353,7 +1355,7 @@ INTERJECT_COPY_TRANS h_lieded 307 imotolie307
 ~And as for being swept up, isn't a bit of excitement what makes life interesting?~
 END
 
-INTERJECT_COPY_TRANS h_lieded 341 jahtolie341
+INTERJECT_COPY_TRANS h_lieded 369 jahtolie369
   == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
 ~Liedel, your suggestion weighs heavily on the side of profit, but what of the moral cost? This alchemist, Alaric, has developed something that could save countless lives.~
   == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
@@ -1386,7 +1388,7 @@ INTERJECT_COPY_TRANS h_lieded 341 jahtolie341
 ~Nevertheless, this is a debate for another time. For now, let's focus on the task at hand.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 345 skitolie345
+INTERJECT_COPY_TRANS h_lieded 373 skitolie373
   == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
 ~Oh, Liedel, I think you might have Lord Varlind all wrong. I've met him at several functions, you know, being around my father and all.~
   == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
@@ -1411,7 +1413,7 @@ INTERJECT_COPY_TRANS h_lieded 345 skitolie345
 ~Whether he's a diligent worker or a man of leisure, there's always more to uncover.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 350 shatolie350
+INTERJECT_COPY_TRANS h_lieded 378 shatolie378
   == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
 ~A former champion of the fighting pits turned ruthless assassin? Now that's a woman after my own heart. The thrill of the arena, the rush of battle... Isla Darkcloak sounds like she knows what it means to truly live.~
   == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
@@ -1420,7 +1422,7 @@ INTERJECT_COPY_TRANS h_lieded 350 shatolie350
 ~To face a legend in combat, to match skills with someone who's seen the heat of countless duels... that's not an opportunity that comes every day. This is one confrontation I'm eager to have.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 361 alotolie361
+INTERJECT_COPY_TRANS h_lieded 389 alotolie389
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Alora")~ THEN
 ~Those poor creatures... they didn't ask to be a part of his weird alchemy stuff. Maybe we can help them too, while we're snooping around for this workshop.~
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Alora")~ THEN
@@ -1431,7 +1433,38 @@ INTERJECT_COPY_TRANS h_lieded 361 alotolie361
 ~They deserve to be safe and happy, not stuck in some creepy alchemist's lab. We've got to do what we can to help them. It's just the right thing to do.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 385 shatolie385
+INTERJECT_COPY_TRANS h_lieded 393 jahtolie393
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~Your choice to aid the healers and the afflicted shows a commendable spirit, <CHARNAME>. It is heartening to see such selflessness in action.~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~You have chosen wisely, standing on the side of the people and their well-being.~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~This decision not only aids those suffering from featherlung but also honors the balance of life, something we should all strive to protect. Well done.~
+END
+
+INTERJECT_COPY_TRANS h_lieded 395 jahtolie395
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~To place such a vital cure in the hands of those who see it merely as a means for profit... it goes against the very essence of what it means to heal and protect.~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~This serum could have been a beacon of hope for all, regardless of wealth. Instead, you have chosen a path that favors the few while the many continue to suffer.~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~It is a disappointing and shortsighted choice, one that disregards the balance and fairness we should strive to uphold. I had hoped for a more compassionate and equitable decision from you.~
+END
+
+INTERJECT_COPY_TRANS h_lieded 407 skitolie407
+  == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
+~Varlind... No... He was a good man, involved in the city's politics, always with Baldur's Gate's best interests at heart.~
+  == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
+~We can't let them get away with this. Whoever did this, they need to be brought to justice, to pay for what they've done. Baldur's Gate deserves better.~
+  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
+~Ah, my lady... such fiery words from one often seen as so delicate. It's always the quiet waters that run deep, isn't it?~
+  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
+~But let's not be too hasty in seeking vengeance. In our line of work, emotions can be a dangerous luxury.~
+  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
+~Remember, the streets of Baldur's Gate are a treacherous playground. While your thirst for justice is admirable, we must tread carefully.~
+END
+
+INTERJECT_COPY_TRANS h_lieded 413 shatolie413
   == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
 ~The way you speak of Isla, it awakens something... untamed within me, a fiery passion smoldering deep inside. Her quickness, her brutality, these are not just traits I respect in a warrior, but quite frankly, in a woman.~
   == %SHARTEEL_JOINED% IF ~IsValidForPartyDialogue("Sharteel")~ THEN
@@ -1558,37 +1591,6 @@ INTERJECT_COPY_TRANS h_isla2d 3 shatois3
 ~Let's see if you live up to your fearsome reputation. I'm eager to find out if your combat skills are as impressive as your... physical form.~
   == h_isla2d IF ~IsValidForPartyDialogue("Sharteel")~ THEN
 ~It's not often someone praises my looks and my fighting skills in the same breath. I can see you're not one to shy away from speaking your mind or challenging a worthy opponent.~
-END
-
-INTERJECT_COPY_TRANS h_lieded 365 jahtolie365
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~Your choice to aid the healers and the afflicted shows a commendable spirit, <CHARNAME>. It is heartening to see such selflessness in action.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~You have chosen wisely, standing on the side of the people and their well-being.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~This decision not only aids those suffering from featherlung but also honors the balance of life, something we should all strive to protect. Well done.~
-END
-
-INTERJECT_COPY_TRANS h_lieded 367 jahtolie367
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~To place such a vital cure in the hands of those who see it merely as a means for profit... it goes against the very essence of what it means to heal and protect.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~This serum could have been a beacon of hope for all, regardless of wealth. Instead, you have chosen a path that favors the few while the many continue to suffer.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~It is a disappointing and shortsighted choice, one that disregards the balance and fairness we should strive to uphold. I had hoped for a more compassionate and equitable decision from you.~
-END
-
-INTERJECT_COPY_TRANS h_lieded 379 skitolie379
-  == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
-~Varlind... No... He was a good man, involved in the city's politics, always with Baldur's Gate's best interests at heart.~
-  == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Skie")~ THEN
-~We can't let them get away with this. Whoever did this, they need to be brought to justice, to pay for what they've done. Baldur's Gate deserves better.~
-  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
-~Ah, my lady... such fiery words from one often seen as so delicate. It's always the quiet waters that run deep, isn't it?~
-  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
-~But let's not be too hasty in seeking vengeance. In our line of work, emotions can be a dangerous luxury.~
-  == h_lieded IF ~IsValidForPartyDialogue("Skie")~ THEN
-~Remember, the streets of Baldur's Gate are a treacherous playground. While your thirst for justice is admirable, we must tread carefully.~
 END
 
 INTERJECT_COPY_TRANS h_meredd 52 gartomer52
@@ -1773,7 +1775,7 @@ INTERJECT_COPY_TRANS h_quassd 12 edwtoqua12
 ~A masterstroke, albeit one that only works on the less... intellectually endowed.~
 END
 
-INTERJECT_COPY_TRANS h_lieded 474 imotolie474
+INTERJECT_COPY_TRANS h_lieded 512 imotolie512
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
 ~Oh, c'mon, you two. Really? Right here, right now? Yuck! Get a room or something.~
   == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
@@ -1910,8 +1912,6 @@ INTERJECT_COPY_TRANS h_pits4d 6 jahto4pf6
   == h_pits4d IF ~IsValidForPartyDialogue("Jaheira")~ THEN
 ~Your familiarity with Silverymoon, brings warmth to my heart. Indeed, the city and its surrounding nature were my sanctuary, my place of learning and growth.~
 END
-
-
 
 
 

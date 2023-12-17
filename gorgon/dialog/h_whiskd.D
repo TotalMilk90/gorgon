@@ -34,7 +34,7 @@ IF ~~ THEN BEGIN J4
 END
 
 IF ~~ THEN BEGIN J5
-   SAY ~ Look, mate, I've heard every tall tale you could imagine these sailors be bringin' in. It's all the same. The price stays at four hundred gold. Take it or leave it.~
+   SAY ~Look, mate, I've heard every tall tale you could imagine these sailors be bringin' in. It's all the same. The price stays at four hundred gold. Take it or leave it.~
        +~PartyGoldGT(399)~+ ~Alright, four hundred gold it is. Here you are.~ GOTO J6
        +~CheckStatGT(Player1,19,STR)~+ ~'Free' sounds like a much better deal for me, if you're not wanting any trouble that is.~ GOTO J2
        +~CheckStatLT(Player1,20,STR)~+ ~'Free' sounds like a much better deal for me, if you're not wanting any trouble that is.~ GOTO J3

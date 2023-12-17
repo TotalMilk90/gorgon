@@ -5,7 +5,7 @@ IF ~GlobalLT("h_RigaldoQuest","GLOBAL",5)~ THEN BEGIN 0
 END
 
 IF ~GlobalGT("h_RigaldoQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",0)~ THEN BEGIN 1
-   SAY ~Ah, you're not one of the usual faces I see around here. The name's Ariosh, and I'm the eyes and ears on the streets.~ IF ~~ THEN GOTO 2
+   SAY ~Ah, you're not one of the usual faces I see around here. The name's Ariosh, and I'm the eyes and ears on the streets.~ IF ~~ THEN GOTO 3
 END
 
 IF ~GlobalGT("h_RigaldoQuest","GLOBAL",9) Global("h_ArioshQuest","GLOBAL",0)~ THEN BEGIN 2

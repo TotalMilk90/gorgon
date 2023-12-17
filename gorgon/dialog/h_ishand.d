@@ -184,7 +184,7 @@ CHAIN
    == h_ishand
 ~I can play that part. What comes next?~
    == h_ariosd
-~You'll use your... feminine wiles to entice him into sharin' a drink. Work you charm and keep him distracted.~
+~You'll use your... feminine wiles to entice him into sharin' a drink. Work your charm and keep him distracted.~
    =
 ~The bartender will graciously present the whiskey to the Inspector, only, we've made a few... adjustments.~
    =

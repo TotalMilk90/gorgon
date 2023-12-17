@@ -47,7 +47,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~In th' heart o' Nashkel, within th' Amnian army's barracks, there's a set o' documents that would do wonders in clearin' my crew's name o' any unlawful misgivin's.~ IF ~~ THEN GOTO 8
+   SAY ~In th' heart o' Nashkel, within th' Amnian army's barracks, there's a set o' documents that would do wonders in clearin' me crew's name o' any unlawful misgivin's.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8

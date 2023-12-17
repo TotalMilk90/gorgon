@@ -40,7 +40,7 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Now, what I sought is securely in my grasp, and any details of our exchange have perished with him. In our world, silence is often the most effective form of negotiation.~
+   SAY ~What I sought is securely in my grasp, and any details of our exchange have perished with him. In our world, silence is often the most effective form of negotiation.~
        ++ ~Baldwin spoke of you. He recalled a past where you both walked as comrades in the shadows.~ GOTO 9
        ++ ~Why are the Shadow Thieves obstructing Baldwin's quest for the Kerykeion? What's your endgame here?~ DO ~SetGlobal("h_ThamuzKery","GLOBAL",1)~ GOTO 12
        ++ ~Why the attack on Beregost? Wouldn't a discreet approach to Nagate have served your purposes better?~ DO ~SetGlobal("h_ThamuzHired","GLOBAL",1)~ GOTO 20

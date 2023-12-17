@@ -440,9 +440,9 @@ INTERJECT_COPY_TRANS h_ilenad 19 gartoile19
   == h_ilenad IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~Well, thank you for the kind words, Garrick. It was indeed a hectic night, but I managed to stay out of harm's way. And, um, yes, it's a pleasure to meet you too.~
   == h_ilenad IF ~IsValidForPartyDialogue("Garrick")~ THEN
-~Now, returning to the matter of Aisha and Amrius, ~
+~Now, returning to the matter of Aisha and Amrius. It's crucial that we address their predicament with the seriousness it deserves.~
   == h_ilenad IF ~IsValidForPartyDialogue("Garrick")~ THEN
-~Their situation is indeed troubling, and it's something I'd rather not relive too often. Such events can leave a lasting impression, and not always for the better.~
+~Their situation is very troubling, and it's something I'd rather not relive too often. Such events can leave a lasting impression, and not always for the better.~
 END
 
 INTERJECT_COPY_TRANS h_ilenad 23 nertoile23
@@ -592,7 +592,7 @@ INTERJECT_COPY_TRANS karp 9 jahtokar9
   == karp IF ~IsValidForPartyDialogue("Jaheira")~ THEN
 ~I understand your concerns, and I'm grateful for your advice. It's true, Athkatla may have its dangers, but for me and my son, it represents our only chance at a new life.~
   == karp IF ~IsValidForPartyDialogue("Jaheira")~ THEN
-~We're simple folk, and the threat here is known and immediate. We have nowhere else to turn. For now, we will still look ahead, and wait for your aid in finding a safe passage.~
+~We're simple folk, and the threat here is known and immediate. We have nowhere else to turn. For now, we will still look ahead, and wait for aid in finding a safe passage.~
 END
 
 INTERJECT_COPY_TRANS karp 30 jahtokar30
@@ -975,7 +975,7 @@ INTERJECT_COPY_TRANS h_baldwd 141 edwtobal141
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Alora")~ THEN
 ~Making people happy is a pretty good use of power, if you ask me. And who knows, you might even find it fun!~
   == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Alora")~ THEN
-~I do not engage in these endeavors for 'fun'. My goals are far more significant.~
+~I do not engage in these endeavors for 'fun', Alora. My goals are far more significant.~
   == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Alora")~ THEN
 ~However... I suppose there is some merit in ensuring the contentment of those around me. (Reluctantly, I admit, a content populace can be... useful.)~
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Alora")~ THEN
@@ -1313,7 +1313,7 @@ INTERJECT_COPY_TRANS h_ariosd 148 gartoari148
 ~Skie deserves better than your constant belittlement. How you fail to see the treasure you have in her, I'll never understand.~
   == %ELDOTH_JOINED% IF ~IsValidForPartyDialogue("Eldoth") IsValidForPartyDialogue("Garrick") IsValidForPartyDialogue("Skie")~ THEN
 ~Always the knight in shining armor. Do you ever tire of playing the hero? She's with me, remember? Or are you just envious?~
-  == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Eldoth") IsValidForPartyDialogue("Garrick") IsValidForPartyDialogue("Skie")~ THEN
+  == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Eldoth") IsValidForPartyDialogue("Garrick") IsValidForPartyDialogue("Skie")~ THEN
 ~This isn't about envy, Eldoth; it's about decency, something you're sorely lacking. Skie isn't some prize to be won; she's a person, deserving of respect and kindness.~
   == %SKIE_JOINED% IF ~IsValidForPartyDialogue("Eldoth") IsValidForPartyDialogue("Garrick") IsValidForPartyDialogue("Skie")~ THEN
 ~Thank you, Garrick. And you, Eldoth, if you can't treat me with respect, then maybe you should reconsider why you're with me in the first place.~
@@ -1644,7 +1644,7 @@ INTERJECT_COPY_TRANS h_ilenad 35 gartoile35
 ~Well, if you must, at least promise me it'll be more about the strength and less about the damsel part? And maybe keep it to a minimum on the lute strumming.~
 END
 
-INTERJECT_COPY_TRANS h_meredd 64 gartomer64
+INTERJECT_COPY_TRANS h_meredd 66 gartomer66
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~Madam Meredia, your words... they're as beautiful as they are heart-wrenching. You've painted a picture of Ilena that captures not just her essence, but the very soul of her being.~
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN

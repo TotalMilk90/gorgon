@@ -120,7 +120,7 @@ IF ~~ THEN BEGIN 24
 END
 
 IF ~~ THEN BEGIN 25
-   SAY ~Really? You'd do that for me? Oh, thank you! Thank you so much. I've heard that he's still at The Burning Wizard, probably nursing his wounds and his pride after... our altercation.~ IF ~~ THEN GOTO 26
+   SAY ~Really? You'd do that for me? Oh, thank you! Thank you so much. I've heard that he's still at the Burning Wizard, probably nursing his wounds and his pride after... our altercation.~ IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 26

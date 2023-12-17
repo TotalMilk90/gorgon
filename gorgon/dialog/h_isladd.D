@@ -60,7 +60,7 @@ END
 IF ~~ THEN BEGIN 9
    SAY ~This isn't the pits, and starting a brawl here won't end well for anyone involved. So, if you've come to make trouble, you might want to think twice.~
        +~See(Player1) Global("h_PitsChamp","GLOBAL",1)~+ ~Then I challenge you to a deathmatch. It's time to see if your talk is worth anything in the pits..~ GOTO 16
-       +~!See(Player1) Global("h_PitsChamp","GLOBAL",1)~+ ~Then I challenge you to a deathmatch against the reigning champ, <CHARNAME>. It's time to see if your talk is worth anything in the pits.~ GOTO 19
+       +~!See(Player1) Global("h_PitsChamp","GLOBAL",1)~+ ~Then I challenge you to a deathmatch against <CHARNAME>, the reigning champ. It's time to see if your talk is worth anything in the pits.~ GOTO 19
        +~Global("h_PitsChamp","GLOBAL",0)~+ ~Trouble? This place doesn't scare me. What's stopping me from taking you out right now?~ GOTO 10
 END
 

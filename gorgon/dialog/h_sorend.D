@@ -7,7 +7,7 @@ END
 IF ~~ THEN BEGIN 1
    SAY ~You have the look of someone seeking... information. Lucky for you, knowledge is my trade. For the right price, of course.~
        +~OR(2) Global("h_Ravenscar","GLOBAL",1) Global("h_Ravenscar","GLOBAL",2)~+ ~There was a shipment of tomes bound for Candlekeep that never made it to their destination. Know anything about it?~ GOTO 2
-       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0) Exists("h_islacc")~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
        ++ ~I'm not interested.~ EXIT
 END
 
@@ -84,7 +84,7 @@ END
 IF ~Global("h_SorenQuest","GLOBAL",1)~ THEN BEGIN 16
    SAY ~Rely on your true rogue senses and skills to hide in the shadows. Once you've done so, I shall be here, ready to provide you with the location of those coveted tomes.~
        ++ ~Understood. I'll stick to the shadows and get the job done.~ EXIT
-       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0) Exists("h_islacc")~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
 END
 
 IF ~GlobalGT("h_SorenQuest","GLOBAL",2) GlobalLT("h_SorenQuest","GLOBAL",5)~ THEN BEGIN 17
@@ -141,14 +141,14 @@ END
 IF ~Global("h_SorenQuest","GLOBAL",5)~ THEN BEGIN 26
    SAY ~I trust you've come prepared with the necessary funds? Once I have them, I'll gladly share my information about the tomes.~
        +~PartyGoldGT(1999)~+ ~Here are the 2000 gold coins. Now, tell me what I need to know.~ GOTO 19
-       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0) Exists("h_islacc")~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
        ++ ~I'm still working on it.~ EXIT
 END
 
 IF ~Global("h_SorenQuest","GLOBAL",6)~ THEN BEGIN 27
    SAY ~Ah, the art of information. It's a dance of whispers and shadows, my friend. A dance I've become rather adept at, if I do say so myself.~
        ++ ~Your talents are noted, Soren. I'll reach out when your particular brand of expertise is required.~ EXIT
-       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0)~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
+       +~Global("h_IslaBounty","GLOBAL",1) Global("h_IslaSorenQuest","GLOBAL",0) Exists("h_islacc")~+ ~I need information on Isla Darkcloak. She's a fortress within these markets, untouchable. I need to know her usual routes, habits, weaknesses, anything that can be exploited.~ GOTO 28
 END
 
 IF ~~ THEN BEGIN 28

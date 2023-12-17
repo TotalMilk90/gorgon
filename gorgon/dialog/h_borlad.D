@@ -1,6 +1,6 @@
 APPEND MTBE5
 
-IF WEIGHT #-1 ~OR(2) Global("h_BorlandPays","GLOBAL",0) Global("h_BorlandCloses","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",12)~ THEN BEGIN B_0
+IF WEIGHT #-1 ~Global("h_BorlandPays","GLOBAL",0) Global("h_BorlandCloses","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",12)~ THEN BEGIN B_0
    SAY ~Ah, welcome to my humble abode. I'm not accustomed to receiving guests unannounced, but I'm always open to new faces. What brings you to my doorstep today?~
        ++ ~Greetings Borland. I've come to make arrangements regarding your future contributions to the Gorgon's Eye.~ GOTO B_2
        ++ ~I'm here to put an end to your operation, Borland. It's time to close down, for the good of everyone.~ GOTO B_33
@@ -109,7 +109,7 @@ END
 IF ~~ THEN BEGIN B_22
    SAY ~Let's just hope that this alliance brings more than just oversight and that the promises of stability and growth aren't hollow.~
 IF ~~ THEN DO ~
-   SetGlobal("h_BorlandPays","GLOBAL",1)
+   SetGlobal("h_BorlandPays","GLOBAL",2)
    AddJournalEntry(@325,QUEST)~ EXIT
 END
 

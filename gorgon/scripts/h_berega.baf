@@ -218,6 +218,15 @@ THEN
 END
 
 IF
+         PartyHasItem("h_misc08")
+THEN
+         RESPONSE #100
+                  SetGlobal("h_SpawnVelera","GLOBAL",1)
+                  AddJournalEntry(@214,QUEST)
+                  Continue()
+END
+
+IF
          TimeOfDay(DAY)
          HasItem("h_misc22","Container 9")
          Global("h_ArioshQuest","GLOBAL",9)

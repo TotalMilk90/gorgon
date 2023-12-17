@@ -32,7 +32,7 @@ IF ~~ THEN BEGIN 6
 END
 
 IF ~~ THEN BEGIN 7
-   SAY ~Our resources are vast, our influence pervasive, stretching across all quarters south of the gate.~ IF ~~ THEN GOTO 8
+   SAY ~Our resources are vast, our influence pervasive, stretching across all quarters south of the Gate.~ IF ~~ THEN GOTO 8
 END
 
 IF ~~ THEN BEGIN 8
@@ -467,7 +467,7 @@ IF ~~ THEN BEGIN 96
 END
 
 IF ~~ THEN BEGIN 97
-   SAY ~It's both a fascinating and ominous revelation; the Kerykeion's capabilities are far more extensive and mystical than we initially surmised.~ IF ~~ THEN GOTO 98
+   SAY ~It's both a fascinating and ominous revelation; the capabilities of the Kerykeion are exactly as profound and mystical as I expected.~ IF ~~ THEN GOTO 98
 END
 
 IF ~~ THEN BEGIN 98
@@ -574,7 +574,6 @@ IF ~~ THEN DO ~
    SetGlobal("h_HideWhitewood","GLOBAL",2)
    SetGlobal("h_IlenaLeaves","GLOBAL",1)
    ActionOverride("h_ilenac",EscapeArea())
-   AddJournalEntry(@214,QUEST_DONE)
    AddJournalEntry(@215,QUEST)~ EXIT
 END
 

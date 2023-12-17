@@ -244,7 +244,7 @@ END
 IF ~~ THEN BEGIN 53
    SAY ~What shadowy path leads you to my doorstep today? Perhaps seeking information, or just mingling with your fellow dwellers of the dark? Either way, I'm all ears.~
        +~Global("h_LiedelQuest","GLOBAL",1)~+ ~I'm here to review your bounties and find one that aligns with my talents.~ GOTO 54
-       +~Global("h_LiedelPast","GLOBAL",0)~+ ~I find myself curious about your history. What's the story behind the woman who deals in shadows and secrets?~ GOTO 36
+       //+~Global("h_LiedelPast","GLOBAL",0)~+ ~I find myself curious about your history. What's the story behind the woman who deals in shadows and secrets?~ GOTO 36
        ++ ~Unfortunately, I have to cut this conversation short. There are pressing matters I must attend to.~ GOTO 25
 END
 
@@ -1882,8 +1882,8 @@ IF ~~ THEN BEGIN 382
        +~Global("h_VarlindBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Lord Varlind.~ GOTO 395
        +~Global("h_IslaBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 407
        +~OR(2) Global("h_LiedelRomanceActive","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1) GlobalLT("h_LiedelLove","GLOBAL",15) Global("h_IslaBounty","GLOBAL",2)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 416
-       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 416
-       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 420
+      // +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE)~ GOTO 416
+      // +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 420
        ++ ~There is nothing else I require at this time.~ EXIT
 END
 
@@ -2072,7 +2072,7 @@ IF ~~ THEN BEGIN 417
 END
 
 IF ~~ THEN BEGIN 418
-   SAY ~There's a certain... allure to a warrior like yourself. Perhaps we could find other ways to satisfy our mutual appetites for excitement and danger.~ IF ~~ THEN GOTO 423
+   SAY ~There's a certain... allure to a warrior like yourself. Perhaps we could find other ways to satisfy our mutual appetites for excitement and danger.~ IF ~~ THEN GOTO 419 //423
 END
 
 IF ~~ THEN BEGIN 419

@@ -10,7 +10,7 @@ THEN
                   Wait(2)
                   EndCutSceneMode()
 		  SmallWait(1)
-		  PlaySound("h_kilmus")
+		  //PlaySound("h_kilmus")
 		  StartDialog("h_bald2d",[PC])
 END
 

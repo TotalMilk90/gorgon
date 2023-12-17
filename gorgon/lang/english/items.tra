@@ -915,7 +915,7 @@ Arachnid's Kiss:
 
 When triggered, this intricate contraption unleashes a flurry of arrows laced with a potent toxin. The arrows spring from hidden compartments, enveloping the target in a deadly embrace. Each arrow carries a neurotoxic venom, engineered to inflict recurring poison damage, debilitating the victim's physical capabilities, and causing intense disorientation. The toxin's paralyzing effect also stuns the target, rendering them vulnerable to further attacks. Crafted with precision and cunning, Arachnid's Kiss is a testament to Liedel's reputation as a formidable bounty hunter and a master of her deadly art.
 
-Damage: 3d6, +6 poison, +2d6 poison per round for the next 3 rounds
+Damage: 2d6, +6 poison, +1d6 poison per round for the next 3 rounds
 Additional Effect: Stuns target
 Damage Type: Piercing
 

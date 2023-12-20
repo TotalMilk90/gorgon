@@ -212,7 +212,7 @@ IF ~~ THEN DO ~
    MoveToPoint([612.327])~ EXIT
 END
 
-IF WEIGHT #-1 ~Or(2) Global("h_GerardQuest","GLOBAL",3) Global("h_GerardQuest","GLOBAL",4)~ THEN BEGIN G_40
+IF WEIGHT #-1 ~Or(2) Global("h_GerardQuest","GLOBAL",3) Global("h_GerardQuest","GLOBAL",4) GlobalLT("h_RigaldoQuest","GLOBAL",8)~ THEN BEGIN G_40
    SAY ~You may have won this round, but be warned, my disdain for you and your guild has only deepened. Out of my house, you deceitful cur!~
 IF ~~ THEN EXIT
 END

@@ -130,7 +130,7 @@ IF ~~ THEN BEGIN 22
 END
 
 IF ~~ THEN BEGIN 23
-   SAY ~Zeda, the ghost of smuggling, a wraith in the shadows. If trouble's brewing, her nose twitches first. She moves goods like a whisper, unseen, unheard.~ IF ~~ THEN GOTO 24
+   SAY ~Zeda, the ghost of smuggling, a wraith in the shadows. If trouble's brewing, her nose twitches first. She's also a priestess, her healing hands able to mend more than just physical wounds.~ IF ~~ THEN GOTO 24
 END
 
 IF ~~ THEN BEGIN 24
@@ -563,7 +563,7 @@ END
 IF ~~ THEN BEGIN 116
    SAY ~Well, hand it over then, the guild will make good use of it. And don't worry, you'll get your fair cut for this job well done.~
        +~PartyHasItem("h_misc05")~+ ~Here's the necklace, exactly as I found it.~ DO ~TakePartyItem("h_misc05") DestroyItem("h_misc05") GiveGoldForce(300)~ GOTO 127
-       +~!PartyHasItem("h_misc05")~+ ~I seem to have misplaced it after leaving Gerards.~ GOTO 119
+       +~!PartyHasItem("h_misc05")~+ ~I seem to have misplaced it after leaving Gerard's.~ GOTO 119
 END
 
 IF ~~ THEN BEGIN 117
@@ -647,6 +647,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",5)
    SetGlobal("h_BaldwinQuest","GLOBAL",2)
    SetGlobal("h_LiedelQuest","GLOBAL",1)
+   SetGlobal("h_ZedaQuest","GLOBAL",2)
    SetGlobal("h_ZedaRiddle","GLOBAL",1)
    SetGlobal("h_GerardQuest","GLOBAL",4)
    AddExperienceParty(400)
@@ -721,8 +722,8 @@ END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",7)~ THEN BEGIN 150
    SAY ~Should your presence here be more than mere chance, and you bear the fruits of your latest endeavor, then speak.~
-       +~OR(2) Global("h_KarpWorkGood","GLOBAL",0) Global("h_KarpWorkGood","GLOBAL",2) PartyHasItem("h_misc17")  Global("h_KarpWork","GLOBAL",0)~+ ~Here are the rings, as promised.~ DO ~AddJournalEntry(@317,QUEST_DONE)~ GOTO 151
-       +~PartyHasItem("h_misc17") Global("h_KarpWorkGood","GLOBAL",0) Global("h_KarpWork","GLOBAL",1)~+ ~Here are the rings, as promised.~ DO ~AddJournalEntry(@317,QUEST)~ GOTO 151
+       +~GlobalLT("h_KarpWorkGood","GLOBAL",3) PartyHasItem("h_misc17")  Global("h_KarpWork","GLOBAL",0)~+ ~Here are the rings, as promised.~ DO ~AddJournalEntry(@317,QUEST_DONE)~ GOTO 151
+       +~PartyHasItem("h_misc17") Global("h_KarpWorkGood","GLOBAL",0) GlobalGT("h_KarpWork","GLOBAL",0)~+ ~Here are the rings, as promised.~ DO ~AddJournalEntry(@317,QUEST)~ GOTO 151
        ++ ~I'm still working on it.~ EXIT
 END
    
@@ -734,6 +735,7 @@ IF ~~ THEN BEGIN 152
    SAY ~Choose your path wisely, for the shadows are ever watchful, and the choices you make echo in the silent halls of our world.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",8)
+   SetGlobal("h_KarpGood","GLOBAL",2)
    TakePartyItem("h_misc17")
    DestroyItem("h_misc17")
    AddExperienceParty(600)~ EXIT
@@ -954,6 +956,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnProcus","GLOBAL",1)
    SetGlobal("h_GilbaldQuest","GLOBAL",1)
    SetGlobal("h_LiedelQuest","GLOBAL",3)
+   SetGlobal("h_ZedaRiddle2","GLOBAL",1)
    AddJournalEntry(@338,QUEST)~ EXIT
 END
 

@@ -1593,7 +1593,7 @@ INTERJECT_COPY_TRANS h_isla2d 3 shatois3
 ~It's not often someone praises my looks and my fighting skills in the same breath. I can see you're not one to shy away from speaking your mind or challenging a worthy opponent.~
 END
 
-INTERJECT_COPY_TRANS h_meredd 52 gartomer52
+INTERJECT_COPY_TRANS h_meredd 53 gartomer53
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~Madam Meredia, your worry shall be ours. I shall make it my personal quest to find Ilena and ensure her safety. Nothing is too daunting when it comes to aiding you and your establishment.~
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
@@ -1657,7 +1657,7 @@ INTERJECT_COPY_TRANS h_meredd 66 gartomer66
 ~Your empathy in this dark hour is a balm to the soul. We shall all miss her dearly, but it's heartening to have such support in our grief.~
 END
 
-INTERJECT_COPY_TRANS h_meredd 68 gartomer68
+INTERJECT_COPY_TRANS h_meredd 70 gartomer70
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~Oh, Madam Meredia, please, there's no need for gold. The real reward was in helping you, seeing the joy return to your face, and knowing Ilena is safe.~
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN

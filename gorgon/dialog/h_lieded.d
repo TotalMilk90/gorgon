@@ -2651,7 +2651,7 @@ END
 
 IF ~OR(2) Global("h_LiedelRomanceActive","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1) Global("h_LiedelSex","GLOBAL",0) Global("h_LiedelQuest","GLOBAL",7)~ THEN BEGIN 531
    SAY ~Well, well, look at you, <CHARNAME>. The new guildmaster, no less. I must admit, power does have its allure. Impressive work, my dear.~
-       ++ ~You know, Liedel, I've been thinking. Now that I'm guildmaster, there's so much more we could achieve together. Join me, and together we can chase the thrill of adventure that lies beyond these walls.~ GOTO 532
+   //    ++ ~You know, Liedel, I've been thinking. Now that I'm guildmaster, there's so much more we could achieve together. Join me, and together we can chase the thrill of adventure that lies beyond these walls.~ GOTO 532
        ++ ~Thanks for the welcome. Let's focus on the guild's future.~ EXIT
 END
 

@@ -239,7 +239,7 @@ IF ~~ THEN BEGIN 49
 END
 
 IF ~~ THEN BEGIN 50
-   SAY ~Excellent. Welcome to the shadows of the Gorgon's Eye, my friend. Familiarize yourself with our ways, but don't get too comfortable. Comfort breeds complacency, and that is someting we cannot afford.~ IF ~~ THEN GOTO 51
+   SAY ~Excellent. Welcome to the shadows of the Gorgon's Eye. Familiarize yourself with our ways, but don't get too comfortable. Comfort breeds complacency, and that is someting we cannot afford.~ IF ~~ THEN GOTO 51
 END
 
 IF ~~ THEN BEGIN 51
@@ -264,6 +264,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",1)
    SetGlobal("h_DidNotJoin","GLOBAL",2)
    SetGlobal("h_BaldwinQuest","GLOBAL",1)
+   SetGlobal("h_ZedaQuest","GLOBAL",1)
    SetGlobal("h_FightingPits","GLOBAL",1)
    SetGlobal("h_FightersTalk","GLOBAL",1)
    SetGlobal("h_LiedelTalk","GLOBAL",1)
@@ -704,9 +705,9 @@ IF ~~ THEN BEGIN 146
 IF ~~ THEN DO ~
    SetGlobal("h_BaldwinQuest","GLOBAL",8)
    SetGlobal("h_RigaldoQuest","GLOBAL",14)
-   SetGlobal("h_SecondRiddle","GLOBAL",1)
    SetGlobal("h_MerediaQuest","GLOBAL",1)
    SetGlobal("h_LiedelQuest","GLOBAL",5)
+   SetGlobal("h_ZedaRiddle3","GLOBAL",1)
    CreateCreature("h_liedec",[762.1342],NE)
    PlaySound("ACT_07")
    AddJournalEntry(@217,QUEST_DONE)

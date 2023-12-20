@@ -107,7 +107,7 @@ IF ~~ THEN BEGIN 24
    SAY ~So, tell me, are you ready to embrace the full extent of this passionate adventure?~
        ++ ~Let's move to the bed for a more intimate encounter. I'm eager to explore and experience the depths of your passion.~ GOTO 151
        ++ ~The idea of a private dance sounds like a captivating way to start our evening.~ GOTO 26
-       ++ ~It's clear you offer an intense experience, and I think it might be a bit too much for me.~ GOTO 25
+       ++ ~It's clear you offer an intense experience, and I think it might be a bit too much for me right now.~ GOTO 25
 END
 
 IF ~~ THEN BEGIN 25
@@ -293,7 +293,7 @@ END
 IF ~~ THEN BEGIN 59
    SAY ~This feels so good, <CHARNAME>... Don't stop here. I need more... please give me more.~
        ++ ~(Slowly begin to unfasten your belt, inviting her to take the lead.)~ GOTO 60
-       ++ ~Let me explore you further. (Place your hands on Rafaela's hips, indicating your wish for her to turn around.)~ GOTO 69
+       ++ ~(Place your hands on Rafaela's hips, indicating your wish for her to turn around.)~ GOTO 69
 END
 
 IF ~~ THEN BEGIN 60
@@ -445,7 +445,7 @@ IF ~~ THEN BEGIN 93
 END
 
 IF ~~ THEN BEGIN 94
-   SAY ~Ohh... <CHARNAME>. Please... please fuck me. I need to feel you inside of me. need it so badly, and I can't resist your touch any longer.~ IF ~~ THEN GOTO 105
+   SAY ~Ohh... <CHARNAME>. I need to feel you inside of me. I can't resist your touch any longer.~ IF ~~ THEN GOTO 105
 END
 
 IF ~~ THEN BEGIN 95
@@ -457,7 +457,7 @@ IF ~~ THEN BEGIN 96
 END
 
 IF ~~ THEN BEGIN 96.5
-   SAY ~I want to feel you explode inside of me, filling me up with your hot release. Show me how much you need this, how much you crave this pleasure.~ IF ~~ THEN GOTO 97
+   SAY ~I want to feel you explode inside of me, filling me completely. Show me how much you need this, how much you crave this pleasure.~ IF ~~ THEN GOTO 97
 END
 
 IF ~~ THEN BEGIN 97
@@ -563,7 +563,7 @@ IF ~~ THEN BEGIN 119
 END
 
 IF ~~ THEN BEGIN 120
-   SAY ~Ohhh... fuck, <CHARNAME>. I love the sensation of you inside me. Don't stop, don't stop!~ IF ~~ THEN GOTO 121
+   SAY ~Ohhh... <CHARNAME>. I love the sensation of you inside me. Don't stop, don't stop!~ IF ~~ THEN GOTO 121
 END
 
 IF ~~ THEN BEGIN 121
@@ -579,7 +579,7 @@ IF ~~ THEN BEGIN 123
 END
 
 IF ~~ THEN BEGIN 124
-   SAY ~Ohh... I'm going to come soon, <CHARNAME>. I can feel it building up inside. It's so intense.~ IF ~~ THEN GOTO 125
+   SAY ~I'm going to come soon, <CHARNAME>. I can feel it building up inside. It's so intense.~ IF ~~ THEN GOTO 125
 END
 
 IF ~~ THEN BEGIN 125
@@ -607,11 +607,11 @@ IF ~~ THEN BEGIN 131
 END
 
 IF ~~ THEN BEGIN 132
-   SAY ~I want you to come for me. Don't hold back... Please... let yourself go and give in to the pleasure. Keep going.. Oh fuck... <CHARNAME>, you can do it. Give me everything you've got.~ IF ~~ THEN GOTO 133
+   SAY ~I want you to come for me. Don't hold back... Please... let yourself go and give in to the pleasure.~ IF ~~ THEN GOTO 133
 END
 
 IF ~~ THEN BEGIN 133
-   SAY ~Yes... Yes! I want you to come for me so badly. You'll feel amazing. Just let it all out for me. I'm right here with you.~ IF ~~ THEN GOTO 134
+   SAY ~Yes... Yes! I want you to come for me so badly. You'll feel amazing. Just let it all out. I'm right here with you.~ IF ~~ THEN GOTO 134
 END
 
 IF ~~ THEN BEGIN 134
@@ -662,7 +662,7 @@ IF ~~ THEN BEGIN 145
 IF ~~ THEN DO ~
    SetGlobal("h_TravelToDen","GLOBAL",3)
    SetGlobal("h_RafaelaDance","GLOBAL",0)
-   AddExperienceParty(50)
+   AddExperienceParty(30)
    MoveToPoint([209.338])~ EXIT
 END
 
@@ -815,19 +815,11 @@ IF ~~ THEN BEGIN 179
 END
 
 IF ~~ THEN BEGIN 180
-   SAY ~(Drawing you close, Rafaela initiates a deep, passionate kiss. Your tongues meet, exploring each other with a hunger that speaks volumes of the desire building between you.)~ IF ~~ THEN GOTO 181
-END
-
-IF ~~ THEN BEGIN 181
-   SAY ~Mmm... Can you feel how much I want you?~ IF ~~ THEN GOTO 182
+   SAY ~(Drawing you close, Rafaela initiates a deep, passionate kiss. Your tongues meet, exploring each other with a hunger that speaks volumes of the desire building between you.)~ IF ~~ THEN GOTO 182
 END
 
 IF ~~ THEN BEGIN 182
-   SAY ~(Gradually, her hands descend down your chest, her fingers teasing beneath your shirt.)~ IF ~~ THEN GOTO 183
-END
-
-IF ~~ THEN BEGIN 183
-   SAY ~Your heart... it races just for me.~ IF ~~ THEN GOTO 184
+   SAY ~(Gradually, her hands descend down your chest, her fingers teasing beneath your shirt.)~ IF ~~ THEN GOTO 184
 END
 
 IF ~~ THEN BEGIN 184
@@ -917,7 +909,7 @@ IF ~~ THEN BEGIN 204
 END
 
 IF ~~ THEN BEGIN 205
-   SAY ~(You gently begin to massage her upper femininity, making circles with your thumb as you press your fingers deeper inside. She closes her eyes and moans, her hips still rocking against your touch.)~ IF ~~ THEN GOTO 206
+   SAY ~(You gently begin to massage her, making circles with your thumb as you press your fingers deeper inside. She closes her eyes and moans, her hips still rocking against your touch.)~ IF ~~ THEN GOTO 206
 END
 
 IF ~~ THEN BEGIN 206
@@ -925,11 +917,11 @@ IF ~~ THEN BEGIN 206
 END
 
 IF ~~ THEN BEGIN 207
-   SAY ~Ohh, yes, just like that! You're discovering all of me... every hidden part. I'm so close, <CHARNAME>. Your touch, it's taking me there.~ IF ~~ THEN GOTO 208
+   SAY ~Ohh, yes, just like that! You're discovering all of me... every hidden part. Your touch, it's taking me there.~ IF ~~ THEN GOTO 208
 END
 
 IF ~~ THEN BEGIN 208
-   SAY ~Mmm... <CHARNAME>, I can't hold back any longer. The way you touch me, the way you make me feel... it's too much, and yet, not enough.~ IF ~~ THEN GOTO 235.5
+   SAY ~Mmm... <CHARNAME>. The way you touch me, the way you make me feel... it's too much, and yet, not enough.~ IF ~~ THEN GOTO 235.5
 END
 
 IF ~~ THEN BEGIN 209
@@ -1053,7 +1045,7 @@ IF ~~ THEN BEGIN 234.5
 END
 
 IF ~~ THEN BEGIN 235.5
-   SAY ~I'm ready for you, more ready than I've ever been. I want you to fuck me now, to lose ourselves in each other completely.~ IF ~~ THEN GOTO 236
+   SAY ~I'm ready for you, more ready than I've ever been. I want you to take me now, to lose ourselves in each other completely.~ IF ~~ THEN GOTO 236
 END
 
 IF ~~ THEN BEGIN 236
@@ -1069,7 +1061,7 @@ IF ~~ THEN BEGIN 237
 END
 
 IF ~~ THEN BEGIN 238
-   SAY ~Unless, <CHARNAME>... do you desire to release all your passion here, in my mouth? Or shall we take this to the bed, where I can give myself to you completely?~ IF ~~ THEN GOTO 239
+   SAY ~Unless, <CHARNAME>... would you desire to release all your passion here, in my mouth? Or shall we take this to the bed, where I can give myself to you completely?~ IF ~~ THEN GOTO 239
 END
 
 IF ~~ THEN BEGIN 239
@@ -1107,7 +1099,7 @@ IF ~~ THEN BEGIN 246
 END
 
 IF ~~ THEN BEGIN 247
-   SAY ~Do you feel that, <CHARNAME>? The way I take you in, the way my tongue dances around your cock... Mmm... It's all for you.~ IF ~~ THEN GOTO 248
+   SAY ~Do you feel that, <CHARNAME>? The way I take you in, the way my tongue dances around you... Mmm... It's all for you.~ IF ~~ THEN GOTO 248
 END
 
 IF ~~ THEN BEGIN 248
@@ -1119,7 +1111,7 @@ IF ~~ THEN BEGIN 249
 END
 
 IF ~~ THEN BEGIN 250
-   SAY ~I want you to release everything with me, <CHARNAME>. Let me feel your climax, your hot release filling my mouth. Let me be the one to take you there.~ IF ~~ THEN GOTO 251
+   SAY ~I want you to release everything with me, <CHARNAME>. Let me feel your climax filling my mouth. Let me be the one to take you there.~ IF ~~ THEN GOTO 251
 END
 
 IF ~~ THEN BEGIN 251
@@ -1159,7 +1151,7 @@ IF ~~ THEN BEGIN 259
 END
 
 IF ~~ THEN BEGIN 261
-   SAY ~I can feel you, <CHARNAME>, every pulse, every tremor. There's so much, and it tastes so, so good.~ IF ~~ THEN GOTO 262
+   SAY ~I can feel you, <CHARNAME>, every pulse, every tremor. There's so much, and it feels so, so good.~ IF ~~ THEN GOTO 262
 END
 
 IF ~~ THEN BEGIN 262
@@ -1208,7 +1200,7 @@ END
 
 IF ~~ THEN BEGIN 273
    SAY ~Do you want me beneath you, surrendering to your lead? Or should I be on top, guiding us through the waves of our passion?~
-       ++ ~I want you beneath me, Rafaela. I want to feel your entire body responding to mine as I lead.~ GOTO 274
+       ++ ~I want you under me, Rafaela. I want to feel your entire body responding to mine as I lead.~ GOTO 274
        ++ ~Be on top, Rafaela. I want to see you in control, to experience the passion you can bring.~ GOTO 322
 END
 
@@ -1241,7 +1233,7 @@ IF ~~ THEN BEGIN 280
 END
 
 IF ~~ THEN BEGIN 281
-   SAY ~Fuck me, <CHARNAME>, fuck me in the way only you can. I want to lose myself in you, to feel our passion unite and explode in an ecstasy of love.~ IF ~~ THEN GOTO 282
+   SAY ~I want to lose myself in you, to feel our passion unite and explode in an ecstasy of love.~ IF ~~ THEN GOTO 282
 END
 
 IF ~~ THEN BEGIN 282
@@ -1329,7 +1321,7 @@ IF ~~ THEN BEGIN 299
 END
 
 IF ~~ THEN BEGIN 300
-   SAY ~The way you're moving... it's taking me to places I've never been. I can feel every inch of you, filling me, stretching my tight pussy to its limits.~ IF ~~ THEN GOTO 301
+   SAY ~The way you're moving... it's taking me to places I've never been. I can feel every inch of you, filling me, stretching me to my limits.~ IF ~~ THEN GOTO 301
 END
 
 IF ~~ THEN BEGIN 301
@@ -1349,7 +1341,7 @@ IF ~~ THEN BEGIN 305
 END
 
 IF ~~ THEN BEGIN 306
-   SAY ~Ohh, fuck... <CHARNAME>! I'm... I'm coming!~ IF ~~ THEN GOTO 307
+   SAY ~Ohh... <CHARNAME>! I'm... I'm coming!~ IF ~~ THEN GOTO 307
 END
 
 IF ~~ THEN BEGIN 307
@@ -1395,7 +1387,7 @@ IF ~~ THEN BEGIN 317
 END
 
 IF ~~ THEN BEGIN 318
-   SAY ~Deeper, <CHARNAME>, let's reach the climax together. I want to feel all of you, to be filled with your hot release.~ IF ~~ THEN GOTO 319
+   SAY ~Deeper, <CHARNAME>, let's reach the climax together. I want to feel all of you, to be filled with your climax.~ IF ~~ THEN GOTO 319
 END
 
 IF ~~ THEN BEGIN 319
@@ -1459,7 +1451,7 @@ IF ~~ THEN BEGIN 332
 END
 
 IF ~~ THEN BEGIN 333
-   SAY ~(She reaches down, her fingers wrapping around your length. With deliberate slowness, she begins to rub it up and down against her wetness, coating you with her slickness.)~ IF ~~ THEN GOTO 334
+   SAY ~(She reaches down, her fingers wrapping around your length. With deliberate slowness, she begins to rub it up and down against her, coating you with her wetness.)~ IF ~~ THEN GOTO 334
 END
 
 IF ~~ THEN BEGIN 334
@@ -1483,7 +1475,7 @@ IF ~~ THEN BEGIN 338
 END
 
 IF ~~ THEN BEGIN 339
-   SAY ~Ohh, <CHARNAME>! The feeling of you, so deep inside me... it's so incredible!~ IF ~~ THEN GOTO 340
+   SAY ~Ohh, <CHARNAME>! The feeling of you, so deep inside me... it's incredible!~ IF ~~ THEN GOTO 340
 END
 
 IF ~~ THEN BEGIN 340
@@ -1523,7 +1515,7 @@ IF ~~ THEN BEGIN 347
 END
 
 IF ~~ THEN BEGIN 348
-   SAY ~Ohh! Yes, just like that! Fuck me, <CHARNAME>! Fuck me harder! Ohh... Don't stop. I'm so close to the edge!~ IF ~~ THEN GOTO 349
+   SAY ~Ohh! Yes, just like that! Harder! Ohh... Don't stop. I'm so close!~ IF ~~ THEN GOTO 349
 END
 
 IF ~~ THEN BEGIN 349
@@ -1567,11 +1559,7 @@ IF ~~ THEN BEGIN 358
 END
 
 IF ~~ THEN BEGIN 359
-   SAY ~(Rafaela's screams of pleasure fill the room, her body squirming under the dual assault of your mouth and your continued thrusts.)~ IF ~~ THEN GOTO 360
-END
-
-IF ~~ THEN BEGIN 360
-   SAY ~Every lick, every nibble, it's pushing me closer to the edge. I'm so horny, <CHARNAME>, so incredibly aroused. This... this is ecstasy!~ IF ~~ THEN GOTO 362
+   SAY ~(Rafaela's screams of pleasure fill the room, her body squirming under the dual assault of your mouth and your continued thrusts.)~ IF ~~ THEN GOTO 362
 END
 
 IF ~~ THEN BEGIN 362
@@ -1611,7 +1599,7 @@ IF ~~ THEN BEGIN 370
 END
 
 IF ~~ THEN BEGIN 371
-   SAY ~Do you want to keep fucking me until you come? Or would you like me to take you in my mouth, and fill it with your hot release?~
+   SAY ~Do you want to keep going until you come? Or would you like me to finish you in my mouth?~
        ++ ~Keep riding me, Rafaela. I want to feel connected to you as I reach my climax.~ GOTO 372
        ++ ~I want you to take me in your mouth. Finish me there, Rafaela, I want to feel its warmth.~ GOTO 400
 END
@@ -1629,7 +1617,7 @@ IF ~~ THEN BEGIN 374
 END
 
 IF ~~ THEN BEGIN 375
-   SAY ~Ohh! <CHARNAME>, you're stretching me... it feels amazing! Every thrust takes me higher, filling me more! Yes, just like that!~ IF ~~ THEN GOTO 376
+   SAY ~Ohh! <CHARNAME>... you feel amazing! Every thrust takes me higher, filling me more! Yes, just like that!~ IF ~~ THEN GOTO 376
 END
 
 IF ~~ THEN BEGIN 376
@@ -1645,7 +1633,7 @@ IF ~~ THEN BEGIN 378
 END
 
 IF ~~ THEN BEGIN 379
-   SAY ~Oh, <CHARNAME>, I'm going to come again! Don't stop, please don't stop! Ohh... Keep going, just like that, keeping fucking me, you're taking me there!~ IF ~~ THEN GOTO 380
+   SAY ~Don't stop, please don't stop! Ohh... Keep going, just like that!~ IF ~~ THEN GOTO 380
 END
 
 IF ~~ THEN BEGIN 380
@@ -1709,11 +1697,7 @@ IF ~~ THEN BEGIN 394
 END
 
 IF ~~ THEN BEGIN 395
-   SAY ~(Her moans become more fervent, a mix of delight and overwhelming ecstasy. Rafaela's body shudders beneath you, reaching another climax, fueled by the sensation of you pulsing inside her.)~ IF ~~ THEN GOTO 396
-END
-
-IF ~~ THEN BEGIN 396
-   SAY ~The way you're stuffing my pussy, the way you're filling me up... it's incredible. I can feel everything, every wave of your release!~ IF ~~ THEN GOTO 397
+   SAY ~(Her moans become more fervent, a mix of delight and overwhelming ecstasy. Rafaela's body shudders beneath you, reaching another climax, fueled by the sensation of you pulsing inside her.)~ IF ~~ THEN GOTO 397
 END
 
 IF ~~ THEN BEGIN 397
@@ -1729,7 +1713,7 @@ IF ~~ THEN BEGIN 399
 END
 
 IF ~~ THEN BEGIN 400
-   SAY ~Mmm... <CHARNAME>, that's exactly what I want. To take you in my mouth, to feel your climax... it thrills me beyond words. I can't wait to taste the warmth of your release.~ IF ~~ THEN GOTO 401
+   SAY ~Mmm... <CHARNAME>, that's exactly what I want. To take you in my mouth, and taste the warmth of your release.~ IF ~~ THEN GOTO 401
 END
 
 IF ~~ THEN BEGIN 401
@@ -1824,7 +1808,7 @@ IF ~~ THEN BEGIN 422
 IF ~~ THEN DO ~
    SetGlobal("h_TravelToDen","GLOBAL",3)
    SetGlobal("h_RafaelaBed","GLOBAL",0)
-   AddExperienceParty(50)
+   AddExperienceParty(30)
    MoveToPoint([209.338])~ EXIT
 END
 

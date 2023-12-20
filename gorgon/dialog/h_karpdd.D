@@ -1,6 +1,6 @@
 APPEND Karp
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpWork","GLOBAL",0) Global("h_KarpWorkGood","GLOBAL",0)~ THEN BEGIN K_0
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpWork","GLOBAL",0) Global("h_KarpWorkGood","GLOBAL",0) Global("h_KarpGood","GLOBAL",0) Global("h_KarpBad","GLOBAL",0)~ THEN BEGIN K_0
    SAY ~Looks like we'll be gettin' a good harvest this year, thank the gods for that. Now, what is it I can help you with?~
        ++ ~I'm here about the rings you've found, Karp.~ GOTO K_1
 END
@@ -48,22 +48,22 @@ END
 IF ~~ THEN BEGIN K_9
    SAY ~Just take them and go! G-get away from me!~
 IF ~~ THEN DO ~
+   SetGlobal("h_KarpBad","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    GiveItem("h_misc17",LastTalkedToBy())
    GiveItem("RING06",LastTalkedToBy())
-   ReputationInc(-1)
-   EscapeArea()~ EXIT
+   ReputationInc(-1)~ EXIT
 END
    
 IF ~~ THEN BEGIN K_10
    SAY ~You're taking everything from us, aren't you? F-fine, take it all, you... you monster!~
 IF ~~ THEN DO ~
+   SetGlobal("h_KarpBad","GLOBAL",1)
    AddJournalEntry(@316,QUEST)
    GiveItem("h_misc17",LastTalkedToBy())
    GiveItem("RING06",LastTalkedToBy())
    GiveItem("h_misc06",LastTalkedToBy())
-   ReputationInc(-1)
-   EscapeArea()~ EXIT
+   ReputationInc(-1)~ EXIT
 END
 
 IF ~~ THEN BEGIN K_10.2
@@ -192,11 +192,11 @@ IF ~~ THEN DO ~
    GiveItem("RING06",LastTalkedToBy())~ EXIT
 END
 
-IF WEIGHT #-1 ~OR(2) GlobalGT("h_KarpWorkGood","GLOBAL",0) GlobalGT("h_KarpWorkGood","GLOBAL",0)~ THEN BEGIN K_31
+IF WEIGHT #-1 ~OR(2) GlobalGT("h_KarpWorkGood","GLOBAL",0) GlobalGT("h_KarpWork","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",0)~ THEN BEGIN K_31
    SAY ~Oh, you've returned! I've been anxiously awaiting any news. Were you able to find someone to help us travel safely to Athkatla?~
-       +~!Global("h_KarpWorkGood","GLOBAL",2) !Global("h_KarpWork","GLOBAL",3)~+ ~I'm sorry, I haven't found anyone just yet. I'll let you know as soon as I have something concrete.~ GOTO K_32
+       +~!Global("h_KarpWorkGood","GLOBAL",2) !Global("h_KarpWork","GLOBAL",2)~+ ~I'm sorry, I haven't found anyone just yet. I'll let you know as soon as I have something concrete.~ GOTO K_32
        +~Global("h_KarpWorkGood","GLOBAL",2)~+ ~I have something lined up for you in Beregost. Leave tonight with your son, and you'll be contacted upon your arrival in the city.~ GOTO K_34
-       +~Global("h_KarpWork","GLOBAL",3)~+ ~I have something lined up for you in Beregost. Leave tonight with your son, and you'll be contacted upon your arrival in the city.~ GOTO K_37
+       +~Global("h_KarpWork","GLOBAL",2)~+ ~I have something lined up for you in Beregost. Leave tonight with your son, and you'll be contacted upon your arrival in the city.~ GOTO K_37
 END
 
 IF ~~ THEN BEGIN K_32
@@ -219,12 +219,12 @@ END
 IF ~~ THEN BEGIN K_36
    SAY ~Maybe it's of some value or use to someone with your resources and connections. Consider it a token of my deepest appreciation for your help. Safe travels, and farewell.~
 IF ~~ THEN DO ~
+   SetGlobal("h_KarpGood","GLOBAL",1)
    AddJournalEntry(@320,QUEST)
    GiveItem("h_misc17",LastTalkedToBy())
    GiveItem("RING06",LastTalkedToBy())
    GiveItem("h_misc06",LastTalkedToBy())
-   AddExperienceParty(300)
-   EscapeArea()~ EXIT
+   AddExperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN K_37
@@ -238,19 +238,52 @@ END
 IF ~~ THEN BEGIN K_39
    SAY ~Maybe it's of some value or use to someone with your resources and connections. Consider it a token of my deepest appreciation for your help. Safe travels, and farewell.~
 IF ~~ THEN DO ~
+   SetGlobal("h_KarpGood","GLOBAL",1)
    AddJournalEntry(@320,QUEST_DONE)
    GiveItem("h_misc06",LastTalkedToBy())
-   AddExperienceParty(300)
-   EscapeArea()~ EXIT
+   AddExperienceParty(300)~ EXIT
 END
 
 IF ~~ THEN BEGIN K_40
    SAY ~I understand, I won't impose further. Safe travels on your own journeys, and should our paths cross again, perhaps fortunes will align differently. Farewell for now.~
 IF ~~ THEN DO ~
+   SetGlobal("h_KarpGood","GLOBAL",3)
    AddJournalEntry(@316,QUEST)
    GiveItem("h_misc17",LastTalkedToBy())
-   GiveItem("RING06",LastTalkedToBy())
-   EscapeArea()~ EXIT
+   GiveItem("RING06",LastTalkedToBy())~ EXIT
 END
 
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpBad","GLOBAL",1)~ THEN BEGIN K_41
+   SAY ~Just leave me and my boy in peace, that's all I ask!~
+IF ~~ THEN EXIT
+END
+
+IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",2)~ THEN BEGIN K_42
+   SAY ~Thank you so much. I'll gather our things and get my boy ready. We'll leave for a better life soon, all thanks to you.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN K_43
+   SAY ~I couldn't leave. There wasn't enough coin for both me and my boy, so I sent him ahead to Athkatla. He's safe there now, and that's all that matters.~ IF ~~ THEN GOTO K_44
+END
+
+IF ~~ THEN BEGIN K_44
+   SAY ~When my husband found out, he... he was furious. He took his anger out on me.~ IF ~~ THEN GOTO K_45
+END
+
+IF ~~ THEN BEGIN K_45
+   SAY ~Later that night, he went off to the Belching Dragon, got himself good and drunk. The next day, they found him in the river, a nasty wound on his head, drowned.~ IF ~~ THEN GOTO K_46
+END
+
+IF ~~ THEN BEGIN K_46
+   SAY ~They think he fell in, hit his head on the rocks. I'll stay on the farm for now, just glad my boy is safe...~
+IF ~~ THEN DO ~
+   SetGlobal("h_KarpGood","GLOBAL",3)~ EXIT
+END
+
+END
+
+EXTEND_TOP Karp 0
+   +~GlobalGT("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",2)~+ ~Karp, I thought you'd be on your way to Athkatla by now. Is there something wrong?~ GOTO K_43
+   ++ ~I'll be going now.~ EXIT
 END

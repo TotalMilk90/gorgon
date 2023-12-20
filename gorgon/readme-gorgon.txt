@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.4.0
+V.4.1
 
 =======
 Prequel
@@ -57,13 +57,25 @@ The component "Add more pickpocketable items" will distribute random treasure to
 ===============
 Version History
 ===============
+Version 4.1:
+-Fixed bug in Borland's quest that would prevent it from continuing
+-Fixed dialog loop in Karp's quest
+-Fixed the starting conditions needed for Soren's quest regarding Isla
+-Added third set of riddles from Zeda
+-Added missing portrait for Zhontac
+-Blocked an unintentional dialog from Liedel after completing Isla's bounty
+-Removed unintentional music file that triggered when talking to Liedel
+-Merged Bombs and Thamuz quests to make less journal clutter
+-Corrected interjection where Skie would say Garrick's line
+-Corrected interjections from Garrick that would fire at the wrong time
+-Corrected some uncaught typos
+
 Version 4.0:
 -Added new quests from Ariosh, Rigaldo and Liedel
 -Added new elements to all of Rigaldo's previous quests
 -Added new area "The Fighting Pits" accessed via Diomedes at the Gorgon's Eye
 -Added new area "The Black Market" accessed via Thalia at the Baldur's Gate thieves guild
 -Added new portraits to all characters
--Added Liedel as a joinable NPC
 -Added City Watch officers throughout Beregost
 -Added various new items
 -Added NPC interjections

@@ -160,7 +160,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@325,QUEST)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",12) Global("h_BorlandPays","GLOBAL",2)~ THEN BEGIN B_32
+IF WEIGHT #-1 ~GlobalLT("h_RigaldoQuest","GLOBAL",18) Global("h_BorlandPays","GLOBAL",2)~ THEN BEGIN B_32
    SAY ~Ah, it's you again. I haven't forgotten our 'arrangement', don't worry. The contributions are being made as agreed, though I can't say I'm pleased about it.~
 IF ~~ THEN EXIT
 END
@@ -319,7 +319,7 @@ IF ~~ THEN DO ~
    GiveItemCreate("h_misc07",LastTalkedToBy,0,0,0)~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",12) Global("h_BorlandCloses","GLOBAL",2)~ THEN BEGIN B_64
+IF WEIGHT #-1 ~GlobalLT("h_RigaldoQuest","GLOBAL",18) Global("h_BorlandCloses","GLOBAL",2)~ THEN BEGIN B_64
    SAY ~I haven't forgotten what transpired between us. The operation has been ceased, just as you demanded. It's a bitter pill to swallow, closing down what I've built, but it's done. Happy now?~
 IF ~~ THEN EXIT
 END

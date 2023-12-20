@@ -8,7 +8,7 @@ IF ~True()~ THEN BEGIN 0
 END
 
 IF ~~ THEN BEGIN 1
-   SAY ~If we brought our full might upon you, your guild would crumble. However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 3
+   SAY ~If we brought our full might upon you, your pathetic guild would crumble. However, I did not travel here to pursue confrontation.~ IF ~~ THEN GOTO 3
 END
 
 IF ~~ THEN BEGIN 2

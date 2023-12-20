@@ -1,8 +1,5 @@
 BEGIN h_saradd
 
-// ~Very well. Henceforth, I will accept you as my novice, and you shall address me as, 'Master Shadow'. These titles echo the ancient customs of our order.~
-// ~For now, you bear the title 'Unproved'. To advance within the ranks, you must demonstrate your dedication and prowess in the trials that await.~
-
 IF ~Global("h_Saradin","GLOBAL",0)~ THEN BEGIN 0
    SAY ~I haven't the time nor desire to speak with you at present.~ IF ~~ THEN EXIT
 END
@@ -36,304 +33,642 @@ IF ~~ THEN BEGIN 7
 END
 
 IF ~~ THEN BEGIN 8
-   SAY ~Together, your combined strengths could greatly benefit the objectives at hand and further the enigmatic agenda of our Lord of Shadows.~ IF ~~ THEN GOTO 9
+   SAY ~Together, your combined strengths could greatly benefit the objectives at hand and further the agenda of our Lord of Shadows.~ IF ~~ THEN GOTO 9
 END
 
 IF ~~ THEN BEGIN 9
    SAY ~Now, what is it that you seek? How may I assist you in the paths you tread within our enigmatic fold?~
-     //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ EXIT
-       ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO KERY_2
-       ++ ~How did Baldwin become known as "The Butcher"?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO BUTCHER_2
-       ++ ~What is your role here in the guild?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO SARA_2
+       ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO 11
+       ++ ~How did Baldwin become known as "The Butcher"?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO 71
+       ++ ~What is your role here in the guild?~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ GOTO 76
        ++ ~Nothing at the moment.~ DO ~SetGlobal("h_Saradin","GLOBAL",2) SetGlobal("h_DanikaWillJoin","GLOBAL",1)~ EXIT
 END
 
-IF ~Global("h_Saradin","GLOBAL",2)~ THEN BEGIN START_0
+IF ~Global("h_Saradin","GLOBAL",2)~ THEN BEGIN 10
    SAY ~What do you seek on this path? How can I guide you further in our shared pursuit under the cloak of Mask?~
-     //  +~Global("h_JoinMask","GLOBAL",1)~+ ~I have come to recite the Creed of the Maskarran.~ EXIT
-       ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ GOTO KERY_2
-       ++ ~How did Baldwin become known as "The Butcher"?~ GOTO BUTCHER_2
-       ++ ~What is your role here in the guild?~ GOTO SARA_2
+       +~Global("h_JoinMask","GLOBAL",1)~+ ~Master Saradin, I have studied the tenets of our faith diligently and am prepared to recite the sacred dogma of Mask.~ GOTO 133
+       //+~Global("h_JoinMask","GLOBAL",2)~+ ~Master Saradin, the shadows have called, and I stand prepared to answer. Let us proceed with the next trial.~ GOTO 143
+       ++ ~I'm interested in learning about the Kerykeion, can you tell me anything about it?~ GOTO 11
+       ++ ~How did Baldwin become known as "The Butcher"?~ GOTO 71
+       ++ ~What is your role here in the guild?~ GOTO 76
        ++ ~Nothing at the moment.~ EXIT
 END
 
-IF ~~ THEN BEGIN KERY_2
+IF ~~ THEN BEGIN 11
    SAY ~I can tell you many things. What is it that you wish to know?~
-       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
-       ++ ~What kind of power does the Kerykeion hold?~ GOTO KERY_3
-       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
-       ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO START_0
+       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO 12
+       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO 48
+       ++ ~What kind of power does the Kerykeion hold?~ GOTO 57
+       ++ ~Who exactly were the Gorgon Sisters?~ GOTO 61
+       ++ ~I'd like to ask you about something else.~ GOTO 10
 END
 
-IF ~~ THEN BEGIN GORGON_0
-   SAY ~In the shadowed depths of the Underworld, the Gorgon Sisters, Stheno, Euryale, and Medusa, were serpent-like beings with an insatiable hunger.~ IF ~~ THEN GOTO GORGON_1
+IF ~~ THEN BEGIN 12
+   SAY ~It goes back to Baldwin's youth, steeped in the dreams and aspirations exchanged with his elder brother, Richard.~ IF ~~ THEN GOTO 13
 END
 
-IF ~~ THEN BEGIN GORGON_1
-   SAY ~Their sustenance extended beyond mortal prey, to a ravenous quest for power itself. Amidst the Underworld's labyrinthine expanse, they sought out dark creatures and formidable foes.~ IF ~~ THEN GOTO GORGON_2
+IF ~~ THEN BEGIN 13
+   SAY ~In the early days of their aspiring rogue-hood, Richard stumbled upon a mysterious manuscript in the depths of an ancient library.~ IF ~~ THEN GOTO 14
 END
 
-IF ~~ THEN BEGIN GORGON_2
-   SAY ~With serpentine precision, they would strike, their venomous fangs injecting a potent elixir that drained their victims of vitality.~ IF ~~ THEN GOTO GORGON_3
+IF ~~ THEN BEGIN 14
+   SAY ~The tome bore cryptic symbols and a veiled reference to the legendary staff, known then as the Caduceus.~ IF ~~ THEN GOTO 15
 END
 
-IF ~~ THEN BEGIN GORGON_3
-   SAY ~The sisters reveled in the rush of power that surged through their veins with each conquest, their voracity growing with every fallen adversary.~ IF ~~ THEN GOTO GORGON_4
+IF ~~ THEN BEGIN 15
+   SAY ~With each passing day, Richard would regale Baldwin with tales of the staff's illustrious history, weaving a tapestry of ancient civilizations, forgotten realms, and the enigmatic figures who wielded its power.~ IF ~~ THEN GOTO 16
 END
 
-IF ~~ THEN BEGIN GORGON_4
-   SAY ~In the heart of the Underworld, they were both predators and rulers, their dominion unchallenged, their hunger never sated.~ IF ~~ THEN GOTO GORGON_5
+IF ~~ THEN BEGIN 16
+   SAY ~Baldwin, at a young and impressionable age, found himself ensnared in the allure of the Kerykeion.~ IF ~~ THEN GOTO 17
 END
 
-IF ~~ THEN BEGIN GORGON_5
-   SAY ~Medusa, the lone mortal among them, harbored a bitter jealousy born from her mortality. This resentment festered, intensifying her desire for power and propelling her down a treacherous path.~ IF ~~ THEN GOTO GORGON_6
+IF ~~ THEN BEGIN 17
+   SAY ~The staff's legend gripped his imagination, stoking the flames of his ambition. He yearned to wield its power and rewrite the course of history itself.~ IF ~~ THEN GOTO 18
 END
 
-IF ~~ THEN BEGIN GORGON_6
-   SAY ~It was amidst this insatiable pursuit that the dark tale of the Kerykeion unfurled. For the Gorgon Sisters' voracity played a pivotal role in the staff's creation and the subsequent entrapment of their essence.~ IF ~~ THEN GOTO GORGON_7
+IF ~~ THEN BEGIN 18
+   SAY ~With unrefined skills and scarce resources at their disposal, they opted to align themselves with the Shadow Thieves, envisioning a path that would steer them towards the coveted acquisition of the staff.~ IF ~~ THEN GOTO 19
 END
 
-IF ~~ THEN BEGIN GORGON_7
-   SAY ~Forever bound to its malevolent influence, their tragic legacy became inseparable from the ominous aura of the Kerykeion. ~ IF ~~ THEN GOTO GORGON_8
-END
-                                  
-IF ~~ THEN BEGIN GORGON_8
-   SAY ~In the realms of the Underworld, their name would echo through the ages as a testament to the perilous hunger for both prey and power.~
-       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
-       ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
-       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
-       ++ ~I'd like to ask you about something else.~ GOTO START_0
+IF ~~ THEN BEGIN 19
+   SAY ~As the years wore on, Baldwin's obsession with the staff deepened. His every waking moment was consumed by the singular purpose of attaining this artifact of unparalleled might.~ IF ~~ THEN GOTO 20
 END
 
-IF ~~ THEN BEGIN KERY_3
-   SAY ~In the annals of arcane artifacts, the Kerykeion stands as a testament to power, shrouded in a malevolence that chills the very soul.~ IF ~~ THEN GOTO KERY_4
+IF ~~ THEN BEGIN 20
+   SAY ~He poured over dusty tomes, sought out long-forgotten sages, and ventured into treacherous realms in pursuit of any scrap of knowledge related to the staff.~ IF ~~ THEN GOTO 21
 END
 
-IF ~~ THEN BEGIN KERY_4
-   SAY ~Known foremost for its dread ability to petrify any who dare meet its gaze, this fell staff harbors an even darker secret.~ IF ~~ THEN GOTO KERY_5
-END
-
-IF ~~ THEN BEGIN KERY_5
-   SAY ~It is said that with a whispered incantation, it can summon forth an unending swarm of serpents, a nightmarish tide that answers only to its master's call.~ IF ~~ THEN GOTO KERY_6
-END
-
-IF ~~ THEN BEGIN KERY_6
-   SAY ~Yet, amidst these harrowing abilities, a scroll bears witness to an even more sinister power, the unlocking of a mage's constraints on spellcasting, rendering arcane incantations a seamless extension of one's aura.~
-       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
-       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO KERY_7
-       ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO START_0
-END
-
-IF ~~ THEN BEGIN KERY_7
-   SAY ~The Kerykeion's history is a web of contradictions and shadowed truths, where certainty is elusive.~ IF ~~ THEN GOTO KERY_8
-END
-
-IF ~~ THEN BEGIN KERY_8
-   SAY ~Once bearing the name Caduceus, it was wrought by a demon in the depths of the Underworld. A being who would soon become ensnared by the voracious Gorgon sisters, their insatiable hunger for power sealing its fate.~ IF ~~ THEN GOTO KERY_9
-END
-
-IF ~~ THEN BEGIN KERY_9
-   SAY ~Yet, the tale takes a darker turn with their mortal half-sister, Medusa, consumed by envy at their immortality and eternal prowess.~ IF ~~ THEN GOTO KERY_10
-END
-
-IF ~~ THEN BEGIN KERY_10
-   SAY ~With a malevolent twist of fate, she wove the staff into her dark arts, imprisoning the essence of her immortal kin within, birthing the Kerykeion and forever cursing their existence.~  IF ~~ THEN GOTO KERY_11
-END
-
-IF ~~ THEN BEGIN KERY_11
-   SAY ~Their petrified forms coiled endlessly around its length, a grim testament to their eternal entrapment.~  IF ~~ THEN GOTO KERY_12
-END
-
-IF ~~ THEN BEGIN KERY_12
-   SAY ~Through epochs and realms, the Kerykeion passed hands, from god to god, demon to demon, until it eventually found its way to the realms of Faerun, emerging in the wake of the Time of Troubles.~ IF ~~ THEN GOTO KERY_13
-END
-
-IF ~~ THEN BEGIN KERY_13
-   SAY ~Accounts diverge on its exploits and fate, but all culminate in the same somber conclusion. The staff met its end, shattering into fragments that now lie strewn across the disparate reaches of the Sword Coast, awaiting a soul bold enough to seek its dark embrace.~
-       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO BALDWIN_3
-       ++ ~What kind of power does the Kerykeoin hold?~ GOTO KERY_3
-       ++ ~Who exactly were the Gorgon Sisters?~ GOTO GORGON_0
-       ++ ~I'd like to ask you about something else.~ GOTO START_0
-END
-
-IF ~~ THEN BEGIN SARA_2
-   SAY ~Ah, I am but a humble follower of Mask, known as a Hidden One within the revered ranks of the church.~ IF ~~ THEN GOTO SARA_3
-END
-
-IF ~~ THEN BEGIN SARA_3
-   SAY ~My purpose lies in offering measured guidance and insights, ever mindful of the shadowed path we tread.~ IF ~~ THEN GOTO SARA_4
-END
-
-IF ~~ THEN BEGIN SARA_4
-   SAY ~As a high-ranking member, my duty is to serve the greater cause, to further Mask's enigmatic agenda, focused on the art of thievery and the elusive dance of shadows.~ IF ~~ THEN GOTO SARA_5
-END
-
-IF ~~ THEN BEGIN SARA_5
-   SAY ~It is in this capacity that I find myself aligned with the Gorgon's Eye and its astute leader, Baldwin.~ IF ~~ THEN GOTO SARA_6
-END
-
-IF ~~ THEN BEGIN SARA_6
-   SAY ~Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
-       ++ ~I'd like to ask you about something else.~ GOTO START_0
-END
-
-IF ~~ THEN BEGIN BUTCHER_2
-   SAY ~"The Butcher" moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO BUTCHER_3
-END
-
-IF ~~ THEN BEGIN BUTCHER_3
-   SAY ~Even beyond the guild's darkened halls, Baldwin's reputation echoed through the streets. It was a name whispered with a mix of awe and trepidation, for those outside the guild had borne witness to the aftermath of his operations.~ IF ~~ THEN GOTO BUTCHER_4
-END
-
-IF ~~ THEN BEGIN BUTCHER_4
-   SAY ~Baldwin's methods were uncompromising, leaving a trail of blood and calculated chaos in his wake.~  IF ~~ THEN GOTO BUTCHER_5
-END
-
-IF ~~ THEN BEGIN BUTCHER_5
-   SAY ~To those who glimpsed the aftermath, he was, "The Butcher", a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
-       ++ ~I'd like to ask you something else.~ GOTO START_0
-END
-
-IF ~~ THEN BEGIN BALDWIN_3
-   SAY ~It goes back to Baldwin's youth, steeped in the dreams and aspirations exchanged with his elder brother, Richard.~ IF ~~ THEN GOTO BALDWIN_4
-END
-
-IF ~~ THEN BEGIN BALDWIN_4
-   SAY ~In the early days of their aspiring rogue-hood, Richard stumbled upon a mysterious manuscript in the depths of an ancient library.~ IF ~~ THEN GOTO BALDWIN_5
-END
-
-IF ~~ THEN BEGIN BALDWIN_5
-   SAY ~The tome bore cryptic symbols and a veiled reference to the legendary staff, known then as the Caduceus.~ IF ~~ THEN GOTO BALDWIN_6
-END
-
-IF ~~ THEN BEGIN BALDWIN_6
-   SAY ~With each passing day, Richard would regale Baldwin with tales of the staff's illustrious history, weaving a tapestry of ancient civilizations, forgotten realms, and the enigmatic figures who wielded its power.~ IF ~~ THEN GOTO BALDWIN_7
-END
-
-IF ~~ THEN BEGIN BALDWIN_7
-   SAY ~Baldwin, at a young and impressionable age, found himself ensnared in the allure of the Kerykeion. The staff's legend gripped his imagination, stoking the flames of his ambition. He yearned to wield its power and rewrite the course of history itself.~ IF ~~ THEN GOTO BALDWIN_8
-END
-
-IF ~~ THEN BEGIN BALDWIN_8
-   SAY ~With unrefined skills and scarce resources at their disposal, they opted to align themselves with the Shadow Thieves, envisioning a path that would steer them towards the coveted acquisition of the staff.~ IF ~~ THEN GOTO BALDWIN_9
-END
-
-IF ~~ THEN BEGIN BALDWIN_9
-   SAY ~As the years wore on, Baldwin's obsession with the staff deepened. His every waking moment was consumed by the singular purpose of attaining this artifact of unparalleled might.~ IF ~~ THEN GOTO BALDWIN_10
-END
-
-IF ~~ THEN BEGIN BALDWIN_10
-   SAY ~He poured over dusty tomes, sought out long-forgotten sages, and ventured into treacherous realms in pursuit of any scrap of knowledge related to the staff.~ IF ~~ THEN GOTO BALDWIN_11
-END
-
-IF ~~ THEN BEGIN BALDWIN_11
+IF ~~ THEN BEGIN 21
    SAY ~It was this perilous imbalance that ultimately led to Baldwin's downfall within the ranks of the Shadow Thieves.~
-       ++ ~How did Baldwin lose the trust of the Shadow Thieves?~ GOTO BALDWIN_12
-       ++ ~What can you tell me about Baldwin's time in the Shadow Thieves?~ GOTO BALDWIN_21
-       ++ ~Can you tell me anything more about his brother, Richard?~ GOTO BALDWIN_28
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+       ++ ~How did Baldwin lose the trust of the Shadow Thieves?~ GOTO 22
+       ++ ~I'd like to ask you about something else.~ GOTO 11
 END
 
-IF ~~ THEN BEGIN BALDWIN_12
-   SAY ~Baldwin's growing detachment from the affairs of the Shadow Thieves did not go unnoticed. His duties to the guild became secondary, his allegiance wavering.~ IF ~~ THEN GOTO BALDWIN_13
+IF ~~ THEN BEGIN 22
+   SAY ~Baldwin's growing detachment from the affairs of the Shadow Thieves did not go unnoticed. His duties to the guild became secondary, his allegiance wavering.~ IF ~~ THEN GOTO 23
 END
 
-IF ~~ THEN BEGIN BALDWIN_13
-   SAY ~The once loyal operative now walked a precarious line between the shadows and the seductive allure of the Kerykeion.~ IF ~~ THEN GOTO BALDWIN_14
+IF ~~ THEN BEGIN 23
+   SAY ~The once loyal operative now walked a precarious line between the shadows and the seductive allure of the Kerykeion.~ IF ~~ THEN GOTO 24
 END
 
-IF ~~ THEN BEGIN BALDWIN_14
-   SAY ~His disregard for the guild's directives, his flagrant pursuit of the staff, and his willingness to trespass into forbidden territories strained the fragile bonds of trust that held the guild together.~ IF ~~ THEN GOTO BALDWIN_15
+IF ~~ THEN BEGIN 24
+   SAY ~His disregard for the guild's directives, his flagrant pursuit of the staff, and his willingness to trespass into forbidden territories strained the fragile bonds of trust that held the guild together.~ IF ~~ THEN GOTO 25
 END
 
-IF ~~ THEN BEGIN BALDWIN_15
-   SAY ~The fateful day arrived when Baldwin's insubordination could no longer be ignored. His own brother, Richard, faced an agonizing decision.~ IF ~~ THEN GOTO BALDWIN_16
+IF ~~ THEN BEGIN 25
+   SAY ~The fateful day arrived when Baldwin's insubordination could no longer be ignored. His own brother, Richard, faced an agonizing decision.~ IF ~~ THEN GOTO 26
 END
 
-IF ~~ THEN BEGIN BALDWIN_16
-   SAY ~Fearing the catastrophic consequences of Baldwin's unchecked obsession, he made the painful choice to expose him to the Shadow Thieves' leadership.~ IF ~~ THEN GOTO BALDWIN_17
+IF ~~ THEN BEGIN 26
+   SAY ~Fearing the catastrophic consequences of Baldwin's unchecked obsession, he made the painful choice to expose him to the Shadow Thieves' leadership.~ IF ~~ THEN GOTO 27
 END
 
-IF ~~ THEN BEGIN BALDWIN_17
-   SAY ~The revelation of Baldwin's transgressions shattered the guild's confidence in him. The council, faced with no alternative, decreed his banishment, a sentence that cast him into the unforgiving realm beyond the guild's sanctuary.~
-       ++ ~What happened after his banishment?~ GOTO BALDWIN_18
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+IF ~~ THEN BEGIN 27
+   SAY ~The revelation of Baldwin's transgressions shattered the guild's confidence in him.~ IF ~~ THEN GOTO 28
 END
 
-IF ~~ THEN BEGIN BALDWIN_18
-   SAY ~After the decree of banishment severed Baldwin's ties with the Shadow Thieves, a bitter fire smoldered within him. He sought revenge on the Shadow Thieves, his heart hardened by the sting of betrayal.~ IF ~~ THEN GOTO BALDWIN_19
+IF ~~ THEN BEGIN 28
+   SAY ~The council, faced with no alternative, decreed his banishment, a sentence that cast him into the unforgiving realm beyond the guild's sanctuary.~
+       ++ ~What happened after his banishment?~ GOTO 29
+       ++ ~I'd like to ask you about something else.~ GOTO 11
 END
 
-IF ~~ THEN BEGIN BALDWIN_19
-   SAY ~Fuelled by a vengeful resolve, he struck back, exacting retribution with calculated precision. In shadows deep, he silenced those who had betrayed him, sparing only his brother, Richard.~ IF ~~ THEN GOTO BALDWIN_20
+IF ~~ THEN BEGIN 29
+   SAY ~After the decree of banishment severed Baldwin's ties with the Shadow Thieves, a bitter fire smoldered within him. He sought revenge on the Shadow Thieves, his heart hardened by the sting of betrayal.~ IF ~~ THEN GOTO 30
 END
 
-IF ~~ THEN BEGIN BALDWIN_20
-   SAY ~Baldwin, now a pariah, set forth on a solitary journey, fueled by a singular purpose, to seize the Kerykeion and claim the power that had consumed his every waking thought.~ IF ~~ THEN GOTO BALDWIN_21
+IF ~~ THEN BEGIN 30
+   SAY ~Fuelled by a vengeful resolve, he struck back, exacting retribution with calculated precision. In shadows deep, he silenced those who had betrayed him, sparing only his brother, Richard.~ IF ~~ THEN GOTO 31
 END
 
-IF ~~ THEN BEGIN BALDWIN_21
-   SAY ~With stolen documents clutched in his hand, Baldwin fled north to Beregost, a town cloaked in wilderness and intrigue.~ IF ~~ THEN GOTO BALDWIN_22
+IF ~~ THEN BEGIN 31
+   SAY ~Baldwin, now a pariah, set forth on a solitary journey, fueled by a singular purpose, to seize the Kerykeion and claim the power that had consumed his every waking thought.~ IF ~~ THEN GOTO 32
 END
 
-IF ~~ THEN BEGIN BALDWIN_22
-   SAY ~Here, he forged the Gorgon's Eye, a sanctuary for outcasts, a refuge for those drawn to the allure of forbidden power. Its name echoes the ancient staff's legend, a constant reminder of his unyielding pursuit.~ IF ~~ THEN GOTO BALDWIN_23
+IF ~~ THEN BEGIN 32
+   SAY ~With stolen documents clutched in his hand, Baldwin fled north to Beregost, a town cloaked in wilderness and intrigue.~ IF ~~ THEN GOTO 33
 END
 
-IF ~~ THEN BEGIN BALDWIN_23
+IF ~~ THEN BEGIN 33
+   SAY ~Here, he forged the Gorgon's Eye, a sanctuary for outcasts, a refuge for those drawn to the allure of forbidden power.~ IF ~~ THEN GOTO 34
+END
+
+IF ~~ THEN BEGIN 34
+   SAY ~Its name echoes the ancient staff's legend, a constant reminder of his unyielding pursuit.~ IF ~~ THEN GOTO 35
+END
+
+IF ~~ THEN BEGIN 35
    SAY ~Baldwin's purpose was clear. Relentlessly track the path to the Kerykeion, with the shadows of Beregost concealing his unwavering resolve.~
-       ++ ~What can you tell me about Baldwin's time in the Shadow Thieves?~ GOTO BALDWIN_24
-       ++ ~Can you tell me anything more about his brother, Richard?~ GOTO BALDWIN_28
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+       ++ ~What can you tell me about Baldwin's time in the Shadow Thieves?~ GOTO 36
+       ++ ~I'd like to ask you about something else.~ GOTO 11
 END
 
-IF ~~ THEN BEGIN BALDWIN_24
-   SAY ~During the intervening years between Baldwin's induction into the Shadow Thieves and his eventual banishment, he ascended through the ranks with calculated finesse.~ IF ~~ THEN GOTO BALDWIN_24.5
+IF ~~ THEN BEGIN 36
+   SAY ~During the intervening years between Baldwin's induction into the Shadow Thieves and his eventual banishment, he ascended through the ranks with calculated finesse.~ IF ~~ THEN GOTO 37
 END
 
-IF ~~ THEN BEGIN BALDWIN_24.5
-   SAY ~His reputation as a skilled rogue with a penchant for command solidified, particularly within the Athkatla branch in Amn.~ IF ~~ THEN GOTO BALDWIN_25
+IF ~~ THEN BEGIN 37
+   SAY ~His reputation as a skilled rogue with a penchant for command solidified, particularly within the Athkatla branch in Amn.~ IF ~~ THEN GOTO 38
 END
 
-IF ~~ THEN BEGIN BALDWIN_25
-   SAY ~There, he operated directly under the formidable Renal Bloodscalp, a name synonymous with notoriety and power.~ IF ~~ THEN GOTO BALDWIN_25.5
+IF ~~ THEN BEGIN 38
+   SAY ~There, he operated directly under the formidable Renal Bloodscalp, a name synonymous with notoriety and power.~ IF ~~ THEN GOTO 39
 END
 
-IF ~~ THEN BEGIN BALDWIN_25.5
-   SAY ~Baldwin's tenure was marked by a duality of loyalty to the guild and an insatiable hunger for arcane knowledge, both fueled by his ambitions.~ IF ~~ THEN GOTO BALDWIN_26
+IF ~~ THEN BEGIN 39
+   SAY ~Baldwin's tenure was marked by a duality of loyalty to the guild and an insatiable hunger for arcane knowledge, both fueled by his ambitions.~ IF ~~ THEN GOTO 40
 END
 
-IF ~~ THEN BEGIN BALDWIN_26
-   SAY ~He executed missions with surgical precision, earning respect and trust among his peers. Yet, in the shadows, he was consumed by his relentless quest for the Kerykeion, his obsession a carefully guarded secret.~ IF ~~ THEN GOTO BALDWIN_27
+IF ~~ THEN BEGIN 40
+   SAY ~He executed missions with surgical precision, earning respect and trust among his peers.~ IF ~~ THEN GOTO 41
 END
 
-IF ~~ THEN BEGIN BALDWIN_27
+IF ~~ THEN BEGIN 41
+   SAY ~Yet, in the shadows, he was consumed by his relentless quest for the Kerykeion, his obsession a carefully guarded secret.~ IF ~~ THEN GOTO 42
+END
+
+IF ~~ THEN BEGIN 42
    SAY ~It was this very duality that would eventually fracture his allegiance, culminating in a fateful clash of loyalties that led to his expulsion from the guild he once called home.~
-       ++ ~Can you tell me anything more about his brother, Richard?~ GOTO BALDWIN_28
-       ++ ~How did Baldwin lose the trust of the Shadow Thieves?~ GOTO BALDWIN_12
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+       ++ ~Can you tell me anything more about his brother, Richard?~ GOTO 43
+       ++ ~I'd like to ask you about something else.~ GOTO 11
 END
 
-IF ~~ THEN BEGIN BALDWIN_28
-   SAY ~Richard was a figure of exceptional acumen and finesse within the realm of rogues. His intellect was formidable, matched only by his precise execution of covert operations.~ IF ~~ THEN GOTO BALDWIN_29
+IF ~~ THEN BEGIN 43
+   SAY ~Richard was a figure of exceptional acumen and finesse within the realm of rogues. His intellect was formidable, matched only by his precise execution of covert operations.~ IF ~~ THEN GOTO 44
 END
 
-IF ~~ THEN BEGIN BALDWIN_29
-   SAY ~Richard's approach was marked by a directness that brooked no deviation, and an unyielding resolve that garnered him respect. However, in the shadow of his younger sibling, Richard's aspirations paled in comparison.~ IF ~~ THEN GOTO BALDWIN_30
+IF ~~ THEN BEGIN 44
+   SAY ~Richard's approach was marked by a directness that brooked no deviation, and an unyielding resolve that garnered him respect.~ IF ~~ THEN GOTO 45
 END
 
-IF ~~ THEN BEGIN BALDWIN_30
-   SAY ~While he excelled in the craft of thievery and subterfuge, he lacked the same fervent ambition and relentless drive that defined Baldwin's pursuit of power and knowledge.~ IF ~~ THEN GOTO BALDWIN_31
+IF ~~ THEN BEGIN 45
+   SAY ~However, in the shadow of his younger sibling, Richard's aspirations paled in comparison.~ IF ~~ THEN GOTO 46
 END
 
-IF ~~ THEN BEGIN BALDWIN_31
+IF ~~ THEN BEGIN 46
+   SAY ~While he excelled in the craft of thievery and subterfuge, he lacked the same fervent ambition and relentless drive that defined Baldwin's pursuit of power and knowledge.~ IF ~~ THEN GOTO 47
+END
+
+IF ~~ THEN BEGIN 47
    SAY ~This divergence in their pursuits, while it set them on separate paths, also served to underline the unique strengths and weaknesses that each brought to their chosen trades.~
-       ++ ~What can you tell me about Baldwin's time in the Shadow Thieves?~ GOTO BALDWIN_21
-       ++ ~How did Baldwin lose the trust of the Shadow Thieves?~ GOTO BALDWIN_12
-       ++ ~I'd like to ask you about something else.~ GOTO KERY_2
+       ++ ~I'd like to ask you about something else.~ GOTO 11
 END
+
+IF ~~ THEN BEGIN 48
+   SAY ~The Kerykeion's history is a web of contradictions and shadowed truths, where certainty is elusive.~ IF ~~ THEN GOTO 49
+END
+
+IF ~~ THEN BEGIN 49
+   SAY ~Once bearing the name Caduceus, it was wrought by a demon in the depths of the Underworld.~ IF ~~ THEN GOTO 50
+END
+
+IF ~~ THEN BEGIN 50
+   SAY ~A being who would soon become ensnared by the voracious Gorgon sisters, their insatiable hunger for power sealing its fate.~ IF ~~ THEN GOTO 51
+END
+
+IF ~~ THEN BEGIN 51
+   SAY ~Yet, the tale takes a darker turn with their mortal half-sister, Medusa, consumed by envy at their immortality and eternal prowess.~ IF ~~ THEN GOTO 52
+END
+
+IF ~~ THEN BEGIN 52
+   SAY ~With a malevolent twist of fate, she wove the staff into her dark arts, imprisoning the essence of her immortal kin within, birthing the Kerykeion and forever cursing their existence.~  IF ~~ THEN GOTO 53
+END
+
+IF ~~ THEN BEGIN 53
+   SAY ~Their petrified forms coiled endlessly around its length, a grim testament to their eternal entrapment.~  IF ~~ THEN GOTO 54
+END
+
+IF ~~ THEN BEGIN 54
+   SAY ~Through epochs and realms, the Kerykeion passed hands, from god to god, demon to demon, until it eventually found its way to the realms of Faerun, emerging in the wake of the Time of Troubles.~ IF ~~ THEN GOTO 55
+END
+
+IF ~~ THEN BEGIN 55
+   SAY ~Accounts diverge on its exploits and fate, but all culminate in the same somber conclusion.~ IF ~~ THEN GOTO 56
+END
+
+IF ~~ THEN BEGIN 56
+   SAY ~The staff met its end, shattering into fragments that now lie strewn across the disparate reaches of the Sword Coast, awaiting a soul bold enough to seek its dark embrace.~
+       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO 12
+       ++ ~What kind of power does the Kerykeoin hold?~ GOTO 57
+       ++ ~Who exactly were the Gorgon Sisters?~ GOTO 61
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 57
+   SAY ~In the annals of arcane artifacts, the Kerykeion stands as a testament to power, shrouded in a malevolence that chills the very soul.~ IF ~~ THEN GOTO 58
+END
+
+IF ~~ THEN BEGIN 58
+   SAY ~Known foremost for its dread ability to petrify any who dare meet its gaze, this fell staff harbors an even darker secret.~ IF ~~ THEN GOTO 59
+END
+
+IF ~~ THEN BEGIN 59
+   SAY ~It is said that with a whispered incantation, it can summon forth an unending swarm of serpents, a nightmarish tide that answers only to its master's call.~ IF ~~ THEN GOTO 60
+END
+
+IF ~~ THEN BEGIN 60
+   SAY ~Yet, amidst these harrowing abilities, a scroll bears witness to an even more sinister power, the unlocking of a mage's constraints on spellcasting, rendering arcane incantations a seamless extension of one's aura.~
+       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO 12
+       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO 48
+       ++ ~Who exactly were the Gorgon Sisters?~ GOTO 61
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 61
+   SAY ~In the shadowed depths of the Underworld, the Gorgon Sisters, Stheno, Euryale, and Medusa, were serpent-like beings with an insatiable hunger.~ IF ~~ THEN GOTO 62
+END
+
+IF ~~ THEN BEGIN 62
+   SAY ~Their sustenance extended beyond mortal prey, to a ravenous quest for power itself. Amidst the Underworld's labyrinthine expanse, they sought out dark creatures and formidable foes.~ IF ~~ THEN GOTO 63
+END
+
+IF ~~ THEN BEGIN 63
+   SAY ~With serpentine precision, they would strike, their venomous fangs injecting a potent elixir that drained their victims of vitality.~ IF ~~ THEN GOTO 64
+END
+
+IF ~~ THEN BEGIN 64
+   SAY ~The sisters reveled in the rush of power that surged through their veins with each conquest, their voracity growing with every fallen adversary.~ IF ~~ THEN GOTO 65
+END
+
+IF ~~ THEN BEGIN 65
+   SAY ~In the heart of the Underworld, they were both predators and rulers, their dominion unchallenged, their hunger never sated.~ IF ~~ THEN GOTO 66
+END
+
+IF ~~ THEN BEGIN 66
+   SAY ~Medusa, the lone mortal among them, harbored a bitter jealousy born from her mortality. This resentment festered, intensifying her desire for power and propelling her down a treacherous path.~ IF ~~ THEN GOTO 67
+END
+
+IF ~~ THEN BEGIN 67
+   SAY ~It was amidst this insatiable pursuit that the dark tale of the Kerykeion unfurled.~ IF ~~ THEN GOTO 68
+END
+
+IF ~~ THEN BEGIN 68
+   SAY ~For the Gorgon Sisters' voracity played a pivotal role in the staff's creation and the subsequent entrapment of their essence.~ IF ~~ THEN GOTO 69
+END
+
+IF ~~ THEN BEGIN 69
+   SAY ~Forever bound to its malevolent influence, their tragic legacy became inseparable from the ominous aura of the Kerykeion. ~ IF ~~ THEN GOTO 70
+END
+
+IF ~~ THEN BEGIN 70
+   SAY ~In the realms of the Underworld, their name would echo through the ages as a testament to the perilous hunger for both prey and power.~
+       ++ ~Why is Baldwin so interested in the Kerykeion?~ GOTO 12
+       ++ ~Can you tell me more about the Kerykeion's history?~ GOTO 48
+       ++ ~What kind of power does the Kerykeoin hold?~ GOTO 57
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 71
+   SAY ~"The Butcher" moniker bestowed upon Baldwin is a testament to the ruthless efficiency with which he operated within the infamous ranks of the Shadow Thieves.~ IF ~~ THEN GOTO 72
+END
+
+IF ~~ THEN BEGIN 72
+   SAY ~Even beyond the guild's darkened halls, Baldwin's reputation echoed through the streets.~ IF ~~ THEN GOTO 73
+END
+
+IF ~~ THEN BEGIN 73
+   SAY ~It was a name whispered with a mix of awe and trepidation, for those outside the guild had borne witness to the aftermath of his operations.~ IF ~~ THEN GOTO 74
+END
+
+IF ~~ THEN BEGIN 74
+   SAY ~Baldwin's methods were uncompromising, leaving a trail of blood and calculated chaos in his wake.~  IF ~~ THEN GOTO 75
+END
+
+IF ~~ THEN BEGIN 75
+   SAY ~To those who glimpsed the aftermath, he was, "The Butcher", a title born of equal parts respect for his formidable skill and a stark acknowledgment of the unforgiving nature of his work in the field.~
+       ++ ~I'd like to ask you something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 76
+   SAY ~Ah, I am but a humble follower of Mask, known as a Hidden One within the revered ranks of the church.~ IF ~~ THEN GOTO 77
+END
+
+IF ~~ THEN BEGIN 77
+   SAY ~My purpose lies in offering measured guidance and insights, ever mindful of the shadowed path we tread.~ IF ~~ THEN GOTO 78
+END
+
+IF ~~ THEN BEGIN 78
+   SAY ~As a high-ranking member, my duty is to serve the greater cause, to further Mask's enigmatic agenda, focused on the art of thievery and the elusive dance of shadows.~ IF ~~ THEN GOTO 79
+END
+
+IF ~~ THEN BEGIN 79
+   SAY ~It is in this capacity that I find myself aligned with the Gorgon's Eye and its astute leader, Baldwin.~ IF ~~ THEN GOTO 80
+END
+
+IF ~~ THEN BEGIN 80
+   SAY ~Together, we navigate the delicate tapestry of intrigue, ensuring that our pursuits align seamlessly with the clandestine designs of our patron deity.~
+       ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
+       +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
+       ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104
+       ++ ~I'm interested in the ways of Mask and your church. What steps must one take to become a member?~ GOTO 115
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 81
+   SAY ~My past, much like the shadows we revere, is layered and complex. Hailing from the enigmatic land of Thay, my life has been a testament to the intricate teachings of Mask.~ IF ~~ THEN GOTO 82
+END
+
+IF ~~ THEN BEGIN 82
+   SAY ~I served at a grand temple in Bezantur, a city as steeped in secrecy as the deity we worship. It was there, amidst the veiled schemes and hidden knowledge, that I found my calling.~ IF ~~ THEN GOTO 83
+END
+
+IF ~~ THEN BEGIN 83
+   SAY ~During the tumultuous times of the Salamander War, my role transcended the confines of the temple. I found myself offering counsel to Aznar Thrul, an esteemed Red Wizards and one of the leaders of Thay.~ IF ~~ THEN GOTO 84
+END
+
+IF ~~ THEN BEGIN 84
+   SAY ~My insights, drawn from the depths of shadowy wisdom, proved invaluable in navigating the intricate web of politics and power that defined that era.~ IF ~~ THEN GOTO 85
+END
+
+IF ~~ THEN BEGIN 85
+   SAY ~My expertise, however, extends beyond mere counsel. As a master chronicler, my life has been dedicated to the pursuit and understanding of ancient artifacts and hidden powers.~ IF ~~ THEN GOTO 86
+END
+
+IF ~~ THEN BEGIN 86
+   SAY ~It is this very pursuit that brought me to the Gorgon's Eye and into an alliance with Baldwin and the Gorgon's Eye.~ IF ~~ THEN GOTO 87
+END
+
+IF ~~ THEN BEGIN 87
+   SAY ~Our goal is singular yet profound: to locate and restore the Kerykeion, a relic of immense power and mystery.~ IF ~~ THEN GOTO 88
+END
+
+IF ~~ THEN BEGIN 88
+   SAY ~Its fractured pieces, scattered across the Sword Coast, hold secrets that resonate deeply with the teachings of our Lord of Shadows.~ IF ~~ THEN GOTO 89
+END
+
+IF ~~ THEN BEGIN 89
+   SAY ~This quest is not merely an academic endeavor. It is a journey that aligns with the divine will of Mask, a pursuit that embodies the very essence of our faith.~ IF ~~ THEN GOTO 90
+END
+
+IF ~~ THEN BEGIN 90
+   SAY ~As we seek to piece together the Kerykeion, we tread a path laden with intrigue and hidden knowledge, a path that I have walked my entire life.~ IF ~~ THEN GOTO 91
+END
+
+IF ~~ THEN BEGIN 91
+   SAY ~In this, Baldwin and I are united, our goals intertwined with the shadowy tapestry of fate itself.~
+       +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
+       ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104
+       ++ ~I'm interested in the ways of Mask and your church. What steps must one take to become a member?~ GOTO 115
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 92
+   SAY ~Ah, Danika. She is indeed a remarkable soul, one whose life threads have been intricately woven by the very shadows we worship.~ IF ~~ THEN GOTO 93
+END
+
+IF ~~ THEN BEGIN 93
+   SAY ~I took her into the Church of Mask at a very tender age, a child found amidst turmoil and strife.~ IF ~~ THEN GOTO 94
+END
+
+IF ~~ THEN BEGIN 94
+   SAY ~It was evident, even then, that she was touched by a rare and potent force, a latent power that resonated deeply with the enigmatic ethos of our Lord of Shadows.~ IF ~~ THEN GOTO 95
+END
+
+IF ~~ THEN BEGIN 95
+   SAY ~Her journey from those early days to her current standing as a Demarchess has been nothing short of extraordinary.~ IF ~~ THEN GOTO 96
+END
+
+IF ~~ THEN BEGIN 96
+   SAY ~Danika's unwavering devotion, her keen understanding of strategy and stealth, are a testament to the teachings of Mask.~ IF ~~ THEN GOTO 97
+END
+
+IF ~~ THEN BEGIN 97
+   SAY ~She embodies the very principles we uphold: subtlety, cunning, and the relentless pursuit of our hidden agendas.~ IF ~~ THEN GOTO 98
+END
+
+IF ~~ THEN BEGIN 98
+   SAY ~Within the Gorgon's Eye, Danika serves a pivotal role. She is not just a representative of our Church but a critical asset in aligning our covert operations with the divine will of Mask.~ IF ~~ THEN GOTO 99
+END
+
+IF ~~ THEN BEGIN 99
+   SAY ~Her insights and strategies have proven invaluable, seamlessly intertwining our sacred mission with the guild's endeavors.~ IF ~~ THEN GOTO 100
+END
+
+IF ~~ THEN BEGIN 100
+   SAY ~As her mentor and guide, I have watched her grow and hone her skills. She is my protege, and our journey from Thay to Beregost has been one of continuous learning and adaptation.~ IF ~~ THEN GOTO 101
+END
+
+IF ~~ THEN BEGIN 101
+   SAY ~Together, we strive to further the enigmatic agenda of our deity, ensuring that every step we take is shrouded in the wisdom of shadows.~ IF ~~ THEN GOTO 102
+END
+
+IF ~~ THEN BEGIN 102
+   SAY ~Danika, with her unique talents and unwavering faith, is an integral part of our intricate dance within the world of shadows.~ IF ~~ THEN GOTO 103
+END
+
+IF ~~ THEN BEGIN 103
+   SAY ~Her path, like ours, is one that weaves through darkness and secrecy, always in service to the greater cause of the Church of Mask.~
+       ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
+       ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104
+       ++ ~I'm interested in the ways of Mask and your church. What steps must one take to become a member?~ GOTO 115
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 104
+   SAY ~Mask, the Lord of Shadows, is a deity shrouded in enigma, revered by those who cherish the arts of stealth and thievery.~ IF ~~ THEN GOTO 105
+END
+
+IF ~~ THEN BEGIN 105
+   SAY ~Worshipping Mask involves embracing the shadows, mastering the art of subtlety, and understanding the deeper truths that lie beneath surface appearances.~ IF ~~ THEN GOTO 106
+END
+
+IF ~~ THEN BEGIN 106
+   SAY ~Followers believe in the fluidity of ownership and see deception as a valuable tool.~ IF ~~ THEN GOTO 107
+END
+
+IF ~~ THEN BEGIN 107
+   SAY ~The church's teachings emphasize cunning and adaptability, encouraging the faithful to maneuver through life's complexities as adeptly as a shadow moves through light.~ IF ~~ THEN GOTO 108
+END
+
+IF ~~ THEN BEGIN 108
+   SAY ~Our rituals and practices are often hidden, mirroring the elusive nature of our deity.~ IF ~~ THEN GOTO 109
+END
+
+IF ~~ THEN BEGIN 109
+   SAY ~As a devoted follower of Mask, one gains not just spiritual fulfillment but also tangible benefits that align with our deity's domain.~ IF ~~ THEN GOTO 110
+END
+
+IF ~~ THEN BEGIN 110
+   SAY ~Devotees are often blessed with enhanced skills in stealth and deception, aiding them in both mundane and divine pursuits.~ IF ~~ THEN GOTO 111
+END
+
+IF ~~ THEN BEGIN 111
+   SAY ~The church provides a network of like-minded individuals, offering support and shared knowledge in our clandestine endeavors.~ IF ~~ THEN GOTO 112
+END
+
+IF ~~ THEN BEGIN 112
+   SAY ~Most importantly, true followers are sometimes granted divine insights and revelations, enabling them to perceive and manipulate the world in ways others cannot.~ IF ~~ THEN GOTO 113
+END
+
+IF ~~ THEN BEGIN 113
+   SAY ~The purpose of joining is to become part of a greater, shadowy whole, moving unseen and influencing events from the darkness.~ IF ~~ THEN GOTO 114
+END
+
+IF ~~ THEN BEGIN 114
+   SAY ~This path is not for the faint of heart, but for those who seek power and understanding beyond the ordinary, it offers rewards unparalleled.~
+       ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
+       +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
+       ++ ~I'm interested in the ways of Mask and your church. What steps must one take to become a member?~ GOTO 115
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 115
+   SAY ~To join the ranks of Mask's faithful, one must demonstrate a keen understanding of subtlety and secrecy.~ IF ~~ THEN GOTO 116
+END
+
+IF ~~ THEN BEGIN 116
+   SAY ~Prospective members undergo a rigorous process where their skills in stealth, manipulation, and discretion are tested. Loyalty to Mask's tenets is paramount.~ IF ~~ THEN GOTO 117
+END
+
+IF ~~ THEN BEGIN 117
+   SAY ~Aspirants are often required to complete tasks that reflect the deity's ethos, proving their worthiness to embrace the shadowed path.~ IF ~~ THEN GOTO 118
+END
+
+IF ~~ THEN BEGIN 118
+   SAY ~The journey to becoming a full-fledged member is as much about inner transformation as it is about external proficiency.~ IF ~~ THEN GOTO 119
+END
+
+IF ~~ THEN BEGIN 119
+   SAY ~One must embody the very essence of shadows, becoming an unseen force that influences the world from behind a veil of mystery.~
+       +~!Class(Player1,THIEF_ALL)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 120
+       +~Class(Player1,THIEF_ALL)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 125
+       ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
+       +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
+       ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 120
+   SAY ~Your interest in the Church of Mask and in walking the path of shadows is commendable.~ IF ~~ THEN GOTO 121
+END
+
+IF ~~ THEN BEGIN 121
+   SAY ~However, the church is selective in its acceptance of devotees, particularly favoring those with an innate affinity for the thieving arts.~ IF ~~ THEN GOTO 122
+END
+
+IF ~~ THEN BEGIN 122
+   SAY ~It is these skills that resonate most deeply with the teachings and essence of Mask.~ IF ~~ THEN GOTO 123
+END
+
+IF ~~ THEN BEGIN 123
+   SAY ~While I note your eagerness, without this intrinsic connection to the arts of stealth and subterfuge, it is challenging to fully embrace the path we tread.~ IF ~~ THEN GOTO 124
+END
+
+IF ~~ THEN BEGIN 124
+   SAY ~Continue to hone your skills and understanding of our ways. Perhaps in time, your path may align more closely with the shadowed journey of Mask.~
+       ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
+       +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
+       ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104
+       ++ ~I'd like to ask you about something else.~ GOTO 10
+END
+
+IF ~~ THEN BEGIN 125
+   SAY ~Ah, a seeker of the shadows in our midst. Your path as a thief aligns well with the teachings of Mask.~ IF ~~ THEN GOTO 126
+END
+
+IF ~~ THEN BEGIN 126
+   SAY ~To begin your journey into the Church of Mask, you must first embrace the role of the 'Unproved.'~ IF ~~ THEN GOTO 127
+END
+
+IF ~~ THEN BEGIN 127
+   SAY ~This is a novice position, a starting point on your path to understanding the deeper truths of our Lord of Shadows.~ IF ~~ THEN GOTO 128
+END
+
+IF ~~ THEN BEGIN 128
+   SAY ~Your first task is to internalize the core dogma of Mask: a creed that emphasizes subtlety, deception, and the acquisition of wealth through cunning means.~ IF ~~ THEN GOTO 129
+END
+
+IF ~~ THEN BEGIN 129
+   SAY ~Study these teachings, for they are the foundation upon which your journey will be built. When you have fully grasped the essence of this dogma, return to me and recite it in full.~ IF ~~ THEN GOTO 130
+END
+
+IF ~~ THEN BEGIN 130
+   SAY ~Only then can you proceed to the next trial, proving your worthiness to walk further down this shadowed path.~ IF ~~ THEN GOTO 131
+END
+
+IF ~~ THEN BEGIN 131
+   SAY ~Remember, the way of Mask is not merely about thievery, but the art of manipulation, the crafting of plausible untruths, and the mastery of subtlety.~ IF ~~ THEN GOTO 132
+END
+
+IF ~~ THEN BEGIN 132
+   SAY ~It is a path that requires finesse and a keen understanding of the nuances of deceit and shadow. Prove yourself adept in these arts, and you shall find your place within our ranks.~
+IF ~~ THEN DO ~
+   SetGlobal("h_JoinMask","GLOBAL",1)
+   GiveItemCreate("h_misc33",LastTalkedToBy,0,0,0)~ EXIT
+END
+
+IF ~~ THEN BEGIN 133
+   SAY ~Very well. Step forward into the shadow's embrace and recite the dogma. Let each word reflect your understanding and commitment to the path of Mask.~ IF ~~ THEN GOTO 134
+END
+
+IF ~~ THEN BEGIN 134
+   SAY ~This is more than mere memorization; it is a demonstration of your alignment with the principles that guide our order. Speak now, and let the shadows bear witness to your devotion.~
+       ++ ~Foolish are those who value honesty, but a semblance of truth holds great worth.~ GOTO 135
+       ++ ~Honesty is the refuge of the simple-minded, but the appearance of honesty is a valuable tool.~ GOTO 135
+       ++ ~Only the naive prize honesty, while the illusion of truthfulness is precious.~ GOTO 135
+       ++ ~True honesty is for the unwise, but the art of seeming honest is invaluable.~ GOTO 135
+       ++ ~Honesty is for fools, but apparent honesty is a very valuable thing.~ GOTO 137
+       ++ ~Honesty belongs to the foolish, yet the art of feigned honesty is priceless.~ GOTO 135
+END
+
+IF ~~ THEN BEGIN 135
+   SAY ~That is incorrect. The path of Mask demands precision and an unerring grasp of its tenets. What you have recited deviates from the core teachings.~ IF ~~ THEN GOTO 136
+END
+
+IF ~~ THEN BEGIN 136
+   SAY ~Reflect upon our dogma once more, absorb its essence, and when you are ready, return to me.~
+IF ~~ THEN EXIT
+END
+
+IF ~~ THEN BEGIN 137
+   SAY ~Make every untruth seem plausible, and never lie when you can cleave to the truth but leave a mistaken impression; a bridge burned means much rebuilding if you need to cross over there again.~
+       ++ ~In all things, subtlety reigns supreme.~ GOTO 135
+       ++ ~Subtlety is everything.~ GOTO 138
+       ++ ~The essence of all is found in subtlety.~ GOTO 135
+       ++ ~Above all, cherish the art of subtlety.~ GOTO 135
+       ++ ~Subtlety holds the key to all endeavors.~ GOTO 135
+       ++ ~At the heart of matters, subtlety prevails.~ GOTO 135
+END
+
+IF ~~ THEN BEGIN 138
+   SAY ~A bribe is the least subtle of the tools Mask gives to us. Never force someone to do something when you can manipulate them into doing it and thinking the decision and the deed are entirely their own freewilled work.~
+       ++ ~Avoid the expected, unless it masks another, more hidden act.~ GOTO 135
+       ++ ~Eschew the apparent, only employing it to veil further schemes.~ GOTO 135
+       ++ ~Shun the straightforward path, unless it serves to obscure deeper plans.~ GOTO 135
+       ++ ~Refrain from the evident, unless it's a cover for other, covert operations.~ GOTO 135
+       ++ ~Steer clear of the clear-cut, except when it shadows other, underlying intents.~ GOTO 135
+       ++ ~Never do the obvious, except to conceal a secondary or tertiary deed or arrangement.~ GOTO 139
+END
+
+IF ~~ THEN BEGIN 139
+   SAY ~Spin secrets atop secrets, but do so unconcernedly, not with the sly excitement of untutored youth.~
+       ++ ~Place faith in the darkness, as light often leads to vulnerability.~ GOTO 135
+       ++ ~Rely on the obscurity of shadows, for paths well-lit invite danger.~ GOTO 135
+       ++ ~In shadows, trust; for in brightness, one becomes an effortless mark.~ GOTO 135
+       ++ ~Trust in the shadows, for the bright way makes for easy targets.~ GOTO 140
+       ++ ~Seek solace in the shadows, for the illuminated way is a path to peril.~ GOTO 135
+       ++ ~Embrace the concealment of shadows, as clarity often renders one exposed.~ GOTO 135
+END
+
+IF ~~ THEN BEGIN 140
+   SAY ~Well done. Your grasp of the Tenets of the Unseen shows promising depth. In the Church of Mask, such understanding is the first step to truly walk in the Lord of Shadows favor.~ IF ~~ THEN GOTO 141
+END
+
+IF ~~ THEN BEGIN 141
+   SAY ~Remember, these tenets are not just words but guiding principles for your actions and decisions. As you embody these teachings, you will find your place among us.~ IF ~~ THEN GOTO 142
+END
+
+IF ~~ THEN BEGIN 142
+   SAY ~When you feel ready to delve deeper into the shadows and face the challenges that lie ahead, return here. Your next trial awaits, and with it, a further step into our fold.~
+IF ~~ THEN DO ~
+   SetGlobal("h_JoinMask","GLOBAL",2)
+   AddExperienceParty(600)~ EXIT
+END
+
+
+
 
 IF ~Global("h_Saradin","GLOBAL",3)~ THEN BEGIN FINAL_1
    SAY ~It appears Baldwin was ill-equipped, both in mind and body, to wield the Kerykeion.~ IF ~~ THEN GOTO FINAL_2
@@ -582,6 +917,7 @@ END
 IF ~Global("h_Saradin","GLOBAL",5)~ THEN BEGIN PROFIT_0
    SAY ~There is still some time left before our reports are in. I will keep you updated if anything else requires your attention in the meantime.~ IF ~~ THEN EXIT
 END
+
 
 
 

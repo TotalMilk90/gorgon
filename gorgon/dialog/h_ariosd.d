@@ -455,15 +455,15 @@ IF ~~ THEN BEGIN 79
 END
 
 IF ~~ THEN BEGIN 80
-   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
+   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, mate. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
 END
 
 IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",3) Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN 81
-   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
+   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, mate. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
 END
 
 IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",4) Global("h_BlackJoin","GLOBAL",1)~ THEN BEGIN 82
-   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, lad. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
+   SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, mate. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
 END
 
 IF ~~ THEN BEGIN 83
@@ -548,7 +548,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",11)~ THEN BEGIN 96
-   SAY ~Well, <CHARNAME>, how's the coin flowing in? Any trouble with those tavern-keepers?~
+   SAY ~Well, <CHARNAME>, how's the coin flowin' in? Any trouble with those tavern-keepers?~
        +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",0)~+ ~Only the Red Sheaf couldn't pay. I thought it best to give them a warning instead of resorting to... drastic measures.~ GOTO 97
        +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",1)~+ ~Only the Red Sheaf couldn't pay. I chose to make an example out of him. He won't be causing any more trouble.~ GOTO 99
        +~NumItemsPartyLT("h_misc23",3)~+ ~Still makin' the rounds. Be back in a jiffy.~ EXIT
@@ -667,7 +667,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_ArioshQuest","GLOBAL",14) Dead("blacklily")~ THEN BEGIN 119
-   SAY ~Aye, it seems we've underestimated this Inspector. Keep your ears to the ground. We need to get inside his head, find his weaknesses, and turn the tables in our favor.~ IF ~~ THEN EXIT
+   SAY ~Aye, it seems we've underestimated this Inspector. We need to get inside his head, find his weaknesses, and turn the tables in our favor.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",14)~ THEN BEGIN 120
@@ -862,7 +862,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadLT("h_clarec",1) NumDeadLT("h_the
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadGT("h_clarec",0) NumDeadGT("h_therec",0)~ THEN BEGIN 159
-   SAY ~Aye, I've heard the whispers already. Word's spread like wildfire about the Valkyrie twins meetin' their untimely end. Good work, mate.~
+   SAY ~Aye, I've heard the whispers already. Word's spread like wildfire about those Valkyrie twins meetin' their untimely end. Good work, mate.~
        +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",0)~+ ~Sleeker than a shadow, they never knew what hit 'em.~ DO ~AddExperienceParty(1200)~ GOTO 160
        +~Global("h_ClareTalk","GLOBAL",2) Global("h_TheresaTalk","GLOBAL",0)~+ ~Clare caught a glimpse, but it was too late for her.~ GOTO 161
        +~Global("h_ClareTalk","GLOBAL",0) Global("h_TheresaTalk","GLOBAL",2)~+ ~Theresa had a moment, but it didn't save her.~ GOTO 161
@@ -936,7 +936,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",22)~ THEN BEGIN 172
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",23)~ THEN BEGIN END_0
-   SAY ~Well, if it ain't the new Guildmaster! What's the plan, boss? Just give the word, and I'm at your service.~
+   SAY ~Well, if it ain't the new Guildmaster. What's the plan then, eh? Just give the word, and I'm at your service.~
 IF ~~ THEN EXIT
 END
 
@@ -980,9 +980,7 @@ CHAIN
    == h_baldwd
 ~So, they've finally decided to make their move, have they? Guildmates! Clear for action and steady yourselves for battle!~
    =
-~Rhade! Spread our supplies throughout the guild. Dispatch word to the Night Masks and any sell-swords looking for a payday.~
-   =
-~We're gonna need as many blades as we can get after tonight's bloodbath.~
+~Rhade! Spread our supplies throughout the guild. Dispatch word to any cutthroats and sell-swords looking for a payday.~
    =
 ~Ariosh! I need those eyes of yours in the field. Scout the vanguard's movements, mark their numbers, and track their lieutenants.~
    =

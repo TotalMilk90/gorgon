@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v4.0~
+VERSION ~v4.1~
 
 LANGUAGE
     ~English~
@@ -985,6 +985,12 @@ COPY ~gorgon/items/h_trap07.itm~ ~override/h_trap07.itm~      // Arachnid's Kiss
      SAY NAME2 @165
      SAY UNIDENTIFIED_DESC @166
      SAY DESC @166
+     
+COPY ~gorgon/items/h_misc33.itm~ ~override/h_misc33.itm~      // Tenets of the Unseen
+     SAY NAME1 @167
+     SAY NAME2 @167
+     SAY UNIDENTIFIED_DESC @168
+     SAY DESC @168
 
 
 
@@ -1513,6 +1519,7 @@ COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~
 COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY NAME1 @921
      SAY NAME2 @921
+/*
      SAY INITIAL_MEETING @1000
      SAY HAPPY @1001
      SAY MORALE @1002
@@ -1558,7 +1565,7 @@ COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY SPELL_DISRUPTED @1042
      SAY SET_A_TRAP @1043
      SAY BIO @1044
-
+*/
 
 
 // Danika
@@ -1610,7 +1617,6 @@ COPY ~gorgon/danika/h_danika.cre~ ~override/h_danika.cre~
      SAY SPELL_DISRUPTED @1092
      SAY SET_A_TRAP @1093
      SAY BIO @1094
-
 
 COMPILE ~gorgon/danika/h_danika.d~
 COMPILE ~gorgon/danika/h_danikp.d~

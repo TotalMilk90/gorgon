@@ -57,9 +57,12 @@ The component "Add more pickpocketable items" will distribute random treasure to
 ===============
 Version History
 ===============
+Version 4.2:
+-Resolved .2da compatibility error with EET
+
 Version 4.1:
 -Fixed bug in Borland's quest that would prevent it from continuing
--Fixed dialog loop in Karp's quest
+-Fixed bug in Karp's quest that would loop dialog
 -Fixed the starting conditions needed for Soren's quest regarding Isla
 -Added third set of riddles from Zeda
 -Added missing portrait for Zhontac

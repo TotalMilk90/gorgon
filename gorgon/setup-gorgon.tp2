@@ -158,6 +158,7 @@ COMPILE ~gorgon/dialog/h_rogu2d.d~
 COMPILE ~gorgon/dialog/h_isla2d.d~
 COMPILE ~gorgon/dialog/h_lied2d.d~
 COMPILE ~gorgon/dialog/h_liedep.d~
+COMPILE ~gorgon/dialog/h_liedej.d~
 COMPILE ~gorgon/dialog/h_ilen2d.d~
 COMPILE ~gorgon/dialog/h_rafaed.d~
 COMPILE ~gorgon/dialog/h_rafa2d.d~
@@ -168,7 +169,7 @@ COMPILE ~gorgon/dialog/h_dariud.d~
 COMPILE ~gorgon/dialog/h_dari2d.d~
 COMPILE ~gorgon/dialog/h_thie2d.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
-APPEND ~PDIALOG.2da~ ~h_liedec h_liedep~
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej~
 
 // Creature Scripts
 

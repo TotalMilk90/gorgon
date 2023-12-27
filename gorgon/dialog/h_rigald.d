@@ -735,7 +735,6 @@ IF ~~ THEN BEGIN 152
    SAY ~Choose your path wisely, for the shadows are ever watchful, and the choices you make echo in the silent halls of our world.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",8)
-   SetGlobal("h_KarpGood","GLOBAL",2)
    TakePartyItem("h_misc17")
    DestroyItem("h_misc17")
    AddExperienceParty(600)~ EXIT
@@ -1412,7 +1411,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",16)~ THEN BEGIN 295
-   SAY ~Back from the shadows of Nashkel, are we? Tell me, has the task been seen to its end, or do we still dance around unfinished business? ~
+   SAY ~Back from the shadows of Nashkel, are we? Tell me, has the task been seen to its end, or do we still dance around unfinished business?~
        +~Global("h_LotusQuest","GLOBAL",1) PartyGoldGT(2999)~+ ~Had a run in with the Flaming Fist and the Shadow Thieves, but I pulled through. Here's the loot.~ GOTO 296
        +~Global("h_LotusQuest","GLOBAL",2) PartyGoldGT(2399)~+ ~The Flaming Fist got me on the road, had to give up a pound to see them off.~  GOTO 300
        +~Global("h_PruflasQuest","GLOBAL",3) Global("h_ExtraQuest","GLOBAL",0) NumDead("h_pruflc",0)~+ ~I was able to get Pruflas to return home to his wife.~ GOTO 305
@@ -1527,3 +1526,4 @@ IF ~Global("h_RigaldoQuest","GLOBAL",19)~ THEN BEGIN 315
    SAY ~Ah, the Guildmaster graces us with their presence. Our operations are running as smooth as silk under the cover of night, just as you'd like to hear.~
 IF ~~ THEN EXIT
 END
+

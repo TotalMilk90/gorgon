@@ -10,15 +10,15 @@ IF ~Global("h_ZedaQuest","GLOBAL",1)~ THEN BEGIN 1
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~You want a place here, you've got to earn it. So, I hope you're ready to prove you're more than just a book-smelling, blood-stained wanderer.~
+   SAY ~You want a place here, you've got to earn it. I hope you're ready to prove you've got the cunning and nerve it takes to thrive in our shadowy world.~
 IF ~~ THEN EXIT
 END
 
-IF ~~ THEN BEGIN 3
-   SAY ~Well, if it isn't our guild's new shadow-walker. Seeking to uncover hidden paths or smuggle prized treasures, perhaps? My skills are at your disposal.~ IF ~~ THEN GOTO 4
+IF ~Global("h_ZedaQuest","GLOBAL",2)~ THEN BEGIN 3
+   SAY ~Seeking to uncover hidden paths or smuggle prized treasures, perhaps? My skills are at your disposal.~ IF ~~ THEN GOTO 4
 END
 
-IF ~Global("h_ZedaQuest","GLOBAL",2)~ THEN BEGIN 4
+IF ~~ THEN BEGIN 4
    SAY ~Ask your questions, but choose them wisely. In our line of work, a carefully whispered word can unlock more doors than the finest lockpick.~
        +~Global("h_KarpWork","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled out of Nashkel and escorted to Athkatla. Is that something you can help her with?~ GOTO 120
        +~Global("h_KarpWorkGood","GLOBAL",1)~+ ~I met a woman in Nashkel who is looking to get her and her son smuggled out of Nashkel and escorted to Athkatla. Is that something you can help her with?~ GOTO 122
@@ -641,7 +641,9 @@ IF ~~ THEN BEGIN 107
 END
 
 IF ~~ THEN BEGIN 108
-   SAY ~The answer is fire, once again. A bit of a double bluff, using the same answer for two different riddles. Keeps you on your toes, doesn't it? That'll be 300 gold. Ready to continue?~ IF ~~ THEN GOTO 111
+   SAY ~The answer is fire, once again. A bit of a double bluff, using the same answer for two different riddles. Keeps you on your toes, doesn't it? That'll be 300 gold. Ready to continue?~
+IF ~~ THEN DO ~
+   TakePartyGold(300)~ GOTO 111
 END
 
 IF ~~ THEN BEGIN 109
@@ -765,6 +767,7 @@ CHAIN
    DO ~
       SetGlobal("h_HelpCityWatch","GLOBAL",1)
       SetGlobal("h_WhitewoodDialog","GLOBAL",3)
+      ActionOverride("h_danika",EscapeArea())
       ActionOverride("h_gilbac",EscapeArea())
       ActionOverride("h_gamesc",EscapeArea())
       ActionOverride("h_game2c",EscapeArea())

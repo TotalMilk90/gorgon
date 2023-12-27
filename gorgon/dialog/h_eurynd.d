@@ -3,6 +3,7 @@ BEGIN h_eurynd
 IF ~True()~ THEN BEGIN 0
    SAY ~I have a wide array of munitions for sale if you're interested in perusing my wares. Additionally, should you acquire any... liberated goods, I can help you locate any interested buyers.~
        +~Global("h_GuildItems","GLOBAL",1)~+ ~I am here to collect my guild armaments.~ GOTO ARMOR_2
+       +~PartyHasItem("h_misc06")~+ ~Do you think you could forge anything out of this giant piece of metal?~ DO ~SetGlobal("h_KarpGood","GLOBAL",2)~ GOTO OGREBLADE_1
        +~PartyHasItem("h_misc03")~+ ~I have brought back what remains of the Kerykeion. Would you be able to repair it in any way?~ GOTO KERY_1
        ++ ~Sure, let me see what you have.~ GOTO STORE_1
        ++ ~Do I have any equipment that you can upgrade?~ GOTO UPGRADE_1
@@ -16,12 +17,11 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN UPGRADE_1
-   SAY ~Show me what you've brought. Keep in mind, there's a fee of 10,000 gold pieces for any enhancements.~
+   SAY ~Show me what you've brought. Keep in mind, there's a fee of 10,000 gold for any enhancements.~
        +~OR(4) PartyHasItem("AMUL16") PartyHasItem("CLCK16") PartyHasItem("RING08") PartyHasItem("RING08_")~+ ~Could you do anything with this wizard's item?~ GOTO TORQUE_1
        +~OR(3) PartyHasItem("h_dagg01") PartyHasItem("SW1H09") PartyHasItem("SW1H09_")~+ ~Could you do anything with this sword?~ GOTO KUKRI_1
        +~OR(2) PartyHasItem("RING21") PartyHasItem("HELM05")~+ ~Could you do anything with this item I have that grants infravision?~ GOTO COWL_1
        +~OR(3) PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03")~+ ~Could you do anything with this thieving ring?~ GOTO RING_1
-       +~PartyHasItem("h_misc06")~+ ~Do you think you could forge anything out of this giant piece of metal?~ GOTO OGREBLADE_1
        ++ ~I'll come back later.~ EXIT
 END
 
@@ -30,7 +30,7 @@ IF ~~ THEN BEGIN TORQUE_1
 END
 
 IF ~~ THEN BEGIN TORQUE_2
-   SAY ~To perform the required alchemy, I would need the following reagants: 2 Potions of Genius, 2 Potions of Clarity, and 1 Diamond.~
+   SAY ~To perform the required alchemy, I would need the following reagents: 2 Potions of Genius, 2 Potions of Clarity, and 1 Diamond.~
        +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO TORQUE_3
        +~PartyHasItem("AMUL16") PartyHasItem("AMUL14") PartyHasItem("CLCK16") PartyHasItem("CHAN07") PartyHasItem("RING08_") NumItemsPartyGT("POTN29",1) NumItemsPartyGT("POTN21",1) PartyHasItem("MISC42") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO TORQUE_3
        ++ ~I'll come back later.~ EXIT
@@ -67,7 +67,7 @@ IF ~~ THEN BEGIN KUKRI_1
 END
 
 IF ~~ THEN BEGIN KUKRI_2
-   SAY ~To perform the required alchemy, I would need the following reagants: 2 Antidotes, 1 Scroll of Melf's Acid Arrow, and 1 Sphene Gem.~
+   SAY ~To perform the required alchemy, I would need the following reagents: 2 Antidotes, 1 Scroll of Melf's Acid Arrow, and 1 Sphene Gem.~
        +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO KUKRI_3
        +~PartyHasItem("h_dagg01") PartyHasItem("SW1H09_") NumItemsPartyGT("POTN20",1) PartyHasItem("SCRL95") PartyHasItem("MISC37") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO KUKRI_3
        ++ ~I'll come back later.~ EXIT
@@ -129,7 +129,7 @@ IF ~~ THEN BEGIN RING_1
 END
 
 IF ~~ THEN BEGIN RING_2
-   SAY ~To perform the required alchemy, I would need the following reagants: 3 Potions of Master Thievery, 1 Scroll of Knock, and 1 Rogue Stone.~
+   SAY ~To perform the required alchemy, I would need the following reagents: 3 Potions of Master Thievery, 1 Scroll of Knock, and 1 Rogue Stone.~
        +~PartyHasItem("h_ring01") PartyHasItem("h_ring02") PartyHasItem("h_ring03") NumItemsPartyGT("POTN36",2) PartyHasItem("SCRL91") PartyHasItem("MISC45") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO RING_3
        ++ ~I'll come back later.~ EXIT
 END
@@ -302,6 +302,7 @@ END
 IF ~~ THEN BEGIN BETRAY_9
    SAY ~Let us finish this then.~
 IF ~~ THEN DO ~
+   ActionOverride("h_danika",EscapeArea())
    SetGlobal("h_LiedelBetray","GLOBAL",4)
    SetGlobal("h_SpawnRichard","GLOBAL",1)
    SetGlobal("h_BetrayBaldwin","GLOBAL",4)

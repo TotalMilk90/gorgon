@@ -30,8 +30,8 @@ IF ~~ THEN BEGIN G_4
        +~CheckStatLT(Player1,18,INT)~+ ~Consider this logically, Gerard. I intercepted that thief because your security failed. This incident proves that even your most precious items aren't safe.~ GOTO G_5
        +~CheckStatGT(Player1,17,WIS)~+ ~Wisdom often outweighs pride. Your safety and legacy are at stake, including this little bauble. It's prudent to foresee the benefits of our protection.~ DO ~SetGlobal("h_GerardWisdom","GLOBAL",1)~ GOTO G_12
        +~CheckStatLT(Player1,18,WIS)~+ ~Wisdom often outweighs pride. Your safety and legacy are at stake, including this little bauble. It's prudent to foresee the benefits of our protection.~ GOTO G_5
-       +~CheckStatGT(Player1,17,CHR)~+ ~Charm can be as effective as force. This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact.~ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1)~ GOTO G_14
-       +~CheckStatLT(Player1,18,CHR)~+ ~Charm can be as effective as force. This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact.~ GOTO G_5
+       +~CheckStatGT(Player1,17,CHR)~+ ~This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact.~ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1)~ GOTO G_14
+       +~CheckStatLT(Player1,18,CHR)~+ ~This piece could've been lost forever. Our protection ensures your treasures, and your well-being, remain intact.~ GOTO G_5
        +~CheckStatGT(Player1,17,CHR)~+ ~With all due respect, good sense goes a long way. This pendant is a reminder of vulnerabilities. Let's maintain a relationship that ensures your prosperity and safety.~ DO ~SetGlobal("h_GerardCharisma","GLOBAL",1)~ GOTO G_16
        +~CheckStatLT(Player1,18,CHR)~+ ~With all due respect, good sense goes a long way. This pendant is a reminder of vulnerabilities. Let's maintain a relationship that ensures your prosperity and safety.~ GOTO G_5
 END

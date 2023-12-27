@@ -132,16 +132,3 @@ CHAIN
          SetGlobal("h_BetrayBaldwin","GLOBAL",5)
          PlaySound("h_figmus")~
 EXIT
-
-
-
-
-
-
-
-
-
-
-
-
-

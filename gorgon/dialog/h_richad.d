@@ -102,16 +102,3 @@ CHAIN
          SetGlobal("h_SpawnRichard","GLOBAL",3)
          SetGlobal("h_BaldwinQuest","GLOBAL",12)~
 EXIT
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -509,20 +509,6 @@ INTERJECT_COPY_TRANS h_aishad 71 imotoais71
 ~Don't you dare suggest I'm crazy! I'm the only one seeing things clearly here! Everyone else might be blind to Ilena's manipulations, but not me. I see the truth behind her facade.~
 END
 
-INTERJECT_COPY_TRANS h_zedadd 7 imotozed7
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Oh, <CHARNAME>, can we play? Please, please, please? It sounds like so much fun!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Come on, it's only 100 gold a riddle, and who knows what amazing things could be inside that Bag of Mysteries!~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~I can see the spark of excitement in your eyes, young one. You've got the spirit of a true gambler.~
-END
-
-INTERJECT_COPY_TRANS h_zedadd 11 imotozed11
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Come on, <CHARNAME>, even I knew that one! You've got to focus, get your head in the game! We can't let Zeda have all the fun... and our gold. Shake it off and let's nail the next one.~
-END
-
 INTERJECT_COPY_TRANS h_baldwd 62 edwtobal62
   == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin")~ THEN
 ~Ah, yes, the Kerykeion, a conduit of raw magical energies that could amplify a spellcaster's abilities beyond imagination. I am well acquainted with its legend and the immense arcane potential it conceals.~
@@ -1483,41 +1469,6 @@ INTERJECT_COPY_TRANS h_lieded 413 shatolie413
 ~After all, the most captivating flames are often the most dangerous to touch.~
 END
 
-INTERJECT_COPY_TRANS h_zedadd 29 imotozed29
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Oh, this is going to be fun! I loved playing Bag of Mysteries last time. The riddles, the surprises, it's like a little adventure all on its own! And who knows what cool stuff Zeda's got in her bag this time?~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
-~Imoen, are you so easily swayed by the lure of riddles and trinkets? Have you forgotten that the last prizes from this 'Bag of Mysteries' were little more than trumpery?~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
-~Useless baubles that served no purpose other than to encumber our purses.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
-~Oh, hush, Jaheira! It's not always about usefulness. Sometimes it's just about the fun of the challenge, the thrill of the guess!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
-~And who knows, maybe there's something in that bag this time that's a real treasure. One rogue's rubbish is another rogue's relic, right?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
-~Plus, a little bit of mystery and laughter is worth a few gold coins in my book. Let's just enjoy the game!~
-END
-
-INTERJECT_COPY_TRANS h_zedadd 38 imotozed38
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Oh, come on, <CHARNAME>! Even I knew that one... it's 'footsteps'! How could you miss that? It's one of the oldest riddles in the book!~ 
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~You've got to keep up! We can't afford to lose gold on easy ones like that, so let's keep our eyes on the prize, alright?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Shake it off and focus. We've got more riddles to conquer, and I'm not about to let Zeda's Bag of Mysteries beat us. Time to bring our A-game!~
-END
-
-INTERJECT_COPY_TRANS h_zedadd 45 imotozed45
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Yes! That's it... 'leaves'! Ha! Take that, Zeda! We're not just pretty faces and sharp swords around here, we've got brains too!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Did you see that? <CHARNAME> nailed it! We're gonna clean out your Bag of Mysteries in no time. Who's the riddle master now, huh? We are unstoppable!~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~Alright, alright, calm down there, Imoen. It's just a game, remember? Though I must admit, that was a clever answer.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
-~But don't get too confident just yet. Let's see how you fare with this next one. Pay close attention, because I won't be going easy on you.~
-END
-
 INTERJECT_COPY_TRANS h_alarid 7 alotoali7
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Alora")~ THEN
 ~But what about the chickens, Alaric? They sound like they're having a really hard time with all these experiments. Aren't you worried about what's happening to them?~
@@ -1913,8 +1864,120 @@ INTERJECT_COPY_TRANS h_pits4d 6 jahto4pf6
 ~Your familiarity with Silverymoon, brings warmth to my heart. Indeed, the city and its surrounding nature were my sanctuary, my place of learning and growth.~
 END
 
+INTERJECT_COPY_TRANS h_zedadd 38 nertozed38
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
+~Great, vampires. Because dealing with normal, non-undead, non-bloodsucking beings was just too boring, right?~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~Oh, come on, Neera. Vampires aren't all bad. They do a have a certain... allure about them, don't they?~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~I remember reading these old tales in Candlekeep about mysterious, charming vampires. They always had a way with words and an air of elegance.~
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~Imoen, they're bloodthirsty undead! All that charm and mystery is just a front to lure in their next meal. There's nothing appealing about being someone's snack.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~But think about it! The eternal life, the power, the history they've seen. And they're always depicted as so sophisticated and, well, captivating.~
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~Captivating? More like manipulative and dangerous. They're predators, Imoen. And let's not forget the whole living in the shadows, sleeping in coffins, and oh, the blood-drinking part.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+~Your fascination with the tales of vampires is understandable, but let's not forget the reality. These creatures are far more sinister than any storybook.~
+END
 
+INTERJECT_COPY_TRANS h_zedadd 52 imotozed52
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Oh, <CHARNAME>, can we play? Please, please, please? Come on, it's only 100 gold a riddle, and who knows what amazing things could be inside that bag!~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~I can see the spark of excitement in your eyes, young one. You've got the spirit of a true gambler.~
+END
 
+INTERJECT_COPY_TRANS h_zedadd 59 imotozed59
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Come on, <CHARNAME>, even I knew that one! You've got to focus, get your head in the game! We can't let Zeda have all the fun... and our gold. Shake it off and let's nail the next one.~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 61 imotozed61
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~This... This is our prize? I've seen better finds in Winthrop's dustbin! Are we sure we're not being pranked here?~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Ah, but even the simplest objects can hold stories and mysteries. It's not about the item itself, but the tale it weaves and the challenge it represents.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Priceless? Well, if you say so... but I'm starting to think our real prize is just figuring out these riddles. Let's hope the next one's got something a bit more... well, real.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Patience, young seeker. In the game of riddles, each answer and prize brings a new understanding. Perhaps your next challenge will unveil greater rewards.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Alright, alright, I can't deny it's been a good laugh. Let's see what else you've got. Hit us with the next riddle!~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 79 imotozed79
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Oh, this is going to be fun! The riddles, the surprises, it's like a little adventure all on its own! And who knows what cool stuff Zeda's got in her bag this time!~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+~Imoen, are you so easily swayed by the lure of riddles and trinkets? Have you forgotten that the last prizes from this 'Bag of Mysteries' were little more than trumpery?~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+~Useless baubles that served no purpose other than to encumber our purses.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Oh, hush, Jaheira! It's not always about usefulness. Sometimes it's just about the fun of the challenge, the thrill of the guess!~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~And who knows, maybe there's something in that bag this time that's a real treasure. One rogue's rubbish is another rogue's relic, right?~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Plus, a little bit of mystery and laughter is worth a few gold coins in my book. Let's just enjoy the game!~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 88 imotozed88
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Oh, come on, <CHARNAME>! Even I knew that one... it's 'footsteps'! How could you miss that? It's one of the oldest riddles in the book!~ 
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~You've got to keep up! We can't afford to lose gold on easy ones like that, so let's keep our eyes on the prize, alright?~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Shake it off and focus. We've got more riddles to conquer, and I'm not about to let Zeda's Bag of Mysteries beat us. Time to bring our A-game!~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 93 imotozed93
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Yes! That's it... 'leaves'! Ha! Take that, Zeda! We're not just pretty faces and sharp swords around here, we've got brains too!~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Did you see that? <CHARNAME> nailed it! We're gonna clean out your Bag of Mysteries in no time. Who's the riddle master now, huh? We are unstoppable!~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Alright, alright, calm down there, Imoen. It's just a game, remember? Though I must admit, that was a clever answer.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~But don't get too confident just yet. Let's see how you fare with this next one. Pay close attention, because I won't be going easy on you.~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 102 jahtozed102
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
+~This is foolishness! Wasting time and gold on child's play while greater dangers loom over us. There are far more important tasks at hand than indulging in these trivial games.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Oh, lighten up, Jaheira! Not everything's about looming dangers and dire threats. A little fun never hurt anyone.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Besides, who knows? Maybe you'll learn to enjoy the thrill of a good riddle. Or is it too much for your serious brain?~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~This is not a matter to be taken lightly, Imoen. Your naiveté and childish whims could put us all in jeopardy. It's high time you grew up and started acting like the adult you claim to be.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~I'm not a child. Just because I don't frown all day and see doom in every shadow doesn't mean I don't understand what's at stake. I can have fun and still take things seriously.~
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Your actions speak otherwise. This incessant need for amusement could blind you to the dangers we face. You must learn discipline and focus, or you risk more than just your own well-being.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~You're not my mother, Jaheira. You don't get to lecture me about every choice I make. I'm part of this team too, and I deserve some respect!~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~The oak and the reed, each strong in its own way. The oak stands rigid, resisting the storm, while the reed bends with the wind.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Yet, too much rigidity can snap under pressure, and too much flexibility can fail to hold ground. In the end, it's the balance that survives the tempest.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Perhaps there are lessons for both in the heart of the storm. Remember, the greatest challenges often lie within, not without.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+~Now, let us return to the game at hand. The world outside will wait for just a moment longer.~
+END
+
+INTERJECT_COPY_TRANS h_zedadd 108 imotozed108
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Fire? Again? Oh, come on, that's not fair. You can't just use the same answer twice in a row... it's like breaking the unwritten rules of riddle-telling.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Ah, but sometimes the simplest solutions are the most elusive. It's not just about the answer, but how you approach the question. Think of it as a lesson in expecting the unexpected.~
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Alright, Zeda, but if the next answer is fire too, I'll start to think you might just be obsessed with it. Let's have the next riddle then. We'll be ready for any tricks this time.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Your vigilance is admirable. But remember, the essence of a riddle lies in its ability to surprise and challenge the mind.~
+  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+~Now, brace yourselves, for the next enigma may lead you down an unexpected path.~
+END
 
 INTERJECT_COPY_TRANS bart4 5 ishtobar7
   == h_jcookd IF ~~ THEN

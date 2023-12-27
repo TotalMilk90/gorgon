@@ -146,7 +146,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",3)~ THEN BEGIN 25
-   SAY ~Ah, you've got that look about you, like you're itching for more action, eh? Well, it just so happens I've got another job that might tickle your fancy.~ IF ~~ THEN GOTO 26
+   SAY ~Ah, you've got that look about you, like you're itching for more action, eh? Well, it just so happens I've got another job that might stir your blood.~ IF ~~ THEN GOTO 26
 END
 
 IF ~~ THEN BEGIN 26
@@ -548,7 +548,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",11)~ THEN BEGIN 96
-   SAY ~Well, <CHARNAME>, how's the coin flowin' in? Any trouble with those tavern-keepers?~
+   SAY ~Well, <CHARNAME>, how's the coin flowin' in? Any trouble with them tavern-keepers?~
        +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",0)~+ ~Only the Red Sheaf couldn't pay. I thought it best to give them a warning instead of resorting to... drastic measures.~ GOTO 97
        +~NumItemsParty("h_misc23",3) Global("h_KilledBartender","GLOBAL",1)~+ ~Only the Red Sheaf couldn't pay. I chose to make an example out of him. He won't be causing any more trouble.~ GOTO 99
        +~NumItemsPartyLT("h_misc23",3)~+ ~Still makin' the rounds. Be back in a jiffy.~ EXIT
@@ -695,7 +695,8 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",15)~ THEN BEGIN 125
-   SAY ~You'll be findin' Black Lily at the Baldur's Gate thieves guild. Remember, we may dance on different streets, but we ain't at each other's throats. You'll be stepping onto neutral ground.~ IF ~~ THEN EXIT
+   SAY ~You'll be findin' Black Lily at the Baldur's Gate thieves guild. Remember, we may dance on different streets, but we ain't at each other's throats. You'll be stepping onto neutral ground.~
+IF ~~ THEN EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",16)~ THEN BEGIN 126
@@ -766,7 +767,7 @@ IF ~Global("h_ArioshQuest","GLOBAL",17)~ THEN BEGIN 138
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",18)~ THEN BEGIN 139
-   SAY ~Word's already gettin' 'round about something big going down at the Juggler. Let's get a formal report.~
+   SAY ~Word's already gettin' 'round about something big going down at the Juggler. Let's get a formal report, yeah?~
        +~Global("h_PoisonInspector","GLOBAL",1)~+ ~The plan was smooth sailing. Ishani played it off well and the Inspector went down without a fuss.~ GOTO 140
        +~Global("h_PoisonFailInspector","GLOBAL",1) Global("h_FireInspector","GLOBAL",0)~+ ~The Inspector saw through the ruse, forcing my hand to take action.~ GOTO 141
        +~Global("h_FightInspector","GLOBAL",1) Global("h_PoisonFailInspector","GLOBAL",0)~+ ~I didn't want to risk the plan failing, so I took matters into my own hands.~ GOTO 142
@@ -858,7 +859,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadLT("h_clarec",1) NumDeadLT("h_therec",1)~ THEN BEGIN 158
-   SAY ~Stealth, surprise, that's your ticket. They won't see you coming if you play your cards right.~ IF ~~ THEN EXIT
+   SAY ~Stealth, surprise, that's your ticket. They won't see you comin' if you play your cards right.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_ArioshQuest","GLOBAL",20) NumDeadGT("h_clarec",0) NumDeadGT("h_therec",0)~ THEN BEGIN 159
@@ -923,7 +924,7 @@ IF ~~ THEN BEGIN 170
 END
 
 IF ~~ THEN BEGIN 171
-   SAY ~Keep those ears sharp and your wits sharper, and there's no telling what heights you'll scale in these shadows. You were born for this life, you were.~
+   SAY ~Keep those ears sharp and your wits sharper, and there's no tellin' what heights you'll scale in these shadows. You were born for this life, you were.~
 IF ~~ THEN DO ~
    SetGlobal("h_ArioshQuest","GLOBAL",22)
    SetGlobal("h_SpawnGorgonWatch","GLOBAL",1)
@@ -939,8 +940,6 @@ IF ~Global("h_ArioshQuest","GLOBAL",23)~ THEN BEGIN END_0
    SAY ~Well, if it ain't the new Guildmaster. What's the plan then, eh? Just give the word, and I'm at your service.~
 IF ~~ THEN EXIT
 END
-
-
 
 IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",9)~ THEN BEGIN 173
    SAY ~Aye, <CHARNAME>. We're on orders to await your signal. Ready to roll when you give the word.~

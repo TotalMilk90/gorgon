@@ -101,7 +101,6 @@ __________________________________________________
 Kerykeion: Euryale's Promise (Short Sword)
 
 STATISTICS:
--Increases backstab modifier by 1
 -Increases number of attacks by 1
 
 -THAC0: +2

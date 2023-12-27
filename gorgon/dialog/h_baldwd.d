@@ -267,7 +267,6 @@ IF ~~ THEN DO ~
    SetGlobal("h_ZedaQuest","GLOBAL",1)
    SetGlobal("h_FightingPits","GLOBAL",1)
    SetGlobal("h_FightersTalk","GLOBAL",1)
-   SetGlobal("h_LiedelTalk","GLOBAL",1)
    SetGlobal("h_Danika","GLOBAL",1)
    AddJournalEntry(@202,USER)
    ReputationInc(-2)~ EXIT
@@ -537,7 +536,7 @@ IF ~~ THEN BEGIN 110
 END
 
 IF ~~ THEN BEGIN 111
-   SAY ~If this report is to be believed, their contact, 'Nagate', will be stationed by some ancient elven ruins. That is where the exchange will take place.~
+   SAY ~If this report is to be believed, their contact 'Nagate' will be stationed by some ancient elven ruins. That is where the exchange will take place.~
        ++ ~Ariosh mentioned Thamuz leads their offensive. Given your past with the Shadow Thieves, do you have any insight on him?~ GOTO 112
        ++ ~The Shadow Thieves are cunning, could this not be a trap designed to lure us in?~ GOTO 118
        ++ ~I'll head out now, swift and silent.~ GOTO 117
@@ -597,7 +596,7 @@ IF ~~ THEN BEGIN 121
 END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",6)~ THEN BEGIN 122
-   SAY ~You have your orders, now get to it.~ IF ~~ THEN EXIT
+   SAY ~Every moment lost strengthens Thamuz's hand. Move swiftly, and let action be your reply.~ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_BaldwinQuest","GLOBAL",7)~ THEN BEGIN 123
@@ -845,4 +844,5 @@ IF ~~ THEN DO ~
    DestroyItem("h_misc14")
    AddJournalEntry(@223,QUEST)~ EXIT
 END
+
 

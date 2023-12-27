@@ -192,7 +192,7 @@ IF ~~ THEN DO ~
    GiveItem("RING06",LastTalkedToBy())~ EXIT
 END
 
-IF WEIGHT #-1 ~OR(2) GlobalGT("h_KarpWorkGood","GLOBAL",0) GlobalGT("h_KarpWork","GLOBAL",0) Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",0)~ THEN BEGIN K_31
+IF WEIGHT #-1 ~OR(2) GlobalGT("h_KarpWorkGood","GLOBAL",0) GlobalGT("h_KarpWork","GLOBAL",0) Global("h_KarpGood","GLOBAL",0)~ THEN BEGIN K_31
    SAY ~Oh, you've returned! I've been anxiously awaiting any news. Were you able to find someone to help us travel safely to Athkatla?~
        +~!Global("h_KarpWorkGood","GLOBAL",2) !Global("h_KarpWork","GLOBAL",2)~+ ~I'm sorry, I haven't found anyone just yet. I'll let you know as soon as I have something concrete.~ GOTO K_32
        +~Global("h_KarpWorkGood","GLOBAL",2)~+ ~I have something lined up for you in Beregost. Leave tonight with your son, and you'll be contacted upon your arrival in the city.~ GOTO K_34
@@ -253,12 +253,12 @@ IF ~~ THEN DO ~
    GiveItem("RING06",LastTalkedToBy())~ EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpBad","GLOBAL",1)~ THEN BEGIN K_41
+IF WEIGHT #-1 ~Global("h_KarpBad","GLOBAL",1)~ THEN BEGIN K_41
    SAY ~Just leave me and my boy in peace, that's all I ask!~
 IF ~~ THEN EXIT
 END
 
-IF WEIGHT #-1 ~Global("h_RigaldoQuest","GLOBAL",7) Global("h_KarpGood","GLOBAL",2)~ THEN BEGIN K_42
+IF WEIGHT #-1 ~Global("h_KarpGood","GLOBAL",1)~ THEN BEGIN K_42
    SAY ~Thank you so much. I'll gather our things and get my boy ready. We'll leave for a better life soon, all thanks to you.~
 IF ~~ THEN EXIT
 END

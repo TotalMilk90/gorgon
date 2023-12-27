@@ -429,6 +429,8 @@ IF ~~ THEN DO ~
    SetGlobal("h_DanikaKickedOut","GLOBAL",0)
    SetGlobal("h_Danika","GLOBAL",3)
    SetGlobal("h_DanikaWillJoin","GLOBAL",2)
+   RealSetGlobalTimer("h_DanikaTalkTimer","GLOBAL",3600)
+   SetGlobal("h_DanikaTalk","GLOBAL",1)
    JoinParty()~ EXIT
 END
 
@@ -463,5 +465,6 @@ IF ~~ THEN BEGIN 92
    SAY ~Our objectives remain clear, and I am prepared to utilize my skills in the service of our shared goals. Let us proceed with the tasks at hand, ensuring our success under the guidance of Mask.~
 IF ~~ THEN DO ~
    SetGlobal("h_DanikaKickedOut","GLOBAL",0)
+   RealSetGlobalTimer("h_DanikaTalkTimer","GLOBAL",3600)
    JoinParty()~ EXIT
 END

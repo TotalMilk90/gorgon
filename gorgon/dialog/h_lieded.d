@@ -1,15 +1,17 @@
 BEGIN h_lieded
 
-IF ~Global("h_LiedelTalk","GLOBAL",0)~ THEN BEGIN 0
+IF ~Global("h_LiedelQuest","GLOBAL",0)~ THEN BEGIN 0
    SAY ~Well, look at you, a fresh face in our little den of shadows. Quite the promising sight, if I do say so.~  IF ~~ THEN EXIT
 END
 
-IF ~Global("h_LiedelTalk","GLOBAL",1)~ THEN BEGIN 1
-   SAY ~Ah, so the shadows have whispered a new tale, and here you stand at its center. A rare choice, to tread our path, one where peril and promise are entwined.~  IF ~~ THEN GOTO 2
+IF ~Global("h_LiedelQuest","GLOBAL",1)~ THEN BEGIN 1
+   SAY ~Ah, so the shadows have whispered a new tale, and here you stand at its center. A rare choice, to tread our path, one where peril and promise are entwined.~ IF ~~ THEN GOTO 2
 END
 
 IF ~~ THEN BEGIN 2
-   SAY ~Allow me to lift the veil on our little world. I am Liedel, the keeper of secrets and the broker of shadows. I deal in private contracts and bounties you won't find posted in the light of town.~ IF ~~ THEN GOTO 3
+   SAY ~Allow me to lift the veil on our little world. I am Liedel, the keeper of secrets and the broker of shadows. I deal in private contracts and bounties you won't find posted in the light of town.~
+       ++ ~I'm interested in hearing about your available bounties.~ GOTO 66
+       ++ ~Sorry, but I have other matters I need to attend to.~ EXIT
 END
 
 IF ~~ THEN BEGIN 3
@@ -364,7 +366,6 @@ END
 IF ~~ THEN BEGIN 79
    SAY ~That is all I have for the present. Return to me once you've made your mark on the shadows, my dear. I eagerly await your return.~
 IF ~~ THEN DO ~
-   SetGlobal("h_LiedelTalk","GLOBAL",3)
    SetGlobal("h_LiedelQuest","GLOBAL",2)
    AddJournalEntry(@410,QUEST)
    AddJournalEntry(@415,QUEST)
@@ -1871,8 +1872,8 @@ IF ~Global("h_LiedelQuest","GLOBAL",6) GlobalLT("h_BountyNumber","GLOBAL",9)~ TH
        +~Global("h_VarlindBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Lord Varlind.~ GOTO 395
        +~Global("h_IslaBountyEnd","GLOBAL",0)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 407
        +~OR(2) Global("h_LiedelRomanceActive","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1) GlobalLT("h_LiedelLove","GLOBAL",15) Global("h_IslaBounty","GLOBAL",2)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE) GiveGoldForce(500) AddExperienceParty(900)~ GOTO 416
-       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE) GiveGoldForce(500) AddExperienceParty(900)~ GOTO 416
-       +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 420
+      // +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",0) Global("h_LiedelRomanceActive","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ DO ~AddJournalEntry(@461,QUEST_DONE) GiveGoldForce(500) AddExperienceParty(900)~ GOTO 416
+      // +~GlobalGT("h_LiedelLove","GLOBAL",14) Global("h_IslaBounty","GLOBAL",2) Global("h_LiedelKiss","GLOBAL",1)~+ ~I'd like to discuss the bounty on Isla.~ GOTO 420
        ++ ~I'll be going now.~ EXIT
 END
 

@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v4.2~
+VERSION ~v4.3~
 
 LANGUAGE
     ~English~
@@ -244,7 +244,7 @@ COMPILE ~gorgon/scripts/h_pigcut.baf~
 COMPILE ~gorgon/scripts/h_velens.baf~
 COMPILE ~gorgon/scripts/h_dorias.baf~
 COMPILE ~gorgon/scripts/h_bmacut.baf~
-COMPILE ~gorgon/scripts/h_ravcut.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_ravcut.baf~
 COMPILE ~gorgon/scripts/h_citybs.baf~
 COMPILE ~gorgon/scripts/h_lied2s.baf~
 COMPILE ~gorgon/scripts/h_liecut.baf~

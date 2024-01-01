@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.4.1
+V.4.3s
 
 =======
 Prequel
@@ -57,6 +57,9 @@ The component "Add more pickpocketable items" will distribute random treasure to
 ===============
 Version History
 ===============
+Version 4.3:
+-Hotfix for EET area crashing when leaving the black market
+
 Version 4.2:
 -Resolved .2da compatibility error with EET
 

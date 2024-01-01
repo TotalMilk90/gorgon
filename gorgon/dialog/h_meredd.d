@@ -188,11 +188,11 @@ END
 
 IF ~~ THEN BEGIN 33.5
    SAY ~So, with these considerations in mind, who would you like to spend your time with this evening?~
-       +~Global("h_IlenaTalk","GLOBAL",1) Gender(Player1,MALE) Exists("h_ilenac") Global("h_Meredia","GLOBAL",0) PartyGoldGT(199)~+ ~I'm feeling drawn towards Ilena, and I'd like to explore what she has to offer.~ DO ~TakePartyGold(200)~ GOTO 36
-       +~Global("h_IlenaTalk","GLOBAL",1) Gender(Player1,MALE) Exists("h_ilenac") Global("h_Meredia","GLOBAL",1)~+ ~I'm feeling drawn towards Ilena, and I'd like to explore what she has to offer.~ GOTO 36
+       //+~Global("h_IlenaTalk","GLOBAL",1) Gender(Player1,MALE) Exists("h_ilenac") Global("h_Meredia","GLOBAL",0) PartyGoldGT(199)~+ ~I'm feeling drawn towards Ilena, and I'd like to explore what she has to offer.~ DO ~TakePartyGold(200)~ GOTO 36
+       //+~Global("h_IlenaTalk","GLOBAL",1) Gender(Player1,MALE) Exists("h_ilenac") Global("h_Meredia","GLOBAL",1)~+ ~I'm feeling drawn towards Ilena, and I'd like to explore what she has to offer.~ GOTO 36
        //++ ~I'm intrigued by Darius. I think a session with him would be both stimulating and enjoyable.~ GOTO 39
-       +~Global("h_RafaelaTalk","GLOBAL",1) Gender(Player1,MALE) Global("h_Meredia","GLOBAL",0) PartyGoldGT(199)~+ ~Rafaela has caught my attention. I'd like to spend some time with her and experience her unique connection.~ DO ~TakePartyGold(200)~ GOTO 41
-       +~Global("h_RafaelaTalk","GLOBAL",1) Gender(Player1,MALE) Global("h_Meredia","GLOBAL",1)~+ ~Rafaela has caught my attention. I'd like to spend some time with her and experience her unique connection.~ GOTO 41
+       //+~Global("h_RafaelaTalk","GLOBAL",1) Gender(Player1,MALE) Global("h_Meredia","GLOBAL",0) PartyGoldGT(199)~+ ~Rafaela has caught my attention. I'd like to spend some time with her and experience her unique connection.~ DO ~TakePartyGold(200)~ GOTO 41
+       //+~Global("h_RafaelaTalk","GLOBAL",1) Gender(Player1,MALE) Global("h_Meredia","GLOBAL",1)~+ ~Rafaela has caught my attention. I'd like to spend some time with her and experience her unique connection.~ GOTO 41
        ++ ~Actually, I think I'll come back another time when I'm more certain of what I'm looking for.~ GOTO 34
 END
 

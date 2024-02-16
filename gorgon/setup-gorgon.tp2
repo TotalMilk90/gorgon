@@ -218,7 +218,7 @@ COMPILE ~gorgon/scripts/h_inspes.baf~
 COMPILE ~gorgon/scripts/h_city4s.baf~
 COMPILE ~gorgon/scripts/h_ishcut.baf~
 COMPILE ~gorgon/scripts/h_valcut.baf~
-COMPILE ~gorgon/scripts/h_jugcut.baf~
+COMPILE EVALUATE_BUFFER ~gorgon/scripts/h_jugcut.baf~
 COMPILE ~gorgon/scripts/h_fircut.baf~
 COMPILE ~gorgon/scripts/h_city5s.baf~
 COMPILE ~gorgon/scripts/h_citcut.baf~

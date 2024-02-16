@@ -16,5 +16,6 @@ IF ~~ THEN DO ~
    CreateCreature("h_city3c",[4832.3430],S)
    CreateCreature("h_city3c",[4434.3583],E)
    CreateCreature("h_city3c",[4349.3773],E)
+   ReputationInc(-1)
    Enemy()~ EXIT
 END

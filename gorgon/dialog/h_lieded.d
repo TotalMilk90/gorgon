@@ -1962,7 +1962,7 @@ END
 IF ~~ THEN BEGIN 395
    SAY ~Pray, what news have you surely uncovered for my eager ears?~
        +~Dead("h_varlic")~+ ~Consider his chapter closed. The city's landscape may shift, but my coin purse will grow heavier.~ GOTO 400
-       +~Global("h_VarlindBounty","GLOBAL",1)~+ ~Liedel, I couldn't go through with it. Varlind, he's deeply entangled in the city's fate. Killing him didn't feel right.~ GOTO 403
+       +~!Dead("h_varlic") Global("h_VarlindBounty","GLOBAL",1)~+ ~Liedel, I couldn't go through with it. Varlind, he's deeply entangled in the city's fate. Killing him didn't feel right.~ GOTO 403
        ++ ~What else can you tell me about the target?~ GOTO 396
        ++ ~I have nothing to report at the moment.~ GOTO 382
 END
@@ -2020,7 +2020,6 @@ IF ~~ THEN DO ~
    SetGlobal("h_VarlindBounty","GLOBAL",2)
    SetGlobal("h_VarlindBountyEnd","GLOBAL",1)
    IncrementGlobal("h_BountyNumber","GLOBAL",1)
-   GiveGoldForce(500)
    AddExperienceParty(900)
    AddJournalEntry(@456,QUEST_DONE)~ EXIT
 END
@@ -2081,9 +2080,7 @@ IF ~~ THEN BEGIN 419
 IF ~~ THEN DO ~
    SetGlobal("h_IslaBountyEnd","GLOBAL",1)
    SetGlobal("h_IslaBounty","GLOBAL",4)
-   IncrementGlobal("h_BountyNumber","GLOBAL",1)
-   GiveGoldForce(500)
-   AddExperienceParty(900)~ EXIT
+   IncrementGlobal("h_BountyNumber","GLOBAL",1)~ EXIT
 END
 
 IF ~~ THEN BEGIN 420

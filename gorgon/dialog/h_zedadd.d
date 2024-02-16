@@ -670,7 +670,7 @@ IF ~~ THEN BEGIN 111
 END
 
 IF ~~ THEN BEGIN 112
-   SAY ~The answer is 'a joke.' That's another 300 gold for the miss. But don't worry, the game's still full of surprises. Let's move on to the next riddle and see if you can reclaim some ground.~
+   SAY ~The answer was 'a joke.' That's 300 gold for the miss. But don't worry, the game's still full of surprises. Let's move on to the next riddle and see if you can reclaim some ground.~
 IF ~~ THEN DO ~
    TakePartyGold(300)~ GOTO 115
 END
@@ -699,7 +699,7 @@ IF ~~ THEN BEGIN 115
 END
 
 IF ~~ THEN BEGIN 116
-   SAY ~The answer is 'a joke.' That's another 300 gold for the miss. But don't worry, the game's still full of surprises. Let's move on to the next riddle and see if you can reclaim some ground.~
+   SAY ~The correct answer was 'a clock.' That's 300 gold for me.~
 IF ~~ THEN DO ~
    TakePartyGold(300)~ GOTO 118
 END

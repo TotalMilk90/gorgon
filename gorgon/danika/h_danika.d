@@ -170,7 +170,7 @@ IF ~~ THEN BEGIN 29
 END
 
 IF ~~ THEN BEGIN 30  
-   SAY ~Our practices are as enigmatic as our deity. The Ritual of the Unseen Presence is a sacred observance where we acknowledge Mask’s omnipresence in darkness.~ IF ~~ THEN GOTO 31
+   SAY ~Our practices are as enigmatic as our deity. The Ritual of the Unseen Presence is a sacred observance where we acknowledge Mask's omnipresence in darkness.~ IF ~~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 31

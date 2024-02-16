@@ -12,5 +12,6 @@ IF ~~ THEN BEGIN 2
    SAY ~Wait a minute... you're Gorgon's Eye! Well, well, looks like I'll find some satisfaction tonight after all. I hope you're ready to die, scum!~
 IF ~~ THEN DO ~
    SetGlobal("h_TheresaTalk","GLOBAL",1)
+   ReputationInc(-1)
    Enemy()~ EXIT
 END

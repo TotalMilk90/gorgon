@@ -458,7 +458,7 @@ IF ~~ THEN BEGIN 80
    SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, mate. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
 END
 
-IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",3) Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN 81
+IF WEIGHT #-2 ~Global("h_ValeraQuest","GLOBAL",2) Global("h_BlackJoin","GLOBAL",0)~ THEN BEGIN 81
    SAY ~Nothin' left for her now but shadows and echoes. She danced with the devil, mate. Playin' both sides of the coin, and there's only one way that tale ends.~ IF ~~ THEN GOTO 83
 END
 

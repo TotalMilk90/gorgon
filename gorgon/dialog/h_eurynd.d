@@ -99,7 +99,7 @@ IF ~~ THEN BEGIN COWL_1
 END
 
 IF ~~ THEN BEGIN COWL_2
-   SAY ~I can combine the Ring of Minor Lockpicking. the Ring of Awareness, and the Ring of the Cutpurse into a single band that would still maintain all of their abilities.~
+   SAY ~To perform the required alchemy, I would need the following reagants: 2 Potions of Invisibility, 1 Scroll of Clairvoyance, and 1 Moonstone Gem.~
        +~PartyHasItem("HELM05") PartyHasItem("RING21") PartyHasItem("RING05") NumItemsPartyGT("POTN10",1) PartyHasItem("SCRL1D") PartyHasItem("MISC27") PartyGoldGT(9999)~+ ~Alright, let's do it. I have all the required items, along with your fee.~ GOTO COWL_3
        ++ ~I'll come back later.~ EXIT
 END
@@ -192,7 +192,7 @@ END
 IF ~~ THEN BEGIN KERY_5
    SAY ~I should be able to do that. But keep in mind I'll have no time frame on when it will be completed. There is truly no way of knowing. Continue on with your usual business and check back with me from time to time.~
 IF ~~ THEN DO ~
-   SetGlobal("h_BetrayBaldwin","GLOBAL",6)
+   //SetGlobal("h_BetrayBaldwin","GLOBAL",6)
    SetGlobalTimer("h_KeryWeapon","GLOBAL",FIVE_DAYS)
    TakePartyItem("h_misc03")
    DestroyItem("h_misc03")~ EXIT

@@ -13,6 +13,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_InsWatchAttack","GLOBAL",1)
    SetGlobal("h_FinalWatchTalk","GLOBAL",1)
    AddJournalEntry(@548,QUEST)
+   ReputationInc(-1)
    ActionOverride("h_city3c",Enemy())~ EXIT
 END
 
@@ -35,6 +36,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_DecoyAttack","GLOBAL",1)
    SetGlobal("h_FinalWatchTalk","GLOBAL",1)
    AddJournalEntry(@547,QUEST)
+   ReputationInc(-1)
    ActionOverride("h_city3c",EscapeArea())~ EXIT
 END
 

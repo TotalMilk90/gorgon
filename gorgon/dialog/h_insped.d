@@ -28,6 +28,7 @@ IF ~~ THEN BEGIN 6
    SAY ~Take heed, Gorgon's Eye. Your reckoning is fast approaching.~
 IF ~~ THEN DO ~
    AddJournalEntry(@538,QUEST)
+   ReputationInc(-1)
    EscapeArea()~ EXIT
 END
 

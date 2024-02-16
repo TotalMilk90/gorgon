@@ -532,8 +532,8 @@ END
 
 IF ~~ THEN BEGIN 119
    SAY ~One must embody the very essence of shadows, becoming an unseen force that influences the world from behind a veil of mystery.~
-       +~!Class(Player1,THIEF_ALL)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 120
-       +~Class(Player1,THIEF_ALL)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 125
+       +~!Class(Player1,THIEF_ALL) Global("h_JoinMask","GLOBAL",0)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 120
+       +~Class(Player1,THIEF_ALL)Global("h_JoinMask","GLOBAL",0)~+ ~I'm interested in joining the ranks of the Church and devoting myself to Mask.~ GOTO 125
        ++ ~Your role and wisdom intrigue me. Could you share some of your history?~ GOTO 81
        +~!InParty("h_danika")~+ ~Can you tell me more about Danika? How does she fit into the workings of the guild and the church?~ GOTO 92
        ++ ~I'm curious about Mask. What can you tell me about this deity, and what does worshiping Mask entail for its followers?~ GOTO 104

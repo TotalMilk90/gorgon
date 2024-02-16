@@ -1,5 +1,5 @@
 The Gorgon's Eye
-V.4.3s
+V.4.4
 
 =======
 Prequel
@@ -57,6 +57,20 @@ The component "Add more pickpocketable items" will distribute random treasure to
 ===============
 Version History
 ===============
+Version 4.4:
+-Fixed quest resolution bug in "Diamond in the Rough" if you got caught but did not kill the guards
+-Fixed quest resolution bug in "Shadows and Echoes" if you brought Valera back to the guild
+-Fixed EET crash inside the Jovial Juggler during "Shrouded Alliances"
+-Fixed a bug in Saradin's dialog that made his quest repeatable
+-Fixed issues with Lord Varlind's bounty concerning reward and dialog options
+-Fixed incorrect journal entry for "Shadows of Knowledge"
+-Fixed double reward for completing Isla's bounty
+-Fixed wrong dialog lines being used for Rhade and Zeda
+-Removed hidden reputation loss when killing members of the City Watch
+-Added more reputation loss during Ariosh's questline
+-Fixed typos
+
+
 Version 4.3:
 -Hotfix for EET area crashing when leaving the black market
 

@@ -56,7 +56,7 @@ END
 
 IF ~~ THEN BEGIN 9
    SAY ~Th' barracks are guarded tighter than a clam's shell, an' th' prize we're seekin' could be under tighten' lock-up in th' army's coffers. Can ye 'andle such a feat, I wonder?~
-       ++ ~You've got a deal, Stardancer. I'll retrieve those papers, and in return, you and your crew will be joining our litle operation here.~ GOTO 10
+       ++ ~You've got a deal, Stardancer. I'll retrieve those papers, and in return, you and your crew will be joining our little operation here.~ GOTO 10
        ++ ~I've no intention of provoking the Amnian army. Your best course of action is to fall in line with our plans. Disobedience will come at a cost.~ GOTO 3
 END
 

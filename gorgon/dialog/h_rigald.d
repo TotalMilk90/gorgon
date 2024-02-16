@@ -294,7 +294,7 @@ END
 IF ~~ THEN BEGIN 57
    SAY ~Do you have the prize? Show it here, let's have a look under the light. We need to make sure it's the gem we're after, not some fool's gold.~
        +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(600)~ GOTO 61
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1) NumDeadGT("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 63
+       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 63
        +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 65
 END
 

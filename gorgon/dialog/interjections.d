@@ -35,7 +35,7 @@ INTERJECT_COPY_TRANS h_whited 13 gartowhi13
 END
 
 INTERJECT_COPY_TRANS h_yumild 1 imotoyum1
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Nope. Huh-uh. I'm all up for adventures, <CHARNAME>... but I prefer my company to be, ya know, among the living.~
 END
 
@@ -55,15 +55,15 @@ INTERJECT_COPY_TRANS h_aishad 5 gartoais5
 END
 
 INTERJECT_COPY_TRANS h_aishad 8 imotoais8
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Yeah, I don't blame you for needing a break from... courtesan-ing? Is that even a word? I mean, I've never been one, not that it's a bad thing!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Courtesans are like, uh, artists, right? With conversations and... other... um, comforts. I guess I'm just more the sneaky, lock-picking type than the... um, romantic type.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I wonder what it's like, you know, to be so... I guess it's... well, kinda intimate, right?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Gosh, is it hot in here or is it just me babbling? Ha! Just forget I said anything... or everything.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Um, well, it's... quite a unique experience, I suppose. But, honestly, that's the least of my worries right now.~
 END
 
@@ -114,11 +114,11 @@ INTERJECT_COPY_TRANS h_baldwd 22 nertobal22
 END
 
 INTERJECT_COPY_TRANS h_baldwd 34 imotobal34
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~What do you think, <CHARNAME>? All that sneaking around, learning the tricks of the trade... it's kind of exciting, isn't it?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We're talking about serious stuff here though... I mean, it's a big step from picking a few locks for fun. Are we sure we want to get mixed up in this?~
-  == h_baldwd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_baldwd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, young one, it's natural to feel trepidation at the cusp of such a transformative journey. But let me assure you, what we offer is far more than mere child's play.~
 END
 
@@ -138,11 +138,11 @@ INTERJECT_COPY_TRANS h_baldwd 39 ajatobal39
 END
 
 INTERJECT_COPY_TRANS h_rigald 8 imotorig8
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Hey, wait a sec, <CHARNAME>. This place gives me the creeps. This whole talk about labyrinths and shadows... are we really considering this?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's one thing to sneak around for a bit of fun, but this... this is serious. I mean, just look around, this place isn't exactly the Friendly Arm Inn.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, the voice of trepidation speaks. Such wariness is wise, young one, but know that danger and opportunity are but two sides of the same coin in our world.~
 END
 
@@ -178,28 +178,28 @@ INTERJECT_COPY_TRANS h_ariosd 6 khatoari6
 END
 
 INTERJECT_COPY_TRANS h_ariosd 16 imotoari16
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's kinda exciting to think about sneaking around, swiping shiny trinkets while they're all busy with their fancy party.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I mean, these folks probably won't even miss a few coins, right? But then again, it does seem a bit... I dunno, unfair?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Targeting them just because they're here to have a good time and spend their gold. Makes you wonder if we're crossing a line from fun and mischief into something a bit less... noble.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, lass, I get where you're comin' from, but in our line of work, it's all about takin' opportunities.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~These nobles, they won't miss what they don't know they've lost. It's all smooth and subtle, like a shadow at midnight.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Just remember, discretion is the name of the game. You'll have to use your sharp wits and blend in like you're part of the scenery.~
 END
 
 INTERJECT_COPY_TRANS h_blackd 4 imotobla4
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But think about it... being part of something bigger, it's not just about following orders. It's about being part of a team, where everyone's got each other's backs.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And I mean, I get it, Blackthorn. Taking orders isn't exactly fun, especially when you're used to being your own boss.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But this is a chance to learn new tricks, see new places, maybe even make a real difference. It's an adventure, and isn't that what we're all here for?~
-  == h_blackd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_blackd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, ain't you a pretty little thing. If workin' with the Eye means gettin' to partner up with the likes of you, maybe it's worth considerin'. But don't get your hopes up, love.~
 END
 
@@ -228,38 +228,36 @@ INTERJECT_COPY_TRANS h_valerd 1 saftoval1
 ~Well, this has been a delightful stroll down memory lane, but I've got more important things to do than trade barbs with has-beens.~
 END
 
-/*
 INTERJECT_COPY_TRANS h_lieded 34 imotolie34
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Hey, I'm from Candlekeep too, you know. It wasn't all dusty books and quiet lessons.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~There were plenty of pranks and adventures, even if someone here was too busy with their nose stuck in a tome to notice.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And don't let <CHARNAME> fool you, Candlekeep might be a citadel of knowledge, but it's also where some of us learned our first tricks... and not all of them were from books.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And who might this young sprite be, <CHARNAME>? Your little girlfriend, perhaps, trailing in your shadow? Quite adorable to have such... devoted company.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But remember, darling, you're in my world now. Here, it's my show, and I don't share the spotlight easily.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~So, while I appreciate the added commentary, let's keep our attention where it belongs, shall we?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Girlfriend? <CHARNAME>'s practically my brother. We grew up together, dodging chores and librarians, fighting to survive the perils of Candlekeep's most dangerous weapon... boredom.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But don't worry, I get it. It's easy to mix-up our bickering for flirting when you're not used to genuine friendship.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's a cute mistake, really. Stick around, you might learn a thing or two about what real loyalty looks like.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, aren't you full of surprises, my dear? I must say, I do admire someone who can hold their own with words as sharp as daggers.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's refreshing to meet someone who isn't easily caught in the webs I weave. Consider my respect earned, little fox.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But let's not forget, in this dance of shadows, it's always wise to keep an eye on the other players.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, <CHARNAME>, your fiery companion here certainly knows how to make an impression. It's always a pleasure to see someone who can dance with words as deftly as with shadows.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It speaks volumes about the company you keep. But as for you, my dear, you've been quite the enigma, letting actions and choices speak where words do not.~
 END
-*/
 
 INTERJECT_COPY_TRANS h_lieded 74 montolie74
   == %MONTARON_JOINED% IF ~IsValidForPartyDialogue("Montaron")~ THEN
@@ -356,17 +354,17 @@ INTERJECT_COPY_TRANS h_aishad 23 nertoais23
 ~You were doing your job, and there's a world of difference between professional courtesy and personal consent.~
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~Amrius crossed a line, and that's on him, not you. Don't let his actions make you question your own.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Absolutely, Neera's right. Aisha, it's not your fault, not one bit. You can't control how others take things, especially someone like Amrius.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You were clear about your work, and if he read more into it, that's his mistake. You're not responsible for his delusions or his actions.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I guess I've always known how to handle the attention, but with Amrius, it's different. It's like he's seen a different version of me, one that only exists in his head.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~That's the thing, isn't it? Some people, they get this idea of you and just won't let it go. But you're not responsible for their fantasies. You're you, and that's all you should be.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Exactly! And don't forget, we've got your back, Aisha. No one should have to deal with this kind of stuff alone. Amrius or no Amrius, you're not in this by yourself.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Thank you, girls. It means a lot to have support like this.~
 END
 
@@ -388,45 +386,45 @@ INTERJECT_COPY_TRANS h_amriud 14 nertoamr14
 ~Oh, of course, because a woman showing any sort of emotion must mean she's got a screw loose, right? How silly of us to think that feelings could be anything but a sign of madness.~
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~Next, you'll be telling us that the sun rises in the west because Aisha looked at it the wrong way. Really, Amrius, your insight is as enlightening as a cave at midnight.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Neera's got a point. Aisha, losing her cool like that? It doesn't add up. She seems more like the 'keep calm and carry on' type, than someone who would just go berserk out of nowhere.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~C'mon, Amrius, even my imagination isn't that wild, and I've dreamed up some pretty strange stuff.~
-  == h_amriud IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_amriud IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You two are as naive as newborns if you think that's the whole story. Listen, Aisha ain't the saint you're making her out to be.~
 END
 
 INTERJECT_COPY_TRANS h_aishad 41 nertoais41
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Psst, Imoen, is this the part where we pretend we've just walked into the wrong play? Because I didn't get the script for 'Aisha Unleashed: The Rant Chronicles.'~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I'm half expecting a director to jump out and yell 'cut!' any second now. This whole thing with Ilena... it's making me think Aisha's not just upset. She might be... well, a bit... you know.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Don't you dare suggest I'm crazy! I'm the only one seeing things clearly here! Everyone else might be blind to Ilena's manipulations, but not me. I see the truth behind her facade.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I don't know, Aisha... I'm trying to follow you, but that's quite a sharp turn into catty territory. We're here worrying about bounties, and you're firing shots at Ilena's eyelashes?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I mean, c'mon. We shared a heart-to-heart earlier, or at least, I thought we did. You said you were being controlled by Amrius, about wanting freedom from his influence.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But now, hearing you like this, it's as if all that was just... I don't know, a performance, an act.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I want to believe in you, Aisha, I really do. But it's hard when it feels like you've been playing us all along.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You... you don't understand! Amrius, he's a snake, a venomous serpent, and Ilena... she's a spider, weaving her web of deceit.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~They're the ones who want to destroy me, to erase me from this wretched play! But I won't let them, no, not me...~
 END
 
 INTERJECT_COPY_TRANS h_amriud 54 imotoamr54
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Okay, Amrius, so Aisha's a bit of a firecracker, we got that loud and clear. But going from zero to bounty? That's jumping a few steps, don't you think?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~There's a big leap from being a bit dramatic to being a real threat, and a rant about jealousy doesn't exactly scream 'danger to the public.'~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Exactly! What Imoen said. Aisha's more like a surprise firework than a full-blown inferno. A bit startling, maybe, but hardly a reason to call in the cavalry.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I mean, if everyone who had a dramatic streak had a bounty on their head, we'd be in a constant game of hide-and-seek with half the realm!~
-  == h_amriud IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_amriud IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You two might make light of it, but it's not just about being dramatic. She's volatile, unpredictable. And in my world, that's a risk I can't afford.~
 END
 
@@ -450,9 +448,9 @@ INTERJECT_COPY_TRANS h_ilenad 23 nertoile23
 ~And here I thought my wild surges were unpredictable, but these two? They're like walking, talking chaos theory examples.~
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~Maybe I should take notes for a new spell - 'Summon Relationship Turmoil.'~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Yeah, that's not just a rough patch, it's a whole landscape of emotional landmines. No wonder things are so messed up between them.~
-  == h_ilenad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_ilenad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You know, you're right in a way. Amrius and Aisha, they're like two storms colliding over and over again. It's a spectacle of emotion and conflict that's hard to look away from.~
 END
 
@@ -461,9 +459,9 @@ INTERJECT_COPY_TRANS h_aishad 62 nertoais62
 ~I... I'm at a loss here. A bounty as a sign of twisted affection? Really, Aisha? That's not just over the top, it's over the mountains and into another realm of crazy.~
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~I thought we already reached peak drama with your last outburst, but you're really outdoing yourself now.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Yeah... You took the words right out of my mouth, Neera. A bounty as a love token? That's like saying getting struck by lightning is a sunny day's greeting.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You think this is funny? You think my pain is just another joke for your amusement? No, this is my life, my reality, and I won't be brushed off as just some lunatic!~
 END
 
@@ -481,31 +479,31 @@ INTERJECT_COPY_TRANS h_aishad 70 gartoais70
 END
 
 INTERJECT_COPY_TRANS h_aishad 71 imotoais71
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Wait, what? One second we're celebrating the lifting of the bounty, and the next, we're in the middle of a conspiracy thriller?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Aisha, are you suggesting Ilena's some sort of mastermind behind... well, everything?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Yeah, I'm with Imoen on this one. I'm all for a good mystery, but this is a wild leap.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We go from 'hooray, no more bounty' to 'Ilena's pulling all the strings'? It's like we missed a few chapters in this story.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You think I'm making this up, weaving tales out of thin air? No, there's more to this than meets the eye.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~And Ilena, oh, don't get me started on her. She struts around like she owns the place, batting her eyelashes, thinking she's the town's darling.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~It's all an act, I tell you. A performance to fool everyone into thinking she's this innocent little flower. But I see through it, I do.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~They're both as bad as each other, him with his delusions of grandeur, and her with her little miss perfect act.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Okay, Aisha... I'm trying to follow, but you lost me at 'innocent little flower'. That's quite a sharp turn into catty territory.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~We're here worrying about bounties, and you're firing shots at Ilena's eyelashes? Is it just me, or did this just go off the rails?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Totally off the rails, Imoen. I thought we were dealing with danger, not first-year wizard academy drama.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~This whole thing with Ilena... it's making me think Aisha's not just upset. She might be... well, a bit... you know.~
-  == h_aishad IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_aishad IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Don't you dare suggest I'm crazy! I'm the only one seeing things clearly here! Everyone else might be blind to Ilena's manipulations, but not me. I see the truth behind her facade.~
 END
 
@@ -597,19 +595,19 @@ INTERJECT_COPY_TRANS karp 30 jahtokar30
 END
 
 INTERJECT_COPY_TRANS h_rigald 165 imotorig165
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I'm all for a bit of mischief, but swiping from the folks running the games? They're just trying to spread a bit of joy and have some innocent fun. I'm not so sure about this one.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Begging your pardon, miss. But, these chaps we're targeting aren't your average joy-spreaders. They're in league with the Shadow Thieves, a nasty bunch, I assure you.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~There's nothing innocent or joyous about their dealings. They use these games and the carnival as a front for their darker activities.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We're not just swiping loot and causing a bit of mischief here, we're disrupting a cog in a much more sinister machine. Trust me, this lot deserves what's coming to them, and we're just the ones to serve it up.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, when you put it that way, I guess it changes the picture a bit. It's just hard to imagine folks looking to have fun being mixed up in something dark.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But if these Shadow Thieves are using the carnival for no good, then I suppose we can't just turn a blind eye. I just hope we're really hitting the right targets and not just stirring trouble where it doesn't belong.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I respect your concerns. But in this world, sometimes the lines between right and wrong get a bit blurry. We do what we must to keep the balance, and sometimes that means playing in the grey areas.~
 END
 
@@ -768,15 +766,15 @@ INTERJECT_COPY_TRANS h_procud 34 saftopro34
 END
 
 INTERJECT_COPY_TRANS h_vitiad 1 imotovit1
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Hey, that was pretty slick! You've got some nimble fingers there. But, you know, since we're all friends here now, maybe you could consider giving back that 'trifle' of a hundred gold?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's all in good fun, of course. Plus, it'd be a nice gesture of... let's call it professional courtesy among fellow adventurers.~
-  == h_vitiad IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_vitiad IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, well, what do we have here? A vision as lovely as you, certainly makes a man reconsider his choices. Perhaps my little act of thievery was fate, bringing me before such beauty.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Fate or not, you still owe us a hundred gold. Your smooth talk isn't going to distract me from that. How about you hand it over and we call it even?~
-  == h_vitiad IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_vitiad IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, a lass with wit as keen as her eye. Very well, you've made your point.~
 END
 
@@ -921,25 +919,25 @@ INTERJECT_COPY_TRANS h_thamud 17 edwtotha17
 END
 
 INTERJECT_COPY_TRANS h_thamud 23 imototha23
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Paltry? That's a funny way to describe the group that just sent your Shadow Thieves packing in Beregost.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~If that was you assessing our defenses, I hate to break it to you, but you might need to recalibrate your scales. We handled your 'demonstration of force' pretty easily, didn't we?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's almost flattering, though, to think we're worth such attention. Makes you wonder who's really playing who in this shadowy game of yours.~
-  == h_thamud IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thamud IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, little one, your bravado is as amusing as it is misplaced. A skirmish in the streets is hardly a measure of true strength.~
-  == h_thamud IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thamud IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We Shadow Thieves play a long game, one of subtlety and cunning. What you perceived as defeat was but a ripple on the surface of a much deeper current.~
-  == h_thamud IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thamud IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Rest assured, our interests and plans extend far beyond a mere street brawl. Underestimating us based on that alone would be... unwise.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Yeah, well, we'll see about that. Don't think for a moment that your words scare us, Thamuz. We've faced more than our share of tough opponents and have come out stronger for it.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Your shadow games might work on others, but we're a different story. Keep underestimating us, and you'll find yourselves outplayed at your own game. Just wait and see.~
-  == h_thamud IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thamud IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Your confidence is commendable, but in the world we operate in, confidence alone is not enough. Let me offer you a piece of wisdom from someone well-versed in the art of shadows.~
-  == h_thamud IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thamud IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~In the dance of intrigue and deception that we Shadow Thieves excel in, the most direct approach is often a diversion, a misdirection to mask the true play.~
 END
 
@@ -985,9 +983,9 @@ INTERJECT_COPY_TRANS h_baldwd 145 gartomer145
 ~Fear not, for I shall lead the charge in this noblest of tasks, with all the charm and grace befitting a troubadour of my standing.~
   == %GARRICK_JOINED% IF ~IsValidForPartyDialogue("Garrick")~ THEN
 ~After all, what kind of bard would I be if I didn't rush to the aid of damsels in distress?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Garrick")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Garrick")~ THEN
 ~Oh, Garrick, always ready to play the dashing hero, especially when there's a pretty face involved!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Garrick")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Garrick")~ THEN
 ~Don't get too swept up in your gallant fantasies. We've got serious work to do, and it's not all about serenading and wooing.~
 END
 
@@ -1015,23 +1013,23 @@ INTERJECT_COPY_TRANS h_rigald 220 edwtorig220
 END
 
 INTERJECT_COPY_TRANS h_rigald 237 imotorig237
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~You know, I'm from Candlekeep too. Grew up there, just like <CHARNAME>. It's hard to believe that those monks, with all their rules and their wisdom, would turn to a thieves' guild for help.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's funny, in a way. I spent so much of my life within those walls, surrounded by endless books and ancient knowledge, always dreaming of the world outside.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And now, here I am, part of that outside world, and it's Candlekeep that's reaching out to me. Well, us, I guess. It's like everything's come full circle.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Those monks, they always seemed so untouchable, so above everything else. To think they're entangled in the same shadowy world as the Gorgon's Eye... it's a strange feeling.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Brings back a lot of memories, some good, some... not so much. But hey, if they need our help, who better than someone who knows Candlekeep inside and out, right?~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's a small world now, isn't it? But don't think it too strange. Even a place as sacred as Candlekeep can't always keep its secrets locked away.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And when it comes to missing tomes, especially those of... sensitive nature, it's not uncommon for them to seek out covert help.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~They might be scholars and monks, but they're not naive. They know the underworld has its uses, especially a guild as resourceful as the Gorgon's Eye.~
-  == h_rigald IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Your familiarity with the place could be a blessing in disguise for this task. We'll be counting on that knowledge of yours.~
 END
 
@@ -1044,92 +1042,92 @@ INTERJECT_COPY_TRANS h_rigald 241 edwtorig241
 ~This is not just another trinket to be returned for a quick coin. No, no... it demands a more... discerning handler.~
   == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin")~ THEN
 ~Someone like myself, naturally. The things I could learn, the spells I could unlock... the possibilities are limitless.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Edwin, this isn't about boosting your power or filling our pockets. This is Candlekeep we're talking about, my home, where I grew up. It's more than just a place, it's family.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Those monks, they were like guardians to me and <CHARNAME>. Returning that tome isn't just a job, it's about doing right by the place that shaped us.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Candlekeep holds a special place in my heart, and I'll be darned if we turn this into another one of your power grabs.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~We're going to find that book and get it back where it belongs, for the right reasons.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Your attachment to that dusty library and its cloistered inhabitants clouds your judgment. (Honestly, why must I continually suffer the company of such... sentimentally burdened fools?)~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We stand on the precipice of acquiring knowledge that could elevate us beyond the mundane squabbles of this world. And yet, you cling to these naive notions of honor and home.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Understand this, in the pursuit of true power, there is no room for such childish attachments.~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Alright, enough bickering. Whether it's for power, coin, or sentimental reasons, the job's the job. We've got a rare and valuable tome out there that needs finding.~
 END
 
 INTERJECT_COPY_TRANS h_thalid 14 imototha14
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~The black markets? Oh, that sounds like a thief's paradise! I can't believe there's this whole secret world right under our noses, and I haven't seen it yet.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imagine all the hidden treasures and secrets just waiting to be discovered. It's like a secret club for thieves, and I want in.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~You've got to take me with you. I'm as much of a rogue as the next, and I can be super sneaky when I need to be.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Please, can I come along? I promise I'll be good... well, as good as a thief can be in a place like that!~
-  == h_thalid IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thalid IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I can see the spark of a true practitioner of the thieving arts in your eyes. Your enthusiasm speaks volumes, and it's clear you belong among our kind.~
-  == h_thalid IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_thalid IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Yes, you are welcome to come along. But know, the black markets aren't just a collection of stalls and shadows, they're a community of like-minded individuals.~
 END
 
 INTERJECT_COPY_TRANS h_rigald 261 imotorig261
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's kind of bittersweet, isn't it? I mean, we've done Candlekeep a huge favor, and they don't even know it's us. It's our old home, and here we are, working in the shadows, helping them from afar.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I can't help but feel a bit... I don't know, melancholy about it all. It's like we're so close to where we started, yet so far away. It's funny, in a way, how life turns out.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I miss the old place, the simplicity of it, the safety. It makes me wonder about the path we've chosen, about where we're heading. Doing them proud, but in secret, like ghosts of our past selves.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~(The company I find myself in... An incessant stream of sentimentality and amateurish antics. Their lack of vision, their trivial concerns... It's an affront to my intellectual prowess.)~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Spare us your sentimental musings, Imoen. The real tragedy here is not your bittersweet nostalgia, but the fact that such a tome of arcane knowledge will now be wasted, locked away in the dusty halls of Candlekeep.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~In the hands of those cloistered scribes, its true potential will never be realized. Imagine the arcane secrets, the powerful spells that could have been uncovered and harnessed by a mind capable of appreciating them.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's a lamentable waste, entrusting such power to those who will do naught but hoard it away from the world. A grievous misstep, indeed.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Edwin, I think you've spent so much time with your nose in those books that you've forgotten there's a world outside of them.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Sure, the tome's got magic and mysteries, but there's more to life than just hoarding knowledge. And hey, if dealing with us 'amateurs' is such a burden, remember, nobody's forcing you to stick around.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Edwin")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Edwin")~ THEN
 ~Maybe you'd be happier with a bunch of stuffy old mages who don't challenge your grandiose view of yourself. But then, who would put up with your charming personality?~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It is not a matter of preference but a simple fact that my intellectual capabilities are vastly superior to those around me. You and the others benefit far more from my presence than I from yours.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's a tiresome ordeal, tolerating this incessant banality, but one must make sacrifices for the greater pursuit of knowledge.~
-  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == %EDWIN_JOINED% IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And if that means enduring the company of those less enlightened, so be it. (Just know, my patience has its limits.)~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Enough of this quarreling! We have successfully completed an impressive heist, yet here you are, bickering like children over trifles.~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Edwin, your intellect is invaluable, but I expect you to recognize the importance of unity in our endeavors.~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And Imoen, while your spirit is commendable, let's try not to exacerbate tensions with our wizardly companion, shall we?~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We are all part of this operation, for better or worse. It's time to set aside these petty disputes and focus on our collective goal. We have a guild to manage, and such discord serves us no good.~
-  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Let's instead acknowledge our recent accomplishment, a feat many deemed impossible.~
-   == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("Imoen")~ THEN
+   == h_rigald IF ~IsValidForPartyDialogue("Edwin") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~With brilliance like yours, Edwin, and your resourcefulness, Imoen, along with the diverse skills of our team, there's no limit to what we can achieve together.~
 END
 
 INTERJECT_COPY_TRANS h_ariosd 89 imotoari89
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Wait a second, this isn't what I thought we were getting into. We're talking about extorting these people, aren't we?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~This isn't the sneaky, clever kind of thieving I signed up for. It's just... it's just bullying, really. Street-level thug work.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We're supposed to be better than this, aren't we? I thought we were about the art of the steal, not strong-arming innocent folks just trying to run their businesses.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Look, I get it, it's not the most glamorous part of our line of work, but it's necessary. These establishments, they pay for protection, and we provide it. Keeps things running smoothly, if you know what I mean.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Normally, I've got a few lads who handle collections, and yeah, they can be a bit... enthusiastic in their methods.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But maybe with a pretty face like yours, we can keep things nice and civil. A bit of charm can go a long way in avoiding messy situations.~
 END
 
@@ -1176,32 +1174,32 @@ INTERJECT_COPY_TRANS h_ariosd 103 victoari103
 END
 
 INTERJECT_COPY_TRANS h_ariosd 123 imotoari123
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ooh, Ariosh, is that a hint of a blush I see when you talk about this Black Lily? Sounds like someone's got a bit of a crush!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~'Admiration'... is that what the thieves are calling it these days? She must be quite the lady if she's got you singing her praises like this.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Alright, alright, enough with your jesting. There's no 'crush' here, just professional respect, I assure you. Black Lily is one of the best in the business, and I've learned a thing or two from her.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But don't let my admiration mislead you, she's not one to be taken lightly.~
 END
 
 INTERJECT_COPY_TRANS blackl 7 imotobla7
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Aha! I knew it! There's definitely more than just 'professional respect' going on between you two. Oh, this is too good!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ariosh was all business and discretion when he talked about you, but I could tell there was something he wasn't saying.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Come on, Black Lily, you've got to give us the juicy details! What's the story between you and our mysterious friend Ariosh?~
-  == blackl IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == blackl IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Well, aren't ye the eager little sparrow, peckin' around for gossip?~
-  == blackl IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == blackl IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~As for Ariosh and me, let's just say we've shared more than a few shadows in our time.~
-  == blackl IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == blackl IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But don't go thinkin' it's some sappy love story. It's more like two foxes circlin' the same henhouse, never quite sure if they're partners or competitors.~
-  == blackl IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == blackl IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~He's got his charms, I'll give him that, but I'm not one to be tied down. Too much business to attend to, and sentiment's bad for trade.~
-  == blackl IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == blackl IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~As for juicy details, sorry, lass, but Black Lily doesn't kiss and tell. Business first, pleasure... well, that's my own affair.~
 END
 
@@ -1238,23 +1236,23 @@ INTERJECT_COPY_TRANS h_eudikd 0 skitoeud0
 END
 
 INTERJECT_COPY_TRANS h_ariosd 131 imotoari131
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Wait, hold on a second, Ariosh! Blow up the Jovial Juggler? That's crazy talk! We can't just go around setting fires and risking innocent lives. There's got to be another way to handle this Inspector.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I mean, I know we've done some shady stuff, but this... this is way over the line. There are people in there, just trying to enjoy a drink or earn a living.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We can't just... we can't be those kinds of people who'd do something so terrible. There's always another way, a better way.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, I understand your concerns, truly I do. But you've got to see the bigger picture here. This isn't about liking what we do, it's about survival, about sending a message that we're not to be trifled with.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~The Jovial Juggler is just a means to an end. If we show weakness, more of our people will end up in chains or worse.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's a harsh world, and sometimes, harsh actions are the only language these law types understand.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But there's always a line, Ariosh! I didn't sign up to be part of a guild that terrorizes innocents. There's got to be another solution, one that doesn't involve threatening lives.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Look, nobody's keen on walking down this dark path, but consider the stakes.~
-  == h_ariosd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_ariosd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We're not just talking about one tavern, we're talking about the survival of our entire operation. Sometimes, you've got to pick the lesser of two evils.~
 END
 
@@ -1317,27 +1315,27 @@ INTERJECT_COPY_TRANS h_ariosd 155 alotoari155
 END
 
 INTERJECT_COPY_TRANS h_lieded 335 imotolie335
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") Global("h_LiedelKiss","GLOBAL",1)~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Global("h_LiedelKiss","GLOBAL",1)~ THEN
 ~Hey now, let's not forget who else was there, fighting off those Shadow Thieves. It wasn't just <CHARNAME> doing all the heroic stuff, you know. I was right there in the thick of it too!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And, come on, <CHARNAME>, really? You and Liedel? I never pegged you for someone who'd go for the whole 'danger-is-sexy' thing.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I mean, sure, a bit of excitement is fun, but there's gotta be more to it than just... you know, thrill-seeking. You're not just falling for all that fluttery eyelash stuff, are you?~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, dear, is that a hint of jealousy I detect in your voice? It is unlike you to begrudge <CHARNAME>'s choices in companionship. Remember, the heart has its reasons, which reason knows not.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And <CHARNAME>, you are well within your right to explore the connections that life presents to you, be they forged in battle or in the quieter moments.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, it's important to learn that not all affections revolve around the same axis as yours. We are all free to seek our own paths, and sometimes those paths involve delving into the unexpected.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Oh, come on, Jaheira, jealous? I'm just looking out for <CHARNAME>, making sure he doesn't get too swept up in all the swooning and hero-worship, that's all.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Besides, someone's got to keep things lively around here, right? If <CHARNAME> wants to play the dashing hero to all the damsels, or whatever, that's his business.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~I'm just here for the adventure, and to make sure he doesn't get too big-headed about it!~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, my little sprite, I assure you, there's no need for concern. <CHARNAME> seems more than capable of navigating the adoration and challenges that come his way.~
-  == h_lieded IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And as for being swept up, isn't a bit of excitement what makes life interesting?~
 END
 
@@ -1413,9 +1411,9 @@ INTERJECT_COPY_TRANS h_lieded 389 alotolie389
 ~Those poor creatures... they didn't ask to be a part of his weird alchemy stuff. Maybe we can help them too, while we're snooping around for this workshop.~
   == %ALORA_JOINED% IF ~IsValidForPartyDialogue("Alora")~ THEN
 ~They need someone to look out for them. It's not right to let them suffer, it's just...awful, and we can't ignore that!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Alora")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Alora")~ THEN
 ~Alora's right, you know. It's just horrible, thinking about those animals being used for experiments. We can't just turn a blind eye to that.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Alora")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Alora")~ THEN
 ~They deserve to be safe and happy, not stuck in some creepy alchemist's lab. We've got to do what we can to help them. It's just the right thing to do.~
 END
 
@@ -1661,59 +1659,59 @@ INTERJECT_COPY_TRANS h_flam2d 3 shatofla3
 END
 
 INTERJECT_COPY_TRANS h_prufld 6 imotopru6
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Wait, wait, wait... let me get this straight. This guy wants us to help him reach 'nirvana' by feeding him lotus? He's looking for the sweet spot between bliss and, well, the big sleep?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Is this a quest or have we stumbled into some bizarre alchemist's cookbook?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Exactly, Imoen! It's more like a psychedelic adventure. You know, 'Follow the white rabbit,' but in this case, it's 'Follow the lotus-eating gentleman.'~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And what's this about perfect equilibrium? I mean, I've dabbled in the arcane, but this sounds more like... culinary arts gone wild! Maybe he's trying to bake the perfect lotus pie?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~A lotus pie? Now there's an idea! We could open a bakery, 'Imoen and Neera's Nirvanic Nibbles!' Our first specialty: Lotus Loaf with a side of existential clarity.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~That's brilliant, Imoen! And for every loaf, we could add a little pamphlet: 'Instructions for your metaphysical journey - Do not consume if you plan to operate siege weapons or cast complex spells.'~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~And for an extra gold piece, we'll throw in a fortune cookie that tells you the meaning of life! Spoiler: it's '42.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Absolutely! We'll need a disclaimer: 'Side effects may include but are not limited to: transcendental experiences, excessive giggling, and an insatiable craving for more pastries.'~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We'll be the talk of the Sword Coast!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~But wait, what if we give him too much and he, I don't know, transcends to another plane of existence? Do we get to keep his stuff?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Only if we find his astral address to send him the bill for our 'nirvana' services! Now, let's go make sure our friend here doesn't accidentally levitate into the astral plane.~
-  == h_prufld IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_prufld IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Jest if you must, ladies, but you trivialize a pursuit most sacred.~
-  == h_prufld IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_prufld IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~The lotus is not merely a means for frivolous escapades, it is a gateway to enlightenment, to understanding realms beyond this mundane existence.~
 END
 
 INTERJECT_COPY_TRANS h_prufld 26 imotopru26
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh no, no, no! This isn't good! He's toppling like a tree! Do you think he's... going to another plane of existence or just, you know, passing out?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, this is serious! We might've overdone it with the lotus! But let's not jump to astral conclusions just yet.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Quick, maybe we can counteract it with some strong coffee or a really loud shout? I read somewhere that shock can snap someone out of... well, I'm not sure it was about a lotus overdose, but it's worth a try!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Right, because when I think of medical emergencies, strong coffee and shouting are definitely at the top of the list. Hang on, Pruflas! We're... uh, sort of trying to figure out how to save you!~
 END
 
 INTERJECT_COPY_TRANS h_prufld 30 imotopru30
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Whoa, did that just... actually work? I'm not sure if I should be amazed or completely baffled. One minute he's all addle-brained, and the next, he's spouting wisdom like a sage!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Did we witness a miracle or is this just lotus talk? Maybe... we should try a bit, see if it helps with our lockpicking skills or spellcasting.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, I'm not sure the lotus is the key to better thievery or magic. But it's fascinating to see Pruflas transformed from a lotus-seeker to a truth-seeker.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Though, I must admit, I was half-expecting him to start levitating or turn into a ball of light!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Yeah, or at least spout some more riddles! But hey, if he's found what he's looking for and it means he's heading home, I call that a win.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Plus, no accidental astral travel, that's always a good thing in my book.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Definitely a win, especially on the astral travel part. Now let's see what wisdom Pruflas is going to share with us. Maybe it's the secret to never losing a sock in the laundry.~
 END
 
@@ -1727,11 +1725,11 @@ INTERJECT_COPY_TRANS h_quassd 12 edwtoqua12
 END
 
 INTERJECT_COPY_TRANS h_lieded 512 imotolie512
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, c'mon, you two. Really? Right here, right now? Yuck! Get a room or something.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I mean, it's sweet and all, in a 'let's dance on the edge of a volcano' kind of way, but can we focus on not getting caught for a moment? Baldwin is literally right there.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~We might as well send him an invitation to our secret betrayal party. Let's keep the declarations of wild, reckless passion to a minimum until we're not standing in the lion's den, okay?~
 END
 
@@ -1745,25 +1743,25 @@ INTERJECT_COPY_TRANS h_deaded 9 shatodio9
 END
 
 INTERJECT_COPY_TRANS h_deaded 6 imotodio6
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh my gosh, that's the sweetest thing! A rugged warrior with a soft spot for a little kitty? Shadow's one lucky cat.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Rescuing a cat and nursing it back to health? That's hero material right there. It's not every day you meet a strong warrior with such a kind heart.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~And did I mention I'm quite the cat lover myself?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Well, I adore them too! I've been known to rescue a stray or two myself. Cats and I, we have a special bond. Isn't that right, Shadow?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I bet Dio here appreciates someone who shares his love for felines.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, please, Imoen. Everyone knows that mages have a special connection with animals. Cats, especially, are drawn to the arcane.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~It's like we understand each other on a mystical level. Dio, I'm sure you can see the value in that.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Mystical level? Ha! A cat doesn't need spells to know who its friends are. They need playfulness, a gentle touch, and someone who can be just as stealthy and cunning as they are. Right, Dio?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Stealthy and cunning? Cats appreciate intelligence and wisdom, qualities befitting a mage. They're discerning creatures, after all. I bet Shadow here can sense the magical aura that surrounds me.~
-  == h_deaded IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("Imoen")~ THEN
+  == h_deaded IF ~IsValidForPartyDialogue("Neera") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Now, now, let's not turn this into a competition. Shadow here, she's got a liking for everyone, especially those with good hearts. And I can see she's taken a shine to both of you already.~
 END
 
@@ -1823,33 +1821,33 @@ INTERJECT_COPY_TRANS h_pits2d 10 aloto2pf10
 END
 
 INTERJECT_COPY_TRANS h_pits3d 11 imoto3pf11
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Thanks for the tips, Lyria, that's some solid advice. But hey, let's switch gears for a sec.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You must know a thing or two about Diomedes, right? What's his story? Got any hobbies or... favorite foods?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Really, Imoen? We're here to learn about fighting in the pits, and you're busy trying to dig up dirt on Dio? I thought you were above those childish tricks.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~And besides, if anyone's going to catch his eye, it's going to be a spellcaster with a bit more... finesse. You know, someone who can dazzle with more than just witty banter.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Finesse? Ha! Like Dio's going to be impressed by a few sparkly spells. He's a fighter, Neera.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~He appreciates someone who knows her way around a dagger. And maybe someone who's a bit more down-to-earth, you know?~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Down-to-earth? Please. Dio's a leader, he values smarts and skill. Qualities that a certain talented mage happens to possess in abundance, I might add.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~You make it sound like he's picking a new spellbook, not a person! Diomedes strikes me as the type who'd enjoy a good laugh and a daring adventure. That's where I come in.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Oh, I'm sure he'd enjoy a good laugh, especially when he finds out about how you snore like an ogre!~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~The way you saw logs at night, it's a wonder how you ever sneak up on anyone. I bet Diomedes would find that hilarious, don't you think?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Neera! That's so not fair! You know I can't help it!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~If you even whisper a word of that to Diomedes, I swear, I'll... I'll fill your boots with itching powder! And trust me, I know where to find the good stuff.~
-  == h_pits3d IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_pits3d IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Ladies, ladies, as amusing as this is, let's not forget where we are. We're here to discuss strategy and combat, not to dredge up embarrassing stories or plot matchmaking schemes.~
-  == h_pits3d IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_pits3d IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Diomedes, like any warrior in the pits, values strength, courage, and integrity. Now, let's stay focused on the matter at hand.~
 END
 
@@ -1867,115 +1865,115 @@ END
 INTERJECT_COPY_TRANS h_zedadd 38 nertozed38
   == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Neera")~ THEN
 ~Great, vampires. Because dealing with normal, non-undead, non-bloodsucking beings was just too boring, right?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Oh, come on, Neera. Vampires aren't all bad. They do a have a certain... allure about them, don't they?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~I remember reading these old tales in Candlekeep about mysterious, charming vampires. They always had a way with words and an air of elegance.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Imoen, they're bloodthirsty undead! All that charm and mystery is just a front to lure in their next meal. There's nothing appealing about being someone's snack.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~But think about it! The eternal life, the power, the history they've seen. And they're always depicted as so sophisticated and, well, captivating.~
-  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == %NEERA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Captivating? More like manipulative and dangerous. They're predators, Imoen. And let's not forget the whole living in the shadows, sleeping in coffins, and oh, the blood-drinking part.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Neera")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Neera")~ THEN
 ~Your fascination with the tales of vampires is understandable, but let's not forget the reality. These creatures are far more sinister than any storybook.~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 52 imotozed52
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, <CHARNAME>, can we play? Please, please, please? Come on, it's only 100 gold a riddle, and who knows what amazing things could be inside that bag!~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~I can see the spark of excitement in your eyes, young one. You've got the spirit of a true gambler.~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 59 imotozed59
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Come on, <CHARNAME>, even I knew that one! You've got to focus, get your head in the game! We can't let Zeda have all the fun... and our gold. Shake it off and let's nail the next one.~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 61 imotozed61
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~This... This is our prize? I've seen better finds in Winthrop's dustbin! Are we sure we're not being pranked here?~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, but even the simplest objects can hold stories and mysteries. It's not about the item itself, but the tale it weaves and the challenge it represents.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Priceless? Well, if you say so... but I'm starting to think our real prize is just figuring out these riddles. Let's hope the next one's got something a bit more... well, real.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Patience, young seeker. In the game of riddles, each answer and prize brings a new understanding. Perhaps your next challenge will unveil greater rewards.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Alright, alright, I can't deny it's been a good laugh. Let's see what else you've got. Hit us with the next riddle!~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 79 imotozed79
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, this is going to be fun! The riddles, the surprises, it's like a little adventure all on its own! And who knows what cool stuff Zeda's got in her bag this time!~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Imoen, are you so easily swayed by the lure of riddles and trinkets? Have you forgotten that the last prizes from this 'Bag of Mysteries' were little more than trumpery?~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("Imoen")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira") IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Useless baubles that served no purpose other than to encumber our purses.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Oh, hush, Jaheira! It's not always about usefulness. Sometimes it's just about the fun of the challenge, the thrill of the guess!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~And who knows, maybe there's something in that bag this time that's a real treasure. One rogue's rubbish is another rogue's relic, right?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Plus, a little bit of mystery and laughter is worth a few gold coins in my book. Let's just enjoy the game!~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 88 imotozed88
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Oh, come on, <CHARNAME>! Even I knew that one... it's 'footsteps'! How could you miss that? It's one of the oldest riddles in the book!~ 
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~You've got to keep up! We can't afford to lose gold on easy ones like that, so let's keep our eyes on the prize, alright?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Shake it off and focus. We've got more riddles to conquer, and I'm not about to let Zeda's Bag of Mysteries beat us. Time to bring our A-game!~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 93 imotozed93
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Yes! That's it... 'leaves'! Ha! Take that, Zeda! We're not just pretty faces and sharp swords around here, we've got brains too!~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Did you see that? <CHARNAME> nailed it! We're gonna clean out your Bag of Mysteries in no time. Who's the riddle master now, huh? We are unstoppable!~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Alright, alright, calm down there, Imoen. It's just a game, remember? Though I must admit, that was a clever answer.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~But don't get too confident just yet. Let's see how you fare with this next one. Pay close attention, because I won't be going easy on you.~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 102 jahtozed102
   == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Jaheira")~ THEN
 ~This is foolishness! Wasting time and gold on child's play while greater dangers loom over us. There are far more important tasks at hand than indulging in these trivial games.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Oh, lighten up, Jaheira! Not everything's about looming dangers and dire threats. A little fun never hurt anyone.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Besides, who knows? Maybe you'll learn to enjoy the thrill of a good riddle. Or is it too much for your serious brain?~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~This is not a matter to be taken lightly, Imoen. Your naiveté and childish whims could put us all in jeopardy. It's high time you grew up and started acting like the adult you claim to be.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~I'm not a child. Just because I don't frown all day and see doom in every shadow doesn't mean I don't understand what's at stake. I can have fun and still take things seriously.~
-  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %JAHEIRA_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Your actions speak otherwise. This incessant need for amusement could blind you to the dangers we face. You must learn discipline and focus, or you risk more than just your own well-being.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~You're not my mother, Jaheira. You don't get to lecture me about every choice I make. I'm part of this team too, and I deserve some respect!~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~The oak and the reed, each strong in its own way. The oak stands rigid, resisting the storm, while the reed bends with the wind.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Yet, too much rigidity can snap under pressure, and too much flexibility can fail to hold ground. In the end, it's the balance that survives the tempest.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Perhaps there are lessons for both in the heart of the storm. Remember, the greatest challenges often lie within, not without.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen") IsValidForPartyDialogue("Jaheira")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%") IsValidForPartyDialogue("Jaheira")~ THEN
 ~Now, let us return to the game at hand. The world outside will wait for just a moment longer.~
 END
 
 INTERJECT_COPY_TRANS h_zedadd 108 imotozed108
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Fire? Again? Oh, come on, that's not fair. You can't just use the same answer twice in a row... it's like breaking the unwritten rules of riddle-telling.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Ah, but sometimes the simplest solutions are the most elusive. It's not just about the answer, but how you approach the question. Think of it as a lesson in expecting the unexpected.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Alright, Zeda, but if the next answer is fire too, I'll start to think you might just be obsessed with it. Let's have the next riddle then. We'll be ready for any tricks this time.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Your vigilance is admirable. But remember, the essence of a riddle lies in its ability to surprise and challenge the mind.~
-  == h_zedadd IF ~IsValidForPartyDialogue("Imoen")~ THEN
+  == h_zedadd IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
 ~Now, brace yourselves, for the next enigma may lead you down an unexpected path.~
 END
 

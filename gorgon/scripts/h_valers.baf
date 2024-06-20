@@ -3,5 +3,5 @@ IF
 THEN
          RESPONSE #100
                   DestroySelf()
-                  SetGlobal("h_SpawnValera","GLOBAL",1)
+                  SetGlobal("h_SpawnVelera","GLOBAL",1)
 END

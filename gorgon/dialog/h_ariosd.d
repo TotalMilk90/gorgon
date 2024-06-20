@@ -72,7 +72,7 @@ IF ~~ THEN BEGIN 15
 END
 
 IF ~~ THEN BEGIN 16
-   SAY ~Be mindful, however, they've got a keen-eyed bloke keepin' watch. Don't be using the ol' cut an' run while he's on duty. You'll need to outsmart and outmaneuver him for this job.~ IF ~~ THEN GOTO 17
+   SAY ~Be mindful, however, they've got a keen-eyed bloke keepin' watch. Don't be using the ol' cut-an'-run while he's on duty. You'll need to outsmart and outmaneuver him for this job.~ IF ~~ THEN GOTO 17
 END
 
 IF ~~ THEN BEGIN 17

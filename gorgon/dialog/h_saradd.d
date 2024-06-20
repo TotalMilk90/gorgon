@@ -375,7 +375,7 @@ IF ~~ THEN BEGIN 82
 END
 
 IF ~~ THEN BEGIN 83
-   SAY ~During the tumultuous times of the Salamander War, my role transcended the confines of the temple. I found myself offering counsel to Aznar Thrul, an esteemed Red Wizards and one of the leaders of Thay.~ IF ~~ THEN GOTO 84
+   SAY ~During the tumultuous times of the Salamander War, my role transcended the confines of the temple. I found myself offering counsel to Aznar Thrul, an esteemed Red Wizard and one of the leaders of Thay.~ IF ~~ THEN GOTO 84
 END
 
 IF ~~ THEN BEGIN 84
@@ -732,6 +732,7 @@ END
 IF ~~ THEN BEGIN FINAL_10
    SAY ~It is regrettable, yet I sense the pull of a potent destiny guiding you towards a significant journey. I bid you farewell, and remember that the guild's facilities shall remain at your disposal.~
 IF ~~ THEN DO ~
+   SetGlobal("h_RefuseGuildOffer","GLOBAL",1)
    AddJournalEntry(@221,QUEST_DONE)
    EscapeArea()~ EXIT
 END

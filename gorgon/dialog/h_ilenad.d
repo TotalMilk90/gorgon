@@ -143,7 +143,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~~ THEN BEGIN 30
-   SAY ~You want me to talk to Amrius about dropping the bounty? That's... well, it's not usually my place to get involved in these affairs. But I can see this situation is spiraling out of control.~ IF ~~ THEN GOTO 31
+   SAY ~You want me to talk to Amrius about dropping the bounty? That's... well, it's not usually my place to get involved in these affairs, but I can see this situation is spiraling out of control.~ IF ~~ THEN GOTO 31
 END
 
 IF ~~ THEN BEGIN 31

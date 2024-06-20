@@ -2,7 +2,6 @@ IF
          Global("h_ShadowWar","GLOBAL",1)
 THEN
          RESPONSE #100
-                  DayNight(MIDNIGHT)
                   CreateCreature("h_sthiec",[320.2701],S)
                   CreateCreature("h_thiefc",[409.2796],S)
                   CreateCreature("h_thiefc",[442.2697],S)
@@ -221,7 +220,7 @@ IF
          PartyHasItem("h_misc08")
 THEN
          RESPONSE #100
-                  SetGlobal("h_SpawnVelera","GLOBAL",1)
+                  //SetGlobal("h_SpawnVelera","GLOBAL",1)
                   AddJournalEntry(@214,QUEST)
                   Continue()
 END
@@ -240,7 +239,7 @@ END
 IF
          TimeOfDay(NIGHT)
          Global("h_SpawnVelera","GLOBAL",1)
-         HasItem("h_misc22","Container 9")
+         //HasItem("h_misc22","Container 9")
 
 THEN
          RESPONSE #100
@@ -409,16 +408,10 @@ THEN
 END
 
 IF
-        OR(3)
-             Race(Player1,HUMAN)
-             Race(Player1,ELF)
-             Race(Player1,HALF_ELF)
-        Class(Player1,THIEF_ALL)
         TimeOfDay(NIGHT)
         Global("h_SpawnLiedel","GLOBAL",0)
-        GlobalGT("h_ShadowWar","GLOBAL",2)
+        GlobalGT("h_ShadowWar","GLOBAL",3)
         Global("h_LiedelRomanceActive","GLOBAL",1)
-        GlobalGT("h_LiedelLove","GLOBAL",11)
         Global("h_LiedelQuest","GLOBAL",4)
 THEN
 	RESPONSE #100

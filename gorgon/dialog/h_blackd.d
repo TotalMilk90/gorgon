@@ -37,6 +37,7 @@ IF ~~ THEN BEGIN 5
        ++ ~Blackthorn, you're a capable rogue, but imagine what you could achieve under the Gorgon's Eye banner.~ GOTO 10
        ++ ~You've got skills, Blackthorn, but you're just scratching the surface. Join us, and you'll see the real power and influence we wield.~ GOTO 10
        ++ ~You're wasting your talents here. The Gorgon's Eye offers true power and wealth. Don't be a fool, Blackthorn, seize this chance.~ GOTO 10
+       ++ ~On second thought, Blackthorn, I may have overestimated your value. Let's skip the pleasantries and get right to the violence.~ GOTO 9
 END
 
 IF ~~ THEN BEGIN 6

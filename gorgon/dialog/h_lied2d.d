@@ -1,7 +1,7 @@
 BEGIN h_lied2d
 
-IF ~Global("h_LiedelWater","GLOBAL",1)~ THEN BEGIN 0
-   SAY ~Thought you could sneak up on me, Shadow Thief? Time to meet your end!~
+IF ~GlobalLT("h_LiedelWater","GLOBAL",2)~ THEN BEGIN 0
+   SAY ~Thought you could sneak up on me, Shadow Thief? Time to meet your end!~ [h_lied60]
 IF ~~ THEN DO ~
    FaceObject([PC])
    SetGlobal("h_LiedelWater","GLOBAL",2)~ EXIT

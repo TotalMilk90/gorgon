@@ -53,7 +53,7 @@ IF ~~ THEN BEGIN 10
         ++ ~I'm not here to play judge. Your spat with Aisha is your business. I just want that bounty gone.~ GOTO 11
         ++ ~Honestly, I couldn't care less who started what. I'm just here to see that bounty on Aisha removed.~ GOTO 11
         ++ ~That's an interesting twist. I think I'll double-check this with Aisha. Two sides to every story, after all.~ GOTO 12
-        ++ ~Your version is quite different. I'll have a word with Aisha about this. I Want to make sure I'm getting the whole truth.~ GOTO 12
+        ++ ~Your version is quite different. I'll have a word with Aisha about this. I want to make sure I'm getting the whole truth.~ GOTO 12
 END
 
 IF ~~ THEN BEGIN 11

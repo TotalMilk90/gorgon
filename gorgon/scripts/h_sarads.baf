@@ -11,6 +11,12 @@ IF
          GlobalGT("h_BetrayBaldwin","GLOBAL",0)
 THEN
 	 RESPONSE #100
-                  //Deactivate(Myself)
+                  DestroySelf()
+END
+
+IF
+         Global("h_RefuseGuildOffer","GLOBAL",1)
+THEN
+	 RESPONSE #100
                   DestroySelf()
 END

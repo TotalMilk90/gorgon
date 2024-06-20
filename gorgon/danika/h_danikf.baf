@@ -20,3 +20,17 @@ THEN
 	RESPONSE #100
 		 Enemy()
 END
+
+IF
+         GlobalGT("h_BetrayBaldwin","GLOBAL",0)
+THEN
+	 RESPONSE #100
+                  DestroySelf()
+END
+
+IF
+         Global("h_RefuseGuildOffer","GLOBAL",1)
+THEN
+	 RESPONSE #100
+                  DestroySelf()
+END

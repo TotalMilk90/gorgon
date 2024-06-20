@@ -239,7 +239,7 @@ IF ~~ THEN BEGIN 49
 END
 
 IF ~~ THEN BEGIN 50
-   SAY ~Excellent. Welcome to the shadows of the Gorgon's Eye. Familiarize yourself with our ways, but don't get too comfortable. Comfort breeds complacency, and that is someting we cannot afford.~ IF ~~ THEN GOTO 51
+   SAY ~Excellent. Welcome to the shadows of the Gorgon's Eye. Familiarize yourself with our ways, but don't get too comfortable. Comfort breeds complacency, and that is something we cannot afford.~ IF ~~ THEN GOTO 51
 END
 
 IF ~~ THEN BEGIN 51
@@ -471,7 +471,7 @@ IF ~~ THEN BEGIN 97
 END
 
 IF ~~ THEN BEGIN 98
-   SAY ~We must tread carefully, as we delve deeper into the realm of powers that are ancient and, by their very nature, unpredictable and perilous.~
+   SAY ~We must tread carefully, as we push deeper into the realm of powers that are ancient and, by their very nature, unpredictable and perilous.~
        +~Global("h_MageReport1","GLOBAL",1) Global("h_MageReport2","GLOBAL",1) Global("h_MageReport3","GLOBAL",1)~+ ~The mission's details have been fully disclosed, Baldwin. My report is concluded.~ GOTO 99
        +~Global("h_MageReport1","GLOBAL",0)~+ ~The sorcerer appeared unstable, a shadow of herself, as if consumed by Kerykeion's influence.~ DO ~SetGlobal("h_MageReport1","GLOBAL",1)~ GOTO 83
        +~Global("h_MageReport2","GLOBAL",0)~+ ~She spoke of other rogues who assailed her for the Kerykeion, drawn to its power like moths to a flame.~ DO ~SetGlobal("h_MageReport2","GLOBAL",1)~ GOTO 88
@@ -612,7 +612,7 @@ IF ~~ THEN BEGIN 125
        ++ ~Thamuz shared a dire warning about the Kerykeion. He claimed it's a force of chaos, and that your ambition to unite it will bring calamity upon Faerun.~ GOTO 126
        +~Global("h_ThamuzHired","GLOBAL",1)~+ ~I learned the attack on Beregost wasn't just their initiative. Someone else, with deep pockets, hired them specifically to weaken our position.~ GOTO 131
        ++ ~The Kerykeion's power is clear, yet its purpose in your hands remains a mystery. What exactly do you intend to achieve?~ GOTO 135
-       ++ ~Beyond the battle and obtaining the shard, there was nothing notable to report.~ GOTO 135
+       ++ ~Beyond the battle and obtaining the shard, there was nothing notable to report.~ GOTO 141
 END
 
 IF ~~ THEN BEGIN 126
@@ -813,7 +813,7 @@ IF ~~ THEN BEGIN 166
 END
 
 IF ~~ THEN BEGIN 167
-   SAY ~However, our path does not end here. There is intricate work ahead. I must delve into the arcane intricacies necessary for the fusion process of the Kerykeion.~ IF ~~ THEN GOTO 168
+   SAY ~However, our path does not end here. There is intricate work ahead. I must study the arcane intricacies necessary for the fusion process of the Kerykeion.~ IF ~~ THEN GOTO 168
 END
 
 IF ~~ THEN BEGIN 168

@@ -1,7 +1,7 @@
 BACKUP ~gorgon/backup~
 AUTHOR ~TotalMilk90~
 
-VERSION ~v4.4~
+VERSION ~v4.5~
 
 LANGUAGE
     ~English~
@@ -159,9 +159,9 @@ COMPILE ~gorgon/dialog/h_isla2d.d~
 COMPILE ~gorgon/dialog/h_lied2d.d~
 COMPILE ~gorgon/dialog/h_liedep.d~
 COMPILE ~gorgon/dialog/h_liedej.d~
-COMPILE ~gorgon/dialog/h_ilen2d.d~
+//COMPILE ~gorgon/dialog/h_ilen2d.d~
 COMPILE ~gorgon/dialog/h_rafaed.d~
-COMPILE ~gorgon/dialog/h_rafa2d.d~
+//COMPILE ~gorgon/dialog/h_rafa2d.d~
 COMPILE ~gorgon/dialog/h_rafaed.d~
 COMPILE ~gorgon/dialog/h_miriad.d~
 COMPILE ~gorgon/dialog/h_miri2d.d~
@@ -360,11 +360,6 @@ ACTION_IF (isEET == 0) BEGIN
      COPY_EXISTING ~songlist.2da~ ~override~
           SET_2DA_ENTRY 0 2 3 ~H_BLANKS.MUS~
 END
-
-// Portraits
-
-COPY ~gorgon/portraits~ ~override~
-
 
 //   New BAMs
 
@@ -1520,8 +1515,8 @@ COPY ~gorgon/cre/h_lied2c.cre~ ~override/h_lied2c.cre~
 COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY NAME1 @921
      SAY NAME2 @921
-/*
-     SAY INITIAL_MEETING @1000
+
+     //SAY INITIAL_MEETING @1000
      SAY HAPPY @1001
      SAY MORALE @1002
      SAY UNHAPPY_ANNOYED @1003
@@ -1566,7 +1561,7 @@ COPY ~gorgon/cre/h_liedec.cre~ ~override/h_liedec.cre~
      SAY SPELL_DISRUPTED @1042
      SAY SET_A_TRAP @1043
      SAY BIO @1044
-*/
+
 
 
 // Danika
@@ -1629,11 +1624,19 @@ COMPILE ~gorgon/danika/h_daniks.baf~
 
 
 
+//Portraits
 
+BEGIN @99996
+SUBCOMPONENT @99999
+COPY ~gorgon/portraits/all~ ~override~
 
+BEGIN @99997
+SUBCOMPONENT @99999
+COPY ~gorgon/portraits/main~ ~override~
 
-
-
+BEGIN @99998
+SUBCOMPONENT @99999
+COPY ~gorgon/portraits/npc~ ~override~
 
 
 
@@ -1710,6 +1713,6 @@ COPY_EXISTING_REGEXP ~MONKT.*cre~ ~override~                  // Tutor
      ADD_CRE_ITEM ~RNDTRE04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
      
 COPY_EXISTING_REGEXP ~NOB.*cre~ ~override~                    // Noble
-     ADD_CRE_ITEM ~RNDTRE05~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~RNDGEM04~ #1 #0 #0 ~IDENTIFIED~ ~INV~
 COPY_EXISTING_REGEXP ~NOW.*cre~ ~override~
-     ADD_CRE_ITEM ~RNDTRE05~ #1 #0 #0 ~IDENTIFIED~ ~INV~
+     ADD_CRE_ITEM ~RNDGEM04~ #1 #0 #0 ~IDENTIFIED~ ~INV~

@@ -3,7 +3,6 @@ IF
 
 THEN
         RESPONSE #100
-                 DayNight(MIDNIGHT)
                  CreateCreature("h_nagatc",[1973.2895],S)
                  SetGlobal("h_SpawnNagate","GLOBAL",2)
                  Continue()

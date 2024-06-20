@@ -43,7 +43,6 @@ IF ~~ THEN BEGIN 5
 IF ~~ THEN DO ~
    SetGlobal("h_SpawnDeneb","GLOBAL",3)
    AddJournalEntry(@211,QUEST)
-   DayNight(MIDNIGHT)
    CreateCreature("h_snakec",[4229.516],S)
    CreateCreature("h_snakec",[4124.571],S)
    CreateCreature("h_snakec",[4209.652],S)

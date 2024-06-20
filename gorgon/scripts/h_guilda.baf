@@ -198,6 +198,7 @@ END
 
 IF
          Global("h_KickedOut","GLOBAL",1)
+         Global("h_LiedelNoGuild","GLOBAL",0)
 THEN
          RESPONSE #100
                   CreateCreature("h_liedec",[762.1342],NE)

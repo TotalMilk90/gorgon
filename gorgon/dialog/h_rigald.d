@@ -56,7 +56,7 @@ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",1)~ THEN BEGIN 10.5
-   SAY ~Welcome to the shadowed embrace of the Gorgon's Eye, friend. Baldwin has spoken, and you have been deemed worthy to embrace our trials.~ IF ~~ THEN GOTO 11
+   SAY ~Welcome to the shadowed embrace of the Gorgon's Eye, friend. Baldwin has spoken, and you have been deemed worthy to begin our trials.~ IF ~~ THEN GOTO 11
 END
 
 IF ~~ THEN BEGIN 11
@@ -122,7 +122,7 @@ IF ~~ THEN BEGIN 20
 END
 
 IF ~~ THEN BEGIN 21
-   SAY ~Rhade is our blacksmith and fence. His hands craft more than metal, and his connections delve deep into the black market's underbelly. If you need rare goods, he's your shadow in the forge.~ IF ~~ THEN GOTO 22
+   SAY ~Rhade is our blacksmith and fence. His hands craft more than metal, and he has deep connections in the black market's underbelly. If you need rare goods, he's your shadow in the forge.~ IF ~~ THEN GOTO 22
 END
 
 IF ~~ THEN BEGIN 22
@@ -293,9 +293,9 @@ END
 
 IF ~~ THEN BEGIN 57
    SAY ~Do you have the prize? Show it here, let's have a look under the light. We need to make sure it's the gem we're after, not some fool's gold.~
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(600)~ GOTO 61
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 63
-       +~PartyHasItem("h_misc04") Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 65
+       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDead("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(600)~ GOTO 61
+       +~OR(2) Global("h_CaughtByDay","GLOBAL",1) Global("h_CaughtByGuards","GLOBAL",1)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 63
+       +~Global("h_CaughtByDay","GLOBAL",0) Global("h_CaughtByGuards","GLOBAL",0) NumDeadGT("h_ziekec",0)~+ ~Got the diamond right here.~ DO ~AddJournalEntry(@311,QUEST_DONE) AddExperienceParty(200)~ GOTO 65
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc04") Global("h_TalkedToZieke","GLOBAL",1)~ THEN BEGIN 58
@@ -353,7 +353,7 @@ IF ~~ THEN DO ~
 END
 
 IF ~Global("h_RigaldoQuest","GLOBAL",3)~ THEN BEGIN 70
-   SAY ~For your next test, we're delving deeper, beyond the shadows, straight into the lion's den.~ IF ~~ THEN GOTO 71
+   SAY ~For your next test, we're lurking deeper, beyond the shadows, straight into the lion's den.~ IF ~~ THEN GOTO 71
 END
 
 IF ~~ THEN BEGIN 71
@@ -553,7 +553,7 @@ IF ~~ THEN BEGIN 113
 END
 
 IF ~~ THEN BEGIN 114
-   SAY ~So, you decided to keep Gerard's necklace. Good, it adds to our coffers and serves as a harsh lesson for Gerard, don't cross the Gorgon's Eye.~ IF ~~ GOTO 115
+   SAY ~So, you decided to keep Gerard's necklace. Good, it adds to our coffers and serves as a harsh lesson for Gerard - don't cross the Gorgon's Eye.~ IF ~~ GOTO 115
 END
 
 IF ~~ THEN BEGIN 115
@@ -1044,7 +1044,8 @@ END
 IF ~Global("h_RigaldoQuest","GLOBAL",12)~ THEN BEGIN 220
    SAY ~Ah, <CHARNAME>, back amidst the shadows. Tell me, has our little problem with Borland been resolved, or do the winds still carry whispers of unrest?~
        +~Global("h_BorlandPays","GLOBAL",2)~+ ~Borland will be paying us our share. His operation continues, but now under our watchful eye.~ GOTO 221
-       +~Global("h_BorlandCloses","GLOBAL",2) PartyHasItem("h_misc07")~+ ~Borland's operation in Beregost is no more. I've shut it down and acquired his supply.~ GOTO 225
+       +~Global("h_BorlandCloses","GLOBAL",2) PartyHasItem("h_misc07")~+ ~Borland's operation in Beregost is no more. I've shut it down and acquired his supply.~ GOTO 227
+       +~Global("h_BorlandCloses","GLOBAL",2) !PartyHasItem("h_misc07")~+ ~Borland's operation in Beregost is no more. I've shut it down.~ GOTO 225
        ++ ~I'm still working on it, but I'll get it sorted out soon.~ EXIT
 END
 
@@ -1068,7 +1069,7 @@ IF ~~ THEN DO ~
    SetGlobal("h_SpawnZylark","GLOBAL",6)
    AddJournalEntry(@362,QUEST_DONE)
    AddExperienceParty(800)
-   GiveGoldForce(400)~ EXIT
+   GiveGoldForce(600)~ EXIT
 END
 
 IF ~~ THEN BEGIN 225
@@ -1076,15 +1077,22 @@ IF ~~ THEN BEGIN 225
 END
 
 IF ~~ THEN BEGIN 226
-   SAY ~Your actions speak to the uncompromising nature of our guild. Let this serve as a reminder to others that the Gorgon's Eye is not to be defied.~ IF ~~ THEN GOTO 227
+   SAY ~Your actions speak to the uncompromising nature of our guild. Let this serve as a reminder to others that the Gorgon's Eye is not to be defied.~
+IF ~~ THEN DO ~
+   SetGlobal("h_RigaldoQuest","GLOBAL",13)
+   SetGlobal("h_SpawnAriosh","GLOBAL",1)
+   SetGlobal("h_SpawnZylark","GLOBAL",6)
+   AddJournalEntry(@363,QUEST_DONE)
+   AddExperienceParty(800)
+   GiveGoldForce(400)~ EXIT
 END
 
 IF ~~ THEN BEGIN 227
-   SAY ~Well done. Here's your deserved cut, and a bit extra for the Black Lotus you've secured. It's a rare prize that adds to our leverage.~ IF ~~ THEN GOTO 228
+   SAY ~A decisive move. Closing down Borland's enterprise cuts off one more unchecked stream in the undercurrent of Beregost. It's a harsh lesson for those who operate outside our influence.~ IF ~~ THEN GOTO 228
 END
 
 IF ~~ THEN BEGIN 228
-   SAY ~Consider this bonus a token of the Gorgon's Eye's appreciation for your exceptional work.~
+   SAY ~Well done. Here's your deserved cut, and a bit extra for the Black Lotus you've secured. It's a rare prize that adds to our leverage.~
 IF ~~ THEN DO ~
    SetGlobal("h_RigaldoQuest","GLOBAL",13)
    SetGlobal("h_SpawnAriosh","GLOBAL",1)
@@ -1156,16 +1164,16 @@ IF ~~ THEN BEGIN 241
    SAY ~They're a cunning lot, known for their shrewd dealings and keen intellects. They've woven their influence into the fabric of the city, their hands deftly playing in many a secretive venture.~ IF ~~ THEN GOTO 242
  END
  
- IF ~~ THEN BEGIN 242
-    SAY ~The guild, seasoned by time and tribulations, has etched its mark well. Rumors abound of their sprawling network, eyes ever-watchful for opportunities akin to this.~ IF ~~ THEN GOTO 243
- END
+IF ~~ THEN BEGIN 242
+   SAY ~The guild, seasoned by time and tribulations, has etched its mark well. Rumors abound of their sprawling network, eyes ever-watchful for opportunities akin to this.~ IF ~~ THEN GOTO 243
+END
  
- IF ~~ THEN BEGIN 243
-    SAY ~As for guild tensions, cast those worries aside. In Ravenscar's domain, we stand on common ground. They, like us, appreciate the art of cooperation in our shadowed profession.~ IF ~~ THEN GOTO 244
- END
+IF ~~ THEN BEGIN 243
+   SAY ~As for guild tensions, cast those worries aside. In Ravenscar's domain, we stand on common ground. They, like us, appreciate the art of cooperation in our shadowed profession.~ IF ~~ THEN GOTO 244
+END
  
- IF ~~ THEN BEGIN 244
-    SAY ~No need for blades to flash; keep the discourse smooth, and you'll glean the knowledge we seek.~
+IF ~~ THEN BEGIN 244
+   SAY ~No need for blades to flash; keep the discourse smooth, and you'll glean the knowledge we seek.~
        ++ ~Do we have any specifics on the stolen tome?~ GOTO 237
        +~!Dead("Alatos")~+ ~Alright, I'll head to the city and speak with Ravenscar.~ GOTO 245
 END
@@ -1211,7 +1219,7 @@ IF ~~ THEN DO ~
 END
 
 IF WEIGHT #-1 ~Global("h_BookQuest","GLOBAL",1)~ THEN BEGIN 253
-   SAY ~Make haste to Baldur's Gate. Seek out Ravenscar, delve into the depths of their cunning guild, and pry into what whispers they may harbor about 'Netheril's Grimoire of Lost Arcana'.~
+   SAY ~Make haste to Baldur's Gate. Seek out Ravenscar, study the depths of their cunning guild, and pry into what whispers they may harbor about 'Netheril's Grimoire of Lost Arcana'.~
 IF ~~ THEN EXIT
 END
 
@@ -1489,7 +1497,7 @@ IF ~~ THEN BEGIN 307
 END
 
 IF ~~ THEN BEGIN 308
-   SAY ~We lose not just the payment but face a potential backlash. I expect a higher caliber of discretion and competence from those in our ranks.~ IF ~~ THEN GOTO 309
+   SAY ~We lose not just the payment, but face a potential backlash. I expect a higher caliber of discretion and competence from those in our ranks.~ IF ~~ THEN GOTO 309
 END
 
 IF ~~ THEN BEGIN 309

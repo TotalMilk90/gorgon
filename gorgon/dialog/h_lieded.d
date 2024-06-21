@@ -106,8 +106,8 @@ IF ~~ THEN BEGIN 23
    SAY ~You know, my new companion, I haven't yet caught your name amidst this delightful game of verbal shadows. Care to enlighten me, or does the mystery add to your allure?~
        ++ ~I'm <CHARNAME>, and as much as I've enjoyed our little dance, I'm curious about these bounties you handle.~ GOTO 71
        ++ ~I'm <CHARNAME>, but I must cut our conversation short. Duty calls, and my presence is needed elsewhere.~ GOTO 24
-       +~Class(Player1,THIEF_ALL) Gender(Player1,MALE)~+ ~<CHARNAME>, at your service. Though, a bit of mystery might keep things interesting between us.~ GOTO 26
-       +~Class(Player1,THIEF_ALL) Gender(Player1,MALE)~+ ~<CHARNAME> is my name. Your world of whispers has piqued my interest. I'm keen to learn more about what lies beneath the surface here.~ GOTO 27
+       +~Class(Player1,THIEF_ALL) CheckStatGT(Player1,13,CHR)~+ ~<CHARNAME>, at your service. Though, a bit of mystery might keep things interesting between us.~ GOTO 26
+       +~Class(Player1,THIEF_ALL) CheckStatGT(Player1,13,CHR)~+ ~<CHARNAME> is my name. Your world of whispers has piqued my interest. I'm keen to learn more about what lies beneath the surface here.~ GOTO 27
 END
 
 IF ~~ THEN BEGIN 24
@@ -245,7 +245,7 @@ END
 IF ~~ THEN BEGIN 53
    SAY ~What shadowy path leads you to my doorstep today? Perhaps seeking information, or just mingling with your fellow dwellers of the dark? Either way, I'm all ears.~
        ++ ~I'm here to review your bounties and find one that aligns with my talents.~ GOTO 54
-       +~Class(Player1,THIEF_ALL) Gender(Player1,MALE) Global("h_LiedelPast","GLOBAL",0)~+ ~I find myself curious about your history. What's the story behind the woman who deals in shadows and secrets?~ GOTO 36
+       +~Class(Player1,THIEF_ALL) CheckStatGT(Player1,13,CHR) Global("h_LiedelPast","GLOBAL",0)~+ ~I find myself curious about your history. What's the story behind the woman who deals in shadows and secrets?~ GOTO 36
        ++ ~Unfortunately, I have to cut this conversation short. There are pressing matters I must attend to.~ GOTO 25
 END
 
@@ -1478,7 +1478,8 @@ IF ~~ THEN BEGIN 294
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 
 IF ~~ THEN BEGIN 295
@@ -1494,7 +1495,8 @@ IF ~~ THEN BEGIN 296
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 
 IF ~~ THEN BEGIN 297
@@ -1523,7 +1525,8 @@ IF ~~ THEN BEGIN 301
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 
 IF ~~ THEN BEGIN 302
@@ -1547,7 +1550,8 @@ IF ~~ THEN BEGIN 306
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13)~ Gender(Player1,MALE)+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 
 IF ~~ THEN BEGIN 307
@@ -1586,19 +1590,20 @@ IF ~~ THEN BEGIN 314
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 
 IF ~~ THEN BEGIN 315
-   SAY ~Ah, responsibilities await, as they always do. Our conversations have shown me the value of a companion in our often solitary world.~ IF ~~ THEN GOTO 316
+   SAY ~Ah, responsibilities await, as they always do. Our conversations have shown me the value of a companion in our often solitary world.~ IF ~~ THEN GOTO 317
 END
 
 IF ~~ THEN BEGIN 316
-   SAY ~While the depths of our connection may not dig into the realms of romance, I've come to cherish the friendship we share.~ IF ~~ THEN GOTO 317
+   SAY ~Blank.~ IF ~~ THEN GOTO 317
 END
 
 IF ~~ THEN BEGIN 317
-   SAY ~Go then, embrace your path in the shadows, and may they reveal to you what you seek.~
+   SAY ~I've come to truly cherish the friendship we share. Go then, embrace your path in the shadows, and may they reveal to you what you seek.~
 IF ~~ THEN DO ~
    SetGlobal("h_LiedelPast","GLOBAL",3)~ EXIT
 END
@@ -1618,8 +1623,8 @@ END
 IF ~~ THEN BEGIN 321
    SAY ~Tell me, <CHARNAME>, do you ever wonder if there might be something more between us, beneath the surface?~
        ++ ~I've been thinking about that too, Liedel. There's a connection here, no denying it, and I want to see where it leads us.~ GOTO 325
-       ++ ~Liedel, our conversations have been enjoyable, but I'm not one to rush into things. Let's take our time and see where this leads.~ DO ~IncrementGlobal("h_LiedelLove","GLOBAL",-2)~ GOTO 323
-       ++ ~Let's not complicate things. I don't see a romantic connection here. Why don't we continue our interactions the way they are?~ DO ~SetGlobal("h_LiedelLove","GLOBAL",0)~ GOTO 323
+       ++ ~Liedel, our conversations have been enjoyable, but I'm not one to rush into things. Let's take our time and see where this leads.~ GOTO 323
+       ++ ~Let's not complicate things. I don't see a romantic connection here. Why don't we continue our interactions the way they are?~ GOTO 322
 END
 
 IF ~~ THEN BEGIN 322
@@ -1633,7 +1638,8 @@ END
 IF ~~ THEN BEGIN 324
    SAY ~If you ever find yourself in need of some excitement, you know where to find me. Until we meet again, my dear companion.~
 IF ~~ THEN DO ~
-   SetGlobal("h_LiedelPast","GLOBAL",3)~ EXIT
+   SetGlobal("h_LiedelPast","GLOBAL",3)
+   SetGlobal("h_LiedelLove","GLOBAL",0)~ EXIT
 END
 
 IF ~~ THEN BEGIN 325

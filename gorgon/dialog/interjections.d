@@ -229,33 +229,33 @@ INTERJECT_COPY_TRANS h_valerd 1 saftoval1
 END
 
 INTERJECT_COPY_TRANS h_lieded 34 imotolie34
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~Hey, I'm from Candlekeep too, you know. It wasn't all dusty books and quiet lessons.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~There were plenty of pranks and adventures, even if someone here was too busy with their nose stuck in a tome to notice.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~And don't let <CHARNAME> fool you, Candlekeep might be a citadel of knowledge, but it's also where some of us learned our first tricks... and not all of them were from books.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~And who might this young sprite be, <CHARNAME>? Your little girlfriend, perhaps, trailing in your shadow? Quite adorable to have such... devoted company.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~But remember, darling, you're in my world now. Here, it's my show, and I don't share the spotlight easily.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~So, while I appreciate the added commentary, let's keep our attention where it belongs, shall we?~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~Girlfriend? <CHARNAME>'s practically my brother. We grew up together, dodging chores and librarians, fighting to survive the perils of Candlekeep's most dangerous weapon... boredom.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~But don't worry, I get it. It's easy to mix-up our bickering for flirting when you're not used to genuine friendship.~
-  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == %IMOEN_JOINED% IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~It's a cute mistake, really. Stick around, you might learn a thing or two about what real loyalty looks like.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~Well, aren't you full of surprises, my dear? I must say, I do admire someone who can hold their own with words as sharp as daggers.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~It's refreshing to meet someone who isn't easily caught in the webs I weave. Consider my respect earned, little fox.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~But let's not forget, in this dance of shadows, it's always wise to keep an eye on the other players.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~Well, <CHARNAME>, your fiery companion here certainly knows how to make an impression. It's always a pleasure to see someone who can dance with words as deftly as with shadows.~
-  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%")~ THEN
+  == h_lieded IF ~IsValidForPartyDialogue("%IMOEN_DV%") Gender(Player1,MALE)~ THEN
 ~It speaks volumes about the company you keep. But as for you, my dear, you've been quite the enigma, letting actions and choices speak where words do not.~
 END
 

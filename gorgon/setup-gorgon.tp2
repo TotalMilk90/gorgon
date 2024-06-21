@@ -13,6 +13,16 @@ LANGUAGE
 ~gorgon/lang/english/quests.tra~
 ~gorgon/lang/english/setup.tra~
 
+LANGUAGE
+    ~Simplified Chinese(translation by Lzw104522773)~
+    ~schinese~
+//~gorgon/lang/schinese/dialog.tra~
+~gorgon/lang/schinese/items.tra~
+~gorgon/lang/schinese/names.tra~
+~gorgon/lang/schinese/npcs.tra~
+~gorgon/lang/schinese/quests.tra~
+~gorgon/lang/schinese/setup.tra~
+
 BEGIN @1
 
 // EET compatibility header

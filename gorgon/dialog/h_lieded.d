@@ -1550,7 +1550,7 @@ IF ~~ THEN BEGIN 306
        +~Global("h_LiedelTalk22","GLOBAL",0)~+ ~Do you have any hobbies or interests outside the world of thieving and assassinations?~ DO ~SetGlobal("h_LiedelTalk22","GLOBAL",1)~ GOTO 295
        +~Global("h_LiedelTalk23","GLOBAL",0)~+ ~Are there any secret corners of Beregost that you're particularly fond of?~ DO ~SetGlobal("h_LiedelTalk23","GLOBAL",1)~ GOTO 307
        +~GlobalLT("h_LiedelLove","GLOBAL",14)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
-       +~GlobalGT("h_LiedelLove","GLOBAL",13)~ Gender(Player1,MALE)+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
+       +~GlobalGT("h_LiedelLove","GLOBAL",13) Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 318
        +~GlobalGT("h_LiedelLove","GLOBAL",13) !Gender(Player1,MALE)~+ ~I hate to cut this short, Liedel, but the shadows beckon.~ GOTO 315
 END
 

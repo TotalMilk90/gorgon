@@ -1,19 +1,19 @@
 BEGIN h_zieknd
 
 IF ~Global("h_CaughtByNight","GLOBAL",0) RandomNum(3,3)~ THEN BEGIN 0
-   SAY @57500 /* I've got my sight's set on you, friend. Save yourself the trouble and disappear while you still can. */ IF ~~ THEN EXIT
+   SAY @71000 /* I've got my sight's set on you, friend. Save yourself the trouble and disappear while you still can. */ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_CaughtByNight","GLOBAL",0) RandomNum(3,1)~ THEN BEGIN 1
-   SAY @57501 /* I've got a keen eye for trouble, and right now, it's wearin' your face. */ IF ~~ THEN EXIT
+   SAY @71001 /* I've got a keen eye for trouble, and right now, it's wearin' your face. */ IF ~~ THEN EXIT
 END
 
 IF ~Global("h_CaughtByNight","GLOBAL",0) RandomNum(3,2)~ THEN BEGIN 2
-   SAY @57502 /* You might think you're sly, but I'm watchin' your every step. */ IF ~~ THEN EXIT
+   SAY @71002 /* You might think you're sly, but I'm watchin' your every step. */ IF ~~ THEN EXIT
 END
 
 IF WEIGHT #-1 ~PartyHasItem("h_misc04")~ THEN BEGIN 3
-   SAY @57503 /* Bollocks, he's nicked the boss's bloody jewel! Stop him, you daft lot! */
+   SAY @71003 /* Bollocks, he's nicked the boss's bloody jewel! Stop him, you daft lot! */
 IF ~~ THEN DO ~
    SetGlobal("h_CaughtByNight","GLOBAL",1)
    SetGlobal("h_CaughtByDay","GLOBAL",1)

@@ -1630,7 +1630,12 @@ COPY ~gorgon/danika/h_danika.cre~ ~override/h_danika.cre~
 COMPILE ~gorgon/danika/h_danika.d~
 COMPILE ~gorgon/danika/h_danikp.d~
 COMPILE ~gorgon/danika/h_danikj.d~
-APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj~
+
+	ACTION_IF (GAME_IS ~eet~) BEGIN
+APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj  ****  ****  ****  ****  ****~ UNLESS ~h_danika~
+	END ELSE BEGIN
+APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj  ****~ UNLESS ~h_danika~
+	END
 
 COMPILE ~gorgon/danika/h_daniks.baf~
 

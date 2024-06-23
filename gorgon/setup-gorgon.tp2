@@ -182,7 +182,12 @@ COMPILE ~gorgon/dialog/h_dariud.d~
 COMPILE ~gorgon/dialog/h_dari2d.d~
 COMPILE ~gorgon/dialog/h_thie2d.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
-APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej~
+
+	ACTION_IF (GAME_IS ~eet~) BEGIN
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej  ****  ****  ****  ****  ****~ UNLESS ~h_liedec~
+	END ELSE BEGIN
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej  ****~ UNLESS ~h_liedec~
+	END
 
 // Creature Scripts
 

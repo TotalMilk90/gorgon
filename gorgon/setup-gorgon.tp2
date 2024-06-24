@@ -3,6 +3,9 @@ AUTHOR ~TotalMilk90~
 
 VERSION ~v4.5~
 
+AUTO_TRA ~gorgon/lang/%s/d~
+AUTO_TRA ~gorgon/lang/%s/danika~
+
 LANGUAGE
     ~English~
     ~English~
@@ -179,7 +182,12 @@ COMPILE ~gorgon/dialog/h_dariud.d~
 COMPILE ~gorgon/dialog/h_dari2d.d~
 COMPILE ~gorgon/dialog/h_thie2d.d~
 COMPILE EVALUATE_BUFFER ~gorgon/dialog/interjections.d~
-APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej~
+
+	ACTION_IF (GAME_IS ~eet~) BEGIN
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej  ****  ****  ****  ****  ****~ UNLESS ~h_liedec~
+	END ELSE BEGIN
+APPEND ~PDIALOG.2da~ ~h_liedec h_liedep h_liedej  ****~ UNLESS ~h_liedec~
+	END
 
 // Creature Scripts
 
@@ -1627,7 +1635,12 @@ COPY ~gorgon/danika/h_danika.cre~ ~override/h_danika.cre~
 COMPILE ~gorgon/danika/h_danika.d~
 COMPILE ~gorgon/danika/h_danikp.d~
 COMPILE ~gorgon/danika/h_danikj.d~
-APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj~
+
+	ACTION_IF (GAME_IS ~eet~) BEGIN
+APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj  ****  ****  ****  ****  ****~ UNLESS ~h_danika~
+	END ELSE BEGIN
+APPEND ~PDIALOG.2da~ ~h_danika h_danikp h_danikj  ****~ UNLESS ~h_danika~
+	END
 
 COMPILE ~gorgon/danika/h_daniks.baf~
 

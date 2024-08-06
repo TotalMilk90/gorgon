@@ -52,6 +52,7 @@ IF ~~ THEN BEGIN 8
 IF ~~ THEN DO ~
    SetGlobal("h_ShadowWar","GLOBAL",7)
    SetGlobal("h_SpawnSnakeHead","GLOBAL",1)
+   SetGlobal("h_RandomEncounterForced","GLOBAL",1)
    Enemy()~ EXIT
 END
 

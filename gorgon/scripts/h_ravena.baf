@@ -1,3 +1,4 @@
+/*
 IF
         Global("h_SpawnRavenscar","GLOBAL",0)
         Global("h_KilledRavenscar","GLOBAL",0)
@@ -9,6 +10,7 @@ THEN
                  SetGlobal("h_SpawnRavenscar","GLOBAL",1)
                  Continue()
 END
+*/
 
 IF
         Global("h_SpawnThalia","GLOBAL",0)

@@ -1,15 +1,24 @@
+EXTEND_TOP ALATOS 20
+  IF ~!Global("NarlenMove","GLOBAL",8) Dead("Resar") Global("h_Ravenscar","GLOBAL",1) Global("h_SpawnRavenscar","GLOBAL",0)~ THEN REPLY @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
+END
+
+EXTEND_BOTTOM ALATOS 17
+  IF ~Global("h_Ravenscar","GLOBAL",1)~ THEN REPLY @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
+  IF ~~ THEN REPLY @55503 /* A fortunate turn of events, I'd say. I'm glad to have made an impression. */ EXTERN ~NARLEN~ 29
+END
+
 APPEND ~alatos~
 
-IF WEIGHT #-1 ~!Global("NarlenMove","GLOBAL",8) Dead("Resar") Global("h_Ravenscar","GLOBAL",1) Global("h_SpawnRavenscar","GLOBAL",0)~ THEN BEGIN A0
-   SAY @55500 /* So you've killed the Halruaan. Well, don't take it personally that I let him attack you; he was a powerful mage, and there was little I could do to dissuade him from killing you. Don't worry, you have full run of the guild—if you're able to kill a Halruaan mage, I'm sure there's little that my guild members can do to you. Again, accept my apologies for the entire incident. */
-       ++ @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
-END
+// IF WEIGHT #-1 ~!Global("NarlenMove","GLOBAL",8) Dead("Resar") Global("h_Ravenscar","GLOBAL",1) Global("h_SpawnRavenscar","GLOBAL",0)~ THEN BEGIN A0
+//    SAY @55500 /* So you've killed the Halruaan. Well, don't take it personally that I let him attack you; he was a powerful mage, and there was little I could do to dissuade him from killing you. Don't worry, you have full run of the guild—if you're able to kill a Halruaan mage, I'm sure there's little that my guild members can do to you. Again, accept my apologies for the entire incident. */
+//        ++ @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
+// END
 
-IF WEIGHT #-1 ~Global("NarlenMove","GLOBAL",9) GlobalGT("h_Ravenscar","GLOBAL",0) Global("h_SpawnRavenscar","GLOBAL",1)~ THEN BEGIN A1
-   SAY @55502 /* Seems ye made quite the impression on the guild, ye did. It would also seem that I erred aligning with Resar. Blasted politics addles the brains, and time and again I should stay out! Still, we've his coin, and the story of his demise is ours to construct. Never a total loss to be had! Ye have earned a place in the guild, a tie that never breaks. */
-       +~Global("h_Ravenscar","GLOBAL",1)~+ @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
-       ++ @55503 /* A fortunate turn of events, I'd say. I'm glad to have made an impression. */ EXIT
-END
+//IF WEIGHT #-1 ~Global("NarlenMove","GLOBAL",9) GlobalGT("h_Ravenscar","GLOBAL",0) Global("h_SpawnRavenscar","GLOBAL",1)~ THEN BEGIN A1
+//   SAY @55502 /* Seems ye made quite the impression on the guild, ye did. It would also seem that I erred aligning with Resar. Blasted politics addles the brains, and time and again I should stay out! Still, we've his coin, and the story of his demise is ours to construct. Never a total loss to be had! Ye have earned a place in the guild, a tie that never breaks. */
+//       +~Global("h_Ravenscar","GLOBAL",1)~+ @55501 /* I've come on behalf of the Gorgon's Eye to inquire about a recent robbery. One involving a shipment of books bound for Candlekeep. Have you perchance heard anything about it? */ GOTO A2
+//       ++ @55503 /* A fortunate turn of events, I'd say. I'm glad to have made an impression. */ EXIT
+//END
 
 IF ~~ THEN BEGIN A2
    SAY @55504 /* A recent robbery of books, ye say? It's funny how such tales tend to find their way into my ears. I may have overheard a whisper or two about such an endeavor. */ IF ~~ THEN GOTO A3

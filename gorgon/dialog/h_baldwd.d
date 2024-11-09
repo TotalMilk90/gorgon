@@ -712,7 +712,7 @@ IF ~~ THEN DO ~
    AddJournalEntry(@217,QUEST_DONE)
    TakePartyItem("h_misc02")
    DestroyItem("h_misc02")
-   AddExperienceParty(800)~ EXIT
+   AddexperienceParty(800)~ EXIT
 END
 
 IF ~OR(2) NumItemsPartyLT("h_misc13",1) GlobalLT("h_RigaldoQuest","GLOBAL",17) Global("h_BaldwinQuest","GLOBAL",8)~ THEN BEGIN 147

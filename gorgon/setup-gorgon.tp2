@@ -44,6 +44,23 @@ BEGIN
 	INCLUDE ~eet/other/cpmvars/eet_cpmvars.tpa~
 END
 
+// Special compatibility with BlackHearts
+
+	ACTION_IF (NOT MOD_IS_INSTALLED ~SETUP-BLACKHEARTS.TP2~ 1) BEGIN
+
+			COMPILE ~gorgon/dialog/JOh_WI.d~
+		PRINT ~Patch Alatos dialog for compatibility with BlackHearts
+		~
+		
+	END ELSE BEGIN
+	
+		PRINT ~ALATOS.dlg is already patched by BlackHearts mod for compatibility
+		~
+		
+END
+
+// Special compatibility with BlackHearts
+
 // Dialog
 
 COMPILE ~gorgon/dialog/h_game2d.d~

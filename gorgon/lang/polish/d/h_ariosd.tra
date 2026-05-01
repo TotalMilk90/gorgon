@@ -1,0 +1,273 @@
+// Inicjacja (@10000 – @10013) - Ariosh ocenia charakter i przydatność gracza do pracy w strukturach Oka Gorgony.
+
+@10000 = ~No proszę, patrzcie, co kot przytargał. Masz wypisane kłopoty na gębie... albo to tylko noc płata mi figle.~
+@10001 = ~Ach, nie jesteś jedną z tych twarzy, które zwykle tu widuję. Zwę się Ariosh – jestem oczami i uszami tych ulic.~
+@10002 = ~To ja wywąchuję cele, które mają przy sobie coś wartego zwinięcia. Czy to w samym sercu miasta, czy kogoś przejezdnego, komu brzęczy w trzosie – ja o wszystkim wiem.~
+@10003 = ~Jeśli masz chęć unurzać paluchy w brudzie i syfie podziemia, żeby świsnąć nieświadomym to, co nasze, to mogę mieć dla ciebie robotę.~
+@10004 = ~Nie miej złudzeń – to nie jest fucha dla mięczaków ani dla tych, co kurczowo trzymają się swoich świętoszkowatych zasad.~
+@10005 = ~Mówimy o robocie, od której brudzą się ręce, gdzie uliczny syf zostaje na człowieku na dobre.~
+@10006 = ~Jasne, że nie robimy tego dla idei. Dostaniesz godziwą dolę, o ile okażesz się tak sprytny, jak słyszałem.~ ~Jasne, że nie robimy tego dla idei. Dostaniesz godziwą dolę, o ile okażesz się tak sprytna, jak słyszałem.~
+@10007 = ~I co, masz się za bystrego łotra? To może być fucha, której szukasz. Co ty na to, wchodzisz w to?~ ~I co, masz się za bystrą łotrzycę? To może być fucha, której szukasz. Co ty na to, wchodzisz w to?~
+@10008 = ~Bierzmy się do roboty.~
+@10009 = ~To nie dla mnie, odpuszczam.~
+@10010 = ~W porządku. Nie ma nic złego w znaniu swoich granic. Jak ci się odmieni, wiesz, gdzie mnie szukać.~
+@10011 = ~Znowu ty, co? Coś czuję, że ci się odmieniło. Gotów spróbować, czy wciąż trzeba cię namawiać?~ ~Znowu ty, co? Coś czuję, że ci się odmieniło. Gotowa spróbować, czy wciąż trzeba cię namawiać?~
+@10012 = ~Dobry wybór, młody. Wchodzisz w sam środek akcji. Będziemy zgraną ekipą, zapamiętaj moje słowa.~ ~Dobry wybór, młoda. Wchodzisz w sam środek akcji. Będziemy zgraną ekipą, zapamiętaj moje słowa.~
+@10013 = ~Dobra. Słuchaj teraz, oto twoja pierwsza fucha.~
+
+// Zadanie 1: Kradzież u Żonglera (@10014 – @10031) - Gracz musi po cichu okraść parę szlachciców odpoczywających przed karczmą Wesoły Żongler.
+
+@10014 = ~Przez miasto przejeżdża para szlachciców obładowana złotem. Zmierzają na jarmark w Nashkel. To grube ryby, planują małą popijawę przed Wesołym Żonglerem.~
+@10015 = ~Twoje zadanie? Proste. Znajdź sposób, żeby ulżyć im w ciężarze trzosów i po prostu załatw sprawę.~
+@10016 = ~Wykaż się sprytem przy zbieraniu informacji. To będzie klucz do wykonania tej roboty z chirurgiczną precyzją.~
+@10017 = ~Tylko uważaj, pilnuje ich jeden bystry gość. Nie próbuj numerów w stylu „wyrwij i wiej”, dopóki on trzyma wartę. Musisz go podejść i przechytrzyć.~
+@10018 = ~I lepiej nie narób przy tym syfu. Ci ważniacy mają dojścia i ześlą nam tu armię, jeśli zaczniesz zostawiać trupy. Jasne?~
+@10019 = ~Rozumiem. Żadnego bałaganu ani komplikacji. Załatwię to cicho i czysto.~
+@10020 = ~Jasne. Żadnego rozlewu krwi i żadnych kradzieży pod okiem strażnika.~
+@10021 = ~Dobra. Wtop się w tłum, zbierz informacje, a potem zgarnij ich sakiewki.~
+@10022 = ~Nie zaczną zabawy, dopóki księżyc nie wzejdzie wysoko, więc wyczekaj na odpowiedni moment i uderz pod osłoną nocy.~
+@10023 = ~Już z powrotem? I jak, głowa i zręczne palce wystarczyły, żeby zwędzić łup?~
+@10024 = ~Udało mi się wykraść tylko jedną sakiewkę.~
+@10025 = ~Mam obie sakiewki, proszę bardzo.~
+@10026 = ~Niestety wracam z pustymi rękami. Ochroniarz mnie wyczuł w połowie roboty i odwołali imprezę.~
+@10027 = ~Zaraz tam idę.~
+@10028 = ~Dobra, jedna sakiewka. Na start ujdzie, ale w tym fachu celujemy wyżej. Miej oczy otwarte i nie trać formy, to następnym razem ogolimy ich do zera. Masz, to twoja dola.~
+@10029 = ~Ha! I o to chodzi! Masz dryg do tej roboty. Ci szlachcice nawet nie poczuli, kiedy zniknęło ich złoto. Masz tu swoją część łupu, baw się dobrze i tak trzymaj.~
+@10030 = ~Szlag by to! <CHARNAME>! To nie są rurki z kremem. Jesteśmy złodziejami, a nie jakimiś cyrkowcami! Musisz się bardziej przyłożyć, bo inaczej będziemy żreć piach, zamiast liczyć złoto.~
+@10031 = ~Następnym razem masz się bardziej uwijać i zrobić to porządnie. Bądź sprytniejszy i upewnij się, że nie wrócisz z pustymi rękoma.~ ~Następnym razem masz się bardziej uwijać i zrobić to porządnie. Bądź sprytniejsza i upewnij się, że nie wrócisz z pustymi rękoma.~
+
+// Zadanie 2: Wojna o wpływy (@10032 – @10055)
+
+@10032 = ~Widzę to – świerzbią cię ręce do roboty, co? No i proszę, akurat mam coś, co może cię zainteresować.~
+@10033 = ~Widzisz, jacyś wolni strzelcy zaczęli mącić na naszym terenie. To wrzód na tyłku, którego musimy się pozbyć.~
+@10034 = ~Trzeba dać im nauczkę, ale nie taką zwyczajną. Zagramy z nimi w pewną grę.~
+@10035 = ~Będziesz przynętą. Wyciągniesz ich z nory, a potem... no, powiedzmy, że uświadomisz im, ile kosztuje wchodzenie nam w paradę.~
+@10036 = ~Masz coś więcej? Jakieś imiona, ilu ich jest?~
+@10037 = ~Mam ich wypatroszyć, czy wystarczy porządna nauczka?~
+@10038 = ~Załatwię ich jak trzeba. Mów tylko gdzie.~
+@10039 = ~Później, mam teraz inne sprawy na głowie.~
+@10040 = ~Ich herszt nazywa się Czarnocierń. Prawdziwa menda, jeśli chcesz znać moje zdanie. Ma ze sobą kilku ludzi, mała grupka, nic wielkiego.~
+@10041 = ~Mam ich wypatroszyć, czy tylko napędzić im porządnego stracha?~
+@10042 = ~Zdam się na twój nos. Tylko dopilnuj, żeby dotarło do nich, że nie żartujemy. Jeśli prośbą nie wskórasz, to ich po prostu sprzątnij.~
+@10043 = ~Idź do północnej części miasta, w stronę ogrodów. Zaczekaj do zmroku, na pewno się pojawią.~
+@10044 = ~Ruszaj do ogrodów na północy. Czarnocierń i jego banda zjawią się tam, jak tylko słońce schowa się za horyzontem.~
+@10045 = ~Już po wszystkim? Gadaj no, jak ci poszło z tymi mącicielami?~
+@10046 = ~Już po nich. Zniknęli z tych ulic raz na zawsze.~
+@10047 = ~Przekonałem ich, żeby poszukali szczęścia gdzie indziej. Już tu nie wrócą.~ ~Przekonałam ich, żeby poszukali szczęścia gdzie indziej. Już tu nie wrócą.~
+@10048 = ~Są po naszej stronie. Od teraz pracują dla nas. Rozszerzamy wpływy, tak jak chciałeś.~
+@10049 = ~Dostali twardą lekcję, młody. Czasami to jedyny sposób, żeby do takich dotarło.~ ~Dostali twardą lekcję, młoda. Czasami to jedyny sposób, żeby do takich dotarło.~
+@10050 = ~Oko Gorgony dba o swoich, pamiętaj o tym. Taka lojalność jest tu warta więcej niż złoto.~
+@10051 = ~Czysta robota. Po co brudzić ręce krwią, skoro można to załatwić językiem? Masz talent do przekonywania ludzi.~
+@10052 = ~Ulica o tym usłyszy, a konkurencja dwa razy się zastanowi, zanim nam podpadnie. Zaczynasz znaczyć coś w tym mieście.~
+@10053 = ~Gdybym nie widział tego na własne oczy, to bym nie uwierzył. Masz do tego dryg, młody.~ ~Gdybym nie widział tego na własne oczy, to bym nie uwierzył. Masz do tego dryg, młoda.~
+@10054 = ~Werbowanie ludzi i przejmowanie kolejnych rewirów... tak właśnie buduje się potęgę Oka Gorgony. Dobra robota.~
+@10055 = ~Mało kto by to udźwignął bez rozlewu krwi. Odwalasz kawał dobrej roboty na tych ulicach. Tak trzymaj.~
+
+// Zadanie 3: Przemyt i logistyka (@10056 – @10090)
+
+@10056 = ~Dobra, czas na kolejny interes. Mam robotę, która wymaga szybkich nóg i umiejętnego tańczenia w cieniach.~
+@10057 = ~Mamy trochę towaru pierwszego sortu pochowanego w różnych skrytkach w mieście. Musisz poruszać się jak duch i zgarnąć to wszystko tak, żeby nie wpaść w oko psom ze Straży Miejskiej.~
+@10058 = ~Zanim ruszysz do akcji, przejdź się kawałek, obadaj teren i sprawdź, gdzie teraz węszy ta strażnicza sfora.~
+@10059 = ~Musisz być szczwany jak lis i przemknąć obok nich, żeby nawet cię nie poczuli. Jak już poznasz ich trasy, wtedy uderzysz. Wszystko ma pójść gładko jak po maśle, jasne?~
+@10060 = ~O jakim łupie w ogóle mowa?~
+@10061 = ~A jak sprawy przybiorą zły obrót, to co mam zrobić ze strażą?~
+@10062 = ~Jasne. Gdzie znajdę te skrytki?~
+@10063 = ~W każdym z tych miejsc czeka czarny worek, mocno przewiązany, a w środku cała masa trefnego towaru.~
+@10064 = ~Znajdziesz tam kradzione kosztowności, artefakty i kontrabandę, za którą na czarnym rynku dostaniemy niezłą sumkę.~
+@10065 = ~To dobry łup, co do tego nie ma wątpliwości, ale pamiętaj, te fanty to nie tylko złoto, to dowód naszej siły. Szanuj je, a dobrze na tym wyjdziesz.~
+@10066 = ~Jeśli już wezmą cię na cel, to nie trać zimnej krwi.~
+@10067 = ~Dobra gadka może ich omotać na tyle, żebyś zdążył prysnąć. Szybkie nogi to zawsze najlepsze wyjście. Znikaj za rogiem, zapadnij się pod ziemię w mroku nocy.~ ~Dobra gadka może ich omotać na tyle, żebyś zdążyła prysnąć. Szybkie nogi to zawsze najlepsze wyjście. Znikaj za rogiem, zapadnij się pod ziemię w mroku nocy.~
+@10068 = ~A jak przyjdzie co do czego, to nie wahaj się bronić. Lepiej wyjść z tego cało, niż gnić w ich lochu.~
+@10069 = ~Skrytki są rozsiane po całym mieście, poupychane w takich dziurach, które znajdzie tylko ktoś naprawdę sprytny.~
+@10070 = ~Jedna skrzynia znajduje się blisko południowej fontanny, skrywa nasz pierwszy skarb.~
+@10071 = ~Patrz, jak księżyc odbija się w wodzie, to cię poprowadzi. I pamiętaj, cierpliwość to podstawa. Niech rytm miasta stanie się twoim sprzymierzeńcem.~
+@10072 = ~Pod ogrodami na północy znajdziesz beczkę, która skrywa swoje tajemnice.~
+@10073 = ~Cienie są tam gęste, a w powietrzu czuć zapach nocnych kwiatów. Miej oczy dookoła głowy, a uwiniesz się z tym raz dwa.~
+@10074 = ~Przy kuźni czeka worek z naszym fantem i wypatruje swojego prawowitego właściciela.~
+@10075 = ~Brzęk młota o kowadło będzie twoim tłem. Uważaj na ucznia kowala, to ranny ptaszek. Zwinne ręce bardzo ci się tam przydadzą.~
+@10076 = ~Pamiętaj tylko, że nasza reputacja spoczywa na twoich barkach. Nie przynieś nam wstydu i wróć tu w jednym kawałku.~
+@10077 = ~Noc jest jeszcze młoda, a to złoto samo się nie zbierze. Wracaj tam i dokończ robotę.~
+@10078 = ~Widzę, że wróciłeś w całości. Jak poszło? Nie miałeś problemów, żeby przemknąć obok tych strażniczych kundli?~ ~Widzę, że wróciłaś w całości. Jak poszło? Nie miałaś problemów, żeby przemknąć obok tych strażniczych kundli?~
+@10079 = ~Towar odzyskany, ale musiałem uciszyć strażnika. Nie było innego wyjścia.~ ~Towar odzyskany, ale musiałam uciszyć strażnika. Nie było innego wyjścia.~
+@10080 = ~Zrobiło się gorąco. Musiałem posłać kilku z nich na tamten świat, ale robota wykonana.~ ~Zrobiło się gorąco. Musiałam posłać kilku z nich na tamten świat, ale robota wykonana.~
+@10081 = ~Trochę gadania załatwiło sprawę. Strażnicy nawet nie zrozumieli, co się dzieje.~
+@10082 = ~Misja poszła gładko, przemknąłem obok nich jak cień.~ ~Misja poszła gładko, przemknęłam obok nich jak cień.~
+@10083 = ~Musiałeś przelać krew, co? Niebezpieczną ścieżką kroczymy, ale czasem po prostu nie ma wyboru.~ ~Musiałaś przelać krew, co? Niebezpieczną ścieżką kroczymy, ale czasem po prostu nie ma wyboru.~
+@10084 = ~Tylko uważaj na konsekwencje. Wieści o trupie w straży szybko się rozchodzą. Rano całe miasto może o tym huczeć. Masz, to twoja dola. Dobra robota.~
+@10085 = ~Kilku strażników, co? No, toś pojechał po bandzie. Nie możemy sobie pozwolić na taki raban. Straż Miejska nie puści nam płazem takiej rzeźni.~ ~Kilku strażników, co? No, toś pojechała po bandzie. Nie możemy sobie pozwolić na taki raban. Straż Miejska nie puści nam płazem takiej rzeźni.~
+@10086 = ~Następnym razem użyj mózgu, bo nie uśmiecha mi się mieć na karku całego miasta. Od świtu wszyscy będą o tym gadać. Masz, to twoja dola. Dobra robota.~
+@10087 = ~Wyłgałeś się gadką, co? Szybkie myślenie, to mi się podoba. Ale nie spoczywaj na laurach.~ ~Wyłgałaś się gadką, co? Szybkie myślenie, to mi się podoba. Ale nie spoczywaj na laurach.~
+@10088 = ~Strażnicy nie należą do zapominalskich. Jak tylko wstanie słońce, będą patrzeć nam na ręce uważniej niż zwykle. Masz, to twoja dola. Dobra robota.~
+@10089 = ~Przemknąć przez miasto tak, żeby nikt nawet nie poczuł twojego oddechu... to jest właśnie robota prawdziwego fachowca.~
+@10090 = ~Zapamiętaj, że w tej branży cienie to twoi jedyni powiernicy, a noc to pole do popisu. Masz, to twoja dola. Dobra robota.~
+
+// Zadanie 4: Zdrajca (@10091 – @10107)
+
+@10091 = ~Dobra, słuchaj uważnie. Ta sprawa jest bardziej pokręcona niż jelita wisielca. Mamy w gnieździe żmiję, która wynosi sekrety prosto do Straży Miejskiej.~
+@10092 = ~Nie lekceważ tego. Jeśli szybko nie ukręcimy łba temu gadowi, wszystkich nas czeka piach.~
+@10093 = ~Ale tu robi się ciekawie. Mamy w straży swojego człowieka, który słucha, co w trawie piszczy.~
+@10094 = ~Podobno za Płonącym Czarodziejem mają skrytkę, gdzie wymieniają się czymś więcej niż tylko uprzejmościami. Kapujesz?~
+@10095 = ~Nasza wtyka wysmażyła oficjalny gryps z zaproszeniem na spotkanie przy południowych fontannach. Tyle że to nie straż na nie przyjdzie.~
+@10096 = ~Zjawisz się ty, z wyciągniętym żelastwem. Chcę, żebyś to załatwił raz a porządnie. Żadnego litościwego syfu.~ ~Zjawisz się ty, z wyciągniętym żelastwem. Chcę, żebyś to załatwiła raz a porządnie. Żadnego litościwego syfu.~
+@10097 = ~Mamy wtykę w straży? Dobra, jaki jest plan?~
+@10098 = ~Zdrajca w naszych szeregach... Wykurzmy go, zanim narobi więcej problemów.~
+@10099 = ~Najpierw podrzuć ten list w biały dzień, kiedy miasto tętni życiem. To twoja szansa, żeby wtopić się w tłum i udawać zwykłego przechodnia.~
+@10100 = ~Potem, gdy noc przykryje miasto, ruszaj pod fontannę. Nie opuszczaj gardy. Tam skończy się historia naszego zdrajcy.~
+@10101 = ~Pamiętaj, <CHARNAME>, tu poleje się krew. Myśl szybko i nie bój się ubrudzić rąk po same łokcie.~
+@10102 = ~No, jesteś z powrotem. Widzę to po twoich oczach, <CHARNAME>. Zrobiłeś to, co było trzeba.~ ~No, jesteś z powrotem. Widzę to po twoich oczach, <CHARNAME>. Zrobiłaś to, co było trzeba.~
+@10103 = ~Czas Valery się skończył. Jej szept już nigdy nikomu nie zaszkodzi.~
+@10104 = ~Valera... niech ją szlag, szkoda dziewczyny. Miała nosa do złota i fach w ręku. Wypiję za nią, bo była z niej złodziejka z krwi i kości.~
+@10105 = ~Teraz zostały po niej tylko echa. Chciała grać na dwa fronty, a w tym zawodzie taki taniec zawsze kończy się tak samo.~
+@10106 = ~Niedomknięte sprawy... są niezwykle niebezpieczne. W tej branży nie można pozwolić, żeby sekrety docierały do niewłaściwych uszu.~
+@10107 = ~To mroczna ścieżka, ale tylko tak możemy tu przetrwać. Pamiętaj o tym, <CHARNAME>. Pamiętaj, co to znaczy być jednym z nas.~ ~To mroczna ścieżka, ale tylko tak możemy tu przetrwać. Pamiętaj o tym, <CHARNAME>. Pamiętaj, co to znaczy być jedną z nas.~
+
+// Czas oczekiwania (@10108 – @10109) - Krótki przerywnik fabularny, w którym Ariosh obserwuje ruchy straży i przygotowuje dalsze plany.
+
+@10108 = ~No, <CHARNAME>, ostatnio na ulicach zrobiło się cicho, ale spokojna głowa. Cierpliwość to też broń. Prędzej czy później roboty będzie tyle, że nie będziesz wiedzieć, w co ręce włożyć.~
+@10109 = ~Miej oczy i uszy otwarte. Zanim się obejrzysz, znowu będziemy mieli roboty po pachy.~
+
+// Zadanie 5: Haracze (@10110 – @10131) - Gracz odwiedza cztery główne karczmy w mieście, aby ściągnąć opłaty za ochronę i utrwalić dominację gildii.
+
+@10110 = ~Mam informacje o ruchach Straży Miejskiej. Najpierw musimy jednak załatwić pewne interesy.~
+@10111 = ~Pora obejść miasto i odebrać od lokalnych karczmarzy to, co nam się należy .~
+@10112 = ~Cztery gospody w tym mieście zawdzięczają nam bezpieczeństwo. My dbamy, by były otwarte, a właściciele nam płacą.~
+@10113 = ~Tak to działa. Te miejsca kręcą się pod naszym okiem i najwyższa pora, żeby okazały wdzięczność.~
+@10114 = ~Idź i dopilnuj, żeby skarbiec był pełen. Melduj się, kiedy ściągniesz należności.~
+@10115 = ~Ile złota mam zebrać z każdego miejsca?~
+@10116 = ~Co zrobić, jeśli odmówią zapłaty?~
+@10117 = ~Jest jakieś konkretne miejsce, od którego mam zacząć?~
+@10118 = ~Dobra, wrócę z wpłatami.~
+@10119 = ~W tym momencie nie jestem zainteresowany taką robotą.~ ~W tym momencie nie jestem zainteresowana taką robotą.~
+@10120 = ~Każdy ma oddać sakiewkę. Sam zobaczysz, że wszystko się zgadza, nie ma nad czym debatować.~ ~Każdy ma oddać sakiewkę. Sama zobaczysz, że wszystko się zgadza, nie ma nad czym debatować.~
+@10121 = ~Odmowa nie wchodzi w grę, <CHARNAME>. Jeśli trzeba, użyj ostrego języka albo żelastwa. Nie potrzebujemy tu obiboków.~
+@10122 = ~Bez różnicy. Odwiedź wszystkich: Feldeposta, Żonglera, Czarodzieja i Czerwony Bukiet.~
+@10123 = ~Dopilnuj, żeby wszystko się zgadzało. Mamy na nich oko. Lepiej dla nich, żeby wiedzieli, co im się opłaca.~
+@10124 = ~Jak tam forsa, <CHARNAME>? Miałeś jakieś problemy z karczmarzami?~ ~Jak tam forsa, <CHARNAME>? Miałaś jakieś problemy z karczmarzami?~
+@10125 = ~Tylko w Czerwonym Bukiecie nie mogli zapłacić. Uznałem, że lepiej dać im ostrzeżenie niż stosować drastyczne środki.~ ~Tylko w Czerwonym Bukiecie nie mogli zapłacić. Uznałam, że lepiej dać im ostrzeżenie niż stosować drastyczne środki.~
+@10126 = ~Tylko w Czerwonym Bukiecie nie mogli zapłacić. Postanowiłem zrobić z nich przykład. Nie będą już sprawiać problemów.~ ~Tylko w Czerwonym Bukiecie nie mogli zapłacić. Postanowiłam zrobić z nich przykład. Nie będą już sprawiać problemów.~
+@10127 = ~Wciąż zbieram. Niebawem wrócę.~
+@10128 = ~Ostrzeżenie? Czasem lekcja musi zostać wypisana krwią, żeby została zapamiętana.~
+@10129 = ~Wyślę paru ludzi z kolejną wizytą. Szybko się nauczą, co znaczy zadzierać z Okiem Gorgony.~
+@10130 = ~Dobra robota, <CHARNAME>. Masz twardą rękę. W tym interesie nie ma miejsca na słabość. W Czerwonym Bukiecie zapamiętają tę lekcję.~
+@10131 = ~Tak właśnie kręcą się interesy w Beregoście. Każda moneta wzmacnia naszą pozycję i bezpieczeństwo. Tak trzymaj.~
+
+// Zadanie 6: Inspektor z Wrót Baldura (@10132 – @10186)
+
+@10132 = ~Słuchaj uważnie. Nasza wtyka w straży donosi, że sprowadzili na nas grubą rybę. Inspektor przyjechał aż z samych Wrót Baldura.~
+@10133 = ~Gość nie jest popychadłem. Ma łeb na karku i potrafi go używać. Płomienna Pięść z krwi i kości, traktuje robotę śmiertelnie poważnie.~
+@10134 = ~Nie gra według zwykłych zasad i nie podoba mu się tutejszy syf. Twierdzi, że złodziejstwo szerzy się bezkarnie, a winą obarcza naszą ekipę.~
+@10135 = ~Tu wchodzisz ty. Inspektor musi zniknąć, i to szybko. Nie ma miejsca na uprzejmości ani wahania. Tylko ostra stal i szybka ewakuacja.~
+@10136 = ~Ośmieszysz straż i pokażesz, że są bezradni. Wtedy w końcu odetchniemy.~
+@10137 = ~Co w nim jest takiego niebezpiecznego?~
+@10138 = ~Załatwione. Gdzie znajdę tego inspektora?~
+@10139 = ~Potrafi czytać między wierszami. Zna tę grę lepiej niż większość tych tępaków z Płomiennej Pięści.~
+@10140 = ~Myśli, nie tylko używa mięśni. To mistrz podstępu, nie brutalnej siły.~
+@10141 = ~Ma opinię człowieka, który kończy każdą sprawę, bez względu na koszty. Uwielbia wyrywać problemy z korzeniami.~
+@10142 = ~Skoro tu węszy, to poluje na coś dużego. Musimy być wyjątkowo ostrożni. To zupełnie inna liga.~
+@10143 = ~Valera miała rację. Wiedziała, co się święci i nie kłamała.~
+@10144 = ~Tu zaczynają się schody. Nasza wtyka podrzuciła nam trop. Inspektor organizuje dziś spotkanie we wschodniej części Beregostu.~
+@10145 = ~Chcą skoordynować siły, by nam zaszkodzić. Twoim zadaniem jest dopilnować, żeby nie poczuli się tu zbyt pewnie.~
+@10146 = ~Musisz być cieniem, <CHARNAME>. Wejdź tam jak duch, a w odpowiednim momencie go ucisz. Zrób to szybko i nie zostawiaj śladów.~
+@10147 = ~Ma być czysto i skutecznie. Masz tylko jedną szansę, nie zmarnuj jej.~
+@10148 = ~Inspektor nas wykiwał. To spotkanie było pułapką na naszego szpiega i jego plan zadziałał.~
+@10149 = ~Sprzątnę go, nie martw się.~
+@10150 = ~Ten inspektor ma więcej asów w rękawie, niż myślałem. Do diaska! Musimy się przegrupować i zmienić plan.~
+@10151 = ~Dorwie naszego człowieka, a ten biedak przejdzie przez piekło. Nie wątpię w jego lojalność, ale inspektor nie będzie miał litości przy przesłuchaniu.~
+@10152 = ~To nie jest byle strażnik. Jest bystry i ma plan. Musimy uważać. Ta gra stała się śmiertelnie groźna.~
+@10153 = ~Musimy być o krok przed nim, jeśli chcemy uniknąć kłopotów.~
+@10154 = ~Przeceniliśmy swoje siły. Musimy znaleźć jego słaby punkt i uderzyć pierwsi.~
+@10155 = ~Musimy szukać informacji u źródła, we Wrotach Baldura. Czarna Lilia to najlepszy kontakt, jakiego tam mamy.~
+@10156 = ~To szczwana bestia, zna miasto jak nikt inny. Znamy się od lat i muszę przyznać, że darzę ją szacunkiem.~
+@10157 = ~Bystra, zaradna i niezwykle niebezpieczna. Pilnuj się przy niej, wyczuje każdy podstęp.~
+@10158 = ~Ruszaj do Wrót, znajdź Lilię i wybadaj, co wie o tym inspektorze. Dowiedz się wszystkiego, co pozwoli go sprzątnąć.~
+@10159 = ~Znajdziesz ją w tamtejszej gildii złodziei. Działamy na innym terenie, ale nie skaczemy sobie do gardeł. To neutralny grunt.~
+@10160 = ~Ten inspektor zbyt długo nam bruździł. Kiedy byłeś we Wrotach, uderzył w nas z całą siłą.~ ~Ten inspektor zbyt długo nam bruździł. Kiedy byłaś we Wrotach, uderzył w nas z całą siłą.~
+@10161 = ~Przejął nasze skrytki, zgarnął tuzin ludzi, a paru posłał do piachu. Musi za to zapłacić.~
+@10162 = ~Słuchaj uważnie. Gdyby sprawy nie poszły po naszej myśli, mam coś na czarną godzinę.~
+@10163 = ~To urządzenie zapalające. Ukryj je w kuchni Wesołego Żonglera, między beczkami z trunkami i oliwą.~
+@10164 = ~Daj znać barmanowi, że jeśli nie będzie współpracował, pójdzie z dymem razem z jego lokalem.~
+@10165 = ~Jeśli inspektor spróbuje nas wykiwać, nie wahaj się. Odpal lont i zgotuj mu gorące pożegnanie.~
+@10166 = ~Pamiętaj, to ostateczność. Jeśli zdołasz go sprzątnąć bez robienia rabanu, tak zrób.~
+@10167 = ~Jaki to ma zasięg? Jak daleko trzeba odejść przed wybuchem?~
+@10168 = ~Ucierpią postronni?~
+@10169 = ~Rozumiem, Arioshu. Jestem w gotowy.~ ~Rozumiem, Ariosh. Jestem w gotowa.~
+@10170 = ~Wystarczy odejść parę kroków. Na parterze będziesz bezpieczny, o ile wypijesz to. Ta mikstura zniweluje skutki poparzeń.~ ~Wystarczy odejść parę kroków. Na parterze będziesz bezpieczna, o ile wypijesz to. Ta mikstura zniweluje skutki poparzeń.~
+@10171 = ~Nie uczyni cię ognioodpornym, ale unikniesz dotkliwych oparzeń.~ ~Nie uczyni cię ognioodporną, ale unikniesz dotkliwych oparzeń.~
+@10172 = ~Ofiary będą, nie ma co się łudzić. Każdy, kto zostanie w środku, zginie.~
+@10173 = ~Zginie zarówno inspektor, jak i każdy, kto się przy nim będzie. Robimy to, bo musimy, a nie dla przyjemności.~
+@10174 = ~Dobrze. Liczymy na ciebie. Nie zawiedź nas.~
+@10175 = ~Zostaw ładunek w kuchni. Zrób to dyskretnie. Zmuś karczmarza do współpracy i czekaj na finał tego przedstawienia.~
+@10176 = ~Plotki niosą, że w Żonglerze doszło do czegoś grubego. Jak poszło?~
+@10177 = ~Plan zadziałał. Ishani zrobiła swoje, a inspektor zginął bez walki.~
+@10178 = ~Inspektor przejrzał podstęp. Musiałem go zabić.~ ~Inspektor przejrzał podstęp. Musiałam go zabić.~
+@10179 = ~Nie chciałem ryzykować porażki, więc wziąłem sprawy w swoje ręce.~ ~Nie chciałam ryzykować porażki, więc wzięłam sprawy w swoje ręce.~
+@10180 = ~Nie było wyjścia, wysadziłem budynek. Inspektor spłonął.~
+@10181 = ~Wdzięk Ishani i zatruty kielich wystarczyły? Dobra robota.~
+@10182 = ~Czyli jednak poczuł pismo nosem. To nie był łatwy przeciwnik. Twoja interwencja uratowała nam skórę.~
+@10183 = ~Nie trzymałeś się planu, ale robota wykonana. Tylko to się liczy.~ ~Nie trzymałaś się planu, ale robota wykonana. Tylko to się liczy.~
+@10184 = ~Niech to, narobiłeś znacznie większego rabanu, niż zakładałem. Trudna decyzja, to fakt, ale zrobiłeś po prostu to, co było konieczne.~ ~Niech to, narobiłaś znacznie większego rabanu, niż zakładałem. Trudna decyzja, to fakt, ale zrobiłaś po prostu to, co było konieczne.~
+@10185 = ~Najważniejsze, że inspektor nie żyje. Strażnicy, którzy jeszcze rano myśleli, że nas mają w garści, teraz zaczynają trząść portkami.~
+@10186 = ~Wieści o naszej sile szybko się rozejdą. Kiedy uporamy się z komendantką Białoknieją, nic już nie powstrzyma Oka Gorgony przed przejęciem całkowitej władzy nad tym miastem.~
+
+// Zadanie 7: Zamach stanu (@10187 – @10210) - Likwidacja przybocznych oficerów Straży Miejskiej, sióstr Walecznych, co paraliżuje dowodzenie w mieście.
+
+@10187 = ~<CHARNAME>, jesteśmy u progu zwycięstwa. Białoknieja to ostatnia przeszkoda, która stoi między nami a całkowitą kontrolą nad Beregostem. Nie jest ona jednak sama.~
+@10188 = ~Ma pod rozkazami swoje najbardziej oddane Walkirie, Klarę i Teresę Waleczne. To dwie niebezpieczne siostry o boskim pochodzeniu, niezmiennie wierne swojej świętej powinności.~
+@10189 = ~Te siostry to tryby, dzięki którym cała ta machina ciągle funkcjonuje. Musimy je wyeliminować, jeśli chcemy, żeby wszystko się rozpadło.~
+@10190 = ~Klara to niewolnica nawyków. Każdego ranka, punktualnie jak w zegarku, spaceruje przy świątyni na południowym wschodzie. Ta nasza kapłanka ma słabość do natury.~
+@10191 = ~Mamy szczęście, że to miejsce leży nieco na uboczu, z dala od wścibskich oczu. Żadnych świadków, żadnych gapiów. To idealne warunki na zadanie ciosu.~
+@10192 = ~Z kolei Teresa to zupełnie inny przypadek. Jest twarda, zahartowana w boju, a swoje blizny nosi z dumą niczym ordery.~
+@10193 = ~Nie znajdziesz jej w wykwintnych lokalach. O nie, ona woli po służbie szukać guza w Wesołym Żonglerze.~
+@10194 = ~Siedzi tam niemal co noc, sącząc kufel piwa albo dzieląc łoże z jakimś „szczęściarzem”, który wpadnie jej w oko.~
+@10195 = ~Słuchaj uważnie. To nie jest zadanie dla zwykłego rębajły, tylko taniec wymagający finezji. Czas jest kluczowy, a ty musisz być cichy jak szept w pustym pokoju. Nie mogą cię nawet zwęszyć.~ ~Słuchaj uważnie. To nie jest zadanie dla zwykłego rębajły, tylko taniec wymagający finezji. Czas jest kluczowy, a ty musisz być cicha jak szept w pustym pokoju. Nie mogą cię nawet zwęszyć.~
+@10196 = ~Przemykaj w cieniach, stąpaj ostrożnie i nie daj się zauważyć. Kiedy będziesz blisko, uderz szybko – jeden śmiertelny cios w plecy, błyskawiczny jak ukąszenie żmii.~
+@10197 = ~To robota dla prawdziwego zabójcy, zarezerwowana dla mistrzów skradania. Jedno uderzenie, jedno zgaszone życie.~ ~To robota dla prawdziwej zabójczyni, zarezerwowana dla mistrzów skradania. Jedno uderzenie, jedno zgaszone życie.~
+@10198 = ~To taniec, mój przyjacielu, a ty masz w nim prowadzić.~ ~To taniec, moja przyjaciółko, a ty masz w nim prowadzić.~
+@10199 = ~Skradanie i zaskoczenie to twoje najlepsze atuty. Jeśli dobrze rozegrasz karty, nawet nie zauważą, kiedy nadejdzie koniec.~
+@10200 = ~Tak, słyszałem już plotki. Wieści o przedwczesnej śmierci tych bliźniaczek rozeszły się w błyskawicznym tempie. Dobra robota.~
+@10201 = ~Byłem sprawniejszy niż cień, nawet nie wiedziały, co je trafiło.~ ~Byłam sprawniejsza niż cień, nawet nie wiedziały, co je trafiło.~
+@10202 = ~Klara coś dostrzegła, ale było już dla niej za późno.~
+@10203 = ~Teresa połapała się w ostatniej chwili, jednak to jej nie pomogło.~ 
+@10204 = ~Obie spojrzały mi w oczy, zanim wyzionęły ducha.~
+@10205 = ~Masz do tego dryg. Sprzątnąłeś je bez zostawiania śladów. Jesteś prawdziwym mistrzem w tym fachu.~ ~Masz do tego dryg. Sprzątnęłaś je bez zostawiania śladów. Jesteś prawdziwą mistrzynią w tym fachu.~
+@10206 = ~Zadanie wykonane, ale pamiętaj – prawdziwy mistrz nie pozostawia po sobie żadnych śladów. Musisz jeszcze popracować nad dyskrecją.~ ~Zadanie wykonane, ale pamiętaj – prawdziwa mistrzyni nie pozostawia po sobie żadnych śladów. Musisz jeszcze popracować nad dyskrecją.~
+@10207 = ~Dobra,<CHARNAME>. Teraz mnie słuchaj. Udowodniłeś dziś swoją wartość. Bez tych bliźniaczek uścisk Białokniei na gardle Straży Miejskiej wreszcie zacznie słabnąć.~ ~Dobra,<CHARNAME>. Teraz mnie słuchaj. Udowodniłaś dziś swoją wartość. Bez tych bliźniaczek uścisk Białokniei na gardle Straży Miejskiej wreszcie zacznie słabnąć.~
+@10208 = ~Czas wykonać decydujący ruch i zabezpieczyć nasze wpływy. Zbierz ekipę, musimy uciąć sobie małą pogawędkę z panią komendant.~
+@10209 = ~Tu zaczyna się prawdziwa gra, a ty zapracowałeś na swoje miejsce przy stole. Pamiętaj, nie jesteśmy już zwykłymi rzezimieszkami. Jesteśmy ręką, która z cienia steruje Beregostem. Nie zmarnujmy tego.~ ~Tu zaczyna się prawdziwa gra, a ty zapracowałaś na swoje miejsce przy stole. Pamiętaj, nie jesteśmy już zwykłymi rzezimieszkami. Jesteśmy ręką, która z cienia steruje Beregostem. Nie zmarnujmy tego.~
+@10210 = ~To nasza szansa, by przechylić szalę na naszą korzyść. Postaraj się. Właśnie teraz decyduje się los Oka Gorgony i przyszłość całego Beregostu.~
+
+// Upadek Białokniei i Nowy Porządek (@10211 – @10228) - Ostateczne starcie z komendantką straży i przejęcie przez gracza funkcji Mistrza Gildii.
+
+@10211 = ~No, no, <CHARNAME>. Masz to wypisane na twarzy. To ty wszedłeś w drogę komendantce Białokniei, czy to ona miała nieszczęście napatoczyć się tobie?~ ~No, no, <CHARNAME>. Masz to wypisane na twarzy. To ty weszłaś w drogę komendantce Białokniei, czy to ona miała nieszczęście napatoczyć się tobie?~
+@10212 = ~Walka była zacięta, ale w końcu pękła. Beregost stoi przed nami otworem.~
+@10213 = ~Ona nie żyje, Arioshu. Świątynia stała się jej grobem, a miasto wkrótce ugnie się przed naszą wolą.~
+@10214 = ~Doczekaliśmy się. Białoknieja wącha kwiatki od spodu, więc fotel komendanta zajmie ktoś z naszych. O Oku Gorgony usłyszą w całym królestwie.~
+@10215 = ~Rzucimy to miasto na kolana. Od dziś to my dyktujemy tu warunki, a nasza potęga będzie tylko rosnąć.~
+@10216 = ~Jesteś wyciosany z samej materii cienia,. Mistrz złodziei w każdym calu.~ ~Jesteś wyciosana z samej materii cienia. Mistrzyni złodziei w każdym calu.~
+@10217 = ~Należysz teraz do tego brudnego świata, do ciemnych zaułków, gdzie o interesach decyduje stal, a sekrety szepcze się tylko w mroku.~
+@10218 = ~Miej uszy otwarte i rozum ostry jak brzytwa, a zajdziesz w tym fachu wyżej, niż można sobie wymarzyć. Masz to we krwi.~ ~Miej uszy otwarte i rozum ostry jak brzytwa, a zajdziesz w tym fachu wyżej, niż można sobie wymarzyć. Masz to we krwi.~
+@10219 = ~No, <CHARNAME>, Straż Miejska tańczy teraz, jak im zagramy. Roboty nam nie zabraknie i lekko nie będzie, ale razem odciśniemy na tym mieście trwałe piętno.~
+@10220 = ~Proszę, oto nasz nowy Mistrz Gildii. Jaki masz plan? Daj tylko znak, a jestem na twoje rozkazy.~ ~Proszę, oto nasza nowa Mistrzyni Gildii. Jaki plan? Daj tylko znak, a jestem na twoje rozkazy.~
+@10221 = ~Tak jest, <CHARNAME>. Czekamy tylko na sygnał. Ruszamy, kiedy każesz.~
+@10222 = ~Sprzęt zabezpieczony, chłopcy. Rozdzielić go i szykować się do roboty.~
+@10223 = ~Melduję gotowość przed atakiem. Miejcie oczy dookoła głowy.~
+@10224 = ~Zaraz, jaki to był plan? Bo mi wyleciało.~
+@10225 = ~Jasna sprawa. Dobra, ferajna! Słyszeliście szefową. Czekać na pozycjach, aż wróci z bronią.~
+@10226 = ~Jasna sprawa. Dobra, ferajna! Słyszeliście szefa. Czekać na pozycjach, aż wróci z bronią.~
+@10227 = ~Wchodzić do namiotów i zwędzić broń każdemu psu, jakiego tam znajdziecie. Tylko migiem! Rozdacie strzałki, a my zajmiemy się resztą.~
+@10228 = ~Tak jest! Słuchać uważnie, ferajna! Zbierać manatki i wymarsz! Pokażemy tym paniczykom z południa, co potrafi Oko Gorgony!~
+
+// Finał: Inwazja Złodziei Cienia (@10229 – @10240) - Mobilizacja wszystkich sił Oka Gorgony do obrony Beregostu przed atakiem Złodziei Cienia i sił Thamuza.
+
+@10229 = ~Baldwin! Złodzieje Cienia przeniknęli do miasta! Dokładnie w tej chwili kilkunastu z nich walczy na górze!~
+@10230 = ~Całe oddziały czekają pod Beregostem, a dowodzi nimi sam Thamuz! Uderzą o świcie!~
+@10231 = ~A więc w końcu postanowili wykonać ruch. Kamraci! Przygotować się do akcji i zwierać szyki!~
+@10232 = ~Rhade! Rozdziel zapasy całej gildii. Roześlij wici do wszystkich rzezimieszków i najemników, którzy chcą dziś zarobić.~
+@10233 = ~Ariosh! Potrzebuję twoich oczu w terenie. Masz wybadać ruchy straży przedniej, policzyć ilu ich jest i wyśledzić ich oficerów.~
+@10234 = ~Znajdź ich najsłabszy punkt i wróć z raportem przed świtem.~
+@10235 = ~Tak jest!~
+@10236 = ~Liedel! Aktywuj pułapki na obrzeżach miasta. Wszystkie wnyki i potykacze mają być gotowe. Dopilnuj, by zadziałały z morderczą precyzją.~
+@10237 = ~Rigaldo! Ściągnij naszych ludzi z posterunków i niech biorą się za ostrzenie stali. Każda klinga ma być ostra jak brzytwa, gotowa, by ciąć i cienie, i ciało.~
+@10238 = ~Wedle rozkazu!~
+@10239 = ~<CHARNAME>, musimy natychmiast wybić te szczury, które już są w mieście. Nie możemy pozwolić, by uderzyli nas od tyłu, gdy nadejdzie główna fala od Thamuza.~
+@10240 = ~Odbierz ekwipunek od Rhade’a i ruszaj na misję. Zamelduj się, gdy już wytępisz tę zdradziecką zarazę. Tylko migiem!~

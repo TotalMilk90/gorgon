@@ -26,6 +26,16 @@ LANGUAGE
 ~gorgon/lang/schinese/quests.tra~
 ~gorgon/lang/schinese/setup.tra~
 
+LANGUAGE
+    ~Polish (by my_summertime, SoM Membress, part of CoB Clan)~
+    ~polish~
+//~gorgon/lang/polish/dialog.tra~
+~gorgon/lang/polish/items.tra~
+~gorgon/lang/polish/names.tra~
+~gorgon/lang/polish/npcs.tra~
+~gorgon/lang/polish/quests.tra~
+~gorgon/lang/polish/setup.tra~
+
 BEGIN @1
 
 // EET compatibility header

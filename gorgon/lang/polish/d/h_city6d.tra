@@ -1,0 +1,10 @@
+// Straż Miejska (pod kontrolą) - h_city6d.tra
+
+@24500 = ~<CHARNAME>, mamy tutaj wszystko pod kontrolą. Jesteśmy na twoje usługi. Powiedz tylko słowo.~
+@24501 = ~<CHARNAME>, mamy się czymś pilnie zająć?~
+@24502 = ~Tak jest, panie, ulice są już bezpieczne. Jaki jest nasz następny krok?~ ~Tak jest, pani, ulice są już bezpieczne. Jaki jest nasz następny krok?~
+@24503 = ~W mieście panuje ostatnio spory ruch. Przewija się tu więcej podróżnych, co zmusza nas do zachowania czujności.~
+@24504 = ~Nie martw się o nic, panie, zajmuj się swoimi sprawami.~ ~Nie martw się o nic, pani, zajmuj się swoimi sprawami.~
+@24505 = ~Wciąż stanowimy tutaj prawo, ale wiadomo, przed kim chylimy czoła.~
+@24506 = ~Twoje rozkazy? Wykonamy je niezwłocznie, tak jak oczekujesz.~
+@24507 = ~Tak jest, Oko Gorgony. Działajcie dalej.~

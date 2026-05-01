@@ -1,0 +1,27 @@
+// Strażnik Beregostu - h_citywd.tra
+
+@25500 = ~<CHARNAME>! W końcu na nasze ulice wraca spokój. Oddałeś Beregostowi wielką przysługę. Nie zapomnimy o tym.~ ~W końcu na nasze ulice wraca spokój. <CHARNAME>! Oddałaś Beregostowi wielką przysługę. Nie zapomnimy o tym.~
+@25501 = ~Stój! Obserwuję cię, jak przemykasz tymi ulicami niczym szczur w cieniach. Co tam masz?~
+@25502 = ~Spokojnie, przyjacielu. Nie ma powodu do nerwów. Po prostu wyszedłem na nocny spacer, odetchnąć świeżym powietrzem.~ ~Spokojnie, przyjacielu. Nie ma powodu do nerwów. Po prostu wyszłam na nocny spacer, odetchnąć świeżym powietrzem.~
+@25503 = ~Nie masz pojęcia, w jakie gniazdo szerszeni wkładasz właśnie kij. Pozwól mi odejść, albo pożałujesz.~
+@25504 = ~*Potknij się i upuść garść monet*. O nie! Moje złoto! Pomożesz mi, dobry człowieku? Ciemno tu jak w grobie!~
+@25505 = ~Myślisz, że mi dorównasz? Spróbujmy więc. Wyciągaj broń i przekonajmy się, kto ustoi na nogach.~
+@25506 = ~Dobra, dobra, tylko bez gwałtownych ruchów. Patrz pod nogi, bo mamy tu na wszystko oko. Zmykaj stąd, i to szybko, zanim zmienię zdanie.~
+@25507 = ~Daruj sobie te gładkie słówka. Nie ze mną te numery. Wiem, że szukasz kłopotów. Ostatnia szansa, żeby załatwić to polubownie. Oddaj torbę i pokaż, co tam chowasz.~
+@25508 = ~Mylisz się, panie władzo. Ma tylko jakieś drobiazgi, nie mam złych zamiarów.~
+@25509 = ~Radzę ci to przemyśleć. Nie chcesz kłopotów, a ja mam swoje sprawy do załatwienia.~
+@25510 = ~Jeśli chcesz tę torbę, musisz mi ją odebrać. Nie ustąpię.~
+@25511 = ~Wybrałeś więc trudniejszą drogę. Niech i tak będzie! Z takimi jak ty rozprawiałem się już nieraz – i dziś też nie ustąpię.~ ~Wybrałaś więc trudniejszą drogę. Niech i tak będzie! Z takimi jak ty rozprawiałem się już nieraz – i dziś też nie ustąpię.~
+@25512 = ~Do diabła... dałem się przechytrzyć takiemu bezczelnemu gagatkowi jak ty. Wynoś się stąd, zanim zmienię zdanie – i lepiej, żebym więcej nie przyłapał cię na sprawianiu kłopotów!~
+@25513 = ~O masz! Dobra, czekaj. Pomogę ci je zebrać. Sam ledwo widzę w tych ciemnościach.~
+@25514 = ~Przebrałeś miarę, łotrze! Trzeba było uciekać, póki była okazja!~ ~Przebrałaś miarę, łotrzyco! Trzeba było uciekać, póki była okazja!~
+@25515 = ~Czekaj... ty jesteś jednym z nich, prawda? Ścierwo z Oka Gorgony! To się dla ciebie źle skończy, masz to jak w banku.~ ~Czekaj... ty jesteś jedną z nich, prawda? Ścierwo z Oka Gorgony! To się dla ciebie źle skończy, masz to jak w banku.~
+@25516 = ~Hej, chłopaki! Tutaj, szybko! Mamy tu złodziejaszka!~ ~Hej, chłopaki! Tutaj, szybko! Mamy tu złodziejkę!~
+@25517 = ~Trzymajcie broń w pochwach i panujcie nad nerwami.~
+@25518 = ~Mieszkańcy Beregostu dbają o siebie nawzajem, tak już tu działamy.~
+@25519 = ~Płomienna Pięść może i ma mięśnie, ale to my jesteśmy sercem tego miasta.~
+@25520 = ~Płomienna Pięść zgarnia chwałę, ale to my odwalamy brudną robotę.~
+@25521 = ~Beregost ma tuż pod nosem gildię złodziei Oko Gorgony. Miejcie się na baczności.~
+@25522 = ~Trzymajcie się z dala od ciemnych interesów, Oko Gorgony zrobiło się ostatnio wyjątkowo aktywne.~
+@25523 = ~Nie ułatwiajcie zadania Oku Gorgony, oni zawsze patrzą.~
+@25524 = ~Płomienna Pięść ma pełne ręce roboty, a złodzieje wykorzystują okazję.~

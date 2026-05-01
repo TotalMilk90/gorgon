@@ -1,0 +1,237 @@
+//Pierwsze spotkanie i rekrutacja
+
+@12000 = ~Chyba pomyliłeś miejsca, przyjacielu. Jestem pewien, że na zewnątrz jakiś kot utknął na drzewie i rozpaczliwie czeka na twój bohaterski ratunek. A teraz zejdź mi z oczu. Smród tego twojego świętoszkowatego gadania napawa mnie obrzydzeniem.~ ~Chyba pomyliłaś miejsca, moja droga. Jestem pewien, że na zewnątrz jakiś kot utknął na drzewie i rozpaczliwie czeka na twój bohaterski ratunek. A teraz zejdź mi z oczu. Smród tego twojego świętoszkowatego gadania napawa mnie obrzydzeniem.~
+@12001 = ~Tylko głupiec odważyłby się tak bezczelnie wkroczyć do mojej leża. Tradycja i rozsądek nakazują, by taką wdarcie się ukrócić szybko i ostatecznie.~
+@12002 = ~Jednak twoja twarz... nie jest mi obca. <CHARNAME>, jeśli moje źródła służą mi należycie?~
+@12003 = ~Kolejny zabójca? Nie ty pierwszy dybiesz na moje życie, by zaraz pożegnać się z własnym.~ 
+@12004 = ~Skąd znasz moje imię? Kim jesteś?~
+@12005 = ~<CHARNAME>? Nic mi to nie mówi. Ale skoro uprzejmości mamy już za sobą, czas mi stąd iść.~
+@12006 = ~Nie uciekajmy się od razu do przemocy. Schowaj broń, nie stoisz przed wrogiem. Przynajmniej póki co.~
+@12007 = ~W moim fachu wiedza jest równie cenna co złoto, a ja dbam o to, by opływać w jedno i drugie.~
+@12008 = ~Jestem Baldwin, mistrz Oka Gorgony. Zakładam, że słyszałeś to imię szeptane w ciemnych zaułkach.~ ~Jestem Baldwin, pan Oka Gorgony. Zakładam, że słyszałaś to imię szeptane w ciemnych zaułkach.~
+@12009 = ~Nie daj się jednak zwieść skromności tego miejsca. Choć brakuje mu splendoru, to jedynie fasada rozległej sieci wpływów.~
+@12010 = ~Nasze zasoby są ogromne, a wpływy wszechobecne, sięgając każdego zakątka na południe od Wrót Baldura.~
+@12011 = ~Przejdźmy jednak do rzeczy. Twoja głowa ma swoją cenę i muszę przyznać, że to całkiem pokaźna sumka. Jesteś w otoczeniu moich najlepszych łowców – zgarnięcie tej nagrody byłoby dziecinnie proste.~
+@12012 = ~Mógłbym kazać cię zabić jednym skinieniem palca, odebrać nagrodę i zapomnieć o sprawie. Jednak twoje umiejętności są rzadkie i, śmiem twierdzić, cenniejsze dla mnie, gdy wciąż oddychasz.~
+@12013 = ~Zamiast pieczętować twój los tu i teraz, daję ci wyjątkową okazję. Potraktuj to jako zaproszenie w szeregi Oka Gorgony.~
+@12014 = ~Jeśli twoje ambicje wykraczają poza zwykłe przetrwanie, a kieszenie tęsknią za ciężarem złota, nasze ścieżki mogą się nader pomyślnie przeciąć.~
+@12015 = ~Cenimy talenty takie jak twoje, a w zamian oferujemy nagrody, o jakich inni mogą tylko marzyć.~
+@12016 = ~Biorąc pod uwagę wpływy Czarnej Blizny na północy i obecność Złodziei Cienia w Amn, jak udaje ci się utrzymać pozycję pośród tak wrogich potęg?~
+@12017 = ~Co będę z tego mieć, jeśli zdecyduję się sprzymierzyć z waszą gildią?~
+@12018 = ~Jakie zadania czekają na kogoś na moim stanowisku w strukturach gildii?~
+@12019 = ~A co ze Strażą Miejską? Czy ich obecność tutaj stanowi zagrożenie dla Oka Gorgony?~
+@12020 = ~Przyjmuję ofertę i liczę na możliwości, jakie mi to otworzy.~
+@12021 = ~Choć nie ufam ludziom zbyt łatwo, zaryzykuję ten sojusz.~
+@12022 = ~Moje cele leżą poza sferą skradania się i matactw. Pospolite złodziejstwo, nawet w najbardziej wyrafinowanym wydaniu, nie pasuje do mojej ścieżki.~
+
+// Lore i ekspozycja Gildii
+
+@12023 = ~No proszę, cóż za niespodzianka. Nie spodziewałem się, że będziesz tak dobrze poinformowany. To miła odmiana po tej całej miernocie, z którą muszę się użerać. Przyznam, że to zaleta, którą podziwiam.~ ~No proszę, cóż za niespodzianka. Nie spodziewałem się, że będziesz tak dobrze poinformowana. To miła odmiana po tej całej miernocie, z którą muszę się użerać. Przyznam, że to zaleta, którą podziwiam.~
+@12024 = ~Wpływy Czarnej Blizny faktycznie wykraczają poza mury miasta, jednak jego zasięg nie jest nieograniczony, a jurysdykcja kończy się tam, gdzie zaczyna nasz teren.~
+@12025 = ~Co do Linvaila i jego ogarów – ich wzrok rzadko sięga tak daleko na północ. Tutaj, w Beregoście, pod samym nosem wielkich potęg, wykroiłem domenę dla Oka Gorgony.~
+@12026 = ~Zapewniam cię, nasza pozycja nie świadczy o słabości, lecz o strategicznej przewadze. Działamy w martwych punktach tych kolosów, wykorzystując okazje, które oni przeoczyli.~
+@12027 = ~Z czasem ich ślepota doprowadzi ich do upadku, a my będziemy gotowi, by to wykorzystać. Przymierze z nami to nie tylko walka o przetrwanie – to droga do wielkości.~
+@12028 = ~Nie jesteśmy pionkami w ich grze. Jesteśmy graczami, którzy odwrócą kartę w najmniej spodziewanym momencie.~
+@12029 = ~Oferta, którą ci składam, spowita jest cieniem. To ścieżka, którą kroczą nieliczni. Nie tylko do nas dołączysz – ty przenikniesz w samą istotę skrytości i fortelu.~
+@12030 = ~Mistrzowie cienia w naszych szeregach to nie tylko złodzieje czy szpiedzy. To artyści tego, co niewidoczne, to rzeźbiarze mroku.~
+@12031 = ~Pod ich przewodnictwem poznasz sekrety czające się pod powierzchnią Faerûnu i sztukę manipulowania samą tkanką tajemnicy i ciszy.~
+@12032 = ~Uzbrojony w wiedzę skrywaną przez wieki, narzędzia szepczące o śmierci i magię tańczącą na krawędzi ciemności, staniesz się duchem, którego świat ledwie dostrzega, a jednak panicznie się boi.~ ~Uzbrojona w wiedzę skrywaną przez wieki, narzędzia szepczące o śmierci i magię tańczącą na krawędzi ciemności, staniesz się duchem, którego świat ledwie dostrzega, a jednak panicznie się boi.~
+@12033 = ~A jeśli chodzi o twój udział w naszych przedsięwzięciach, z pewnością wykroczy on poza zwykłe gromadzenie złota.~
+@12034 = ~Zgłębiamy starożytne tajemnice, zdobywamy artefakty spowite zapomnieniem i tkamy sieć wpływów, która niczym macki przenika naczynia władzy wzdłuż całego Wybrzeża Mieczów.~
+@12035 = ~W Oku Gorgony znajdziesz nie tylko sojuszników, ale cienie, które staną u twego boku w najmroczniejszych chwilach.~
+@12036 = ~Jesteśmy bractwem poruszającym się w milczeniu, złączonym tajemnicami i nierozerwalną przysięgą tego, co niewidoczne.~
+@12037 = ~Potraktuj moją ofertę jako bilet do świata, w którym zaciera się granica między cieniem a rzeczywistością; królestwa, w którym każdy wyszeptany sekret może należeć do ciebie.~
+@12038 = ~W szeregach Oka Gorgony zostaniesz rzucony w świat wielowymiarowej i zawiłej gry pozorów, gdzie twoje działania obejmą pełne spektrum mrocznych profesji.~ ~W szeregach Oka Gorgony zostaniesz rzucona w świat wielowymiarowej i zawiłej gry pozorów, gdzie twoje działania obejmą pełne spektrum mrocznych profesji.~
+@12039 = ~Będziesz zajmować się klasycznym rzemiosłem: kradzieżą kieszonkową, otwieraniem zamków, zbieraniem informacji i realizacją kontraktów dotyczących bardziej... trwałych rozwiązań.~
+@12040 = ~Nasze aspiracje sięgają jednak dalej niż zwykłe włamania. Poznasz delikatną sztukę infiltracji, przemykając obok strażników niczym nocny szept i forsując skarbce uznawane za nie do zdobycia.~
+@12041 = ~Staniesz się niewidzialnym agentem w napadach o wysoką stawkę, gdzie nagrodą jest nie tylko bogactwo, ale sekrety i artefakty o ogromnej mocy.~ ~Staniesz się niewidzialną agentką w napadach o wysoką stawkę, gdzie nagrodą jest nie tylko bogactwo, ale sekrety i artefakty o ogromnej mocy.~
+@12042 = ~Nasze misje często będą wymagały od ciebie scalenia się z mrokiem, tak byś pozostał niewykrywalny podczas przedzierania się przez labirynty niebezpieczeństw i oszustw.~ ~Nasze misje często będą wymagały od ciebie scalenia się z mrokiem, tak byś pozostała niewykrywalna podczas przedzierania się przez labirynty niebezpieczeństw i oszustw.~
+@12043 = ~Jednak czasem potrzebne będzie śmielsze uderzenie. Szybki, decydujący cios, który oszołomi nasze cele, zanim w ogóle zdadzą sobie sprawę, co straciły.~
+@12044 = ~W naszym świecie każdy skradziony przedmiot ma swoją historię, a każdy wykradziony sekret może odmienić bieg przeznaczenia.~
+@12045 = ~Tutaj złodziejstwo to nie tylko droga do bogactwa. To narzędzie władzy, ruch w wielkiej grze toczącej się w mrocznych zakątkach Wybrzeża Mieczy.~
+@12046 = ~Ach, Straż Miejska... Owszem, ich obecność na naszych ulicach staje się coraz bardziej odczuwalna. Nie obawiaj się jednak, są oni jedynie drobną niedogodnością w naszych wielkich planach.~
+@12047 = ~Od zawsze rozkwitaliśmy w cieniu takich przeszkód. Ich patrole, ich próby egzekwowania prawa – wszystko to jest przewidywalne. A przewidywalność można łatwo wykorzystać.~
+@12048 = ~Dostosowaliśmy nasze operacje, by były jeszcze bardziej nieuchwytne, jeszcze subtelniejsze. Oni szukają cieni w mieście, które my sami spowiliśmy mrokiem.~
+@12049 = ~Oko Gorgony to nie tylko gildia. To idea, szept, który porusza się niedostrzeżony i nietknięty. Więc niech sobie patrolują. Niech wierzą, że odzyskują kontrolę.~
+@12050 = ~To tylko sprawia, że nasze zwycięstwa są słodsze, a sukcesy bardziej znamienne. W ostatecznym rozrachunku są jedynie pionkami w grze, której zasady ledwie rozumieją. A my, przyjacielu, zawsze jesteśmy o dwa kroki przed nimi.~ ~To tylko sprawia, że nasze zwycięstwa są słodsze, a sukcesy bardziej znamienne. W ostatecznym rozrachunku są jedynie pionkami w grze, której zasady ledwie rozumieją. A my, przyjaciółko, zawsze jesteśmy o dwa kroki przed nimi.~
+
+// Odmowa i powroty
+
+@12051 = ~Ach, sztuka udawania ignorancji. Klasyczne zagranie, choć w tym przypadku nazbyt przejrzyste. Podziwiam tę próbę fortelu, doprawdy, ale nie grajmy w grę, której wynik obaj znamy.~ ~Ach, sztuka udawania ignorancji. Klasyczne zagranie, choć w tym przypadku nazbyt przejrzyste. Podziwiam tę próbę fortelu, doprawdy, ale nie grajmy w grę, której wynik oboje znamy.~
+@12052 = ~Jesteś w gnieździe żmij i choć doceniam twoją przebiegłość, nie mogę ręczyć za twoje bezpieczeństwo pośród moich mniej wyrozumiałych kamratów.~
+@12053 = ~Rozsądnie byłoby szybko stąd wyjść, nim przekonasz się, jak bezlitosne potrafi być Oko Gorgony dla nieproszonych gości.~
+@12054 = ~Nasze działania wykraczają daleko poza ramy tego, co można nazwać „pospolitym złodziejstwem”.~
+@12055 = ~Niech i tak będzie. Nie brakuje nam zdolnych rąk, a wątpię, byś znalazł w Beregoście kogoś z ofertą tak szczodrą jak moja.~ ~Niech i tak będzie. Nie brakuje nam zdolnych rąk, a wątpię, byś znalazła w Beregoście kogoś z ofertą tak szczodrą jak moja.~
+@12056 = ~Zapamiętaj tylko: gdy na ulicach zawieje chłodem, a sojusznicy znikną, nie szukaj ratunku w cieniach, którymi kiedyś wzgardziłeś.~ ~Zapamiętaj tylko: gdy na ulicach zawieje chłodem, a sojusznicy znikną, nie szukaj ratunku w cieniach, którymi kiedyś wzgardziłaś.~
+@12057 = ~Stąpasz po niebezpiecznym gruncie, wracając tutaj po odrzuceniu Oka Gorgony. To nie jest sanktuarium dla postronnych, a ty, przyjacielu, właśnie pozbawiłeś się naszej ochrony.~ ~Stąpasz po niebezpiecznym gruncie, wracając tutaj po odrzuceniu Oka Gorgony. To nie jest sanktuarium dla postronnych, a ty, przyjaciółko, właśnie pozbawiłaś się naszej ochrony.~
+@12058 = ~Bądź mądry i uważnie stawiaj kolejne kroki, bo jesteś w samym sercu legowiska, które nie uważa cię już za przyjaciela. Radzę ci wyjść, i to szybko.~ ~Bądź mądra i uważnie stawiaj kolejne kroki, bo jesteś w samym sercu legowiska, które nie uważa cię już za przyjaciółkę. Radzę ci wyjść, i to szybko.~
+@12059 = ~Przychylność Oka Gorgony niełatwo odzyskać, a jeszcze trudniej umknąć przed jego gniewem.~
+
+// Przyjęcie do gildii i pierwsze zadanie
+
+@12060 = ~Doskonale. Witaj w cieniach Oka Gorgony. Zapoznaj się z naszymi zwyczajami, ale nie poczuj się zbyt pewnie. Komfort rodzi samozadowolenie, a na to nie możemy sobie pozwolić.~
+@12061 = ~Rigaldo będzie twoim przewodnikiem podczas pierwszych prób. Przygotował serię zadań, które sprawdzą twój hart ducha i pokażą, czy faktycznie posiadasz przebiegłość i umiejętności, jakich wymaga nasza gildia.~ 
+@12062 = ~Potraktuj te zadania jako swój rytuał przejścia – tygiel, w którym musisz zostać wykuty, by stać się jednym z nas.~ ~Potraktuj te zadania jako swój rytuał przejścia – tygiel, w którym musisz zostać wykuta, by stać się jedną z nas.~
+@12063 = ~Pamiętaj, stoisz na progu świata, w którym każdy szept może być sztyletem, a każdy cień – schronieniem.~
+@12064 = ~Spraw się dobrze, a zasłużysz na miejsce w naszych szeregach jako pełnoprawny członek Oka Gorgony, powiernik tajemnic, o których wielu nigdy się nie dowie.~ ~Spraw się dobrze, a zasłużysz na miejsce w naszych szeregach jako pełnoprawna członkini Oka Gorgony, powiernica tajemnic, o których wielu nigdy się nie dowie.~
+@12065 = ~Mam pilne sprawy wymagające uwagi, więc zostawiam cię w zdolnych rękach Rigalda. Wykaż się i niech twoje czyny odzwierciedlają spryt i przebiegłość, które nas definiują.~
+@12066 = ~Czas na czczą gadaninę już minął. Zajmij się swoimi obowiązkami i wypełnij powierzoną ci rolę.~
+@12067 = ~Ach, <CHARNAME>. Właśnie ciebie chciałem widzieć. Rigaldo bardzo chwali twoje umiejętności i widzi przed tobą obiecującą przyszłość w gildii.~
+@12068 = ~Jesteś już oficjalnym członkiem Oka Gorgony. Przed nami dużo pracy, ale mam pełne zaufanie do twoich zdolności.~ ~Jesteś już oficjalną członkinią Oka Gorgony. Przed nami dużo pracy, ale mam pełne zaufanie do twoich zdolności.~
+@12069 = ~A teraz przejdźmy do rzeczy. Powierzam ci ściśle tajne sprawy gildii, więc słuchaj uważnie.~
+@12070 = ~Pod moimi rozkazami służy jednostka do zadań specjalnych, złożona z wyjątkowo zdolnych szpiegów i zwiadowców, których nazywam moimi Żmijowymi głowami.~
+@12071 = ~Otrzymali oni zadanie zbadania miejsca pobytu niezwykle potężnego i starożytnego artefaktu – Kerykejonu.~
+@12072 = ~Wierzymy, że trafił do Faerûnu podczas Czasu Niepokojów, ale wkrótce potem został zniszczony i rozdzielony na trzy fragmenty.~
+@12073 = ~Naszym celem jest zebranie tych fragmentów i zrekonstruowanie kostura. Nasi doświadczeni alchemicy opracowali już metodę, jak tego dokonać.~
+@12074 = ~Nasze najnowsze informacje wskazują na mroczną czarodziejkę, która zaszyła się wysoko na Wzgórzach Gibberlingów i posiada jeden z odłamków. Chcę, żebyś go odzyskał.~ ~Nasze najnowsze informacje wskazują na mroczną czarodziejkę, która zaszyła się wysoko na Wzgórzach Gibberlingów i posiada jeden z odłamków. Chcę, żebyś go odzyskała.~
+@12075 = ~To będzie wymagające przedsięwzięcie, wymagające znacznego wysiłku na wszystkich frontach. Ufam, że podołasz temu wyzwaniu.~
+@12076 = ~Co możesz mi powiedzieć o Kerykejonie?~
+@12077 = ~Jak można zostać Żmijową głową?~
+@12078 = ~Gdzie dokładnie znajdują się Wzgórza Gibberlingów?~
+@12079 = ~Wrócę, gdy zdobędę fragment.~
+@12080 = ~Kerykejon to magiczny kostur o bezprecedensowej mocy, wykuty w bezdennych otchłaniach podziemia przez wężowe półbóstwa – siostry Gorgony.~
+@12081 = ~Słabe umysły większości historyków uznały go za zwykłą legendę. Ich brak ciekawości to rażące świadectwo ignorancji.~
+@12082 = ~Jednak my, fachowcy, wiemy lepiej. Rozumiemy mroczny urok, który drzemie w sercu takich tajemnic.~
+@12083 = ~Artefakt istnieje, a każdy z odłamków zawiera esencję innej siostry, milcząco czekając na ich powrót.~
+@12084 = ~Zostanie Żmijową głową wymaga czegoś więcej niż tylko umiejętności. Musisz posiadać instynkt cienia – wrodzoną zdolność do wtapiania się w każde otoczenie.~
+@12085 = ~Musisz umieć błyskawicznie myśleć, adaptować się do nieprzewidzianych okoliczności i, przede wszystkim, zachowywać absolutną dyskrecję.~
+@12086 = ~To nie jest ścieżka dla ludzi o słabym sercu, ale ci, którzy się wykażą, dostępują zaszczytu dołączenia do tej grupy.~ ~To nie jest ścieżka dla ludzi o słabym sercu, ale te, które się wykażą, dostępują zaszczytu dołączenia do tej grupy.~
+
+@12087 = ~Znajdziesz je daleko na południowym wschodzie; Wzgórza te górują nad wejściem do kopalni Nashkel.~
+@12088 = ~Wiedziałem, że mogę na ciebie liczyć. Odnajdź mroczną wiedźmę i odzyskaj artefakt, bez względu na koszty.~
+@12089 = ~Jeśli chcesz dowiedzieć się więcej, Saradin jest skrupulatnym kronikarzem spraw Kerykejonu. Udaj się do niego z dalszymi pytaniami.~
+@12090 = ~Ta misja ma ogromne znaczenie. Porażka nie wchodzi w grę.~
+
+// Raport z fragmentem
+
+@12091 = ~Fragment Kerykejonu... tutaj, na wyciągnięcie ręki. Nawet gdy się zbliżasz, samo powietrze zdaje się drżeć od jego pradawnej aury. Oddaj mi go, szybko.~
+@12092 = ~Ach, chwila, o której marzyłem, odkąd byłem chłopcem słuchającym opowieści w mroku. Spójrz na niego, <CHARNAME>. Czy czujesz ten przypływ mocy? Nieustępliwe przyciąganie jego obietnicy?~
+@12093 = ~Nawet w tym żałosnym stanie przemawia do nas wizją panowania – potęgą tak rozległą i upajającą, że aż niemal nie do zniesienia.~
+@12094 = ~To zaledwie ułamek jego pełnej chwały; nęcący przedsmak absolutnej supremacji, która na nas czeka.~
+@12095 = ~Muszę wiedzieć wszystko, każdy szczegół waszego spotkania. Nie szczędź słów, bo to opowieść, która wyryje się w samej duszy Oka Gorgony.~
+@12096 = ~Twój wyczyn to nie tylko zwycięstwo. To krok prowadzący ku przyszłości, w której dzierżyć będziemy władzę, jakiej ten świat nigdy nie widział.~
+@12097 = ~Czarodziejka wydawała się niestabilna, była cieniem samej siebie, jakby trawił ją wpływ Kerykejonu.~
+@12098 = ~Wspominała o innych łotrzykach, którzy napadli ją z powodu Kerykejonu, lgnąc do jego mocy niczym ćmy do ognia.~
+@12099 = ~Gdy wybuchła walka, użyła mocy fragmentu, by przywołać węże z nicości, jakby naginała samą esencję Kerykejonu do swojej woli.~
+@12100 = ~Choć szczegółów mojej podroży jest wiele, może powinniśmy skupić się na tym, co istotne. Fragment jest nasz, ale jasne jest, że nie tylko my bierzemy udział w tych łowach.~
+@12101 = ~Kerykejon to doprawdy potężny artefakt, nie tylko ze względu na swoją moc, ale i ogromną odporność psychiczną, jakiej wymaga od właściciela.~
+@12102 = ~Powszechnym błędem jest niedocenianie żniwa, jakie takie przedmioty potrafią zebrać w słabym umyśle.~
+@12103 = ~Aby okiełznać jego pełny potencjał, trzeba posiadać nie tylko biegłość magiczną, ale i niezłomny hart ducha, by ustrzec się przed cieniami, którymi spowija on duszę.~
+@12104 = ~Wygląda na to, że w tym przypadku tej kobiety zabrakło wewnętrznej siły niezbędnej do odparcia jego wpływu. Stała się ofiarą tej przytłaczającej potęgi, zamiast zostać jej panią.~
+@12105 = ~Taki jest los tych, którzy pożądają mocy, nie rozumiejąc ceny, jaką za nią zapłacą.~
+@12106 = ~Ujawniłem już wszystkie szczegóły misji, Baldwinie. Mój raport jest skończony.~ ~Ujawniłam już wszystkie szczegóły misji, Baldwinie. Mój raport jest skończony.~
+@12107 = ~Ten obrót spraw jest doprawdy intrygujący... i niepokojący. Fakt, że inni łotrzykowie byli w to zamieszani i wiedzieli o posiadaniu przez nią fragmentu, sugeruje lukę w naszym systemie bezpieczeństwa.~
+@12108 = ~To rodzi kilka niewygodnych pytań: Kto jeszcze wie o naszych operacjach i jak wszedł w posiadanie tych informacji? Co więcej, zamiary tych łotrzyków pozostają niejasne.~
+@12109 = ~Czy byli to zwykli oportuniści skuszeni blaskiem Kerykejonu, czy może w grę wchodzi głębsza, bardziej zorganizowana intryga?~
+@12110 = ~Obawiam się, że ten incydent to zaledwie jedna nić w znacznie większej i bardziej złożonej sieci, której jeszcze nie zdołaliśmy rozplątać.~
+@12111 = ~Musimy postępować z najwyższą czujnością, bo nasza ścieżka stała się znacznie bardziej zdradliwa przez tych nieznanych graczy czających się w mroku.~
+@12112 = ~To doprawdy niezwykły pokaz potęgi. Twoja relacja idealnie pokrywa się z legendami otaczającymi Kerykejon.~
+@12113 = ~Mówi się, że zdolność rozkazywania wężom to bezpośredni dar od sióstr Gorgony, manifestacja ich woli i esencji.~
+@12114 = ~Zdolność ta, znana jako „Potomstwo Gorgony”, jest niezwykle rzadka i potężna. Świadczy o głębokiej i nierozerwalnej więzi z artefaktem, a tym samym z samymi siostrami.~
+@12115 = ~Ta magini, mimo swego obłędu, musiała pozostawać w głębokiej, choć niebezpiecznej wspólnoty z Kerykejonem, skoro władała tak nadzwyczajną mocą.~
+@12116 = ~To objawienie jest równie fascynujące, co złowieszcze. Możliwości Kerykejonu są dokładnie tak głębokie i mistyczne, jak przypuszczałem.~
+@12117 = ~Musimy stąpać ostrożnie, wkraczając coraz głębiej w sferę potęg tak starożytnych, że z samej swej natury stają się nieprzewidywalne i zabójcze.~
+
+// Konfrontacja ze Złodziejami Cienia i pościg
+
+@12118 = ~Słuchaj uważnie. Wyczułem ostatnio czyjąś obecność... poruszenie w cieniach, które nie jest naszym dziełem. W mieście pojawiły się obce, nieproszone spojrzenia.~
+@12119 = ~Stało się jasne, że jesteśmy pod obserwacją. Prawdopodobnie to próba wybadania, co wiemy o Kerykejonie. Moi szpiedzy sprawdzą tę sprawę dokładniej.~
+@12120 = ~Zajmij się swoimi codziennymi obowiązkami, ale zachowaj czujność, zwłaszcza w mieście. Obserwuj każdy cień i nie ufaj żadnej napotkanej twarzy.~
+@12121 = ~To wszystko, czego teraz potrzebuję. Możesz odejść. Wezwę cię, gdy nadejdzie czas.~
+@12122 = ~<CHARNAME>! Wyjdź na powierzchnię i wyeliminuj z miasta wszystkich Złodziei Cienia.~
+@12123 = ~Znalazłem te raporty przy zabitych, ale nie potrafię odszyfrować ich treści.~ ~Znalazłam te raporty przy zabitych, ale nie potrafię odszyfrować ich treści.~
+@12124 = ~Zrozumiano.~ 
+@12125 = ~Daj mi te dokumenty! Ich szyfr jest dla mnie niczym ojczysty język.~
+@12126 = ~Niewiarygodne...~
+@12127 = ~Odwołać rozkazy! To był atak pozorowany! To tylko dywersja, podstęp mający odwrócić naszą uwagę, podczas gdy oni realizują swój właściwy plan.~
+@12128 = ~Ich główne siły wcale się tu nie ociągają. Thamuz prowadzi ich na północ, do Lasu Ostrych Kłów.~
+@12129 = ~Planują negocjacje z grupą przemytników w celu nabycia fragmentu Kerykejonu! Niech ich szlag trafi! Na każdym kroku wyprzedzają nas o jeden ruch!~
+@12130 = ~<CHARNAME>, natychmiast ruszaj na północ. Unikaj wszelkiej walki. Jeśli się pośpieszysz, możesz dotrzeć do przemytników, zanim zjawi się tam ich główny batalion.~
+@12131 = ~Jeśli wierzyć temu raportowi, ich kontakt, Nagate, będzie czekał przy starożytnych elfich ruinach. Tam odbędzie się wymiana.~
+@12132 = ~Ariosh wspomniał, że Thamuz dowodzi ich uderzeniem. Biorąc pod uwagę twoją przeszłość ze Złodziejami Cienia, czy wiesz o nim coś, co mogłoby nam pomóc?~
+@12133 = ~Złodzieje Cienia są przebiegli. Czy to nie jest aby pułapka, która ma nas wciągnąć w zasadzkę?~
+@12134 = ~Wyruszam natychmiast. Będę szybki i cichy.~ ~Wyruszam natychmiast. Będę szybka i cicha.~
+@12135 = ~Thamuz... imię przesiąknięte cieniami i krwią z mojej przeszłości. Wśród Złodziei Cienia był postacią owianą mroczną sławą – mistrzem nocy, biegłym w sztuce zadawania cichej śmierci.~
+@12136 = ~Tak, pamiętam go dobrze. Chłodny, wyrachowany strateg o umyśle ostrym jak sztylety, którymi tak chętnie się posługuje. Jego skoki były pokazem czystej dezinformacji, nie zostawiał po sobie nic prócz strachu.~
+@12137 = ~Kiedy zerwałem więzi ze Złodziejami Cienia, Thamuz uznał to za ogromną zdradę. Dla niego nie było to zwykłe odejście, lecz otwarte rzucenie wyzwania; sprzeciw wobec porządku, który tak bezwzględnie egzekwował.~
+@12138 = ~To, że teraz dowodzi ich grupą, nie jest zbiegiem okoliczności. Thamuz nie poluje tylko na Kerykejon. Chce dowieść swej dominacji i na nowo wyznaczyć granice wpływów.~
+@12139 = ~Nie miej złudzeń – konfrontacja z Thamuzem to starcie z jednym z najgroźniejszych przeciwników z najmroczniejszych zakątków mojej przeszłości.~
+@12140 = ~Śpiesz się, czas gra na naszą niekorzyść.~
+@12141 = ~Twoja ostrożność jest uzasadniona, a niedocenienie Thamuza byłoby głupotą. Ryzyko pułapki jest tak realne, jak cienie, w których się skrywamy.~
+@12142 = ~Jednak sam szept o Kerykejonie sprawia, że to gambit, którego nie możemy zignorować. Kroczymy ścieżką niepewności, ale i taką, która może nas doprowadzić do niewyobrażalnej potęgi.~
+@12143 = ~W naszym świecie każdy cień może być pułapką, a każdy sojusznik potencjalnym wrogiem. To cena, jaką płacimy za handel tajemnicami i władzą.~
+@12144 = ~Idź z ciszą nocy i przebiegłością żmii. Niech cienie będą twoim sprzymierzeńcem, a jeśli to sidła – niech się zacisną. Albowiem w sercu niebezpieczeństwa drzemie ziarno szansy.~
+@12145 = ~Każda stracona chwila wzmacnia pozycję Thamuza. Ruszaj szybko i niech twoją odpowiedzią będzie czyn.~
+
+// Powrót po pokonaniu Thamuza
+
+@12146 = ~Ach, <CHARNAME>! Wieści o twoich ostatnich dokonaniach niosą się szerokim echem. Thamuz pokonany, a fragment Kerykejonu w twoim posiadaniu. Takie wyczyny są godne uwagi, nawet według naszych standardów.~
+@12147 = ~Przekaż mi ten  fragment. Jego zdobycie to milowy krok w naszych dążeniach, lecz to w okolicznościach jego przejęcia – w tej grze intelektów i woli – kryje się prawdziwa wiedza.~
+@12148 = ~Czuję się w obowiązku zapytać o niuanse twojego starcia z Thamuzem. Był człowiekiem znanym z tego, że skrywał prawdę w mroku. Ciekawi mnie, co wydarzyło się w tych decydujących momentach.~
+@12149 = ~Thamuz przekazał mi złowrogie ostrzeżenie dotyczące Kerykejonu. Twierdził, że to siła chaosu, a twoje ambicje, by go scalić, sprowadzą na Faerûn nieszczęście.~
+@12150 = ~Dowiedziałem się, że atak na Beregost nie był tylko ich inicjatywą. Ktoś inny, z bardzo zasobnym trzosem, wynajął ich specjalnie po to, by osłabić naszą pozycję.~ ~Dowiedziałam się, że atak na Beregost nie był tylko ich inicjatywą. Ktoś inny, z bardzo zasobnym trzosem, wynajął ich specjalnie po to, by osłabić naszą pozycję.~
+@12151 = ~Moc Kerykejonu jest oczywista, jednak cel, jakiemu ma służyć w twoich rękach, pozostaje dla mnie tajemnicą. Co dokładnie zamierzasz osiągnąć?~
+@12152 = ~Poza samą walką i zdobyciem fragmentu nie wydarzyło się nic godnego uwagi.~
+@12153 = ~Thamuz... wieczny pan marionetek, snujący swe sieci kłamstw. To umiejętność, którą przez lata opanował do perfekcji.~
+@12154 = ~Weź pod uwagę możliwość, że chciał jedynie zasiać w nas ziarno nieufności – zwłaszcza gdy jego próba wyeliminowania cię spaliła na panewce.~
+@12155 = ~Co do samego Kerykejonu – poświęciłem jego badaniu całe życie. Jestem w pełni świadom zarówno płynących z niego zagrożeń, jak i obietnic.~
+@12156 = ~Moje studia i zrozumienie jego magicznych zawiłości wykraczają poza to, co większość mogłaby pojąć. Moc, którą skrywa, jest nie tylko kontrolowalna, ale może zostać użyta do zaprowadzenia całkowitej dominacji.~
+@12157 = ~Nie wątp – los Kerykejonu w moich rękach jest bezpieczny. Stoimy na progu realizacji wizji, która na nowo zdefiniuje naszą egzystencję.~
+@12158 = ~To doprawdy intrygujące. Odkrycie, jakoby zewnętrzny podmiot finansował Złodziei Cienia przeciwko nam, sugeruje znacznie bardziej zawikłaną grę.~
+@12159 = ~Kto mógłby żywić taką niechęć lub lęk przed naszym wzrostem w siłę? To wymaga gruntownego śledztwa. Musimy rozplątać tę sieć intryg i zdemaskować architekta tej ukrytej agresji.~
+@12160 = ~Zmobilizuję naszą sieć szpiegów, by zapuścili się w mrok i wydobyli informacje z najskrytszych zakątków Beregostu i okolic.~
+@12161 = ~Nie możemy pozwolić, by tak zuchwałe ataki na Oko Gorgony pozostały bez odpowiedzi. Ktokolwiek za tym stoi, popełnił krytyczny błąd, niedoceniając zasięgu i zasobów naszej gildii.~
+@12162 = ~W obliczu otwartego konfliktu ze Złodziejami Cienia, ukrywanie moich intencji nie ma już większego sensu.~
+@12163 = ~Kerykejon – relikwia, której pożądałem od młodości, gdy słuchałem o niej w opowieściach mojego brata Richarda – to coś więcej niż tylko narzędzie zemsty.~
+@12164 = ~To kamień węgielny wielkiego planu, zrodzonego w cieniach zapomnianej przeszłości.~
+@12165 = ~Moje zamiary wykraczają poza zwykłą wendettę. Chodzi o przekształcenie samej istoty władzy. Rozbicie Złodziei Cienia i wyrżnięcie ich przywódców to zaledwie pierwszy krok.~
+@12166 = ~Następnym etapem będzie konsolidacja ich niedobitków pod naszym panowaniem. Oko Gorgony wyłoni się nie tylko jako zwycięzca, lecz jako suweren podziemnego świata.~
+@12167 = ~Mocy Kerykejonu nie należy się lękać, lecz władać nią z precyzją. Lata spędzone w szeregach Złodziei Cienia nauczyły mnie skrupulatności, która zapewni nam triumf.~
+@12168 = ~Stoimy u progu nowej epoki – ery, w której cienie ugną się przed naszą wolą, a Oko Gorgony spoglądać będzie na świat dojrzały do naszych rządów.~
+@12169 = ~Twoja rola w tych wielkich planach bynajmniej się jednak nie kończy. Bądź w gotowości na kolejne rozkazy dotyczące Kerykejonu i naszej trwającej zwady ze Złodziejami Cienia.~
+@12170 = ~Do tego czasu powróć do swoich standardowych obowiązków w gildii. Pod twoją nieobecność nagromadziło się mnóstwo spraw wymagających uwagi.~
+@12171 = ~Wyznaczono nagrody, sporządzono kontrakty i pojawiły się nowe doniesienia na temat straży miejskiej. Wygląda na to, że narasta fala niepokoju, którą musimy zdusić w zarodku.~
+@12172 = ~Co więcej, pewien niepokój wkradł się w szeregi naszych kurtyzan, mącąc rytm naszych operacji. Ufam, że uspokoisz te nastroje i opanujesz sytuację ze swoją zwykłą skutecznością.~
+@12173 = ~Na razie możesz odejść. Zajmij się tymi sprawami i czekaj na moje wezwanie. Ścieżka, którą kroczymy, jest kręta, lecz z twoją pomocą nasz triumf jest nieunikniony.~
+
+// Zdrada Gerarda Travenhursta
+
+@12174 = ~Otrzymałem tę wiadomość od jednej z twoich Żmijowych głów, nim skonała z odniesionych ran.~ ~Otrzymałam tę wiadomość od jednej z twoich Żmijowych głów, nim skonała z odniesionych ran.~
+@12175 = ~Dawaj ją natychmiast! Ostatni czyn Żmijowej głowy nigdy nie jest pozbawiony znaczenia.~
+@12176 = ~Ach, to... to najpodlejsza zdrada!~
+@12177 = ~Beregost, to miasto tchórzy! I ten ich żałosny lord, Gerard Travenhurst... on śmie mi się sprzeciwiać?~
+@12178 = ~Zdradził nas na rzecz Złodziei Cienia i zaoferował im ostatni fragment Kerykejonu w ramach zapłaty!~
+@12179 = ~Ten człowiek, który niegdyś płaszczył się u naszych drzwi, błagając o przysługi, teraz waży się rzucić wyzwanie potędze Oka Gorgony.~
+@12180 = ~Żadnego honoru, żadnej lojalności. To podłe czasy, które wymagają krwawego rozliczenia.~
+@12181 = ~Musimy działać szybko. Czas subtelności dobiegł końca. Dopadniemy tego zdrajcę w jego własnym leżu – w tej luksusowej posiadłości, która wkrótce stanie się świadkiem jego upadku.~
+@12182 = ~Osobiście dopilnuję, by Gerard Travenhurst odpowiedział za ten haniebny akt. Pozna cenę wchodzenia w drogę Oku Gorgony.~
+@12183 = ~Jasne jest, że Gerard wybrał już swoją ścieżkę. Wkrótce poniesie konsekwencje swoich czynów.~
+@12184 = ~Nie powinniśmy go lekceważyć. Czy to nie jest aby kolejna pułapka?~
+@12185 = ~Niezależnie od czynów Gerarda, naszym priorytetem powinno być odzyskanie fragmentu Kerykejonu.~
+@12186 = ~Dobrze powiedziane, <CHARNAME>. Sprawiedliwość nadejdzie szybko, a Gerard zapłaci za swą zdradę najwyższą cenę.~
+@12187 = ~W takim razie ją zneutralizuję. Kerykejon będzie mój, a z jego pomocą unicestwię każdego, kto stanie mi na drodze.~
+@12188 = ~Tak. Kerykejon to nasz klucz do potęgi i wpływów. Z jego pomocą udzielimy im lekcji, której nigdy nie zapomną.~
+@12189 = ~Przygotuj się, <CHARNAME>. Ta konfrontacja będzie zwieńczeniem wszystkiego, o co walczyliśmy.~
+@12190 = ~Głupota Gerarda posłuży za przestrogę dla każdego, kto ośmieli się nam sprzeciwić. Kerykejon będzie nasz, a wraz z nim nadejdzie świt nowej ery pod naszym panowaniem.~
+
+// Zdobycie ostatniego fragmentu - różne drogi
+
+@12191 = ~Ucieszy cię wiadomość, że natrafiłem na ostatni fragment Kerykejonu. Zwycięstwo jest nasze, Baldwinie.~ ~Ucieszy cię wiadomość, że natrafiłam na ostatni fragment Kerykejonu. Zwycięstwo jest nasze, Baldwinie.~
+@12192 = ~Ty co? Jak to możliwe! Mów, szybko!~
+@12193 = ~Zdobyłem go na aukcji czarnorynkowej w Głębokich Piwnicach we Wrotach Baldura. Sprzedawano go jako zwykły artefakt historyczny, ale rozpoznałem jego prawdziwą wartość.~ ~Zdobyłam go na aukcji czarnorynkowej w Głębokich Piwnicach we Wrotach Baldura. Sprzedawano go jako zwykły artefakt historyczny, ale rozpoznałam jego prawdziwą wartość.~
+@12194 = ~Miałem starcie ze Złodziejem Cienia o imieniu Quass. Konfrontacja była nieunikniona i zakończyła się jego śmiercią. Fragment był wśród jego rzeczy.~ ~Miałam starcie ze Złodziejem Cienia o imieniu Quass. Konfrontacja była nieunikniona i zakończyła się jego śmiercią. Fragment był wśród jego rzeczy.~
+@12195 = ~W głębinach ruin Firewine, pośród starożytnych relikwii i duchów, znalazłem fragment ukryty w zapomnianej komnacie.~ ~W głębinach ruin Firewine, pośród starożytnych relikwii i duchów, znalazłam fragment ukryty w zapomnianej komnacie.~
+@12196 = ~W głębi Kniei Otulisko, ukryty pod starożytnym drzewem, odkryłem ten fragment – prawdopodobnie zostawiony tam przez druidów, którzy lękali się jego mocy.~ ~W głębi Kniei Otulisko, ukryty pod starożytnym drzewem, odkryłam ten fragment – prawdopodobnie zostawiony tam przez druidów, którzy lękali się jego mocy.~
+@12197 = ~Daj mi go. Niech zobaczę ten zdobyczny fragment, który udało ci się odnaleźć.~
+
+// Wizja nowej ery i przygotowania do scalenia
+
+@12198 = ~To niemal poetyckie, nie sądzisz? Jak przeznaczenie przędzie swą zawiłą sieć, prowadząc cię do mego azylu i powstrzymując mą dłoń przed uderzeniem w kogoś, kto niegdyś mógł być uznany za wroga.~
+@12199 = ~Wyświadczyłeś mi przysługę o nieocenionej wartości. Doniosłość tej chwili nie uchodzi mojej uwadze i zapewniam cię, że twoje starania zostaną nagrodzone nader szczodrze.~ ~Wyświadczyłaś mi przysługę o nieocenionej wartości. Doniosłość tej chwili nie uchodzi mojej uwadze i zapewniam cię, że twoje starania zostaną nagrodzone nader szczodrze.~
+@12200 = ~Jednak nasza droga tutaj się nie kończy. Przed nami żmudna praca. Muszę zgłębić magiczne zawiłości niezbędne do scalenia Kerykejonu.~
+@12201 = ~Takie rytuały są niezwykle delikatne i wymagają skrupulatnych przygotowań, opartych na starożytnej magii i precyzyjnych inkantacjach.~
+@12202 = ~Tymczasem dopilnuj, aby w gildii wszystko było w należytym porządku. Dokończ zaległe misje i utrzymaj stan równowagi, który wspólnie wypracowaliśmy.~
+@12203 = ~Bądź jednak czujny i pozostań w zasięgu ręki. Gdy przygotowania dobiegną końca, będziemy potrzebowali każdej sprawnej dłoni i każdego bystrego umysłu do wyzwań, które nas czekają.~ ~Bądź jednak czujna i pozostań w zasięgu ręki. Gdy przygotowania dobiegną końca, będziemy potrzebowali każdej sprawnej dłoni i każdego bystrego umysłu do wyzwań, które nas czekają.~
+@12204 = ~Połączenie fragmentów Kerykejonu to nie tylko wydarzenie – to zmiana o skali kataklizmu, która właśnie ma się dokonać.~
+@12205 = ~Nasze działania podczas nadchodzących prób nie tylko ukształtują nasz los, ale zdefiniują na nowo samą istotę władzy w tej krainie.~
+@12206 = ~Przygotuj się, <CHARNAME>, albowiem stoimy na progu nowej ery, wykuwanej przez naszą wolę.~

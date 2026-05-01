@@ -1,0 +1,977 @@
+@2   = ~Krystaliczna kolia~
+@3   = ~Krystaliczna kolia to elegancka ozdoba, misternie wykonana ze srebra i zwieńczona pojedynczym, lśniącym kryształem. Kamień, osadzony w filigranowej oprawie, emanuje delikatnym, pulsującym blaskiem, który zdaje się współgrać z biciem serca osoby noszącej amulet. Noszenie tego naszyjnika wyostrza koncentrację i usprawnia pracę umysłu, jakby wzmacniało wewnętrzną klarowność właściciela.
+
+PARAMETRY:
+
+Specjalne:
+– Inteligencja: +1
+– Klasa Pancerza: +1
+– Rzuty obronne: +1
+– Odporność na magię: +5%
+– Umożliwia zapamiętanie 1 dodatkowego czaru 1.-5. poziomu
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@4   = ~Strzała kwasowa +2~
+@5   = ~Ta starannie wykonana strzała została pokryta silnie żrącym kwasem, który przylega do drzewca i grotu. Po trafieniu substancja natychmiast zaczyna przeżerać ciało i pancerz ofiary, w okrutny sposób pogłębiając i jątrząc ranę. Trafienie nie jest więc wyłącznie kwestią siły uderzenia – niszczycielska reakcja chemiczna potrafi dopełnić dzieła, zadając ból i śmierć.
+
+PARAMETRY:
+
+Obrażenia: 1k6 +2, +2k6 obrażeń od kwasu
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: łuk
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@6   = ~Pałka ogłuszająca~
+@7   = ~Pałka ogłuszająca to ulubione narzędzie członków gildii Oko Gorgony. Składa się z dociążonego skórzanego rękawa, ciasno owiniętego wokół giętkiego rdzenia, i służy do zadawania szybkich, cichych ciosów, których celem jest ogłuszenie niczego niepodejrzewającej ofiary.
+
+PARAMETRY:
+
+Specjalne:
+– Zadaje obrażenia nieśmiercionośne
+
+Obrażenia: 1k3
+Typ obrażeń: obuchowe
+Opóźnienie: 2
+Rodzaj biegłości: maczuga
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@8   = ~Bełt kwasowy +1~
+@9   = ~Ten bełt do kuszy został starannie nasączony jadem skorpiona, co znacząco zwiększa jego śmiercionośność. Po trafieniu trucizna przenika do rany, wywołując potworny ból i paraliż. Zaprojektowano go tak, by umożliwiał szybką i cichą eliminację celu – cechę szczególnie cenioną przez skrytobójców.
+
+PARAMETRY:
+
+Obrażenia: 1k8 +1, +1k8 obrażeń od kwasu
+TraK0: +1
+Typ obrażeń: pocisk
+Wyrzutnia: kusza
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@10  = ~Bełt kwasowy +2~
+@11  = ~Ten wzmocniony bełt jest przerażającym dziełem rzemiosła, nasyconym zabójczymi jadami skorpionów i węży. Po trafieniu wprowadza podwójną dawkę toksyn, powodując rozległe obrażenia wewnętrzne oraz gwałtowne wyniszczenie organizmu ofiary.
+
+PARAMETRY:
+
+Obrażenia: 2k8 +2, +2k8 obrażeń od kwasu
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: kusza
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@12  = ~Kompendium złodzieja~
+@13  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część poświęcona jest budowaniu odporności na trucizny powszechnie stosowane przez skrytobójców.
+
+PARAMETRY:
+
+Specjalne:
+– Kondycja: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@14  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje metody wzmacniania wytrzymałości, pozwalające przez wiele godzin pozostawać w bezruchu podczas oczekiwania na ofiarę.
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@15  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część poświęcona jest technikom zręczności manualnej, a także rozmaitym sztuczkom i manewrom.
+
+PARAMETRY:
+
+Specjalne:
+– Zręczność: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@16  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część obejmuje zagadnienia przygotowujące złodzieja do skutecznego działania w każdym środowisku.
+
+PARAMETRY:
+
+Specjalne:
+– Inteligencja: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@17  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część poświęcona jest sztuce taktu i perswazji.
+
+PARAMETRY:
+
+Specjalne:
+– Charyzma: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@18  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje losy znamienitych złodziei minionych epok, a także ich rozwagę oraz praktyki, którymi się kierowali.
+
+PARAMETRY:
+
+Specjalne:
+– Mądrość: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@19  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część dotyczy właściwego wykorzystania zarówno technik fizycznych, jak i umysłowych, by unikać zagrożeń.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1 na stałe
+– Rzuty obronne: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@20  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część omawia słabe punkty rozmaitych istot oraz sposoby zadawania skuteczniejszych ciosów.
+
+PARAMETRY:
+
+Specjalne:
+– TraK0: +1 na stałe
+– Obrażenia: +1 na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@21  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje metody przeciwstawiania się magii przy użyciu sprytu i umysłowych sztuczek.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na magię: +5% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@22  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część dotyczy treningu umysłu i ciała, który pozwala znosić oraz przezwyciężać ból fizyczny.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na obrażenia obuchowe: +5% na stałe
+– Odporność na obrażenia sieczne: +5% na stałe
+– Odporność na obrażenia kłute: +5% na stałe
+– Odporność na pociski: +5% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@23  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje trening, który pozwala przeciwstawiać się niszczycielskim żywiołom świata.
+
+PARAMETRY:
+
+Specjalne:
+– Odporność na zimno: +5% na stałe
+– Odporność na ogień: +5% na stałe
+– Odporność na elektryczność: +5% na stałe
+– Odporność na kwas: +5% na stałe
+– Odporność na trucizny: +5% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@24  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje, jak wypatrywać słabych punktów przeciwnika, nie zdradzając przy tym swojej obecności.
+
+PARAMETRY:
+
+Specjalne:
+– Modyfikator ciosu w plecy zwiększony na stałe o 1
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@25  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część omawia narzędzia i techniki wykorzystywane w sztuce otwierania zamków.
+
+PARAMETRY:
+
+Specjalne:
+– Otwieranie zamków: +10% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@26  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część dotyczy rozpoznawania, rozbrajania oraz zastawiania rozmaitych pułapek.
+
+PARAMETRY:
+
+Specjalne:
+– Znajdowanie pułapek: +10% na stałe
+– Zastawianie pułapek: +10% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@27  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część opisuje sztuczki i techniki kradzieży kieszonkowej, pozwalające utrzymać ofiarę w nieświadomości i rozproszeniu.
+
+PARAMETRY:
+
+Specjalne:
+– Kradzież kieszonkowa: +10% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@28  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część dotyczy skradania się oraz sztuki pozostawania niewidocznym – zarówno dla wzroku, jak i dla słuchu.
+
+PARAMETRY:
+
+Specjalne:
+– Ciche chodzenie: +10% na stałe
+– Krycie się w cieniu: +10% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@29  = ~Kompendium złodzieja to zbiór starannie opracowanych traktatów przeznaczonych zarówno dla doświadczonych, jak i początkujących adeptów złodziejskiego rzemiosła. Spisane przez wyznawców Maski, Pana Cieni, zawierają wiedzę o tradycyjnych umiejętnościach wykorzystywanych w działaniach prowadzonych jawnie, jak i z ukrycia. Tomy te nasycono potężnymi zaklęciami, czyniąc je nieczytelnymi dla wszystkich poza tymi, którzy kroczą ścieżkami Maski. Jedynie prawdziwy złodziej potrafi odblokować sekrety skrywane na ich kartach. Ta część poświęcona jest wykrywaniu iluzji oraz odróżnianiu fałszu od rzeczywistości.
+
+PARAMETRY:
+
+Specjalne:
+– Wykrycie iluzji: +10% na stałe
+– Znika po przeczytaniu
+– W celu użycia należy włożyć do przegródki Podręcznego przedmiotu
+
+Waga: 5~
+@30  = ~Pocisk kwasowy +1~
+@31  = ~Pociski te wykuto z utwardzonego jadu węży, tworząc niewielką, lecz śmiercionośną amunicję. Po trafieniu jadowita substancja zaczyna się rozpuszczać, powodując poważne uszkodzenia narządów wewnętrznych celu. Lekka konstrukcja sprzyja szybkim i cichym atakom.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +1, +1k6 obrażeń od kwasu
+TraK0: +1
+Typ obrażeń: pocisk
+Wyrzutnia: proca
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@32  = ~Pocisk kwasowy +2~
+@33  = ~Jeszcze bardziej zabójcza odmiana pocisków kwasowych, wykonana z utwardzonego jadu węży i wzbogacona dodatkowym, żrącym środkiem zdolnym przenikać przez większość osłon. Zawarty w nich kwas jest tak silny, że po kontakcie zaczyna rozpuszczać ciało i kości, czyniąc te pociski wyjątkowo śmiercionośnymi.
+
+PARAMETRY:
+
+Obrażenia: 1k4 +2, +2k6 obrażeń od kwasu
+TraK0: +2
+Typ obrażeń: pocisk
+Wyrzutnia: proca
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@34  = ~Sztylet~
+@35  = ~Kukri kwasowe +1~
+@36  = ~Typowy sztylet ma ostro zakończone, zwykle obosieczne ostrze. W przeciwieństwie do niego nóż jest jednosieczny i nieco krótszy.
+
+PARAMETRY:
+
+Obrażenia: 1k4
+Typ obrażeń: kłute
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+@37  = ~Choć z wyglądu przypomina sztylet, kukri pozwala na szybsze i skuteczniejsze cięcia dzięki charakterystycznie zakrzywionej głowni. To wykwintna broń wykuta przez zręczne dłonie słynnych elfickich kowali z Evereski. Ostrze lśni eterycznym, zielonkawym blaskiem – świadectwem elfickiego kunsztu i zaklęć splecionych w stali.
+
+PARAMETRY:
+
+Specjalne:
+– Każde trafienie zadaje 1 obrażenie od kwasu na rundę przez 3 rundy
+
+Obrażenia: 1k4 +1, +1 obrażenie od kwasu
+TraK0: +1
+Typ obrażeń: sieczne
+Opóźnienie: 1
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@38  = ~Kukri kwasowe +2~
+@39  = ~Choć z wyglądu przypomina sztylet, kukri pozwala na szybsze i skuteczniejsze cięcia dzięki charakterystycznie zakrzywionej głowni. To wykwintna broń wykuta przez zręczne dłonie słynnych elfickich kowali z Evereski. Ostrze lśni eterycznym, zielonkawym blaskiem – świadectwem elfickiego kunsztu i zaklęć splecionych w stali. Broń tę zmodyfikował alchemik Rhade, dodatkowo wzmacniając działanie kwasu pokrywającego ostrze.
+
+PARAMETRY:
+
+Specjalne:
+– Każde trafienie zadaje 1 obrażenie od kwasu co 1/2 rundy przez łącznie 3 rundy
+
+Obrażenia: 1k4 +2, +2 obrażenia od kwasu
+TraK0: +2
+Typ obrażeń: sieczne
+Opóźnienie: 0
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@40  = ~Sztylet +2: Jad węża~
+@41  = ~To śmiercionośne narzędzie pierwotnie znane było jako Sztylet Jadu – ulubiony oręż zabójców i szpiegów Złodziei Cienia. Przez lata starannie go modyfikowano, aż stał się ucieleśnieniem ponurego dziedzictwa Baldwina „Rzeźnika” Czarnoziema. Podczas służby w gildii utrzymywał menażerię niebezpiecznych węży i regularnie pozyskiwał ich jad do powlekania stali. Sztylet ten jest świadectwem niezliczonych zastosowań tej śmiercionośnej mikstury.
+
+
+PARAMETRY:
+
+Specjalne:
+– Każde trafienie zadaje 2 obrażenia od trucizny na sekundę przez łącznie 12 sekund (rzut obronny przeciw truciznom neguje)
+
+Obrażenia: 1k4 +2, +2 obrażenia od trucizny
+TraK0: +2
+Typ obrażeń: kłute
+Opóźnienie: 0
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@42  = ~Kerykejon: Ukąszenie Meduzy~
+@43  = ~Ta strzałka została wykonana z fragmentu Kerykejonu, dającego jej wyjątkowe i przerażające moce. Przenika ją esencja Meduzy, jednej z sióstr Gorgon. Jej kształt przywodzi na myśl ostry kieł. Za każdym razem, gdy broń zostaje rzucona, magicznie powraca do dłoni właściciela.
+
+PARAMETRY:
+
+Specjalne:
+– Każde trafienie zadaje 1 obrażenie od trucizny co 2 sekundy przez łącznie 12 sekund (rzut obronny przeciw truciznom neguje)
+– 5% szans na ogłuszenie celu na 1 rundę (rzut obronny przeciw czarom neguje)
+– Po rzucie wraca do właściciela
+
+Obrażenia: 1k3 +2, +2 obrażenia od kwasu
+TraK0: +2
+Typ obrażeń: pocisk
+Opóźnienie: 0
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@44  = ~Strzałka kwasowa +2~
+@45  = ~Strzałki te wykuto z zębów i ścięgien czarnego smoka, a ich groty po trafieniu rozpuszczają się w śmiercionośny kwas. Każdą strzałkę dodatkowo pokryto żrącą substancją, by zadać ofierze jak największe obrażenia i cierpienie.
+
+PARAMETRY:
+
+Specjalne:
+– +2k6 obrażeń od kwasu (rzut obronny przeciw czarom neguje)
+
+Obrażenia: 1k3 +2
+TraK0: +2
+Typ obrażeń: pocisk
+Opóźnienie: 1
+Rodzaj biegłości: strzałka
+Typ broni: 1-ręczna
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@46  = ~Kaptur cieni~
+@47  = ~Do stworzenia tego kaptura wykorzystano magię, mikstury i alchemię, by odmienić kształt oraz materię różnych magicznych przedmiotów. Noszony, wyostrza wzrok użytkownika niemal do perfekcji: iluzje wyglądają jak marne kuglarskie sztuczki, a wrogowie pozostają wyraźnie widoczni niezależnie od pory nocy.
+
+PARAMETRY:
+
+Specjalne:
+– Krycie się w cieniu: +15%
+– Wykrycie iluzji: +15%
+– Zapewnia noszącemu infrawizję na odległość do 40 metrów
+
+Właściwości ładunków:
+– Niewidzialność, raz dziennie
+
+Waga: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@48  = ~Fragment Kerykejonu~
+@49  = ~To fragment Kerykejonu, legendarnej laski wykutej w Zaświatach przez tajemnicze Siostry Gorgony. Przedmiot ten trafił do Faerûnu w burzliwym Czasie Niepokojów.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@50  = ~Cenny klejnot~
+@51  = ~Rzadki diament, którego wygląd i kunszt szlifu świadczą o niezwykłej wartości.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@52  = ~Naszyjnik Gerarda~
+@53  = ~Ta rodzinna pamiątka należy do rodu Travenhurstów.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@54  = ~Bryła metalu~
+@55  = ~Ogrze ostrze~
+@56  = ~Ogromny kawał metalu, który tylko z grubsza przypomina miecz.
+
+Waga: 10~
+@57  = ~To gigantyczne ostrze wykuto ręką ogra, lecz jego forma jest zbyt nieregularna i prymitywna, by można było uznać je za miecz. W obecnym stanie broń ta nie nadaje się do użytku.
+
+Waga: 10~
+@58  = ~Czarny lotos~
+@59  = ~Silna trucizna, która w niewielkich dawkach działa uspokajająco i halucynogennie.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@60  = ~Raporty Złodziei Cienia~
+@61  = ~Dokumenty te zapisano szyfrem, który potrafią odczytać wyłącznie członkowie Złodziei Cienia. Z pewnością zainteresują Baldwina.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@62  = ~Wisior Vapula~
+@63  = ~To osobisty wisior Vapula Simberga.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@64  = ~Obroża niewolnicza Europei~
+@65  = ~Urządzenie to zakłóca połączenia neuronalne w mózgu, sprawiając, że nosiciel staje się apatyczny i uległy. Wygląda na lekko uszkodzone.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@66  = ~Ciało Europei~
+@67  = ~To ciało Europei.
+
+Waga: 65~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@68  = ~Zwłoki Magnusa~
+@69  = ~To ciało Magnusa.
+
+Waga: 115~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@70  = ~Dyskretna depesza~
+@71  = ~Ten niewielki list zapisano szyfrem, który potrafią odczytać jedynie Złodzieje Cienia.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@72  = ~Fałszywy fragment Kerykejonu~
+@73  = ~Mistrzowsko wykonana imitacja skrywająca niebezpieczne zaklęcie. Wykuta przez przebiegłe dłonie Złodziei Cienia replika kryje śmiercionośny sekret. Jej jedynym celem jest zwabienie Baldwina do połączenia jej z prawdziwymi odłamkami Kerykejonu – co uruchomi niszczycielską pułapkę.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@74  = ~Fałszywe złoto~
+@75  = ~Choć różnice są ledwie zauważalne, waga, faktura i odcień tej monety nieznacznie odbiegają od prawdziwego złota. Przy pobieżnym spojrzeniu łatwo pomylić ją z autentycznym środkiem płatniczym.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@76  = ~Rozdarty materiał~
+@77  = ~To strzęp materiału, który Galatea ściskała w dłoni.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@78  = ~Pierścień Karp~
+@79  = ~Pierścień ochrony +1: Pierścień książąt
+
+Ten pierścień i kilka jemu podobnych wykonano po to, by chroniły synów króla Castter De'wessa – nie wiadomo jednak, kto nasączył je magią. Historyczne zapiski mówią, iż pierścienie pozostawały w rodzinie przez co najmniej trzynaście pokoleń, ale ich liczba powoli malała, aż w końcu został tylko jeden. Wielu wini za to wrogość pomiędzy królem i rodem twórcy pierścieni.
+
+PARAMETRY:
+
+Specjalne:
+– Klasa Pancerza: +1
+– Rzuty obronne: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@80  = ~Krupierska strzałka ogłuszania~
+@81  = ~Strzałka ogłuszania nie różni się niczym od innych strzałek, co najwyżej pulsuje słabo, kiedy weźmie się ją do ręki. Jej działanie widać dopiero wtedy, kiedy trafi w cel i kiedy ofiara padnie ogłuszona na ziemię.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@82  = ~Fiolka jadu węża~
+@83  = ~Śmiercionośna trucizna szczególnie ceniona przez skrytobójców. Nawet cienka warstwa naniesiona na broń ma druzgocące skutki dla każdego, kto się z nią zetknie.
+
+PARAMETRY:
+
+Specjalne:
+– Nakładana na broń
+– Ofiara otrzymuje 5 obrażeń od trucizny
+– Pierwsze trafienie zadaje 5 obrażeń od trucizny, a następnie 1 obrażenie na sekundę przez 12 sekund (rzut obronny przeciw truciznom neguje)
+– Czas działania: 5 rund
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@84  = ~Oddech Gorgony~
+@85  = ~To butelka skoncentrowanego oddechu Gorgony. Znaleziona pośród dużego zapasu mikstur ukrytych w lesie Cormanthor, leżała obok rozbitej fiolki oraz skamieniałego elfa.
+
+PARAMETRY:
+
+Specjalne:
+– Nakładany na broń
+– Ofiara zostaje ogłuszona na 5 rund
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@86  = ~Pierścień~
+@87  = ~Mniejszy pierścień wytrychów~
+@88  = ~Pierścień to niewielka obręcz z drogocennego metalu, noszona jako ozdoba. Niektóre rzadkie pierścienie obdarzono zaklęciami, które zapewniają ich właścicielom rozmaite magiczne zdolności. Przedmioty te są niezwykle poszukiwane, zwłaszcza wśród poszukiwaczy przygód.
+
+Waga: 0~
+@89  = ~Wykuty przez zręczne dłonie nieuchwytnej mistrzyni zamków znanej jako Elara Dłoń Cienia, Pierścień mniejszego otwierania zamków bywa cierpliwym mentorem dla tych, którzy dopiero wchodzą na ścieżkę cienia. Elara, sama będąc mistrzynią sztuki obchodzenia zamków, dostrzegła potrzebę stworzenia narzędzia, które subtelnie wesprze początkujących złodziei w doskonaleniu rzemiosła.
+
+Legenda głosi, że jej odosobniony warsztat ukryto w sercu rozległej metropolii. To tam Elara spędziła niezliczone godziny, zgłębiając mechanizmy zamków i kluczy. Jej oddanie zaowocowało stworzeniem pierwszego Pierścienia drobnego otwierania zamków – świadectwa troski o rozwój umiejętności kolejnych pokoleń łotrzyków.
+
+Zaklęcia nałożone na pierścień zapewniają subtelną pomoc tym, którzy pragną opanować delikatną sztukę otwierania zamków. Noszący go odnosi wrażenie, że palce poruszają się z niemal instynktowną precyzją, jakby pierścień delikatnie naprowadzał dłoń we właściwym kierunku.
+
+PARAMETRY:
+
+Specjalne:
+– Otwieranie zamków: +15%
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@90  = ~Pierścień~
+@91  = ~Pierścień czujności~
+@92  = ~Pierścień to niewielka obręcz z drogocennego metalu, noszona jako ozdoba. Niektóre rzadkie pierścienie obdarzono zaklęciami nadającymi im magiczne właściwości. To one są najbardziej pożądane, zwłaszcza przez poszukiwaczy przygód.
+
+Waga: 0~
+@93  = ~Wykuty przez enigmatycznego rzemieślnika znanego jako Maelis Szept Wiatru, Pierścień czujności stanowi świadectwo kunsztu i drobiazgowego wykonania. Maelis, słynący z niezwykłego wyczucia pułapek i mechanizmów, pragnął stworzyć narzędzie obdarzające noszącego niezrównaną zdolnością dostrzegania ukrytych zagrożeń.
+
+Legenda głosi, że przez lata studiował starożytne tomy tajemnej inżynierii i zgłębiał zawiłości pułapek w zapomnianych lochach. To podczas gwiaździstej nocy w sercu Księżycowego Lasu ukończył ostateczne zaklęcia pierwszego Pierścienia czujności.
+
+Moc pierścienia wyostrza zmysły noszącego i zapewnia nadprzyrodzoną świadomość otoczenia, pozwalając dostrzec nawet najprzebieglej ukryte mechanizmy i sidła.
+
+PARAMETRY:
+
+Specjalne:
+– Znajdowanie pułapek: +15%
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@94  = ~Pierścień~
+@95  = ~Pierścień kieszonkowca~
+@96  = ~Pierścień to niewielka obręcz z drogocennego metalu, noszona jako ozdoba. Niektóre rzadkie pierścienie obdarzono zaklęciami nadającymi im magiczne właściwości. To one są najbardziej pożądane, zwłaszcza przez poszukiwaczy przygód.
+
+Waga: 0~
+@97  = ~Pierścień kieszonkowca to złowroga ozdoba, której wygląd zdradza nikczemne przeznaczenie. Wykuty z myślą o podstępie i skrytości, wspomaga noszącego w sztuce kradzieży. Subtelne grawerunki przywodzą na myśl mroczne zaułki i szemrane interesy półświatka.
+
+Wykuty w cienistych kuźniach Zaświatów, stał się cenną zdobyczą wśród tych, którzy upodobali sobie skradanie i grabież. Jego moc zwiększa zręczność i finezję właściciela, pozwalając z łatwością poruszać się w tłumie i opróżniać kieszenie nieuważnych przechodniów.
+
+PARAMETRY:
+
+Specjalne:
+– Kradzież kieszonkowa: +15%
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@98  = ~Pierścień szabrownika~
+@99  = ~Wykuty z połączenia trzech odrębnych magicznych pierścieni złodziejskich, stanowi elegancką fuzję zaklęć. Noszony, obdarza właściciela wyostrzoną czujnością oraz niezwykłym instynktem do odnajdywania ukrytych skarbów – zarówno w zapomnianych grobowcach, jak i w kieszeniach niczego niepodejrzewających ofiar.
+
+PARAMETRY:
+
+Specjalne:
+– Kradzież kieszonkowa: +15%
+– Otwieranie zamków: +15%
+– Znajdowanie pułapek: +15%
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@100 = ~Wąż~
+@101 = ~Kerykejon: Obietnica Euryale~
+@102 = ~Ten krótki miecz został wykonany z fragmentu Kerykejonu, dającego mu wyjątkowe i przerażające moce. Przenika go esencja Euryale, jednej z sióstr Gorgon. Smukła konstrukcja czyni broń idealną do szybkich i precyzyjnych ataków.
+
+PARAMETRY:
+
+Specjalne:
+– Liczba ataków: +1
+
+Obrażenia: 1k6 +2
+TraK0: +2
+Typ obrażeń: kłute
+Opóźnienie: 0
+Rodzaj biegłości: krótki miecz
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 5
+
+Waga: 3~
+@103 = ~Kerykejon: Ostrze Stheno~
+@104 = ~Ta katana została wykonana z fragmentu Kerykejonu, dającego jej wyjątkowe i przerażające moce. Przenika ją esencja Stheno, jednej z sióstr Gorgon. Broń wykuto poprzez połączenie fragmentu z pierwotnym Ogrzym ostrzem. Jej uderzenia są na tyle potężne, że potrafią oszołomić trafione cele. Klingę obficie pokryto silnie żrącą krwią ogra.
+
+PARAMETRY:
+
+Specjalne:
+– 10% szans na ogłuszenie celu na pół rundy (rzut obronny przeciw czarom neguje)
+– 10% szans na zadanie dodatkowych 5 obrażeń od kwasu
+
+Obrażenia: 1k10 +2
+TraK0: +2
+Typ obrażeń: obuchowe
+Opóźnienie: 2
+Rodzaj biegłości: katana
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 12
+
+Waga: 8~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@105 = ~Sztylet~
+@106 = ~Szept cienia~
+@107 = ~Typowy sztylet ma ostro zakończone, zwykle obosieczne ostrze. W przeciwieństwie do niego nóż jest jednosieczny i nieco krótszy. Ten egzemplarz jest magiczny, co pozwala wyprowadzać szybsze i celniejsze ciosy oraz zadawać większe obrażenia.
+
+PARAMETRY:
+
+Obrażenia: 1k4
+Typ obrażeń: kłute
+Opóźnienie: 2
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+@108 = ~Pan Cieni, Maska, jest bóstwem intryg, sekretów i złodziejstwa, czczonym przez łotrzyków, szpiegów oraz tych, którzy żyją w cieniu. W całych Krainach wpływy Maski sięgają najciemniejszych zakątków świata, gdzie szept jego imienia budzi zarówno cześć, jak i trwogę.
+
+Pierwotny Szept cienia był długim mieczem o niezrównanym kunszcie, nasyconym esencją swego boskiego patrona. Wykuty w ognistych głębinach boskich sfer, ucieleśniał samą istotę skrytości i przebiegłości. Mówiono, że ci, którzy nim władali, potrafili niemal zniknąć, sunąc przez cienie z eteryczną gracją.
+
+Przez wieki los Szeptu cienia pozostawał owiany tajemnicą, a jego miejsce pobytu znali jedynie najwierniejsi wyznawcy Maski. Relikt urósł do rangi mitu, pożądanego przez tych, którzy pragnęli mocy poruszania się po świecie bez bycia dostrzeżonym.
+
+W burzliwej epoce wielkich wstrząsów Szept cienia spotkał jednak swój kres. Szczegóły jego zniszczenia zaginęły w pomroce dziejów. Jedni twierdzą, że roztrzaskano go w okropnej bitwie, inni zaś – że celowo go rozdzielono, a odłamki rozproszono po całych Krainach.
+
+Jeden z takich fragmentów trafił do świata śmiertelników, gdzie odnalazł go utalentowany rzemieślnik i mistrz klingi. Rozpoznawszy boską esencję, podjął się karkołomnego zadania przekucia odłamka w broń zdolną przywołać cząstkę dawnej chwały. Tak Szept cienia narodził się na nowo.
+
+Choć jego forma uległa zmianie, sztylet zachował część mistycyzmu pierwotnego miecza. Ci, którzy nim władają, zostają obdarzeni nieuchwytną łaską Maski, pozwalającą poruszać się po świecie z niezwykłą skrytością. Cienie zdają się ich osłaniać, zapewniając niemal nadnaturalną zdolność unikania spojrzeń.
+
+Szept cienia pozostaje świadectwem nieprzemijającej potęgi Maski oraz niezłomnego ducha tych, którzy pragną posiąść władzę nad cieniem. Dla odważnych, którzy sięgną po tę broń, stanowi kuszący przedsmak boskości – przypomnienie, że nawet odłamki bogów mogą skrywać niewyobrażalną moc.
+
+PARAMETRY:
+
+Specjalne:
+– Liczba ataków: +1
+– Szansa na trafienie krytyczne: +10%
+
+Obrażenia: 1k4 +4, +5 obrażeń od zimna
+TraK0: +4
+Typ obrażeń: kłute
+Opóźnienie: 0
+Rodzaj biegłości: sztylet
+Typ broni: 1-ręczna
+
+Wymagania:
+– Siła: 3
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@109 = ~Sakiewka szlachcica~
+@110 = ~Te eleganckie sakiewki na monety wykonano z bogato haftowanego jedwabiu i opatrzono znakami szlachty Waterdeep. Solidne zapięcie z polerowanego srebra sprawia, że bezpiecznie mieszczą znaczną ilość monet. Są symbolem dostatku i prestiżu, a zarazem pożądanym dodatkiem dla osób o wyrafinowanym guście. Co znamienne, mimo ciężaru zawartości sakiewkę subtelnie nasycono magią, dzięki czemu w noszeniu wydaje się niemal nieważka.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@111 = ~Sakiewka Oka Gorgony~
+@112 = ~Ten worek, utkany z mrocznych włókien, skrywa zapas kontrabandy. Zawartość, migocząca ponurym blaskiem, zdradza obecność nielegalnych skarbów. Wykonane z niezwykłą starannością przez zręczne dłonie członków Oka Gorgony, worki te nie są zwykłymi pojemnikami, lecz symbolem mistrzostwa gildii w sztuce skrytości i podstępu. Nasycone zaklęciami maskującymi, pozwalają zawartości przemknąć pod nawet najczujniejszym spojrzeniem. We właściwym czasie, worki zostaną błyskawicznie odzyskane, a ukryte w nich łupy staną się owocami mrocznych przedsięwzięć Oka Gorgony. Worki stanowią zarówno świadectwo mistrzostwa gildii w półświatku, jak i ostrzeżenie dla wszystkich postronnych, że pewne skarby lepiej pozostawić nietknięte.
+
+Waga: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@113 = ~Sfałszowany list~
+@114 = ~Ten starannie sporządzony list nosi insygnia Straży Miejskiej, a także oficjalnie wyglądające pieczęcie i podpisy. Nakazuje „zdrajcy” stawić się o zmierzchu przy południowych fontannach na – jak wynika z treści – ważne spotkanie.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@115 = ~Składki gildii~
+@116 = ~Opieczętowane znakiem Oka Gorgony sakiewki wypełnione monetami stanowią składki płacone przez przybytki Beregostu. Brzęk monet jest świadectwem „ochrony”, która ma zapewniać spokojne funkcjonowanie w mrocznych zaułkach miasta – namacalny wyraz porozumienia w cienistym tańcu półświatka.
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@117 = ~Kaskada Księżycowego Blasku~
+@118 = ~Kaskada Księżycowego Blasku to wykwintny naszyjnik wykonany z niezwykłą precyzją i dbałością o detale. Jego centralnym elementem jest nieskazitelny szafir ujęty w misterną srebrną oprawę przypominającą kaskadę rozświetloną księżycową poświatą. Delikatny filigran łańcuszka przywodzi na myśl taniec światła na powierzchni wody. Rzadkość tego klejnotu nie budzi wątpliwości – powstało zaledwie kilka takich egzemplarzy, co czyni go prawdziwą gratką dla kolekcjonerów. Noszenie go nie tylko dodaje elegancji, lecz także wprowadza poczucie urzekającej tajemniczości.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@119 = ~Whisky z Moonshae~
+@120 = ~Butelka whisky z Moonshae – rzadkiego i cenionego trunku z odległych Wysp Moonshae. Słynie z łagodnego, dymnego smaku oraz wyjątkowej mieszanki ziół i przypraw, dlatego uchodzi za wyrafinowaną przyjemność dla znawców. Każdy łyk niesie w sobie esencję surowych krajobrazów i barwnej kultury Moonshae. Ta konkretna butelka została kunsztownie wykonana, etykietę zaś zdobi srebrny półksiężyc, sugerujący niebiańskie pochodzenie napitku. Jej wygląd przyciąga uwagę, czyniąc ją cennym dodatkiem do kolekcji każdego konesera.
+
+Waga: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@121 = ~Urządzenie zapalające~
+@122 = ~Ten złowieszczy pojemnik kryje lotną mieszankę łatwopalnych substancji, szczelnie zamkniętą we wzmocnionym szkle. Z korka wystaje zapalony lont, odmierzający czas do piekła. Po uruchomieniu urządzenie uwalnia potok płomieni, pochłaniających wszystko na swojej drodze. Posługiwanie się nim wymaga najwyższej ostrożności.
+
+Waga: 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@123 = ~Obciążające dowody~
+@124 = ~Zniszczone pergaminy opatrzone oficjalną pieczęcią armii Amn zawierają listę podejrzanych, nielegalnych działań przypisywanych kapitan Selenie Gwiezdny Wir oraz jej niesławnej załodze. Opisy operacji przemytniczych, napaści na statki kupieckie oraz przechwycona korespondencja kreślą obciążający obraz ich działalności. Posiadanie tych dokumentów może stanowić potężny atut w negocjacjach – albo w szantażu.
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@125 = ~Sakiewka z monetami~
+@126 = ~Ten pokaźny worek wypełnia ciężki zapas lśniących monet, a metaliczny brzęk zdradza znaczną wartość zawartości. Szwy wzmocniono tak, by wytrzymały jego ciężar. Jego zawartość szepcze o nieopisanych możliwościach, czekających właściwej okazji, by je wykorzystać.
+
+Waga: 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@127 = ~Pułapka kłująca~
+@128 = ~Pułapka kłująca to śmiercionośne urządzenie doprowadzone do perfekcji. Po uruchomieniu uwalnia grad ostrych jak brzytwa strzał, zaprojektowanych tak, by bezlitośnie przebijały zarówno ciało, jak i pancerz.
+
+PARAMETRY:
+
+Obrażenia: 2k6 +6
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@129 = ~Pułapka trucizny~
+@130 = ~Pułapka trucizny skrywa złowieszczy sekret pod niepozorną obudową. Po aktywacji miota strzałami z grotami pokrytymi śmiercionośnym jadem, który krąży w żyłach ofiary, zadając długotrwałe, wyniszczające cierpienie.
+
+PARAMETRY:
+
+Specjalne:
+– +1k6 obrażeń od trucizny na rundę przez kolejne 3 rundy
+
+Obrażenia: 2k6, +6 obrażeń od trucizny
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@131 = ~Pułapka zapalająca~
+@132 = ~Pułapka zapalająca jest świadectwem sztuki kontrolowanego zniszczenia. Z błyskiem ognia wyrzuca strzały spowite płomieniami, rozżarzając powietrze i przypalając cel.
+
+PARAMETRY:
+
+Obrażenia: 2k6, +2k6 obrażeń od ognia
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@133 = ~Pułapka żywiołów~
+@134 = ~Znana jako Pułapka żywiołów, ta konstrukcja czerpie z esencji żywiołów. Po uruchomieniu miota salwę magicznie nasyconych strzał – każda niesie moc ognia, elektryczności i lodu. Ofiary stają w obliczu furii natury.
+
+PARAMETRY:
+
+Obrażenia: 2k6, +3 obrażenia od ognia, +3 obrażenia od zimna, +3 obrażenia od elektryczności
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@135 = ~Pułapka ogłuszająca~
+@136 = ~Pułapka ogłuszająca to przebiegły wynalazek łączący skrytość z zabójczą skutecznością. Po uruchomieniu wystrzeliwuje strzały nasączone jadem, zaprojektowane tak, by obezwładnić cel i pozostawić go bezbronnym.
+
+PARAMETRY:
+
+Specjalne:
+– Ogłusza cel
+
+Obrażenia: 2k4 +4
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@137 = ~Pułapka oślepiająca~
+@138 = ~Pułapka oślepiająca to arcydzieło podstępu. Po aktywacji miota strzały, które eksplodują przy uderzeniu, zalewając okolicę rażącym blaskiem i pozbawiając ofiary orientacji.
+
+PARAMETRY:
+
+Specjalne:
+– Oślepia cel
+
+Obrażenia: 2k4 +4
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@139 = ~Grimuar Zapomnianych Tajemnic Netherilu~
+@140 = ~Ten starożytny grymuar dźwiga ciężar minionych epok. Jego karty zapisano runami i sigilami dawnych czasów, a oprawa z postarzałej skóry i srebra emanuje aurą potężnej magii. Tom zawiera inkantacje i czary uznawane za bezpowrotnie utracone – sekrety dziedzictwa Netherilu. Zgłębianie tej księgi niesie zarówno wielką moc, jak i śmiertelne ryzyko.
+
+Waga: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@141 = ~Serum na pierzycę~
+@142 = ~Ta delikatna szklana fiolka zawiera migotliwą, eteryczną ciecz. Serum emanuje kojącą poświatą, zdradzając swą alchemiczną potęgę. Sporządzone przez alchemika Alarica, ma łagodzić cierpienie wywołane przerażającą pierzycą.
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@143 = ~Księga rachunkowa Płomiennej Pięści~
+@144 = ~Masywny tom oprawiony w zniszczoną skórę nosi insygnia Płomiennej Pięści. Skrupulatne rejestry i tajna korespondencja opisują niejawne operacje, ukryte cele oraz złożoną sieć politycznych powiązań najemnej kompanii.
+
+Waga: 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@145 = ~Moc Tytana~
+@146 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Moc Tytana to ciężki żelazny pierścień pokryty starożytnymi runami. Wykonany z rzadkiej rudy pochodzącej z serca spadającej gwiazdy, obdarza noszącego siłą legendarnych tytanów.
+
+PARAMETRY:
+
+Specjalne:
+– Siła: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@147 = ~Zwinna Gracja~
+@148 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Zwinna Gracja to delikatny srebrny pierścień ozdobiony motywem pióra. Obdarza noszącego niezwykłą lekkością ruchów i szybkością przypominającą szept wiatru.
+
+PARAMETRY:
+
+Specjalne:
+– Zręczność: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@149 = ~Niezłomne Serce~
+@150 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Niezłomne Serce wykonano z ciemnego, niemal niezniszczalnego metalu i ozdobiono symbolem serca oplecionego cierniami. Pierścień wzmacnia kondycję noszącego niczym nieugięta ziemia.
+
+PARAMETRY:
+
+Specjalne:
+– Kondycja: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@151 = ~Oświecony Umysł~
+@152 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Oświecony Umysł wykonano z jasnego, błękitnie zabarwionego metalu i osadzono w nim kryształ migoczący wewnętrznym światłem. Eliana pozyskiwała do jego stworzenia najrzadsze kryształy z najgłębszych jaskiń, wierząc, że symbolizują dążenie do ukrytej wiedzy. Mówi się, że pierścień ten rozjaśnia umysł noszącego.
+
+PARAMETRY:
+
+Specjalne:
+– Inteligencja: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@153 = ~Wizja Mędrca~
+@154 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Wizję Mędrca wykonano ze złota i uformowano na kształt sowy, z osadzonymi szmaragdami pełniącymi rolę oczu. Eliana stworzyła ten pierścień ze złota wydobytego ze świętych rzek, które – jak wierzono – zostały pobłogosławione przez bogów mądrości. Pierścień pomaga dostrzegać prawdę skrytą za iluzjami.
+
+PARAMETRY:
+
+Specjalne:
+– Mądrość: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@155 = ~Promienny Autorytet~
+@156 = ~„Alchemiczny Krąg Mistrzostwa” to zbiór sześciu magicznych pierścieni stanowiących arcydzieło Eliany, legendarnej alchemiczki i mędrczyni. Każdy z nich wzmacnia inny aspekt noszącego, symbolizując dążenie do doskonałości. Powiadają, że połączone pierścienie posiadają tajemną moc znaną tylko tym, którzy potrafią harmonijnie władać wszystkimi aspektami mistrzostwa.
+
+Promienny Autorytet to pierścień z polerowanego złota, osadzony rubinem emitującym łagodną poświatę. Eliana użyła do jego wykonania rubinu pochodzącego z serca wulkanu, symbolizującego żarliwą moc charyzmy. Mówi się, że pierścień obdarza noszącego władczą aurą.
+
+PARAMETRY:
+
+Specjalne:
+– Charyzma: +1
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@157 = ~Amulet Nocnego Tropiciela~
+@158 = ~Amulet Nocnego Tropiciela to czczony artefakt, który – jak się uważa – stworzono z inicjatywy oddanych wyznawców Maski. Wykuty pod mrocznym nowiem i nasycony esencją Krainy Cieni, rezonuje z nieuchwytną potęgą Pana Cieni.
+
+Zdobiony przyciemnionym srebrnym łańcuchem oraz centralnym kamieniem księżycowym, symbolizuje więź właściciela z tym, co ukryte i niewidzialne. Legenda głosi, że amulet ten nosili niegdyś elitarni zabójcy i tajni agenci oddani Masce.
+
+Amulet Nocnego Tropiciela stanowi nie tylko narzędzie wspierające w walce, to symbol zrozumienia przez noszącego go subtelniejszych i bardziej niebezpiecznych aspektów poszukiwania przygód w świecie pełnym magii i tajemnic.
+
+PARAMETRY:
+
+Specjalne:
+– Szansa na trafienie krytyczne: +10%
+
+Waga: 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@159 = ~Zbroja skórzana ćwiekowana~
+@160 = ~Zbroja Cienistego Splotu Isli Mroczny Płaszcz~
+@161 = ~Zbroja skórzana ćwiekowana ma niewiele wspólnego ze zwykłą zbroją skórzaną. Podczas gdy zbroja skórzana jest utwardzaną skorupą, zbroja ćwiekowana jest miękka i wzmocniona setkami, nabitych w niewielkich odległościach nitów. Znajdują się one tak blisko siebie, że tworzą trudną do przebicia metalową zaporę, która świetnie powstrzymuje sieczne i kłute ataki. Miękkie skórzane podbicie służy jedynie do utrzymania nitów w miejscu.
+
+Klasa Pancerza: 7 (5 przeciw broniom siecznym, 6 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 6
+
+Waga: 25~
+@162 = ~Ta misternie wykonana ćwiekowana zbroja skórzana stanowi nieodłączny element legendy Isli Mroczny Płaszcz. Skórę zabarwiono na głębokie, zmienne odcienie czerni i szarości, jakby pochłaniała światło. Każdy nit osadzono z mistrzowską precyzją – nie tylko z myślą o ochronie, lecz także o płynnych, skrytych ruchach właścicielki.
+
+Krążą pogłoski, że Isla zleciła wykonanie tej zbroi mistrzowi rymarskiemu, który korzystał z materiałów pochodzących z Krainy Cieni. Pancerz nie tylko chroni, ale także wzmacnia zręczność i skrytość noszącego, czyniąc Islę jeszcze groźniejszą przeciwniczką.
+
+PARAMETRY:
+
+Specjalne:
+– Zręczność: +1
+
+Klasa Pancerza: 4 (2 przeciw broniom siecznym, 3 przeciw broniom kłutym i pociskom)
+
+Wymagania:
+– Siła: 6
+
+Waga: 8~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@163 = ~Tworzenie sideł~
+@164 = ~Ta wyjątkowa zdolność pozwala Liedel wykorzystać rozległą wiedzę na temat śmiercionośnych toksyn oraz złożonych mechanizmów pułapek do tworzenia podstępnych potrzasków. Raz dziennie może ona stworzyć Pajęczy pocałunek, demonstrując mistrzostwo kontroli pola walki i obezwładniania celów z bezlitosną precyzją.
+
+Pajęczy pocałunek:
+
+Po uruchomieniu urządzenie uwalnia grad strzał nasączonych potężną trucizną. Każda przenosi neurotoksyczny jad, zaprojektowany tak, by zadawać powtarzające się obrażenia, osłabiać sprawność ofiary oraz wywoływać silną dezorientację. Działanie toksyny dodatkowo ogłusza cel, czyniąc go podatnym na kolejne ataki. Wykonany z niezwykłą precyzją i przebiegłością Pajęczy pocałunek stanowi świadectwo mistrzostwa łowczyni nagród Liedel w sztuce zadawania śmierci.
+
+PARAMETRY:
+
+Specjalne:
+– Ogłusza cel
+– +1k6 obrażeń od trucizny na rundę przez kolejne 3 rundy
+
+Obrażenia: 2k6, +6 obrażeń od trucizny
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@165 = ~Pajęczy pocałunek~
+@166 = ~Po uruchomieniu to złożone urządzenie uwalnia grad strzał nasączonych potężną trucizną. Pociski wystrzeliwują z ukrytych mechanizmów, oplatając cel śmiercionośnym uściskiem. Każda strzała przenosi neurotoksyczny jad, zaprojektowany tak, by zadawać powtarzające się obrażenia, osłabiać sprawność fizyczną ofiary oraz wywoływać silną dezorientację. Działanie toksyny dodatkowo ogłusza cel, czyniąc go podatnym na kolejne ataki. Wykonany z niezwykłą precyzją i przebiegłością Pajęczy pocałunek stanowi świadectwo mistrzostwa łowczyni nagród Liedel w sztuce zadawania śmierci.
+
+PARAMETRY:
+
+Specjalne:
+– Ogłusza cel
+– +1k6 obrażeń od trucizny na rundę przez kolejne 3 rundy
+
+Obrażenia: 2k6, +6 obrażeń od trucizny
+Typ obrażeń: kłute
+
+Waga: 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@167 = ~Dogmaty Niewidzialnych~
+@168 = ~Bogactwo należy się tym, którzy potrafią je zdobyć. Staraj się kończyć każdy dzień z większym majątkiem, niż go zacząłeś, lecz kradnij to, co najistotniejsze – nie wszystko, co masz pod ręką.
+
+Uczciwość jest dla głupców, lecz pozory uczciwości są bezcenne. Spraw, by każde kłamstwo brzmiało wiarygodnie, a gdy tylko możesz, mów prawdę tak, by pozostawić mylne wrażenie; spalony most trudno odbudować, jeśli kiedyś znów zechcesz po nim przejść.
+
+Subtelność jest wszystkim. Łapówka to najmniej subtelne z narzędzi, jakie daje nam Maska. Nigdy nie zmuszaj kogoś do działania, jeśli możesz nim pokierować tak, by uwierzył, że decyzja i czyn były wyłącznie jego wolą.
+
+Nigdy nie czyń tego, co oczywiste – chyba że ma to ukryć drugie lub trzecie działanie. Piętrz sekrety na sekretach, lecz czyń to bez afektu, nie z naiwną ekscytacją młodości.
+
+Zaufaj cieniom, albowiem jasna ścieżka czyni z ludzi łatwe cele.~ ~Bogactwo należy się tym, którzy potrafią je zdobyć. Staraj się kończyć każdy dzień z większym majątkiem, niż go zaczęłaś, lecz kradnij to, co najistotniejsze – nie wszystko, co masz pod ręką.
+
+Uczciwość jest dla głupców, lecz pozory uczciwości są bezcenne. Spraw, by każde kłamstwo brzmiało wiarygodnie, a gdy tylko możesz, mów prawdę tak, by pozostawić mylne wrażenie; spalony most trudno odbudować, jeśli kiedyś znów zechcesz po nim przejść.
+
+Subtelność jest wszystkim. Łapówka to najmniej subtelne z narzędzi, jakie daje nam Maska. Nigdy nie zmuszaj kogoś do działania, jeśli możesz nim pokierować tak, by uwierzył, że decyzja i czyn były wyłącznie jego wolą.
+
+Nigdy nie czyń tego, co oczywiste – chyba że ma to ukryć drugie lub trzecie działanie. Piętrz sekrety na sekretach, lecz czyń to bez afektu, nie z naiwną ekscytacją młodości.
+
+Zaufaj cieniom, albowiem jasna ścieżka czyni z ludzi łatwe cele.~

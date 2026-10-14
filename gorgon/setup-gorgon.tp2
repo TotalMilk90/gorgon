@@ -17,7 +17,7 @@ LANGUAGE
 ~gorgon/lang/english/setup.tra~
 
 LANGUAGE
-    ~Simplified Chinese(translation by Lzw104522773,proofread by Esceen)~
+    ~Simplified Chinese (translation by Lzw104522773,proofread by Esceen)~
     ~schinese~
 //~gorgon/lang/schinese/dialog.tra~
 ~gorgon/lang/schinese/items.tra~
@@ -25,6 +25,16 @@ LANGUAGE
 ~gorgon/lang/schinese/npcs.tra~
 ~gorgon/lang/schinese/quests.tra~
 ~gorgon/lang/schinese/setup.tra~
+
+LANGUAGE
+    French (translation by Deratiseur)~
+    ~french~
+//~gorgon/lang/french/dialog.tra~
+~gorgon/lang/french/items.tra~
+~gorgon/lang/french/names.tra~
+~gorgon/lang/french/npcs.tra~
+~gorgon/lang/french/quests.tra~
+~gorgon/lang/french/setup.tra~
 
 BEGIN @1
 

@@ -1,0 +1,943 @@
+@2=~Torque cristallin~
+@3=~Le Torque cristallin est un élégant collier délicatement ouvragé en argent et orné d’un unique cristal scintillant. Niché dans une fine monture en filigrane d’argent, le cristal émet une douce lueur pulsante qui semble se synchroniser avec les battements de cœur de son porteur. Porter cette amulette aiguise la concentration et l’agilité mentale, créant une harmonie qui entre en résonance avec la clarté intérieure.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Intelligence : +1
+- Classe d’armure : +1
+- Jets de sauvegarde : +1
+- Résistance à la magie : +5 %
+- Permet de mémoriser un sort supplémentaire de chaque niveau du 1er au 5e
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@4=~Flèche acide +2~
+@5=~Cette flèche de belle facture est enduite d’un acide puissant qui adhère à sa hampe et à sa pointe. Dès qu’elle atteint sa cible, l’acide commence à ronger aussi bien la chair que l’armure, approfondissant et élargissant la blessure de façon effroyable. Son impact n’est donc pas seulement physique, mais également chimique, promettant à ses victimes une mort lente et douloureuse.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d6+2, +2d6 d’acide
+Type de dégâts : projectile
+Arme de jet : arc
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@6=~Matraque~
+@7=~La matraque est un outil apprécié des voleurs de l’Œil de la Gorgone. Constituée d’une lanière de cuir lestée solidement fixée autour d’un bâton de bois, elle permet d’assommer rapidement et silencieusement les victimes qui ne se doutent de rien.
+
+Capacités de combat :
+- Inflige des dégâts non létaux
+
+PARAMÈTRES :
+
+Dégâts : 1d3
+Type de dégâts : contondants
+Facteur de vitesse : 2
+Type de compétence : gourdin
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@8=~Carreau acide +1~
+@9=~Ce carreau d’arbalète a été soigneusement traité avec une goutte de venin de scorpion afin d’en accroître la létalité. À l’impact, le venin s’infiltre dans la plaie, provoquant une douleur atroce et une paralysie. Ce carreau est conçu pour donner une mort rapide et silencieuse, ce qui en fait l’arme idéale des assassins.
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : 1d8+1, +1d8 d’acide
+Type de dégâts : projectile
+Arme de jet : arbalète
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@10=~Carreau acide +2~
+@11=~Ce carreau amélioré est une création redoutable, imprégnée des venins mortels du scorpion et du serpent. Lorsqu’il frappe, il inocule une double dose de poison, causant de graves lésions internes et une dégradation rapide des chairs de la victime.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 2d8+2, +2d8 d’acide
+Type de dégâts : projectile
+Arme de jet : arbalète
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@12=~Compendium du voleur~
+@13=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment développer une immunité aux divers poisons couramment employés par les assassins.
+
+PARAMÈTRES :
+
+Constitution : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@14=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière décrit comment accroître efficacement son endurance afin de pouvoir rester des heures durant dans la même position à attendre sa proie.
+
+PARAMÈTRES :
+
+Force : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@15=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière détaille de nombreuses techniques et manœuvres de prestidigitation.
+
+PARAMÈTRES :
+
+Dextérité : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@16=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière aborde un large éventail de sujets destinés à préparer un voleur à travailler avec aisance dans n’importe quel environnement.
+
+PARAMÈTRES :
+
+Intelligence : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@17=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière traite de l’art du tact et de la persuasion.
+
+PARAMÈTRES :
+
+Charisme : +1 de façon permanente
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@18=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière relate l’histoire de voleurs célèbres à travers les âges, en détaillant leur jugement et les pratiques qu’ils jugeaient les plus efficaces en leur temps.
+
+PARAMÈTRES :
+
+Sagesse : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 25~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@19=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière traite de l’art d’esquiver aussi bien physiquement que mentalement.
+
+PARAMÈTRES :
+
+Classe d’armure : bonus permanent de +1
+Jets de sauvegarde : bonus permanent de +1
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@20=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière décrit les points faibles de différentes créatures et la manière de les frapper plus efficacement.
+
+PARAMÈTRES :
+
+TAC0 : bonus permanent de +1
+Dégâts : bonus permanent de +1
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@21=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment résister à différents effets magiques grâce à des techniques mentales.
+
+PARAMÈTRES :
+
+Résistance à la magie : +5 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@22=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment entraîner son esprit et son corps à résister à la douleur physique et à la surmonter.
+
+PARAMÈTRES :
+
+Résistance aux dégâts contondants : +5 % de façon permanente
+Résistance aux dégâts tranchants : +5 % de façon permanente
+Résistance aux dégâts perforants : +5 % de façon permanente
+Résistance aux projectiles : +5 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@23=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment entraîner son esprit et son corps à résister aux éléments naturels du monde.
+
+PARAMÈTRES :
+
+Résistance au froid : +5 % de façon permanente
+Résistance au feu : +5 % de façon permanente
+Résistance à l’électricité : +5 % de façon permanente
+Résistance à l’acide : +5 % de façon permanente
+Résistance au poison : +5 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@24=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment repérer puis frapper efficacement le point faible d’un adversaire tout en demeurant invisible.
+
+PARAMÈTRES :
+
+Multiplicateur d’attaque sournoise : +1 de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@25=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière détaille les différents outils et techniques employés dans l’art du crochetage.
+
+PARAMÈTRES :
+
+Crochetage : +10 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@26=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment repérer, désamorcer et poser de nombreux types de pièges.
+
+PARAMÈTRES :
+
+Détection des pièges : +10 % de façon permanente
+Pose de pièges : +10 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@27=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière présente différentes techniques de prestidigitation et de vol à la tire destinées à garder les victimes distraites et inconscientes de ce qui se passe.
+
+PARAMÈTRES :
+
+Vol à la tire : +10 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@28=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière traite de la furtivité et des moyens de mieux se soustraire aux regards comme aux oreilles.
+
+PARAMÈTRES :
+
+Déplacement silencieux : +10 % de façon permanente
+Dissimulation dans l’ombre : +10 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@29=~Le Compendium du voleur est une collection d’ouvrages de référence destinée aussi bien aux voleurs chevronnés qu’aux débutants. Rédigés par les fidèles de Mask, le Seigneur des Ombres, ces volumes recensent les techniques essentielles et traditionnelles auxquelles tout voleur peut avoir recours dans l’exercice de son art. Les prêtres de Mask ont imprégné ces tomes de puissants enchantements qui les rendent indéchiffrables à quiconque ne marche pas dans les ombres. Seul un véritable voleur, accordé aux voies de Mask, peut percer les secrets contenus dans leurs pages. Cette section particulière explique comment détecter les illusions et les distinguer de la réalité.
+
+PARAMÈTRES :
+
+Détection des illusions : +10 % de façon permanente
+
+Spécial : le livre est détruit après utilisation
+Utilisation : placer dans un emplacement d’objet rapide
+
+Poids : 5~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@30=~Bille acide +1~
+@31=~Ces billes sont forgées à partir de venin de serpent durci, créant un projectile de petite taille mais meurtrier. À l’impact, la matière venimeuse commence à se dissoudre et inflige de graves lésions aux organes internes de la cible. Leur faible poids permet des attaques rapides et silencieuses.
+
+PARAMÈTRES :
+
+TAC0 : +1
+Dégâts : 1d4+1, +1d6 d’acide
+Type de dégâts : projectile
+Lanceur : fronde
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@32=~Bille acide +2~
+@33=~Une variante encore plus mortelle des billes acides, fabriquée à partir de venin de serpent durci auquel a été ajouté un agent corrosif capable de traverser la plupart des défenses. L’acide contenu dans ces projectiles est si puissant qu’il commence à dissoudre chair et os au simple contact, ce qui les rend particulièrement meurtriers.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d4+2, +2d6 d’acide
+Type de dégâts : projectile
+Lanceur : fronde
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@34=~Dague~
+@35=~Kukri acide +1~
+@36=~La dague typique possède une lame pointue, généralement à double tranchant, contrairement au couteau qui n’en possède qu’un et est légèrement plus court.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 (perforants)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 1~
+@37=~Semblable à une dague, le kukri permet toutefois des mouvements de taille plus rapides et plus efficaces grâce à la courbure particulière de sa lame. Cette arme raffinée a été façonnée par les mains expertes des célèbres forgerons elfes d’Evereska. Sa lame brille d’une teinte verdâtre éthérée, témoignage à la fois du savoir-faire elfique et des enchantements arcaniques tissés dans son acier.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Chaque coup inflige 1 point de dégâts d’acide par round pendant 3 rounds
+
+TAC0 : +1
+Dégâts : 1d4+1, +1 d’acide
+Type de dégâts : tranchants
+Facteur de vitesse : 1
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 5 en Force
+
+Poids : 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@38=~Kukri acide +2~
+@39=~Semblable à une dague, le kukri permet toutefois des mouvements de taille plus rapides et plus efficaces grâce à la courbure particulière de sa lame. Cette arme raffinée a été façonnée par les mains expertes des célèbres forgerons elfes d’Evereska. Sa lame brille d’une teinte verdâtre éthérée, témoignage à la fois du savoir-faire elfique et des enchantements arcaniques tissés dans son acier. L’alchimiste Rhade a modifié cette arme afin d’accroître encore la puissance de l’acide qui en enduit la lame.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Chaque coup inflige 1 point de dégâts d’acide toutes les 1/2 round pendant 3 rounds au total
+
+TAC0 : +2
+Dégâts : 1d4+2, +2 d’acide
+Type de dégâts : tranchants
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 5 en Force
+
+Poids : 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@34=~Dague~
+@40=~Dague +2 : Venin de serpent~
+@36=~La dague typique possède une lame pointue, généralement à double tranchant, contrairement au couteau qui n’en possède qu’un et est légèrement plus court.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 (perforants)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 1~
+@41=~Cette arme est un instrument de mort dont la lame luit d’un éclat malveillant. Jadis connue sous le nom de Dague de venin, elle était très appréciée des assassins et espions des Voleurs de l’Ombre. Au fil des années, elle a été minutieusement modifiée jusqu’à incarner le sinistre héritage de Baldwin "le Boucher" Glendale. Lorsqu’il servait les Voleurs de l’Ombre, Glendale entretenait une inquiétante ménagerie de serpents dangereux dont il extrayait régulièrement le venin afin d’enduire ses armes. Cette dague témoigne des innombrables applications de cette décoction mortelle.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Chaque coup inflige 2 points de dégâts de poison par seconde pendant 12 secondes (jet de sauvegarde contre le poison)
+
+TAC0 : +2
+Dégâts : 1d4+2, +2 de poison
+Type de dégâts : perforants
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@42=~Kérykeion : Morsure de Méduse~
+@43=~Cette fléchette a été fabriquée à partir d’un fragment du Kérykeion, ce qui lui confère des pouvoirs uniques et terrifiants. L’essence de Méduse, l’une des sœurs Gorgones, coule en elle. Sa forme rappelle celle d’un croc acéré. Chaque fois qu’elle est lancée, cette arme revient magiquement à son utilisateur.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Chaque coup inflige 1 point de dégâts de poison toutes les 2 secondes pendant 12 secondes au total (jet de sauvegarde contre le poison)
+- 5 % de chances d’étourdir la cible pendant 1 round (jet de sauvegarde contre les sorts)
+- Revient dans la main de son porteur après avoir été lancée
+
+TAC0 : +2
+Dégâts : 1d3+2, +2 d’acide
+Type de dégâts : projectile
+Facteur de vitesse : 0
+Type de compétence : fléchette
+Type : arme à une main
+
+Poids : 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@44=~Fléchette acide +2~
+@45=~Ces fléchettes sont forgées à partir des dents et des tendons d’un dragon noir, leurs pointes se dissolvant en un acide mortel à l’impact. Chacune est recouverte d’une couche supplémentaire d’acide corrosif afin d’infliger à sa cible un maximum de dégâts et de souffrances.
+
+PARAMÈTRES :
+
+TAC0 : +2
+Dégâts : 1d3+2, 2d6 d’acide (jet de sauvegarde contre les sorts)
+Type de dégâts : projectile
+Facteur de vitesse : 1
+Type de compétence : fléchette
+Type : arme à une main
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@46=~Capuche des ombres~
+@47=~Magie, potions et alchimie ont servi à modifier la forme et la matière de plusieurs objets magiques afin de créer cette capuche. Lorsqu’elle est portée, elle aiguise la vue jusqu’à frôler la perfection. Les illusions se révèlent alors pour de simples tours de passe-passe et les ennemis apparaissent clairement, quelle que soit l’obscurité de la nuit.
+
+PARAMÈTRES :
+
+Capacités à charges :
+- Permet de lancer Invisibilité une fois par jour
+
+Capacités d’équipement :
+- Infravision jusqu’à 36 mètres
+- Dissimulation dans l’ombre : +15 %
+- Détection des illusions : +15 %
+
+Poids : 2~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@48=~Fragment brisé du Kérykeion~
+@49=~Il s’agit d’un fragment du Kérykeion, bâton légendaire forgé dans le Monde souterrain par les énigmatiques sœurs Gorgones. Il parvint jusqu’à Féérune lors de la tumultueuse Période des Troubles.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@50=~Gemme précieuse~
+@51=~Un diamant rare et manifestement très précieux.
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@52=~Collier de Gerard~
+@53=~Ce bijou de famille appartient aux Travenhurst.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@54=~Morceau de métal~
+@55=~Lame d’ogre~
+@56=~Un énorme morceau de métal qui ressemble vaguement à une épée.
+
+Poids : 10~
+@57=~Cette gigantesque lame a été forgée par l’Ogre, mais sa forme est trop irrégulière et grossière pour qu’on puisse vraiment parler d’une épée. Dans son état actuel, cette arme est inutilisable.
+
+Poids : 10~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@58=~Lotus noir~
+@59=~Un poison puissant aux propriétés sédatives et hallucinogènes lorsqu’il est absorbé à faible dose.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@60=~Rapports des Voleurs de l’Ombre~
+@61=~Ces documents sont rédigés dans un code que seuls les membres des Voleurs de l’Ombre sont vraisemblablement capables de déchiffrer. Baldwin s’y intéressera certainement.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@62=~Pendentif de Vapula~
+@63=~Il s’agit du pendentif personnel de Vapula Simberg.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@64=~Collier d’asservissement d’Europea~
+@65=~Ce dispositif perturbe les connexions neuronales du cerveau, rendant son porteur plus apathique et docile. Il semble légèrement endommagé.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@66=~Corps d’Europea~
+@67=~C’est le corps d’Europea.
+
+Poids : 65~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@68=~Cadavre de Magnus~
+@69=~C’est le corps de Magnus.
+
+Poids : 115~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@70=~Missive discrète~
+@71=~Cette petite lettre est rédigée dans un code que seuls les Voleurs de l’Ombre peuvent déchiffrer.
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@72=~Faux fragment du Kérykeion~
+@73=~Une imitation habilement fabriquée qui dissimule un enchantement périlleux. Forgée par les mains expertes des Voleurs de l’Ombre, cette réplique renferme un secret mortel. Son unique objectif est d’inciter Baldwin à l’intégrer aux véritables fragments du Kérykeion, déclenchant ainsi un piège dévastateur destiné à provoquer sa mort immédiate.
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@74=~Fausse pièce d’or~
+@75=~Bien que cela soit à peine perceptible, le poids, le toucher et la teinte de cette pièce diffèrent légèrement de ceux d’une véritable pièce d’or. Un examen rapide suffirait aisément à la faire passer pour authentique.
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@76=~Morceau de tissu déchiré~
+@77=~C’est un morceau de tissu déchiré que vous avez trouvé serré dans la main de Galatea.
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@78=~Anneau de Karp~
+@79=~Anneau de protection +1 : Anneau des Princes
+Cet anneau et plusieurs autres du même type furent à l’origine créés pour protéger les fils du roi Castter De’wess, bien que l’identité de celui qui prononça l’enchantement demeure inconnue. Les chroniques indiquent que les anneaux restèrent dans cette famille pendant au moins treize générations avant de tous disparaître, semble-t-il, en l’espace d’une seule. L’inimitié qui opposait le roi à la famille de leur créateur pourrait en être la cause.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Classe d’armure : +1
+- Jets de sauvegarde : +1
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@80=~Fléchette étourdissante de joueur~
+@81=~La Fléchette d’étourdissement ressemble à n’importe quelle autre fléchette, si ce n’est qu’elle semble légèrement pulser lorsqu’on la tient en main. Ses véritables effets apparaissent lorsqu’elle frappe un adversaire et que celui-ci s’effondre, étourdi.
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@82=~Fiole de venin de serpent~
+@83=~Un poison mortel particulièrement apprécié des assassins. Une fine couche appliquée sur n’importe quelle arme aura des effets dévastateurs sur quiconque entre en contact avec elle.
+
+PARAMÈTRES :
+
+- S’applique à une arme
+- La cible touchée subit 5 points de dégâts de poison
+- La cible touchée subit 1 point de dégâts de poison par seconde pendant 12 secondes (jet de sauvegarde contre le poison)
+- Durée : 5 rounds
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@84=~Souffle de gorgone~
+@85=~Voici une bouteille de souffle de gorgone concentré. Elle a été trouvée parmi une importante réserve de potions dissimulée dans la forêt de Cormanthor. À côté se trouvaient une bouteille brisée et un elfe pétrifié.
+
+PARAMÈTRES :
+
+- S’applique à une arme
+- La cible touchée est étourdie pendant 5 rounds
+
+Poids : 1~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@86=~Anneau~
+@87=~Anneau de crochetage mineur~
+@88=~Un anneau est un petit cercle de métal précieux porté comme bijou. Certains anneaux rares ont reçu des enchantements qui leur confèrent diverses propriétés magiques. Ils sont très recherchés, notamment par les aventuriers.
+
+PARAMÈTRES :
+
+Poids : 0~
+@89=~Façonné par les mains expertes de l’insaisissable serrurière Elara Main-d’Ombre, l’Anneau de crochetage mineur joue le rôle d’un patient mentor pour ceux qui font leurs premiers pas dans les ombres. Maîtresse dans l’art de manipuler les serrures, Elara avait compris la nécessité de disposer d’un outil capable de guider en douceur les voleurs débutants dans l’apprentissage de leur métier.
+
+La légende raconte que l’atelier secret d’Elara se trouvait au cœur d’une immense métropole. Elle y consacra d’innombrables heures à perfectionner ses techniques et à étudier les mécanismes des serrures et des clefs. Son dévouement culmina avec la création du premier Anneau de crochetage mineur, témoignage de sa volonté de transmettre son savoir à la génération suivante de roublards.
+
+Les enchantements de l’anneau sont conçus pour apporter une aide subtile à ceux qui cherchent à perfectionner l’art délicat du crochetage. Une fois l’anneau porté, les doigts semblent se mouvoir avec une précision presque instinctive, permettant de manipuler plus habilement goupilles et mécanismes. C’est comme si l’anneau poussait doucement dans la bonne direction, enseignant par le toucher et la mémoire musculaire.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Crochetage : +15 %
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@90=~Anneau~
+@91=~Anneau de vigilance~
+@92=~Un anneau est un petit cercle de métal précieux porté comme bijou. Certains anneaux rares ont reçu des enchantements qui leur confèrent diverses propriétés magiques. Ils sont très recherchés, notamment par les aventuriers.
+
+PARAMÈTRES :
+
+Poids : 0~
+@93=~Forgé par l’énigmatique artificier Maelis Murmure-du-Vent, l’Anneau de vigilance témoigne de l’art de la prévoyance et d’un savoir-faire méticuleux. Maelis, célèbre pour son intérêt envers les pièges et les mécanismes, cherchait à créer un outil capable d’accorder à son porteur une faculté sans égale pour percevoir les dangers cachés.
+
+La légende veut que Maelis ait passé des années à compulser d’anciens traités d’ingénierie arcanique et à étudier les subtilités des pièges de donjons oubliés. À force d’efforts, il découvrit le secret permettant d’imprégner des objets ordinaires de propriétés extraordinaires. C’est au cours d’une nuit étoilée, au cœur du Bois de la Lune, qu’il acheva les derniers enchantements du premier Anneau de vigilance.
+
+Le pouvoir de cet anneau réside dans sa capacité extraordinaire à aiguiser les sens de son porteur, notamment pour détecter les pièges. Celui qui le passe à son doigt acquiert une perception presque surnaturelle de son environnement, lui permettant de repérer jusqu’aux mécanismes et aux chausse-trapes les plus habilement dissimulés.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Détection des pièges : +15 %
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@94=~Anneau~
+@95=~Anneau du coupe-bourse~
+@96=~Un anneau est un petit cercle de métal précieux porté comme bijou. Certains anneaux rares ont reçu des enchantements qui leur confèrent diverses propriétés magiques. Ils sont très recherchés, notamment par les aventuriers.
+
+PARAMÈTRES :
+
+Poids : 0~
+@97=~L’Anneau du coupe-bourse est un accessoire inquiétant dont la conception trahit le but malhonnête. Façonné avec un sens aigu de la dissimulation, il aide son porteur dans l’art de subtiliser les biens d’autrui. Son anneau est couvert de fines gravures évoquant des ruelles obscures et des marchés clandestins, témoignage de ses origines secrètes.
+
+Forgé dans les ateliers ténébreux du monde criminel, il devint un bien convoité par ceux qui apprécient la discrétion et le larcin. Conçu dans un seul but, cet anneau est un outil essentiel pour ceux qui prospèrent dans les ombres et cherchent à alléger les bourses de victimes qui ne se doutent de rien.
+
+Son pouvoir réside dans sa capacité à accroître la dextérité et la finesse de son porteur, lui permettant de se faufiler avec adresse dans les rues bondées et de délester prestement les passants de leurs objets de valeur. Les possesseurs de cet anneau semblent capables d’entrer et sortir des foules sans attirer l’attention, leurs doigts dansant avec agilité tandis qu’ils allègent les bourses des imprudents.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Vol à la tire : +15 %
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@98=~Anneau du pillard~
+@99=~Issu de la fusion de trois anneaux magiques distincts associés aux arts du vol, cet anneau présente une élégante combinaison d’enchantements. Lorsqu’il est porté, il aiguise la vigilance de son propriétaire et lui confère un talent presque surnaturel pour déceler les trésors cachés. Son porteur semble capable de pressentir la présence d’objets de valeur, qu’ils reposent dans des tombeaux poussiéreux, d’anciennes cryptes ou les poches de victimes sans méfiance.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Vol à la tire : +15 %
+- Crochetage : +15 %
+- Détection des pièges : +15 %
+
+Poids : 0~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@100=~Serpent~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@101=~Kérykeion : Promesse d’Euryale~
+@102=~Cette épée courte a été fabriquée à partir d’un fragment du Kérykeion, ce qui lui confère des pouvoirs uniques et terrifiants. L’essence d’Euryale, l’une des sœurs Gorgones, coule en elle. Son profil élancé la rend idéale pour les attaques rapides.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Augmente le nombre d’attaques de 1
+
+TAC0 : +2
+Dégâts : 1d6+2
+Type de dégâts : perforants
+Facteur de vitesse : 0
+Type de compétence : épée courte
+Type : arme à une main
+Nécessite :
+ 5 en Force
+
+Poids : 3~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@103=~Kérykeion : Lame de Sthéno~
+@104=~Ce katana a été fabriqué à partir d’un fragment du Kérykeion, ce qui lui confère des pouvoirs uniques et terrifiants. L’essence de Sthéno, l’une des sœurs Gorgones, coule en lui. Il a été forgé en unissant le fragment à la Lame d’ogre originelle. La puissance de ses impacts est telle qu’elle laisse ses cibles étourdies. Sa lame est également abondamment enduite du sang extrêmement acide de l’ogre.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- 10 % de chances d’étourdir la cible pendant un demi-round (jet de sauvegarde contre les sorts)
+- 10 % de chances d’infliger 5 points de dégâts d’acide supplémentaires
+
+TAC0 : +2
+Dégâts : 1d10+2
+Type de dégâts : contondants
+Facteur de vitesse : 2
+Type de compétence : katana/wakizashi
+Type : arme à une main
+Nécessite :
+ 12 en Force
+
+Poids : 8~
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+@105=~Dague~
+@106=~Murmure furtif~
+@107=~La dague typique possède une lame pointue, généralement à double tranchant, contrairement au couteau qui n’en possède qu’un et est légèrement plus court.
+
+PARAMÈTRES :
+
+Dégâts : 1d4 (perforants)
+Facteur de vitesse : 2
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 1~
+@108=~Mask, le Seigneur des Ombres, est une divinité de l’intrigue, des secrets et du vol, vénérée par les roublards, les espions et tous ceux qui vivent dans les ombres. À travers les Royaumes, son influence s’étend jusque dans les recoins les plus obscurs du monde, où le simple murmure de son nom inspire à la fois respect et crainte.
+
+Le Murmure furtif originel était une épée longue d’une facture incomparable, imprégnée de l’essence de son divin propriétaire. Forgée dans les profondeurs ardentes des royaumes divins, on disait qu’elle portait en elle l’essence même de la furtivité et de la ruse. Ceux qui la maniaient étaient réputés devenir presque invisibles, se glissant dans les ombres avec une grâce irréelle.
+
+Au fil des âges, le destin de Murmure furtif resta enveloppé de mystère, son emplacement n’étant connu que des plus dévoués fidèles de Mask. Elle devint une relique aux proportions mythiques, recherchée par tous ceux qui rêvaient du pouvoir de traverser le monde sans être vus.
+
+C’est au cours d’une époque de bouleversements que l’épée longue Murmure furtif connut son tragique destin. Les circonstances de sa destruction restent obscures et se sont perdues dans les annales. Certains affirment qu’elle fut brisée au cours d’une bataille cataclysmique, tandis que d’autres pensent qu’elle fut volontairement divisée et ses fragments dispersés à travers les Royaumes.
+
+L’un de ces fragments atteignit le monde des mortels, où il fut découvert par un artisan et maître d’armes de grand talent. Reconnaissant l’essence divine qui y subsistait, l’artisan entreprit une tâche redoutable : reforger le fragment en une arme capable de conserver une part de sa gloire passée. Ainsi renaquit Murmure furtif.
+
+Bien que sa forme ait changé, la dague conserva une partie du mystère de l’épée longue d’origine. Ceux qui la manient reçoivent une parcelle de la grâce insaisissable de Mask, qui leur permet de se déplacer avec une furtivité surnaturelle. Les ombres semblent les accueillir, leur accordant une capacité presque magique à échapper aux regards.
+
+Murmure furtif témoigne de la puissance durable de Mask et de l’esprit indomptable de ceux qui cherchent à maîtriser les ombres. À ceux qui osent la manier, elle offre un avant-goût du divin et rappelle que même les fragments des dieux peuvent receler un pouvoir inimaginable.
+
+PARAMÈTRES :
+
+Capacités de combat :
+- Augmente le nombre d’attaques de 1
+- Chances de coup critique : +10 %
+
+TAC0 : +4
+Dégâts : 1d4+4, +5 de froid
+Type de dégâts : perforants
+Facteur de vitesse : 0
+Type de compétence : dague
+Type : arme à une main
+Nécessite :
+ 3 en Force
+
+Poids : 1~
+
+@109=~Bourse de noble~
+@110=~Ces élégantes bourses sont confectionnées dans une riche soie brodée et portent les marques de la noblesse d’Eauprofonde. Munies d’un solide fermoir d’argent poli, elles sont conçues pour contenir en toute sécurité une importante quantité de pièces. Symboles d’opulence et de prestige, elles sont très recherchées par ceux qui ont des goûts exigeants en matière de mode comme de richesse. Fait remarquable, malgré le poids de leur contenu, un discret enchantement magique les rend presque légères comme une plume lorsqu’on les porte. Cette commodité supplémentaire en fait un bien précieux pour tout collectionneur avisé ou roublard rusé.
+
+Poids : 0~
+
+@111=~Coffre de l’Œil de la Gorgone~
+@112=~Ce sac, tissé de fibres ombreuses, dissimule tout un trésor de contrebande. Son contenu, qui luit d’un éclat sombre et séduisant, laisse deviner les richesses illicites qu’il renferme. Fabriqués avec une minutieuse habileté par les membres de l’Œil de la Gorgone, ces sacs ne sont pas de simples contenants, mais les symboles du savoir-faire de la guilde dans l’art de la furtivité et de la dissimulation. Imprégnés d’enchantements qui les soustraient aux regards, ils garantissent la sécurité de leur contenu et peuvent échapper même aux yeux les plus perçants. Quand vient le moment voulu, les sacs sont rapidement récupérés et leur contenu devient le fruit des entreprises clandestines de l’Œil de la Gorgone. Chacun témoigne de la maîtrise de la guilde sur le monde criminel et rappelle à tous ceux qui croisent son chemin que certains trésors feraient mieux de rester intacts.
+
+Poids : 3~
+
+@113=~Lettre falsifiée~
+@114=~Cette lettre soigneusement fabriquée porte l’insigne de la Garde de la ville, ainsi que des sceaux et signatures à l’apparence officielle. Elle ordonne au traître de se rendre aux fontaines du sud à la tombée de la nuit pour ce qui semble être un rendez-vous important.
+
+Poids : 0~
+
+@115=~Cotisations de la guilde~
+@116=~Scellées du symbole de l’Œil de la Gorgone, ces bourses remplies de pièces contiennent les cotisations versées par les établissements de Bérégost. Chaque tintement témoigne de la protection que nous leur offrons et garantit un passage sans encombre dans ces rues plongées dans l’ombre. Un tribut bien tangible scellant une compréhension mutuelle dans la danse clandestine du monde criminel.
+
+Poids : 5~
+
+@117=~Cascade au clair de lune~
+@118=~La Cascade au clair de lune est un collier d’une grande finesse, façonné avec une précision et un soin extraordinaires. En son centre repose un saphir sans défaut, serti dans un délicat ouvrage d’argent évoquant une cascade sous la douce lueur d’un rayon de lune. De fins filigranes ornent la chaîne et rappellent la danse irréelle de la lumière sur l’eau. Sa rareté ne fait aucun doute : seuls quelques exemplaires ont jamais été créés, ce qui en fait une véritable pièce de collection. Porter la Cascade au clair de lune confère non seulement une touche d’élégance, mais aussi une aura de mystère envoûtant.
+
+Poids : 1~
+
+@119=~Whisky des Sélénae~
+@120=~Une bouteille de whisky des Sélénae, alcool rare et recherché originaire des lointaines îles Sélénae. Connu pour sa saveur douce et fumée ainsi que son mélange singulier d’herbes et d’épices, ce whisky s’est acquis une réputation de plaisir raffiné auprès des palais les plus exigeants. Chaque gorgée porte l’essence d’une terre lointaine et évoque les paysages sauvages et la culture vibrante des Sélénae. Cette bouteille particulière est d’une facture remarquable, son étiquette ornée d’un croissant de lune argenté qui rappelle les origines célestes du breuvage. Sa simple présence attire l’attention et en fait un ajout convoité à la collection de tout connaisseur.
+
+Poids : 2~
+
+@121=~Dispositif incendiaire~
+@122=~Ce récipient inquiétant renferme un mélange instable de substances hautement inflammables, scellé dans un verre renforcé. Une mèche allumée dépasse du bouchon et égrène les secondes avant l’embrasement. L’étiquette porte des avertissements sinistres et des symboles de danger qui témoignent de son potentiel destructeur. Une fois enflammé, le récipient libère un torrent de flammes ardentes qui dévore tout sur son passage. Le maniement de cette arme exige une grande prudence et beaucoup de discernement, car sa puissance peut servir aussi bien la création que la destruction. À utiliser avec sagesse.
+
+Poids : 2~
+
+@123=~Preuves compromettantes~
+@124=~Ces documents de parchemin usés portent le sceau officiel de l’armée amnienne et dressent la liste d’activités illégales présumées attribuées à la capitaine Selena Stardancer et à son équipage notoire. Les preuves comprennent des comptes rendus d’opérations de contrebande, des rapports de raids contre des navires marchands et des accusations de liens avec différents trafics clandestins à travers les Royaumes. Les documents contiennent également des témoignages et des correspondances interceptées, dessinant un portrait accablant des entreprises criminelles de Stardancer. La possession de ces papiers constitue un puissant moyen de pression sur elle et en fait un atout précieux pour quiconque souhaite lui imposer son autorité ou négocier avec la célèbre bretteuse.
+
+Poids : 0~ 
+
+@125=~Bourse de pièces~
+@126=~Ce grand sac déborde d’un lourd assortiment de pièces étincelantes dont les reflets métalliques promettent richesse et prospérité. Le tintement continu de cette monnaie rappelle sans cesse sa valeur considérable. Le sac lui-même est de facture robuste et ses coutures ont été renforcées pour supporter une telle charge. Son contenu murmure la promesse d’innombrables possibilités, dans l’attente de l’occasion idéale d’être employé.
+
+Poids : 5~
+
+@127=~Piège perforant~
+@128=~Le Piège perforant est un mécanisme mortel dont chaque rouage a été perfectionné. Lorsqu’il se déclenche, il libère une pluie de flèches acérées comme des rasoirs, conçues pour transpercer chair et armure avec une précision impitoyable.
+
+PARAMÈTRES :
+
+Dégâts : 2d6+6
+Type de dégâts : perforants
+
+Poids : 1~
+
+@129=~Piège empoisonné~
+@130=~Le Piège empoisonné cache un sinistre secret derrière son apparence anodine. Une fois déclenché, il s’anime brusquement et projette des flèches enduites d’un venin mortel qui se répand dans les veines de la victime et lui inflige un supplice empoisonné et persistant.
+
+PARAMÈTRES :
+
+Dégâts : 2d6, +6 de poison, +1d6 de poison par round pendant les 3 rounds suivants
+Type de dégâts : perforants
+
+Poids : 1~
+
+@131=~Piège incendiaire~
+@132=~Le Piège incendiaire est un hommage à l’art de la destruction maîtrisée. Dans un jaillissement de feu arcanique, il projette des flèches enveloppées de flammes qui embrasent l’air autour d’elles et consument leur cible jusqu’à ne laisser que des cendres.
+
+PARAMÈTRES :
+
+Dégâts : 2d6, +2d6 de feu
+Type de dégâts : perforants
+
+Poids : 1~
+
+@133=~Piège élémentaire~
+@134=~Cette création magistrale, connue sous le nom de Piège élémentaire, puise directement dans l’essence des éléments. Lorsqu’il se déclenche, il projette une volée de flèches imprégnées de magie, chacune portant la puissance du feu, de l’électricité et de la glace. Ses victimes doivent affronter un déchaînement de fureur élémentaire.
+
+PARAMÈTRES :
+
+Dégâts : 2d6, +3 de feu, +3 de froid, +3 d’électricité
+Type de dégâts : perforants
+
+Poids : 1~
+
+@135=~Piège étourdissant~
+@136=~Le Piège étourdissant est une invention ingénieuse qui frappe avec discrétion autant qu’avec puissance. Une fois activé, il lance des flèches enduites de venin conçues pour neutraliser la cible, la laissant immobile et à la merci de son agresseur.
+
+PARAMÈTRES :
+
+Dégâts : 2d4+4
+Effet supplémentaire : étourdit la cible
+Type de dégâts : perforants
+
+Poids : 1~
+
+@137=~Piège aveuglant~
+@138=~Le Piège aveuglant est une merveille de subterfuge. Lorsqu’il s’active, il projette des flèches qui éclatent à l’impact et inondent les environs d’une lumière éclatante et brûlante. Ceux qui sont pris dans son rayonnement perdent leurs repères tandis que leur vision est engloutie par une luminosité aveuglante.
+
+PARAMÈTRES :
+
+Dégâts : 2d4+4
+Effet supplémentaire : aveugle la cible
+Type de dégâts : perforants
+
+Poids : 1~
+
+@139=~Grimoire des arcanes perdues de Néthéril~
+@140=~Ce grimoire antique porte le poids d’époques oubliées, ses pages étant couvertes de runes et de sigles d’un âge révolu. Sa couverture, faite d’un cuir usé et cerclée d’argent, dégage une aura de puissance mystique. À l’intérieur sont consignées des incantations et des formules que l’on croyait perdues depuis des siècles, vestiges d’un héritage arcanique autrefois florissant dans les lointaines terres de Néthéril. Posséder ce livre offre la possibilité d’atteindre des profondeurs inégalées de maîtrise magique, mais un tel pouvoir s’accompagne d’immenses responsabilités et dangers. Approchez avec prudence, car ses pages renferment l’héritage d’une civilisation disparue dans les brumes de l’histoire.
+
+Poids : 3~
+
+@141=~Sérum du poumon de plume~
+@142=~Cette fragile fiole de verre contient un liquide scintillant et irréel. Le sérum émet une faible lueur apaisante qui laisse deviner ses puissantes propriétés. Confectionné par le talentueux alchimiste Alaric, il pourrait soulager les souffrances provoquées par la terrible maladie du poumon de plume.
+
+Poids : 1~
+
+@143=~Registre du Poing Enflammé~
+@144=~Cet épais registre relié de cuir usé porte l’insigne du Poing Enflammé. Ses pages sont remplies de comptes rendus méticuleux et de correspondances secrètes détaillant des opérations non divulguées, des objectifs cachés et le réseau complexe d’alliances politiques du Poing Enflammé.
+
+Poids : 3~
+
+@145=~Puissance du Titan~
+@146=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+Puissance du Titan est un lourd anneau de fer gravé d’anciennes runes de pouvoir. Eliana le façonna à partir d’un minerai rare extrait du cœur d’une étoile tombée, qu’elle croyait imprégné de force céleste. On dit que cet anneau confère à son porteur la puissance prodigieuse des titans légendaires.
+
+Capacités d’équipement :
+- Force : +1
+
+Poids : 0~
+
+@147=~Grâce agile~
+@148=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+Grâce agile est un délicat anneau d’argent orné d’un motif de plume. Eliana le créa avec de l’argent provenant des mines du Col de la Lune, réputées pour leur lien avec l’élément de l’air. L’anneau confère une grâce et une vivacité semblables à celles d’un vent murmurant.
+
+Capacités d’équipement :
+- Dextérité : +1
+
+Poids : 0~
+
+@149=~Cœur inébranlable~
+@150=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+Cœur inébranlable est fait d’un métal sombre presque indestructible et porte l’image d’un cœur ceint d’épines. Eliana forgea cet anneau à partir du noyau de la terre ancienne, symbole d’endurance et de résilience. On pense qu’il fortifie la constitution de son porteur à l’image de la terre éternelle.
+
+Capacités d’équipement :
+- Constitution : +1
+
+Poids : 0~
+
+@151=~Esprit éclairé~
+@152=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+Esprit éclairé est façonné dans un métal brillant aux reflets bleutés et serti d’un cristal qui scintille d’une lumière intérieure. Pour sa création, Eliana rechercha les cristaux les plus rares au fond des cavernes les plus profondes, symbolisant ainsi la quête du savoir caché. On dit que cet anneau illumine l’esprit de son porteur.
+
+Capacités d’équipement :
+- Intelligence : +1
+
+Poids : 0~
+
+@153=~Vision du sage~
+@154=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+L’Anneau de la Vision du sage est fait d’or et représente un hibou dont les yeux sont deux émeraudes. Eliana le façonna à partir d’or trouvé dans des rivières sacrées que l’on disait bénies par les dieux de la sagesse. Cet anneau aide à discerner la vérité au-delà des illusions.
+
+Capacités d’équipement :
+- Sagesse : +1
+
+Poids : 0~
+
+@155=~Autorité rayonnante~
+@156=~Le « Cercle de maîtrise de l’Alchimiste » est une collection de six anneaux magiques constituant le chef-d’œuvre d’Eliana, alchimiste et sage légendaire. Elle estimait que la véritable maîtrise des arts alchimiques passait par le perfectionnement de soi, et chaque anneau fut donc conçu pour renforcer un aspect différent de l’être. Ensemble, ils représenteraient l’aboutissement de toute l’œuvre et de la philosophie d’Eliana, chacun témoignant de son talent et de sa sagesse inégalés. La légende affirme qu’une fois réunis, ces anneaux révèlent un pouvoir secret, accessible uniquement à ceux capables de maîtriser harmonieusement toutes les facettes de la perfection.
+
+Autorité rayonnante est un anneau d’or poli serti d’un rubis qui émet une douce lueur. Eliana utilisa une pierre extraite du cœur d’un volcan, symbole de la puissance ardente du charisme. L’anneau est réputé conférer à son porteur une aura impérieuse.
+
+Capacités d’équipement :
+- Charisme : +1
+
+Poids : 0~
+
+@157=~Amulette du traqueur nocturne~
+@158=~L’Amulette du traqueur nocturne est un artefact révéré que l’on croit avoir été créé par de fervents fidèles de Mask. Forgée sous une sombre nouvelle lune et imprégnée de l’essence du plan de l’Ombre, cette amulette entrerait en résonance avec le pouvoir insaisissable de Mask. Son enchantement particulier accroît la précision et la létalité de son porteur, lui donnant en permanence un avantage au combat. Elle se compose d’une chaîne d’argent noirci et d’une pierre de lune centrale, symbole du lien entre son propriétaire et ce qui reste caché ou invisible. Selon la légende, elle fut jadis employée par les assassins et agents clandestins les plus redoutables voués au Seigneur des Ombres. Sa faculté d’améliorer les coups critiques en fait un objet convoité par les voleurs, les roublards et les aventuriers qui préfèrent la furtivité et la ruse à la force brute. L’Amulette du traqueur nocturne n’est pas seulement un outil de combat : elle symbolise l’affinité de son porteur avec les aspects les plus subtils et dangereux de l’aventure dans un monde saturé de magie et de mystère.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Chances de coup critique : +10 %
+
+Poids : 0~
+
+@159=~Armure de cuir cloutée~
+@160=~Armure de tisse-ombre d’Isla Darkcloak~
+@161=~Une armure de cuir cloutée a peu de choses en commun avec une armure de cuir ordinaire. Cette dernière forme une coque durcie, tandis que le cuir clouté reste souple et flexible, couvert de centaines de rivets métalliques. Ceux-ci sont si rapprochés qu’ils constituent une couche flexible de métal dur qui dévie les coups tranchants. Le cuir souple qui leur sert de support ne fait guère plus que les maintenir en place.
+
+PARAMÈTRES :
+
+Classe d’armure : 7 (5 contre les dégâts tranchants, 6 contre les dégâts perforants et les projectiles)
+Nécessite :
+ 6 en Force
+
+Poids : 25~
+@162=~Cette armure de cuir cloutée de grande qualité fait autant partie de la légende d’Isla Darkcloak que ses exploits dans les fosses de combat et les recoins obscurs de la Côte des Épées. Le cuir est teint de nuances profondes et changeantes de noir et de gris, donnant presque l’impression d’absorber la lumière alentour. Chaque clou a été placé avec une maîtrise parfaite, non seulement pour offrir une protection, mais aussi pour favoriser ses déplacements furtifs.
+
+La rumeur prétend qu’Isla commanda elle-même cette armure à un maître tanneur qui aurait utilisé des matériaux provenant de Gisombre. L’armure protège son porteur tout en renforçant son agilité naturelle et sa furtivité, faisant d’Isla une adversaire et une alliée encore plus redoutable dans le monde criminel. Lorsqu’elle abandonna la gloire de l’arène pour les ombres du mercenariat, son armure devint le symbole de sa faculté d’adaptation et de sa maîtrise dans ces deux univers.
+
+PARAMÈTRES :
+
+Capacités d’équipement :
+- Dextérité : +1
+
+Classe d’armure : 4 (2 contre les dégâts tranchants, 3 contre les dégâts perforants et les projectiles)
+Nécessite :
+ 6 en Force
+
+Poids : 8~
+
+@163=~Créer un piège~
+@164=~Cette compétence unique permet à Liedel de mettre à profit sa connaissance approfondie des toxines mortelles et des mécanismes complexes pour confectionner des pièges sournois à l’intention de proies sans méfiance. Une fois par jour, elle peut fabriquer un Baiser de l’Arachnide, démontrant ainsi sa capacité à contrôler le champ de bataille et à neutraliser ses cibles avec précision et inventivité. Ces pièges ne sont pas seulement les outils de son métier : ils sont aussi l’expression de l’art sombre qu’elle pratique dans le monde d’ombres où elle prospère.
+
+Baiser de l’Arachnide :
+
+Lorsqu’il se déclenche, ce mécanisme complexe libère une rafale de flèches enduites d’une toxine puissante. Les projectiles jaillissent de compartiments dissimulés et enveloppent la cible d’une étreinte mortelle. Chaque flèche est imprégnée d’un venin neurotoxique conçu pour infliger des dégâts de poison répétés, affaiblir les capacités physiques de la victime et provoquer une intense désorientation. L’effet paralysant de la toxine étourdit également la cible, la rendant vulnérable à de nouvelles attaques. Conçu avec précision et ruse, le Baiser de l’Arachnide témoigne de la réputation de Liedel en tant que redoutable chasseuse de primes et maîtresse de son art mortel.
+
+Dégâts : 2d6, +6 de poison, +1d6 de poison par round pendant les 3 rounds suivants
+Effet supplémentaire : étourdit la cible
+Type de dégâts : perforants
+
+Poids : 1~
+
+@165=~Baiser de l’Arachnide~
+@166=~Lorsqu’il se déclenche, ce mécanisme complexe libère une rafale de flèches enduites d’une toxine puissante. Les projectiles jaillissent de compartiments dissimulés et enveloppent la cible d’une étreinte mortelle. Chaque flèche est imprégnée d’un venin neurotoxique conçu pour infliger des dégâts de poison répétés, affaiblir les capacités physiques de la victime et provoquer une intense désorientation. L’effet paralysant de la toxine étourdit également la cible, la rendant vulnérable à de nouvelles attaques. Conçu avec précision et ruse, le Baiser de l’Arachnide témoigne de la réputation de Liedel en tant que redoutable chasseuse de primes et maîtresse de son art mortel.
+
+PARAMÈTRES :
+
+Dégâts : 2d6, +6 de poison, +1d6 de poison par round pendant les 3 rounds suivants
+Effet supplémentaire : étourdit la cible
+Type de dégâts : perforants
+
+Poids : 1~
+
+@167=~Préceptes de l’Invisible~
+@168=~La richesse revient de droit à ceux qui savent s’en emparer. Efforcez-vous de terminer chaque journée avec davantage de biens matériels qu’à son commencement, mais dérobez ce qui compte vraiment, et non tout ce qui se trouve à portée de main.
+
+L’honnêteté est bonne pour les sots, mais l’apparence de l’honnêteté a une immense valeur. Faites paraître chaque mensonge plausible, et ne mentez jamais lorsque vous pouvez vous en tenir à la vérité tout en laissant naître une impression erronée ; un pont brûlé exige de grands efforts pour être reconstruit si vous devez un jour le traverser de nouveau.
+
+La subtilité est tout. Le pot-de-vin est le moins subtil des outils que Mask nous offre. Ne forcez jamais quelqu’un à faire ce que vous pouvez l’amener à accomplir par manipulation, en lui faisant croire que la décision comme l’acte sont entièrement le fruit de son libre arbitre.
+
+Ne faites jamais ce qui est évident, sauf pour dissimuler une seconde ou une troisième action ou manœuvre. Tissez des secrets sur des secrets, mais faites-le avec détachement, sans l’excitation sournoise d’une jeunesse inexpérimentée.
+
+Ayez foi dans les ombres, car les chemins trop éclairés font des cibles faciles.~

@@ -1,0 +1,897 @@
+@200=~Les habitants de Bérégost parlent d’un tunnel hanté derrière l’auberge de Feldepost. Cela vaudrait peut-être la peine d’enquêter pour découvrir ce qu’il en est réellement.~
+
+@201=~Un jeune garçon m’a signalé que des individus peu recommandables entraient dans un tunnel derrière l’auberge de Feldepost. Je devrais peut-être inspecter soigneusement les environs.~
+
+@202=~J’ai lié mon destin à celui de l’Œil de la Gorgone, la tristement célèbre guilde de Bérégost dirigée par l’énigmatique Baldwin. Mon initiation est entre les mains de Rigaldo, qui éprouvera mes talents et ma ruse au moyen d’une série d’épreuves. Un nouveau chapitre s’ouvre, plein de risques et de promesses de pouvoir. Les frontières entre alliés et ennemis risquent de se brouiller, mais je suis prêt. Chaque pas qui m’enfonce davantage dans l’étreinte sombre de cette guilde me conduit vers l’inconnu, et pourtant son mystère m’attire. L’Œil de la Gorgone observe, et désormais je dois en faire autant.~
+
+@203=~J’ai rencontré l’un des agents de Baldwin, tout juste sorti d’une escarmouche avec les Voleurs de l’Ombre. Il s’est emparé de documents essentiels concernant l’avenir de la guilde. Je dois les remettre sans tarder à Baldwin afin qu’il les examine.~
+
+@204=~Ariosh m’a fait aujourd’hui une proposition intrigante : rejoindre sa bande dans ses activités de vol dans les rues de Bérégost. Le travail est risqué, sans aucun doute, mais il possède un certain attrait. Pour l’instant, j’ai décliné l’offre, qui ne correspond pas vraiment à mes préoccupations actuelles. Je garderai toutefois l’idée en tête et en note les détails. On ne sait jamais quand je pourrais changer d’avis, ou quand le frisson de telles entreprises pourrait me rappeler dans les ombres.~
+
+@205=~Les rues sont étrangement calmes ces temps-ci, comme une pause dans leur agitation habituelle. Ariosh m’assure que la ville regorgera bientôt de nouvelles occasions. La patience est peut-être la lame la plus affûtée de l’arsenal d’un roublard. Je vais attendre mon heure et revenir lorsque le moment sera propice à de nouveaux mauvais coups.~
+
+@206=~J’ai croisé aujourd’hui Naga, une Démarquesse de Mask qui, d’un simple regard, a reconnu le roublard en moi. En échange d’un généreux don à l’Église de Mask, elle m’a proposé le « Compendium du voleur », une collection de textes consacrés aux arts des ombres. Les connaissances qu’il contient promettent d’affiner mes talents de manière inestimable. Mais le prix est considérable et m’obligerait à employer des moyens peu recommandables pour réunir l’or nécessaire. Je dois réfléchir avec soin à cette voie, car elle porte en elle autant de promesses que de périls. Les ombres m’appellent, mais à quel prix ?~
+
+@207=~Les rues de Bérégost débordent d’activité, dans un flot constant de gens vaquant à leurs affaires. La commandante Seraphina Whitewood m’a souhaité la bienvenue en ville d’un ton empreint de prudence. Elle m’a parlé de la tristement célèbre guilde de voleurs de l’Œil de la Gorgone et de son énigmatique chef, Baldwin. La Garde de la ville semble livrer une lutte permanente pour maintenir l’ordre face à leurs activités clandestines. Seraphina m’a clairement indiqué qu’elle n’avait, pour le moment, pas besoin de renforts. Elle m’a plutôt conseillé de surveiller attentivement les mouvements dans la ville et de me familiariser avec les lieux. C’est une approche sensée, qui me laisse le temps de comprendre les rapports de force complexes à l’œuvre. Peut-être qu’une occasion d’aider la Garde de la ville se présentera en temps voulu. D’ici là, je devrai parcourir les rues avec prudence et discrétion.~
+
+@208=~Au cœur des ténèbres, nous avons affronté l’Œil de la Gorgone. Aux côtés de la commandante Whitewood, nous avons démantelé cette vile guilde qui tourmentait Bérégost depuis bien trop longtemps. Le poids de cet accomplissement est immense. Il témoigne de la force de la persévérance et de la différence qu’une seule personne peut faire. La ville est plus sûre désormais, et j’en éprouve un profond sentiment d’utilité et de satisfaction. Je garderai en mémoire la gratitude de la commandante Whitewood comme un rappel qu’en dépit d’obstacles apparemment insurmontables, il est possible de provoquer un véritable changement. Bérégost se souviendra de ce jour.~
+
+@209=~J’ai pris la décision cruciale de me ranger aux côtés de la Garde de la ville de Bérégost contre la guilde de l’Œil de la Gorgone. La commandante Seraphina Whitewood est déterminée à débarrasser la ville de leur influence. Avant de nous lancer dans cette dangereuse entreprise, je dois rassembler mes esprits et mes ressources. Leur repaire labyrinthique ne sera pas une cible facile. Je ne peux m’empêcher de douter de la sagesse qu’il y aurait à retourner auprès de la guilde à présent ; mieux vaut sans doute faire profil bas jusqu’à la fin de cette opération. Lorsque je serai prêt, je rejoindrai la commandante pour mettre ce plan à exécution.~
+
+
+          ///////////////////////////////////
+          //////// Baldwin's Quests /////////
+          ///////////////////////////////////
+
+
+@210=~Sorcière des ombres
+
+Au sommet des pics traîtres des montagnes des Gibberlings, une redoutable magicienne garde un fragment du Kérykeion. Baldwin m’a chargé de l’affronter afin de récupérer cet artefact indispensable. Il est évident que cela ne se réglera pas par une simple négociation. Je dois me préparer à un duel de puissance arcanique et de ruse.~
+
+@211=~Sorcière des ombres
+
+J’ai vaincu la magicienne au sommet des montagnes des Gibberlings et me suis emparé du fragment du Kérykeion. Curieusement, elle a évoqué de récents affrontements avec d’autres assaillants qui se présentaient comme des voleurs. Cette information pourrait avoir des implications plus profondes. Je devrais en informer Baldwin sans tarder.~
+
+@212=~Sorcière des ombres
+
+J’ai remis le fragment du Kérykeion à Baldwin, qui s’est déclaré satisfait de ma réussite. Il soupçonne la faction qui a pris la magicienne pour cible de surveiller également nos activités. Cette révélation nous oblige à rester vigilants.~
+
+@213=~Des bombes sur Bérégost
+
+Alors que tombe la nuit, l’Œil de la Gorgone se retrouve assiégé par les implacables Voleurs de l’Ombre. Informé de l’assaut, Baldwin m’a chargé d’éliminer leurs agents présents dans la ville. Pendant ce temps, il renforce sans relâche les défenses de notre guilde, sachant que l’affrontement décisif approche.~
+
+@214=~Des bombes sur Bérégost
+
+Les rues sont désormais tachées du sang des Voleurs de l’Ombre tombés au combat. Sur l’un d’eux, j’ai découvert un document codé dont le contenu mystérieux n’est lisible que par leurs yeux avertis. Ce renseignement pourrait se révéler précieux dans notre lutte.~
+
+@215=~Des bombes sur Bérégost
+
+La route qui m’attend mène vers le nord, dans l’étreinte menaçante du Bois des Dents Acérées. Un contrebandier qui possède un fragment convoité du Kérykeion doit y conclure un marché dangereux. Le temps presse, car les griffes des Voleurs de l’Ombre s’étendent loin et leur traque est incessante. Je dois me hâter d’intercepter le contrebandier avant qu’il ne tombe entre leurs mains.~
+
+@216=~Des bombes sur Bérégost
+
+Dans les salles sacrées des ruines elfiques, j’ai assisté à une sombre trahison. Poussé par de sinistres desseins, Thamuz a abattu Nagate sans la moindre hésitation. Son avertissement résonnait encore : si Baldwin parvenait à reconstituer le Kérykeion, les conséquences pourraient être terribles. J’ai abattu Thamuz à mon tour et récupéré le fragment, conscient que son pouvoir recèle autant de promesses que de dangers.~
+
+@217=~Des bombes sur Bérégost
+
+Le deuxième fragment du Kérykeion en main, je suis retourné auprès de Baldwin et lui ai rapporté les paroles inquiétantes de Thamuz. Toujours aussi confiant, Baldwin m’a assuré que l’arme ne présentait aucun danger, même si le doute subsiste dans mon esprit quant à ses véritables intentions. Il a promis de me tenir informé de toute évolution concernant les Voleurs de l’Ombre ou l’énigmatique artefact. Pour l’instant, je ne peux qu’être vigilant et poursuivre prudemment sur la voie périlleuse qui s’ouvre devant moi.~
+
+@218=~Le gambit de Gerard
+
+La note que j’ai remise à Baldwin a révélé une vérité inquiétante : Gerard Travenhurst et certains habitants de Bérégost conspirent avec les Voleurs de l’Ombre, leur servant d’espions et leur transmettant des informations sur notre guilde. Pour sceller cette sombre alliance, Gerard leur a offert le prix ultime : le dernier fragment du Kérykeion. À la suite de cette révélation, Baldwin m’a chargé de le rejoindre au manoir de Gerard et de me tenir prêt à lui prêter main-forte si la rencontre devait mal tourner. Cette révélation rend notre mission plus périlleuse encore.~
+
+@219=~Le gambit de Gerard
+
+Tout a basculé lorsque Baldwin est parvenu à reconstituer le Kérykeion : sous mes yeux, il s’est métamorphosé en un gigantesque serpent. Les Voleurs de l’Ombre et moi avons dû unir nos forces contre cette nouvelle menace. Après un combat acharné, nous avons fini par abattre Baldwin. Ce chapitre sanglant, fait de trahisons et de sacrifices, s’achève, mais bien des questions restent sans réponse.~
+
+@220=~Le gambit de Gerard
+
+Ayant pris la tête de la guilde de l’Œil de la Gorgone, il me revient désormais de fixer de nouvelles directives à ses membres. Chacun devra recevoir un rôle précis et utile. Je dois également me hâter de remettre à Rhade le seul fragment restant du Kérykeion. Peut-être possède-t-il les connaissances et le talent nécessaires pour le réparer ou l’améliorer d’une façon ou d’une autre. Cette responsabilité pèse désormais lourd sur mes épaules ; il me faudra faire preuve d’habileté et de détermination.~
+
+@221=~Le gambit de Gerard
+
+On m’a proposé de devenir maître de guilde de l’Œil de la Gorgone, mais je n’ai aucune envie d’accepter. Le temps comme l’inclination me manquent pour une telle charge. Je retournerai plutôt à la guilde afin de remettre à Rhade le fragment restant du Kérykeion. Peut-être son expertise lui permettra-t-elle de le réparer ou de l’améliorer.~
+
+@222=~Pas d’honneur chez les voleurs
+
+J’ai accepté l’offre de Quass : trahir Baldwin et me ranger du côté des Voleurs de l’Ombre. Leur plan consiste à introduire un faux fragment du Kérykeion, piège mortel pour Baldwin s’il tente de l’assembler avec les autres. Un agent infiltré au sein de l’Œil de la Gorgone doit prendre contact avec moi en employant la phrase « L’arc court du Shaar » comme signe de reconnaissance. Le plan est en marche et je dois me préparer au rôle décisif qui m’attend.~
+
+@223=~Pas d’honneur chez les voleurs
+
+J’ai réussi à remettre le faux fragment du Kérykeion à Baldwin sans éveiller le moindre soupçon. Il ne me reste plus qu’à patienter et attendre de nouvelles instructions des Voleurs de l’Ombre. Dans cette opération délicate, la vigilance sera ma meilleure alliée.~
+
+@224=~Pas d’honneur chez les voleurs
+
+La véritable allégeance de Rhade est désormais révélée. Je dois le rencontrer immédiatement pour discuter de nos prochaines étapes dans cette danse complexe des ombres.~
+
+@225=~Pas d’honneur chez les voleurs
+
+Baldwin est mort et le Kérykeion a volé en éclats, irrémédiablement détruit. Le seul fragment restant est maintenant en ma possession, cadeau de Richard en remerciement de l’aide précieuse que je lui ai apportée.~
+
+
+          ///////////////////////////////////
+          //////// Rigaldo's Quests /////////
+          ///////////////////////////////////
+
+          
+@310=~Un diamant à l’état brut
+
+Ma première tâche pour la guilde de l’Œil de la Gorgone consiste à dérober un diamant à Zieke, un receleur installé à l’auberge de Feldepost. La prudence s’impose, car ses gardes sont vigilants. Je devrai faire preuve de discrétion et de précision, soit en me glissant à leur insu, soit en les neutralisant afin d’atteindre mon objectif.~
+
+@311=~Un diamant à l’état brut
+
+Me voilà donc les deux pieds dans les eaux troubles de l’Œil de la Gorgone, et quelle initiation exaltante ! L’auberge de Feldepost bruissait des conversations étouffées de ses clients tandis que les ombres dansaient dans chaque recoin. Le goût de la réussite m’accompagnait lorsque je suis revenu auprès de Rigaldo. La lueur dans son regard lorsqu’il a vu la gemme en disait long, et il m’a récompensé d’un trésor : un anneau magique destiné aux voleurs. Tandis que je le passe à mon doigt, son pouvoir latent entre en résonance avec le mien et me rappelle la voie que j’ai choisie. Il murmure la promesse d’exploits futurs, d’ombres encore inexplorées et de secrets qui n’attendent que d’être révélés. La route est incertaine et semée de dangers, mais je me sens irrésistiblement attiré vers elle, avide d’affronter tous les défis qui m’attendent.~
+
+@312=~Le prix de la protection
+
+Rigaldo m’a confié une mission délicate qui éprouvera à la fois mes talents de crochetage et de persuasion. La cible est Gerard, un noble qui a cessé de verser ses cotisations à notre guilde. Je dois infiltrer son manoir, dérober un bijou de famille dans un coffre de ses appartements à l’étage, puis utiliser ce collier comme moyen de pression lors des négociations. Il est temps de mettre mes talents à l’épreuve et de convaincre Gerard de reprendre ses paiements, par la persuasion ou l’intimidation. Je le trouverai dans le grand manoir situé au nord de Bérégost.~
+
+@313=~Le prix de la protection
+
+La mission a pris une tournure inattendue. Lorsque je suis arrivé devant le coffre des appartements de Gerard, un autre voleur était déjà là, le collier à la main. Je n’étais manifestement pas le seul à convoiter ce butin. Un combat a éclaté ; c’était lui ou moi et je n’avais pas l’intention de flancher à ce stade. Le collier désormais en ma possession, cette rencontre imprévue m’offre un argument supplémentaire pour convaincre Gerard. Si sa sécurité n’est même pas capable de faire face à plusieurs voleurs, il a certainement davantage besoin de notre protection qu’il ne le croit.~
+
+@314=~Le prix de la protection
+
+Les mots ont échoué là où j’espérais qu’ils suffiraient. Mes tentatives de négociation avec Gerard sont tombées dans l’oreille d’un sourd et la situation a rapidement dégénéré. Au bout du compte, je n’ai eu d’autre choix que de me défendre contre ses gardes. L’affaire fut sanglante, mais c’est apparemment le seul langage que Gerard comprenne. Il a accepté de reprendre ses paiements, sous la contrainte certes. Je ne peux m’empêcher de penser qu’il existait sans doute une solution moins violente, mais ce qui est fait est fait.~
+
+@315=~Sous les sillons
+
+Je pars à la rencontre de Karp, cette fermière chanceuse qui semble être tombée sur tout un trésor d’objets cachés dans ses terres. La promesse de non pas un, mais deux anneaux magiques ajoute un certain attrait à cette tâche. L’intérêt de Rigaldo est compréhensible au vu de leur valeur et de leur utilité potentielles. Je devrai aborder Karp avec tact et la convaincre qu’il est dans notre intérêt mutuel qu’elle se sépare de ces artefacts récemment découverts.~
+
+@316=~Sous les sillons
+
+Avec un peu de persuasion, j’ai réussi à obtenir les anneaux de Karp. Sa coopération sera sans aucun doute avantageuse pour toutes les parties. Il est maintenant temps de retourner auprès de Rigaldo, dans le repaire de l’Œil de la Gorgone, afin de recevoir la récompense bien méritée pour cette négociation réussie.~
+
+@317=~Sous les sillons
+
+La gratitude de Rigaldo était évidente lorsque je lui ai remis les anneaux. Il a insisté pour que j’en garde un en témoignage de son appréciation pour le travail accompli. Voilà un bel ajout à ma collection et un rappel de la confiance que j’ai gagnée au sein de l’Œil de la Gorgone.~
+
+@318=~Sous les sillons
+
+La demande d’aide de Karp me préoccupe. Faire passer clandestinement deux personnes jusqu’à la grouillante Athkatla n’a rien d’une mince affaire, mais je suis déterminé à trouver une solution. Je vais me renseigner discrètement auprès de mes contacts et chercher quelqu’un de fiable qui puisse aider Karp et son fils au cours de ce dangereux voyage.~
+
+@319=~Sous les sillons
+
+La volonté de Zeda d’aider Karp offre une lueur d’espoir dans cette entreprise incertaine. Je dois maintenant transmettre cette information capitale à Karp et l’encourager à réunir rapidement les fonds nécessaires. Le point de rendez-vous est fixé à Bérégost et le temps presse.~
+
+@320=~Sous les sillons
+
+Voir le soulagement de Karp et sa détermination à assurer la sécurité de son fils rappelle l’impact que nous pouvons avoir sur la vie des autres. Son départ précipité vers Bérégost, laissant derrière elle un passé empoisonné, est un pas courageux vers un avenir meilleur.~
+
+@321=~Murmures du carrousel
+
+Cette mission exigera une préparation soigneuse et une exécution rapide. En infiltrant le Carnaval de Nashkel, je devrai me faufiler entre les tentes grouillantes de monde sans être repéré afin de dérober les armes des joueurs. Une fois celles-ci récupérées, il sera essentiel de retrouver Ariosh et ses roublards derrière les tentes. La distribution de ces armes leur permettra d’agir rapidement et efficacement, profitant de l’occasion offerte par les casinos sans défense. Cette entreprise promet autant de défis que de récompenses, et je dois me tenir prêt à faire face aux obstacles imprévus.~
+
+@322=~Murmures du carrousel
+
+Les fléchettes étourdissantes sont désormais en ma possession et j’ai mené à bien la première phase du plan. En distribuant ces armes puissantes à Ariosh et à ses compagnons expérimentés, je m’assure qu’ils sont prêts à attaquer les tentes de jeu du Carnaval de Nashkel. Tandis que je reprends la route de Bérégost, j’éprouve une certaine satisfaction en sachant que l’opération est désormais lancée. À mon retour, je devrai informer Rigaldo du succès de cette étape capitale et le tenir au courant de nos progrès.~
+
+@323=~Murmures du carrousel
+
+Rigaldo s’est montré plus que satisfait des résultats de notre opération au Carnaval de Nashkel. Il a reconnu le rôle décisif que j’y ai joué et m’a généreusement récompensé en me versant une part substantielle des gains. Cela consolide non seulement ma position au sein de l’Œil de la Gorgone, mais témoigne aussi de mes capacités en tant qu’agent expérimenté. Cette nouvelle richesse met à ma disposition ressources et influence et prépare le terrain pour des entreprises encore plus audacieuses à l’avenir.~
+
+@324=~Pétales sanglants
+
+Rigaldo m’a chargé de m’occuper de Borland de Bérégost et de son trafic illicite de lotus noir. Ma mission consiste soit à en faire un allié qui partagera ses bénéfices avec la guilde, soit à mettre fin à son commerce et saisir son stock. Sa maison, à l’apparence banale, se trouve en face de la Gerbe Rouge dans la partie est de la ville et dissimule ces activités plus sombres. Le choix que je ferai pourrait avoir une influence considérable sur les opérations de la guilde dans cette région et au-delà, rappel du poids que chaque décision porte dans le monde des ombres.~
+
+@325=~Pétales sanglants
+
+J’ai réussi à convaincre Borland d’accepter nos conditions. Cela ne lui plaît guère, mais il versera désormais des contributions régulières à l’Œil de la Gorgone. Son trafic d’épices se poursuivra, mais sous notre surveillance. C’est une victoire stratégique pour la guilde, qui étend ainsi son influence et ses ressources.~
+
+@326=~Pétales sanglants
+
+L’époque où Borland dirigeait son trafic illicite d’épices est révolue. Je l’ai convaincu d’y mettre définitivement fin. La décision n’a pas été facile pour lui, mais elle était nécessaire. Les rues de Bérégost seront plus sûres sans son lotus noir en circulation. Cela devrait renforcer l’emprise de l’Œil de la Gorgone sur la ville.~
+
+@327=~Ordre du Lotus Noir
+
+Grâce à ses manœuvres avisées, Rigaldo a réussi à mettre la main sur le fournisseur d’épices de Borland. Il me confie maintenant cinq livres du précieux lotus noir pour effectuer une première livraison au Carnaval de Nashkel. L’acheteur se trouve dans la tente la plus à l’est. En portant cette marchandise, je mesure tout le poids de l’influence qu’elle exerce dans le commerce clandestin. Si cette opération réussit, notre réputation n’en sera que renforcée et des affaires plus lucratives viendront sans doute à nous. Les choix calculés que nous faisons aujourd’hui prépareront de plus grands triomphes encore.~
+
+@328=~Ordre du Lotus Noir
+
+Le Poing Enflammé s’est révélé un obstacle redoutable et a exigé un lourd pot-de-vin : une livre de lotus noir en échange d’un passage sans encombre. Le prix était élevé, mais nécessaire pour assurer le succès de l’opération.~
+
+@329=~Ordre du Lotus Noir
+
+Une rencontre tendue avec le Poing Enflammé a dégénéré lorsqu’ils ont découvert ma cargaison illicite de lotus noir. N’ayant aucune autre option, j’ai dû employer la force létale pour m’échapper. Une sinistre nécessité, mais je ne pouvais laisser l’opération être compromise.~
+
+@330=~Ordre du Lotus Noir
+
+Le lotus noir a été livré avec succès et je rapporte désormais à la guilde une somme considérable. Rigaldo sera satisfait du résultat et notre position dans le commerce clandestin ne fera que se renforcer.~
+
+@331=~Ordre du Lotus Noir
+
+Après avoir récupéré l’or de la transaction de lotus noir, je l’ai rapporté à Rigaldo. Comme à son habitude, il m’a témoigné sa reconnaissance en me remettant une récompense bien méritée.~
+
+@332=~Ordre du Lotus Noir
+
+Rigaldo m’envoie accomplir une étrange mission. Il veut que je retrouve Pruflas, au fond de la tente de lotus noir située le plus à l’est du Carnaval de Nashkel. D’après ce que j’en ai entendu, l’endroit est un antre de fumées et de vice où je n’irais pas de mon plein gré. Mon travail ? Convaincre Pruflas de quitter ce trou et de retourner auprès de sa femme inquiète. Il va falloir rassembler mon courage et voir si je peux lui faire entendre raison. Ensuite, retour auprès de Rigaldo avec les nouvelles.~
+
+@333=~Ordre du Lotus Noir
+
+Il semble que l’acheteur refuse de conclure l’affaire tant que Pruflas sera dans les parages. Je n’ai donc pas d’autre choix que de le convaincre, d’une manière ou d’une autre. Ce ne sera peut-être pas une simple affaire de discussion et de persuasion. Je dois me préparer à tout, y compris à ce que les choses tournent mal. Mais il est trop tard pour reculer. La guilde exige des résultats.~
+
+@334=~Ordre du Lotus Noir
+
+À ma grande surprise, Pruflas a exprimé son désir de retrouver un peu de lucidité au milieu des brumes du lotus noir. Il m’a demandé de l’aide et je lui ai donc administré avec précaution une dose qui semble lui avoir offert un instant de révélation profonde. Lorsque le brouillard s’est dissipé, il a quitté la tente, les yeux illuminés d’une compréhension nouvelle, en parlant de retrouver sa femme. Un étonnant retournement de situation, né du désir de Pruflas lui-même de changer de vie.~
+
+@335=~Ordre du Lotus Noir
+
+Les événements ont pris une tournure tragique alors que j’essayais d’aider Pruflas à retrouver de la lucidité au milieu des brumes du lotus noir. Malheureusement, ma main a dérapé et il a reçu une dose beaucoup trop forte. Son corps n’a pas résisté à son intensité et il a succombé à ses effets. Voilà un rappel brutal des dangers qui accompagnent la voie que nous suivons dans ce monde d’ombres et d’intrigues.~
+
+@336=~Ordre du Lotus Noir
+
+Un soupir de soulagement m’échappe tandis que je retrouve l’étreinte sombre du repaire de l’Œil de la Gorgone. Convaincre Pruflas n’a pas été une mince affaire, mais le poids de la bourse de Rigaldo dans ma main me rappelle les récompenses qui attendent ceux capables de se frayer un chemin dans la toile complexe des ombres. La tâche est accomplie, et je ne peux qu’espérer que Pruflas trouvera du réconfort en retrouvant sa femme. Pour l’heure, je vais compter mes gains et me préparer au prochain acte de cette danse clandestine.~
+
+@337=~Ordre du Lotus Noir
+
+Je suis retourné au repaire de l’Œil de la Gorgone, le sort de Pruflas ne pesant guère sur ma conscience. L’issue est regrettable, certes, mais à vrai dire sa mort ne m’inspire pas beaucoup de remords. Dans notre métier, ce genre d’incident fait partie des risques professionnels. La déception de Rigaldo était prévisible, mais elle ne m’inquiète pas. Je poursuis ma route, car les ombres n’offrent aucun répit aux hésitants.~
+
+@338=~Fondations de l’intrigue
+
+Avant de partir pour Nashkel, il serait peut-être utile de parler à Liedel et Gilbald. Liedel a de nouvelles primes à proposer, et Rigaldo m’a dit avoir senti quelque chose d’étrange chez les hommes de Gilbald au casino. La prochaine directive de Rigaldo nous conduit au Carnaval de Nashkel, véritable ruche grouillante de possibilités. Je dois y rencontrer Procus près des lices de joute, contact essentiel pour établir notre présence sur place. La perspective d’un nouveau centre d’opérations au cœur même du carnaval constitue une avancée enthousiasmante. La prudence reste indispensable, car cette incursion sur le territoire de Nashkel apportera sans aucun doute son lot de difficultés.~
+
+@339=~Fondations de l’intrigue
+
+J’ai rencontré Procus, le contact de la guilde des voleurs à Nashkel. Il m’a expliqué que notre objectif ici est d’étendre l’influence de la guilde dans cette petite ville tranquille aux confins de l’Amn. La première étape consiste à obtenir une base d’opérations, actuellement sous la forme d’une tente occupée par un marchand particulièrement obstiné. Plusieurs possibilités s’offrent à moi : négocier son départ pacifique, l’intimider afin qu’il quitte les lieux ou, si nécessaire, recourir à la force.~
+
+@340=~Fondations de l’intrigue
+
+Obtenir la tente exige un lourd investissement : il faut réunir 500 pièces d’or pour acheter tout son stock. La somme est considérable, mais indispensable si nous voulons prendre pied sur ce nouveau territoire. Tout l’enjeu consiste désormais à réunir les fonds nécessaires.~
+
+@341=~Fondations de l’intrigue
+
+Le problème posé par le marchand a été réglé et la tente est désormais vide, prête à être occupée. L’obstacle écarté, nous pouvons établir notre base d’opérations dans cet emplacement stratégique. La voie que nous suivons exige des sacrifices ; je ne peux qu’espérer qu’ils en vaudront la peine.~
+
+@342=~Fondations de l’intrigue
+
+Je suis retourné auprès de Procus et les dernières étapes de notre projet sont désormais en vue. Les fondations étant posées, nous sommes sur le point de prendre officiellement possession de la tente comme base d’opérations. Il reste quelques détails à régler et les préparatifs sont en cours avant que nous n’établissions durablement notre présence sur ce nouveau territoire.~
+
+@343=~Fondations de l’intrigue
+
+Alors que je me lance dans la mission confiée par Procus, le poids de la situation se fait sentir. Dans les ombres au nord de la tente du lotus se cachent les roublards indépendants que je dois recruter. Parmi eux se trouve la célèbre Selena Stardancer, dont le nom est associé à d’audacieuses aventures dans les îles Pirates. Mon objectif est clair : les convaincre que notre entreprise a davantage à leur offrir que leurs activités actuelles. La tâche ne sera pas facile, mais je dois me rappeler que chaque coupe-jarret a son prix et chaque bretteur une ambition secrète. Cette étape est capitale pour étendre notre influence et je l’aborderai avec la plus grande prudence et toute la ruse dont je suis capable.~
+
+@344=~Fondations de l’intrigue
+
+Les négociations avec la capitaine Stardancer et son équipage ont pris une tournure inattendue. Malgré mes efforts pour les convaincre, ils semblaient déterminés à camper sur leurs positions. L’affrontement était inévitable. Le combat fut rude, mais ils ne m’ont finalement laissé d’autre choix que de me défendre et de faire en sorte qu’ils ne représentent plus une menace pour nos opérations dans la région. Leur réputation était peut-être impressionnante, mais ils avaient sous-estimé l’Œil de la Gorgone.~
+
+@345=~Fondations de l’intrigue
+
+J’ai rencontré aujourd’hui la capitaine Selena Stardancer, célèbre bretteuse des îles Pirates. Sa réputation la précédait et elle s’est montrée tout à fait à sa hauteur. Les négociations se sont étonnamment bien déroulées et nous avons conclu un accord. En échange de certains documents à récupérer dans les casernes de l’armée amnienne, Selena et son équipage accepteront de rejoindre l’Œil de la Gorgone. La tâche ne sera pas aisée, mais recruter un équipage aussi expérimenté constituera un atout considérable pour nos opérations. Il est temps de rassembler mes esprits et de me préparer à cette mission audacieuse.~
+
+@346=~Fondations de l’intrigue
+
+Les documents compromettants sont désormais entre les mains de Selena et notre alliance avec elle et son équipage semble scellée. Ils ont accepté de nous retrouver à notre quartier général, ce qui est très prometteur. L’équipage tapageur de Stardancer apporte une grande expérience et des compétences qui renforceront sans aucun doute nos opérations. C’est un risque calculé, mais qui promet d’importantes récompenses. Il est temps de préparer nos prochaines actions et de consolider ce nouveau partenariat.~
+
+@347=~Fondations de l’intrigue
+
+Procus a défini les prochaines étapes destinées à établir notre présence à Nashkel. Il a choisi trois cibles : un marchand de potions au carnaval, un manoir à Nashkel et une auberge tranquille. Chacun de ces lieux devrait permettre d’obtenir une part importante des fonds nécessaires au démarrage de nos activités. Il est essentiel de rester discrets et d’opérer dans l’ombre afin que nos actes passent inaperçus. Une fois l’or récupéré dans les trois endroits, je retournerai auprès de Procus avec notre butin. Au travail.~
+
+@348=~Fondations de l’intrigue
+
+Procus s’est déclaré satisfait de mon travail et reconnaît que les missions que j’ai accomplies ont consolidé notre position dans la région. La base est établie, une équipe est réunie et une importante somme d’or a été obtenue. Je dois retourner auprès de Rigaldo pour lui annoncer la bonne nouvelle, en sachant que j’ai joué un rôle déterminant dans cette entreprise.~
+
+@349=~Fondations de l’intrigue
+
+Il est satisfaisant de voir nos projets porter leurs fruits. Avec une base établie, une équipe compétente et une importante réserve d’or, l’Œil de la Gorgone est prêt à voir plus grand. Cette réussite n’est pas seulement la mienne ; elle témoigne de la force et de la vision de notre guilde. Je quitte Rigaldo avec le sentiment du devoir accompli, impatient d’affronter le prochain défi.~
+
+@350=~Ombres du savoir
+
+Le travail est fixé. Notre cible est le « Grimoire des arcanes perdues de Néthéril ». Les Avoués veulent désespérément le récupérer. Rigaldo m’a averti de la puissance qu’il pourrait renfermer, et je suis curieux de découvrir ce qui le rend si exceptionnel. Direction la Porte de Baldur pour rencontrer Ravenscar et sonder leurs secrets. Ce livre contient bien davantage que de l’encre et du parchemin : c’est une clef vers des magies antiques et des connaissances tombées dans l’oubli. Il est temps de reprendre aux ombres ce qui a été perdu.~
+
+@351=~Ombres du savoir
+
+Ravenscar et toute sa guilde ont été éliminés, démonstration de force qui a ébranlé jusqu’à Rigaldo. Malgré l’onde de choc, la mission reste la même : gagner la Porte, parcourir les marchés noirs et rechercher toute trace du « Grimoire des arcanes perdues de Néthéril ». Je dois cependant faire preuve de prudence. Cette nouvelle réputation pourrait être une arme à double tranchant. Dans les jours à venir, la subtilité sera essentielle.~
+
+@352=~Ombres du savoir
+
+Ravenscar s’est révélé une source d’informations plus précieuse que je ne l’imaginais. Il a laissé échapper l’existence d’un marché noir à la Porte de Baldur, un lieu où les secrets changent de mains et où les ombres règnent. Voilà donc la prochaine étape logique de cette quête. Il faudra naviguer avec prudence dans ces eaux troubles, car dans ce monde clandestin la confiance est une denrée aussi rare que précieuse.~
+
+@353=~Ombres du savoir
+
+Cette nuit, je me lance dans une mission clandestine pour Soren, cet énigmatique collectionneur de secrets. Le premier étage de la taverne de Keexie détient la clef d’une mystérieuse rencontre entre la capitaine Velendra du Poing Enflammé et des marchands étrangers. Le sujet de leur discussion reste inconnu, mais je soupçonne qu’il s’agit d’une cargaison de valeur. Soren m’a averti que la capitaine tenait énormément à sa tranquillité et m’a recommandé la plus grande discrétion. Je garde en mémoire ses derniers mots avant mon départ : « Pas de potions, pas de sorts. » Pour cette mission, je devrai compter uniquement sur mes instincts naturels de voleur et me fondre parfaitement dans les ombres. Une réussite me permettrait non seulement d’obtenir des informations cruciales, mais aussi de me rapprocher des tomes disparus. Je dois avancer avec une extrême prudence.~
+
+@354=~Ombres du savoir
+
+La mission de cette nuit à la taverne de Keexie s’est révélée plus difficile que prévu. Mes efforts de discrétion n’ont pas suffi à tromper les sens aiguisés de la capitaine Velendra. Elle m’a aperçu et, à juste titre, s’est montrée méfiante. Alarmée, elle est partie précipitamment et je n’ai rien obtenu. C’est un revers, sans aucun doute. Je dois me ressaisir et retourner auprès de Soren, prêt à affronter sa déception.~
+
+@355=~Ombres du savoir
+
+Dissimulé au premier étage de la taverne de Keexie, j’ai surpris une conversation capitale entre la capitaine Velendra et le marchand Thaldor. Celui-ci a apporté de Mirabar une importante cargaison d’armes intactes afin d’atténuer la « crise du fer ». Ils ont prévu de se retrouver demain aux portes nord de la ville pour procéder à l’échange. Cette information pourrait être extrêmement utile à Soren pour organiser une embuscade. Je dois retourner auprès de lui au plus vite et lui rapporter ce que j’ai appris.~
+
+@356=~Ombres du savoir
+
+Le prix est élevé, mais les informations de Soren pourraient être la clef qui permettra de récupérer les tomes volés. Je dois trouver le moyen de réunir 2 000 pièces d’or, ou peut-être découvrir une autre façon d’obtenir ces renseignements. Le temps presse et chacune de mes décisions pèse lourd sur la mission.~
+
+@357=~Ombres du savoir
+
+Soren a tenu parole et m’a révélé l’emplacement des tomes disparus. Cette nuit, ils seront exposés sur les quais de la ville, près du temple d’Umberlie. Voici ma chance de reprendre ce qui a été volé à Château-Suif. Je dois agir avec la plus grande prudence et saisir cette occasion.~
+
+@358=~Ombres du savoir
+
+J’ai entre les mains le Grimoire des arcanes perdues de Néthéril, chargé du poids des siècles. Chaque page ouvre une fenêtre sur une époque oubliée et sur un savoir depuis longtemps englouti par l’ombre. La puissance qu’il renferme est presque palpable, tout comme le danger qu’elle représente. Je dois agir avec prudence, car les secrets renfermés ici ne sont pas à prendre à la légère. Il est maintenant temps de rapporter cette relique à Rigaldo. Cette affaire est peut-être loin d’être terminée. Je devrai rester sur mes gardes : nul ne sait encore ce qui m’attend.~
+
+@359=~Ombres du savoir
+
+La mission pour Château-Suif est terminée. Le « Grimoire de Néthéril » est de nouveau entre les mains des moines et les coffres de la guilde se sont considérablement alourdis au passage. Rigaldo semblait satisfait du résultat, et à juste titre. La récompense qu’il m’a remise dépasse mes attentes. Une bonne journée pour un voleur, assurément. Il est maintenant temps de réfléchir à la prochaine entreprise. La ville regorge d’occasions et je compte bien en profiter pleinement.~
+
+@360=~Le prix de la protection
+
+Le pouvoir des mots triomphe une fois encore. J’ai réussi à convaincre Gerard de reprendre ses paiements à la guilde. Cela n’a pas été facile et il m’a fallu déployer tous mes talents de persuasion pour venir à bout de son entêtement et de son orgueil. Mais au bout du compte, la raison a prévalu et Gerard a compris l’intérêt de notre protection.~
+
+@361=~Le prix de la protection
+
+Lorsque j’ai rendu compte à Rigaldo de la réussite de ma mission, il n’a pas perdu de temps et m’a officiellement promu membre de la guilde de l’Œil de la Gorgone. La cérémonie fut rapide et sans fioritures : un simple signe d’approbation et la reconnaissance tacite de la confiance qui m’est désormais accordée. Ce nouveau statut s’accompagne de ses privilèges et de ses responsabilités et marque mon implication plus profonde dans les affaires clandestines de la guilde.~
+
+@362=~Pétales sanglants
+
+J’ai informé Rigaldo de l’accord conclu avec Borland. Il poursuivra ses activités, mais versera désormais une part de ses bénéfices à l’Œil de la Gorgone. Rigaldo semblait satisfait du résultat. C’est une manière subtile de maintenir notre contrôle tout en augmentant nos ressources. J’ai reçu ma part pour le travail accompli : la réussite de la guilde est aussi la mienne.~
+
+@363=~Pétales sanglants
+
+Je viens d’informer Rigaldo de la fermeture réussie du trafic d’épices de Borland. Il a salué ma décision, soulignant qu’elle élimine un élément incontrôlable de Bérégost. L’emprise de l’Œil de la Gorgone sur la ville est désormais plus forte. Rigaldo m’a récompensé pour mes efforts ; il est agréable de voir les décisions difficiles reconnues à leur juste valeur.~
+
+
+
+          ///////////////////////////////////
+          ///////// Liedel's Quests /////////
+          ///////////////////////////////////
+          
+
+@410=~Prime de Liedel : Carth
+
+Liedel m’a parlé d’un certain Carth qui s’est attiré les foudres des Zhentarim. Il n’a pas remboursé ses dettes et une prime a été placée sur sa tête. Je vais devoir fouiller les auberges et tavernes au nord de la Voie Côtière pour le retrouver. Ce ne sera pas une tâche facile, mais la récompense devrait en valoir la peine. Il est temps de prendre la route.~
+
+@411=~Prime de Liedel : Carth
+
+Carth ne faisait pas le poids face à mes talents. Je l’ai retrouvé à l’Auberge du Bras Amical, où il se cachait dans une chambre. L’éliminer fut rapide et sans incident. Il est maintenant temps de réclamer ma récompense à Liedel.~
+
+@412=~Prime de Liedel : Carth
+
+Carth, l’homme dont la tête était mise à prix, se terrait dans une chambre de l’Auberge du Bras Amical. Au lieu d’exécuter le contrat, je n’ai pu m’empêcher d’éprouver de la compassion pour lui. Je lui ai finalement donné 300 pièces d’or afin qu’il puisse régler sa dette et faire retirer la prime qui pesait sur lui. Il me faut maintenant retourner voir Liedel et lui annoncer ma décision. Ce n’est peut-être pas la manière habituelle d’agir d’un chasseur de primes, mais il arrive que la compassion passe avant tout.~
+
+@413=~Prime de Liedel : Carth
+
+Après avoir retrouvé Carth avec succès, j’ai encaissé la prime pour sa capture, soit 500 pièces d’or. Il est satisfaisant de voir justice rendue et d’être rémunéré pour ses efforts.~
+
+@414=~Prime de Liedel : Carth
+
+Liedel a déjà appris que la prime avait été annulée. Carth a dû réussir à franchir les cuisines cette fois-ci.~
+
+@415=~Prime de Liedel : Vapula Simberg
+
+Une prime a été placée sur la tête d’un roublard nommé Vapula Simberg. Il a témoigné contre ses anciens compagnons de guilde à la Porte de Baldur avant de disparaître peu après. Je devrais le rechercher dans les temples que je croiserai.~
+
+@416=~Prime de Liedel : Vapula Simberg
+
+J’ai retrouvé Vapula au temple de Lathandre à Bérégost. J’ai dû l’affronter dans ce qu’il appelait une « ordalie par le combat sous le regard des dieux ». Les dieux ont dû m’être favorables puisque j’ai réussi à le tuer. Je devrais rapporter son pendentif à Liedel comme preuve de sa mort.~
+
+@417=~Prime de Liedel : Vapula Simberg
+
+J’ai retrouvé Vapula au temple de Lathandre à Bérégost. Il a abandonné sa vie de criminel pour se consacrer à la piété, et j’ai choisi de ne pas le tuer pour cela. Il m’a confié son pendentif afin que ses poursuivants le croient mort, ce qui lui permettra de parcourir librement les terres en expiant ses péchés.~
+
+@418=~Prime de Liedel : Vapula Simberg
+
+J’ai rapporté le pendentif de Vapula à Liedel et reçu 500 pièces d’or en récompense.~
+
+@419=~Prime de Liedel : Aisha
+
+Une prime a été placée sur la tête d’une courtisane nommée Aisha. Elle semble avoir trouvé refuge à Bérégost, sans famille ni argent pour fuir. Je vais devoir parcourir la ville et découvrir discrètement sa cachette.~
+
+@420=~Prime de Liedel : Aisha
+
+Aisha est morte, conformément aux instructions de Liedel. C’était nécessaire pour toucher la prime. Je vais maintenant retourner auprès de Liedel afin de recevoir ma récompense bien méritée. Il n’y a pas de place pour le sentimentalisme dans ce métier.~
+
+@421=~Prime de Liedel : Aisha
+
+Avant de prendre une décision définitive sur le sort d’Aisha, je veux parler à l’homme qui a placé la prime, Amrius. On peut le trouver au Magicien Ardent de Bérégost. Il est essentiel de connaître toute l’histoire avant d’agir.~
+
+@422=~Prime de Liedel : Aisha
+
+Après une série de discussions et de négociations, Amrius a accepté de retirer la prime sur Aisha. Je devrais aller l’en informer et lui apprendre qu’elle est enfin libérée de cette menace qui pesait sur elle.~
+
+@423=~Prime de Liedel : Aisha
+
+Je viens d’annoncer à Aisha que la prime sur sa tête avait été retirée. Sa réaction n’a pourtant pas été celle que j’attendais. Au lieu d’un simple soulagement ou de gratitude, elle a réagi de façon inquiétante et instable, laissant entrevoir des émotions et des liens bien plus tumultueux qu’il n’y paraissait. Je soupçonne que cette histoire est plus complexe que je ne le pensais au départ.~
+
+@424=~Prime de Liedel : Aisha
+
+J’ai parlé à Liedel et elle m’a confirmé qu’Amrius avait officiellement annulé la prime sur Aisha. Cette fois, justice semble avoir été rendue d’une autre manière.~
+
+@425=~Prime de Liedel : Aisha
+
+J’ai rapporté à Liedel avoir tué Aisha de ma propre main. En échange, elle m’a remis 500 pièces d’or. Encore un chapitre mené à bien dans la vie d’un chasseur de primes.~
+
+@426=~Prime de Liedel : Europea
+
+Liedel m’a chargé de retrouver une esclave en fuite nommée Europea. Elle s’est enfuie dans les bois à l’ouest de Bérégost. Si je la ramène vivante, la récompense sera doublée. Si elle devait malheureusement mourir, son collier d’asservissement servira de preuve. La chasse commence.~
+
+@427=~Prime de Liedel : Europea
+
+J’ai retrouvé Europea, mais un autre groupe de chasseurs de primes était arrivé avant moi. Après une escarmouche, je suis sorti vainqueur. Europea, à peine consciente, a évoqué un château au nord. Cet endroit pourrait contenir des indices sur sa vie d’avant l’esclavage.~
+
+@428=~Prime de Liedel : Europea
+
+Le château dont parlait Europea s’est révélé être l’Auberge du Bras Amical. Dès notre arrivée, le prêtre du temple l’a reconnue. Il a retiré avec précaution son collier d’esclave, symbole de son douloureux passé. Avec ce collier en ma possession, je pourrai réclamer la récompense et faire mettre un terme à la prime sur sa tête. Encore une affaire réglée.~
+
+@429=~Prime de Liedel : Europea
+
+Rapporter à Liedel le collier d’asservissement d’Europea m’a ôté un poids des épaules. La récompense n’était qu’un bonus ; la véritable satisfaction vient de savoir qu’elle est maintenant entre de meilleures mains, cachée de ceux qui voulaient lui faire du mal.~
+
+@430=~Prime de Liedel : Europea
+
+Lorsque j’ai amené Europea à Liedel, sa réaction m’a surpris. Exploiter l’innocence d’une enfant, déclara-t-elle, allait trop loin, même pour ceux qui ont l’habitude de vivre dans les ombres. Ses paroles m’ont profondément marqué. La décision de Liedel de protéger Europea et de refuser de participer à la corruption d’une enfant rappelle avec force que, même dans notre monde d’ombres, certaines limites ne doivent pas être franchies. Une rare manifestation de conviction morale dans un métier où ce genre de sentiment est souvent considéré comme une faiblesse.~
+
+@431=~Prime de Liedel : Katreda
+
+Liedel m’a informé qu’une prime avait été placée sur la tête d’une dryade nommée Katreda, responsable de troubles dans le Bois de Lars. Les chasseurs réclament désespérément une solution. Je dois choisir entre la convaincre de partir ou employer des moyens plus radicaux. La décision à prendre pèse lourd sur ma conscience.~
+
+@432=~Prime de Liedel : Katreda
+
+Katreda ne m’a laissé d’autre choix que de mettre fin à ses jours. La tranquillité des chasseurs a été achetée au prix fort, et j’espère que cela en valait la peine. Je devrais retourner voir Liedel et lui annoncer le résultat.~
+
+@433=~Prime de Liedel : Katreda
+
+Liedel sait désormais que la menace de Katreda a été éliminée. Elle m’a versé la récompense habituelle de 500 pièces d’or. C’est un sale métier, mais quelqu’un doit bien le faire.~
+
+@434=~Prime de Liedel : Katreda
+
+J’ai choisi de me ranger aux côtés de Katreda et de combattre les chasseurs. Ils ne sont pas loin, juste au sud. Il est temps de mettre fin à leurs agissements.~
+
+@435=~Prime de Liedel : Katreda
+
+Les chasseurs ont été neutralisés. Je vais retourner auprès de Katreda pour lui apprendre que la menace a disparu.~
+
+@436=~Prime de Liedel : Katreda
+
+Katreda m’a témoigné sa gratitude en m’offrant une amulette magique. Mon choix de l’aider n’est donc pas resté sans récompense. Je garderai cette amulette précieusement ; elle pourrait m’être utile dans mes futures aventures.~
+
+@437=~Prime de Liedel : Katreda
+
+La prime sur Katreda est désormais considérée comme réglée. Cette alliance avec la dryade pourrait apporter des avantages imprévus à l’avenir. Il est toujours bon d’avoir de puissants alliés.~
+
+@438=~Prime de Liedel : Zhontac
+
+Un nécromancien du nom de Zhontac recherche des cadavres sur lesquels pratiquer sa magie. On peut le trouver de nuit, rôdant dans son jardin dans la partie est de Bérégost.~
+
+@439=~Prime de Liedel : Zhontac
+
+Zhontac, le nécromancien, a une demande peu ragoûtante à me faire. Il veut que j’élimine un certain Magnus, qui fréquente les fontaines du sud de Bérégost pendant la journée. Zhontac exige que je lui rapporte le corps sans vie de Magnus pour ses sinistres expériences.~
+
+@440=~Prime de Liedel : Zhontac
+
+Je n’ai pas pu me résoudre à satisfaire la demande morbide de Zhontac. J’ai préféré régler le problème moi-même et mettre fin à son existence dévoyée. Je vais devoir l’annoncer à Liedel et lui expliquer que cette prime particulière n’est plus un souci.~
+
+@441=~Prime de Liedel : Zhontac
+
+Magnus est mort de ma main et je dois maintenant livrer son cadavre à Zhontac. Je retrouverai le nécromancien dans son jardin après la tombée de la nuit, comme convenu. Cette tâche sinistre est dérangeante, mais c’est ce que j’ai accepté de faire.~
+
+@442=~Prime de Liedel : Zhontac
+
+Je me suis trouvé aujourd’hui face à un véritable dilemme moral. Plutôt que de devenir complice d’un meurtre, j’ai choisi d’avertir Magnus des sombres intentions de Zhontac. Un petit acte de défi face aux ténèbres qui semblent s’infiltrer dans tous les recoins de ce monde. J’espère que ce nouvel avertissement lui permettra de se mettre à l’abri. Reste maintenant à décider de mon prochain geste.~
+
+@443=~Prime de Liedel : Zhontac
+
+Après mûre réflexion, j’ai décidé de laisser Zhontac poursuivre ses recherches. C’est une décision moralement ambiguë, mais si ses expériences portent leurs fruits, elles pourraient mener à des découvertes utiles à beaucoup. La frontière entre le bien et le mal paraît bien floue dans ce monde d’ombres et de secrets. Seul le temps dira si j’ai fait le bon choix.~
+
+@444=~Prime de Liedel : Zhontac
+
+J’ai parlé à Liedel de ma décision concernant Zhontac. Elle semblait surprise, peut-être même quelque peu déconcertée. Pourtant, pour moi, c’était le bon choix. Dans ce monde d’ombres et d’incertitudes, il faut parfois prendre des décisions qui mettent à l’épreuve notre sens moral.~
+
+@445=~Prime de Liedel : Zhontac
+
+La demande malsaine de Zhontac est aujourd’hui satisfaite. Non seulement je lui ai apporté ce qu’il réclamait, mais j’ai en plus encaissé la prime qui pesait sur lui. Voilà un sinistre rappel des chemins obscurs que l’on peut emprunter dans ce monde. La double récompense, elle, ne sera pas perdue. Chaque pièce d’or me rapproche un peu plus d’un avenir assuré en ces temps périlleux.~
+
+@446=~Prime de Liedel : Zhontac
+
+J’ai aujourd’hui annoncé à Liedel la mort de Zhontac. Je n’ai pas pu me résoudre à satisfaire sa demande atroce, épargnant ainsi l’infortunée victime qu’il visait. Liedel semblait satisfaite du résultat et m’a remis la récompense habituelle de 500 pièces d’or. Un sombre rappel que, dans ce monde, nos choix se déclinent souvent en nuances de gris.~
+
+@447=~Prime de Liedel : Alaric
+
+Alaric, l’alchimiste à l’origine d’un possible sérum contre le poumon de plume, fait désormais l’objet d’une prime de la guilde. Le sérum en sa possession pourrait être vendu soit aux marchands, impatients d’en tirer profit, soit aux prêtres, qui souhaitent l’utiliser pour le bien de tous. Alaric disposerait d’un atelier quelque part dans la grouillante Porte de Baldur, entouré de ses étranges sujets d’expérience. Le choix ne sera pas facile et je dois peser soigneusement les conséquences. Prêtres et marchands convoitent tous ce sérum, et il me revient de décider quelle voie suivre. Les enjeux sont considérables et l’avenir de nombreuses personnes est en jeu.~
+
+@448=~Prime de Liedel : Alaric
+
+J’ai rempli le contrat sur Alaric après l’avoir maîtrisé dans son atelier. Cet homme était manifestement dérangé, mais je ne pouvais pas le laisser garder le sérum pour lui seul. Celui-ci est maintenant en ma possession. La guilde sera certainement satisfaite du résultat, même si bien des mystères subsistent autour de ce remède. Me voici maintenant à la croisée des chemins : dois-je donner le sérum aux guérisseurs, au risque de sauver d’innombrables vies, ou le vendre aux marchands, assurant ainsi une belle fortune à la guilde et à moi-même ? Les conséquences de mon choix détermineront le sort de beaucoup.~
+
+@449=~Prime de Liedel : Alaric
+
+J’ai essayé de raisonner Alaric au sujet du sérum contre le poumon de plume, mais son obsession le consumait tout entier. Pris d’un accès de folie, il m’a attaqué et ne m’a laissé d’autre choix que de me défendre. L’affrontement s’est terminé par sa mort. En récupérant le sérum, j’ai ressenti à la fois le triomphe et le regret. Le secret de sa création, comme le mystère de ses expériences sur les poulets, est mort avec lui. Me voici maintenant à la croisée des chemins : dois-je donner le sérum aux guérisseurs, au risque de sauver d’innombrables vies, ou le vendre aux marchands, assurant ainsi une belle fortune à la guilde et à moi-même ? Les conséquences de mon choix détermineront le sort de beaucoup.~
+
+@450=~Prime de Liedel : Alaric
+
+J’ai décidé de donner le sérum contre le poumon de plume aux guérisseurs. C’est la bonne chose à faire, même si les marchands en auraient payé un prix bien supérieur. L’idée de pouvoir sauver d’innombrables vies l’emporte sur l’attrait du profit immédiat. C’est un choix dicté par la compassion plutôt que par l’intérêt personnel. Seul le temps dira si j’ai pris la bonne décision.~
+
+@451=~Prime de Liedel : Alaric
+
+J’ai choisi de vendre le sérum contre le poumon de plume aux marchands. Les intérêts de la guilde vont de pair avec la recherche du profit et cette décision garantit une récompense substantielle, aussi bien pour moi que pour elle. Les guérisseurs auraient peut-être pu tirer un grand bénéfice du sérum, mais le pragmatisme l’a finalement emporté. Ce choix aura ses propres conséquences, mais il assure des ressources aux futures entreprises de la guilde.~
+
+@452=~Prime de Liedel : Seigneur Varlind
+
+On m’a confié une prime plutôt intrigante visant une personnalité politique très proche du Grand-Duc Belt : le seigneur Varlind. Cet homme exerce une influence considérable, comme une main invisible derrière le trône. Ses pairs souhaitent désormais le voir disparaître et ont mis sa tête à prix. Les auberges huppées semblent être son habitat naturel, là où le velours et le bon vin coulent à flots. Si je veux le retrouver, c’est là que je commencerai. Cette tâche promet de révéler bien des secrets et je sens qu’il y a davantage dans cette affaire qu’il n’y paraît. Il est temps de pénétrer dans la toile complexe de la politique et du pouvoir et de voir où elle me conduira.~
+
+@453=~Prime de Liedel : Seigneur Varlind
+
+Ma rencontre avec le seigneur Varlind a pris une tournure intrigante. Dans le monde imprévisible de la politique, qui sait quelles nouvelles possibilités cet événement offrira aux ambitieux ? Ma décision fut rapide et sans hésitation. Je suis curieux de voir comment les rapports de force de la Porte de Baldur vont évoluer à la suite de cette affaire.~
+
+@454=~Prime de Liedel : Seigneur Varlind
+
+Une décision difficile s’est présentée aujourd’hui. La détermination du seigneur Varlind à servir la Porte de Baldur était évidente et je n’ai pu me résoudre à annoncer sa mort. Que réserve maintenant l’avenir à la ville ? Les conséquences potentielles de mon choix restent enveloppées d’incertitude, mais une chose demeure certaine : le destin de la Porte de Baldur est toujours en mouvement.~
+
+@455=~Prime de Liedel : Seigneur Varlind
+
+Le paysage politique de la Porte de Baldur est en pleine mutation et je me retrouve au cœur de l’affaire. Le sort de Varlind est scellé et ouvre la voie aussi bien au chaos qu’aux occasions nouvelles. L’or est bienvenu, mais la véritable valeur de cet acte réside dans les remous qu’il provoquera à travers la ville. Le temps révélera l’étendue réelle de mon influence.~
+
+@456=~Prime de Liedel : Seigneur Varlind
+
+Le jeu du pouvoir et des ombres à la Porte de Baldur est dangereux. Le sort de Varlind n’était pas entre mes mains et un autre acteur de cette danse mortelle semble avoir emporté la mise. La toile d’intrigues de la ville s’épaissit et mon rôle y demeure incertain. Cette fois, l’or m’échappe, mais les enjeux augmentent à chaque instant.~
+
+@457=~Prime de Liedel : Isla Darkcloak
+
+J’ai reçu une prime visant Isla Darkcloak, ancienne championne des Fosses de combat devenue impitoyable assassine. La retrouver ne sera pas facile, car elle est devenue une cible particulièrement insaisissable. Liedel m’a conseillé de commencer par interroger d’autres roublards familiers des bas-fonds. Cette chasse promet d’être difficile, mais triompher d’une légende comme Isla constituerait certainement un exploit mémorable.~
+
+@458=~Prime de Liedel : Isla Darkcloak
+
+Les marchés noirs sont un lieu mortel et l’avertissement d’Isla Darkcloak concernant la sécurité des lieux n’est pas à prendre à la légère. Tenter la moindre violence ici reviendrait à signer son arrêt de mort. Ma seule chance de l’affronter dans un véritable combat semble donc être de devenir champion des fosses. La tâche ne sera pas aisée : la concurrence est rude et les épreuves brutales. Mais si je réussis, j’aurai l’occasion de me mesurer à l’une des combattantes les plus meurtrières des Royaumes. Je ne peux pas laisser passer un tel défi et le goût de la victoire n’en sera que plus doux au vu des enjeux. Je dois me préparer, m’entraîner et affronter chaque adversaire avec tout ce que j’ai. Le titre de champion est à portée de main et, avec lui, la possibilité d’affronter Isla Darkcloak selon mes propres conditions.~
+
+@459=~Prime de Liedel : Isla Darkcloak
+
+Aujourd’hui marque un tournant, une occasion de faire mes preuves dans l’arène suprême. Isla Darkcloak, ancienne championne elle-même, a accepté de m’affronter dans un combat à mort. Une flamme nouvelle brille dans ses yeux, comme si ma propre détermination avait réveillé une passion enfouie. En me préparant à retourner dans les fosses, je sens l’adrénaline affluer. Ce ne sera pas un simple combat, mais un affrontement de volontés, une démonstration de notre force et de notre talent. Diomède supervisera les préparatifs afin que l’arène soit prête pour le choc à venir. C’est un rendez-vous avec le destin, l’épreuve de tout ce pour quoi j’ai travaillé. La foule assistera à un spectacle qu’elle n’oubliera pas de sitôt. Et lorsque la poussière retombera, un seul champion se dressera encore.~
+
+@460=~Prime de Liedel : Isla Darkcloak
+
+Aujourd’hui est un jour de victoire éclatante. Je suis désormais le champion incontesté des fosses après avoir vaincu jusqu’à la légendaire Isla dans un brutal combat à mort. La foule a rugi et les échos de la bataille résonnent encore en moi. Je devrais retourner voir Liedel. Elle sera ravie d’apprendre ma réussite et je ne peux qu’imaginer la récompense qui m’attend. Ce chapitre est clos et je me demande déjà ce que l’horizon me réserve.~
+
+@461=~Prime de Liedel : Isla Darkcloak
+
+En retournant auprès de Liedel, je ressens un mélange d’accomplissement et de malaise. Cette affaire semble dépasser la simple question d’une prime. Je sens un lien, une étincelle née au cœur du combat. Les fosses ont fait de moi un guerrier renommé et, maintenant que la prime est réclamée, une nouvelle voie s’ouvre devant moi. Quelles aventures et quels défis m’attendent ? Je ne peux que l’imaginer. Une chose est certaine : je ne suis plus la personne qui est entrée pour la première fois dans ces fosses.~
+
+@462=~Prime de Liedel : Isla Darkcloak
+
+J’ai rencontré Soren sur les marchés noirs. Il m’a promis de précieuses informations sur Isla Darkcloak, mais elles ont un prix. Je dois infiltrer le quartier général du Poing Enflammé et y récupérer certains documents. S’introduire dans un endroit aussi fortifié est extrêmement risqué, mais si j’y parviens, les renseignements de Soren pourraient être la clef qui me permettra d’atteindre Isla en dehors de la protection des marchés.~
+
+@463=~Prime de Liedel : Isla Darkcloak
+
+J’ai remis à Soren les documents dérobés au quartier général du Poing Enflammé. En échange, il m’a donné la piste dont j’avais besoin sur Isla Darkcloak. Apparemment, elle fréquente presque tous les soirs une taverne près des portes de la ville et reste toujours à proximité d’une sortie pour pouvoir s’échapper rapidement. Ce sera peut-être ma seule chance de la prendre au dépourvu. La piste est mince, mais c’est tout ce que j’ai. La réputation d’Isla la précède et je dois agir avec prudence.~
+
+@464=~Prime de Liedel : Isla Darkcloak
+
+La réputation d’Isla en tant que redoutable combattante n’était pas exagérée. Le combat fut intense, une véritable épreuve de talent et de volonté. Mais j’ai fini par l’emporter. Ce n’est pas tous les jours que l’on abat une légende et je mesure pleinement le poids de cette victoire. Avec la défaite d’Isla, la prime est à moi, mais cette rencontre m’a fait réfléchir à la mince frontière qui sépare le chasseur de sa proie.~
+
+@465=~Prime de Liedel : Isla Darkcloak
+
+Malgré sa terrible réputation d’ancienne championne et d’assassine expérimentée, j’ai réussi à vaincre Isla dans un combat qui a mis à l’épreuve chacune de mes compétences. Liedel semblait à la fois impressionnée et intriguée par cet exploit. Ce n’est pas tous les jours que l’on triomphe d’une personnalité aussi célèbre qu’Isla. Cette victoire est importante, mais elle me pousse aussi à réfléchir à la voie que j’ai choisie et aux batailles qui m’attendent encore. Chaque rencontre me façonne et celle-ci laissera assurément sa marque.~
+
+@466=~Prime de Liedel : Aisha
+
+Ma rencontre avec Amrius a présenté une version radicalement différente des événements. Selon lui, c’est Aisha qui est devenue agressive, poussée par la jalousie en le voyant avec une autre femme. Elle l’aurait attaqué et provoqué la scène dans la taverne. Cette nouvelle version est inquiétante et jette le doute sur le récit d’Aisha. Était-elle réellement l’agresseuse, comme le prétend Amrius ? M’a-t-elle menti ou est-ce lui qui déforme la vérité ? Il est temps de le découvrir.~
+
+@467=~Prime de Liedel : Aisha
+
+Amrius a accepté de retirer la prime sur Aisha, mais ses conditions sont exorbitantes : pas moins de 1 000 pièces d’or. Cette exigence ressemble fort à de l’extorsion, un prix scandaleux à payer pour obtenir sa clémence. Amrius exploite clairement la situation, mais il s’agit peut-être du seul moyen de garantir la sécurité d’Aisha. Je suis partagé entre le coût démesuré et l’impératif moral de résoudre cette affaire sans effusion de sang. La décision pèse lourd : payer cette fortune ou chercher une autre façon de traverser cette situation moralement trouble.~
+
+@468=~Prime de Liedel : Aisha
+
+Après avoir confronté Aisha à la version d’Amrius, sa réaction fut dérangeante. Elle s’est lancée dans une diatribe mesquine et déséquilibrée contre Ilena, très loin de l’attitude posée qu’elle affichait au départ. Ses accusations dépeignent une jalousie et une rivalité profondément enracinées. Ce brusque changement de personnalité ajoute encore une couche de complexité à l’affaire. Il devient évident qu’il y a plus dans cette histoire qu’il n’y paraît. Je devrais rechercher Ilena à l’Œil de la Gorgone pour entendre sa version. Peut-être détient-elle la clef de cet écheveau d’émotions et de motivations.~
+
+@469=~Prime de Liedel : Aisha
+
+Après avoir parlé avec Ilena, celle-ci m’a offert une nouvelle perspective sur le nœud complexe qui unit Aisha et Amrius. Heureusement, elle accepte de parler à Amrius pour le convaincre de retirer la prime sur Aisha. Je devrais retourner voir Amrius demain afin de savoir si les paroles d’Ilena ont eu le moindre effet sur lui. Son intervention sera peut-être la clef qui permettra enfin de résoudre cette affaire.~
+
+
+
+
+
+          ///////////////////////////////////
+          ///////// Ariosh's Quests /////////
+          ///////////////////////////////////
+
+
+
+@509=~Ombres de réjouissances
+
+Après avoir affronté la déception d’Ariosh, il est clair qu’il va falloir me ressaisir. Le travail de cette nuit a été un fiasco complet et la pilule est amère. Le garde m’est tombé dessus comme la foudre et je suis reparti les mains vides, le cœur battant à tout rompre. Je n’ai plus droit à l’erreur. J’ai presque l’impression d’entendre les ombres se moquer de mon manque de finesse. Il est temps de renverser la situation, d’affûter mes talents et de faire en sorte que la prochaine mission nous apporte le prix recherché.~
+
+@510=~Ombres de réjouissances
+
+La mission de cette nuit est fixée, et elle est délicate. Ariosh m’a chargé d’infiltrer la grande fête qui se déroule devant le Jongleur Jovial. Les cibles sont une Dame et un Seigneur, tous deux lourdement chargés d’or pour leur voyage jusqu’au Carnaval de Nashkel. Furtivité et diversion seront mes alliées. Le garde, aux yeux perçants et toujours vigilant, rend impossible un simple vol à la tire. Je devrai compter sur ma ruse et sur des talents aiguisés par des années de pratique.~
+
+@511=~Ombres de réjouissances
+
+J’ai réussi à convaincre le tavernier de servir des alcools forts aux invités. Cette nouvelle abondance de boisson pourrait bien fournir la diversion idéale si les réjouissances commencent à dégénérer.~
+
+@512=~Ombres de réjouissances
+
+J’ai convaincu la séduisante courtisane d’éloigner le garde, mais chaque seconde compte. Ce bref répit pourrait me permettre de subtiliser une seule des bourses tant convoitées. Je dois agir vite et choisir judicieusement avant que cette occasion ne disparaisse.~
+
+@513=~Ombres de réjouissances
+
+J’ai réussi à provoquer un ivrogne colérique et à déclencher une gigantesque bagarre. C’est le moment idéal pour profiter du chaos et passer à l’action contre l’un des nobles. D’après ce que j’ai appris au sujet de la Dame, il est même possible qu’elle laisse elle-même tomber quelque chose de précieux par inadvertance.~
+
+@514=~Ombres de réjouissances
+
+Lorsque j’ai remis l’unique bourse à Ariosh, j’ai perçu une pointe de déception dans son regard. Je n’avais pas répondu à ses attentes cette fois-ci, mais une lueur de compréhension s’y mêlait. Il sait à quel point les rues sont imprévisibles. Il y aura toujours une autre occasion.~
+
+@515=~Ombres de réjouissances
+
+Les yeux d’Ariosh se sont illuminés de satisfaction lorsque j’ai dévoilé les deux bourses, preuves de ma dextérité dans l’art du vol. Il a hoché la tête avec un sourire entendu pour saluer ma réussite. Cette nuit, le roublard en moi a largement mérité sa part.~
+
+@516=~Lames dans la nuit
+
+Ma tâche consiste à servir d’appât à une bande de roublards indépendants qui sèment le chaos sur notre territoire. Leur présence est devenue suffisamment gênante pour que nous devions nous en débarrasser. J’ai reçu l’ordre de les retrouver dans les jardins du nord après le coucher du soleil. Lorsqu’ils attaqueront, plusieurs possibilités s’offriront à moi. Je dois m’assurer qu’ils n’oseront plus jamais nous voler et qu’ils resteront hors de notre territoire, quitte à les éliminer définitivement. Cette mission ne doit pas être prise à la légère et la réussite de notre guilde pourrait en dépendre.~
+
+@517=~Lames dans la nuit
+
+Cette nuit, les ombres ont été témoins d’une danse macabre. Blackthorn et sa bande ont choisi de résister. Les lames se sont croisées, mais l’issue ne faisait aucun doute. Leur règne de rapines à Bérégost a pris fin pour de bon.~
+
+@518=~Lames dans la nuit
+
+Grâce à une langue bien pendue et à des mots soigneusement choisis, j’ai réussi à convaincre Blackthorn et les siens de plier bagage et d’aller chercher fortune ailleurs. Le quartier est un peu plus calme à présent puisqu’ils n’y causeront plus de problèmes. Un nouveau chapitre les attend, loin des rues pavées de Bérégost.~
+
+@519=~Lames dans la nuit
+
+Dans un retournement de situation, Blackthorn a décidé de lier son destin à celui de l’Œil de la Gorgone. La perspective de la portée et de l’influence de notre guilde semble l’avoir attiré. Il est désormais l’un des nôtres, un roublard sous la bannière de l’Œil de la Gorgone. Ses talents se révéleront certainement précieux dans les ombres.~
+
+@520=~Lames dans la nuit
+
+Ariosh s’est montré satisfait du résultat de la mission. Les rues ont été remodelées selon la volonté de l’Œil de la Gorgone. Notre influence se renforce de jour en jour.~
+
+@521=~Récupération au clair de lune
+
+La dernière entreprise d’Ariosh exige la finesse d’un chat et la ruse d’un renard. Je dois récupérer un butin précieux dissimulé à plusieurs endroits de la ville. Chaque cache réclame une approche différente : la caisse près de la fontaine du sud, le tonneau sous les jardins du nord et enfin le sac à côté de la Forge. Patience et précision seront mes meilleures alliées. Je dois agir sous le couvert de la nuit et éviter le regard toujours vigilant de la Garde de la ville. L’échec n’est pas permis. Le butin reviendra à l’Œil de la Gorgone, faute de quoi je pourrais me retrouver du mauvais côté de ce jeu d’ombres.~
+
+@522=~Récupération au clair de lune
+
+La Garde m’a surpris, mais j’ai réussi à m’en tirer en parlant habilement. Je ne peux pas me permettre d’être aussi imprudent. Il faut rester sur mes gardes et terminer cette mission. Les rues grouillent de dangers, mais c’est précisément là que je donne le meilleur de moi-même.~
+
+@523=~Récupération au clair de lune
+
+Mission accomplie. Le butin est en sécurité et j’ai fait mon rapport à Ariosh. Il semblait satisfait, mais je m’inquiète des répercussions que tout cela pourrait avoir. La nuit n’a pas été sans laisser de traces, mais nous avons pris le dessus. En route pour la prochaine tâche.~
+
+@524=~Ombres et échos
+
+Ariosh m’a confié une nouvelle mission cette nuit. Un traître de la guilde transmet des informations à la Garde de la ville. Je dois déposer un faux message dans un tonneau derrière le Magicien Ardent, puis attendre près des fontaines du sud pendant la nuit. Ariosh a été clair : aucune demi-mesure. Le traître doit être éliminé.~
+
+@525=~Ombres et échos
+
+Le message a été déposé à l’endroit prévu. Il ne reste plus qu’à attendre. Je vais faire profil bas et retourner aux fontaines du sud lorsque la lune sera haute. La ville est différente la nuit, comme si elle vivait de secrets et d’ombres.~
+
+@526=~Ombres et échos
+
+Valera... son nom résonne encore dans l’air nocturne. C’était donc elle la traîtresse, un visage que je reconnaissais à peine parmi les ombres de la guilde. Dans notre métier, la trahison n’a pas sa place. C’est une dure réalité, mais notre survie l’exige. Cette nuit n’a fait preuve d’aucune pitié.~
+
+@527=~Ombres et échos
+
+Ariosh n’a pas mâché ses mots : « Il ne reste plus d’elle que des ombres et des échos. » Il a raison. Les affaires laissées en suspens peuvent être mortelles. Nous avons fait ce qui devait être fait pour la guilde. Cette ville est une bête : soit nous la dominons, soit elle nous dévore.~
+
+@528=~Impôts de rue
+
+Ariosh m’a chargé de percevoir l’argent de la protection auprès de quatre établissements de Bérégost : Feldepost, le Magicien Ardent, la Gerbe Rouge et le Jongleur Jovial. Chacun doit verser un solide sac de pièces. Je devrai faire preuve de ruse et, si nécessaire, d’un peu de force pour m’assurer qu’ils s’exécutent. En parcourant la liste, je garderai à l’esprit que le refus n’est pas une option. Mieux vaut ne pas faire attendre Ariosh.~
+
+@529=~Impôts de rue
+
+L’auberge de Feldepost n’était pas ravie, mais elle a payé les cotisations de la guilde. Pas de discussion, pas d’incident. Le tavernier savait qu’il valait mieux ne pas se mettre l’Œil de la Gorgone à dos. Une transaction nécessaire, qui laissera une marque invisible sur la réputation de l’établissement. Une étape de plus pour assurer l’influence de la guilde sur Bérégost.~
+
+@530=~Impôts de rue
+
+J’ai confronté le tavernier du Magicien Ardent. Il affirme qu’un type habillé comme un membre de l’Œil de la Gorgone a déjà emporté la cotisation avant de filer par l’arrière. Il ferait mieux de ne pas me raconter des salades, sinon il risque de changer rapidement de refrain.~
+
+@531=~Impôts de rue
+
+J’ai retrouvé l’imbécile derrière l’établissement ; il pensait pouvoir rouler l’Œil de la Gorgone. J’ai mis rapidement et proprement fin à son petit manège. Voilà une leçon pour tous ceux qui seraient tentés de nous chercher des ennuis.~
+
+@532=~Impôts de rue
+
+J’ai retrouvé le petit voleur insolent qui se cachait derrière. Avec un peu de persuasion bien dosée, je l’ai convaincu de se séparer du sac mal acquis. Il n’avait manifestement pas prévu d’avoir affaire à l’Œil de la Gorgone.~
+
+@533=~Impôts de rue
+
+J’ai décidé de faire preuve d’un peu d’indulgence envers la Gerbe Rouge. Les temps sont durs et le tavernier peine à joindre les deux bouts. Je l’ai toutefois averti : l’Œil de la Gorgone ne tolérera pas un second paiement manqué. Il ferait mieux de se reprendre, sous peine d’en subir les conséquences.~
+
+@534=~Impôts de rue
+
+J’ai fait un exemple du tavernier de la Gerbe Rouge. Il pensait pouvoir tromper l’Œil de la Gorgone et s’en sortir sans conséquences. Le message est désormais clair : qui nous trahit le paie de sa vie. C’est peut-être brutal, mais c’est le seul moyen de préserver notre réputation dans le secteur.~
+
+@535=~Impôts de rue
+
+Je suis passé au Jongleur Jovial et le tavernier y semblait plus nerveux que les autres. J’ai récupéré la cotisation sans grande difficulté, comme il se doit. La loyauté envers l’Œil permet à tout de fonctionner sans heurts. Je lui ai rappelé de rester à jour dans ses paiements, faute de quoi nous risquerions d’avoir un problème. Il est temps de poursuivre ma route.~
+
+@536=~Impôts de rue
+
+J’ai récupéré les cotisations, mais tout ne s’est pas déroulé sans accroc. La Gerbe Rouge n’avait pas la somme entière et j’ai dû faire un choix. D’une manière ou d’une autre, j’ai fait passer le message. Il faut parfois savoir trancher pour que les pièces continuent à affluer. Les rues de Bérégost sont rudes, mais c’est la règle dans notre métier.~
+
+@537=~Ombres de tromperie
+
+La mission est claire : éliminer l’inspecteur. Il ne s’agira pas d’une danse dans les ombres, mais d’une frappe au cœur du danger. Sa présence menace l’Œil de la Gorgone et ma lame sera la réponse. Je devrai agir avec la plus grande discrétion et saisir l’instant idéal pour mettre fin à son règne. L’échec n’est pas permis et les ombres seront mes alliées dans cette sombre entreprise. Le rendez-vous se situe dans la partie est de la ville, après la tombée de la nuit, là où le manteau nocturne s’enroule étroitement autour des ruelles et des angles obscurs.~
+
+@538=~Ombres de tromperie
+
+Les rues de Bérégost semblent devenir plus sombres chaque jour. Cette nuit, je me suis retrouvé au cœur d’un plan complexe élaboré par le rusé Inspecteur. Ses méthodes sont loin d’être conventionnelles, mais elles fonctionnent. Le leurre gisait mort à mes pieds, simple pion dans ce jeu élaboré. Les paroles de l’Inspecteur résonnaient dans mon esprit, rappel qu’il ne faut pas le sous-estimer. Son emprise sur la ville et la Garde est solide et il a débusqué notre taupe dans leurs rangs. Je dois avancer prudemment, car le nœud coulant se resserre autour de l’Œil de la Gorgone. Alors que la nuit recouvre la ville, je devrais retourner à notre repaire. Les ombres murmurent des secrets et je dois me préparer à la tempête qui se profile. Les menaces de l’Inspecteur persistent, promesse du règlement de comptes qui nous attend. L’Œil de la Gorgone doit rester solide : l’heure de l’épreuve approche rapidement.~
+
+@539=~Ombres de tromperie
+
+L’Inspecteur nous a menés par le bout du nez. La rencontre était un piège destiné à identifier notre taupe, et il a fonctionné. C’est un sombre jour pour notre camarade au sein de la Garde ; ce qui l’attend dépasse l’imagination. Nous devons désormais redoubler de prudence. Les enjeux ont augmenté et nous ne pouvons plus nous permettre la moindre erreur. Une chose est certaine : l’Œil de la Gorgone ne tombera pas sans combattre. Il nous faudra être plus avisés et plus meurtriers que jamais. C’est un jeu sinistre, mais il est désormais trop tard pour reculer.~
+
+@540=~Alliances voilées
+
+Ariosh m’a tracé une nouvelle voie qui mène à la Porte de Baldur et à une rencontre avec Lys Noire, un nom qui compte dans les cercles de voleurs de la ville. Cette alliance est curieuse, mais Ariosh semble éprouver un certain respect pour elle, signe d’une histoire dépassant nos intérêts immédiats. Je dois recueillir des renseignements sur l’Inspecteur, l’homme de main du Poing Enflammé qui sème le trouble à Bérégost. La mission est importante et son résultat pourrait faire pencher la balance en notre faveur. Le destin de l’Œil de la Gorgone dépend en partie des informations que Lys Noire me fournira. Espérons qu’elle soit à la hauteur de sa réputation.~
+
+@541=~Alliances voilées
+
+J’ai rencontré Lys Noire, une interlocutrice expérimentée de la Porte de Baldur. Elle m’a donné de précieux renseignements sur l’inspecteur Branic, cette épine dans notre pied. Il semble avoir un faible pour un certain genre de femme et Lys Noire nous a orientés vers Ishani, une courtisane qui pourrait être la clef dont nous avons besoin. On la trouve à la Lame et les Étoiles, dans le sud-est de la Porte de Baldur. Elle a également mentionné un whisky rare des îles Sélénae que l’Inspecteur affectionne particulièrement. Je pourrai en acheter sur les quais, dans un établissement appelé la Taverne de Jopalin. Il est temps d’agir.~
+
+@542=~Alliances voilées
+
+J’ai réussi à retrouver Ishani, une jeune courtisane entreprenante qui apprécie les belles choses. Elle accepte de nous aider à nous occuper de l’inspecteur Branic à Bérégost, mais pas gratuitement. Ishani convoite un collier porté par dame Eudika, une amie de Brilla Bouclier-d’Argent. Cette mission sera certainement dangereuse compte tenu de l’importante garde qui l’entoure. Mais si je lui apporte le collier, Ishani mettra ses talents au service de notre opération contre l’Inspecteur. Il est temps de prendre quelques risques et de se lancer dans cette entreprise périlleuse.~
+
+@543=~Alliances voilées
+
+Ishani était ravie de voir la Cascade au clair de lune. Elle était littéralement fascinée par sa beauté et sa finesse. Ce collier occupe manifestement une place particulière dans son cœur. Notre plan n’en sera que plus crédible. Avec son charme et ce superbe bijou, l’Inspecteur n’aura aucune chance.~
+
+@544=~Alliances voilées
+
+J’ai réussi à me procurer une bouteille du rare whisky des Sélénae à la Taverne de Jopalin. Cet alcool est réputé être le préféré de l’Inspecteur et constituera l’appât idéal pour l’attirer dans notre piège. Nous sommes ainsi un peu plus près de libérer Bérégost de son emprise.~
+
+@545=~Alliances voilées
+
+Le plan d’Ariosh au Jongleur Jovial est en marche. Je dois remettre le whisky des Sélénae au tavernier et lui demander de faire venir l’Inspecteur. Ishani racontera une histoire de désespoir, prétendant avoir été forcée de travailler pour la bande et vouloir désormais se retourner contre elle. Grâce à son charme ensorcelant et à son esprit vif, elle cherchera à détourner l’attention de l’Inspecteur et à le convaincre de boire le whisky empoisonné. Dès qu’il en prendra une gorgée, la toxine indétectable fera son œuvre. Je dois rester vigilant et prêt à intervenir au moindre problème. C’est notre chance de débarrasser Bérégost de ce fléau et nous ne pouvons nous permettre aucune erreur. Il est temps d’affronter l’Inspecteur et de rendre justice à notre guilde.~
+
+@546=~Alliances voilées
+
+Ariosh m’a remis un dispositif incendiaire, ultime recours au cas où les choses tourneraient mal au Jongleur Jovial. Il a insisté sur la gravité des conséquences : les dégâts collatéraux seraient considérables et toute personne se trouvant à proximité pourrait ne pas survivre. Voilà un sombre rappel de l’importance des enjeux. L’engin servira à menacer le tavernier et à faire sauter l’endroit si l’Inspecteur ne mord pas à l’hameçon. C’est un jeu dangereux, mais nous pourrions être forcés de le jouer.~
+
+@547=~Alliances voilées
+
+Le plan s’est déroulé avec une dangereuse élégance. L’Inspecteur est tombé dans le piège et a bu au calice empoisonné sans comprendre qu’il scellait son destin. Peu après, ses forces l’ont abandonné et il a succombé. Notre emprise sur Bérégost se resserre et l’Œil de la Gorgone est plus puissant que jamais. La Commandante ripostera certainement, mais nous sommes prêts à affronter la tempête. Même dans les ombres, la victoire a un goût délicieux.~
+
+@548=~Alliances voilées
+
+Je n’ai pas supporté de suivre le plan. La rage et le besoin de vengeance ont pris le dessus. J’ai confronté l’Inspecteur directement et un combat brutal a éclaté. Ce fut un bain de sang : lui comme les membres de la Garde de la ville qui l’accompagnaient sont morts de ma main. Le plan initial a volé en éclats et le Jongleur Jovial en gardera les traces. Je dois retourner faire mon rapport à Ariosh, quel qu’en soit le résultat. Cette entorse au plan aura peut-être des conséquences, mais pour l’heure ma vengeance est accomplie.~
+
+@549=~Alliances voilées
+
+L’explosion a retenti à travers le Jongleur Jovial dans un maelström de flammes et de destruction. L’Inspecteur, Ishani et de nombreux innocents ont été engloutis par l’incendie. Le plan a réussi, mais à un prix terrible. Tandis que je me tiens au milieu des ruines fumantes, une froide prise de conscience s’impose à moi : peut-être suis-je allé trop loin.~
+
+@550=~Alliances voilées
+
+Le plan au Jongleur Jovial a brutalement dérapé. L’Inspecteur a percé notre ruse à jour, affirmant avoir « des yeux et des oreilles partout ». Il avait clairement senti le piège. Une bagarre désespérée et brutale a éclaté. J’ai finalement triomphé. L’Inspecteur gît maintenant sans vie et Bérégost reçoit un sinistre rappel de notre pouvoir. Je dois retourner auprès d’Ariosh pour lui faire mon rapport et décider de notre prochaine action. L’Œil de la Gorgone ne se reposera pas tant que la ville ne sera pas débarrassée de tous ceux qui se dressent sur notre chemin.~
+
+@551=~Alliances voilées
+
+Au lendemain de notre opération, l’Inspecteur est mort, preuve éclatante de notre détermination. La Garde, autrefois unie, est désormais en proie aux dissensions et au doute tandis que notre influence s’enracine. La commandante Seraphina Whitewood constitue le dernier obstacle sur notre route vers le pouvoir. Avec la disparition de l’Inspecteur, Bérégost vacille au bord du changement et l’Œil de la Gorgone poursuit sa marche inexorable vers la domination.~
+
+@552=~Ombres de la Valkyrie
+
+Ariosh m’a confié une nouvelle tâche dont le poids se fait sentir jusque dans les couloirs obscurs de l’Œil de la Gorgone. Les jumelles Valkyries, Clare et Theresa, sont devenues des obstacles majeurs. Elles manient un pouvoir divin et leur influence s’étend jusque dans les bas-fonds de la ville. Les éliminer n’exigera pas seulement du talent, mais aussi finesse et secret. Cette danse est délicate et un échec exposerait notre guilde à des risques inimaginables.~
+
+@553=~Ombres de la Valkyrie
+
+La mort de Clare n’est pas venue sans coût. L’effet de surprise a été gâché, leçon gravée dans les ombres. Cette danse mortelle exige la perfection et le moindre faux pas peut être fatal. Je dois encore affûter mes talents et perfectionner mon approche si je veux me déplacer dans les ombres sans laisser de trace.~
+
+@554=~Ombres de la Valkyrie
+
+Theresa est morte, mais pas dans un silence absolu. Le combat fut féroce et sa rudesse dissimulait une force que je n’avais pas anticipée. La mission a réussi et elle repose désormais dans le silence éternel. Ariosh en tirera peut-être satisfaction, mais dans le monde impitoyable où nous vivons, l’excellence est notre seule monnaie. Il n’y a aucune place pour l’erreur.~
+
+@555=~Ombres de la Valkyrie
+
+Les jumelles, autrefois adversaires redoutables, sont désormais vaincues. La satisfaction d’Ariosh est évidente, mais il a raison : la voie qui s’ouvre devant nous est remplie d’ombres plus profondes encore. La Garde de la ville vacille au bord du chaos et nous sommes les architectes de sa chute. La nouvelle de leurs morts se répand déjà dans les rues obscures. L’Œil de la Gorgone a une fois encore démontré sa puissance, mais nous ne pouvons nous permettre de relâcher notre vigilance. À chaque mission, je m’enfonce un peu plus au cœur des ténèbres, conscient que la survie de notre guilde repose sur notre ruse et les ombres qui nous abritent. Whitewood trouvera la mort dans ces ténèbres.~
+
+@556=~Loyautés divisées
+
+Les rangs de la Garde se sont fracturés, une mutinerie nourrie par les assassinats calculés de sa hiérarchie. Le chaos règne dans les rues de Bérégost, théâtre d’une lutte acharnée. Baldwin et Ariosh ont saisi cette agitation comme une occasion. Le Temple, refuge de la commandante Whitewood, est désormais notre destination finale. C’est là que notre destin se mêlera à celui de la Garde de la ville. L’heure du jugement approche tandis que nous nous préparons à trancher la tête de ce conflit serpentin.~
+
+@557=~Loyautés divisées
+
+Le combat fut féroce et le temple de Lathandre porte désormais les cicatrices de notre affrontement. La commandante Seraphina Whitewood, autrefois inflexible protectrice de Bérégost, gît vaincue à mes pieds avec ses fidèles chevaliers templiers. Whitewood disparue, l’Œil de la Gorgone peut resserrer son emprise sur la ville et consolider sa domination. Les échos de notre lutte résonneront à jamais dans les salles sacrées du temple, témoignage de notre force et de notre détermination.~
+
+@558=~Loyautés divisées
+
+Cette nuit, je me tiens au sommet des ombres après avoir taillé ma route à travers les ruelles tortueuses et les sombres secrets de Bérégost. La Garde de la ville est brisée, l’Œil de la Gorgone impose sa domination et le temple de Lathandre a été témoin de la chute de la commandante Seraphina Whitewood. La confiance qu’Ariosh a placée en moi était méritée : je suis un véritable voleur, forgé dans le creuset des intrigues de ruelles et des cambriolages où tout se joue. Les rues sont à moi, et la ville se souviendra du nom de <CHARNAME> de l’Œil de la Gorgone.~
+
+
+
+
+
+
+
+
+
+
+         
+          ///////////////////////////////////
+          //////// Gilbald's Quests /////////
+          ///////////////////////////////////
+          
+
+@610=~L’affaire des fausses pièces
+
+Gilbald m’a fait part d’un problème inquiétant : de fausses pièces d’or auraient peut-être infiltré l’Œil de la Gorgone. Il m’a chargé d’enquêter sur cette affaire. Pour commencer, je dois interroger ses joueurs dans l’espoir d’élucider les mystères de cette nuit fatidique. Les ombres détiennent peut-être la clef et il est de mon devoir de percer leurs secrets.~
+
+@611=~L’affaire des fausses pièces
+
+D’après les joueurs, trois personnes ont retenu leur attention la nuit dernière. Il y avait d’abord Xevec, un mendiant de Bérégost qui semblait déplacé dans cet environnement. Ensuite, une femme vêtue modestement mais dont le maintien trahissait la noblesse. Elle a parlé d’une fille nommée Sam, absente des lieux. Enfin, il y avait Hugo, un nain manchot dont la présence a intrigué les témoins. Les joueurs m’ont conseillé de commencer mon enquête par Meredia, qui pourrait posséder des informations précieuses, en particulier au sujet de Xevec.~
+
+@612=~L’affaire des fausses pièces
+
+Meredia a confirmé que Xevec avait bien utilisé de fausses pièces d’or dans son établissement. Elle le décrit comme peu perspicace et facilement victime de toutes sortes d’arnaques commerciales. Selon elle, Xevec est persuadé que son dernier contrat va le rendre riche et a reçu une avance en guise de preuve de bonne foi. Je devrais pouvoir le retrouver dans les rues de Bérégost.~
+
+@613=~L’affaire des fausses pièces
+
+J’ai retrouvé Xevec, qui m’a expliqué avoir utilisé les fausses pièces sans le savoir. Elles lui avaient été remises en paiement d’un contrat visant à éliminer une jeune femme nommée Sam, qui vit à Nashkel. Il a précisé que la femme qui l’avait engagé semblait entretenir des liens étroits avec Sam et pourrait habiter dans le même secteur.~
+
+@614=~L’affaire des fausses pièces
+
+J’ai choisi d’éliminer Xevec après avoir confirmé son implication dans l’affaire de la fausse monnaie. Je dois maintenant retourner voir Gilbald pour lui faire le point sur la situation.~
+
+@615=~L’affaire des fausses pièces
+
+Gilbald m’a généreusement récompensé pour avoir réglé le problème de Xevec. Son histoire cachait peut-être autre chose, mais j’ai jugé préférable de faire un exemple. L’affaire semblait simple et je n’ai vu aucune raison de pousser l’enquête plus loin.~
+
+@616=~L’affaire des fausses pièces
+
+Il semble que Xevec disait vrai. La femme de chambre de Samantha l’avait engagé pour commettre le meurtre. J’ai pris les choses en main et l’ai tuée pour son implication. Il est maintenant temps de rendre une nouvelle visite à Xevec.~
+
+@617=~L’affaire des fausses pièces
+
+Il semble que Xevec disait vrai. La femme de chambre de Samantha l’avait engagé pour commettre le meurtre. J’ai choisi de ne pas la tuer, mais je devrais retourner voir Xevec afin d’obtenir davantage d’informations.~
+
+@618=~L’affaire des fausses pièces
+
+Après ma conversation avec Xevec, j’ai choisi de lui laisser la vie. Je dois maintenant faire part de mes découvertes à Gilbald. Ce sera finalement à lui de décider de la suite des événements.~
+
+@619=~L’affaire des fausses pièces
+
+Après avoir résolu l’affaire de Xevec et de la femme de chambre, Gilbald m’a exprimé sa gratitude et remis une récompense substantielle. Ce sont des moments comme celui-ci qui me rappellent pourquoi j’exerce ce métier : il y a une certaine satisfaction à régler les problèmes jusqu’au bout et à voir justice rendue, même dans le monde criminel.~
+
+@620=~L’affaire des fausses pièces
+
+La mère de Samantha s’est confiée à moi. Elle m’a révélé que la femme de chambre avait non seulement pris un collier, mais qu’elle soupçonnait la disparition d’autres biens. Curieusement, elle semblait davantage préoccupée par les bijoux volés que par la sécurité de sa fille. Une tension palpable existe entre la servante et Samantha, et il est évident que cette histoire cache autre chose. Cette révélation ajoute encore un niveau d’intrigue à une situation déjà complexe. Peut-être la clef réside-t-elle auprès de la femme de chambre elle-même.~
+
+
+          ///////////////////////////////////
+          //////// Meredia's Quests /////////
+          ///////////////////////////////////
+
+
+@710=~Escorter l’escorte
+
+Meredia s’est montrée très inquiète pour l’une de ses filles, Ilena, qui n’est pas revenue de son travail la nuit dernière. L’inquiétude se lit clairement dans son regard. Il semble qu’Ilena se trouvait avec un homme nommé Isley, dans une maison voisine de la Forge de Marteau-de-Tonnerre à Bérégost. Cette situation soulève de sérieuses questions quant à sa sécurité et à ce qui s’est passé au cours de sa soirée avec Isley.~
+
+@711=~Escorter l’escorte
+
+En arrivant à la maison où séjournait Ilena, j’ai découvert une scène sinistre. La femme d’Isley gisait mourante sur le sol, ses paroles pénibles et chargées d’angoisse. Avant de succomber à ses blessures, elle a déclaré que son mari était responsable. Dans la maison, j’ai trouvé un morceau de tissu rouge ainsi qu’un casque taché de sang. Ces indices inquiétants laissent entrevoir la tragédie qui s’est déroulée entre ces murs. Je dois maintenant retourner au repaire de l’Œil de la Gorgone pour transmettre ces terribles nouvelles à Meredia.~
+
+@712=~Escorter l’escorte
+
+La déduction de Meredia concernant le passé militaire d’Isley, fondée sur le tissu et le casque, semble plausible. Pour en apprendre davantage, je dois identifier précisément l’uniforme qu’il porte : un casque à plumes et une pièce de tissu écarlate. Cela pourrait me conduire jusqu’à Isley et révéler de nouveaux détails sur les événements inquiétants qui se sont produits.~
+
+@713=~Escorter l’escorte
+
+J’ai affronté Isley, mais je n’ai malheureusement pas réussi à l’empêcher de tuer Ilena. C’est une perte terrible. Je dois maintenant trouver le courage d’annoncer cette nouvelle déchirante à Meredia.~
+
+@714=~Escorter l’escorte
+
+J’ai réussi à vaincre Isley tout en épargnant Ilena. Elle est maintenant en route pour Bérégost. Je vais la suivre, impatient d’apporter la nouvelle à Meredia, qui sera certainement soulagée d’apprendre l’issue de cette affaire.~
+
+@715=~Escorter l’escorte
+
+Les courtisanes étaient folles de joie que j’aie réussi à sauver Ilena et elles ont généreusement mis leurs ressources en commun pour m’offrir une récompense. Un geste particulièrement touchant.~
+
+@716=~Escorter l’escorte
+
+Meredia a été profondément attristée d’apprendre la mort d’Ilena. Il est difficile de ne pas ressentir une part de responsabilité dans ce qui s’est produit.~
+
+
+          ///////////////////////////////////
+          /////////// Dio's Quests //////////
+          ///////////////////////////////////
+          
+          
+@810=~Les Fosses
+
+Les fosses, d’après Diomède, sont une arène de duel où les combattants s’affrontent. Il ne s’agit pas de combats à mort, mais d’un lieu destiné à perfectionner ses talents martiaux. Avant de m’y mesurer aux autres, Diomède m’a conseillé de me familiariser avec l’organisation et le fonctionnement des lieux. Il m’a suggéré de parler à certains combattants pour mieux comprendre le rythme et les stratégies des affrontements. La patience et le savoir, a-t-il insisté, sont aussi importants que le talent à l’épée. Je veillerai à suivre son conseil avant de participer au moindre combat.~
+
+@811=~Les Fosses
+
+Au cœur des fosses, parmi le fracas de l’acier et les échos des combats, un nouveau chapitre s’ouvre. Khalid, moine expérimenté, fut mon premier défi, incarnation de la force née de la discipline. Le combat fut féroce, mais les courants du destin m’ont finalement été favorables. Cet instant restera gravé dans ma mémoire, étape d’un voyage de progression et de découverte de soi. La bourse gagnée témoigne concrètement de cette victoire. À chaque duel, je sens une transformation, mes talents s’affinent et ma compréhension de l’art du combat s’approfondit. Les fosses cachent encore bien des secrets et je suis impatient de tous les découvrir.~
+
+@812=~Les Fosses
+
+Le combat contre Grom ne ressemblait à rien de ce que j’avais connu. La puissance brute et la détermination qu’il a apportées dans l’arène étaient redoutables, mais j’ai malgré tout réussi à l’emporter. La victoire est douce, mais elle rappelle aussi brutalement les défis qui m’attendent. Dio a raison : ce n’est que le début. Je dois rester concentré, continuer à perfectionner mes compétences et me préparer à tout ce que les fosses me réserveront. Dans ce monde de combat et de compétition, la complaisance n’a pas sa place.~
+
+@813=~Les Fosses
+
+Quel combat ! Lyria était rapide, rusée et avait plus d’un tour dans son sac. J’ai réussi à la déjouer et à arracher la victoire. Les fosses ne pardonnent rien, mais chaque affrontement aiguise mes talents. L’or n’est pas mauvais non plus. Dio se montre équitable dans le partage. Encore un pas vers l’ultime défi. En avant.~
+
+@814=~Les Fosses
+
+Lorsque le dernier coup a porté, le temps a semblé s’arrêter. Serra Swiftwind, archère elfe de Lunargent, se tenait devant moi, témoignage de la force et du talent qui règnent dans les fosses. Ses mouvements étaient une poésie, une danse élégante avec l’arc, mais traversée d’une sauvagerie, d’un lien à la nature qui la distinguait des autres. Le combat fut acharné, mais j’ai fini par l’emporter. L’arène m’a beaucoup appris et chacun de mes adversaires m’a offert une leçon. Serra, en particulier, laissera une marque indélébile par sa grâce et sa détermination. Je regarde maintenant vers ce qui m’attend, sachant que chaque combat apporte de nouveaux défis et de nouveaux enseignements.~
+
+@815=~Les Fosses
+
+L’impossible est devenu réalité aujourd’hui. J’ai affronté le champion en titre, Roran, et je suis sorti vainqueur. L’arène bouillonnait d’adrénaline et d’attente. C’est une sensation que je n’oublierai jamais. Désormais, ils m’appellent le champion. Je porterai ce titre avec honneur, même si je sais que mon règne ne sera pas facile.~
+
+@816=~Les Fosses
+
+Les paroles de Dio résonnent encore dans mon esprit lorsqu’il parle d’Isla. C’est une légende, une combattante qui a tout vu. Elle semble aujourd’hui retirée, mais s’il existe une chance de faire réellement mes preuves, je dois la convaincre de retourner dans l’arène. La tâche ne sera pas facile, mais rien qui en vaille la peine ne l’est jamais. Je devrai me préparer et m’entraîner plus durement que jamais. Isla représente l’épreuve ultime. Je suis déterminé à la retrouver, à l’affronter et à prouver que je mérite le titre de champion.~
+
+
